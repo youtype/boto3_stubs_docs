@@ -1,53 +1,18 @@
-<a id="appflowclient-for-boto3-appflow-module"></a>
-
-# AppflowClient for boto3 Appflow module
+# AppflowClient
 
 > [Index](../README.md) > [Appflow](./README.md) > AppflowClient
 
-Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module
-[mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
+!!! note ""
 
-- [AppflowClient for boto3 Appflow module](#appflowclient-for-boto3-appflow-module)
-  - [AppflowClient](#appflowclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_connector_profile](#create_connector_profile)
-    - [create_flow](#create_flow)
-    - [delete_connector_profile](#delete_connector_profile)
-    - [delete_flow](#delete_flow)
-    - [describe_connector](#describe_connector)
-    - [describe_connector_entity](#describe_connector_entity)
-    - [describe_connector_profiles](#describe_connector_profiles)
-    - [describe_connectors](#describe_connectors)
-    - [describe_flow](#describe_flow)
-    - [describe_flow_execution_records](#describe_flow_execution_records)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_connector_entities](#list_connector_entities)
-    - [list_connectors](#list_connectors)
-    - [list_flows](#list_flows)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [register_connector](#register_connector)
-    - [start_flow](#start_flow)
-    - [stop_flow](#stop_flow)
-    - [tag_resource](#tag_resource)
-    - [unregister_connector](#unregister_connector)
-    - [untag_resource](#untag_resource)
-    - [update_connector_profile](#update_connector_profile)
-    - [update_flow](#update_flow)
-
-<a id="appflowclient"></a>
+    Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+    type annotations stubs module [mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 ## AppflowClient
 
-Type annotations for `boto3.client("appflow")`
+Type annotations and code completion for `#!python boto3.client("appflow")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_appflow.client import AppflowClient
 
@@ -55,614 +20,797 @@ def get_appflow_client() -> AppflowClient:
     return Session().client("appflow")
 ```
 
-Boto3 documentation:
-[Appflow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("appflow").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("appflow")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.ConnectorAuthenticationException,
+    client.ConnectorServerException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.UnsupportedOperationException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_appflow.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ConnectorAuthenticationException`
-- `Exceptions.ConnectorServerException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UnsupportedOperationException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppflowClient exceptions.
-
-Type annotations for `boto3.client("appflow").exceptions` method.
-
-Boto3 documentation:
-[Appflow.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("appflow").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("appflow").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate)
 
-Boto3 documentation:
-[Appflow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_connector\_profile"></a>
-
-### create_connector_profile
+### create\_connector\_profile
 
 Creates a new connector profile associated with your Amazon Web Services
 account.
 
-Type annotations for `boto3.client("appflow").create_connector_profile` method.
+Type annotations and code completion for `#!python boto3.client("appflow").create_connector_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
 
-Boto3 documentation:
-[Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
+```python title="Method definition"
+def create_connector_profile(
+    self,
+    *,
+    connectorProfileName: str,
+    connectorType: ConnectorTypeType,  # (1)
+    connectionMode: ConnectionModeType,  # (2)
+    connectorProfileConfig: ConnectorProfileConfigTypeDef,  # (3)
+    kmsArn: str = ...,
+    connectorLabel: str = ...,
+) -> CreateConnectorProfileResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectorProfileRequestRequestTypeDef](./type_defs.md#createconnectorprofilerequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+3. See [:material-code-braces: ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef) 
+4. See [:material-code-braces: CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorProfileName`: `str` *(required)*
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-  *(required)*
-- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
-  *(required)*
-- `connectorProfileConfig`:
-  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
-  *(required)*
-- `kmsArn`: `str`
-- `connectorLabel`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConnectorProfileRequestRequestTypeDef = {  # (1)
+    "connectorProfileName": ...,
+    "connectorType": ...,
+    "connectionMode": ...,
+    "connectorProfileConfig": ...,
+}
 
-Returns
-[CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef).
+parent.create_connector_profile(**kwargs)
+```
 
-<a id="create\_flow"></a>
+1. See [:material-code-braces: CreateConnectorProfileRequestRequestTypeDef](./type_defs.md#createconnectorprofilerequestrequesttypedef) 
 
-### create_flow
+### create\_flow
 
 Enables your application to create a new flow using Amazon AppFlow.
 
-Type annotations for `boto3.client("appflow").create_flow` method.
+Type annotations and code completion for `#!python boto3.client("appflow").create_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
 
-Boto3 documentation:
-[Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
+```python title="Method definition"
+def create_flow(
+    self,
+    *,
+    flowName: str,
+    triggerConfig: TriggerConfigTypeDef,  # (1)
+    sourceFlowConfig: SourceFlowConfigTypeDef,  # (2)
+    destinationFlowConfigList: Sequence[DestinationFlowConfigTypeDef],  # (3)
+    tasks: Sequence[TaskTypeDef],  # (4)
+    description: str = ...,
+    kmsArn: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateFlowResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateFlowRequestRequestTypeDef](./type_defs.md#createflowrequestrequesttypedef).
+1. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
+3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
+4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+5. See [:material-code-braces: CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
-- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
-  *(required)*
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-  *(required)*
-- `destinationFlowConfigList`:
-  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-  *(required)*
-- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
-- `description`: `str`
-- `kmsArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFlowRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+    "triggerConfig": ...,
+    "sourceFlowConfig": ...,
+    "destinationFlowConfigList": ...,
+    "tasks": ...,
+}
 
-Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
+parent.create_flow(**kwargs)
+```
 
-<a id="delete\_connector\_profile"></a>
+1. See [:material-code-braces: CreateFlowRequestRequestTypeDef](./type_defs.md#createflowrequestrequesttypedef) 
 
-### delete_connector_profile
+### delete\_connector\_profile
 
 Enables you to delete an existing connector profile.
 
-Type annotations for `boto3.client("appflow").delete_connector_profile` method.
+Type annotations and code completion for `#!python boto3.client("appflow").delete_connector_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
 
-Boto3 documentation:
-[Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
+```python title="Method definition"
+def delete_connector_profile(
+    self,
+    *,
+    connectorProfileName: str,
+    forceDelete: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectorProfileRequestRequestTypeDef](./type_defs.md#deleteconnectorprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `connectorProfileName`: `str` *(required)*
-- `forceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectorProfileRequestRequestTypeDef = {  # (1)
+    "connectorProfileName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_connector_profile(**kwargs)
+```
 
-<a id="delete\_flow"></a>
+1. See [:material-code-braces: DeleteConnectorProfileRequestRequestTypeDef](./type_defs.md#deleteconnectorprofilerequestrequesttypedef) 
 
-### delete_flow
+### delete\_flow
 
 Enables your application to delete an existing flow.
 
-Type annotations for `boto3.client("appflow").delete_flow` method.
+Type annotations and code completion for `#!python boto3.client("appflow").delete_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
 
-Boto3 documentation:
-[Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
+```python title="Method definition"
+def delete_flow(
+    self,
+    *,
+    flowName: str,
+    forceDelete: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFlowRequestRequestTypeDef](./type_defs.md#deleteflowrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
-- `forceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteFlowRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_flow(**kwargs)
+```
 
-<a id="describe\_connector"></a>
+1. See [:material-code-braces: DeleteFlowRequestRequestTypeDef](./type_defs.md#deleteflowrequestrequesttypedef) 
 
-### describe_connector
+### describe\_connector
 
 Describes the given custom connector registered in your Amazon Web Services
 account.
 
-Type annotations for `boto3.client("appflow").describe_connector` method.
+Type annotations and code completion for `#!python boto3.client("appflow").describe_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector)
 
-Boto3 documentation:
-[Appflow.Client.describe_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector)
+```python title="Method definition"
+def describe_connector(
+    self,
+    *,
+    connectorType: ConnectorTypeType,  # (1)
+    connectorLabel: str = ...,
+) -> DescribeConnectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectorRequestRequestTypeDef](./type_defs.md#describeconnectorrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-  *(required)*
-- `connectorLabel`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectorRequestRequestTypeDef = {  # (1)
+    "connectorType": ...,
+}
 
-Returns
-[DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef).
+parent.describe_connector(**kwargs)
+```
 
-<a id="describe\_connector\_entity"></a>
+1. See [:material-code-braces: DescribeConnectorRequestRequestTypeDef](./type_defs.md#describeconnectorrequestrequesttypedef) 
 
-### describe_connector_entity
+### describe\_connector\_entity
 
 Provides details regarding the entity used with the connector, with a
 description of the data model for each entity.
 
-Type annotations for `boto3.client("appflow").describe_connector_entity`
-method.
+Type annotations and code completion for `#!python boto3.client("appflow").describe_connector_entity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
 
-Boto3 documentation:
-[Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
+```python title="Method definition"
+def describe_connector_entity(
+    self,
+    *,
+    connectorEntityName: str,
+    connectorType: ConnectorTypeType = ...,  # (1)
+    connectorProfileName: str = ...,
+    apiVersion: str = ...,
+) -> DescribeConnectorEntityResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectorEntityRequestRequestTypeDef](./type_defs.md#describeconnectorentityrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorEntityName`: `str` *(required)*
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorProfileName`: `str`
-- `apiVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectorEntityRequestRequestTypeDef = {  # (1)
+    "connectorEntityName": ...,
+}
 
-Returns
-[DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef).
+parent.describe_connector_entity(**kwargs)
+```
 
-<a id="describe\_connector\_profiles"></a>
+1. See [:material-code-braces: DescribeConnectorEntityRequestRequestTypeDef](./type_defs.md#describeconnectorentityrequestrequesttypedef) 
 
-### describe_connector_profiles
+### describe\_connector\_profiles
 
-Returns a list of `connector-profile` details matching the provided
-`connector- profile` names and `connector-types`.
+Returns a list of `connector-profile` details matching the provided `connector-
+profile` names and `connector-types`.
 
-Type annotations for `boto3.client("appflow").describe_connector_profiles`
-method.
+Type annotations and code completion for `#!python boto3.client("appflow").describe_connector_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
 
-Boto3 documentation:
-[Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
+```python title="Method definition"
+def describe_connector_profiles(
+    self,
+    *,
+    connectorProfileNames: Sequence[str] = ...,
+    connectorType: ConnectorTypeType = ...,  # (1)
+    connectorLabel: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeConnectorProfilesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectorProfilesRequestRequestTypeDef](./type_defs.md#describeconnectorprofilesrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: DescribeConnectorProfilesResponseTypeDef](./type_defs.md#describeconnectorprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorProfileNames`: `Sequence`\[`str`\]
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorLabel`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectorProfilesRequestRequestTypeDef = {  # (1)
+    "connectorProfileNames": ...,
+}
 
-Returns
-[DescribeConnectorProfilesResponseTypeDef](./type_defs.md#describeconnectorprofilesresponsetypedef).
+parent.describe_connector_profiles(**kwargs)
+```
 
-<a id="describe\_connectors"></a>
+1. See [:material-code-braces: DescribeConnectorProfilesRequestRequestTypeDef](./type_defs.md#describeconnectorprofilesrequestrequesttypedef) 
 
-### describe_connectors
+### describe\_connectors
 
-Describes the connectors vended by Amazon AppFlow for specified connector
-types.
+Describes the connectors vended by Amazon AppFlow for specified connector types.
 
-Type annotations for `boto3.client("appflow").describe_connectors` method.
+Type annotations and code completion for `#!python boto3.client("appflow").describe_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
 
-Boto3 documentation:
-[Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
+```python title="Method definition"
+def describe_connectors(
+    self,
+    *,
+    connectorTypes: Sequence[ConnectorTypeType] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeConnectorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectorsRequestRequestTypeDef](./type_defs.md#describeconnectorsrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: DescribeConnectorsResponseTypeDef](./type_defs.md#describeconnectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorTypes`:
-  `Sequence`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectorsRequestRequestTypeDef = {  # (1)
+    "connectorTypes": ...,
+}
 
-Returns
-[DescribeConnectorsResponseTypeDef](./type_defs.md#describeconnectorsresponsetypedef).
+parent.describe_connectors(**kwargs)
+```
 
-<a id="describe\_flow"></a>
+1. See [:material-code-braces: DescribeConnectorsRequestRequestTypeDef](./type_defs.md#describeconnectorsrequestrequesttypedef) 
 
-### describe_flow
+### describe\_flow
 
 Provides a description of the specified flow.
 
-Type annotations for `boto3.client("appflow").describe_flow` method.
+Type annotations and code completion for `#!python boto3.client("appflow").describe_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
 
-Boto3 documentation:
-[Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
+```python title="Method definition"
+def describe_flow(
+    self,
+    *,
+    flowName: str,
+) -> DescribeFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFlowRequestRequestTypeDef](./type_defs.md#describeflowrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFlowRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+}
 
-Returns
-[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
+parent.describe_flow(**kwargs)
+```
 
-<a id="describe\_flow\_execution\_records"></a>
+1. See [:material-code-braces: DescribeFlowRequestRequestTypeDef](./type_defs.md#describeflowrequestrequesttypedef) 
 
-### describe_flow_execution_records
+### describe\_flow\_execution\_records
 
 Fetches the execution history of the flow.
 
-Type annotations for `boto3.client("appflow").describe_flow_execution_records`
-method.
+Type annotations and code completion for `#!python boto3.client("appflow").describe_flow_execution_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
 
-Boto3 documentation:
-[Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
+```python title="Method definition"
+def describe_flow_execution_records(
+    self,
+    *,
+    flowName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeFlowExecutionRecordsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFlowExecutionRecordsRequestRequestTypeDef](./type_defs.md#describeflowexecutionrecordsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFlowExecutionRecordsResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFlowExecutionRecordsRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+}
 
-Returns
-[DescribeFlowExecutionRecordsResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponsetypedef).
+parent.describe_flow_execution_records(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeFlowExecutionRecordsRequestRequestTypeDef](./type_defs.md#describeflowexecutionrecordsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("appflow").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("appflow").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Appflow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_connector\_entities"></a>
-
-### list_connector_entities
+### list\_connector\_entities
 
 Returns the list of available connector entities supported by Amazon AppFlow.
 
-Type annotations for `boto3.client("appflow").list_connector_entities` method.
+Type annotations and code completion for `#!python boto3.client("appflow").list_connector_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
 
-Boto3 documentation:
-[Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
+```python title="Method definition"
+def list_connector_entities(
+    self,
+    *,
+    connectorProfileName: str = ...,
+    connectorType: ConnectorTypeType = ...,  # (1)
+    entitiesPath: str = ...,
+    apiVersion: str = ...,
+) -> ListConnectorEntitiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectorEntitiesRequestRequestTypeDef](./type_defs.md#listconnectorentitiesrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorProfileName`: `str`
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `entitiesPath`: `str`
-- `apiVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectorEntitiesRequestRequestTypeDef = {  # (1)
+    "connectorProfileName": ...,
+}
 
-Returns
-[ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef).
+parent.list_connector_entities(**kwargs)
+```
 
-<a id="list\_connectors"></a>
+1. See [:material-code-braces: ListConnectorEntitiesRequestRequestTypeDef](./type_defs.md#listconnectorentitiesrequestrequesttypedef) 
 
-### list_connectors
+### list\_connectors
 
-Returns the list of all registered custom connectors in your Amazon Web
-Services account.
+Returns the list of all registered custom connectors in your Amazon Web Services
+account.
 
-Type annotations for `boto3.client("appflow").list_connectors` method.
+Type annotations and code completion for `#!python boto3.client("appflow").list_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connectors)
 
-Boto3 documentation:
-[Appflow.Client.list_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connectors)
+```python title="Method definition"
+def list_connectors(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListConnectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectorsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef).
+parent.list_connectors(**kwargs)
+```
 
-<a id="list\_flows"></a>
+1. See [:material-code-braces: ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef) 
 
-### list_flows
+### list\_flows
 
 Lists all of the flows associated with your account.
 
-Type annotations for `boto3.client("appflow").list_flows` method.
+Type annotations and code completion for `#!python boto3.client("appflow").list_flows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
 
-Boto3 documentation:
-[Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
+```python title="Method definition"
+def list_flows(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFlowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFlowsRequestRequestTypeDef](./type_defs.md#listflowsrequestrequesttypedef).
+1. See [:material-code-braces: ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFlowsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
+parent.list_flows(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListFlowsRequestRequestTypeDef](./type_defs.md#listflowsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the tags that are associated with a specified flow.
 
-Type annotations for `boto3.client("appflow").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("appflow").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="register\_connector"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### register_connector
+### register\_connector
 
 Registers a new connector with your Amazon Web Services account.
 
-Type annotations for `boto3.client("appflow").register_connector` method.
+Type annotations and code completion for `#!python boto3.client("appflow").register_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.register_connector)
 
-Boto3 documentation:
-[Appflow.Client.register_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.register_connector)
+```python title="Method definition"
+def register_connector(
+    self,
+    *,
+    connectorLabel: str = ...,
+    description: str = ...,
+    connectorProvisioningType: ConnectorProvisioningTypeType = ...,  # (1)
+    connectorProvisioningConfig: ConnectorProvisioningConfigTypeDef = ...,  # (2)
+) -> RegisterConnectorResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RegisterConnectorRequestRequestTypeDef](./type_defs.md#registerconnectorrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype) 
+2. See [:material-code-braces: ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef) 
+3. See [:material-code-braces: RegisterConnectorResponseTypeDef](./type_defs.md#registerconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorLabel`: `str`
-- `description`: `str`
-- `connectorProvisioningType`: `Literal['LAMBDA']` (see
-  [ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype))
-- `connectorProvisioningConfig`:
-  [ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: RegisterConnectorRequestRequestTypeDef = {  # (1)
+    "connectorLabel": ...,
+}
 
-Returns
-[RegisterConnectorResponseTypeDef](./type_defs.md#registerconnectorresponsetypedef).
+parent.register_connector(**kwargs)
+```
 
-<a id="start\_flow"></a>
+1. See [:material-code-braces: RegisterConnectorRequestRequestTypeDef](./type_defs.md#registerconnectorrequestrequesttypedef) 
 
-### start_flow
+### start\_flow
 
 Activates an existing flow.
 
-Type annotations for `boto3.client("appflow").start_flow` method.
+Type annotations and code completion for `#!python boto3.client("appflow").start_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
 
-Boto3 documentation:
-[Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
+```python title="Method definition"
+def start_flow(
+    self,
+    *,
+    flowName: str,
+) -> StartFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartFlowRequestRequestTypeDef](./type_defs.md#startflowrequestrequesttypedef).
+1. See [:material-code-braces: StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartFlowRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+}
 
-Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
+parent.start_flow(**kwargs)
+```
 
-<a id="stop\_flow"></a>
+1. See [:material-code-braces: StartFlowRequestRequestTypeDef](./type_defs.md#startflowrequestrequesttypedef) 
 
-### stop_flow
+### stop\_flow
 
 Deactivates the existing flow.
 
-Type annotations for `boto3.client("appflow").stop_flow` method.
+Type annotations and code completion for `#!python boto3.client("appflow").stop_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
 
-Boto3 documentation:
-[Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
+```python title="Method definition"
+def stop_flow(
+    self,
+    *,
+    flowName: str,
+) -> StopFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopFlowRequestRequestTypeDef](./type_defs.md#stopflowrequestrequesttypedef).
+1. See [:material-code-braces: StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopFlowRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+}
 
-Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
+parent.stop_flow(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopFlowRequestRequestTypeDef](./type_defs.md#stopflowrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies a tag to the specified flow.
 
-Type annotations for `boto3.client("appflow").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appflow").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
 
-Boto3 documentation:
-[Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="unregister\_connector"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### unregister_connector
+### unregister\_connector
 
 Unregisters the custom connector registered in your account that matches the
 connectorLabel provided in the request.
 
-Type annotations for `boto3.client("appflow").unregister_connector` method.
+Type annotations and code completion for `#!python boto3.client("appflow").unregister_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.unregister_connector)
 
-Boto3 documentation:
-[Appflow.Client.unregister_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.unregister_connector)
+```python title="Method definition"
+def unregister_connector(
+    self,
+    *,
+    connectorLabel: str,
+    forceDelete: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UnregisterConnectorRequestRequestTypeDef](./type_defs.md#unregisterconnectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `connectorLabel`: `str` *(required)*
-- `forceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UnregisterConnectorRequestRequestTypeDef = {  # (1)
+    "connectorLabel": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.unregister_connector(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: UnregisterConnectorRequestRequestTypeDef](./type_defs.md#unregisterconnectorrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from the specified flow.
 
-Type annotations for `boto3.client("appflow").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appflow").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
 
-Boto3 documentation:
-[Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_connector\_profile"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_connector_profile
+### update\_connector\_profile
 
 Updates a given connector profile associated with your account.
 
-Type annotations for `boto3.client("appflow").update_connector_profile` method.
+Type annotations and code completion for `#!python boto3.client("appflow").update_connector_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
 
-Boto3 documentation:
-[Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
+```python title="Method definition"
+def update_connector_profile(
+    self,
+    *,
+    connectorProfileName: str,
+    connectionMode: ConnectionModeType,  # (1)
+    connectorProfileConfig: ConnectorProfileConfigTypeDef,  # (2)
+) -> UpdateConnectorProfileResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectorProfileRequestRequestTypeDef](./type_defs.md#updateconnectorprofilerequestrequesttypedef).
+1. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+2. See [:material-code-braces: ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef) 
+3. See [:material-code-braces: UpdateConnectorProfileResponseTypeDef](./type_defs.md#updateconnectorprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorProfileName`: `str` *(required)*
-- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
-  *(required)*
-- `connectorProfileConfig`:
-  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectorProfileRequestRequestTypeDef = {  # (1)
+    "connectorProfileName": ...,
+    "connectionMode": ...,
+    "connectorProfileConfig": ...,
+}
 
-Returns
-[UpdateConnectorProfileResponseTypeDef](./type_defs.md#updateconnectorprofileresponsetypedef).
+parent.update_connector_profile(**kwargs)
+```
 
-<a id="update\_flow"></a>
+1. See [:material-code-braces: UpdateConnectorProfileRequestRequestTypeDef](./type_defs.md#updateconnectorprofilerequestrequesttypedef) 
 
-### update_flow
+### update\_flow
 
 Updates an existing flow.
 
-Type annotations for `boto3.client("appflow").update_flow` method.
+Type annotations and code completion for `#!python boto3.client("appflow").update_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
 
-Boto3 documentation:
-[Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
+```python title="Method definition"
+def update_flow(
+    self,
+    *,
+    flowName: str,
+    triggerConfig: TriggerConfigTypeDef,  # (1)
+    sourceFlowConfig: SourceFlowConfigTypeDef,  # (2)
+    destinationFlowConfigList: Sequence[DestinationFlowConfigTypeDef],  # (3)
+    tasks: Sequence[TaskTypeDef],  # (4)
+    description: str = ...,
+) -> UpdateFlowResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFlowRequestRequestTypeDef](./type_defs.md#updateflowrequestrequesttypedef).
+1. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
+3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
+4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+5. See [:material-code-braces: UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowName`: `str` *(required)*
-- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
-  *(required)*
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-  *(required)*
-- `destinationFlowConfigList`:
-  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-  *(required)*
-- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowRequestRequestTypeDef = {  # (1)
+    "flowName": ...,
+    "triggerConfig": ...,
+    "sourceFlowConfig": ...,
+    "destinationFlowConfigList": ...,
+    "tasks": ...,
+}
 
-Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
+parent.update_flow(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFlowRequestRequestTypeDef](./type_defs.md#updateflowrequestrequesttypedef) 
+
+
+
+

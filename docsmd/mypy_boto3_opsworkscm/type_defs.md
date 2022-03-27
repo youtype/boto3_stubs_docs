@@ -1,746 +1,986 @@
-<a id="typed-dictionaries-for-boto3-opsworkscm-module"></a>
-
-# Typed dictionaries for boto3 OpsWorksCM module
+# Typed dictionaries
 
 > [Index](../README.md) > [OpsWorksCM](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
-type annotations stubs module
-[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+!!! note ""
 
-- [Typed dictionaries for boto3 OpsWorksCM module](#typed-dictionaries-for-boto3-opsworkscm-module)
-  - [AccountAttributeTypeDef](#accountattributetypedef)
-  - [AssociateNodeRequestRequestTypeDef](#associatenoderequestrequesttypedef)
-  - [AssociateNodeResponseTypeDef](#associatenoderesponsetypedef)
-  - [BackupTypeDef](#backuptypedef)
-  - [CreateBackupRequestRequestTypeDef](#createbackuprequestrequesttypedef)
-  - [CreateBackupResponseTypeDef](#createbackupresponsetypedef)
-  - [CreateServerRequestRequestTypeDef](#createserverrequestrequesttypedef)
-  - [CreateServerResponseTypeDef](#createserverresponsetypedef)
-  - [DeleteBackupRequestRequestTypeDef](#deletebackuprequestrequesttypedef)
-  - [DeleteServerRequestRequestTypeDef](#deleteserverrequestrequesttypedef)
-  - [DescribeAccountAttributesResponseTypeDef](#describeaccountattributesresponsetypedef)
-  - [DescribeBackupsRequestRequestTypeDef](#describebackupsrequestrequesttypedef)
-  - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
-  - [DescribeEventsRequestRequestTypeDef](#describeeventsrequestrequesttypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeNodeAssociationStatusRequestRequestTypeDef](#describenodeassociationstatusrequestrequesttypedef)
-  - [DescribeNodeAssociationStatusResponseTypeDef](#describenodeassociationstatusresponsetypedef)
-  - [DescribeServersRequestRequestTypeDef](#describeserversrequestrequesttypedef)
-  - [DescribeServersResponseTypeDef](#describeserversresponsetypedef)
-  - [DisassociateNodeRequestRequestTypeDef](#disassociatenoderequestrequesttypedef)
-  - [DisassociateNodeResponseTypeDef](#disassociatenoderesponsetypedef)
-  - [EngineAttributeTypeDef](#engineattributetypedef)
-  - [ExportServerEngineAttributeRequestRequestTypeDef](#exportserverengineattributerequestrequesttypedef)
-  - [ExportServerEngineAttributeResponseTypeDef](#exportserverengineattributeresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreServerRequestRequestTypeDef](#restoreserverrequestrequesttypedef)
-  - [RestoreServerResponseTypeDef](#restoreserverresponsetypedef)
-  - [ServerEventTypeDef](#servereventtypedef)
-  - [ServerTypeDef](#servertypedef)
-  - [StartMaintenanceRequestRequestTypeDef](#startmaintenancerequestrequesttypedef)
-  - [StartMaintenanceResponseTypeDef](#startmaintenanceresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateServerEngineAttributesRequestRequestTypeDef](#updateserverengineattributesrequestrequesttypedef)
-  - [UpdateServerEngineAttributesResponseTypeDef](#updateserverengineattributesresponsetypedef)
-  - [UpdateServerRequestRequestTypeDef](#updateserverrequestrequesttypedef)
-  - [UpdateServerResponseTypeDef](#updateserverresponsetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accountattributetypedef"></a>
+    Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+    type annotations stubs module [mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 ## AccountAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef
+
+def get_value() -> AccountAttributeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Maximum`: `int`
-- `Used`: `int`
-
-<a id="associatenoderequestrequesttypedef"></a>
+```python title="Definition"
+class AccountAttributeTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Maximum: NotRequired[int],
+    Used: NotRequired[int],
+```
 
 ## AssociateNodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import AssociateNodeRequestRequestTypeDef
+
+def get_value() -> AssociateNodeRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+        "NodeName": ...,
+        "EngineAttributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateNodeRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    NodeName: str,
+    EngineAttributes: Sequence[EngineAttributeTypeDef],  # (1)
+```
 
-- `ServerName`: `str`
-- `NodeName`: `str`
-- `EngineAttributes`:
-  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-
-<a id="associatenoderesponsetypedef"></a>
-
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
 ## AssociateNodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import AssociateNodeResponseTypeDef
+
+def get_value() -> AssociateNodeResponseTypeDef:
+    return {
+        "NodeAssociationStatusToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateNodeResponseTypeDef(TypedDict):
+    NodeAssociationStatusToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NodeAssociationStatusToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="backuptypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BackupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import BackupTypeDef
+
+def get_value() -> BackupTypeDef:
+    return {
+        "BackupArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackupTypeDef(TypedDict):
+    BackupArn: NotRequired[str],
+    BackupId: NotRequired[str],
+    BackupType: NotRequired[BackupTypeType],  # (1)
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    Engine: NotRequired[str],
+    EngineModel: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    InstanceProfileArn: NotRequired[str],
+    InstanceType: NotRequired[str],
+    KeyPair: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    S3DataSize: NotRequired[int],
+    S3DataUrl: NotRequired[str],
+    S3LogUrl: NotRequired[str],
+    SecurityGroupIds: NotRequired[List[str]],
+    ServerName: NotRequired[str],
+    ServiceRoleArn: NotRequired[str],
+    Status: NotRequired[BackupStatusType],  # (2)
+    StatusDescription: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    ToolsVersion: NotRequired[str],
+    UserArn: NotRequired[str],
+```
 
-- `BackupArn`: `str`
-- `BackupId`: `str`
-- `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
-- `CreatedAt`: `datetime`
-- `Description`: `str`
-- `Engine`: `str`
-- `EngineModel`: `str`
-- `EngineVersion`: `str`
-- `InstanceProfileArn`: `str`
-- `InstanceType`: `str`
-- `KeyPair`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `S3DataSize`: `int`
-- `S3DataUrl`: `str`
-- `S3LogUrl`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `ServerName`: `str`
-- `ServiceRoleArn`: `str`
-- `Status`: [BackupStatusType](./literals.md#backupstatustype)
-- `StatusDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `ToolsVersion`: `str`
-- `UserArn`: `str`
-
-<a id="createbackuprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BackupTypeType](./literals.md#backuptypetype) 
+2. See [:material-code-brackets: BackupStatusType](./literals.md#backupstatustype) 
 ## CreateBackupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import CreateBackupRequestRequestTypeDef
+
+def get_value() -> CreateBackupRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ServerName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createbackupresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateBackupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import CreateBackupResponseTypeDef
+
+def get_value() -> CreateBackupResponseTypeDef:
+    return {
+        "Backup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupResponseTypeDef(TypedDict):
+    Backup: BackupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createserverrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupTypeDef](./type_defs.md#backuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import CreateServerRequestRequestTypeDef
+
+def get_value() -> CreateServerRequestRequestTypeDef:
+    return {
+        "Engine": ...,
+        "ServerName": ...,
+        "InstanceProfileArn": ...,
+        "InstanceType": ...,
+        "ServiceRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServerRequestRequestTypeDef(TypedDict):
+    Engine: str,
+    ServerName: str,
+    InstanceProfileArn: str,
+    InstanceType: str,
+    ServiceRoleArn: str,
+    AssociatePublicIpAddress: NotRequired[bool],
+    CustomDomain: NotRequired[str],
+    CustomCertificate: NotRequired[str],
+    CustomPrivateKey: NotRequired[str],
+    DisableAutomatedBackup: NotRequired[bool],
+    EngineModel: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    EngineAttributes: NotRequired[Sequence[EngineAttributeTypeDef]],  # (1)
+    BackupRetentionCount: NotRequired[int],
+    KeyPair: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    SubnetIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    BackupId: NotRequired[str],
+```
 
-- `Engine`: `str`
-- `ServerName`: `str`
-- `InstanceProfileArn`: `str`
-- `InstanceType`: `str`
-- `ServiceRoleArn`: `str`
-
-Optional fields:
-
-- `AssociatePublicIpAddress`: `bool`
-- `CustomDomain`: `str`
-- `CustomCertificate`: `str`
-- `CustomPrivateKey`: `str`
-- `DisableAutomatedBackup`: `bool`
-- `EngineModel`: `str`
-- `EngineVersion`: `str`
-- `EngineAttributes`:
-  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-- `BackupRetentionCount`: `int`
-- `KeyPair`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `PreferredBackupWindow`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `SubnetIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `BackupId`: `str`
-
-<a id="createserverresponsetypedef"></a>
-
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateServerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import CreateServerResponseTypeDef
+
+def get_value() -> CreateServerResponseTypeDef:
+    return {
+        "Server": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServerResponseTypeDef(TypedDict):
+    Server: ServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebackuprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBackupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DeleteBackupRequestRequestTypeDef
+
+def get_value() -> DeleteBackupRequestRequestTypeDef:
+    return {
+        "BackupId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupId`: `str`
-
-<a id="deleteserverrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBackupRequestRequestTypeDef(TypedDict):
+    BackupId: str,
+```
 
 ## DeleteServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DeleteServerRequestRequestTypeDef
+
+def get_value() -> DeleteServerRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerName`: `str`
-
-<a id="describeaccountattributesresponsetypedef"></a>
+```python title="Definition"
+class DeleteServerRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+```
 
 ## DescribeAccountAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeAccountAttributesResponseTypeDef
+
+def get_value() -> DescribeAccountAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountAttributesResponseTypeDef(TypedDict):
+    Attributes: List[AccountAttributeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Attributes`:
-  `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccountAttributeTypeDef](./type_defs.md#accountattributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBackupsRequestDescribeBackupsPaginateTypeDef
 
-<a id="describebackupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworkscm.type_defs import DescribeBackupsRequestDescribeBackupsPaginateTypeDef
 
+def get_value() -> DescribeBackupsRequestDescribeBackupsPaginateTypeDef:
+    return {
+        "BackupId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBackupsRequestDescribeBackupsPaginateTypeDef(TypedDict):
+    BackupId: NotRequired[str],
+    ServerName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBackupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeBackupsRequestRequestTypeDef
+
+def get_value() -> DescribeBackupsRequestRequestTypeDef:
+    return {
+        "BackupId": ...,
+    }
 ```
 
-Optional fields:
-
-- `BackupId`: `str`
-- `ServerName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describebackupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeBackupsRequestRequestTypeDef(TypedDict):
+    BackupId: NotRequired[str],
+    ServerName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeBackupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeBackupsResponseTypeDef
+
+def get_value() -> DescribeBackupsResponseTypeDef:
+    return {
+        "Backups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBackupsResponseTypeDef(TypedDict):
+    Backups: List[BackupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Backups`: `List`\[[BackupTypeDef](./type_defs.md#backuptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BackupTypeDef](./type_defs.md#backuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventsRequestDescribeEventsPaginateTypeDef
 
-<a id="describeeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworkscm.type_defs import DescribeEventsRequestDescribeEventsPaginateTypeDef
 
+def get_value() -> DescribeEventsRequestDescribeEventsPaginateTypeDef:
+    return {
+        "ServerName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsRequestDescribeEventsPaginateTypeDef(TypedDict):
+    ServerName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeEventsRequestRequestTypeDef
+
+def get_value() -> DescribeEventsRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeeventsresponsetypedef"></a>
+```python title="Definition"
+class DescribeEventsRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeEventsResponseTypeDef
+
+def get_value() -> DescribeEventsResponseTypeDef:
+    return {
+        "ServerEvents": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventsResponseTypeDef(TypedDict):
+    ServerEvents: List[ServerEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServerEvents`:
-  `List`\[[ServerEventTypeDef](./type_defs.md#servereventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServerEventTypeDef](./type_defs.md#servereventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNodeAssociationStatusRequestNodeAssociatedWaitTypeDef
 
-<a id="describenodeassociationstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusRequestNodeAssociatedWaitTypeDef
 
+def get_value() -> DescribeNodeAssociationStatusRequestNodeAssociatedWaitTypeDef:
+    return {
+        "NodeAssociationStatusToken": ...,
+        "ServerName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNodeAssociationStatusRequestNodeAssociatedWaitTypeDef(TypedDict):
+    NodeAssociationStatusToken: str,
+    ServerName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeNodeAssociationStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusRequestRequestTypeDef
+
+def get_value() -> DescribeNodeAssociationStatusRequestRequestTypeDef:
+    return {
+        "NodeAssociationStatusToken": ...,
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
-
-- `NodeAssociationStatusToken`: `str`
-- `ServerName`: `str`
-
-<a id="describenodeassociationstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeNodeAssociationStatusRequestRequestTypeDef(TypedDict):
+    NodeAssociationStatusToken: str,
+    ServerName: str,
+```
 
 ## DescribeNodeAssociationStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusResponseTypeDef
+
+def get_value() -> DescribeNodeAssociationStatusResponseTypeDef:
+    return {
+        "NodeAssociationStatus": ...,
+        "EngineAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNodeAssociationStatusResponseTypeDef(TypedDict):
+    NodeAssociationStatus: NodeAssociationStatusType,  # (1)
+    EngineAttributes: List[EngineAttributeTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `NodeAssociationStatus`:
-  [NodeAssociationStatusType](./literals.md#nodeassociationstatustype)
-- `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: NodeAssociationStatusType](./literals.md#nodeassociationstatustype) 
+2. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeServersRequestDescribeServersPaginateTypeDef
 
-<a id="describeserversrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworkscm.type_defs import DescribeServersRequestDescribeServersPaginateTypeDef
 
+def get_value() -> DescribeServersRequestDescribeServersPaginateTypeDef:
+    return {
+        "ServerName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServersRequestDescribeServersPaginateTypeDef(TypedDict):
+    ServerName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeServersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeServersRequestRequestTypeDef
+
+def get_value() -> DescribeServersRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ServerName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeserversresponsetypedef"></a>
+```python title="Definition"
+class DescribeServersRequestRequestTypeDef(TypedDict):
+    ServerName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeServersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DescribeServersResponseTypeDef
+
+def get_value() -> DescribeServersResponseTypeDef:
+    return {
+        "Servers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServersResponseTypeDef(TypedDict):
+    Servers: List[ServerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Servers`: `List`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatenoderequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateNodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DisassociateNodeRequestRequestTypeDef
+
+def get_value() -> DisassociateNodeRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+        "NodeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateNodeRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    NodeName: str,
+    EngineAttributes: NotRequired[Sequence[EngineAttributeTypeDef]],  # (1)
+```
 
-- `ServerName`: `str`
-- `NodeName`: `str`
-
-Optional fields:
-
-- `EngineAttributes`:
-  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-
-<a id="disassociatenoderesponsetypedef"></a>
-
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
 ## DisassociateNodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import DisassociateNodeResponseTypeDef
+
+def get_value() -> DisassociateNodeResponseTypeDef:
+    return {
+        "NodeAssociationStatusToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateNodeResponseTypeDef(TypedDict):
+    NodeAssociationStatusToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NodeAssociationStatusToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="engineattributetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EngineAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import EngineAttributeTypeDef
+
+def get_value() -> EngineAttributeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="exportserverengineattributerequestrequesttypedef"></a>
+```python title="Definition"
+class EngineAttributeTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## ExportServerEngineAttributeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ExportServerEngineAttributeRequestRequestTypeDef
+
+def get_value() -> ExportServerEngineAttributeRequestRequestTypeDef:
+    return {
+        "ExportAttributeName": ...,
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportServerEngineAttributeRequestRequestTypeDef(TypedDict):
+    ExportAttributeName: str,
+    ServerName: str,
+    InputAttributes: NotRequired[Sequence[EngineAttributeTypeDef]],  # (1)
+```
 
-- `ExportAttributeName`: `str`
-- `ServerName`: `str`
-
-Optional fields:
-
-- `InputAttributes`:
-  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-
-<a id="exportserverengineattributeresponsetypedef"></a>
-
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
 ## ExportServerEngineAttributeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ExportServerEngineAttributeResponseTypeDef
+
+def get_value() -> ExportServerEngineAttributeResponseTypeDef:
+    return {
+        "EngineAttribute": ...,
+        "ServerName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportServerEngineAttributeResponseTypeDef(TypedDict):
+    EngineAttribute: EngineAttributeTypeDef,  # (1)
+    ServerName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EngineAttribute`:
-  [EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)
-- `ServerName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoreserverrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import RestoreServerRequestRequestTypeDef
+
+def get_value() -> RestoreServerRequestRequestTypeDef:
+    return {
+        "BackupId": ...,
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupId`: `str`
-- `ServerName`: `str`
-
-Optional fields:
-
-- `InstanceType`: `str`
-- `KeyPair`: `str`
-
-<a id="restoreserverresponsetypedef"></a>
+```python title="Definition"
+class RestoreServerRequestRequestTypeDef(TypedDict):
+    BackupId: str,
+    ServerName: str,
+    InstanceType: NotRequired[str],
+    KeyPair: NotRequired[str],
+```
 
 ## RestoreServerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import RestoreServerResponseTypeDef
+
+def get_value() -> RestoreServerResponseTypeDef:
+    return {
+        "Server": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreServerResponseTypeDef(TypedDict):
+    Server: ServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="servereventtypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServerEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ServerEventTypeDef
+
+def get_value() -> ServerEventTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreatedAt`: `datetime`
-- `ServerName`: `str`
-- `Message`: `str`
-- `LogUrl`: `str`
-
-<a id="servertypedef"></a>
+```python title="Definition"
+class ServerEventTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    ServerName: NotRequired[str],
+    Message: NotRequired[str],
+    LogUrl: NotRequired[str],
+```
 
 ## ServerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import ServerTypeDef
+
+def get_value() -> ServerTypeDef:
+    return {
+        "AssociatePublicIpAddress": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerTypeDef(TypedDict):
+    AssociatePublicIpAddress: NotRequired[bool],
+    BackupRetentionCount: NotRequired[int],
+    ServerName: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    CloudFormationStackArn: NotRequired[str],
+    CustomDomain: NotRequired[str],
+    DisableAutomatedBackup: NotRequired[bool],
+    Endpoint: NotRequired[str],
+    Engine: NotRequired[str],
+    EngineModel: NotRequired[str],
+    EngineAttributes: NotRequired[List[EngineAttributeTypeDef]],  # (1)
+    EngineVersion: NotRequired[str],
+    InstanceProfileArn: NotRequired[str],
+    InstanceType: NotRequired[str],
+    KeyPair: NotRequired[str],
+    MaintenanceStatus: NotRequired[MaintenanceStatusType],  # (2)
+    PreferredMaintenanceWindow: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    SecurityGroupIds: NotRequired[List[str]],
+    ServiceRoleArn: NotRequired[str],
+    Status: NotRequired[ServerStatusType],  # (3)
+    StatusReason: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    ServerArn: NotRequired[str],
+```
 
-- `AssociatePublicIpAddress`: `bool`
-- `BackupRetentionCount`: `int`
-- `ServerName`: `str`
-- `CreatedAt`: `datetime`
-- `CloudFormationStackArn`: `str`
-- `CustomDomain`: `str`
-- `DisableAutomatedBackup`: `bool`
-- `Endpoint`: `str`
-- `Engine`: `str`
-- `EngineModel`: `str`
-- `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-- `EngineVersion`: `str`
-- `InstanceProfileArn`: `str`
-- `InstanceType`: `str`
-- `KeyPair`: `str`
-- `MaintenanceStatus`:
-  [MaintenanceStatusType](./literals.md#maintenancestatustype)
-- `PreferredMaintenanceWindow`: `str`
-- `PreferredBackupWindow`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `ServiceRoleArn`: `str`
-- `Status`: [ServerStatusType](./literals.md#serverstatustype)
-- `StatusReason`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `ServerArn`: `str`
-
-<a id="startmaintenancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
+2. See [:material-code-brackets: MaintenanceStatusType](./literals.md#maintenancestatustype) 
+3. See [:material-code-brackets: ServerStatusType](./literals.md#serverstatustype) 
 ## StartMaintenanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import StartMaintenanceRequestRequestTypeDef
+
+def get_value() -> StartMaintenanceRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMaintenanceRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    EngineAttributes: NotRequired[Sequence[EngineAttributeTypeDef]],  # (1)
+```
 
-- `ServerName`: `str`
-
-Optional fields:
-
-- `EngineAttributes`:
-  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
-
-<a id="startmaintenanceresponsetypedef"></a>
-
+1. See [:material-code-braces: EngineAttributeTypeDef](./type_defs.md#engineattributetypedef) 
 ## StartMaintenanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import StartMaintenanceResponseTypeDef
+
+def get_value() -> StartMaintenanceResponseTypeDef:
+    return {
+        "Server": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMaintenanceResponseTypeDef(TypedDict):
+    Server: ServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateserverengineattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateServerEngineAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import UpdateServerEngineAttributesRequestRequestTypeDef
+
+def get_value() -> UpdateServerEngineAttributesRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerName`: `str`
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `AttributeValue`: `str`
-
-<a id="updateserverengineattributesresponsetypedef"></a>
+```python title="Definition"
+class UpdateServerEngineAttributesRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    AttributeName: str,
+    AttributeValue: NotRequired[str],
+```
 
 ## UpdateServerEngineAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import UpdateServerEngineAttributesResponseTypeDef
+
+def get_value() -> UpdateServerEngineAttributesResponseTypeDef:
+    return {
+        "Server": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServerEngineAttributesResponseTypeDef(TypedDict):
+    Server: ServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateserverrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import UpdateServerRequestRequestTypeDef
+
+def get_value() -> UpdateServerRequestRequestTypeDef:
+    return {
+        "ServerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerName`: `str`
-
-Optional fields:
-
-- `DisableAutomatedBackup`: `bool`
-- `BackupRetentionCount`: `int`
-- `PreferredMaintenanceWindow`: `str`
-- `PreferredBackupWindow`: `str`
-
-<a id="updateserverresponsetypedef"></a>
+```python title="Definition"
+class UpdateServerRequestRequestTypeDef(TypedDict):
+    ServerName: str,
+    DisableAutomatedBackup: NotRequired[bool],
+    BackupRetentionCount: NotRequired[int],
+    PreferredMaintenanceWindow: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+```
 
 ## UpdateServerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import UpdateServerResponseTypeDef
+
+def get_value() -> UpdateServerResponseTypeDef:
+    return {
+        "Server": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServerResponseTypeDef(TypedDict):
+    Server: ServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworkscm.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

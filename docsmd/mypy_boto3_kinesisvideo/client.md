@@ -1,51 +1,18 @@
-<a id="kinesisvideoclient-for-boto3-kinesisvideo-module"></a>
-
-# KinesisVideoClient for boto3 KinesisVideo module
+# KinesisVideoClient
 
 > [Index](../README.md) > [KinesisVideo](./README.md) > KinesisVideoClient
 
-Auto-generated documentation for
-[KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
-type annotations stubs module
-[mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
+!!! note ""
 
-- [KinesisVideoClient for boto3 KinesisVideo module](#kinesisvideoclient-for-boto3-kinesisvideo-module)
-  - [KinesisVideoClient](#kinesisvideoclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_signaling_channel](#create_signaling_channel)
-    - [create_stream](#create_stream)
-    - [delete_signaling_channel](#delete_signaling_channel)
-    - [delete_stream](#delete_stream)
-    - [describe_signaling_channel](#describe_signaling_channel)
-    - [describe_stream](#describe_stream)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_data_endpoint](#get_data_endpoint)
-    - [get_signaling_channel_endpoint](#get_signaling_channel_endpoint)
-    - [list_signaling_channels](#list_signaling_channels)
-    - [list_streams](#list_streams)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_tags_for_stream](#list_tags_for_stream)
-    - [tag_resource](#tag_resource)
-    - [tag_stream](#tag_stream)
-    - [untag_resource](#untag_resource)
-    - [untag_stream](#untag_stream)
-    - [update_data_retention](#update_data_retention)
-    - [update_signaling_channel](#update_signaling_channel)
-    - [update_stream](#update_stream)
-    - [get_paginator](#get_paginator)
-
-<a id="kinesisvideoclient"></a>
+    Auto-generated documentation for [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
+    type annotations stubs module [mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 ## KinesisVideoClient
 
-Type annotations for `boto3.client("kinesisvideo")`
+Type annotations and code completion for `#!python boto3.client("kinesisvideo")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kinesisvideo.client import KinesisVideoClient
 
@@ -53,548 +20,687 @@ def get_kinesisvideo_client() -> KinesisVideoClient:
     return Session().client("kinesisvideo")
 ```
 
-Boto3 documentation:
-[KinesisVideo.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kinesisvideo").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kinesisvideo")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AccountChannelLimitExceededException,
+    client.AccountStreamLimitExceededException,
+    client.ClientError,
+    client.ClientLimitExceededException,
+    client.DeviceStreamLimitExceededException,
+    client.InvalidArgumentException,
+    client.InvalidDeviceException,
+    client.InvalidResourceFormatException,
+    client.NotAuthorizedException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.TagsPerResourceExceededLimitException,
+    client.VersionMismatchException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kinesisvideo.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AccountChannelLimitExceededException`
-- `Exceptions.AccountStreamLimitExceededException`
-- `Exceptions.ClientError`
-- `Exceptions.ClientLimitExceededException`
-- `Exceptions.DeviceStreamLimitExceededException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.InvalidDeviceException`
-- `Exceptions.InvalidResourceFormatException`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TagsPerResourceExceededLimitException`
-- `Exceptions.VersionMismatchException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-KinesisVideoClient exceptions.
-
-Type annotations for `boto3.client("kinesisvideo").exceptions` method.
-
-Boto3 documentation:
-[KinesisVideo.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("kinesisvideo").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.can_paginate)
 
-Boto3 documentation:
-[KinesisVideo.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_signaling\_channel"></a>
-
-### create_signaling_channel
+### create\_signaling\_channel
 
 Creates a signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").create_signaling_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").create_signaling_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel)
 
-Boto3 documentation:
-[KinesisVideo.Client.create_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel)
+```python title="Method definition"
+def create_signaling_channel(
+    self,
+    *,
+    ChannelName: str,
+    ChannelType: ChannelTypeType = ...,  # (1)
+    SingleMasterConfiguration: SingleMasterConfigurationTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateSignalingChannelOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateSignalingChannelInputRequestTypeDef](./type_defs.md#createsignalingchannelinputrequesttypedef).
+1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+2. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `ChannelType`: `Literal['SINGLE_MASTER']` (see
-  [ChannelTypeType](./literals.md#channeltypetype))
-- `SingleMasterConfiguration`:
-  [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSignalingChannelInputRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns
-[CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef).
+parent.create_signaling_channel(**kwargs)
+```
 
-<a id="create\_stream"></a>
+1. See [:material-code-braces: CreateSignalingChannelInputRequestTypeDef](./type_defs.md#createsignalingchannelinputrequesttypedef) 
 
-### create_stream
+### create\_stream
 
 Creates a new Kinesis video stream.
 
-Type annotations for `boto3.client("kinesisvideo").create_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").create_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream)
+```python title="Method definition"
+def create_stream(
+    self,
+    *,
+    StreamName: str,
+    DeviceName: str = ...,
+    MediaType: str = ...,
+    KmsKeyId: str = ...,
+    DataRetentionInHours: int = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateStreamOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef).
+1. See [:material-code-braces: CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `DeviceName`: `str`
-- `MediaType`: `str`
-- `KmsKeyId`: `str`
-- `DataRetentionInHours`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns [CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef).
+parent.create_stream(**kwargs)
+```
 
-<a id="delete\_signaling\_channel"></a>
+1. See [:material-code-braces: CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef) 
 
-### delete_signaling_channel
+### delete\_signaling\_channel
 
 Deletes a specified signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").delete_signaling_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").delete_signaling_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel)
 
-Boto3 documentation:
-[KinesisVideo.Client.delete_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel)
+```python title="Method definition"
+def delete_signaling_channel(
+    self,
+    *,
+    ChannelARN: str,
+    CurrentVersion: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSignalingChannelInputRequestTypeDef](./type_defs.md#deletesignalingchannelinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelARN`: `str` *(required)*
-- `CurrentVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSignalingChannelInputRequestTypeDef = {  # (1)
+    "ChannelARN": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_signaling_channel(**kwargs)
+```
 
-<a id="delete\_stream"></a>
+1. See [:material-code-braces: DeleteSignalingChannelInputRequestTypeDef](./type_defs.md#deletesignalingchannelinputrequesttypedef) 
 
-### delete_stream
+### delete\_stream
 
 Deletes a Kinesis video stream and the data contained in the stream.
 
-Type annotations for `boto3.client("kinesisvideo").delete_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").delete_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream)
+```python title="Method definition"
+def delete_stream(
+    self,
+    *,
+    StreamARN: str,
+    CurrentVersion: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamARN`: `str` *(required)*
-- `CurrentVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamInputRequestTypeDef = {  # (1)
+    "StreamARN": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_stream(**kwargs)
+```
 
-<a id="describe\_signaling\_channel"></a>
+1. See [:material-code-braces: DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef) 
 
-### describe_signaling_channel
+### describe\_signaling\_channel
 
 Returns the most current information about the signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").describe_signaling_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_signaling_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel)
 
-Boto3 documentation:
-[KinesisVideo.Client.describe_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel)
+```python title="Method definition"
+def describe_signaling_channel(
+    self,
+    *,
+    ChannelName: str = ...,
+    ChannelARN: str = ...,
+) -> DescribeSignalingChannelOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSignalingChannelInputRequestTypeDef](./type_defs.md#describesignalingchannelinputrequesttypedef).
+1. See [:material-code-braces: DescribeSignalingChannelOutputTypeDef](./type_defs.md#describesignalingchanneloutputtypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str`
-- `ChannelARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSignalingChannelInputRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns
-[DescribeSignalingChannelOutputTypeDef](./type_defs.md#describesignalingchanneloutputtypedef).
+parent.describe_signaling_channel(**kwargs)
+```
 
-<a id="describe\_stream"></a>
+1. See [:material-code-braces: DescribeSignalingChannelInputRequestTypeDef](./type_defs.md#describesignalingchannelinputrequesttypedef) 
 
-### describe_stream
+### describe\_stream
 
 Returns the most current information about the specified stream.
 
-Type annotations for `boto3.client("kinesisvideo").describe_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream)
+```python title="Method definition"
+def describe_stream(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> DescribeStreamOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef).
+1. See [:material-code-braces: DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
+parent.describe_stream(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("kinesisvideo").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.generate_presigned_url)
 
-Boto3 documentation:
-[KinesisVideo.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_data\_endpoint"></a>
-
-### get_data_endpoint
+### get\_data\_endpoint
 
 Gets an endpoint for a specified stream for either reading or writing.
 
-Type annotations for `boto3.client("kinesisvideo").get_data_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").get_data_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint)
 
-Boto3 documentation:
-[KinesisVideo.Client.get_data_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint)
+```python title="Method definition"
+def get_data_endpoint(
+    self,
+    *,
+    APIName: APINameType,  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> GetDataEndpointOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetDataEndpointInputRequestTypeDef](./type_defs.md#getdataendpointinputrequesttypedef).
+1. See [:material-code-brackets: APINameType](./literals.md#apinametype) 
+2. See [:material-code-braces: GetDataEndpointOutputTypeDef](./type_defs.md#getdataendpointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `APIName`: [APINameType](./literals.md#apinametype) *(required)*
-- `StreamName`: `str`
-- `StreamARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDataEndpointInputRequestTypeDef = {  # (1)
+    "APIName": ...,
+}
 
-Returns
-[GetDataEndpointOutputTypeDef](./type_defs.md#getdataendpointoutputtypedef).
+parent.get_data_endpoint(**kwargs)
+```
 
-<a id="get\_signaling\_channel\_endpoint"></a>
+1. See [:material-code-braces: GetDataEndpointInputRequestTypeDef](./type_defs.md#getdataendpointinputrequesttypedef) 
 
-### get_signaling_channel_endpoint
+### get\_signaling\_channel\_endpoint
 
 Provides an endpoint for the specified signaling channel to send and receive
 messages.
 
-Type annotations for
-`boto3.client("kinesisvideo").get_signaling_channel_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").get_signaling_channel_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint)
 
-Boto3 documentation:
-[KinesisVideo.Client.get_signaling_channel_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint)
+```python title="Method definition"
+def get_signaling_channel_endpoint(
+    self,
+    *,
+    ChannelARN: str,
+    SingleMasterChannelEndpointConfiguration: SingleMasterChannelEndpointConfigurationTypeDef = ...,  # (1)
+) -> GetSignalingChannelEndpointOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSignalingChannelEndpointInputRequestTypeDef](./type_defs.md#getsignalingchannelendpointinputrequesttypedef).
+1. See [:material-code-braces: SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef) 
+2. See [:material-code-braces: GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ChannelARN`: `str` *(required)*
-- `SingleMasterChannelEndpointConfiguration`:
-  [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSignalingChannelEndpointInputRequestTypeDef = {  # (1)
+    "ChannelARN": ...,
+}
 
-Returns
-[GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef).
+parent.get_signaling_channel_endpoint(**kwargs)
+```
 
-<a id="list\_signaling\_channels"></a>
+1. See [:material-code-braces: GetSignalingChannelEndpointInputRequestTypeDef](./type_defs.md#getsignalingchannelendpointinputrequesttypedef) 
 
-### list_signaling_channels
+### list\_signaling\_channels
 
 Returns an array of `ChannelInfo` objects.
 
-Type annotations for `boto3.client("kinesisvideo").list_signaling_channels`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").list_signaling_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels)
 
-Boto3 documentation:
-[KinesisVideo.Client.list_signaling_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels)
+```python title="Method definition"
+def list_signaling_channels(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChannelNameCondition: ChannelNameConditionTypeDef = ...,  # (1)
+) -> ListSignalingChannelsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSignalingChannelsInputRequestTypeDef](./type_defs.md#listsignalingchannelsinputrequesttypedef).
+1. See [:material-code-braces: ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef) 
+2. See [:material-code-braces: ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChannelNameCondition`:
-  [ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef)
+```python title="Usage example with kwargs"
+kwargs: ListSignalingChannelsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef).
+parent.list_signaling_channels(**kwargs)
+```
 
-<a id="list\_streams"></a>
+1. See [:material-code-braces: ListSignalingChannelsInputRequestTypeDef](./type_defs.md#listsignalingchannelsinputrequesttypedef) 
 
-### list_streams
+### list\_streams
 
 Returns an array of `StreamInfo` objects.
 
-Type annotations for `boto3.client("kinesisvideo").list_streams` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").list_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams)
 
-Boto3 documentation:
-[KinesisVideo.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams)
+```python title="Method definition"
+def list_streams(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    StreamNameCondition: StreamNameConditionTypeDef = ...,  # (1)
+) -> ListStreamsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef).
+1. See [:material-code-braces: StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef) 
+2. See [:material-code-braces: ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StreamNameCondition`:
-  [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
+```python title="Usage example with kwargs"
+kwargs: ListStreamsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
+parent.list_streams(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags associated with the specified signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[KinesisVideo.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    NextToken: str = ...,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_tags\_for\_stream"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_tags_for_stream
+### list\_tags\_for\_stream
 
 Returns a list of tags associated with the specified stream.
 
-Type annotations for `boto3.client("kinesisvideo").list_tags_for_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").list_tags_for_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream)
+```python title="Method definition"
+def list_tags_for_stream(
+    self,
+    *,
+    NextToken: str = ...,
+    StreamARN: str = ...,
+    StreamName: str = ...,
+) -> ListTagsForStreamOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef).
+1. See [:material-code-braces: ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `StreamARN`: `str`
-- `StreamName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForStreamInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
+parent.list_tags_for_stream(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to a signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource)
 
-Boto3 documentation:
-[KinesisVideo.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="tag\_stream"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### tag_stream
+### tag\_stream
 
 Adds one or more tags to a stream.
 
-Type annotations for `boto3.client("kinesisvideo").tag_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").tag_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.tag_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream)
+```python title="Method definition"
+def tag_stream(
+    self,
+    *,
+    Tags: Mapping[str, str],
+    StreamARN: str = ...,
+    StreamName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagStreamInputRequestTypeDef](./type_defs.md#tagstreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
-- `StreamARN`: `str`
-- `StreamName`: `str`
+```python title="Usage example with kwargs"
+kwargs: TagStreamInputRequestTypeDef = {  # (1)
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_stream(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagStreamInputRequestTypeDef](./type_defs.md#tagstreaminputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource)
 
-Boto3 documentation:
-[KinesisVideo.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeyList: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeyList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeyList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="untag\_stream"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### untag_stream
+### untag\_stream
 
 Removes one or more tags from a stream.
 
-Type annotations for `boto3.client("kinesisvideo").untag_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").untag_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.untag_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream)
+```python title="Method definition"
+def untag_stream(
+    self,
+    *,
+    TagKeyList: Sequence[str],
+    StreamARN: str = ...,
+    StreamName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagStreamInputRequestTypeDef](./type_defs.md#untagstreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TagKeyList`: `Sequence`\[`str`\] *(required)*
-- `StreamARN`: `str`
-- `StreamName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UntagStreamInputRequestTypeDef = {  # (1)
+    "TagKeyList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_stream(**kwargs)
+```
 
-<a id="update\_data\_retention"></a>
+1. See [:material-code-braces: UntagStreamInputRequestTypeDef](./type_defs.md#untagstreaminputrequesttypedef) 
 
-### update_data_retention
+### update\_data\_retention
 
 Increases or decreases the stream's data retention period by the value that you
 specify.
 
-Type annotations for `boto3.client("kinesisvideo").update_data_retention`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").update_data_retention` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention)
 
-Boto3 documentation:
-[KinesisVideo.Client.update_data_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention)
+```python title="Method definition"
+def update_data_retention(
+    self,
+    *,
+    CurrentVersion: str,
+    Operation: UpdateDataRetentionOperationType,  # (1)
+    DataRetentionChangeInHours: int,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataRetentionInputRequestTypeDef](./type_defs.md#updatedataretentioninputrequesttypedef).
+1. See [:material-code-brackets: UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype) 
 
-Keyword-only arguments:
 
-- `CurrentVersion`: `str` *(required)*
-- `Operation`:
-  [UpdateDataRetentionOperationType](./literals.md#updatedataretentionoperationtype)
-  *(required)*
-- `DataRetentionChangeInHours`: `int` *(required)*
-- `StreamName`: `str`
-- `StreamARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDataRetentionInputRequestTypeDef = {  # (1)
+    "CurrentVersion": ...,
+    "Operation": ...,
+    "DataRetentionChangeInHours": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_data_retention(**kwargs)
+```
 
-<a id="update\_signaling\_channel"></a>
+1. See [:material-code-braces: UpdateDataRetentionInputRequestTypeDef](./type_defs.md#updatedataretentioninputrequesttypedef) 
 
-### update_signaling_channel
+### update\_signaling\_channel
 
 Updates the existing signaling channel.
 
-Type annotations for `boto3.client("kinesisvideo").update_signaling_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").update_signaling_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel)
 
-Boto3 documentation:
-[KinesisVideo.Client.update_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel)
+```python title="Method definition"
+def update_signaling_channel(
+    self,
+    *,
+    ChannelARN: str,
+    CurrentVersion: str,
+    SingleMasterConfiguration: SingleMasterConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSignalingChannelInputRequestTypeDef](./type_defs.md#updatesignalingchannelinputrequesttypedef).
+1. See [:material-code-braces: SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `ChannelARN`: `str` *(required)*
-- `CurrentVersion`: `str` *(required)*
-- `SingleMasterConfiguration`:
-  [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSignalingChannelInputRequestTypeDef = {  # (1)
+    "ChannelARN": ...,
+    "CurrentVersion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_signaling_channel(**kwargs)
+```
 
-<a id="update\_stream"></a>
+1. See [:material-code-braces: UpdateSignalingChannelInputRequestTypeDef](./type_defs.md#updatesignalingchannelinputrequesttypedef) 
 
-### update_stream
+### update\_stream
 
 Updates stream metadata, such as the device name and media type.
 
-Type annotations for `boto3.client("kinesisvideo").update_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").update_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream)
 
-Boto3 documentation:
-[KinesisVideo.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream)
+```python title="Method definition"
+def update_stream(
+    self,
+    *,
+    CurrentVersion: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    DeviceName: str = ...,
+    MediaType: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateStreamInputRequestTypeDef](./type_defs.md#updatestreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `CurrentVersion`: `str` *(required)*
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `DeviceName`: `str`
-- `MediaType`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStreamInputRequestTypeDef = {  # (1)
+    "CurrentVersion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_stream(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStreamInputRequestTypeDef](./type_defs.md#updatestreaminputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("kinesisvideo").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").get_paginator` method with overloads.
 
-- `client.get_paginator("list_signaling_channels")` ->
-  [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
-- `client.get_paginator("list_streams")` ->
-  [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+- `client.get_paginator("list_signaling_channels")` -> [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
+- `client.get_paginator("list_streams")` -> [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+
+
+

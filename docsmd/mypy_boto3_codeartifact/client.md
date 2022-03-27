@@ -1,66 +1,18 @@
-<a id="codeartifactclient-for-boto3-codeartifact-module"></a>
-
-# CodeArtifactClient for boto3 CodeArtifact module
+# CodeArtifactClient
 
 > [Index](../README.md) > [CodeArtifact](./README.md) > CodeArtifactClient
 
-Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
-type annotations stubs module
-[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+!!! note ""
 
-- [CodeArtifactClient for boto3 CodeArtifact module](#codeartifactclient-for-boto3-codeartifact-module)
-  - [CodeArtifactClient](#codeartifactclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_external_connection](#associate_external_connection)
-    - [can_paginate](#can_paginate)
-    - [copy_package_versions](#copy_package_versions)
-    - [create_domain](#create_domain)
-    - [create_repository](#create_repository)
-    - [delete_domain](#delete_domain)
-    - [delete_domain_permissions_policy](#delete_domain_permissions_policy)
-    - [delete_package_versions](#delete_package_versions)
-    - [delete_repository](#delete_repository)
-    - [delete_repository_permissions_policy](#delete_repository_permissions_policy)
-    - [describe_domain](#describe_domain)
-    - [describe_package_version](#describe_package_version)
-    - [describe_repository](#describe_repository)
-    - [disassociate_external_connection](#disassociate_external_connection)
-    - [dispose_package_versions](#dispose_package_versions)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_authorization_token](#get_authorization_token)
-    - [get_domain_permissions_policy](#get_domain_permissions_policy)
-    - [get_package_version_asset](#get_package_version_asset)
-    - [get_package_version_readme](#get_package_version_readme)
-    - [get_repository_endpoint](#get_repository_endpoint)
-    - [get_repository_permissions_policy](#get_repository_permissions_policy)
-    - [list_domains](#list_domains)
-    - [list_package_version_assets](#list_package_version_assets)
-    - [list_package_version_dependencies](#list_package_version_dependencies)
-    - [list_package_versions](#list_package_versions)
-    - [list_packages](#list_packages)
-    - [list_repositories](#list_repositories)
-    - [list_repositories_in_domain](#list_repositories_in_domain)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_domain_permissions_policy](#put_domain_permissions_policy)
-    - [put_repository_permissions_policy](#put_repository_permissions_policy)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_package_versions_status](#update_package_versions_status)
-    - [update_repository](#update_repository)
-    - [get_paginator](#get_paginator)
-
-<a id="codeartifactclient"></a>
+    Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+    type annotations stubs module [mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 ## CodeArtifactClient
 
-Type annotations for `boto3.client("codeartifact")`
+Type annotations and code completion for `#!python boto3.client("codeartifact")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codeartifact.client import CodeArtifactClient
 
@@ -68,1003 +20,1314 @@ def get_codeartifact_client() -> CodeArtifactClient:
     return Session().client("codeartifact")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codeartifact").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codeartifact")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codeartifact.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CodeArtifactClient exceptions.
-
-Type annotations for `boto3.client("codeartifact").exceptions` method.
-
-Boto3 documentation:
-[CodeArtifact.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_external\_connection"></a>
-
-### associate_external_connection
+### associate\_external\_connection
 
 Adds an existing external connection to a repository.
 
-Type annotations for
-`boto3.client("codeartifact").associate_external_connection` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").associate_external_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
 
-Boto3 documentation:
-[CodeArtifact.Client.associate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
+```python title="Method definition"
+def associate_external_connection(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    externalConnection: str,
+    domainOwner: str = ...,
+) -> AssociateExternalConnectionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateExternalConnectionRequestRequestTypeDef](./type_defs.md#associateexternalconnectionrequestrequesttypedef).
+1. See [:material-code-braces: AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `externalConnection`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateExternalConnectionRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "externalConnection": ...,
+}
 
-Returns
-[AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef).
+parent.associate_external_connection(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateExternalConnectionRequestRequestTypeDef](./type_defs.md#associateexternalconnectionrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codeartifact").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate)
 
-Boto3 documentation:
-[CodeArtifact.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="copy\_package\_versions"></a>
-
-### copy_package_versions
+### copy\_package\_versions
 
 Copies package versions from one repository to another repository in the same
 domain.
 
-Type annotations for `boto3.client("codeartifact").copy_package_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").copy_package_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
 
-Boto3 documentation:
-[CodeArtifact.Client.copy_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
+```python title="Method definition"
+def copy_package_versions(
+    self,
+    *,
+    domain: str,
+    sourceRepository: str,
+    destinationRepository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    versions: Sequence[str] = ...,
+    versionRevisions: Mapping[str, str] = ...,
+    allowOverwrite: bool = ...,
+    includeFromUpstream: bool = ...,
+) -> CopyPackageVersionsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyPackageVersionsRequestRequestTypeDef](./type_defs.md#copypackageversionsrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: CopyPackageVersionsResultTypeDef](./type_defs.md#copypackageversionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `sourceRepository`: `str` *(required)*
-- `destinationRepository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `versions`: `Sequence`\[`str`\]
-- `versionRevisions`: `Mapping`\[`str`, `str`\]
-- `allowOverwrite`: `bool`
-- `includeFromUpstream`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CopyPackageVersionsRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "sourceRepository": ...,
+    "destinationRepository": ...,
+    "format": ...,
+    "package": ...,
+}
 
-Returns
-[CopyPackageVersionsResultTypeDef](./type_defs.md#copypackageversionsresulttypedef).
+parent.copy_package_versions(**kwargs)
+```
 
-<a id="create\_domain"></a>
+1. See [:material-code-braces: CopyPackageVersionsRequestRequestTypeDef](./type_defs.md#copypackageversionsrequestrequesttypedef) 
 
-### create_domain
+### create\_domain
 
 Creates a domain.
 
-Type annotations for `boto3.client("codeartifact").create_domain` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").create_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
 
-Boto3 documentation:
-[CodeArtifact.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
+```python title="Method definition"
+def create_domain(
+    self,
+    *,
+    domain: str,
+    encryptionKey: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDomainResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `encryptionKey`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDomainRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
 
-Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
+parent.create_domain(**kwargs)
+```
 
-<a id="create\_repository"></a>
+1. See [:material-code-braces: CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef) 
 
-### create_repository
+### create\_repository
 
 Creates a repository.
 
-Type annotations for `boto3.client("codeartifact").create_repository` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").create_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
 
-Boto3 documentation:
-[CodeArtifact.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
+```python title="Method definition"
+def create_repository(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+    description: str = ...,
+    upstreams: Sequence[UpstreamRepositoryTypeDef] = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateRepositoryResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRepositoryRequestRequestTypeDef](./type_defs.md#createrepositoryrequestrequesttypedef).
+1. See [:material-code-braces: UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
-- `description`: `str`
-- `upstreams`:
-  `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRepositoryRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns
-[CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef).
+parent.create_repository(**kwargs)
+```
 
-<a id="delete\_domain"></a>
+1. See [:material-code-braces: CreateRepositoryRequestRequestTypeDef](./type_defs.md#createrepositoryrequestrequesttypedef) 
 
-### delete_domain
+### delete\_domain
 
 Deletes a domain.
 
-Type annotations for `boto3.client("codeartifact").delete_domain` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").delete_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
 
-Boto3 documentation:
-[CodeArtifact.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
+```python title="Method definition"
+def delete_domain(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+) -> DeleteDomainResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
 
-Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
+parent.delete_domain(**kwargs)
+```
 
-<a id="delete\_domain\_permissions\_policy"></a>
+1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
 
-### delete_domain_permissions_policy
+### delete\_domain\_permissions\_policy
 
 Deletes the resource policy set on a domain.
 
-Type annotations for
-`boto3.client("codeartifact").delete_domain_permissions_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").delete_domain_permissions_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
 
-Boto3 documentation:
-[CodeArtifact.Client.delete_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
+```python title="Method definition"
+def delete_domain_permissions_policy(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+    policyRevision: str = ...,
+) -> DeleteDomainPermissionsPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deletedomainpermissionspolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDomainPermissionsPolicyResultTypeDef](./type_defs.md#deletedomainpermissionspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
-- `policyRevision`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainPermissionsPolicyRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
 
-Returns
-[DeleteDomainPermissionsPolicyResultTypeDef](./type_defs.md#deletedomainpermissionspolicyresulttypedef).
+parent.delete_domain_permissions_policy(**kwargs)
+```
 
-<a id="delete\_package\_versions"></a>
+1. See [:material-code-braces: DeleteDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deletedomainpermissionspolicyrequestrequesttypedef) 
 
-### delete_package_versions
+### delete\_package\_versions
 
 Deletes one or more versions of a package.
 
-Type annotations for `boto3.client("codeartifact").delete_package_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").delete_package_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
 
-Boto3 documentation:
-[CodeArtifact.Client.delete_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
+```python title="Method definition"
+def delete_package_versions(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    versions: Sequence[str],
+    domainOwner: str = ...,
+    namespace: str = ...,
+    expectedStatus: PackageVersionStatusType = ...,  # (2)
+) -> DeletePackageVersionsResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DeletePackageVersionsRequestRequestTypeDef](./type_defs.md#deletepackageversionsrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+3. See [:material-code-braces: DeletePackageVersionsResultTypeDef](./type_defs.md#deletepackageversionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `versions`: `Sequence`\[`str`\] *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `expectedStatus`:
-  [PackageVersionStatusType](./literals.md#packageversionstatustype)
+```python title="Usage example with kwargs"
+kwargs: DeletePackageVersionsRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "versions": ...,
+}
 
-Returns
-[DeletePackageVersionsResultTypeDef](./type_defs.md#deletepackageversionsresulttypedef).
+parent.delete_package_versions(**kwargs)
+```
 
-<a id="delete\_repository"></a>
+1. See [:material-code-braces: DeletePackageVersionsRequestRequestTypeDef](./type_defs.md#deletepackageversionsrequestrequesttypedef) 
 
-### delete_repository
+### delete\_repository
 
 Deletes a repository.
 
-Type annotations for `boto3.client("codeartifact").delete_repository` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").delete_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
 
-Boto3 documentation:
-[CodeArtifact.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
+```python title="Method definition"
+def delete_repository(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+) -> DeleteRepositoryResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRepositoryResultTypeDef](./type_defs.md#deleterepositoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRepositoryRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns
-[DeleteRepositoryResultTypeDef](./type_defs.md#deleterepositoryresulttypedef).
+parent.delete_repository(**kwargs)
+```
 
-<a id="delete\_repository\_permissions\_policy"></a>
+1. See [:material-code-braces: DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef) 
 
-### delete_repository_permissions_policy
+### delete\_repository\_permissions\_policy
 
 Deletes the resource policy that is set on a repository.
 
-Type annotations for
-`boto3.client("codeartifact").delete_repository_permissions_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").delete_repository_permissions_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
 
-Boto3 documentation:
-[CodeArtifact.Client.delete_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
+```python title="Method definition"
+def delete_repository_permissions_policy(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+    policyRevision: str = ...,
+) -> DeleteRepositoryPermissionsPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypermissionspolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#deleterepositorypermissionspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
-- `policyRevision`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRepositoryPermissionsPolicyRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns
-[DeleteRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#deleterepositorypermissionspolicyresulttypedef).
+parent.delete_repository_permissions_policy(**kwargs)
+```
 
-<a id="describe\_domain"></a>
+1. See [:material-code-braces: DeleteRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypermissionspolicyrequestrequesttypedef) 
 
-### describe_domain
+### describe\_domain
 
 Returns a
-[DomainDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DomainDescription.html)\_
+[DomainDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DomainDescription.html)_
 object that contains information about the requested domain.
 
-Type annotations for `boto3.client("codeartifact").describe_domain` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").describe_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
 
-Boto3 documentation:
-[CodeArtifact.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
+```python title="Method definition"
+def describe_domain(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+) -> DescribeDomainResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainResultTypeDef](./type_defs.md#describedomainresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
 
-Returns
-[DescribeDomainResultTypeDef](./type_defs.md#describedomainresulttypedef).
+parent.describe_domain(**kwargs)
+```
 
-<a id="describe\_package\_version"></a>
+1. See [:material-code-braces: DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef) 
 
-### describe_package_version
+### describe\_package\_version
 
 Returns a
-[PackageVersionDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html)\_
+[PackageVersionDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html)_
 object that contains information about the requested package version.
 
-Type annotations for `boto3.client("codeartifact").describe_package_version`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").describe_package_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
 
-Boto3 documentation:
-[CodeArtifact.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
+```python title="Method definition"
+def describe_package_version(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+) -> DescribePackageVersionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribePackageVersionRequestRequestTypeDef](./type_defs.md#describepackageversionrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `packageVersion`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePackageVersionRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+}
 
-Returns
-[DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef).
+parent.describe_package_version(**kwargs)
+```
 
-<a id="describe\_repository"></a>
+1. See [:material-code-braces: DescribePackageVersionRequestRequestTypeDef](./type_defs.md#describepackageversionrequestrequesttypedef) 
 
-### describe_repository
+### describe\_repository
 
 Returns a `RepositoryDescription` object that contains detailed information
 about the requested repository.
 
-Type annotations for `boto3.client("codeartifact").describe_repository` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").describe_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
 
-Boto3 documentation:
-[CodeArtifact.Client.describe_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
+```python title="Method definition"
+def describe_repository(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+) -> DescribeRepositoryResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRepositoryRequestRequestTypeDef](./type_defs.md#describerepositoryrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRepositoryResultTypeDef](./type_defs.md#describerepositoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRepositoryRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns
-[DescribeRepositoryResultTypeDef](./type_defs.md#describerepositoryresulttypedef).
+parent.describe_repository(**kwargs)
+```
 
-<a id="disassociate\_external\_connection"></a>
+1. See [:material-code-braces: DescribeRepositoryRequestRequestTypeDef](./type_defs.md#describerepositoryrequestrequesttypedef) 
 
-### disassociate_external_connection
+### disassociate\_external\_connection
 
 Removes an existing external connection from a repository.
 
-Type annotations for
-`boto3.client("codeartifact").disassociate_external_connection` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").disassociate_external_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
 
-Boto3 documentation:
-[CodeArtifact.Client.disassociate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
+```python title="Method definition"
+def disassociate_external_connection(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    externalConnection: str,
+    domainOwner: str = ...,
+) -> DisassociateExternalConnectionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateExternalConnectionRequestRequestTypeDef](./type_defs.md#disassociateexternalconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateExternalConnectionResultTypeDef](./type_defs.md#disassociateexternalconnectionresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `externalConnection`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateExternalConnectionRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "externalConnection": ...,
+}
 
-Returns
-[DisassociateExternalConnectionResultTypeDef](./type_defs.md#disassociateexternalconnectionresulttypedef).
+parent.disassociate_external_connection(**kwargs)
+```
 
-<a id="dispose\_package\_versions"></a>
+1. See [:material-code-braces: DisassociateExternalConnectionRequestRequestTypeDef](./type_defs.md#disassociateexternalconnectionrequestrequesttypedef) 
 
-### dispose_package_versions
+### dispose\_package\_versions
 
 Deletes the assets in package versions and sets the package versions' status to
 `Disposed`.
 
-Type annotations for `boto3.client("codeartifact").dispose_package_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").dispose_package_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
 
-Boto3 documentation:
-[CodeArtifact.Client.dispose_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
+```python title="Method definition"
+def dispose_package_versions(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    versions: Sequence[str],
+    domainOwner: str = ...,
+    namespace: str = ...,
+    versionRevisions: Mapping[str, str] = ...,
+    expectedStatus: PackageVersionStatusType = ...,  # (2)
+) -> DisposePackageVersionsResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DisposePackageVersionsRequestRequestTypeDef](./type_defs.md#disposepackageversionsrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+3. See [:material-code-braces: DisposePackageVersionsResultTypeDef](./type_defs.md#disposepackageversionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `versions`: `Sequence`\[`str`\] *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `versionRevisions`: `Mapping`\[`str`, `str`\]
-- `expectedStatus`:
-  [PackageVersionStatusType](./literals.md#packageversionstatustype)
+```python title="Usage example with kwargs"
+kwargs: DisposePackageVersionsRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "versions": ...,
+}
 
-Returns
-[DisposePackageVersionsResultTypeDef](./type_defs.md#disposepackageversionsresulttypedef).
+parent.dispose_package_versions(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisposePackageVersionsRequestRequestTypeDef](./type_defs.md#disposepackageversionsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("codeartifact").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodeArtifact.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_authorization\_token"></a>
-
-### get_authorization_token
+### get\_authorization\_token
 
 Generates a temporary authorization token for accessing repositories in the
 domain.
 
-Type annotations for `boto3.client("codeartifact").get_authorization_token`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_authorization_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
 
-Boto3 documentation:
-[CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
+```python title="Method definition"
+def get_authorization_token(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+    durationSeconds: int = ...,
+) -> GetAuthorizationTokenResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAuthorizationTokenRequestRequestTypeDef](./type_defs.md#getauthorizationtokenrequestrequesttypedef).
+1. See [:material-code-braces: GetAuthorizationTokenResultTypeDef](./type_defs.md#getauthorizationtokenresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
-- `durationSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAuthorizationTokenRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
 
-Returns
-[GetAuthorizationTokenResultTypeDef](./type_defs.md#getauthorizationtokenresulttypedef).
+parent.get_authorization_token(**kwargs)
+```
 
-<a id="get\_domain\_permissions\_policy"></a>
+1. See [:material-code-braces: GetAuthorizationTokenRequestRequestTypeDef](./type_defs.md#getauthorizationtokenrequestrequesttypedef) 
 
-### get_domain_permissions_policy
+### get\_domain\_permissions\_policy
 
 Returns the resource policy attached to the specified domain.
 
-Type annotations for
-`boto3.client("codeartifact").get_domain_permissions_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_domain_permissions_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
 
-Boto3 documentation:
-[CodeArtifact.Client.get_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
+```python title="Method definition"
+def get_domain_permissions_policy(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+) -> GetDomainPermissionsPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getdomainpermissionspolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetDomainPermissionsPolicyResultTypeDef](./type_defs.md#getdomainpermissionspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDomainPermissionsPolicyRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
 
-Returns
-[GetDomainPermissionsPolicyResultTypeDef](./type_defs.md#getdomainpermissionspolicyresulttypedef).
+parent.get_domain_permissions_policy(**kwargs)
+```
 
-<a id="get\_package\_version\_asset"></a>
+1. See [:material-code-braces: GetDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getdomainpermissionspolicyrequestrequesttypedef) 
 
-### get_package_version_asset
+### get\_package\_version\_asset
 
 Returns an asset (or file) that is in a package.
 
-Type annotations for `boto3.client("codeartifact").get_package_version_asset`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_package_version_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
 
-Boto3 documentation:
-[CodeArtifact.Client.get_package_version_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
+```python title="Method definition"
+def get_package_version_asset(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    asset: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    packageVersionRevision: str = ...,
+) -> GetPackageVersionAssetResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetPackageVersionAssetRequestRequestTypeDef](./type_defs.md#getpackageversionassetrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: GetPackageVersionAssetResultTypeDef](./type_defs.md#getpackageversionassetresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `packageVersion`: `str` *(required)*
-- `asset`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `packageVersionRevision`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPackageVersionAssetRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+    "asset": ...,
+}
 
-Returns
-[GetPackageVersionAssetResultTypeDef](./type_defs.md#getpackageversionassetresulttypedef).
+parent.get_package_version_asset(**kwargs)
+```
 
-<a id="get\_package\_version\_readme"></a>
+1. See [:material-code-braces: GetPackageVersionAssetRequestRequestTypeDef](./type_defs.md#getpackageversionassetrequestrequesttypedef) 
 
-### get_package_version_readme
+### get\_package\_version\_readme
 
 Gets the readme file or descriptive text for a package version.
 
-Type annotations for `boto3.client("codeartifact").get_package_version_readme`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_package_version_readme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
 
-Boto3 documentation:
-[CodeArtifact.Client.get_package_version_readme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
+```python title="Method definition"
+def get_package_version_readme(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+) -> GetPackageVersionReadmeResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetPackageVersionReadmeRequestRequestTypeDef](./type_defs.md#getpackageversionreadmerequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: GetPackageVersionReadmeResultTypeDef](./type_defs.md#getpackageversionreadmeresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `packageVersion`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPackageVersionReadmeRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+}
 
-Returns
-[GetPackageVersionReadmeResultTypeDef](./type_defs.md#getpackageversionreadmeresulttypedef).
+parent.get_package_version_readme(**kwargs)
+```
 
-<a id="get\_repository\_endpoint"></a>
+1. See [:material-code-braces: GetPackageVersionReadmeRequestRequestTypeDef](./type_defs.md#getpackageversionreadmerequestrequesttypedef) 
 
-### get_repository_endpoint
+### get\_repository\_endpoint
 
 Returns the endpoint of a repository for a specific package format.
 
-Type annotations for `boto3.client("codeartifact").get_repository_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_repository_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
 
-Boto3 documentation:
-[CodeArtifact.Client.get_repository_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
+```python title="Method definition"
+def get_repository_endpoint(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    domainOwner: str = ...,
+) -> GetRepositoryEndpointResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetRepositoryEndpointRequestRequestTypeDef](./type_defs.md#getrepositoryendpointrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: GetRepositoryEndpointResultTypeDef](./type_defs.md#getrepositoryendpointresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRepositoryEndpointRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+}
 
-Returns
-[GetRepositoryEndpointResultTypeDef](./type_defs.md#getrepositoryendpointresulttypedef).
+parent.get_repository_endpoint(**kwargs)
+```
 
-<a id="get\_repository\_permissions\_policy"></a>
+1. See [:material-code-braces: GetRepositoryEndpointRequestRequestTypeDef](./type_defs.md#getrepositoryendpointrequestrequesttypedef) 
 
-### get_repository_permissions_policy
+### get\_repository\_permissions\_policy
 
 Returns the resource policy that is set on a repository.
 
-Type annotations for
-`boto3.client("codeartifact").get_repository_permissions_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_repository_permissions_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
 
-Boto3 documentation:
-[CodeArtifact.Client.get_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
+```python title="Method definition"
+def get_repository_permissions_policy(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+) -> GetRepositoryPermissionsPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getrepositorypermissionspolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#getrepositorypermissionspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRepositoryPermissionsPolicyRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns
-[GetRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#getrepositorypermissionspolicyresulttypedef).
+parent.get_repository_permissions_policy(**kwargs)
+```
 
-<a id="list\_domains"></a>
+1. See [:material-code-braces: GetRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getrepositorypermissionspolicyrequestrequesttypedef) 
 
-### list_domains
+### list\_domains
 
 Returns a list of
-[DomainSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html)\_
+[DomainSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html)_
 objects for all domains owned by the AWS account that makes this call.
 
-Type annotations for `boto3.client("codeartifact").list_domains` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
+```python title="Method definition"
+def list_domains(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDomainsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef).
+1. See [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDomainsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
+parent.list_domains(**kwargs)
+```
 
-<a id="list\_package\_version\_assets"></a>
+1. See [:material-code-braces: ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef) 
 
-### list_package_version_assets
+### list\_package\_version\_assets
 
 Returns a list of
-[AssetSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_AssetSummary.html)\_
+[AssetSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_AssetSummary.html)_
 objects for assets in a package version.
 
-Type annotations for `boto3.client("codeartifact").list_package_version_assets`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_package_version_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_package_version_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
+```python title="Method definition"
+def list_package_version_assets(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListPackageVersionAssetsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPackageVersionAssetsRequestRequestTypeDef](./type_defs.md#listpackageversionassetsrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `packageVersion`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackageVersionAssetsRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+}
 
-Returns
-[ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef).
+parent.list_package_version_assets(**kwargs)
+```
 
-<a id="list\_package\_version\_dependencies"></a>
+1. See [:material-code-braces: ListPackageVersionAssetsRequestRequestTypeDef](./type_defs.md#listpackageversionassetsrequestrequesttypedef) 
 
-### list_package_version_dependencies
+### list\_package\_version\_dependencies
 
 Returns the direct dependencies for a package version.
 
-Type annotations for
-`boto3.client("codeartifact").list_package_version_dependencies` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_package_version_dependencies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_package_version_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
+```python title="Method definition"
+def list_package_version_dependencies(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    nextToken: str = ...,
+) -> ListPackageVersionDependenciesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPackageVersionDependenciesRequestRequestTypeDef](./type_defs.md#listpackageversiondependenciesrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: ListPackageVersionDependenciesResultTypeDef](./type_defs.md#listpackageversiondependenciesresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `packageVersion`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackageVersionDependenciesRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+}
 
-Returns
-[ListPackageVersionDependenciesResultTypeDef](./type_defs.md#listpackageversiondependenciesresulttypedef).
+parent.list_package_version_dependencies(**kwargs)
+```
 
-<a id="list\_package\_versions"></a>
+1. See [:material-code-braces: ListPackageVersionDependenciesRequestRequestTypeDef](./type_defs.md#listpackageversiondependenciesrequestrequesttypedef) 
 
-### list_package_versions
+### list\_package\_versions
 
 Returns a list of
-[PackageVersionSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionSummary.html)\_
+[PackageVersionSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionSummary.html)_
 objects for package versions in a repository that match the request parameters.
 
-Type annotations for `boto3.client("codeartifact").list_package_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_package_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
+```python title="Method definition"
+def list_package_versions(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    status: PackageVersionStatusType = ...,  # (2)
+    sortBy: PackageVersionSortTypeType = ...,  # (3)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListPackageVersionsResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListPackageVersionsRequestRequestTypeDef](./type_defs.md#listpackageversionsrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+3. See [:material-code-brackets: PackageVersionSortTypeType](./literals.md#packageversionsorttypetype) 
+4. See [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
-- `sortBy`: `Literal['PUBLISHED_TIME']` (see
-  [PackageVersionSortTypeType](./literals.md#packageversionsorttypetype))
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackageVersionsRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+}
 
-Returns
-[ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef).
+parent.list_package_versions(**kwargs)
+```
 
-<a id="list\_packages"></a>
+1. See [:material-code-braces: ListPackageVersionsRequestRequestTypeDef](./type_defs.md#listpackageversionsrequestrequesttypedef) 
 
-### list_packages
+### list\_packages
 
 Returns a list of
-[PackageSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageSummary.html)\_
+[PackageSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageSummary.html)_
 objects for packages in a repository that match the request parameters.
 
-Type annotations for `boto3.client("codeartifact").list_packages` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
+```python title="Method definition"
+def list_packages(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+    format: PackageFormatType = ...,  # (1)
+    namespace: str = ...,
+    packagePrefix: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListPackagesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPackagesRequestRequestTypeDef](./type_defs.md#listpackagesrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
-- `format`: [PackageFormatType](./literals.md#packageformattype)
-- `namespace`: `str`
-- `packagePrefix`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackagesRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef).
+parent.list_packages(**kwargs)
+```
 
-<a id="list\_repositories"></a>
+1. See [:material-code-braces: ListPackagesRequestRequestTypeDef](./type_defs.md#listpackagesrequestrequesttypedef) 
 
-### list_repositories
-
-Returns a list of
-[RepositorySummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html)\_
-objects.
-
-Type annotations for `boto3.client("codeartifact").list_repositories` method.
-
-Boto3 documentation:
-[CodeArtifact.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
-
-Arguments mapping described in
-[ListRepositoriesRequestRequestTypeDef](./type_defs.md#listrepositoriesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `repositoryPrefix`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-Returns
-[ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef).
-
-<a id="list\_repositories\_in\_domain"></a>
-
-### list_repositories_in_domain
+### list\_repositories
 
 Returns a list of
-[RepositorySummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html)\_
+[RepositorySummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html)_
 objects.
 
-Type annotations for `boto3.client("codeartifact").list_repositories_in_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_repositories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_repositories_in_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
+```python title="Method definition"
+def list_repositories(
+    self,
+    *,
+    repositoryPrefix: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListRepositoriesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRepositoriesInDomainRequestRequestTypeDef](./type_defs.md#listrepositoriesindomainrequestrequesttypedef).
+1. See [:material-code-braces: ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
-- `administratorAccount`: `str`
-- `repositoryPrefix`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRepositoriesRequestRequestTypeDef = {  # (1)
+    "repositoryPrefix": ...,
+}
 
-Returns
-[ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef).
+parent.list_repositories(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRepositoriesRequestRequestTypeDef](./type_defs.md#listrepositoriesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_repositories\_in\_domain
+
+Returns a list of
+[RepositorySummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_RepositorySummary.html)_
+objects.
+
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_repositories_in_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
+
+```python title="Method definition"
+def list_repositories_in_domain(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+    administratorAccount: str = ...,
+    repositoryPrefix: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListRepositoriesInDomainResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRepositoriesInDomainRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+}
+
+parent.list_repositories_in_domain(**kwargs)
+```
+
+1. See [:material-code-braces: ListRepositoriesInDomainRequestRequestTypeDef](./type_defs.md#listrepositoriesindomainrequestrequesttypedef) 
+
+### list\_tags\_for\_resource
 
 Gets information about AWS tags for a specified Amazon Resource Name (ARN) in
 AWS CodeArtifact.
 
-Type annotations for `boto3.client("codeartifact").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CodeArtifact.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_domain\_permissions\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_domain_permissions_policy
+### put\_domain\_permissions\_policy
 
 Sets a resource policy on a domain that specifies permissions to access it.
 
-Type annotations for
-`boto3.client("codeartifact").put_domain_permissions_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").put_domain_permissions_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
 
-Boto3 documentation:
-[CodeArtifact.Client.put_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
+```python title="Method definition"
+def put_domain_permissions_policy(
+    self,
+    *,
+    domain: str,
+    policyDocument: str,
+    domainOwner: str = ...,
+    policyRevision: str = ...,
+) -> PutDomainPermissionsPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putdomainpermissionspolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutDomainPermissionsPolicyResultTypeDef](./type_defs.md#putdomainpermissionspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `policyDocument`: `str` *(required)*
-- `domainOwner`: `str`
-- `policyRevision`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutDomainPermissionsPolicyRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "policyDocument": ...,
+}
 
-Returns
-[PutDomainPermissionsPolicyResultTypeDef](./type_defs.md#putdomainpermissionspolicyresulttypedef).
+parent.put_domain_permissions_policy(**kwargs)
+```
 
-<a id="put\_repository\_permissions\_policy"></a>
+1. See [:material-code-braces: PutDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putdomainpermissionspolicyrequestrequesttypedef) 
 
-### put_repository_permissions_policy
+### put\_repository\_permissions\_policy
 
 Sets the resource policy on a repository that specifies permissions to access
 it.
 
-Type annotations for
-`boto3.client("codeartifact").put_repository_permissions_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").put_repository_permissions_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
 
-Boto3 documentation:
-[CodeArtifact.Client.put_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
+```python title="Method definition"
+def put_repository_permissions_policy(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    policyDocument: str,
+    domainOwner: str = ...,
+    policyRevision: str = ...,
+) -> PutRepositoryPermissionsPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putrepositorypermissionspolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#putrepositorypermissionspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `policyDocument`: `str` *(required)*
-- `domainOwner`: `str`
-- `policyRevision`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRepositoryPermissionsPolicyRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "policyDocument": ...,
+}
 
-Returns
-[PutRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#putrepositorypermissionspolicyresulttypedef).
+parent.put_repository_permissions_policy(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putrepositorypermissionspolicyrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or updates tags for a resource in AWS CodeArtifact.
 
-Type annotations for `boto3.client("codeartifact").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
 
-Boto3 documentation:
-[CodeArtifact.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource in AWS CodeArtifact.
 
-Type annotations for `boto3.client("codeartifact").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
 
-Boto3 documentation:
-[CodeArtifact.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_package\_versions\_status"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_package_versions_status
+### update\_package\_versions\_status
 
 Updates the status of one or more versions of a package.
 
-Type annotations for
-`boto3.client("codeartifact").update_package_versions_status` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").update_package_versions_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
 
-Boto3 documentation:
-[CodeArtifact.Client.update_package_versions_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
+```python title="Method definition"
+def update_package_versions_status(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    versions: Sequence[str],
+    targetStatus: PackageVersionStatusType,  # (2)
+    domainOwner: str = ...,
+    namespace: str = ...,
+    versionRevisions: Mapping[str, str] = ...,
+    expectedStatus: PackageVersionStatusType = ...,  # (2)
+) -> UpdatePackageVersionsStatusResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePackageVersionsStatusRequestRequestTypeDef](./type_defs.md#updatepackageversionsstatusrequestrequesttypedef).
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+3. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+4. See [:material-code-braces: UpdatePackageVersionsStatusResultTypeDef](./type_defs.md#updatepackageversionsstatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `versions`: `Sequence`\[`str`\] *(required)*
-- `targetStatus`:
-  [PackageVersionStatusType](./literals.md#packageversionstatustype)
-  *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `versionRevisions`: `Mapping`\[`str`, `str`\]
-- `expectedStatus`:
-  [PackageVersionStatusType](./literals.md#packageversionstatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdatePackageVersionsStatusRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "versions": ...,
+    "targetStatus": ...,
+}
 
-Returns
-[UpdatePackageVersionsStatusResultTypeDef](./type_defs.md#updatepackageversionsstatusresulttypedef).
+parent.update_package_versions_status(**kwargs)
+```
 
-<a id="update\_repository"></a>
+1. See [:material-code-braces: UpdatePackageVersionsStatusRequestRequestTypeDef](./type_defs.md#updatepackageversionsstatusrequestrequesttypedef) 
 
-### update_repository
+### update\_repository
 
 Update the properties of a repository.
 
-Type annotations for `boto3.client("codeartifact").update_repository` method.
+Type annotations and code completion for `#!python boto3.client("codeartifact").update_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
 
-Boto3 documentation:
-[CodeArtifact.Client.update_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
+```python title="Method definition"
+def update_repository(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+    description: str = ...,
+    upstreams: Sequence[UpstreamRepositoryTypeDef] = ...,  # (1)
+) -> UpdateRepositoryResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRepositoryRequestRequestTypeDef](./type_defs.md#updaterepositoryrequestrequesttypedef).
+1. See [:material-code-braces: UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef) 
+2. See [:material-code-braces: UpdateRepositoryResultTypeDef](./type_defs.md#updaterepositoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
-- `description`: `str`
-- `upstreams`:
-  `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRepositoryRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
 
-Returns
-[UpdateRepositoryResultTypeDef](./type_defs.md#updaterepositoryresulttypedef).
+parent.update_repository(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateRepositoryRequestRequestTypeDef](./type_defs.md#updaterepositoryrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("codeartifact").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator` method with overloads.
 
-- `client.get_paginator("list_domains")` ->
-  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("list_package_version_assets")` ->
-  [ListPackageVersionAssetsPaginator](./paginators.md#listpackageversionassetspaginator)
-- `client.get_paginator("list_package_versions")` ->
-  [ListPackageVersionsPaginator](./paginators.md#listpackageversionspaginator)
-- `client.get_paginator("list_packages")` ->
-  [ListPackagesPaginator](./paginators.md#listpackagespaginator)
-- `client.get_paginator("list_repositories")` ->
-  [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
-- `client.get_paginator("list_repositories_in_domain")` ->
-  [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)
+- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_package_version_assets")` -> [ListPackageVersionAssetsPaginator](./paginators.md#listpackageversionassetspaginator)
+- `client.get_paginator("list_package_versions")` -> [ListPackageVersionsPaginator](./paginators.md#listpackageversionspaginator)
+- `client.get_paginator("list_packages")` -> [ListPackagesPaginator](./paginators.md#listpackagespaginator)
+- `client.get_paginator("list_repositories")` -> [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+- `client.get_paginator("list_repositories_in_domain")` -> [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)
+
+
+

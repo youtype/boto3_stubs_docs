@@ -1,71 +1,18 @@
-<a id="mturkclient-for-boto3-mturk-module"></a>
-
-# MTurkClient for boto3 MTurk module
+# MTurkClient
 
 > [Index](../README.md) > [MTurk](./README.md) > MTurkClient
 
-Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module
-[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
+!!! note ""
 
-- [MTurkClient for boto3 MTurk module](#mturkclient-for-boto3-mturk-module)
-  - [MTurkClient](#mturkclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_qualification_request](#accept_qualification_request)
-    - [approve_assignment](#approve_assignment)
-    - [associate_qualification_with_worker](#associate_qualification_with_worker)
-    - [can_paginate](#can_paginate)
-    - [create_additional_assignments_for_hit](#create_additional_assignments_for_hit)
-    - [create_hit](#create_hit)
-    - [create_hit_type](#create_hit_type)
-    - [create_hit_with_hit_type](#create_hit_with_hit_type)
-    - [create_qualification_type](#create_qualification_type)
-    - [create_worker_block](#create_worker_block)
-    - [delete_hit](#delete_hit)
-    - [delete_qualification_type](#delete_qualification_type)
-    - [delete_worker_block](#delete_worker_block)
-    - [disassociate_qualification_from_worker](#disassociate_qualification_from_worker)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_balance](#get_account_balance)
-    - [get_assignment](#get_assignment)
-    - [get_file_upload_url](#get_file_upload_url)
-    - [get_hit](#get_hit)
-    - [get_qualification_score](#get_qualification_score)
-    - [get_qualification_type](#get_qualification_type)
-    - [list_assignments_for_hit](#list_assignments_for_hit)
-    - [list_bonus_payments](#list_bonus_payments)
-    - [list_hits](#list_hits)
-    - [list_hits_for_qualification_type](#list_hits_for_qualification_type)
-    - [list_qualification_requests](#list_qualification_requests)
-    - [list_qualification_types](#list_qualification_types)
-    - [list_review_policy_results_for_hit](#list_review_policy_results_for_hit)
-    - [list_reviewable_hits](#list_reviewable_hits)
-    - [list_worker_blocks](#list_worker_blocks)
-    - [list_workers_with_qualification_type](#list_workers_with_qualification_type)
-    - [notify_workers](#notify_workers)
-    - [reject_assignment](#reject_assignment)
-    - [reject_qualification_request](#reject_qualification_request)
-    - [send_bonus](#send_bonus)
-    - [send_test_event_notification](#send_test_event_notification)
-    - [update_expiration_for_hit](#update_expiration_for_hit)
-    - [update_hit_review_status](#update_hit_review_status)
-    - [update_hit_type_of_hit](#update_hit_type_of_hit)
-    - [update_notification_settings](#update_notification_settings)
-    - [update_qualification_type](#update_qualification_type)
-    - [get_paginator](#get_paginator)
-
-<a id="mturkclient"></a>
+    Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+    type annotations stubs module [mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ## MTurkClient
 
-Type annotations for `boto3.client("mturk")`
+Type annotations and code completion for `#!python boto3.client("mturk")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mturk.client import MTurkClient
 
@@ -73,1058 +20,1362 @@ def get_mturk_client() -> MTurkClient:
     return Session().client("mturk")
 ```
 
-Boto3 documentation:
-[MTurk.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mturk").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mturk")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.RequestError,
+    client.ServiceFault,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mturk.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.RequestError`
-- `Exceptions.ServiceFault`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MTurkClient exceptions.
-
-Type annotations for `boto3.client("mturk").exceptions` method.
-
-Boto3 documentation:
-[MTurk.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_qualification\_request"></a>
-
-### accept_qualification_request
+### accept\_qualification\_request
 
 The `AcceptQualificationRequest` operation approves a Worker's request for a
 Qualification.
 
-Type annotations for `boto3.client("mturk").accept_qualification_request`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").accept_qualification_request` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
 
-Boto3 documentation:
-[MTurk.Client.accept_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
+```python title="Method definition"
+def accept_qualification_request(
+    self,
+    *,
+    QualificationRequestId: str,
+    IntegerValue: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptQualificationRequestRequestRequestTypeDef](./type_defs.md#acceptqualificationrequestrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `QualificationRequestId`: `str` *(required)*
-- `IntegerValue`: `int`
+```python title="Usage example with kwargs"
+kwargs: AcceptQualificationRequestRequestRequestTypeDef = {  # (1)
+    "QualificationRequestId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_qualification_request(**kwargs)
+```
 
-<a id="approve\_assignment"></a>
+1. See [:material-code-braces: AcceptQualificationRequestRequestRequestTypeDef](./type_defs.md#acceptqualificationrequestrequestrequesttypedef) 
 
-### approve_assignment
+### approve\_assignment
 
 The `ApproveAssignment` operation approves the results of a completed
 assignment.
 
-Type annotations for `boto3.client("mturk").approve_assignment` method.
+Type annotations and code completion for `#!python boto3.client("mturk").approve_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment)
 
-Boto3 documentation:
-[MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment)
+```python title="Method definition"
+def approve_assignment(
+    self,
+    *,
+    AssignmentId: str,
+    RequesterFeedback: str = ...,
+    OverrideRejection: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ApproveAssignmentRequestRequestTypeDef](./type_defs.md#approveassignmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AssignmentId`: `str` *(required)*
-- `RequesterFeedback`: `str`
-- `OverrideRejection`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ApproveAssignmentRequestRequestTypeDef = {  # (1)
+    "AssignmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.approve_assignment(**kwargs)
+```
 
-<a id="associate\_qualification\_with\_worker"></a>
+1. See [:material-code-braces: ApproveAssignmentRequestRequestTypeDef](./type_defs.md#approveassignmentrequestrequesttypedef) 
 
-### associate_qualification_with_worker
+### associate\_qualification\_with\_worker
 
-The `AssociateQualificationWithWorker` operation gives a Worker a
-Qualification.
+The `AssociateQualificationWithWorker` operation gives a Worker a Qualification.
 
-Type annotations for
-`boto3.client("mturk").associate_qualification_with_worker` method.
+Type annotations and code completion for `#!python boto3.client("mturk").associate_qualification_with_worker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
 
-Boto3 documentation:
-[MTurk.Client.associate_qualification_with_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
+```python title="Method definition"
+def associate_qualification_with_worker(
+    self,
+    *,
+    QualificationTypeId: str,
+    WorkerId: str,
+    IntegerValue: int = ...,
+    SendNotification: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateQualificationWithWorkerRequestRequestTypeDef](./type_defs.md#associatequalificationwithworkerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
-- `WorkerId`: `str` *(required)*
-- `IntegerValue`: `int`
-- `SendNotification`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssociateQualificationWithWorkerRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+    "WorkerId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_qualification_with_worker(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateQualificationWithWorkerRequestRequestTypeDef](./type_defs.md#associatequalificationwithworkerrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mturk").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mturk").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.can_paginate)
 
-Boto3 documentation:
-[MTurk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_additional\_assignments\_for\_hit"></a>
-
-### create_additional_assignments_for_hit
+### create\_additional\_assignments\_for\_hit
 
 The `CreateAdditionalAssignmentsForHIT` operation increases the maximum number
 of assignments of an existing HIT.
 
-Type annotations for
-`boto3.client("mturk").create_additional_assignments_for_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").create_additional_assignments_for_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
 
-Boto3 documentation:
-[MTurk.Client.create_additional_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
+```python title="Method definition"
+def create_additional_assignments_for_hit(
+    self,
+    *,
+    HITId: str,
+    NumberOfAdditionalAssignments: int,
+    UniqueRequestToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateAdditionalAssignmentsForHITRequestRequestTypeDef](./type_defs.md#createadditionalassignmentsforhitrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
-- `NumberOfAdditionalAssignments`: `int` *(required)*
-- `UniqueRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateAdditionalAssignmentsForHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+    "NumberOfAdditionalAssignments": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_additional_assignments_for_hit(**kwargs)
+```
 
-<a id="create\_hit"></a>
+1. See [:material-code-braces: CreateAdditionalAssignmentsForHITRequestRequestTypeDef](./type_defs.md#createadditionalassignmentsforhitrequestrequesttypedef) 
 
-### create_hit
+### create\_hit
 
 The `CreateHIT` operation creates a new Human Intelligence Task (HIT).
 
-Type annotations for `boto3.client("mturk").create_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").create_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit)
 
-Boto3 documentation:
-[MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit)
+```python title="Method definition"
+def create_hit(
+    self,
+    *,
+    LifetimeInSeconds: int,
+    AssignmentDurationInSeconds: int,
+    Reward: str,
+    Title: str,
+    Description: str,
+    MaxAssignments: int = ...,
+    AutoApprovalDelayInSeconds: int = ...,
+    Keywords: str = ...,
+    Question: str = ...,
+    RequesterAnnotation: str = ...,
+    QualificationRequirements: Sequence[QualificationRequirementTypeDef] = ...,  # (1)
+    UniqueRequestToken: str = ...,
+    AssignmentReviewPolicy: ReviewPolicyTypeDef = ...,  # (2)
+    HITReviewPolicy: ReviewPolicyTypeDef = ...,  # (2)
+    HITLayoutId: str = ...,
+    HITLayoutParameters: Sequence[HITLayoutParameterTypeDef] = ...,  # (4)
+) -> CreateHITResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateHITRequestRequestTypeDef](./type_defs.md#createhitrequestrequesttypedef).
+1. See [:material-code-braces: QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef) 
+2. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+3. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+4. See [:material-code-braces: HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef) 
+5. See [:material-code-braces: CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LifetimeInSeconds`: `int` *(required)*
-- `AssignmentDurationInSeconds`: `int` *(required)*
-- `Reward`: `str` *(required)*
-- `Title`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `MaxAssignments`: `int`
-- `AutoApprovalDelayInSeconds`: `int`
-- `Keywords`: `str`
-- `Question`: `str`
-- `RequesterAnnotation`: `str`
-- `QualificationRequirements`:
-  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
-- `UniqueRequestToken`: `str`
-- `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITLayoutId`: `str`
-- `HITLayoutParameters`:
-  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateHITRequestRequestTypeDef = {  # (1)
+    "LifetimeInSeconds": ...,
+    "AssignmentDurationInSeconds": ...,
+    "Reward": ...,
+    "Title": ...,
+    "Description": ...,
+}
 
-Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
+parent.create_hit(**kwargs)
+```
 
-<a id="create\_hit\_type"></a>
+1. See [:material-code-braces: CreateHITRequestRequestTypeDef](./type_defs.md#createhitrequestrequesttypedef) 
 
-### create_hit_type
+### create\_hit\_type
 
 The `CreateHITType` operation creates a new HIT type.
 
-Type annotations for `boto3.client("mturk").create_hit_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").create_hit_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type)
 
-Boto3 documentation:
-[MTurk.Client.create_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type)
+```python title="Method definition"
+def create_hit_type(
+    self,
+    *,
+    AssignmentDurationInSeconds: int,
+    Reward: str,
+    Title: str,
+    Description: str,
+    AutoApprovalDelayInSeconds: int = ...,
+    Keywords: str = ...,
+    QualificationRequirements: Sequence[QualificationRequirementTypeDef] = ...,  # (1)
+) -> CreateHITTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateHITTypeRequestRequestTypeDef](./type_defs.md#createhittyperequestrequesttypedef).
+1. See [:material-code-braces: QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef) 
+2. See [:material-code-braces: CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssignmentDurationInSeconds`: `int` *(required)*
-- `Reward`: `str` *(required)*
-- `Title`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `AutoApprovalDelayInSeconds`: `int`
-- `Keywords`: `str`
-- `QualificationRequirements`:
-  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateHITTypeRequestRequestTypeDef = {  # (1)
+    "AssignmentDurationInSeconds": ...,
+    "Reward": ...,
+    "Title": ...,
+    "Description": ...,
+}
 
-Returns
-[CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef).
+parent.create_hit_type(**kwargs)
+```
 
-<a id="create\_hit\_with\_hit\_type"></a>
+1. See [:material-code-braces: CreateHITTypeRequestRequestTypeDef](./type_defs.md#createhittyperequestrequesttypedef) 
 
-### create_hit_with_hit_type
+### create\_hit\_with\_hit\_type
 
-The `CreateHITWithHITType` operation creates a new Human Intelligence Task
-(HIT) using an existing HITTypeID generated by the `CreateHITType` operation.
+The `CreateHITWithHITType` operation creates a new Human Intelligence Task (HIT)
+using an existing HITTypeID generated by the `CreateHITType` operation.
 
-Type annotations for `boto3.client("mturk").create_hit_with_hit_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").create_hit_with_hit_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
 
-Boto3 documentation:
-[MTurk.Client.create_hit_with_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
+```python title="Method definition"
+def create_hit_with_hit_type(
+    self,
+    *,
+    HITTypeId: str,
+    LifetimeInSeconds: int,
+    MaxAssignments: int = ...,
+    Question: str = ...,
+    RequesterAnnotation: str = ...,
+    UniqueRequestToken: str = ...,
+    AssignmentReviewPolicy: ReviewPolicyTypeDef = ...,  # (1)
+    HITReviewPolicy: ReviewPolicyTypeDef = ...,  # (1)
+    HITLayoutId: str = ...,
+    HITLayoutParameters: Sequence[HITLayoutParameterTypeDef] = ...,  # (3)
+) -> CreateHITWithHITTypeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateHITWithHITTypeRequestRequestTypeDef](./type_defs.md#createhitwithhittyperequestrequesttypedef).
+1. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+2. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+3. See [:material-code-braces: HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef) 
+4. See [:material-code-braces: CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `HITTypeId`: `str` *(required)*
-- `LifetimeInSeconds`: `int` *(required)*
-- `MaxAssignments`: `int`
-- `Question`: `str`
-- `RequesterAnnotation`: `str`
-- `UniqueRequestToken`: `str`
-- `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITLayoutId`: `str`
-- `HITLayoutParameters`:
-  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateHITWithHITTypeRequestRequestTypeDef = {  # (1)
+    "HITTypeId": ...,
+    "LifetimeInSeconds": ...,
+}
 
-Returns
-[CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef).
+parent.create_hit_with_hit_type(**kwargs)
+```
 
-<a id="create\_qualification\_type"></a>
+1. See [:material-code-braces: CreateHITWithHITTypeRequestRequestTypeDef](./type_defs.md#createhitwithhittyperequestrequesttypedef) 
 
-### create_qualification_type
+### create\_qualification\_type
 
 The `CreateQualificationType` operation creates a new Qualification type, which
 is represented by a `QualificationType` data structure.
 
-Type annotations for `boto3.client("mturk").create_qualification_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").create_qualification_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type)
 
-Boto3 documentation:
-[MTurk.Client.create_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type)
+```python title="Method definition"
+def create_qualification_type(
+    self,
+    *,
+    Name: str,
+    Description: str,
+    QualificationTypeStatus: QualificationTypeStatusType,  # (1)
+    Keywords: str = ...,
+    RetryDelayInSeconds: int = ...,
+    Test: str = ...,
+    AnswerKey: str = ...,
+    TestDurationInSeconds: int = ...,
+    AutoGranted: bool = ...,
+    AutoGrantedValue: int = ...,
+) -> CreateQualificationTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateQualificationTypeRequestRequestTypeDef](./type_defs.md#createqualificationtyperequestrequesttypedef).
+1. See [:material-code-brackets: QualificationTypeStatusType](./literals.md#qualificationtypestatustype) 
+2. See [:material-code-braces: CreateQualificationTypeResponseTypeDef](./type_defs.md#createqualificationtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `QualificationTypeStatus`:
-  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
-  *(required)*
-- `Keywords`: `str`
-- `RetryDelayInSeconds`: `int`
-- `Test`: `str`
-- `AnswerKey`: `str`
-- `TestDurationInSeconds`: `int`
-- `AutoGranted`: `bool`
-- `AutoGrantedValue`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateQualificationTypeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Description": ...,
+    "QualificationTypeStatus": ...,
+}
 
-Returns
-[CreateQualificationTypeResponseTypeDef](./type_defs.md#createqualificationtyperesponsetypedef).
+parent.create_qualification_type(**kwargs)
+```
 
-<a id="create\_worker\_block"></a>
+1. See [:material-code-braces: CreateQualificationTypeRequestRequestTypeDef](./type_defs.md#createqualificationtyperequestrequesttypedef) 
 
-### create_worker_block
+### create\_worker\_block
 
-The `CreateWorkerBlock` operation allows you to prevent a Worker from working
-on your HITs.
+The `CreateWorkerBlock` operation allows you to prevent a Worker from working on
+your HITs.
 
-Type annotations for `boto3.client("mturk").create_worker_block` method.
+Type annotations and code completion for `#!python boto3.client("mturk").create_worker_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block)
 
-Boto3 documentation:
-[MTurk.Client.create_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block)
+```python title="Method definition"
+def create_worker_block(
+    self,
+    *,
+    WorkerId: str,
+    Reason: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkerBlockRequestRequestTypeDef](./type_defs.md#createworkerblockrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkerId`: `str` *(required)*
-- `Reason`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateWorkerBlockRequestRequestTypeDef = {  # (1)
+    "WorkerId": ...,
+    "Reason": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_worker_block(**kwargs)
+```
 
-<a id="delete\_hit"></a>
+1. See [:material-code-braces: CreateWorkerBlockRequestRequestTypeDef](./type_defs.md#createworkerblockrequestrequesttypedef) 
 
-### delete_hit
+### delete\_hit
 
 The `DeleteHIT` operation is used to delete HIT that is no longer needed.
 
-Type annotations for `boto3.client("mturk").delete_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").delete_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit)
 
-Boto3 documentation:
-[MTurk.Client.delete_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit)
+```python title="Method definition"
+def delete_hit(
+    self,
+    *,
+    HITId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteHITRequestRequestTypeDef](./type_defs.md#deletehitrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_hit(**kwargs)
+```
 
-<a id="delete\_qualification\_type"></a>
+1. See [:material-code-braces: DeleteHITRequestRequestTypeDef](./type_defs.md#deletehitrequestrequesttypedef) 
 
-### delete_qualification_type
+### delete\_qualification\_type
 
 The `DeleteQualificationType` deletes a Qualification type and deletes any HIT
 types that are associated with the Qualification type.
 
-Type annotations for `boto3.client("mturk").delete_qualification_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").delete_qualification_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
 
-Boto3 documentation:
-[MTurk.Client.delete_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
+```python title="Method definition"
+def delete_qualification_type(
+    self,
+    *,
+    QualificationTypeId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteQualificationTypeRequestRequestTypeDef](./type_defs.md#deletequalificationtyperequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQualificationTypeRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_qualification_type(**kwargs)
+```
 
-<a id="delete\_worker\_block"></a>
+1. See [:material-code-braces: DeleteQualificationTypeRequestRequestTypeDef](./type_defs.md#deletequalificationtyperequestrequesttypedef) 
 
-### delete_worker_block
+### delete\_worker\_block
 
 The `DeleteWorkerBlock` operation allows you to reinstate a blocked Worker to
 work on your HITs.
 
-Type annotations for `boto3.client("mturk").delete_worker_block` method.
+Type annotations and code completion for `#!python boto3.client("mturk").delete_worker_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block)
 
-Boto3 documentation:
-[MTurk.Client.delete_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block)
+```python title="Method definition"
+def delete_worker_block(
+    self,
+    *,
+    WorkerId: str,
+    Reason: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkerBlockRequestRequestTypeDef](./type_defs.md#deleteworkerblockrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkerId`: `str` *(required)*
-- `Reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkerBlockRequestRequestTypeDef = {  # (1)
+    "WorkerId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_worker_block(**kwargs)
+```
 
-<a id="disassociate\_qualification\_from\_worker"></a>
+1. See [:material-code-braces: DeleteWorkerBlockRequestRequestTypeDef](./type_defs.md#deleteworkerblockrequestrequesttypedef) 
 
-### disassociate_qualification_from_worker
+### disassociate\_qualification\_from\_worker
 
 The `DisassociateQualificationFromWorker` revokes a previously granted
 Qualification from a user.
 
-Type annotations for
-`boto3.client("mturk").disassociate_qualification_from_worker` method.
+Type annotations and code completion for `#!python boto3.client("mturk").disassociate_qualification_from_worker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
 
-Boto3 documentation:
-[MTurk.Client.disassociate_qualification_from_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
+```python title="Method definition"
+def disassociate_qualification_from_worker(
+    self,
+    *,
+    WorkerId: str,
+    QualificationTypeId: str,
+    Reason: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateQualificationFromWorkerRequestRequestTypeDef](./type_defs.md#disassociatequalificationfromworkerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkerId`: `str` *(required)*
-- `QualificationTypeId`: `str` *(required)*
-- `Reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateQualificationFromWorkerRequestRequestTypeDef = {  # (1)
+    "WorkerId": ...,
+    "QualificationTypeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_qualification_from_worker(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateQualificationFromWorkerRequestRequestTypeDef](./type_defs.md#disassociatequalificationfromworkerrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mturk").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("mturk").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MTurk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account\_balance"></a>
-
-### get_account_balance
+### get\_account\_balance
 
 The `GetAccountBalance` operation retrieves the Prepaid HITs balance in your
 Amazon Mechanical Turk account if you are a Prepaid Requester.
 
-Type annotations for `boto3.client("mturk").get_account_balance` method.
+Type annotations and code completion for `#!python boto3.client("mturk").get_account_balance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance)
 
-Boto3 documentation:
-[MTurk.Client.get_account_balance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance)
+```python title="Method definition"
+def get_account_balance(
+    self,
+) -> GetAccountBalanceResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef).
+1. See [:material-code-braces: GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef) 
 
-<a id="get\_assignment"></a>
+### get\_assignment
 
-### get_assignment
+The `GetAssignment` operation retrieves the details of the specified Assignment.
 
-The `GetAssignment` operation retrieves the details of the specified
-Assignment.
+Type annotations and code completion for `#!python boto3.client("mturk").get_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment)
 
-Type annotations for `boto3.client("mturk").get_assignment` method.
+```python title="Method definition"
+def get_assignment(
+    self,
+    *,
+    AssignmentId: str,
+) -> GetAssignmentResponseTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[MTurk.Client.get_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment)
+1. See [:material-code-braces: GetAssignmentResponseTypeDef](./type_defs.md#getassignmentresponsetypedef) 
 
-Arguments mapping described in
-[GetAssignmentRequestRequestTypeDef](./type_defs.md#getassignmentrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: GetAssignmentRequestRequestTypeDef = {  # (1)
+    "AssignmentId": ...,
+}
 
-- `AssignmentId`: `str` *(required)*
+parent.get_assignment(**kwargs)
+```
 
-Returns
-[GetAssignmentResponseTypeDef](./type_defs.md#getassignmentresponsetypedef).
+1. See [:material-code-braces: GetAssignmentRequestRequestTypeDef](./type_defs.md#getassignmentrequestrequesttypedef) 
 
-<a id="get\_file\_upload\_url"></a>
-
-### get_file_upload_url
+### get\_file\_upload\_url
 
 The `GetFileUploadURL` operation generates and returns a temporary URL.
 
-Type annotations for `boto3.client("mturk").get_file_upload_url` method.
+Type annotations and code completion for `#!python boto3.client("mturk").get_file_upload_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
 
-Boto3 documentation:
-[MTurk.Client.get_file_upload_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
+```python title="Method definition"
+def get_file_upload_url(
+    self,
+    *,
+    AssignmentId: str,
+    QuestionIdentifier: str,
+) -> GetFileUploadURLResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFileUploadURLRequestRequestTypeDef](./type_defs.md#getfileuploadurlrequestrequesttypedef).
+1. See [:material-code-braces: GetFileUploadURLResponseTypeDef](./type_defs.md#getfileuploadurlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssignmentId`: `str` *(required)*
-- `QuestionIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFileUploadURLRequestRequestTypeDef = {  # (1)
+    "AssignmentId": ...,
+    "QuestionIdentifier": ...,
+}
 
-Returns
-[GetFileUploadURLResponseTypeDef](./type_defs.md#getfileuploadurlresponsetypedef).
+parent.get_file_upload_url(**kwargs)
+```
 
-<a id="get\_hit"></a>
+1. See [:material-code-braces: GetFileUploadURLRequestRequestTypeDef](./type_defs.md#getfileuploadurlrequestrequesttypedef) 
 
-### get_hit
+### get\_hit
 
 The `GetHIT` operation retrieves the details of the specified HIT.
 
-Type annotations for `boto3.client("mturk").get_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").get_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit)
 
-Boto3 documentation:
-[MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit)
+```python title="Method definition"
+def get_hit(
+    self,
+    *,
+    HITId: str,
+) -> GetHITResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHITRequestRequestTypeDef](./type_defs.md#gethitrequestrequesttypedef).
+1. See [:material-code-braces: GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+}
 
-Returns [GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef).
+parent.get_hit(**kwargs)
+```
 
-<a id="get\_qualification\_score"></a>
+1. See [:material-code-braces: GetHITRequestRequestTypeDef](./type_defs.md#gethitrequestrequesttypedef) 
 
-### get_qualification_score
+### get\_qualification\_score
 
 The `GetQualificationScore` operation returns the value of a Worker's
 Qualification for a given Qualification type.
 
-Type annotations for `boto3.client("mturk").get_qualification_score` method.
+Type annotations and code completion for `#!python boto3.client("mturk").get_qualification_score` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score)
 
-Boto3 documentation:
-[MTurk.Client.get_qualification_score](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score)
+```python title="Method definition"
+def get_qualification_score(
+    self,
+    *,
+    QualificationTypeId: str,
+    WorkerId: str,
+) -> GetQualificationScoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQualificationScoreRequestRequestTypeDef](./type_defs.md#getqualificationscorerequestrequesttypedef).
+1. See [:material-code-braces: GetQualificationScoreResponseTypeDef](./type_defs.md#getqualificationscoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
-- `WorkerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQualificationScoreRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+    "WorkerId": ...,
+}
 
-Returns
-[GetQualificationScoreResponseTypeDef](./type_defs.md#getqualificationscoreresponsetypedef).
+parent.get_qualification_score(**kwargs)
+```
 
-<a id="get\_qualification\_type"></a>
+1. See [:material-code-braces: GetQualificationScoreRequestRequestTypeDef](./type_defs.md#getqualificationscorerequestrequesttypedef) 
 
-### get_qualification_type
+### get\_qualification\_type
 
-The `GetQualificationType` operation retrieves information about a
-Qualification type using its ID.
+The `GetQualificationType` operation retrieves information about a Qualification
+type using its ID.
 
-Type annotations for `boto3.client("mturk").get_qualification_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").get_qualification_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type)
 
-Boto3 documentation:
-[MTurk.Client.get_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type)
+```python title="Method definition"
+def get_qualification_type(
+    self,
+    *,
+    QualificationTypeId: str,
+) -> GetQualificationTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQualificationTypeRequestRequestTypeDef](./type_defs.md#getqualificationtyperequestrequesttypedef).
+1. See [:material-code-braces: GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQualificationTypeRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
 
-Returns
-[GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef).
+parent.get_qualification_type(**kwargs)
+```
 
-<a id="list\_assignments\_for\_hit"></a>
+1. See [:material-code-braces: GetQualificationTypeRequestRequestTypeDef](./type_defs.md#getqualificationtyperequestrequesttypedef) 
 
-### list_assignments_for_hit
+### list\_assignments\_for\_hit
 
-The `ListAssignmentsForHIT` operation retrieves completed assignments for a
-HIT.
+The `ListAssignmentsForHIT` operation retrieves completed assignments for a HIT.
 
-Type annotations for `boto3.client("mturk").list_assignments_for_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_assignments_for_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
 
-Boto3 documentation:
-[MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
+```python title="Method definition"
+def list_assignments_for_hit(
+    self,
+    *,
+    HITId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    AssignmentStatuses: Sequence[AssignmentStatusType] = ...,  # (1)
+) -> ListAssignmentsForHITResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssignmentsForHITRequestRequestTypeDef](./type_defs.md#listassignmentsforhitrequestrequesttypedef).
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `AssignmentStatuses`:
-  `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
+```python title="Usage example with kwargs"
+kwargs: ListAssignmentsForHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+}
 
-Returns
-[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef).
+parent.list_assignments_for_hit(**kwargs)
+```
 
-<a id="list\_bonus\_payments"></a>
+1. See [:material-code-braces: ListAssignmentsForHITRequestRequestTypeDef](./type_defs.md#listassignmentsforhitrequestrequesttypedef) 
 
-### list_bonus_payments
+### list\_bonus\_payments
 
-The `ListBonusPayments` operation retrieves the amounts of bonuses you have
-paid to Workers for a given HIT or assignment.
+The `ListBonusPayments` operation retrieves the amounts of bonuses you have paid
+to Workers for a given HIT or assignment.
 
-Type annotations for `boto3.client("mturk").list_bonus_payments` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_bonus_payments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
 
-Boto3 documentation:
-[MTurk.Client.list_bonus_payments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
+```python title="Method definition"
+def list_bonus_payments(
+    self,
+    *,
+    HITId: str = ...,
+    AssignmentId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBonusPaymentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBonusPaymentsRequestRequestTypeDef](./type_defs.md#listbonuspaymentsrequestrequesttypedef).
+1. See [:material-code-braces: ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HITId`: `str`
-- `AssignmentId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBonusPaymentsRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+}
 
-Returns
-[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef).
+parent.list_bonus_payments(**kwargs)
+```
 
-<a id="list\_hits"></a>
+1. See [:material-code-braces: ListBonusPaymentsRequestRequestTypeDef](./type_defs.md#listbonuspaymentsrequestrequesttypedef) 
 
-### list_hits
+### list\_hits
 
 The `ListHITs` operation returns all of a Requester's HITs.
 
-Type annotations for `boto3.client("mturk").list_hits` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_hits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits)
 
-Boto3 documentation:
-[MTurk.Client.list_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits)
+```python title="Method definition"
+def list_hits(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListHITsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHITsRequestRequestTypeDef](./type_defs.md#listhitsrequestrequesttypedef).
+1. See [:material-code-braces: ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListHITsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef).
+parent.list_hits(**kwargs)
+```
 
-<a id="list\_hits\_for\_qualification\_type"></a>
+1. See [:material-code-braces: ListHITsRequestRequestTypeDef](./type_defs.md#listhitsrequestrequesttypedef) 
 
-### list_hits_for_qualification_type
+### list\_hits\_for\_qualification\_type
 
-The `ListHITsForQualificationType` operation returns the HITs that use the
-given Qualification type for a Qualification requirement.
+The `ListHITsForQualificationType` operation returns the HITs that use the given
+Qualification type for a Qualification requirement.
 
-Type annotations for `boto3.client("mturk").list_hits_for_qualification_type`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_hits_for_qualification_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
 
-Boto3 documentation:
-[MTurk.Client.list_hits_for_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
+```python title="Method definition"
+def list_hits_for_qualification_type(
+    self,
+    *,
+    QualificationTypeId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListHITsForQualificationTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHITsForQualificationTypeRequestRequestTypeDef](./type_defs.md#listhitsforqualificationtyperequestrequesttypedef).
+1. See [:material-code-braces: ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListHITsForQualificationTypeRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
 
-Returns
-[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef).
+parent.list_hits_for_qualification_type(**kwargs)
+```
 
-<a id="list\_qualification\_requests"></a>
+1. See [:material-code-braces: ListHITsForQualificationTypeRequestRequestTypeDef](./type_defs.md#listhitsforqualificationtyperequestrequesttypedef) 
 
-### list_qualification_requests
+### list\_qualification\_requests
 
 The `ListQualificationRequests` operation retrieves requests for Qualifications
 of a particular Qualification type.
 
-Type annotations for `boto3.client("mturk").list_qualification_requests`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_qualification_requests` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
 
-Boto3 documentation:
-[MTurk.Client.list_qualification_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
+```python title="Method definition"
+def list_qualification_requests(
+    self,
+    *,
+    QualificationTypeId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListQualificationRequestsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListQualificationRequestsRequestRequestTypeDef](./type_defs.md#listqualificationrequestsrequestrequesttypedef).
+1. See [:material-code-braces: ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListQualificationRequestsRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
 
-Returns
-[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef).
+parent.list_qualification_requests(**kwargs)
+```
 
-<a id="list\_qualification\_types"></a>
+1. See [:material-code-braces: ListQualificationRequestsRequestRequestTypeDef](./type_defs.md#listqualificationrequestsrequestrequesttypedef) 
 
-### list_qualification_types
+### list\_qualification\_types
 
 The `ListQualificationTypes` operation returns a list of Qualification types,
 filtered by an optional search term.
 
-Type annotations for `boto3.client("mturk").list_qualification_types` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_qualification_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types)
 
-Boto3 documentation:
-[MTurk.Client.list_qualification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types)
+```python title="Method definition"
+def list_qualification_types(
+    self,
+    *,
+    MustBeRequestable: bool,
+    Query: str = ...,
+    MustBeOwnedByCaller: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListQualificationTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListQualificationTypesRequestRequestTypeDef](./type_defs.md#listqualificationtypesrequestrequesttypedef).
+1. See [:material-code-braces: ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MustBeRequestable`: `bool` *(required)*
-- `Query`: `str`
-- `MustBeOwnedByCaller`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListQualificationTypesRequestRequestTypeDef = {  # (1)
+    "MustBeRequestable": ...,
+}
 
-Returns
-[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef).
+parent.list_qualification_types(**kwargs)
+```
 
-<a id="list\_review\_policy\_results\_for\_hit"></a>
+1. See [:material-code-braces: ListQualificationTypesRequestRequestTypeDef](./type_defs.md#listqualificationtypesrequestrequesttypedef) 
 
-### list_review_policy_results_for_hit
+### list\_review\_policy\_results\_for\_hit
 
-The `ListReviewPolicyResultsForHIT` operation retrieves the computed results
-and the actions taken in the course of executing your Review Policies for a
-given HIT.
+The `ListReviewPolicyResultsForHIT` operation retrieves the computed results and
+the actions taken in the course of executing your Review Policies for a given
+HIT.
 
-Type annotations for `boto3.client("mturk").list_review_policy_results_for_hit`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_review_policy_results_for_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
 
-Boto3 documentation:
-[MTurk.Client.list_review_policy_results_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
+```python title="Method definition"
+def list_review_policy_results_for_hit(
+    self,
+    *,
+    HITId: str,
+    PolicyLevels: Sequence[ReviewPolicyLevelType] = ...,  # (1)
+    RetrieveActions: bool = ...,
+    RetrieveResults: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReviewPolicyResultsForHITResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListReviewPolicyResultsForHITRequestRequestTypeDef](./type_defs.md#listreviewpolicyresultsforhitrequestrequesttypedef).
+1. See [:material-code-brackets: ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype) 
+2. See [:material-code-braces: ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
-- `PolicyLevels`:
-  `Sequence`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
-- `RetrieveActions`: `bool`
-- `RetrieveResults`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReviewPolicyResultsForHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+}
 
-Returns
-[ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef).
+parent.list_review_policy_results_for_hit(**kwargs)
+```
 
-<a id="list\_reviewable\_hits"></a>
+1. See [:material-code-braces: ListReviewPolicyResultsForHITRequestRequestTypeDef](./type_defs.md#listreviewpolicyresultsforhitrequestrequesttypedef) 
 
-### list_reviewable_hits
+### list\_reviewable\_hits
 
 The `ListReviewableHITs` operation retrieves the HITs with Status equal to
-Reviewable or Status equal to Reviewing that belong to the Requester calling
-the operation.
+Reviewable or Status equal to Reviewing that belong to the Requester calling the
+operation.
 
-Type annotations for `boto3.client("mturk").list_reviewable_hits` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_reviewable_hits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
 
-Boto3 documentation:
-[MTurk.Client.list_reviewable_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
+```python title="Method definition"
+def list_reviewable_hits(
+    self,
+    *,
+    HITTypeId: str = ...,
+    Status: ReviewableHITStatusType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReviewableHITsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListReviewableHITsRequestRequestTypeDef](./type_defs.md#listreviewablehitsrequestrequesttypedef).
+1. See [:material-code-brackets: ReviewableHITStatusType](./literals.md#reviewablehitstatustype) 
+2. See [:material-code-braces: ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HITTypeId`: `str`
-- `Status`: [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReviewableHITsRequestRequestTypeDef = {  # (1)
+    "HITTypeId": ...,
+}
 
-Returns
-[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef).
+parent.list_reviewable_hits(**kwargs)
+```
 
-<a id="list\_worker\_blocks"></a>
+1. See [:material-code-braces: ListReviewableHITsRequestRequestTypeDef](./type_defs.md#listreviewablehitsrequestrequesttypedef) 
 
-### list_worker_blocks
+### list\_worker\_blocks
 
 The `ListWorkersBlocks` operation retrieves a list of Workers who are blocked
 from working on your HITs.
 
-Type annotations for `boto3.client("mturk").list_worker_blocks` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_worker_blocks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
 
-Boto3 documentation:
-[MTurk.Client.list_worker_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
+```python title="Method definition"
+def list_worker_blocks(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWorkerBlocksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkerBlocksRequestRequestTypeDef](./type_defs.md#listworkerblocksrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorkerBlocksRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef).
+parent.list_worker_blocks(**kwargs)
+```
 
-<a id="list\_workers\_with\_qualification\_type"></a>
+1. See [:material-code-braces: ListWorkerBlocksRequestRequestTypeDef](./type_defs.md#listworkerblocksrequestrequesttypedef) 
 
-### list_workers_with_qualification_type
+### list\_workers\_with\_qualification\_type
 
-The `ListWorkersWithQualificationType` operation returns all of the Workers
-that have been associated with a given Qualification type.
+The `ListWorkersWithQualificationType` operation returns all of the Workers that
+have been associated with a given Qualification type.
 
-Type annotations for
-`boto3.client("mturk").list_workers_with_qualification_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").list_workers_with_qualification_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
 
-Boto3 documentation:
-[MTurk.Client.list_workers_with_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
+```python title="Method definition"
+def list_workers_with_qualification_type(
+    self,
+    *,
+    QualificationTypeId: str,
+    Status: QualificationStatusType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWorkersWithQualificationTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkersWithQualificationTypeRequestRequestTypeDef](./type_defs.md#listworkerswithqualificationtyperequestrequesttypedef).
+1. See [:material-code-brackets: QualificationStatusType](./literals.md#qualificationstatustype) 
+2. See [:material-code-braces: ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
-- `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorkersWithQualificationTypeRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
 
-Returns
-[ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef).
+parent.list_workers_with_qualification_type(**kwargs)
+```
 
-<a id="notify\_workers"></a>
+1. See [:material-code-braces: ListWorkersWithQualificationTypeRequestRequestTypeDef](./type_defs.md#listworkerswithqualificationtyperequestrequesttypedef) 
 
-### notify_workers
+### notify\_workers
 
 The `NotifyWorkers` operation sends an email to one or more Workers that you
 specify with the Worker ID.
 
-Type annotations for `boto3.client("mturk").notify_workers` method.
+Type annotations and code completion for `#!python boto3.client("mturk").notify_workers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers)
 
-Boto3 documentation:
-[MTurk.Client.notify_workers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers)
+```python title="Method definition"
+def notify_workers(
+    self,
+    *,
+    Subject: str,
+    MessageText: str,
+    WorkerIds: Sequence[str],
+) -> NotifyWorkersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[NotifyWorkersRequestRequestTypeDef](./type_defs.md#notifyworkersrequestrequesttypedef).
+1. See [:material-code-braces: NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Subject`: `str` *(required)*
-- `MessageText`: `str` *(required)*
-- `WorkerIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: NotifyWorkersRequestRequestTypeDef = {  # (1)
+    "Subject": ...,
+    "MessageText": ...,
+    "WorkerIds": ...,
+}
 
-Returns
-[NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef).
+parent.notify_workers(**kwargs)
+```
 
-<a id="reject\_assignment"></a>
+1. See [:material-code-braces: NotifyWorkersRequestRequestTypeDef](./type_defs.md#notifyworkersrequestrequesttypedef) 
 
-### reject_assignment
+### reject\_assignment
 
 The `RejectAssignment` operation rejects the results of a completed assignment.
 
-Type annotations for `boto3.client("mturk").reject_assignment` method.
+Type annotations and code completion for `#!python boto3.client("mturk").reject_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment)
 
-Boto3 documentation:
-[MTurk.Client.reject_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment)
+```python title="Method definition"
+def reject_assignment(
+    self,
+    *,
+    AssignmentId: str,
+    RequesterFeedback: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RejectAssignmentRequestRequestTypeDef](./type_defs.md#rejectassignmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AssignmentId`: `str` *(required)*
-- `RequesterFeedback`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectAssignmentRequestRequestTypeDef = {  # (1)
+    "AssignmentId": ...,
+    "RequesterFeedback": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reject_assignment(**kwargs)
+```
 
-<a id="reject\_qualification\_request"></a>
+1. See [:material-code-braces: RejectAssignmentRequestRequestTypeDef](./type_defs.md#rejectassignmentrequestrequesttypedef) 
 
-### reject_qualification_request
+### reject\_qualification\_request
 
 The `RejectQualificationRequest` operation rejects a user's request for a
 Qualification.
 
-Type annotations for `boto3.client("mturk").reject_qualification_request`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").reject_qualification_request` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
 
-Boto3 documentation:
-[MTurk.Client.reject_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
+```python title="Method definition"
+def reject_qualification_request(
+    self,
+    *,
+    QualificationRequestId: str,
+    Reason: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RejectQualificationRequestRequestRequestTypeDef](./type_defs.md#rejectqualificationrequestrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `QualificationRequestId`: `str` *(required)*
-- `Reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: RejectQualificationRequestRequestRequestTypeDef = {  # (1)
+    "QualificationRequestId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reject_qualification_request(**kwargs)
+```
 
-<a id="send\_bonus"></a>
+1. See [:material-code-braces: RejectQualificationRequestRequestRequestTypeDef](./type_defs.md#rejectqualificationrequestrequestrequesttypedef) 
 
-### send_bonus
+### send\_bonus
 
 The `SendBonus` operation issues a payment of money from your account to a
 Worker.
 
-Type annotations for `boto3.client("mturk").send_bonus` method.
+Type annotations and code completion for `#!python boto3.client("mturk").send_bonus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus)
 
-Boto3 documentation:
-[MTurk.Client.send_bonus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus)
+```python title="Method definition"
+def send_bonus(
+    self,
+    *,
+    WorkerId: str,
+    BonusAmount: str,
+    AssignmentId: str,
+    Reason: str,
+    UniqueRequestToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SendBonusRequestRequestTypeDef](./type_defs.md#sendbonusrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkerId`: `str` *(required)*
-- `BonusAmount`: `str` *(required)*
-- `AssignmentId`: `str` *(required)*
-- `Reason`: `str` *(required)*
-- `UniqueRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendBonusRequestRequestTypeDef = {  # (1)
+    "WorkerId": ...,
+    "BonusAmount": ...,
+    "AssignmentId": ...,
+    "Reason": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.send_bonus(**kwargs)
+```
 
-<a id="send\_test\_event\_notification"></a>
+1. See [:material-code-braces: SendBonusRequestRequestTypeDef](./type_defs.md#sendbonusrequestrequesttypedef) 
 
-### send_test_event_notification
+### send\_test\_event\_notification
 
 The `SendTestEventNotification` operation causes Amazon Mechanical Turk to send
 a notification message as if a HIT event occurred, according to the provided
 notification specification.
 
-Type annotations for `boto3.client("mturk").send_test_event_notification`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").send_test_event_notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
 
-Boto3 documentation:
-[MTurk.Client.send_test_event_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
+```python title="Method definition"
+def send_test_event_notification(
+    self,
+    *,
+    Notification: NotificationSpecificationTypeDef,  # (1)
+    TestEventType: EventTypeType,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SendTestEventNotificationRequestRequestTypeDef](./type_defs.md#sendtesteventnotificationrequestrequesttypedef).
+1. See [:material-code-braces: NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef) 
+2. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
 
-Keyword-only arguments:
 
-- `Notification`:
-  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
-  *(required)*
-- `TestEventType`: [EventTypeType](./literals.md#eventtypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendTestEventNotificationRequestRequestTypeDef = {  # (1)
+    "Notification": ...,
+    "TestEventType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.send_test_event_notification(**kwargs)
+```
 
-<a id="update\_expiration\_for\_hit"></a>
+1. See [:material-code-braces: SendTestEventNotificationRequestRequestTypeDef](./type_defs.md#sendtesteventnotificationrequestrequesttypedef) 
 
-### update_expiration_for_hit
+### update\_expiration\_for\_hit
 
 The `UpdateExpirationForHIT` operation allows you update the expiration time of
 a HIT.
 
-Type annotations for `boto3.client("mturk").update_expiration_for_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").update_expiration_for_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
 
-Boto3 documentation:
-[MTurk.Client.update_expiration_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
+```python title="Method definition"
+def update_expiration_for_hit(
+    self,
+    *,
+    HITId: str,
+    ExpireAt: Union[datetime, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateExpirationForHITRequestRequestTypeDef](./type_defs.md#updateexpirationforhitrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
-- `ExpireAt`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateExpirationForHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+    "ExpireAt": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_expiration_for_hit(**kwargs)
+```
 
-<a id="update\_hit\_review\_status"></a>
+1. See [:material-code-braces: UpdateExpirationForHITRequestRequestTypeDef](./type_defs.md#updateexpirationforhitrequestrequesttypedef) 
 
-### update_hit_review_status
+### update\_hit\_review\_status
 
 The `UpdateHITReviewStatus` operation updates the status of a HIT.
 
-Type annotations for `boto3.client("mturk").update_hit_review_status` method.
+Type annotations and code completion for `#!python boto3.client("mturk").update_hit_review_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
 
-Boto3 documentation:
-[MTurk.Client.update_hit_review_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
+```python title="Method definition"
+def update_hit_review_status(
+    self,
+    *,
+    HITId: str,
+    Revert: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateHITReviewStatusRequestRequestTypeDef](./type_defs.md#updatehitreviewstatusrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
-- `Revert`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateHITReviewStatusRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_hit_review_status(**kwargs)
+```
 
-<a id="update\_hit\_type\_of\_hit"></a>
+1. See [:material-code-braces: UpdateHITReviewStatusRequestRequestTypeDef](./type_defs.md#updatehitreviewstatusrequestrequesttypedef) 
 
-### update_hit_type_of_hit
+### update\_hit\_type\_of\_hit
 
 The `UpdateHITTypeOfHIT` operation allows you to change the HITType properties
 of a HIT.
 
-Type annotations for `boto3.client("mturk").update_hit_type_of_hit` method.
+Type annotations and code completion for `#!python boto3.client("mturk").update_hit_type_of_hit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
 
-Boto3 documentation:
-[MTurk.Client.update_hit_type_of_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
+```python title="Method definition"
+def update_hit_type_of_hit(
+    self,
+    *,
+    HITId: str,
+    HITTypeId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateHITTypeOfHITRequestRequestTypeDef](./type_defs.md#updatehittypeofhitrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HITId`: `str` *(required)*
-- `HITTypeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateHITTypeOfHITRequestRequestTypeDef = {  # (1)
+    "HITId": ...,
+    "HITTypeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_hit_type_of_hit(**kwargs)
+```
 
-<a id="update\_notification\_settings"></a>
+1. See [:material-code-braces: UpdateHITTypeOfHITRequestRequestTypeDef](./type_defs.md#updatehittypeofhitrequestrequesttypedef) 
 
-### update_notification_settings
+### update\_notification\_settings
 
 The `UpdateNotificationSettings` operation creates, updates, disables or re-
 enables notifications for a HIT type.
 
-Type annotations for `boto3.client("mturk").update_notification_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("mturk").update_notification_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings)
 
-Boto3 documentation:
-[MTurk.Client.update_notification_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings)
+```python title="Method definition"
+def update_notification_settings(
+    self,
+    *,
+    HITTypeId: str,
+    Notification: NotificationSpecificationTypeDef = ...,  # (1)
+    Active: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNotificationSettingsRequestRequestTypeDef](./type_defs.md#updatenotificationsettingsrequestrequesttypedef).
+1. See [:material-code-braces: NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef) 
 
-Keyword-only arguments:
 
-- `HITTypeId`: `str` *(required)*
-- `Notification`:
-  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
-- `Active`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateNotificationSettingsRequestRequestTypeDef = {  # (1)
+    "HITTypeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_notification_settings(**kwargs)
+```
 
-<a id="update\_qualification\_type"></a>
+1. See [:material-code-braces: UpdateNotificationSettingsRequestRequestTypeDef](./type_defs.md#updatenotificationsettingsrequestrequesttypedef) 
 
-### update_qualification_type
+### update\_qualification\_type
 
 The `UpdateQualificationType` operation modifies the attributes of an existing
 Qualification type, which is represented by a QualificationType data structure.
 
-Type annotations for `boto3.client("mturk").update_qualification_type` method.
+Type annotations and code completion for `#!python boto3.client("mturk").update_qualification_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type)
 
-Boto3 documentation:
-[MTurk.Client.update_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type)
+```python title="Method definition"
+def update_qualification_type(
+    self,
+    *,
+    QualificationTypeId: str,
+    Description: str = ...,
+    QualificationTypeStatus: QualificationTypeStatusType = ...,  # (1)
+    Test: str = ...,
+    AnswerKey: str = ...,
+    TestDurationInSeconds: int = ...,
+    RetryDelayInSeconds: int = ...,
+    AutoGranted: bool = ...,
+    AutoGrantedValue: int = ...,
+) -> UpdateQualificationTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateQualificationTypeRequestRequestTypeDef](./type_defs.md#updatequalificationtyperequestrequesttypedef).
+1. See [:material-code-brackets: QualificationTypeStatusType](./literals.md#qualificationtypestatustype) 
+2. See [:material-code-braces: UpdateQualificationTypeResponseTypeDef](./type_defs.md#updatequalificationtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `QualificationTypeId`: `str` *(required)*
-- `Description`: `str`
-- `QualificationTypeStatus`:
-  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
-- `Test`: `str`
-- `AnswerKey`: `str`
-- `TestDurationInSeconds`: `int`
-- `RetryDelayInSeconds`: `int`
-- `AutoGranted`: `bool`
-- `AutoGrantedValue`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateQualificationTypeRequestRequestTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
 
-Returns
-[UpdateQualificationTypeResponseTypeDef](./type_defs.md#updatequalificationtyperesponsetypedef).
+parent.update_qualification_type(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateQualificationTypeRequestRequestTypeDef](./type_defs.md#updatequalificationtyperequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mturk").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator` method with overloads.
 
-- `client.get_paginator("list_assignments_for_hit")` ->
-  [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
-- `client.get_paginator("list_bonus_payments")` ->
-  [ListBonusPaymentsPaginator](./paginators.md#listbonuspaymentspaginator)
-- `client.get_paginator("list_hits")` ->
-  [ListHITsPaginator](./paginators.md#listhitspaginator)
-- `client.get_paginator("list_hits_for_qualification_type")` ->
-  [ListHITsForQualificationTypePaginator](./paginators.md#listhitsforqualificationtypepaginator)
-- `client.get_paginator("list_qualification_requests")` ->
-  [ListQualificationRequestsPaginator](./paginators.md#listqualificationrequestspaginator)
-- `client.get_paginator("list_qualification_types")` ->
-  [ListQualificationTypesPaginator](./paginators.md#listqualificationtypespaginator)
-- `client.get_paginator("list_reviewable_hits")` ->
-  [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
-- `client.get_paginator("list_worker_blocks")` ->
-  [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
-- `client.get_paginator("list_workers_with_qualification_type")` ->
-  [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
+- `client.get_paginator("list_assignments_for_hit")` -> [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
+- `client.get_paginator("list_bonus_payments")` -> [ListBonusPaymentsPaginator](./paginators.md#listbonuspaymentspaginator)
+- `client.get_paginator("list_hits")` -> [ListHITsPaginator](./paginators.md#listhitspaginator)
+- `client.get_paginator("list_hits_for_qualification_type")` -> [ListHITsForQualificationTypePaginator](./paginators.md#listhitsforqualificationtypepaginator)
+- `client.get_paginator("list_qualification_requests")` -> [ListQualificationRequestsPaginator](./paginators.md#listqualificationrequestspaginator)
+- `client.get_paginator("list_qualification_types")` -> [ListQualificationTypesPaginator](./paginators.md#listqualificationtypespaginator)
+- `client.get_paginator("list_reviewable_hits")` -> [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
+- `client.get_paginator("list_worker_blocks")` -> [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
+- `client.get_paginator("list_workers_with_qualification_type")` -> [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
+
+
+

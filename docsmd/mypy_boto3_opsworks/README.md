@@ -1,46 +1,20 @@
-<a id="type-annotations-for-boto3-opsworks-module"></a>
-
-# Type annotations for boto3 OpsWorks module
+#  OpsWorks module
 
 > [Index](../README.md) > OpsWorks
 
-Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
-type annotations stubs module
-[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+!!! note ""
 
-- [Type annotations for boto3 OpsWorks module](#type-annotations-for-boto3-opsworks-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [OpsWorksClient](#opsworksclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [OpsWorksServiceResource](#opsworksserviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+    type annotations stubs module [mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `OpsWorks`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -60,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[opsworks]'
 python -m pip install mypy-boto3-opsworks
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -68,188 +42,56 @@ python -m pip install mypy-boto3-opsworks
 python -m pip uninstall -y mypy-boto3-opsworks
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="opsworksclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## OpsWorksClient
 
-Type annotations for `boto3.client("opsworks")` as
-[OpsWorksClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("opsworks")` as [OpsWorksClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_opsworks.client import OpsWorksClient
+
+def get_client() -> OpsWorksClient:
+    return Session().cleint("opsworks")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [assign_instance](./client.md#assign_instance)
-- [assign_volume](./client.md#assign_volume)
-- [associate_elastic_ip](./client.md#associate_elastic_ip)
-- [attach_elastic_load_balancer](./client.md#attach_elastic_load_balancer)
-- [can_paginate](./client.md#can_paginate)
-- [clone_stack](./client.md#clone_stack)
-- [create_app](./client.md#create_app)
-- [create_deployment](./client.md#create_deployment)
-- [create_instance](./client.md#create_instance)
-- [create_layer](./client.md#create_layer)
-- [create_stack](./client.md#create_stack)
-- [create_user_profile](./client.md#create_user_profile)
-- [delete_app](./client.md#delete_app)
-- [delete_instance](./client.md#delete_instance)
-- [delete_layer](./client.md#delete_layer)
-- [delete_stack](./client.md#delete_stack)
-- [delete_user_profile](./client.md#delete_user_profile)
-- [deregister_ecs_cluster](./client.md#deregister_ecs_cluster)
-- [deregister_elastic_ip](./client.md#deregister_elastic_ip)
-- [deregister_instance](./client.md#deregister_instance)
-- [deregister_rds_db_instance](./client.md#deregister_rds_db_instance)
-- [deregister_volume](./client.md#deregister_volume)
-- [describe_agent_versions](./client.md#describe_agent_versions)
-- [describe_apps](./client.md#describe_apps)
-- [describe_commands](./client.md#describe_commands)
-- [describe_deployments](./client.md#describe_deployments)
-- [describe_ecs_clusters](./client.md#describe_ecs_clusters)
-- [describe_elastic_ips](./client.md#describe_elastic_ips)
-- [describe_elastic_load_balancers](./client.md#describe_elastic_load_balancers)
-- [describe_instances](./client.md#describe_instances)
-- [describe_layers](./client.md#describe_layers)
-- [describe_load_based_auto_scaling](./client.md#describe_load_based_auto_scaling)
-- [describe_my_user_profile](./client.md#describe_my_user_profile)
-- [describe_operating_systems](./client.md#describe_operating_systems)
-- [describe_permissions](./client.md#describe_permissions)
-- [describe_raid_arrays](./client.md#describe_raid_arrays)
-- [describe_rds_db_instances](./client.md#describe_rds_db_instances)
-- [describe_service_errors](./client.md#describe_service_errors)
-- [describe_stack_provisioning_parameters](./client.md#describe_stack_provisioning_parameters)
-- [describe_stack_summary](./client.md#describe_stack_summary)
-- [describe_stacks](./client.md#describe_stacks)
-- [describe_time_based_auto_scaling](./client.md#describe_time_based_auto_scaling)
-- [describe_user_profiles](./client.md#describe_user_profiles)
-- [describe_volumes](./client.md#describe_volumes)
-- [detach_elastic_load_balancer](./client.md#detach_elastic_load_balancer)
-- [disassociate_elastic_ip](./client.md#disassociate_elastic_ip)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_hostname_suggestion](./client.md#get_hostname_suggestion)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [grant_access](./client.md#grant_access)
-- [list_tags](./client.md#list_tags)
-- [reboot_instance](./client.md#reboot_instance)
-- [register_ecs_cluster](./client.md#register_ecs_cluster)
-- [register_elastic_ip](./client.md#register_elastic_ip)
-- [register_instance](./client.md#register_instance)
-- [register_rds_db_instance](./client.md#register_rds_db_instance)
-- [register_volume](./client.md#register_volume)
-- [set_load_based_auto_scaling](./client.md#set_load_based_auto_scaling)
-- [set_permission](./client.md#set_permission)
-- [set_time_based_auto_scaling](./client.md#set_time_based_auto_scaling)
-- [start_instance](./client.md#start_instance)
-- [start_stack](./client.md#start_stack)
-- [stop_instance](./client.md#stop_instance)
-- [stop_stack](./client.md#stop_stack)
-- [tag_resource](./client.md#tag_resource)
-- [unassign_instance](./client.md#unassign_instance)
-- [unassign_volume](./client.md#unassign_volume)
-- [untag_resource](./client.md#untag_resource)
-- [update_app](./client.md#update_app)
-- [update_elastic_ip](./client.md#update_elastic_ip)
-- [update_instance](./client.md#update_instance)
-- [update_layer](./client.md#update_layer)
-- [update_my_user_profile](./client.md#update_my_user_profile)
-- [update_rds_db_instance](./client.md#update_rds_db_instance)
-- [update_stack](./client.md#update_stack)
-- [update_user_profile](./client.md#update_user_profile)
-- [update_volume](./client.md#update_volume)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-OpsWorksClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ResourceNotFoundException
-- ValidationException
-
-<a id="opsworksserviceresource"></a>
-
-## OpsWorksServiceResource
-
-Type annotations for `boto3.resource("opsworks")` as
-[OpsWorksServiceResource](./service_resource.md#opsworksserviceresource)
-
-Can be used directly:
-
-```python
-from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
-```
-
-<a id="collections"></a>
-
-### Collections
-
-Type annotations for collections from `boto3.resource("opsworks").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection, ...
-```
-
-- [ServiceResourceStacksCollection](./service_resource.md#opsworksserviceresourcestacks)
-
-<a id="resources"></a>
-
-### Resources
-
-Type annotations for additional resources from `boto3.resource("opsworks").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_opsworks.service_resource import Layer, ...
-```
-
-- [Layer](./service_resource.md#layer)
-- [Stack](./service_resource.md#stack)
-- [StackSummary](./service_resource.md#stacksummary)
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("opsworks").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("opsworks").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_opsworks.paginator import DescribeEcsClustersPaginator, ...
+from mypy_boto3_opsworks.paginator import DescribeEcsClustersPaginator
+
+def get_describe_ecs_clusters_paginator() -> DescribeEcsClustersPaginator:
+    return Session().client("opsworks").get_paginator("describe_ecs_clusters"))
 ```
 
 - [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("opsworks").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("opsworks").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_opsworks.waiter import AppExistsWaiter, ...
+from mypy_boto3_opsworks.waiter import AppExistsWaiter
+
+def get_app_exists_waiter() -> AppExistsWaiter:
+    return Session().client("opsworks").get_waiter("app_exists")
 ```
 
 - [AppExistsWaiter](./waiters.md#appexistswaiter)
@@ -259,16 +101,76 @@ from mypy_boto3_opsworks.waiter import AppExistsWaiter, ...
 - [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
 - [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+## OpsWorksServiceResource
+
+Type annotations and code completion for `#!python boto3.resource("opsworks")` as
+[OpsWorksServiceResource](./service_resource.md#opsworksserviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
+
+def get_opsworks_resource() -> OpsWorksServiceResource:
+    return Session().resource("opsworks")
+```
+
+
+### Collections
+
+Type annotations and code completion for collections
+from `#!python boto3.resource("opsworks").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection
+
+def get_collection() -> ServiceResourceStacksCollection:
+    return Session().resource("opsworks").stacks
+```
+
+- [ServiceResourceStacksCollection](./service_resource.md#opsworksserviceresourcestacks)
+
+
+
+
+### Resources
+
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("opsworks").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworks.service_resource import Layer
+
+def get_resource() -> Layer:
+    return Session().resource("opsworks").Layer(...)
+```
+
+- [Layer](./service_resource.md#layer)
+- [Stack](./service_resource.md#stack)
+- [StackSummary](./service_resource.md#stacksummary)
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_opsworks.literals import AppAttributesKeysType
 
-```python
-from mypy_boto3_opsworks.literals import AppAttributesKeysType, ...
+def get_value() -> AppAttributesKeysType:
+    return "AutoBundleOnDeploy"
 ```
 
 - [AppAttributesKeysType](./literals.md#appattributeskeystype)
@@ -298,18 +200,22 @@ from mypy_boto3_opsworks.literals import AppAttributesKeysType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_opsworks.type_defs import AgentVersionTypeDef
 
-```python
-from mypy_boto3_opsworks.type_defs import AgentVersionTypeDef, ...
+def get_value() -> AgentVersionTypeDef:
+    return {
+        "Version": ...,
+    }
 ```
 
 - [AgentVersionTypeDef](./type_defs.md#agentversiontypedef)
@@ -357,18 +263,25 @@ from mypy_boto3_opsworks.type_defs import AgentVersionTypeDef, ...
 - [DeregisterVolumeRequestRequestTypeDef](./type_defs.md#deregistervolumerequestrequesttypedef)
 - [DescribeAgentVersionsRequestRequestTypeDef](./type_defs.md#describeagentversionsrequestrequesttypedef)
 - [DescribeAgentVersionsResultTypeDef](./type_defs.md#describeagentversionsresulttypedef)
+- [DescribeAppsRequestAppExistsWaitTypeDef](./type_defs.md#describeappsrequestappexistswaittypedef)
 - [DescribeAppsRequestRequestTypeDef](./type_defs.md#describeappsrequestrequesttypedef)
 - [DescribeAppsResultTypeDef](./type_defs.md#describeappsresulttypedef)
 - [DescribeCommandsRequestRequestTypeDef](./type_defs.md#describecommandsrequestrequesttypedef)
 - [DescribeCommandsResultTypeDef](./type_defs.md#describecommandsresulttypedef)
+- [DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef](./type_defs.md#describedeploymentsrequestdeploymentsuccessfulwaittypedef)
 - [DescribeDeploymentsRequestRequestTypeDef](./type_defs.md#describedeploymentsrequestrequesttypedef)
 - [DescribeDeploymentsResultTypeDef](./type_defs.md#describedeploymentsresulttypedef)
+- [DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef](./type_defs.md#describeecsclustersrequestdescribeecsclusterspaginatetypedef)
 - [DescribeEcsClustersRequestRequestTypeDef](./type_defs.md#describeecsclustersrequestrequesttypedef)
 - [DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef)
 - [DescribeElasticIpsRequestRequestTypeDef](./type_defs.md#describeelasticipsrequestrequesttypedef)
 - [DescribeElasticIpsResultTypeDef](./type_defs.md#describeelasticipsresulttypedef)
 - [DescribeElasticLoadBalancersRequestRequestTypeDef](./type_defs.md#describeelasticloadbalancersrequestrequesttypedef)
 - [DescribeElasticLoadBalancersResultTypeDef](./type_defs.md#describeelasticloadbalancersresulttypedef)
+- [DescribeInstancesRequestInstanceOnlineWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceonlinewaittypedef)
+- [DescribeInstancesRequestInstanceRegisteredWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceregisteredwaittypedef)
+- [DescribeInstancesRequestInstanceStoppedWaitTypeDef](./type_defs.md#describeinstancesrequestinstancestoppedwaittypedef)
+- [DescribeInstancesRequestInstanceTerminatedWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceterminatedwaittypedef)
 - [DescribeInstancesRequestRequestTypeDef](./type_defs.md#describeinstancesrequestrequesttypedef)
 - [DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)
 - [DescribeLayersRequestRequestTypeDef](./type_defs.md#describelayersrequestrequesttypedef)
@@ -478,3 +391,4 @@ from mypy_boto3_opsworks.type_defs import AgentVersionTypeDef, ...
 - [VolumeTypeDef](./type_defs.md#volumetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
+

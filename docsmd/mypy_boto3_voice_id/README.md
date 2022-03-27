@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-voiceid-module"></a>
-
-# Type annotations for boto3 VoiceID module
+#  VoiceID module
 
 > [Index](../README.md) > VoiceID
 
-Auto-generated documentation for
-[VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
-type annotations stubs module
-[mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
+!!! note ""
 
-- [Type annotations for boto3 VoiceID module](#type-annotations-for-boto3-voiceid-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [VoiceIDClient](#voiceidclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
+    type annotations stubs module [mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `VoiceID`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[voice-id]'
 python -m pip install mypy-boto3-voice-id
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,78 +42,41 @@ python -m pip install mypy-boto3-voice-id
 python -m pip uninstall -y mypy-boto3-voice-id
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="voiceidclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## VoiceIDClient
 
-Type annotations for `boto3.client("voice-id")` as [VoiceIDClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("voice-id")` as [VoiceIDClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_voice_id.client import VoiceIDClient
+
+def get_client() -> VoiceIDClient:
+    return Session().cleint("voice-id")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_domain](./client.md#create_domain)
-- [delete_domain](./client.md#delete_domain)
-- [delete_fraudster](./client.md#delete_fraudster)
-- [delete_speaker](./client.md#delete_speaker)
-- [describe_domain](./client.md#describe_domain)
-- [describe_fraudster](./client.md#describe_fraudster)
-- [describe_fraudster_registration_job](./client.md#describe_fraudster_registration_job)
-- [describe_speaker](./client.md#describe_speaker)
-- [describe_speaker_enrollment_job](./client.md#describe_speaker_enrollment_job)
-- [evaluate_session](./client.md#evaluate_session)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_domains](./client.md#list_domains)
-- [list_fraudster_registration_jobs](./client.md#list_fraudster_registration_jobs)
-- [list_speaker_enrollment_jobs](./client.md#list_speaker_enrollment_jobs)
-- [list_speakers](./client.md#list_speakers)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [opt_out_speaker](./client.md#opt_out_speaker)
-- [start_fraudster_registration_job](./client.md#start_fraudster_registration_job)
-- [start_speaker_enrollment_job](./client.md#start_speaker_enrollment_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_domain](./client.md#update_domain)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-VoiceIDClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_voice_id.literals import AuthenticationDecisionType
 
-```python
-from mypy_boto3_voice_id.literals import AuthenticationDecisionType, ...
+def get_value() -> AuthenticationDecisionType:
+    return "ACCEPT"
 ```
 
 - [AuthenticationDecisionType](./literals.md#authenticationdecisiontype)
@@ -151,18 +93,22 @@ from mypy_boto3_voice_id.literals import AuthenticationDecisionType, ...
 - [VoiceIDServiceName](./literals.md#voiceidservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_voice_id.type_defs import AuthenticationConfigurationTypeDef
 
-```python
-from mypy_boto3_voice_id.type_defs import AuthenticationConfigurationTypeDef, ...
+def get_value() -> AuthenticationConfigurationTypeDef:
+    return {
+        "AcceptanceThreshold": ...,
+    }
 ```
 
 - [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
@@ -227,3 +173,4 @@ from mypy_boto3_voice_id.type_defs import AuthenticationConfigurationTypeDef, ..
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDomainRequestRequestTypeDef](./type_defs.md#updatedomainrequestrequesttypedef)
 - [UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef)
+

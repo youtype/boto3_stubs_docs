@@ -1,54 +1,18 @@
-<a id="secretsmanagerclient-for-boto3-secretsmanager-module"></a>
-
-# SecretsManagerClient for boto3 SecretsManager module
+# SecretsManagerClient
 
 > [Index](../README.md) > [SecretsManager](./README.md) > SecretsManagerClient
 
-Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
-type annotations stubs module
-[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+!!! note ""
 
-- [SecretsManagerClient for boto3 SecretsManager module](#secretsmanagerclient-for-boto3-secretsmanager-module)
-  - [SecretsManagerClient](#secretsmanagerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_rotate_secret](#cancel_rotate_secret)
-    - [create_secret](#create_secret)
-    - [delete_resource_policy](#delete_resource_policy)
-    - [delete_secret](#delete_secret)
-    - [describe_secret](#describe_secret)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_random_password](#get_random_password)
-    - [get_resource_policy](#get_resource_policy)
-    - [get_secret_value](#get_secret_value)
-    - [list_secret_version_ids](#list_secret_version_ids)
-    - [list_secrets](#list_secrets)
-    - [put_resource_policy](#put_resource_policy)
-    - [put_secret_value](#put_secret_value)
-    - [remove_regions_from_replication](#remove_regions_from_replication)
-    - [replicate_secret_to_regions](#replicate_secret_to_regions)
-    - [restore_secret](#restore_secret)
-    - [rotate_secret](#rotate_secret)
-    - [stop_replication_to_replica](#stop_replication_to_replica)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_secret](#update_secret)
-    - [update_secret_version_stage](#update_secret_version_stage)
-    - [validate_resource_policy](#validate_resource_policy)
-    - [get_paginator](#get_paginator)
-
-<a id="secretsmanagerclient"></a>
+    Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+    type annotations stubs module [mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 ## SecretsManagerClient
 
-Type annotations for `boto3.client("secretsmanager")`
+Type annotations and code completion for `#!python boto3.client("secretsmanager")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_secretsmanager.client import SecretsManagerClient
 
@@ -56,628 +20,794 @@ def get_secretsmanager_client() -> SecretsManagerClient:
     return Session().client("secretsmanager")
 ```
 
-Boto3 documentation:
-[SecretsManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("secretsmanager").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("secretsmanager")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DecryptionFailure,
+    client.EncryptionFailure,
+    client.InternalServiceError,
+    client.InvalidNextTokenException,
+    client.InvalidParameterException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.MalformedPolicyDocumentException,
+    client.PreconditionNotMetException,
+    client.PublicPolicyException,
+    client.ResourceExistsException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_secretsmanager.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DecryptionFailure`
-- `Exceptions.EncryptionFailure`
-- `Exceptions.InternalServiceError`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MalformedPolicyDocumentException`
-- `Exceptions.PreconditionNotMetException`
-- `Exceptions.PublicPolicyException`
-- `Exceptions.ResourceExistsException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SecretsManagerClient exceptions.
-
-Type annotations for `boto3.client("secretsmanager").exceptions` method.
-
-Boto3 documentation:
-[SecretsManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("secretsmanager").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate)
 
-Boto3 documentation:
-[SecretsManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_rotate\_secret"></a>
-
-### cancel_rotate_secret
+### cancel\_rotate\_secret
 
 Turns off automatic rotation, and if a rotation is currently in progress,
 cancels the rotation.
 
-Type annotations for `boto3.client("secretsmanager").cancel_rotate_secret`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").cancel_rotate_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.cancel_rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
+```python title="Method definition"
+def cancel_rotate_secret(
+    self,
+    *,
+    SecretId: str,
+) -> CancelRotateSecretResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelRotateSecretRequestRequestTypeDef](./type_defs.md#cancelrotatesecretrequestrequesttypedef).
+1. See [:material-code-braces: CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelRotateSecretRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef).
+parent.cancel_rotate_secret(**kwargs)
+```
 
-<a id="create\_secret"></a>
+1. See [:material-code-braces: CancelRotateSecretRequestRequestTypeDef](./type_defs.md#cancelrotatesecretrequestrequesttypedef) 
 
-### create_secret
+### create\_secret
 
 Creates a new secret.
 
-Type annotations for `boto3.client("secretsmanager").create_secret` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").create_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.create_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
+```python title="Method definition"
+def create_secret(
+    self,
+    *,
+    Name: str,
+    ClientRequestToken: str = ...,
+    Description: str = ...,
+    KmsKeyId: str = ...,
+    SecretBinary: Union[bytes, IO[bytes], StreamingBody] = ...,
+    SecretString: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    AddReplicaRegions: Sequence[ReplicaRegionTypeTypeDef] = ...,  # (2)
+    ForceOverwriteReplicaSecret: bool = ...,
+) -> CreateSecretResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateSecretRequestRequestTypeDef](./type_defs.md#createsecretrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef) 
+3. See [:material-code-braces: CreateSecretResponseTypeDef](./type_defs.md#createsecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SecretString`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AddReplicaRegions`:
-  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
-- `ForceOverwriteReplicaSecret`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateSecretRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateSecretResponseTypeDef](./type_defs.md#createsecretresponsetypedef).
+parent.create_secret(**kwargs)
+```
 
-<a id="delete\_resource\_policy"></a>
+1. See [:material-code-braces: CreateSecretRequestRequestTypeDef](./type_defs.md#createsecretrequestrequesttypedef) 
 
-### delete_resource_policy
+### delete\_resource\_policy
 
 Deletes the resource-based permission policy attached to the secret.
 
-Type annotations for `boto3.client("secretsmanager").delete_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
 
-Boto3 documentation:
-[SecretsManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    SecretId: str,
+) -> DeleteResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
+parent.delete_resource_policy(**kwargs)
+```
 
-<a id="delete\_secret"></a>
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
-### delete_secret
+### delete\_secret
 
 Deletes a secret and all of its versions.
 
-Type annotations for `boto3.client("secretsmanager").delete_secret` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").delete_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.delete_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
+```python title="Method definition"
+def delete_secret(
+    self,
+    *,
+    SecretId: str,
+    RecoveryWindowInDays: int = ...,
+    ForceDeleteWithoutRecovery: bool = ...,
+) -> DeleteSecretResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSecretRequestRequestTypeDef](./type_defs.md#deletesecretrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `RecoveryWindowInDays`: `int`
-- `ForceDeleteWithoutRecovery`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteSecretRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef).
+parent.delete_secret(**kwargs)
+```
 
-<a id="describe\_secret"></a>
+1. See [:material-code-braces: DeleteSecretRequestRequestTypeDef](./type_defs.md#deletesecretrequestrequesttypedef) 
 
-### describe_secret
+### describe\_secret
 
 Retrieves the details of a secret.
 
-Type annotations for `boto3.client("secretsmanager").describe_secret` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").describe_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.describe_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
+```python title="Method definition"
+def describe_secret(
+    self,
+    *,
+    SecretId: str,
+) -> DescribeSecretResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSecretRequestRequestTypeDef](./type_defs.md#describesecretrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSecretResponseTypeDef](./type_defs.md#describesecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSecretRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[DescribeSecretResponseTypeDef](./type_defs.md#describesecretresponsetypedef).
+parent.describe_secret(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSecretRequestRequestTypeDef](./type_defs.md#describesecretrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("secretsmanager").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SecretsManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_random\_password"></a>
-
-### get_random_password
+### get\_random\_password
 
 Generates a random password.
 
-Type annotations for `boto3.client("secretsmanager").get_random_password`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").get_random_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
 
-Boto3 documentation:
-[SecretsManager.Client.get_random_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
+```python title="Method definition"
+def get_random_password(
+    self,
+    *,
+    PasswordLength: int = ...,
+    ExcludeCharacters: str = ...,
+    ExcludeNumbers: bool = ...,
+    ExcludePunctuation: bool = ...,
+    ExcludeUppercase: bool = ...,
+    ExcludeLowercase: bool = ...,
+    IncludeSpace: bool = ...,
+    RequireEachIncludedType: bool = ...,
+) -> GetRandomPasswordResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRandomPasswordRequestRequestTypeDef](./type_defs.md#getrandompasswordrequestrequesttypedef).
+1. See [:material-code-braces: GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PasswordLength`: `int`
-- `ExcludeCharacters`: `str`
-- `ExcludeNumbers`: `bool`
-- `ExcludePunctuation`: `bool`
-- `ExcludeUppercase`: `bool`
-- `ExcludeLowercase`: `bool`
-- `IncludeSpace`: `bool`
-- `RequireEachIncludedType`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetRandomPasswordRequestRequestTypeDef = {  # (1)
+    "PasswordLength": ...,
+}
 
-Returns
-[GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef).
+parent.get_random_password(**kwargs)
+```
 
-<a id="get\_resource\_policy"></a>
+1. See [:material-code-braces: GetRandomPasswordRequestRequestTypeDef](./type_defs.md#getrandompasswordrequestrequesttypedef) 
 
-### get_resource_policy
+### get\_resource\_policy
 
 Retrieves the JSON text of the resource-based policy document attached to the
 secret.
 
-Type annotations for `boto3.client("secretsmanager").get_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").get_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
 
-Boto3 documentation:
-[SecretsManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
+```python title="Method definition"
+def get_resource_policy(
+    self,
+    *,
+    SecretId: str,
+) -> GetResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourcePolicyRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+parent.get_resource_policy(**kwargs)
+```
 
-<a id="get\_secret\_value"></a>
+1. See [:material-code-braces: GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef) 
 
-### get_secret_value
+### get\_secret\_value
 
 Retrieves the contents of the encrypted fields `SecretString` or `SecretBinary`
 from the specified version of a secret, whichever contains content.
 
-Type annotations for `boto3.client("secretsmanager").get_secret_value` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").get_secret_value` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
 
-Boto3 documentation:
-[SecretsManager.Client.get_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
+```python title="Method definition"
+def get_secret_value(
+    self,
+    *,
+    SecretId: str,
+    VersionId: str = ...,
+    VersionStage: str = ...,
+) -> GetSecretValueResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSecretValueRequestRequestTypeDef](./type_defs.md#getsecretvaluerequestrequesttypedef).
+1. See [:material-code-braces: GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `VersionId`: `str`
-- `VersionStage`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSecretValueRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef).
+parent.get_secret_value(**kwargs)
+```
 
-<a id="list\_secret\_version\_ids"></a>
+1. See [:material-code-braces: GetSecretValueRequestRequestTypeDef](./type_defs.md#getsecretvaluerequestrequesttypedef) 
 
-### list_secret_version_ids
+### list\_secret\_version\_ids
 
 Lists the versions for a secret.
 
-Type annotations for `boto3.client("secretsmanager").list_secret_version_ids`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").list_secret_version_ids` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
 
-Boto3 documentation:
-[SecretsManager.Client.list_secret_version_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
+```python title="Method definition"
+def list_secret_version_ids(
+    self,
+    *,
+    SecretId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    IncludeDeprecated: bool = ...,
+) -> ListSecretVersionIdsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecretVersionIdsRequestRequestTypeDef](./type_defs.md#listsecretversionidsrequestrequesttypedef).
+1. See [:material-code-braces: ListSecretVersionIdsResponseTypeDef](./type_defs.md#listsecretversionidsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `IncludeDeprecated`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListSecretVersionIdsRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[ListSecretVersionIdsResponseTypeDef](./type_defs.md#listsecretversionidsresponsetypedef).
+parent.list_secret_version_ids(**kwargs)
+```
 
-<a id="list\_secrets"></a>
+1. See [:material-code-braces: ListSecretVersionIdsRequestRequestTypeDef](./type_defs.md#listsecretversionidsrequestrequesttypedef) 
 
-### list_secrets
+### list\_secrets
 
 .
 
-Type annotations for `boto3.client("secretsmanager").list_secrets` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").list_secrets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
 
-Boto3 documentation:
-[SecretsManager.Client.list_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
+```python title="Method definition"
+def list_secrets(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortOrder: SortOrderTypeType = ...,  # (2)
+) -> ListSecretsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListSecretsRequestRequestTypeDef](./type_defs.md#listsecretsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+```python title="Usage example with kwargs"
+kwargs: ListSecretsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef).
+parent.list_secrets(**kwargs)
+```
 
-<a id="put\_resource\_policy"></a>
+1. See [:material-code-braces: ListSecretsRequestRequestTypeDef](./type_defs.md#listsecretsrequestrequesttypedef) 
 
-### put_resource_policy
+### put\_resource\_policy
 
 Attaches a resource-based permission policy to a secret.
 
-Type annotations for `boto3.client("secretsmanager").put_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
 
-Boto3 documentation:
-[SecretsManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    SecretId: str,
+    ResourcePolicy: str,
+    BlockPublicPolicy: bool = ...,
+) -> PutResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `ResourcePolicy`: `str` *(required)*
-- `BlockPublicPolicy`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+    "ResourcePolicy": ...,
+}
 
-Returns
-[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+parent.put_resource_policy(**kwargs)
+```
 
-<a id="put\_secret\_value"></a>
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
-### put_secret_value
+### put\_secret\_value
 
 Creates a new version with a new encrypted secret value and attaches it to the
 secret.
 
-Type annotations for `boto3.client("secretsmanager").put_secret_value` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").put_secret_value` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
 
-Boto3 documentation:
-[SecretsManager.Client.put_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
+```python title="Method definition"
+def put_secret_value(
+    self,
+    *,
+    SecretId: str,
+    ClientRequestToken: str = ...,
+    SecretBinary: Union[bytes, IO[bytes], StreamingBody] = ...,
+    SecretString: str = ...,
+    VersionStages: Sequence[str] = ...,
+) -> PutSecretValueResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutSecretValueRequestRequestTypeDef](./type_defs.md#putsecretvaluerequestrequesttypedef).
+1. See [:material-code-braces: PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SecretString`: `str`
-- `VersionStages`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: PutSecretValueRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef).
+parent.put_secret_value(**kwargs)
+```
 
-<a id="remove\_regions\_from\_replication"></a>
+1. See [:material-code-braces: PutSecretValueRequestRequestTypeDef](./type_defs.md#putsecretvaluerequestrequesttypedef) 
 
-### remove_regions_from_replication
+### remove\_regions\_from\_replication
 
 For a secret that is replicated to other Regions, deletes the secret replicas
 from the Regions you specify.
 
-Type annotations for
-`boto3.client("secretsmanager").remove_regions_from_replication` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").remove_regions_from_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
 
-Boto3 documentation:
-[SecretsManager.Client.remove_regions_from_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
+```python title="Method definition"
+def remove_regions_from_replication(
+    self,
+    *,
+    SecretId: str,
+    RemoveReplicaRegions: Sequence[str],
+) -> RemoveRegionsFromReplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveRegionsFromReplicationRequestRequestTypeDef](./type_defs.md#removeregionsfromreplicationrequestrequesttypedef).
+1. See [:material-code-braces: RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `RemoveReplicaRegions`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveRegionsFromReplicationRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+    "RemoveReplicaRegions": ...,
+}
 
-Returns
-[RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef).
+parent.remove_regions_from_replication(**kwargs)
+```
 
-<a id="replicate\_secret\_to\_regions"></a>
+1. See [:material-code-braces: RemoveRegionsFromReplicationRequestRequestTypeDef](./type_defs.md#removeregionsfromreplicationrequestrequesttypedef) 
 
-### replicate_secret_to_regions
+### replicate\_secret\_to\_regions
 
 Replicates the secret to a new Regions.
 
-Type annotations for
-`boto3.client("secretsmanager").replicate_secret_to_regions` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").replicate_secret_to_regions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
 
-Boto3 documentation:
-[SecretsManager.Client.replicate_secret_to_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
+```python title="Method definition"
+def replicate_secret_to_regions(
+    self,
+    *,
+    SecretId: str,
+    AddReplicaRegions: Sequence[ReplicaRegionTypeTypeDef],  # (1)
+    ForceOverwriteReplicaSecret: bool = ...,
+) -> ReplicateSecretToRegionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ReplicateSecretToRegionsRequestRequestTypeDef](./type_defs.md#replicatesecrettoregionsrequestrequesttypedef).
+1. See [:material-code-braces: ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef) 
+2. See [:material-code-braces: ReplicateSecretToRegionsResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `AddReplicaRegions`:
-  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
-  *(required)*
-- `ForceOverwriteReplicaSecret`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ReplicateSecretToRegionsRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+    "AddReplicaRegions": ...,
+}
 
-Returns
-[ReplicateSecretToRegionsResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponsetypedef).
+parent.replicate_secret_to_regions(**kwargs)
+```
 
-<a id="restore\_secret"></a>
+1. See [:material-code-braces: ReplicateSecretToRegionsRequestRequestTypeDef](./type_defs.md#replicatesecrettoregionsrequestrequesttypedef) 
 
-### restore_secret
+### restore\_secret
 
 Cancels the scheduled deletion of a secret by removing the `DeletedDate` time
 stamp.
 
-Type annotations for `boto3.client("secretsmanager").restore_secret` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").restore_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.restore_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
+```python title="Method definition"
+def restore_secret(
+    self,
+    *,
+    SecretId: str,
+) -> RestoreSecretResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RestoreSecretRequestRequestTypeDef](./type_defs.md#restoresecretrequestrequesttypedef).
+1. See [:material-code-braces: RestoreSecretResponseTypeDef](./type_defs.md#restoresecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreSecretRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[RestoreSecretResponseTypeDef](./type_defs.md#restoresecretresponsetypedef).
+parent.restore_secret(**kwargs)
+```
 
-<a id="rotate\_secret"></a>
+1. See [:material-code-braces: RestoreSecretRequestRequestTypeDef](./type_defs.md#restoresecretrequestrequesttypedef) 
 
-### rotate_secret
+### rotate\_secret
 
 Configures and starts the asynchronous process of rotating the secret.
 
-Type annotations for `boto3.client("secretsmanager").rotate_secret` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").rotate_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
+```python title="Method definition"
+def rotate_secret(
+    self,
+    *,
+    SecretId: str,
+    ClientRequestToken: str = ...,
+    RotationLambdaARN: str = ...,
+    RotationRules: RotationRulesTypeTypeDef = ...,  # (1)
+    RotateImmediately: bool = ...,
+) -> RotateSecretResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RotateSecretRequestRequestTypeDef](./type_defs.md#rotatesecretrequestrequesttypedef).
+1. See [:material-code-braces: RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef) 
+2. See [:material-code-braces: RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `RotationLambdaARN`: `str`
-- `RotationRules`:
-  [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
-- `RotateImmediately`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RotateSecretRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef).
+parent.rotate_secret(**kwargs)
+```
 
-<a id="stop\_replication\_to\_replica"></a>
+1. See [:material-code-braces: RotateSecretRequestRequestTypeDef](./type_defs.md#rotatesecretrequestrequesttypedef) 
 
-### stop_replication_to_replica
+### stop\_replication\_to\_replica
 
 Removes the link between the replica secret and the primary secret and promotes
 the replica to a primary secret in the replica Region.
 
-Type annotations for
-`boto3.client("secretsmanager").stop_replication_to_replica` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").stop_replication_to_replica` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
 
-Boto3 documentation:
-[SecretsManager.Client.stop_replication_to_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
+```python title="Method definition"
+def stop_replication_to_replica(
+    self,
+    *,
+    SecretId: str,
+) -> StopReplicationToReplicaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopReplicationToReplicaRequestRequestTypeDef](./type_defs.md#stopreplicationtoreplicarequestrequesttypedef).
+1. See [:material-code-braces: StopReplicationToReplicaResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopReplicationToReplicaRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[StopReplicationToReplicaResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponsetypedef).
+parent.stop_replication_to_replica(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopReplicationToReplicaRequestRequestTypeDef](./type_defs.md#stopreplicationtoreplicarequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Attaches tags to a secret.
 
-Type annotations for `boto3.client("secretsmanager").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
 
-Boto3 documentation:
-[SecretsManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    SecretId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes specific tags from a secret.
 
-Type annotations for `boto3.client("secretsmanager").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
 
-Boto3 documentation:
-[SecretsManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    SecretId: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_secret"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_secret
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_secret
 
 Modifies the details of a secret, including metadata and the secret value.
 
-Type annotations for `boto3.client("secretsmanager").update_secret` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").update_secret` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
 
-Boto3 documentation:
-[SecretsManager.Client.update_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
+```python title="Method definition"
+def update_secret(
+    self,
+    *,
+    SecretId: str,
+    ClientRequestToken: str = ...,
+    Description: str = ...,
+    KmsKeyId: str = ...,
+    SecretBinary: Union[bytes, IO[bytes], StreamingBody] = ...,
+    SecretString: str = ...,
+) -> UpdateSecretResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSecretRequestRequestTypeDef](./type_defs.md#updatesecretrequestrequesttypedef).
+1. See [:material-code-braces: UpdateSecretResponseTypeDef](./type_defs.md#updatesecretresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SecretString`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSecretRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+}
 
-Returns
-[UpdateSecretResponseTypeDef](./type_defs.md#updatesecretresponsetypedef).
+parent.update_secret(**kwargs)
+```
 
-<a id="update\_secret\_version\_stage"></a>
+1. See [:material-code-braces: UpdateSecretRequestRequestTypeDef](./type_defs.md#updatesecretrequestrequesttypedef) 
 
-### update_secret_version_stage
+### update\_secret\_version\_stage
 
 Modifies the staging labels attached to a version of a secret.
 
-Type annotations for
-`boto3.client("secretsmanager").update_secret_version_stage` method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").update_secret_version_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
 
-Boto3 documentation:
-[SecretsManager.Client.update_secret_version_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
+```python title="Method definition"
+def update_secret_version_stage(
+    self,
+    *,
+    SecretId: str,
+    VersionStage: str,
+    RemoveFromVersionId: str = ...,
+    MoveToVersionId: str = ...,
+) -> UpdateSecretVersionStageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSecretVersionStageRequestRequestTypeDef](./type_defs.md#updatesecretversionstagerequestrequesttypedef).
+1. See [:material-code-braces: UpdateSecretVersionStageResponseTypeDef](./type_defs.md#updatesecretversionstageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecretId`: `str` *(required)*
-- `VersionStage`: `str` *(required)*
-- `RemoveFromVersionId`: `str`
-- `MoveToVersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSecretVersionStageRequestRequestTypeDef = {  # (1)
+    "SecretId": ...,
+    "VersionStage": ...,
+}
 
-Returns
-[UpdateSecretVersionStageResponseTypeDef](./type_defs.md#updatesecretversionstageresponsetypedef).
+parent.update_secret_version_stage(**kwargs)
+```
 
-<a id="validate\_resource\_policy"></a>
+1. See [:material-code-braces: UpdateSecretVersionStageRequestRequestTypeDef](./type_defs.md#updatesecretversionstagerequestrequesttypedef) 
 
-### validate_resource_policy
+### validate\_resource\_policy
 
 Validates that a resource policy does not grant a wide range of principals
 access to your secret.
 
-Type annotations for `boto3.client("secretsmanager").validate_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").validate_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
 
-Boto3 documentation:
-[SecretsManager.Client.validate_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
+```python title="Method definition"
+def validate_resource_policy(
+    self,
+    *,
+    ResourcePolicy: str,
+    SecretId: str = ...,
+) -> ValidateResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ValidateResourcePolicyRequestRequestTypeDef](./type_defs.md#validateresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: ValidateResourcePolicyResponseTypeDef](./type_defs.md#validateresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourcePolicy`: `str` *(required)*
-- `SecretId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ValidateResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourcePolicy": ...,
+}
 
-Returns
-[ValidateResourcePolicyResponseTypeDef](./type_defs.md#validateresourcepolicyresponsetypedef).
+parent.validate_resource_policy(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ValidateResourcePolicyRequestRequestTypeDef](./type_defs.md#validateresourcepolicyrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("secretsmanager").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").get_paginator` method with overloads.
 
-- `client.get_paginator("list_secrets")` ->
-  [ListSecretsPaginator](./paginators.md#listsecretspaginator)
+- `client.get_paginator("list_secrets")` -> [ListSecretsPaginator](./paginators.md#listsecretspaginator)
+
+
+

@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-sso-module"></a>
-
-# Examples for boto3 SSO module
+# Examples
 
 > [Index](../README.md) > [SSO](./README.md) > Examples
 
-- [Examples for boto3 SSO module](#examples-for-boto3-sso-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+    type annotations stubs module [mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sso]` package installed.
 
-Write your `SSO` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `SSO` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SSOClient
-# and provides type checking and code completion
-client = session.client("sso")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListAccountRolesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_account_roles")
-for item in paginator.paginate(...):
-    # item has type ListAccountRolesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("sso")  # (1)
+    result = client.get_role_credentials()  # (2)
+    ```
+
+    1. client: [SSOClient](./client.md)
+    2. result: [:material-code-braces: GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("sso")  # (1)
+
+    paginator = client.get_paginator("list_account_roles")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SSOClient](./client.md)
+    2. paginator: [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
+    3. item: [:material-code-braces: ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sso]` or a standalone `mypy_boto3_sso` package, you have
-to explicitly specify `client: SSOClient` type annotation.
+With `boto3-stubs-lite[sso]`
+or a standalone `mypy_boto3_sso` package, you have to explicitly specify `client: SSOClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sso.client import SSOClient
-from mypy_boto3_sso.paginator import ListAccountRolesPaginator
-
-from mypy_boto3_sso.literals import PaginatorName
-
-from mypy_boto3_sso.type_defs import bool
-from mypy_boto3_sso.type_defs import ListAccountRolesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SSOClient = session.client("sso")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_sso.client import SSOClient
+    from mypy_boto3_sso.type_defs import GetRoleCredentialsResponseTypeDef
+    from mypy_boto3_sso.type_defs import GetRoleCredentialsRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_account_roles"
-paginator: ListAccountRolesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccountRolesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: SSOClient = session.client("sso")
+
+    kwargs: GetRoleCredentialsRequestRequestTypeDef = {...}
+    result: GetRoleCredentialsResponseTypeDef = client.get_role_credentials(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sso.client import SSOClient
+    from mypy_boto3_sso.paginator import ListAccountRolesPaginator
+    from mypy_boto3_sso.type_defs import ListAccountRolesResponseTypeDef
+
+
+    session = Session()
+    client: SSOClient = session.client("sso")
+
+    paginator: ListAccountRolesPaginator = client.get_paginator("list_account_roles")
+    for item in paginator.paginate(...):
+        item: ListAccountRolesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

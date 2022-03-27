@@ -1,70 +1,18 @@
-<a id="resiliencehubclient-for-boto3-resiliencehub-module"></a>
-
-# ResilienceHubClient for boto3 ResilienceHub module
+# ResilienceHubClient
 
 > [Index](../README.md) > [ResilienceHub](./README.md) > ResilienceHubClient
 
-Auto-generated documentation for
-[ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
-type annotations stubs module
-[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+!!! note ""
 
-- [ResilienceHubClient for boto3 ResilienceHub module](#resiliencehubclient-for-boto3-resiliencehub-module)
-  - [ResilienceHubClient](#resiliencehubclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_draft_app_version_resource_mappings](#add_draft_app_version_resource_mappings)
-    - [can_paginate](#can_paginate)
-    - [create_app](#create_app)
-    - [create_recommendation_template](#create_recommendation_template)
-    - [create_resiliency_policy](#create_resiliency_policy)
-    - [delete_app](#delete_app)
-    - [delete_app_assessment](#delete_app_assessment)
-    - [delete_recommendation_template](#delete_recommendation_template)
-    - [delete_resiliency_policy](#delete_resiliency_policy)
-    - [describe_app](#describe_app)
-    - [describe_app_assessment](#describe_app_assessment)
-    - [describe_app_version_resources_resolution_status](#describe_app_version_resources_resolution_status)
-    - [describe_app_version_template](#describe_app_version_template)
-    - [describe_draft_app_version_resources_import_status](#describe_draft_app_version_resources_import_status)
-    - [describe_resiliency_policy](#describe_resiliency_policy)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_resources_to_draft_app_version](#import_resources_to_draft_app_version)
-    - [list_alarm_recommendations](#list_alarm_recommendations)
-    - [list_app_assessments](#list_app_assessments)
-    - [list_app_component_compliances](#list_app_component_compliances)
-    - [list_app_component_recommendations](#list_app_component_recommendations)
-    - [list_app_version_resource_mappings](#list_app_version_resource_mappings)
-    - [list_app_version_resources](#list_app_version_resources)
-    - [list_app_versions](#list_app_versions)
-    - [list_apps](#list_apps)
-    - [list_recommendation_templates](#list_recommendation_templates)
-    - [list_resiliency_policies](#list_resiliency_policies)
-    - [list_sop_recommendations](#list_sop_recommendations)
-    - [list_suggested_resiliency_policies](#list_suggested_resiliency_policies)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_test_recommendations](#list_test_recommendations)
-    - [list_unsupported_app_version_resources](#list_unsupported_app_version_resources)
-    - [publish_app_version](#publish_app_version)
-    - [put_draft_app_version_template](#put_draft_app_version_template)
-    - [remove_draft_app_version_resource_mappings](#remove_draft_app_version_resource_mappings)
-    - [resolve_app_version_resources](#resolve_app_version_resources)
-    - [start_app_assessment](#start_app_assessment)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_app](#update_app)
-    - [update_resiliency_policy](#update_resiliency_policy)
-
-<a id="resiliencehubclient"></a>
+    Auto-generated documentation for [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
+    type annotations stubs module [mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 ## ResilienceHubClient
 
-Type annotations for `boto3.client("resiliencehub")`
+Type annotations and code completion for `#!python boto3.client("resiliencehub")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_resiliencehub.client import ResilienceHubClient
 
@@ -72,1036 +20,1327 @@ def get_resiliencehub_client() -> ResilienceHubClient:
     return Session().client("resiliencehub")
 ```
 
-Boto3 documentation:
-[ResilienceHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("resiliencehub").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("resiliencehub")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_resiliencehub.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ResilienceHubClient exceptions.
-
-Type annotations for `boto3.client("resiliencehub").exceptions` method.
-
-Boto3 documentation:
-[ResilienceHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_draft\_app\_version\_resource\_mappings"></a>
-
-### add_draft_app_version_resource_mappings
+### add\_draft\_app\_version\_resource\_mappings
 
 Adds the resource mapping for the draft application version.
 
-Type annotations for
-`boto3.client("resiliencehub").add_draft_app_version_resource_mappings` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").add_draft_app_version_resource_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.add_draft_app_version_resource_mappings)
 
-Boto3 documentation:
-[ResilienceHub.Client.add_draft_app_version_resource_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.add_draft_app_version_resource_mappings)
+```python title="Method definition"
+def add_draft_app_version_resource_mappings(
+    self,
+    *,
+    appArn: str,
+    resourceMappings: Sequence[ResourceMappingTypeDef],  # (1)
+) -> AddDraftAppVersionResourceMappingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddDraftAppVersionResourceMappingsRequestRequestTypeDef](./type_defs.md#adddraftappversionresourcemappingsrequestrequesttypedef).
+1. See [:material-code-braces: ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef) 
+2. See [:material-code-braces: AddDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#adddraftappversionresourcemappingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `resourceMappings`:
-  `Sequence`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddDraftAppVersionResourceMappingsRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "resourceMappings": ...,
+}
 
-Returns
-[AddDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#adddraftappversionresourcemappingsresponsetypedef).
+parent.add_draft_app_version_resource_mappings(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddDraftAppVersionResourceMappingsRequestRequestTypeDef](./type_defs.md#adddraftappversionresourcemappingsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("resiliencehub").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.can_paginate)
 
-Boto3 documentation:
-[ResilienceHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_app"></a>
-
-### create_app
+### create\_app
 
 Creates a Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").create_app` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").create_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.create_app)
 
-Boto3 documentation:
-[ResilienceHub.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.create_app)
+```python title="Method definition"
+def create_app(
+    self,
+    *,
+    name: str,
+    clientToken: str = ...,
+    description: str = ...,
+    policyArn: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
+1. See [:material-code-braces: CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `policyArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+parent.create_app(**kwargs)
+```
 
-<a id="create\_recommendation\_template"></a>
+1. See [:material-code-braces: CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef) 
 
-### create_recommendation_template
+### create\_recommendation\_template
 
 Creates a new recommendation template.
 
-Type annotations for
-`boto3.client("resiliencehub").create_recommendation_template` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").create_recommendation_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.create_recommendation_template)
 
-Boto3 documentation:
-[ResilienceHub.Client.create_recommendation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.create_recommendation_template)
+```python title="Method definition"
+def create_recommendation_template(
+    self,
+    *,
+    assessmentArn: str,
+    name: str,
+    bucketName: str = ...,
+    clientToken: str = ...,
+    format: TemplateFormatType = ...,  # (1)
+    recommendationIds: Sequence[str] = ...,
+    recommendationTypes: Sequence[RenderRecommendationTypeType] = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateRecommendationTemplateResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecommendationTemplateRequestRequestTypeDef](./type_defs.md#createrecommendationtemplaterequestrequesttypedef).
+1. See [:material-code-brackets: TemplateFormatType](./literals.md#templateformattype) 
+2. See [:material-code-brackets: RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype) 
+3. See [:material-code-braces: CreateRecommendationTemplateResponseTypeDef](./type_defs.md#createrecommendationtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `name`: `str` *(required)*
-- `bucketName`: `str`
-- `clientToken`: `str`
-- `format`: [TemplateFormatType](./literals.md#templateformattype)
-- `recommendationIds`: `Sequence`\[`str`\]
-- `recommendationTypes`:
-  `Sequence`\[[RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype)\]
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRecommendationTemplateRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+    "name": ...,
+}
 
-Returns
-[CreateRecommendationTemplateResponseTypeDef](./type_defs.md#createrecommendationtemplateresponsetypedef).
+parent.create_recommendation_template(**kwargs)
+```
 
-<a id="create\_resiliency\_policy"></a>
+1. See [:material-code-braces: CreateRecommendationTemplateRequestRequestTypeDef](./type_defs.md#createrecommendationtemplaterequestrequesttypedef) 
 
-### create_resiliency_policy
+### create\_resiliency\_policy
 
 Creates a resiliency policy for an application.
 
-Type annotations for `boto3.client("resiliencehub").create_resiliency_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").create_resiliency_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.create_resiliency_policy)
 
-Boto3 documentation:
-[ResilienceHub.Client.create_resiliency_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.create_resiliency_policy)
+```python title="Method definition"
+def create_resiliency_policy(
+    self,
+    *,
+    policy: Mapping[DisruptionTypeType, FailurePolicyTypeDef],  # (1)
+    policyName: str,
+    tier: ResiliencyPolicyTierType,  # (2)
+    clientToken: str = ...,
+    dataLocationConstraint: DataLocationConstraintType = ...,  # (3)
+    policyDescription: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateResiliencyPolicyResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateResiliencyPolicyRequestRequestTypeDef](./type_defs.md#createresiliencypolicyrequestrequesttypedef).
+1. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef) 
+2. See [:material-code-brackets: ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype) 
+3. See [:material-code-brackets: DataLocationConstraintType](./literals.md#datalocationconstrainttype) 
+4. See [:material-code-braces: CreateResiliencyPolicyResponseTypeDef](./type_defs.md#createresiliencypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policy`: `Mapping`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef)\] *(required)*
-- `policyName`: `str` *(required)*
-- `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
-  *(required)*
-- `clientToken`: `str`
-- `dataLocationConstraint`:
-  [DataLocationConstraintType](./literals.md#datalocationconstrainttype)
-- `policyDescription`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateResiliencyPolicyRequestRequestTypeDef = {  # (1)
+    "policy": ...,
+    "policyName": ...,
+    "tier": ...,
+}
 
-Returns
-[CreateResiliencyPolicyResponseTypeDef](./type_defs.md#createresiliencypolicyresponsetypedef).
+parent.create_resiliency_policy(**kwargs)
+```
 
-<a id="delete\_app"></a>
+1. See [:material-code-braces: CreateResiliencyPolicyRequestRequestTypeDef](./type_defs.md#createresiliencypolicyrequestrequesttypedef) 
 
-### delete_app
+### delete\_app
 
 Deletes an AWS Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").delete_app` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").delete_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_app)
 
-Boto3 documentation:
-[ResilienceHub.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_app)
+```python title="Method definition"
+def delete_app(
+    self,
+    *,
+    appArn: str,
+    clientToken: str = ...,
+    forceDelete: bool = ...,
+) -> DeleteAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
+1. See [:material-code-braces: DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `clientToken`: `str`
-- `forceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteAppRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef).
+parent.delete_app(**kwargs)
+```
 
-<a id="delete\_app\_assessment"></a>
+1. See [:material-code-braces: DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef) 
 
-### delete_app_assessment
+### delete\_app\_assessment
 
 Deletes an AWS Resilience Hub application assessment.
 
-Type annotations for `boto3.client("resiliencehub").delete_app_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").delete_app_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_app_assessment)
 
-Boto3 documentation:
-[ResilienceHub.Client.delete_app_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_app_assessment)
+```python title="Method definition"
+def delete_app_assessment(
+    self,
+    *,
+    assessmentArn: str,
+    clientToken: str = ...,
+) -> DeleteAppAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppAssessmentRequestRequestTypeDef](./type_defs.md#deleteappassessmentrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAppAssessmentResponseTypeDef](./type_defs.md#deleteappassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAppAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[DeleteAppAssessmentResponseTypeDef](./type_defs.md#deleteappassessmentresponsetypedef).
+parent.delete_app_assessment(**kwargs)
+```
 
-<a id="delete\_recommendation\_template"></a>
+1. See [:material-code-braces: DeleteAppAssessmentRequestRequestTypeDef](./type_defs.md#deleteappassessmentrequestrequesttypedef) 
 
-### delete_recommendation_template
+### delete\_recommendation\_template
 
 Deletes a recommendation template.
 
-Type annotations for
-`boto3.client("resiliencehub").delete_recommendation_template` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").delete_recommendation_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_recommendation_template)
 
-Boto3 documentation:
-[ResilienceHub.Client.delete_recommendation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_recommendation_template)
+```python title="Method definition"
+def delete_recommendation_template(
+    self,
+    *,
+    recommendationTemplateArn: str,
+    clientToken: str = ...,
+) -> DeleteRecommendationTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecommendationTemplateRequestRequestTypeDef](./type_defs.md#deleterecommendationtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteRecommendationTemplateResponseTypeDef](./type_defs.md#deleterecommendationtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recommendationTemplateArn`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRecommendationTemplateRequestRequestTypeDef = {  # (1)
+    "recommendationTemplateArn": ...,
+}
 
-Returns
-[DeleteRecommendationTemplateResponseTypeDef](./type_defs.md#deleterecommendationtemplateresponsetypedef).
+parent.delete_recommendation_template(**kwargs)
+```
 
-<a id="delete\_resiliency\_policy"></a>
+1. See [:material-code-braces: DeleteRecommendationTemplateRequestRequestTypeDef](./type_defs.md#deleterecommendationtemplaterequestrequesttypedef) 
 
-### delete_resiliency_policy
+### delete\_resiliency\_policy
 
 Deletes a resiliency policy.
 
-Type annotations for `boto3.client("resiliencehub").delete_resiliency_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").delete_resiliency_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_resiliency_policy)
 
-Boto3 documentation:
-[ResilienceHub.Client.delete_resiliency_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.delete_resiliency_policy)
+```python title="Method definition"
+def delete_resiliency_policy(
+    self,
+    *,
+    policyArn: str,
+    clientToken: str = ...,
+) -> DeleteResiliencyPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResiliencyPolicyRequestRequestTypeDef](./type_defs.md#deleteresiliencypolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteResiliencyPolicyResponseTypeDef](./type_defs.md#deleteresiliencypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyArn`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResiliencyPolicyRequestRequestTypeDef = {  # (1)
+    "policyArn": ...,
+}
 
-Returns
-[DeleteResiliencyPolicyResponseTypeDef](./type_defs.md#deleteresiliencypolicyresponsetypedef).
+parent.delete_resiliency_policy(**kwargs)
+```
 
-<a id="describe\_app"></a>
+1. See [:material-code-braces: DeleteResiliencyPolicyRequestRequestTypeDef](./type_defs.md#deleteresiliencypolicyrequestrequesttypedef) 
 
-### describe_app
+### describe\_app
 
 Describes an AWS Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").describe_app` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").describe_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app)
 
-Boto3 documentation:
-[ResilienceHub.Client.describe_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app)
+```python title="Method definition"
+def describe_app(
+    self,
+    *,
+    appArn: str,
+) -> DescribeAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppRequestRequestTypeDef](./type_defs.md#describeapprequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppResponseTypeDef](./type_defs.md#describeappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns
-[DescribeAppResponseTypeDef](./type_defs.md#describeappresponsetypedef).
+parent.describe_app(**kwargs)
+```
 
-<a id="describe\_app\_assessment"></a>
+1. See [:material-code-braces: DescribeAppRequestRequestTypeDef](./type_defs.md#describeapprequestrequesttypedef) 
 
-### describe_app_assessment
+### describe\_app\_assessment
 
 Describes an assessment for an AWS Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").describe_app_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").describe_app_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app_assessment)
 
-Boto3 documentation:
-[ResilienceHub.Client.describe_app_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app_assessment)
+```python title="Method definition"
+def describe_app_assessment(
+    self,
+    *,
+    assessmentArn: str,
+) -> DescribeAppAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppAssessmentRequestRequestTypeDef](./type_defs.md#describeappassessmentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppAssessmentResponseTypeDef](./type_defs.md#describeappassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[DescribeAppAssessmentResponseTypeDef](./type_defs.md#describeappassessmentresponsetypedef).
+parent.describe_app_assessment(**kwargs)
+```
 
-<a id="describe\_app\_version\_resources\_resolution\_status"></a>
+1. See [:material-code-braces: DescribeAppAssessmentRequestRequestTypeDef](./type_defs.md#describeappassessmentrequestrequesttypedef) 
 
-### describe_app_version_resources_resolution_status
+### describe\_app\_version\_resources\_resolution\_status
 
 Returns the resolution status for the specified resolution identifier for an
 application version.
 
-Type annotations for
-`boto3.client("resiliencehub").describe_app_version_resources_resolution_status`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").describe_app_version_resources_resolution_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app_version_resources_resolution_status)
 
-Boto3 documentation:
-[ResilienceHub.Client.describe_app_version_resources_resolution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app_version_resources_resolution_status)
+```python title="Method definition"
+def describe_app_version_resources_resolution_status(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+    resolutionId: str = ...,
+) -> DescribeAppVersionResourcesResolutionStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef](./type_defs.md#describeappversionresourcesresolutionstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppVersionResourcesResolutionStatusResponseTypeDef](./type_defs.md#describeappversionresourcesresolutionstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
-- `resolutionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+}
 
-Returns
-[DescribeAppVersionResourcesResolutionStatusResponseTypeDef](./type_defs.md#describeappversionresourcesresolutionstatusresponsetypedef).
+parent.describe_app_version_resources_resolution_status(**kwargs)
+```
 
-<a id="describe\_app\_version\_template"></a>
+1. See [:material-code-braces: DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef](./type_defs.md#describeappversionresourcesresolutionstatusrequestrequesttypedef) 
 
-### describe_app_version_template
+### describe\_app\_version\_template
 
-Describes details about an AWS Resilience Hub See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/resiliencehub-2020-04-30/DescribeAppVersionTemplate).
+Describes details about an AWS Resilience Hub See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/resiliencehub-2020-04-30/DescribeAppVersionTemplate).
 
-Type annotations for
-`boto3.client("resiliencehub").describe_app_version_template` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").describe_app_version_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app_version_template)
 
-Boto3 documentation:
-[ResilienceHub.Client.describe_app_version_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_app_version_template)
+```python title="Method definition"
+def describe_app_version_template(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+) -> DescribeAppVersionTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppVersionTemplateRequestRequestTypeDef](./type_defs.md#describeappversiontemplaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppVersionTemplateResponseTypeDef](./type_defs.md#describeappversiontemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppVersionTemplateRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+}
 
-Returns
-[DescribeAppVersionTemplateResponseTypeDef](./type_defs.md#describeappversiontemplateresponsetypedef).
+parent.describe_app_version_template(**kwargs)
+```
 
-<a id="describe\_draft\_app\_version\_resources\_import\_status"></a>
+1. See [:material-code-braces: DescribeAppVersionTemplateRequestRequestTypeDef](./type_defs.md#describeappversiontemplaterequestrequesttypedef) 
 
-### describe_draft_app_version_resources_import_status
+### describe\_draft\_app\_version\_resources\_import\_status
 
 Describes the status of importing resources to an application version.
 
-Type annotations for
-`boto3.client("resiliencehub").describe_draft_app_version_resources_import_status`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").describe_draft_app_version_resources_import_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_draft_app_version_resources_import_status)
 
-Boto3 documentation:
-[ResilienceHub.Client.describe_draft_app_version_resources_import_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_draft_app_version_resources_import_status)
+```python title="Method definition"
+def describe_draft_app_version_resources_import_status(
+    self,
+    *,
+    appArn: str,
+) -> DescribeDraftAppVersionResourcesImportStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef](./type_defs.md#describedraftappversionresourcesimportstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDraftAppVersionResourcesImportStatusResponseTypeDef](./type_defs.md#describedraftappversionresourcesimportstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns
-[DescribeDraftAppVersionResourcesImportStatusResponseTypeDef](./type_defs.md#describedraftappversionresourcesimportstatusresponsetypedef).
+parent.describe_draft_app_version_resources_import_status(**kwargs)
+```
 
-<a id="describe\_resiliency\_policy"></a>
+1. See [:material-code-braces: DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef](./type_defs.md#describedraftappversionresourcesimportstatusrequestrequesttypedef) 
 
-### describe_resiliency_policy
+### describe\_resiliency\_policy
 
 Describes a specified resiliency policy for an AWS Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").describe_resiliency_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").describe_resiliency_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_resiliency_policy)
 
-Boto3 documentation:
-[ResilienceHub.Client.describe_resiliency_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.describe_resiliency_policy)
+```python title="Method definition"
+def describe_resiliency_policy(
+    self,
+    *,
+    policyArn: str,
+) -> DescribeResiliencyPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResiliencyPolicyRequestRequestTypeDef](./type_defs.md#describeresiliencypolicyrequestrequesttypedef).
+1. See [:material-code-braces: DescribeResiliencyPolicyResponseTypeDef](./type_defs.md#describeresiliencypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeResiliencyPolicyRequestRequestTypeDef = {  # (1)
+    "policyArn": ...,
+}
 
-Returns
-[DescribeResiliencyPolicyResponseTypeDef](./type_defs.md#describeresiliencypolicyresponsetypedef).
+parent.describe_resiliency_policy(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeResiliencyPolicyRequestRequestTypeDef](./type_defs.md#describeresiliencypolicyrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("resiliencehub").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ResilienceHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="import\_resources\_to\_draft\_app\_version"></a>
-
-### import_resources_to_draft_app_version
+### import\_resources\_to\_draft\_app\_version
 
 Imports resources from sources such as a CloudFormation stack, resource-groups,
 or application registry app to a draft application version.
 
-Type annotations for
-`boto3.client("resiliencehub").import_resources_to_draft_app_version` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").import_resources_to_draft_app_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.import_resources_to_draft_app_version)
 
-Boto3 documentation:
-[ResilienceHub.Client.import_resources_to_draft_app_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.import_resources_to_draft_app_version)
+```python title="Method definition"
+def import_resources_to_draft_app_version(
+    self,
+    *,
+    appArn: str,
+    sourceArns: Sequence[str],
+) -> ImportResourcesToDraftAppVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportResourcesToDraftAppVersionRequestRequestTypeDef](./type_defs.md#importresourcestodraftappversionrequestrequesttypedef).
+1. See [:material-code-braces: ImportResourcesToDraftAppVersionResponseTypeDef](./type_defs.md#importresourcestodraftappversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `sourceArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ImportResourcesToDraftAppVersionRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "sourceArns": ...,
+}
 
-Returns
-[ImportResourcesToDraftAppVersionResponseTypeDef](./type_defs.md#importresourcestodraftappversionresponsetypedef).
+parent.import_resources_to_draft_app_version(**kwargs)
+```
 
-<a id="list\_alarm\_recommendations"></a>
+1. See [:material-code-braces: ImportResourcesToDraftAppVersionRequestRequestTypeDef](./type_defs.md#importresourcestodraftappversionrequestrequesttypedef) 
 
-### list_alarm_recommendations
+### list\_alarm\_recommendations
 
 Lists the alarm recommendations for a AWS Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").list_alarm_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_alarm_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_alarm_recommendations)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_alarm_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_alarm_recommendations)
+```python title="Method definition"
+def list_alarm_recommendations(
+    self,
+    *,
+    assessmentArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAlarmRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAlarmRecommendationsRequestRequestTypeDef](./type_defs.md#listalarmrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: ListAlarmRecommendationsResponseTypeDef](./type_defs.md#listalarmrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAlarmRecommendationsRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[ListAlarmRecommendationsResponseTypeDef](./type_defs.md#listalarmrecommendationsresponsetypedef).
+parent.list_alarm_recommendations(**kwargs)
+```
 
-<a id="list\_app\_assessments"></a>
+1. See [:material-code-braces: ListAlarmRecommendationsRequestRequestTypeDef](./type_defs.md#listalarmrecommendationsrequestrequesttypedef) 
 
-### list_app_assessments
+### list\_app\_assessments
 
 Lists the assessments for an AWS Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").list_app_assessments`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_app_assessments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_assessments)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_app_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_assessments)
+```python title="Method definition"
+def list_app_assessments(
+    self,
+    *,
+    appArn: str = ...,
+    assessmentName: str = ...,
+    assessmentStatus: Sequence[AssessmentStatusType] = ...,  # (1)
+    complianceStatus: ComplianceStatusType = ...,  # (2)
+    invoker: AssessmentInvokerType = ...,  # (3)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    reverseOrder: bool = ...,
+) -> ListAppAssessmentsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListAppAssessmentsRequestRequestTypeDef](./type_defs.md#listappassessmentsrequestrequesttypedef).
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+3. See [:material-code-brackets: AssessmentInvokerType](./literals.md#assessmentinvokertype) 
+4. See [:material-code-braces: ListAppAssessmentsResponseTypeDef](./type_defs.md#listappassessmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str`
-- `assessmentName`: `str`
-- `assessmentStatus`:
-  `Sequence`\[[AssessmentStatusType](./literals.md#assessmentstatustype)\]
-- `complianceStatus`:
-  [ComplianceStatusType](./literals.md#compliancestatustype)
-- `invoker`: [AssessmentInvokerType](./literals.md#assessmentinvokertype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `reverseOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListAppAssessmentsRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns
-[ListAppAssessmentsResponseTypeDef](./type_defs.md#listappassessmentsresponsetypedef).
+parent.list_app_assessments(**kwargs)
+```
 
-<a id="list\_app\_component\_compliances"></a>
+1. See [:material-code-braces: ListAppAssessmentsRequestRequestTypeDef](./type_defs.md#listappassessmentsrequestrequesttypedef) 
 
-### list_app_component_compliances
+### list\_app\_component\_compliances
 
 Lists the compliances for an AWS Resilience Hub component.
 
-Type annotations for
-`boto3.client("resiliencehub").list_app_component_compliances` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_app_component_compliances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_component_compliances)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_app_component_compliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_component_compliances)
+```python title="Method definition"
+def list_app_component_compliances(
+    self,
+    *,
+    assessmentArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAppComponentCompliancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppComponentCompliancesRequestRequestTypeDef](./type_defs.md#listappcomponentcompliancesrequestrequesttypedef).
+1. See [:material-code-braces: ListAppComponentCompliancesResponseTypeDef](./type_defs.md#listappcomponentcompliancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppComponentCompliancesRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[ListAppComponentCompliancesResponseTypeDef](./type_defs.md#listappcomponentcompliancesresponsetypedef).
+parent.list_app_component_compliances(**kwargs)
+```
 
-<a id="list\_app\_component\_recommendations"></a>
+1. See [:material-code-braces: ListAppComponentCompliancesRequestRequestTypeDef](./type_defs.md#listappcomponentcompliancesrequestrequesttypedef) 
 
-### list_app_component_recommendations
+### list\_app\_component\_recommendations
 
 Lists the recommendations for an AWS Resilience Hub component.
 
-Type annotations for
-`boto3.client("resiliencehub").list_app_component_recommendations` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_app_component_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_component_recommendations)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_app_component_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_component_recommendations)
+```python title="Method definition"
+def list_app_component_recommendations(
+    self,
+    *,
+    assessmentArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAppComponentRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppComponentRecommendationsRequestRequestTypeDef](./type_defs.md#listappcomponentrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppComponentRecommendationsResponseTypeDef](./type_defs.md#listappcomponentrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppComponentRecommendationsRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[ListAppComponentRecommendationsResponseTypeDef](./type_defs.md#listappcomponentrecommendationsresponsetypedef).
+parent.list_app_component_recommendations(**kwargs)
+```
 
-<a id="list\_app\_version\_resource\_mappings"></a>
+1. See [:material-code-braces: ListAppComponentRecommendationsRequestRequestTypeDef](./type_defs.md#listappcomponentrecommendationsrequestrequesttypedef) 
 
-### list_app_version_resource_mappings
+### list\_app\_version\_resource\_mappings
 
 Lists how the resources in an application version are mapped/sourced from.
 
-Type annotations for
-`boto3.client("resiliencehub").list_app_version_resource_mappings` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_app_version_resource_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_version_resource_mappings)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_app_version_resource_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_version_resource_mappings)
+```python title="Method definition"
+def list_app_version_resource_mappings(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAppVersionResourceMappingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppVersionResourceMappingsRequestRequestTypeDef](./type_defs.md#listappversionresourcemappingsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppVersionResourceMappingsResponseTypeDef](./type_defs.md#listappversionresourcemappingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppVersionResourceMappingsRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+}
 
-Returns
-[ListAppVersionResourceMappingsResponseTypeDef](./type_defs.md#listappversionresourcemappingsresponsetypedef).
+parent.list_app_version_resource_mappings(**kwargs)
+```
 
-<a id="list\_app\_version\_resources"></a>
+1. See [:material-code-braces: ListAppVersionResourceMappingsRequestRequestTypeDef](./type_defs.md#listappversionresourcemappingsrequestrequesttypedef) 
 
-### list_app_version_resources
+### list\_app\_version\_resources
 
 Lists all the resources in an application version.
 
-Type annotations for `boto3.client("resiliencehub").list_app_version_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_app_version_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_version_resources)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_app_version_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_version_resources)
+```python title="Method definition"
+def list_app_version_resources(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    resolutionId: str = ...,
+) -> ListAppVersionResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppVersionResourcesRequestRequestTypeDef](./type_defs.md#listappversionresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListAppVersionResourcesResponseTypeDef](./type_defs.md#listappversionresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `resolutionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppVersionResourcesRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+}
 
-Returns
-[ListAppVersionResourcesResponseTypeDef](./type_defs.md#listappversionresourcesresponsetypedef).
+parent.list_app_version_resources(**kwargs)
+```
 
-<a id="list\_app\_versions"></a>
+1. See [:material-code-braces: ListAppVersionResourcesRequestRequestTypeDef](./type_defs.md#listappversionresourcesrequestrequesttypedef) 
 
-### list_app_versions
+### list\_app\_versions
 
 Lists the different versions for the Resilience Hub applications.
 
-Type annotations for `boto3.client("resiliencehub").list_app_versions` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_app_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_versions)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_app_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_app_versions)
+```python title="Method definition"
+def list_app_versions(
+    self,
+    *,
+    appArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAppVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppVersionsRequestRequestTypeDef](./type_defs.md#listappversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppVersionsResponseTypeDef](./type_defs.md#listappversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppVersionsRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns
-[ListAppVersionsResponseTypeDef](./type_defs.md#listappversionsresponsetypedef).
+parent.list_app_versions(**kwargs)
+```
 
-<a id="list\_apps"></a>
+1. See [:material-code-braces: ListAppVersionsRequestRequestTypeDef](./type_defs.md#listappversionsrequestrequesttypedef) 
 
-### list_apps
+### list\_apps
 
 Lists your Resilience Hub applications.
 
-Type annotations for `boto3.client("resiliencehub").list_apps` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_apps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_apps)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_apps)
+```python title="Method definition"
+def list_apps(
+    self,
+    *,
+    appArn: str = ...,
+    maxResults: int = ...,
+    name: str = ...,
+    nextToken: str = ...,
+) -> ListAppsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str`
-- `maxResults`: `int`
-- `name`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppsRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
+parent.list_apps(**kwargs)
+```
 
-<a id="list\_recommendation\_templates"></a>
+1. See [:material-code-braces: ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef) 
 
-### list_recommendation_templates
+### list\_recommendation\_templates
 
 Lists the recommendation templates for the Resilience Hub applications.
 
-Type annotations for
-`boto3.client("resiliencehub").list_recommendation_templates` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_recommendation_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_recommendation_templates)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_recommendation_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_recommendation_templates)
+```python title="Method definition"
+def list_recommendation_templates(
+    self,
+    *,
+    assessmentArn: str,
+    maxResults: int = ...,
+    name: str = ...,
+    nextToken: str = ...,
+    recommendationTemplateArn: str = ...,
+    reverseOrder: bool = ...,
+    status: Sequence[RecommendationTemplateStatusType] = ...,  # (1)
+) -> ListRecommendationTemplatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRecommendationTemplatesRequestRequestTypeDef](./type_defs.md#listrecommendationtemplatesrequestrequesttypedef).
+1. See [:material-code-brackets: RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype) 
+2. See [:material-code-braces: ListRecommendationTemplatesResponseTypeDef](./type_defs.md#listrecommendationtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `maxResults`: `int`
-- `name`: `str`
-- `nextToken`: `str`
-- `recommendationTemplateArn`: `str`
-- `reverseOrder`: `bool`
-- `status`:
-  `Sequence`\[[RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype)\]
+```python title="Usage example with kwargs"
+kwargs: ListRecommendationTemplatesRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[ListRecommendationTemplatesResponseTypeDef](./type_defs.md#listrecommendationtemplatesresponsetypedef).
+parent.list_recommendation_templates(**kwargs)
+```
 
-<a id="list\_resiliency\_policies"></a>
+1. See [:material-code-braces: ListRecommendationTemplatesRequestRequestTypeDef](./type_defs.md#listrecommendationtemplatesrequestrequesttypedef) 
 
-### list_resiliency_policies
+### list\_resiliency\_policies
 
 Lists the resiliency policies for the Resilience Hub applications.
 
-Type annotations for `boto3.client("resiliencehub").list_resiliency_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_resiliency_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_resiliency_policies)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_resiliency_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_resiliency_policies)
+```python title="Method definition"
+def list_resiliency_policies(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    policyName: str = ...,
+) -> ListResiliencyPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResiliencyPoliciesRequestRequestTypeDef](./type_defs.md#listresiliencypoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListResiliencyPoliciesResponseTypeDef](./type_defs.md#listresiliencypoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `policyName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResiliencyPoliciesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListResiliencyPoliciesResponseTypeDef](./type_defs.md#listresiliencypoliciesresponsetypedef).
+parent.list_resiliency_policies(**kwargs)
+```
 
-<a id="list\_sop\_recommendations"></a>
+1. See [:material-code-braces: ListResiliencyPoliciesRequestRequestTypeDef](./type_defs.md#listresiliencypoliciesrequestrequesttypedef) 
 
-### list_sop_recommendations
+### list\_sop\_recommendations
 
 Lists the standard operating procedure (SOP) recommendations for the Resilience
 Hub applications.
 
-Type annotations for `boto3.client("resiliencehub").list_sop_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_sop_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_sop_recommendations)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_sop_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_sop_recommendations)
+```python title="Method definition"
+def list_sop_recommendations(
+    self,
+    *,
+    assessmentArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSopRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSopRecommendationsRequestRequestTypeDef](./type_defs.md#listsoprecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: ListSopRecommendationsResponseTypeDef](./type_defs.md#listsoprecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSopRecommendationsRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[ListSopRecommendationsResponseTypeDef](./type_defs.md#listsoprecommendationsresponsetypedef).
+parent.list_sop_recommendations(**kwargs)
+```
 
-<a id="list\_suggested\_resiliency\_policies"></a>
+1. See [:material-code-braces: ListSopRecommendationsRequestRequestTypeDef](./type_defs.md#listsoprecommendationsrequestrequesttypedef) 
 
-### list_suggested_resiliency_policies
+### list\_suggested\_resiliency\_policies
 
 Lists the suggested resiliency policies for the Resilience Hub applications.
 
-Type annotations for
-`boto3.client("resiliencehub").list_suggested_resiliency_policies` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_suggested_resiliency_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_suggested_resiliency_policies)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_suggested_resiliency_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_suggested_resiliency_policies)
+```python title="Method definition"
+def list_suggested_resiliency_policies(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSuggestedResiliencyPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSuggestedResiliencyPoliciesRequestRequestTypeDef](./type_defs.md#listsuggestedresiliencypoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListSuggestedResiliencyPoliciesResponseTypeDef](./type_defs.md#listsuggestedresiliencypoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSuggestedResiliencyPoliciesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListSuggestedResiliencyPoliciesResponseTypeDef](./type_defs.md#listsuggestedresiliencypoliciesresponsetypedef).
+parent.list_suggested_resiliency_policies(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSuggestedResiliencyPoliciesRequestRequestTypeDef](./type_defs.md#listsuggestedresiliencypoliciesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for your resources in your Resilience Hub applications.
 
-Type annotations for `boto3.client("resiliencehub").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_test\_recommendations"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_test_recommendations
+### list\_test\_recommendations
 
 Lists the test recommendations for the Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").list_test_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_test_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_test_recommendations)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_test_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_test_recommendations)
+```python title="Method definition"
+def list_test_recommendations(
+    self,
+    *,
+    assessmentArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTestRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTestRecommendationsRequestRequestTypeDef](./type_defs.md#listtestrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: ListTestRecommendationsResponseTypeDef](./type_defs.md#listtestrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTestRecommendationsRequestRequestTypeDef = {  # (1)
+    "assessmentArn": ...,
+}
 
-Returns
-[ListTestRecommendationsResponseTypeDef](./type_defs.md#listtestrecommendationsresponsetypedef).
+parent.list_test_recommendations(**kwargs)
+```
 
-<a id="list\_unsupported\_app\_version\_resources"></a>
+1. See [:material-code-braces: ListTestRecommendationsRequestRequestTypeDef](./type_defs.md#listtestrecommendationsrequestrequesttypedef) 
 
-### list_unsupported_app_version_resources
+### list\_unsupported\_app\_version\_resources
 
 Lists the resources that are not currently supported in AWS Resilience Hub.
 
-Type annotations for
-`boto3.client("resiliencehub").list_unsupported_app_version_resources` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").list_unsupported_app_version_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_unsupported_app_version_resources)
 
-Boto3 documentation:
-[ResilienceHub.Client.list_unsupported_app_version_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.list_unsupported_app_version_resources)
+```python title="Method definition"
+def list_unsupported_app_version_resources(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    resolutionId: str = ...,
+) -> ListUnsupportedAppVersionResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUnsupportedAppVersionResourcesRequestRequestTypeDef](./type_defs.md#listunsupportedappversionresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListUnsupportedAppVersionResourcesResponseTypeDef](./type_defs.md#listunsupportedappversionresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `resolutionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUnsupportedAppVersionResourcesRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+}
 
-Returns
-[ListUnsupportedAppVersionResourcesResponseTypeDef](./type_defs.md#listunsupportedappversionresourcesresponsetypedef).
+parent.list_unsupported_app_version_resources(**kwargs)
+```
 
-<a id="publish\_app\_version"></a>
+1. See [:material-code-braces: ListUnsupportedAppVersionResourcesRequestRequestTypeDef](./type_defs.md#listunsupportedappversionresourcesrequestrequesttypedef) 
 
-### publish_app_version
+### publish\_app\_version
 
 Publishes a new version of a specific Resilience Hub application.
 
-Type annotations for `boto3.client("resiliencehub").publish_app_version`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").publish_app_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.publish_app_version)
 
-Boto3 documentation:
-[ResilienceHub.Client.publish_app_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.publish_app_version)
+```python title="Method definition"
+def publish_app_version(
+    self,
+    *,
+    appArn: str,
+) -> PublishAppVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PublishAppVersionRequestRequestTypeDef](./type_defs.md#publishappversionrequestrequesttypedef).
+1. See [:material-code-braces: PublishAppVersionResponseTypeDef](./type_defs.md#publishappversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PublishAppVersionRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns
-[PublishAppVersionResponseTypeDef](./type_defs.md#publishappversionresponsetypedef).
+parent.publish_app_version(**kwargs)
+```
 
-<a id="put\_draft\_app\_version\_template"></a>
+1. See [:material-code-braces: PublishAppVersionRequestRequestTypeDef](./type_defs.md#publishappversionrequestrequesttypedef) 
 
-### put_draft_app_version_template
+### put\_draft\_app\_version\_template
 
 Adds or updates the app template for a draft version of a Resilience Hub app.
 
-Type annotations for
-`boto3.client("resiliencehub").put_draft_app_version_template` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").put_draft_app_version_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.put_draft_app_version_template)
 
-Boto3 documentation:
-[ResilienceHub.Client.put_draft_app_version_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.put_draft_app_version_template)
+```python title="Method definition"
+def put_draft_app_version_template(
+    self,
+    *,
+    appArn: str,
+    appTemplateBody: str,
+) -> PutDraftAppVersionTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutDraftAppVersionTemplateRequestRequestTypeDef](./type_defs.md#putdraftappversiontemplaterequestrequesttypedef).
+1. See [:material-code-braces: PutDraftAppVersionTemplateResponseTypeDef](./type_defs.md#putdraftappversiontemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appTemplateBody`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutDraftAppVersionTemplateRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appTemplateBody": ...,
+}
 
-Returns
-[PutDraftAppVersionTemplateResponseTypeDef](./type_defs.md#putdraftappversiontemplateresponsetypedef).
+parent.put_draft_app_version_template(**kwargs)
+```
 
-<a id="remove\_draft\_app\_version\_resource\_mappings"></a>
+1. See [:material-code-braces: PutDraftAppVersionTemplateRequestRequestTypeDef](./type_defs.md#putdraftappversiontemplaterequestrequesttypedef) 
 
-### remove_draft_app_version_resource_mappings
+### remove\_draft\_app\_version\_resource\_mappings
 
 Removes resource mappings from a draft application version.
 
-Type annotations for
-`boto3.client("resiliencehub").remove_draft_app_version_resource_mappings`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").remove_draft_app_version_resource_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.remove_draft_app_version_resource_mappings)
 
-Boto3 documentation:
-[ResilienceHub.Client.remove_draft_app_version_resource_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.remove_draft_app_version_resource_mappings)
+```python title="Method definition"
+def remove_draft_app_version_resource_mappings(
+    self,
+    *,
+    appArn: str,
+    appRegistryAppNames: Sequence[str] = ...,
+    logicalStackNames: Sequence[str] = ...,
+    resourceGroupNames: Sequence[str] = ...,
+    resourceNames: Sequence[str] = ...,
+) -> RemoveDraftAppVersionResourceMappingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef](./type_defs.md#removedraftappversionresourcemappingsrequestrequesttypedef).
+1. See [:material-code-braces: RemoveDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#removedraftappversionresourcemappingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appRegistryAppNames`: `Sequence`\[`str`\]
-- `logicalStackNames`: `Sequence`\[`str`\]
-- `resourceGroupNames`: `Sequence`\[`str`\]
-- `resourceNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns
-[RemoveDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#removedraftappversionresourcemappingsresponsetypedef).
+parent.remove_draft_app_version_resource_mappings(**kwargs)
+```
 
-<a id="resolve\_app\_version\_resources"></a>
+1. See [:material-code-braces: RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef](./type_defs.md#removedraftappversionresourcemappingsrequestrequesttypedef) 
 
-### resolve_app_version_resources
+### resolve\_app\_version\_resources
 
 Resolves the resources for an application version.
 
-Type annotations for
-`boto3.client("resiliencehub").resolve_app_version_resources` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").resolve_app_version_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.resolve_app_version_resources)
 
-Boto3 documentation:
-[ResilienceHub.Client.resolve_app_version_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.resolve_app_version_resources)
+```python title="Method definition"
+def resolve_app_version_resources(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+) -> ResolveAppVersionResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResolveAppVersionResourcesRequestRequestTypeDef](./type_defs.md#resolveappversionresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ResolveAppVersionResourcesResponseTypeDef](./type_defs.md#resolveappversionresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResolveAppVersionResourcesRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+}
 
-Returns
-[ResolveAppVersionResourcesResponseTypeDef](./type_defs.md#resolveappversionresourcesresponsetypedef).
+parent.resolve_app_version_resources(**kwargs)
+```
 
-<a id="start\_app\_assessment"></a>
+1. See [:material-code-braces: ResolveAppVersionResourcesRequestRequestTypeDef](./type_defs.md#resolveappversionresourcesrequestrequesttypedef) 
 
-### start_app_assessment
+### start\_app\_assessment
 
 Creates a new application assessment for an application.
 
-Type annotations for `boto3.client("resiliencehub").start_app_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").start_app_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.start_app_assessment)
 
-Boto3 documentation:
-[ResilienceHub.Client.start_app_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.start_app_assessment)
+```python title="Method definition"
+def start_app_assessment(
+    self,
+    *,
+    appArn: str,
+    appVersion: str,
+    assessmentName: str,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> StartAppAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartAppAssessmentRequestRequestTypeDef](./type_defs.md#startappassessmentrequestrequesttypedef).
+1. See [:material-code-braces: StartAppAssessmentResponseTypeDef](./type_defs.md#startappassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `appVersion`: `str` *(required)*
-- `assessmentName`: `str` *(required)*
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartAppAssessmentRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+    "appVersion": ...,
+    "assessmentName": ...,
+}
 
-Returns
-[StartAppAssessmentResponseTypeDef](./type_defs.md#startappassessmentresponsetypedef).
+parent.start_app_assessment(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartAppAssessmentRequestRequestTypeDef](./type_defs.md#startappassessmentrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies one or more tags to a resource.
 
-Type annotations for `boto3.client("resiliencehub").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.tag_resource)
 
-Boto3 documentation:
-[ResilienceHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a resource.
 
-Type annotations for `boto3.client("resiliencehub").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.untag_resource)
 
-Boto3 documentation:
-[ResilienceHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_app"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_app
+### update\_app
 
 Updates an application.
 
-Type annotations for `boto3.client("resiliencehub").update_app` method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").update_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.update_app)
 
-Boto3 documentation:
-[ResilienceHub.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.update_app)
+```python title="Method definition"
+def update_app(
+    self,
+    *,
+    appArn: str,
+    clearResiliencyPolicyArn: bool = ...,
+    description: str = ...,
+    policyArn: str = ...,
+) -> UpdateAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppRequestRequestTypeDef](./type_defs.md#updateapprequestrequesttypedef).
+1. See [:material-code-braces: UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appArn`: `str` *(required)*
-- `clearResiliencyPolicyArn`: `bool`
-- `description`: `str`
-- `policyArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAppRequestRequestTypeDef = {  # (1)
+    "appArn": ...,
+}
 
-Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
+parent.update_app(**kwargs)
+```
 
-<a id="update\_resiliency\_policy"></a>
+1. See [:material-code-braces: UpdateAppRequestRequestTypeDef](./type_defs.md#updateapprequestrequesttypedef) 
 
-### update_resiliency_policy
+### update\_resiliency\_policy
 
 Updates a resiliency policy.
 
-Type annotations for `boto3.client("resiliencehub").update_resiliency_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("resiliencehub").update_resiliency_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.update_resiliency_policy)
 
-Boto3 documentation:
-[ResilienceHub.Client.update_resiliency_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.update_resiliency_policy)
+```python title="Method definition"
+def update_resiliency_policy(
+    self,
+    *,
+    policyArn: str,
+    dataLocationConstraint: DataLocationConstraintType = ...,  # (1)
+    policy: Mapping[DisruptionTypeType, FailurePolicyTypeDef] = ...,  # (2)
+    policyDescription: str = ...,
+    policyName: str = ...,
+    tier: ResiliencyPolicyTierType = ...,  # (3)
+) -> UpdateResiliencyPolicyResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResiliencyPolicyRequestRequestTypeDef](./type_defs.md#updateresiliencypolicyrequestrequesttypedef).
+1. See [:material-code-brackets: DataLocationConstraintType](./literals.md#datalocationconstrainttype) 
+2. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef) 
+3. See [:material-code-brackets: ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype) 
+4. See [:material-code-braces: UpdateResiliencyPolicyResponseTypeDef](./type_defs.md#updateresiliencypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyArn`: `str` *(required)*
-- `dataLocationConstraint`:
-  [DataLocationConstraintType](./literals.md#datalocationconstrainttype)
-- `policy`: `Mapping`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef)\]
-- `policyDescription`: `str`
-- `policyName`: `str`
-- `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
+```python title="Usage example with kwargs"
+kwargs: UpdateResiliencyPolicyRequestRequestTypeDef = {  # (1)
+    "policyArn": ...,
+}
 
-Returns
-[UpdateResiliencyPolicyResponseTypeDef](./type_defs.md#updateresiliencypolicyresponsetypedef).
+parent.update_resiliency_policy(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateResiliencyPolicyRequestRequestTypeDef](./type_defs.md#updateresiliencypolicyrequestrequesttypedef) 
+
+
+
+

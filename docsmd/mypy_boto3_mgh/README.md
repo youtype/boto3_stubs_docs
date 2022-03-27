@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-migrationhub-module"></a>
-
-# Type annotations for boto3 MigrationHub module
+#  MigrationHub module
 
 > [Index](../README.md) > MigrationHub
 
-Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module
-[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
+!!! note ""
 
-- [Type annotations for boto3 MigrationHub module](#type-annotations-for-boto3-migrationhub-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MigrationHubClient](#migrationhubclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+    type annotations stubs module [mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MigrationHub`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[mgh]'
 python -m pip install mypy-boto3-mgh
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,79 +42,37 @@ python -m pip install mypy-boto3-mgh
 python -m pip uninstall -y mypy-boto3-mgh
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="migrationhubclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MigrationHubClient
 
-Type annotations for `boto3.client("mgh")` as [MigrationHubClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("mgh")` as [MigrationHubClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_mgh.client import MigrationHubClient
+
+def get_client() -> MigrationHubClient:
+    return Session().cleint("mgh")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_created_artifact](./client.md#associate_created_artifact)
-- [associate_discovered_resource](./client.md#associate_discovered_resource)
-- [can_paginate](./client.md#can_paginate)
-- [create_progress_update_stream](./client.md#create_progress_update_stream)
-- [delete_progress_update_stream](./client.md#delete_progress_update_stream)
-- [describe_application_state](./client.md#describe_application_state)
-- [describe_migration_task](./client.md#describe_migration_task)
-- [disassociate_created_artifact](./client.md#disassociate_created_artifact)
-- [disassociate_discovered_resource](./client.md#disassociate_discovered_resource)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [import_migration_task](./client.md#import_migration_task)
-- [list_application_states](./client.md#list_application_states)
-- [list_created_artifacts](./client.md#list_created_artifacts)
-- [list_discovered_resources](./client.md#list_discovered_resources)
-- [list_migration_tasks](./client.md#list_migration_tasks)
-- [list_progress_update_streams](./client.md#list_progress_update_streams)
-- [notify_application_state](./client.md#notify_application_state)
-- [notify_migration_task_state](./client.md#notify_migration_task_state)
-- [put_resource_attributes](./client.md#put_resource_attributes)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MigrationHubClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- DryRunOperation
-- HomeRegionNotSetException
-- InternalServerError
-- InvalidInputException
-- PolicyErrorException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- ThrottlingException
-- UnauthorizedOperation
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("mgh").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("mgh").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator, ...
+from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator
+
+def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
+    return Session().client("mgh").get_paginator("list_application_states"))
 ```
 
 - [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
@@ -145,16 +81,23 @@ from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator, ...
 - [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
 - [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mgh.literals import ApplicationStatusType
 
-```python
-from mypy_boto3_mgh.literals import ApplicationStatusType, ...
+def get_value() -> ApplicationStatusType:
+    return "COMPLETED"
 ```
 
 - [ApplicationStatusType](./literals.md#applicationstatustype)
@@ -169,18 +112,22 @@ from mypy_boto3_mgh.literals import ApplicationStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mgh.type_defs import ApplicationStateTypeDef
 
-```python
-from mypy_boto3_mgh.type_defs import ApplicationStateTypeDef, ...
+def get_value() -> ApplicationStateTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
 - [ApplicationStateTypeDef](./type_defs.md#applicationstatetypedef)
@@ -197,14 +144,19 @@ from mypy_boto3_mgh.type_defs import ApplicationStateTypeDef, ...
 - [DisassociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#disassociatediscoveredresourcerequestrequesttypedef)
 - [DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)
 - [ImportMigrationTaskRequestRequestTypeDef](./type_defs.md#importmigrationtaskrequestrequesttypedef)
+- [ListApplicationStatesRequestListApplicationStatesPaginateTypeDef](./type_defs.md#listapplicationstatesrequestlistapplicationstatespaginatetypedef)
 - [ListApplicationStatesRequestRequestTypeDef](./type_defs.md#listapplicationstatesrequestrequesttypedef)
 - [ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)
+- [ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef](./type_defs.md#listcreatedartifactsrequestlistcreatedartifactspaginatetypedef)
 - [ListCreatedArtifactsRequestRequestTypeDef](./type_defs.md#listcreatedartifactsrequestrequesttypedef)
 - [ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)
+- [ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef](./type_defs.md#listdiscoveredresourcesrequestlistdiscoveredresourcespaginatetypedef)
 - [ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef)
 - [ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)
+- [ListMigrationTasksRequestListMigrationTasksPaginateTypeDef](./type_defs.md#listmigrationtasksrequestlistmigrationtaskspaginatetypedef)
 - [ListMigrationTasksRequestRequestTypeDef](./type_defs.md#listmigrationtasksrequestrequesttypedef)
 - [ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)
+- [ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef](./type_defs.md#listprogressupdatestreamsrequestlistprogressupdatestreamspaginatetypedef)
 - [ListProgressUpdateStreamsRequestRequestTypeDef](./type_defs.md#listprogressupdatestreamsrequestrequesttypedef)
 - [ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef)
 - [MigrationTaskSummaryTypeDef](./type_defs.md#migrationtasksummarytypedef)
@@ -217,3 +169,4 @@ from mypy_boto3_mgh.type_defs import ApplicationStateTypeDef, ...
 - [ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TaskTypeDef](./type_defs.md#tasktypedef)
+

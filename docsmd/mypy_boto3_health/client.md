@@ -1,45 +1,18 @@
-<a id="healthclient-for-boto3-health-module"></a>
-
-# HealthClient for boto3 Health module
+# HealthClient
 
 > [Index](../README.md) > [Health](./README.md) > HealthClient
 
-Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module
-[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
+!!! note ""
 
-- [HealthClient for boto3 Health module](#healthclient-for-boto3-health-module)
-  - [HealthClient](#healthclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_affected_accounts_for_organization](#describe_affected_accounts_for_organization)
-    - [describe_affected_entities](#describe_affected_entities)
-    - [describe_affected_entities_for_organization](#describe_affected_entities_for_organization)
-    - [describe_entity_aggregates](#describe_entity_aggregates)
-    - [describe_event_aggregates](#describe_event_aggregates)
-    - [describe_event_details](#describe_event_details)
-    - [describe_event_details_for_organization](#describe_event_details_for_organization)
-    - [describe_event_types](#describe_event_types)
-    - [describe_events](#describe_events)
-    - [describe_events_for_organization](#describe_events_for_organization)
-    - [describe_health_service_status_for_organization](#describe_health_service_status_for_organization)
-    - [disable_health_service_access_for_organization](#disable_health_service_access_for_organization)
-    - [enable_health_service_access_for_organization](#enable_health_service_access_for_organization)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_paginator](#get_paginator)
-
-<a id="healthclient"></a>
+    Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+    type annotations stubs module [mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 ## HealthClient
 
-Type annotations for `boto3.client("health")`
+Type annotations and code completion for `#!python boto3.client("health")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_health.client import HealthClient
 
@@ -47,396 +20,459 @@ def get_health_client() -> HealthClient:
     return Session().client("health")
 ```
 
-Boto3 documentation:
-[Health.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("health").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("health")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.InvalidPaginationToken,
+    client.UnsupportedLocale,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_health.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.InvalidPaginationToken`
-- `Exceptions.UnsupportedLocale`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-HealthClient exceptions.
-
-Type annotations for `boto3.client("health").exceptions` method.
-
-Boto3 documentation:
-[Health.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("health").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("health").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.can_paginate)
 
-Boto3 documentation:
-[Health.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_affected\_accounts\_for\_organization"></a>
-
-### describe_affected_accounts_for_organization
+### describe\_affected\_accounts\_for\_organization
 
 Returns a list of accounts in the organization from Organizations that are
 affected by the provided event.
 
-Type annotations for
-`boto3.client("health").describe_affected_accounts_for_organization` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_affected_accounts_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
 
-Boto3 documentation:
-[Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
+```python title="Method definition"
+def describe_affected_accounts_for_organization(
+    self,
+    *,
+    eventArn: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeAffectedAccountsForOrganizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAffectedAccountsForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `eventArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAffectedAccountsForOrganizationRequestRequestTypeDef = {  # (1)
+    "eventArn": ...,
+}
 
-Returns
-[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef).
+parent.describe_affected_accounts_for_organization(**kwargs)
+```
 
-<a id="describe\_affected\_entities"></a>
+1. See [:material-code-braces: DescribeAffectedAccountsForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequestrequesttypedef) 
 
-### describe_affected_entities
+### describe\_affected\_entities
 
 Returns a list of entities that have been affected by the specified events,
 based on the specified filter criteria.
 
-Type annotations for `boto3.client("health").describe_affected_entities`
-method.
+Type annotations and code completion for `#!python boto3.client("health").describe_affected_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities)
 
-Boto3 documentation:
-[Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities)
+```python title="Method definition"
+def describe_affected_entities(
+    self,
+    *,
+    filter: EntityFilterTypeDef,  # (1)
+    locale: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeAffectedEntitiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAffectedEntitiesRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesrequestrequesttypedef).
+1. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
+2. See [:material-code-braces: DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
-  *(required)*
-- `locale`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAffectedEntitiesRequestRequestTypeDef = {  # (1)
+    "filter": ...,
+}
 
-Returns
-[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef).
+parent.describe_affected_entities(**kwargs)
+```
 
-<a id="describe\_affected\_entities\_for\_organization"></a>
+1. See [:material-code-braces: DescribeAffectedEntitiesRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesrequestrequesttypedef) 
 
-### describe_affected_entities_for_organization
+### describe\_affected\_entities\_for\_organization
 
-Returns a list of entities that have been affected by one or more events for
-one or more accounts in your organization in Organizations, based on the filter
+Returns a list of entities that have been affected by one or more events for one
+or more accounts in your organization in Organizations, based on the filter
 criteria.
 
-Type annotations for
-`boto3.client("health").describe_affected_entities_for_organization` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_affected_entities_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
 
-Boto3 documentation:
-[Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
+```python title="Method definition"
+def describe_affected_entities_for_organization(
+    self,
+    *,
+    organizationEntityFilters: Sequence[EventAccountFilterTypeDef],  # (1)
+    locale: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeAffectedEntitiesForOrganizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequestrequesttypedef).
+1. See [:material-code-braces: EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef) 
+2. See [:material-code-braces: DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `organizationEntityFilters`:
-  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
-  *(required)*
-- `locale`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef = {  # (1)
+    "organizationEntityFilters": ...,
+}
 
-Returns
-[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef).
+parent.describe_affected_entities_for_organization(**kwargs)
+```
 
-<a id="describe\_entity\_aggregates"></a>
+1. See [:material-code-braces: DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequestrequesttypedef) 
 
-### describe_entity_aggregates
+### describe\_entity\_aggregates
 
 Returns the number of entities that are affected by each of the specified
 events.
 
-Type annotations for `boto3.client("health").describe_entity_aggregates`
-method.
+Type annotations and code completion for `#!python boto3.client("health").describe_entity_aggregates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates)
 
-Boto3 documentation:
-[Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates)
+```python title="Method definition"
+def describe_entity_aggregates(
+    self,
+    *,
+    eventArns: Sequence[str] = ...,
+) -> DescribeEntityAggregatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEntityAggregatesRequestRequestTypeDef](./type_defs.md#describeentityaggregatesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `eventArns`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeEntityAggregatesRequestRequestTypeDef = {  # (1)
+    "eventArns": ...,
+}
 
-Returns
-[DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
+parent.describe_entity_aggregates(**kwargs)
+```
 
-<a id="describe\_event\_aggregates"></a>
+1. See [:material-code-braces: DescribeEntityAggregatesRequestRequestTypeDef](./type_defs.md#describeentityaggregatesrequestrequesttypedef) 
 
-### describe_event_aggregates
+### describe\_event\_aggregates
 
 Returns the number of events of each event type (issue, scheduled change, and
 account notification).
 
-Type annotations for `boto3.client("health").describe_event_aggregates` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_event_aggregates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates)
 
-Boto3 documentation:
-[Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates)
+```python title="Method definition"
+def describe_event_aggregates(
+    self,
+    *,
+    aggregateField: eventAggregateFieldType,  # (1)
+    filter: EventFilterTypeDef = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeEventAggregatesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventAggregatesRequestRequestTypeDef](./type_defs.md#describeeventaggregatesrequestrequesttypedef).
+1. See [:material-code-brackets: eventAggregateFieldType](./literals.md#eventaggregatefieldtype) 
+2. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+3. See [:material-code-braces: DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `aggregateField`: `Literal['eventTypeCategory']` (see
-  [eventAggregateFieldType](./literals.md#eventaggregatefieldtype))
-  *(required)*
-- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventAggregatesRequestRequestTypeDef = {  # (1)
+    "aggregateField": ...,
+}
 
-Returns
-[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef).
+parent.describe_event_aggregates(**kwargs)
+```
 
-<a id="describe\_event\_details"></a>
+1. See [:material-code-braces: DescribeEventAggregatesRequestRequestTypeDef](./type_defs.md#describeeventaggregatesrequestrequesttypedef) 
 
-### describe_event_details
+### describe\_event\_details
 
 Returns detailed information about one or more specified events.
 
-Type annotations for `boto3.client("health").describe_event_details` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_event_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details)
 
-Boto3 documentation:
-[Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details)
+```python title="Method definition"
+def describe_event_details(
+    self,
+    *,
+    eventArns: Sequence[str],
+    locale: str = ...,
+) -> DescribeEventDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventDetailsRequestRequestTypeDef](./type_defs.md#describeeventdetailsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `eventArns`: `Sequence`\[`str`\] *(required)*
-- `locale`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventDetailsRequestRequestTypeDef = {  # (1)
+    "eventArns": ...,
+}
 
-Returns
-[DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef).
+parent.describe_event_details(**kwargs)
+```
 
-<a id="describe\_event\_details\_for\_organization"></a>
+1. See [:material-code-braces: DescribeEventDetailsRequestRequestTypeDef](./type_defs.md#describeeventdetailsrequestrequesttypedef) 
 
-### describe_event_details_for_organization
+### describe\_event\_details\_for\_organization
 
 Returns detailed information about one or more specified events for one or more
 Amazon Web Services accounts in your organization.
 
-Type annotations for
-`boto3.client("health").describe_event_details_for_organization` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_event_details_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization)
 
-Boto3 documentation:
-[Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization)
+```python title="Method definition"
+def describe_event_details_for_organization(
+    self,
+    *,
+    organizationEventDetailFilters: Sequence[EventAccountFilterTypeDef],  # (1)
+    locale: str = ...,
+) -> DescribeEventDetailsForOrganizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventDetailsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventdetailsfororganizationrequestrequesttypedef).
+1. See [:material-code-braces: EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef) 
+2. See [:material-code-braces: DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `organizationEventDetailFilters`:
-  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
-  *(required)*
-- `locale`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventDetailsForOrganizationRequestRequestTypeDef = {  # (1)
+    "organizationEventDetailFilters": ...,
+}
 
-Returns
-[DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef).
+parent.describe_event_details_for_organization(**kwargs)
+```
 
-<a id="describe\_event\_types"></a>
+1. See [:material-code-braces: DescribeEventDetailsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventdetailsfororganizationrequestrequesttypedef) 
 
-### describe_event_types
+### describe\_event\_types
 
 Returns the event types that meet the specified filter criteria.
 
-Type annotations for `boto3.client("health").describe_event_types` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_event_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types)
 
-Boto3 documentation:
-[Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types)
+```python title="Method definition"
+def describe_event_types(
+    self,
+    *,
+    filter: EventTypeFilterTypeDef = ...,  # (1)
+    locale: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeEventTypesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventTypesRequestRequestTypeDef](./type_defs.md#describeeventtypesrequestrequesttypedef).
+1. See [:material-code-braces: EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef) 
+2. See [:material-code-braces: DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
-- `locale`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventTypesRequestRequestTypeDef = {  # (1)
+    "filter": ...,
+}
 
-Returns
-[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef).
+parent.describe_event_types(**kwargs)
+```
 
-<a id="describe\_events"></a>
+1. See [:material-code-braces: DescribeEventTypesRequestRequestTypeDef](./type_defs.md#describeeventtypesrequestrequesttypedef) 
 
-### describe_events
+### describe\_events
 
 Returns information about events that meet the specified filter criteria.
 
-Type annotations for `boto3.client("health").describe_events` method.
+Type annotations and code completion for `#!python boto3.client("health").describe_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events)
 
-Boto3 documentation:
-[Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events)
+```python title="Method definition"
+def describe_events(
+    self,
+    *,
+    filter: EventFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+    locale: str = ...,
+) -> DescribeEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef).
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+2. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `locale`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsRequestRequestTypeDef = {  # (1)
+    "filter": ...,
+}
 
-Returns
-[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+parent.describe_events(**kwargs)
+```
 
-<a id="describe\_events\_for\_organization"></a>
+1. See [:material-code-braces: DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef) 
 
-### describe_events_for_organization
+### describe\_events\_for\_organization
 
 Returns information about events across your organization in Organizations.
 
-Type annotations for `boto3.client("health").describe_events_for_organization`
-method.
+Type annotations and code completion for `#!python boto3.client("health").describe_events_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization)
 
-Boto3 documentation:
-[Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization)
+```python title="Method definition"
+def describe_events_for_organization(
+    self,
+    *,
+    filter: OrganizationEventFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+    locale: str = ...,
+) -> DescribeEventsForOrganizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventsfororganizationrequestrequesttypedef).
+1. See [:material-code-braces: OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef) 
+2. See [:material-code-braces: DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filter`:
-  [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `locale`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsForOrganizationRequestRequestTypeDef = {  # (1)
+    "filter": ...,
+}
 
-Returns
-[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef).
+parent.describe_events_for_organization(**kwargs)
+```
 
-<a id="describe\_health\_service\_status\_for\_organization"></a>
+1. See [:material-code-braces: DescribeEventsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventsfororganizationrequestrequesttypedef) 
 
-### describe_health_service_status_for_organization
+### describe\_health\_service\_status\_for\_organization
 
 This operation provides status information on enabling or disabling Health to
 work with your organization.
 
-Type annotations for
-`boto3.client("health").describe_health_service_status_for_organization`
-method.
+Type annotations and code completion for `#!python boto3.client("health").describe_health_service_status_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
 
-Boto3 documentation:
-[Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
+```python title="Method definition"
+def describe_health_service_status_for_organization(
+    self,
+) -> DescribeHealthServiceStatusForOrganizationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
+1. See [:material-code-braces: DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef) 
 
-<a id="disable\_health\_service\_access\_for\_organization"></a>
-
-### disable_health_service_access_for_organization
+### disable\_health\_service\_access\_for\_organization
 
 Disables Health from working with Organizations.
 
-Type annotations for
-`boto3.client("health").disable_health_service_access_for_organization` method.
+Type annotations and code completion for `#!python boto3.client("health").disable_health_service_access_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
 
-Boto3 documentation:
-[Health.Client.disable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
+```python title="Method definition"
+def disable_health_service_access_for_organization(
+    self,
+) -> None:
+    ...
+```
 
-<a id="enable\_health\_service\_access\_for\_organization"></a>
 
-### enable_health_service_access_for_organization
+### enable\_health\_service\_access\_for\_organization
 
 Enables Health to work with Organizations.
 
-Type annotations for
-`boto3.client("health").enable_health_service_access_for_organization` method.
+Type annotations and code completion for `#!python boto3.client("health").enable_health_service_access_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
 
-Boto3 documentation:
-[Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
+```python title="Method definition"
+def enable_health_service_access_for_organization(
+    self,
+) -> None:
+    ...
+```
 
-<a id="generate\_presigned\_url"></a>
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("health").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("health").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Health.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
 
-Returns `str`.
-
-<a id="get_paginator"></a>
 
 ### get_paginator
 
-Type annotations for `boto3.client("health").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_affected_accounts_for_organization")` ->
-  [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
-- `client.get_paginator("describe_affected_entities")` ->
-  [DescribeAffectedEntitiesPaginator](./paginators.md#describeaffectedentitiespaginator)
-- `client.get_paginator("describe_affected_entities_for_organization")` ->
-  [DescribeAffectedEntitiesForOrganizationPaginator](./paginators.md#describeaffectedentitiesfororganizationpaginator)
-- `client.get_paginator("describe_event_aggregates")` ->
-  [DescribeEventAggregatesPaginator](./paginators.md#describeeventaggregatespaginator)
-- `client.get_paginator("describe_event_types")` ->
-  [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
-- `client.get_paginator("describe_events")` ->
-  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_events_for_organization")` ->
-  [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
+- `client.get_paginator("describe_affected_accounts_for_organization")` -> [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
+- `client.get_paginator("describe_affected_entities")` -> [DescribeAffectedEntitiesPaginator](./paginators.md#describeaffectedentitiespaginator)
+- `client.get_paginator("describe_affected_entities_for_organization")` -> [DescribeAffectedEntitiesForOrganizationPaginator](./paginators.md#describeaffectedentitiesfororganizationpaginator)
+- `client.get_paginator("describe_event_aggregates")` -> [DescribeEventAggregatesPaginator](./paginators.md#describeeventaggregatespaginator)
+- `client.get_paginator("describe_event_types")` -> [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
+- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_events_for_organization")` -> [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
+
+
+

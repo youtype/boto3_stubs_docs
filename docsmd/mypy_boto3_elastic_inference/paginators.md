@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-elasticinference-module"></a>
-
-# Paginators for boto3 ElasticInference module
+# Paginators
 
 > [Index](../README.md) > [ElasticInference](./README.md) > Paginators
 
-Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
-type annotations stubs module
-[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+!!! note ""
 
-- [Paginators for boto3 ElasticInference module](#paginators-for-boto3-elasticinference-module)
-  - [DescribeAcceleratorsPaginator](#describeacceleratorspaginator)
-
-<a id="describeacceleratorspaginator"></a>
+    Auto-generated documentation for [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+    type annotations stubs module [mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 ## DescribeAcceleratorsPaginator
 
-Type annotations for
-`boto3.client("elastic-inference").get_paginator("describe_accelerators")`.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").get_paginator("describe_accelerators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elastic_inference.paginator import DescribeAcceleratorsPaginator
@@ -30,15 +21,33 @@ def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
     return Session().client("elastic-inference").get_paginator("describe_accelerators")
 ```
 
-Boto3 documentation:
-[ElasticInference.Paginator.DescribeAccelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Paginator.DescribeAccelerators)
 
-Arguments for `DescribeAcceleratorsPaginator.paginate` method:
+### paginate
 
-- `acceleratorIds`: `Sequence`\[`str`\]
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAcceleratorsPaginator.paginate` method.
 
-`DescribeAcceleratorsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    acceleratorIds: Sequence[str] = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAcceleratorsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef = {  # (1)
+    "acceleratorIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef](./type_defs.md#describeacceleratorsrequestdescribeacceleratorspaginatetypedef) 

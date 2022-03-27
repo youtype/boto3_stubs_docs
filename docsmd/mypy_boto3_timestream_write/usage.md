@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-timestreamwrite-module"></a>
-
-# Examples for boto3 TimestreamWrite module
+# Examples
 
 > [Index](../README.md) > [TimestreamWrite](./README.md) > Examples
 
-- [Examples for boto3 TimestreamWrite module](#examples-for-boto3-timestreamwrite-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+    type annotations stubs module [mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[timestream-write]` package installed.
 
-Write your `TimestreamWrite` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `TimestreamWrite` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type TimestreamWriteClient
-# and provides type checking and code completion
-client = session.client("timestream-write")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("timestream-write")  # (1)
+    result = client.create_database()  # (2)
+    ```
+
+    1. client: [TimestreamWriteClient](./client.md)
+    2. result: [:material-code-braces: CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[timestream-write]` or a standalone
-`mypy_boto3_timestream_write` package, you have to explicitly specify
-`client: TimestreamWriteClient` type annotation.
+With `boto3-stubs-lite[timestream-write]`
+or a standalone `mypy_boto3_timestream_write` package, you have to explicitly specify `client: TimestreamWriteClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_timestream_write.client import TimestreamWriteClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_timestream_write.client import TimestreamWriteClient
+    from mypy_boto3_timestream_write.type_defs import CreateDatabaseResponseTypeDef
+    from mypy_boto3_timestream_write.type_defs import CreateDatabaseRequestRequestTypeDef
 
 
-from mypy_boto3_timestream_write.type_defs import bool
+    session = Session()
+
+    client: TimestreamWriteClient = session.client("timestream-write")
+
+    kwargs: CreateDatabaseRequestRequestTypeDef = {...}
+    result: CreateDatabaseResponseTypeDef = client.create_database(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: TimestreamWriteClient = session.client("timestream-write")
 
-result: bool = client.can_paginate()
-```
+

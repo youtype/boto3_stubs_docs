@@ -1,47 +1,18 @@
-<a id="serverlessapplicationrepositoryclient-for-boto3-serverlessapplicationrepository-module"></a>
+# ServerlessApplicationRepositoryClient
 
-# ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > ServerlessApplicationRepositoryClient
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
-> ServerlessApplicationRepositoryClient
+!!! note ""
 
-Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module
-[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
-
-- [ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module](#serverlessapplicationrepositoryclient-for-boto3-serverlessapplicationrepository-module)
-  - [ServerlessApplicationRepositoryClient](#serverlessapplicationrepositoryclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_application](#create_application)
-    - [create_application_version](#create_application_version)
-    - [create_cloud_formation_change_set](#create_cloud_formation_change_set)
-    - [create_cloud_formation_template](#create_cloud_formation_template)
-    - [delete_application](#delete_application)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_application](#get_application)
-    - [get_application_policy](#get_application_policy)
-    - [get_cloud_formation_template](#get_cloud_formation_template)
-    - [list_application_dependencies](#list_application_dependencies)
-    - [list_application_versions](#list_application_versions)
-    - [list_applications](#list_applications)
-    - [put_application_policy](#put_application_policy)
-    - [unshare_application](#unshare_application)
-    - [update_application](#update_application)
-    - [get_paginator](#get_paginator)
-
-<a id="serverlessapplicationrepositoryclient"></a>
+    Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+    type annotations stubs module [mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ## ServerlessApplicationRepositoryClient
 
-Type annotations for `boto3.client("serverlessrepo")`
+Type annotations and code completion for `#!python boto3.client("serverlessrepo")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
 
@@ -49,451 +20,548 @@ def get_serverlessrepo_client() -> ServerlessApplicationRepositoryClient:
     return Session().client("serverlessrepo")
 ```
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("serverlessrepo").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("serverlessrepo")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_serverlessrepo.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ServerlessApplicationRepositoryClient exceptions.
-
-Type annotations for `boto3.client("serverlessrepo").exceptions` method.
-
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("serverlessrepo").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### create\_application
 
-Returns `bool`.
+Creates an application, optionally including an AWS SAM file to create the first
+application version in the same call.
 
-<a id="create\_application"></a>
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
 
-### create_application
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    Author: str,
+    Description: str,
+    Name: str,
+    HomePageUrl: str = ...,
+    Labels: Sequence[str] = ...,
+    LicenseBody: str = ...,
+    LicenseUrl: str = ...,
+    ReadmeBody: str = ...,
+    ReadmeUrl: str = ...,
+    SemanticVersion: str = ...,
+    SourceCodeArchiveUrl: str = ...,
+    SourceCodeUrl: str = ...,
+    SpdxLicenseId: str = ...,
+    TemplateBody: str = ...,
+    TemplateUrl: str = ...,
+) -> CreateApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Creates an application, optionally including an AWS SAM file to create the
-first application version in the same call.
+1. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
-Type annotations for `boto3.client("serverlessrepo").create_application`
-method.
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "Author": ...,
+    "Description": ...,
+    "Name": ...,
+}
 
-Arguments mapping described in
-[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
+parent.create_application(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
 
-- `Author`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `HomePageUrl`: `str`
-- `Labels`: `Sequence`\[`str`\]
-- `LicenseBody`: `str`
-- `LicenseUrl`: `str`
-- `ReadmeBody`: `str`
-- `ReadmeUrl`: `str`
-- `SemanticVersion`: `str`
-- `SourceCodeArchiveUrl`: `str`
-- `SourceCodeUrl`: `str`
-- `SpdxLicenseId`: `str`
-- `TemplateBody`: `str`
-- `TemplateUrl`: `str`
-
-Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
-
-<a id="create\_application\_version"></a>
-
-### create_application_version
+### create\_application\_version
 
 Creates an application version.
 
-Type annotations for
-`boto3.client("serverlessrepo").create_application_version` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").create_application_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
+```python title="Method definition"
+def create_application_version(
+    self,
+    *,
+    ApplicationId: str,
+    SemanticVersion: str,
+    SourceCodeArchiveUrl: str = ...,
+    SourceCodeUrl: str = ...,
+    TemplateBody: str = ...,
+    TemplateUrl: str = ...,
+) -> CreateApplicationVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationVersionRequestRequestTypeDef](./type_defs.md#createapplicationversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateApplicationVersionResponseTypeDef](./type_defs.md#createapplicationversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SemanticVersion`: `str` *(required)*
-- `SourceCodeArchiveUrl`: `str`
-- `SourceCodeUrl`: `str`
-- `TemplateBody`: `str`
-- `TemplateUrl`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationVersionRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SemanticVersion": ...,
+}
 
-Returns
-[CreateApplicationVersionResponseTypeDef](./type_defs.md#createapplicationversionresponsetypedef).
+parent.create_application_version(**kwargs)
+```
 
-<a id="create\_cloud\_formation\_change\_set"></a>
+1. See [:material-code-braces: CreateApplicationVersionRequestRequestTypeDef](./type_defs.md#createapplicationversionrequestrequesttypedef) 
 
-### create_cloud_formation_change_set
+### create\_cloud\_formation\_change\_set
 
 Creates an AWS CloudFormation change set for the given application.
 
-Type annotations for
-`boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_cloud_formation_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
+```python title="Method definition"
+def create_cloud_formation_change_set(
+    self,
+    *,
+    ApplicationId: str,
+    StackName: str,
+    Capabilities: Sequence[str] = ...,
+    ChangeSetName: str = ...,
+    ClientToken: str = ...,
+    Description: str = ...,
+    NotificationArns: Sequence[str] = ...,
+    ParameterOverrides: Sequence[ParameterValueTypeDef] = ...,  # (1)
+    ResourceTypes: Sequence[str] = ...,
+    RollbackConfiguration: RollbackConfigurationTypeDef = ...,  # (2)
+    SemanticVersion: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    TemplateId: str = ...,
+) -> CreateCloudFormationChangeSetResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateCloudFormationChangeSetRequestRequestTypeDef](./type_defs.md#createcloudformationchangesetrequestrequesttypedef).
+1. See [:material-code-braces: ParameterValueTypeDef](./type_defs.md#parametervaluetypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateCloudFormationChangeSetResponseTypeDef](./type_defs.md#createcloudformationchangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `StackName`: `str` *(required)*
-- `Capabilities`: `Sequence`\[`str`\]
-- `ChangeSetName`: `str`
-- `ClientToken`: `str`
-- `Description`: `str`
-- `NotificationArns`: `Sequence`\[`str`\]
-- `ParameterOverrides`:
-  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `SemanticVersion`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TemplateId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCloudFormationChangeSetRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "StackName": ...,
+}
 
-Returns
-[CreateCloudFormationChangeSetResponseTypeDef](./type_defs.md#createcloudformationchangesetresponsetypedef).
+parent.create_cloud_formation_change_set(**kwargs)
+```
 
-<a id="create\_cloud\_formation\_template"></a>
+1. See [:material-code-braces: CreateCloudFormationChangeSetRequestRequestTypeDef](./type_defs.md#createcloudformationchangesetrequestrequesttypedef) 
 
-### create_cloud_formation_template
+### create\_cloud\_formation\_template
 
 Creates an AWS CloudFormation template.
 
-Type annotations for
-`boto3.client("serverlessrepo").create_cloud_formation_template` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").create_cloud_formation_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.create_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template)
+```python title="Method definition"
+def create_cloud_formation_template(
+    self,
+    *,
+    ApplicationId: str,
+    SemanticVersion: str = ...,
+) -> CreateCloudFormationTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCloudFormationTemplateRequestRequestTypeDef](./type_defs.md#createcloudformationtemplaterequestrequesttypedef).
+1. See [:material-code-braces: CreateCloudFormationTemplateResponseTypeDef](./type_defs.md#createcloudformationtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SemanticVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCloudFormationTemplateRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[CreateCloudFormationTemplateResponseTypeDef](./type_defs.md#createcloudformationtemplateresponsetypedef).
+parent.create_cloud_formation_template(**kwargs)
+```
 
-<a id="delete\_application"></a>
+1. See [:material-code-braces: CreateCloudFormationTemplateRequestRequestTypeDef](./type_defs.md#createcloudformationtemplaterequestrequesttypedef) 
 
-### delete_application
+### delete\_application
 
 Deletes the specified application.
 
-Type annotations for `boto3.client("serverlessrepo").delete_application`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application)
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    ApplicationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_application(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("serverlessrepo").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_application"></a>
-
-### get_application
+### get\_application
 
 Gets the specified application.
 
-Type annotations for `boto3.client("serverlessrepo").get_application` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application)
+```python title="Method definition"
+def get_application(
+    self,
+    *,
+    ApplicationId: str,
+    SemanticVersion: str = ...,
+) -> GetApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationRequestRequestTypeDef](./type_defs.md#getapplicationrequestrequesttypedef).
+1. See [:material-code-braces: GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SemanticVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
+parent.get_application(**kwargs)
+```
 
-<a id="get\_application\_policy"></a>
+1. See [:material-code-braces: GetApplicationRequestRequestTypeDef](./type_defs.md#getapplicationrequestrequesttypedef) 
 
-### get_application_policy
+### get\_application\_policy
 
 Retrieves the policy for the application.
 
-Type annotations for `boto3.client("serverlessrepo").get_application_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_application_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.get_application_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy)
+```python title="Method definition"
+def get_application_policy(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetApplicationPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationPolicyRequestRequestTypeDef](./type_defs.md#getapplicationpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetApplicationPolicyResponseTypeDef](./type_defs.md#getapplicationpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApplicationPolicyRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApplicationPolicyResponseTypeDef](./type_defs.md#getapplicationpolicyresponsetypedef).
+parent.get_application_policy(**kwargs)
+```
 
-<a id="get\_cloud\_formation\_template"></a>
+1. See [:material-code-braces: GetApplicationPolicyRequestRequestTypeDef](./type_defs.md#getapplicationpolicyrequestrequesttypedef) 
 
-### get_cloud_formation_template
+### get\_cloud\_formation\_template
 
 Gets the specified AWS CloudFormation template.
 
-Type annotations for
-`boto3.client("serverlessrepo").get_cloud_formation_template` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_cloud_formation_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.get_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template)
+```python title="Method definition"
+def get_cloud_formation_template(
+    self,
+    *,
+    ApplicationId: str,
+    TemplateId: str,
+) -> GetCloudFormationTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCloudFormationTemplateRequestRequestTypeDef](./type_defs.md#getcloudformationtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetCloudFormationTemplateResponseTypeDef](./type_defs.md#getcloudformationtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCloudFormationTemplateRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[GetCloudFormationTemplateResponseTypeDef](./type_defs.md#getcloudformationtemplateresponsetypedef).
+parent.get_cloud_formation_template(**kwargs)
+```
 
-<a id="list\_application\_dependencies"></a>
+1. See [:material-code-braces: GetCloudFormationTemplateRequestRequestTypeDef](./type_defs.md#getcloudformationtemplaterequestrequesttypedef) 
 
-### list_application_dependencies
+### list\_application\_dependencies
 
 Retrieves the list of applications nested in the containing application.
 
-Type annotations for
-`boto3.client("serverlessrepo").list_application_dependencies` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").list_application_dependencies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.list_application_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
+```python title="Method definition"
+def list_application_dependencies(
+    self,
+    *,
+    ApplicationId: str,
+    MaxItems: int = ...,
+    NextToken: str = ...,
+    SemanticVersion: str = ...,
+) -> ListApplicationDependenciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationDependenciesRequestRequestTypeDef](./type_defs.md#listapplicationdependenciesrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `MaxItems`: `int`
-- `NextToken`: `str`
-- `SemanticVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationDependenciesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef).
+parent.list_application_dependencies(**kwargs)
+```
 
-<a id="list\_application\_versions"></a>
+1. See [:material-code-braces: ListApplicationDependenciesRequestRequestTypeDef](./type_defs.md#listapplicationdependenciesrequestrequesttypedef) 
 
-### list_application_versions
+### list\_application\_versions
 
 Lists versions for the specified application.
 
-Type annotations for `boto3.client("serverlessrepo").list_application_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").list_application_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
+```python title="Method definition"
+def list_application_versions(
+    self,
+    *,
+    ApplicationId: str,
+    MaxItems: int = ...,
+    NextToken: str = ...,
+) -> ListApplicationVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationVersionsRequestRequestTypeDef](./type_defs.md#listapplicationversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `MaxItems`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationVersionsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
+parent.list_application_versions(**kwargs)
+```
 
-<a id="list\_applications"></a>
+1. See [:material-code-braces: ListApplicationVersionsRequestRequestTypeDef](./type_defs.md#listapplicationversionsrequestrequesttypedef) 
 
-### list_applications
+### list\_applications
 
 Lists applications owned by the requester.
 
-Type annotations for `boto3.client("serverlessrepo").list_applications` method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").list_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications)
+```python title="Method definition"
+def list_applications(
+    self,
+    *,
+    MaxItems: int = ...,
+    NextToken: str = ...,
+) -> ListApplicationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxItems`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestRequestTypeDef = {  # (1)
+    "MaxItems": ...,
+}
 
-Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+parent.list_applications(**kwargs)
+```
 
-<a id="put\_application\_policy"></a>
+1. See [:material-code-braces: ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef) 
 
-### put_application_policy
+### put\_application\_policy
 
 Sets the permission policy for an application.
 
-Type annotations for `boto3.client("serverlessrepo").put_application_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").put_application_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.put_application_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy)
+```python title="Method definition"
+def put_application_policy(
+    self,
+    *,
+    ApplicationId: str,
+    Statements: Sequence[ApplicationPolicyStatementTypeDef],  # (1)
+) -> PutApplicationPolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutApplicationPolicyRequestRequestTypeDef](./type_defs.md#putapplicationpolicyrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef) 
+2. See [:material-code-braces: PutApplicationPolicyResponseTypeDef](./type_defs.md#putapplicationpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `Statements`:
-  `Sequence`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutApplicationPolicyRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "Statements": ...,
+}
 
-Returns
-[PutApplicationPolicyResponseTypeDef](./type_defs.md#putapplicationpolicyresponsetypedef).
+parent.put_application_policy(**kwargs)
+```
 
-<a id="unshare\_application"></a>
+1. See [:material-code-braces: PutApplicationPolicyRequestRequestTypeDef](./type_defs.md#putapplicationpolicyrequestrequesttypedef) 
 
-### unshare_application
+### unshare\_application
 
 Unshares an application from an AWS Organization.
 
-Type annotations for `boto3.client("serverlessrepo").unshare_application`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").unshare_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.unshare_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application)
+```python title="Method definition"
+def unshare_application(
+    self,
+    *,
+    ApplicationId: str,
+    OrganizationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UnshareApplicationRequestRequestTypeDef](./type_defs.md#unshareapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnshareApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "OrganizationId": ...,
+}
 
-<a id="update\_application"></a>
+parent.unshare_application(**kwargs)
+```
 
-### update_application
+1. See [:material-code-braces: UnshareApplicationRequestRequestTypeDef](./type_defs.md#unshareapplicationrequestrequesttypedef) 
+
+### update\_application
 
 Updates the specified application.
 
-Type annotations for `boto3.client("serverlessrepo").update_application`
-method.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    ApplicationId: str,
+    Author: str = ...,
+    Description: str = ...,
+    HomePageUrl: str = ...,
+    Labels: Sequence[str] = ...,
+    ReadmeBody: str = ...,
+    ReadmeUrl: str = ...,
+) -> UpdateApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `Author`: `str`
-- `Description`: `str`
-- `HomePageUrl`: `str`
-- `Labels`: `Sequence`\[`str`\]
-- `ReadmeBody`: `str`
-- `ReadmeUrl`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
+parent.update_application(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("serverlessrepo").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_paginator` method with overloads.
 
-- `client.get_paginator("list_application_dependencies")` ->
-  [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
-- `client.get_paginator("list_application_versions")` ->
-  [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
-- `client.get_paginator("list_applications")` ->
-  [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+- `client.get_paginator("list_application_dependencies")` -> [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
+- `client.get_paginator("list_application_versions")` -> [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
+- `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+
+
+

@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-mediapackagevod-module"></a>
-
-# Paginators for boto3 MediaPackageVod module
+# Paginators
 
 > [Index](../README.md) > [MediaPackageVod](./README.md) > Paginators
 
-Auto-generated documentation for
-[MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
-type annotations stubs module
-[mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+!!! note ""
 
-- [Paginators for boto3 MediaPackageVod module](#paginators-for-boto3-mediapackagevod-module)
-  - [ListAssetsPaginator](#listassetspaginator)
-  - [ListPackagingConfigurationsPaginator](#listpackagingconfigurationspaginator)
-  - [ListPackagingGroupsPaginator](#listpackaginggroupspaginator)
-
-<a id="listassetspaginator"></a>
+    Auto-generated documentation for [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
+    type annotations stubs module [mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 ## ListAssetsPaginator
 
-Type annotations for
-`boto3.client("mediapackage-vod").get_paginator("list_assets")`.
+Type annotations and code completion for `#!python boto3.client("mediapackage-vod").get_paginator("list_assets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediapackage_vod.paginator import ListAssetsPaginator
@@ -32,28 +21,40 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
     return Session().client("mediapackage-vod").get_paginator("list_assets")
 ```
 
-Boto3 documentation:
-[MediaPackageVod.Paginator.ListAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListAssets)
 
-Arguments for `ListAssetsPaginator.paginate` method:
+### paginate
 
-- `PackagingGroupId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssetsPaginator.paginate` method.
 
-`ListAssetsPaginator.paginate` returns
-`_PageIterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PackagingGroupId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpackagingconfigurationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssetsRequestListAssetsPaginateTypeDef = {  # (1)
+    "PackagingGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssetsRequestListAssetsPaginateTypeDef](./type_defs.md#listassetsrequestlistassetspaginatetypedef) 
 ## ListPackagingConfigurationsPaginator
 
-Type annotations for
-`boto3.client("mediapackage-vod").get_paginator("list_packaging_configurations")`.
+Type annotations and code completion for `#!python boto3.client("mediapackage-vod").get_paginator("list_packaging_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediapackage_vod.paginator import ListPackagingConfigurationsPaginator
@@ -62,28 +63,40 @@ def get_list_packaging_configurations_paginator() -> ListPackagingConfigurations
     return Session().client("mediapackage-vod").get_paginator("list_packaging_configurations")
 ```
 
-Boto3 documentation:
-[MediaPackageVod.Paginator.ListPackagingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingConfigurations)
 
-Arguments for `ListPackagingConfigurationsPaginator.paginate` method:
+### paginate
 
-- `PackagingGroupId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPackagingConfigurationsPaginator.paginate` method.
 
-`ListPackagingConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PackagingGroupId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPackagingConfigurationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpackaginggroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPackagingConfigurationsRequestListPackagingConfigurationsPaginateTypeDef = {  # (1)
+    "PackagingGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPackagingConfigurationsRequestListPackagingConfigurationsPaginateTypeDef](./type_defs.md#listpackagingconfigurationsrequestlistpackagingconfigurationspaginatetypedef) 
 ## ListPackagingGroupsPaginator
 
-Type annotations for
-`boto3.client("mediapackage-vod").get_paginator("list_packaging_groups")`.
+Type annotations and code completion for `#!python boto3.client("mediapackage-vod").get_paginator("list_packaging_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediapackage_vod.paginator import ListPackagingGroupsPaginator
@@ -92,13 +105,30 @@ def get_list_packaging_groups_paginator() -> ListPackagingGroupsPaginator:
     return Session().client("mediapackage-vod").get_paginator("list_packaging_groups")
 ```
 
-Boto3 documentation:
-[MediaPackageVod.Paginator.ListPackagingGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Paginator.ListPackagingGroups)
 
-Arguments for `ListPackagingGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPackagingGroupsPaginator.paginate` method.
 
-`ListPackagingGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPackagingGroupsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPackagingGroupsRequestListPackagingGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPackagingGroupsRequestListPackagingGroupsPaginateTypeDef](./type_defs.md#listpackaginggroupsrequestlistpackaginggroupspaginatetypedef) 

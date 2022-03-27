@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-frauddetector-module"></a>
-
-# Examples for boto3 FraudDetector module
+# Examples
 
 > [Index](../README.md) > [FraudDetector](./README.md) > Examples
 
-- [Examples for boto3 FraudDetector module](#examples-for-boto3-frauddetector-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+    type annotations stubs module [mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[frauddetector]` package installed.
 
-Write your `FraudDetector` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `FraudDetector` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type FraudDetectorClient
-# and provides type checking and code completion
-client = session.client("frauddetector")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchCreateVariableResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_create_variable()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("frauddetector")  # (1)
+    result = client.batch_create_variable()  # (2)
+    ```
+
+    1. client: [FraudDetectorClient](./client.md)
+    2. result: [:material-code-braces: BatchCreateVariableResultTypeDef](./type_defs.md#batchcreatevariableresulttypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[frauddetector]` or a standalone
-`mypy_boto3_frauddetector` package, you have to explicitly specify
-`client: FraudDetectorClient` type annotation.
+With `boto3-stubs-lite[frauddetector]`
+or a standalone `mypy_boto3_frauddetector` package, you have to explicitly specify `client: FraudDetectorClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_frauddetector.client import FraudDetectorClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_frauddetector.client import FraudDetectorClient
+    from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultTypeDef
+    from mypy_boto3_frauddetector.type_defs import BatchCreateVariableRequestRequestTypeDef
 
 
-from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultTypeDef
+    session = Session()
+
+    client: FraudDetectorClient = session.client("frauddetector")
+
+    kwargs: BatchCreateVariableRequestRequestTypeDef = {...}
+    result: BatchCreateVariableResultTypeDef = client.batch_create_variable(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: FraudDetectorClient = session.client("frauddetector")
 
-result: BatchCreateVariableResultTypeDef = client.batch_create_variable()
-```
+

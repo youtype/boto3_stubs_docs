@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cloudwatchlogs-module"></a>
-
-# Type annotations for boto3 CloudWatchLogs module
+#  CloudWatchLogs module
 
 > [Index](../README.md) > CloudWatchLogs
 
-Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module
-[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
+!!! note ""
 
-- [Type annotations for boto3 CloudWatchLogs module](#type-annotations-for-boto3-cloudwatchlogs-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudWatchLogsClient](#cloudwatchlogsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+    type annotations stubs module [mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudWatchLogs`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[logs]'
 python -m pip install mypy-boto3-logs
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,106 +42,37 @@ python -m pip install mypy-boto3-logs
 python -m pip uninstall -y mypy-boto3-logs
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudwatchlogsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudWatchLogsClient
 
-Type annotations for `boto3.client("logs")` as
-[CloudWatchLogsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("logs")` as [CloudWatchLogsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_logs.client import CloudWatchLogsClient
+
+def get_client() -> CloudWatchLogsClient:
+    return Session().cleint("logs")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_kms_key](./client.md#associate_kms_key)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_export_task](./client.md#cancel_export_task)
-- [create_export_task](./client.md#create_export_task)
-- [create_log_group](./client.md#create_log_group)
-- [create_log_stream](./client.md#create_log_stream)
-- [delete_destination](./client.md#delete_destination)
-- [delete_log_group](./client.md#delete_log_group)
-- [delete_log_stream](./client.md#delete_log_stream)
-- [delete_metric_filter](./client.md#delete_metric_filter)
-- [delete_query_definition](./client.md#delete_query_definition)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_retention_policy](./client.md#delete_retention_policy)
-- [delete_subscription_filter](./client.md#delete_subscription_filter)
-- [describe_destinations](./client.md#describe_destinations)
-- [describe_export_tasks](./client.md#describe_export_tasks)
-- [describe_log_groups](./client.md#describe_log_groups)
-- [describe_log_streams](./client.md#describe_log_streams)
-- [describe_metric_filters](./client.md#describe_metric_filters)
-- [describe_queries](./client.md#describe_queries)
-- [describe_query_definitions](./client.md#describe_query_definitions)
-- [describe_resource_policies](./client.md#describe_resource_policies)
-- [describe_subscription_filters](./client.md#describe_subscription_filters)
-- [disassociate_kms_key](./client.md#disassociate_kms_key)
-- [exceptions](./client.md#exceptions)
-- [filter_log_events](./client.md#filter_log_events)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_log_events](./client.md#get_log_events)
-- [get_log_group_fields](./client.md#get_log_group_fields)
-- [get_log_record](./client.md#get_log_record)
-- [get_paginator](./client.md#get_paginator)
-- [get_query_results](./client.md#get_query_results)
-- [list_tags_log_group](./client.md#list_tags_log_group)
-- [put_destination](./client.md#put_destination)
-- [put_destination_policy](./client.md#put_destination_policy)
-- [put_log_events](./client.md#put_log_events)
-- [put_metric_filter](./client.md#put_metric_filter)
-- [put_query_definition](./client.md#put_query_definition)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [put_retention_policy](./client.md#put_retention_policy)
-- [put_subscription_filter](./client.md#put_subscription_filter)
-- [start_query](./client.md#start_query)
-- [stop_query](./client.md#stop_query)
-- [tag_log_group](./client.md#tag_log_group)
-- [test_metric_filter](./client.md#test_metric_filter)
-- [untag_log_group](./client.md#untag_log_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudWatchLogsClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DataAlreadyAcceptedException
-- InvalidOperationException
-- InvalidParameterException
-- InvalidSequenceTokenException
-- LimitExceededException
-- MalformedQueryException
-- OperationAbortedException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- UnrecognizedClientException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("logs").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("logs").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_logs.paginator import DescribeDestinationsPaginator, ...
+from mypy_boto3_logs.paginator import DescribeDestinationsPaginator
+
+def get_describe_destinations_paginator() -> DescribeDestinationsPaginator:
+    return Session().client("logs").get_paginator("describe_destinations"))
 ```
 
 - [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
@@ -176,16 +85,23 @@ from mypy_boto3_logs.paginator import DescribeDestinationsPaginator, ...
 - [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
 - [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName
 
-```python
-from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
+def get_value() -> DescribeDestinationsPaginatorName:
+    return "describe_destinations"
 ```
 
 - [DescribeDestinationsPaginatorName](./literals.md#describedestinationspaginatorname)
@@ -206,18 +122,23 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestRequestTypeDef
 
-```python
-from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestRequestTypeDef, ...
+def get_value() -> AssociateKmsKeyRequestRequestTypeDef:
+    return {
+        "logGroupName": ...,
+        "kmsKeyId": ...,
+    }
 ```
 
 - [AssociateKmsKeyRequestRequestTypeDef](./type_defs.md#associatekmskeyrequestrequesttypedef)
@@ -235,22 +156,30 @@ from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestRequestTypeDef, ...
 - [DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef)
 - [DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef)
 - [DeleteSubscriptionFilterRequestRequestTypeDef](./type_defs.md#deletesubscriptionfilterrequestrequesttypedef)
+- [DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef](./type_defs.md#describedestinationsrequestdescribedestinationspaginatetypedef)
 - [DescribeDestinationsRequestRequestTypeDef](./type_defs.md#describedestinationsrequestrequesttypedef)
 - [DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)
+- [DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef](./type_defs.md#describeexporttasksrequestdescribeexporttaskspaginatetypedef)
 - [DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef)
 - [DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)
+- [DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef](./type_defs.md#describeloggroupsrequestdescribeloggroupspaginatetypedef)
 - [DescribeLogGroupsRequestRequestTypeDef](./type_defs.md#describeloggroupsrequestrequesttypedef)
 - [DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)
+- [DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef](./type_defs.md#describelogstreamsrequestdescribelogstreamspaginatetypedef)
 - [DescribeLogStreamsRequestRequestTypeDef](./type_defs.md#describelogstreamsrequestrequesttypedef)
 - [DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)
+- [DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef](./type_defs.md#describemetricfiltersrequestdescribemetricfilterspaginatetypedef)
 - [DescribeMetricFiltersRequestRequestTypeDef](./type_defs.md#describemetricfiltersrequestrequesttypedef)
 - [DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)
+- [DescribeQueriesRequestDescribeQueriesPaginateTypeDef](./type_defs.md#describequeriesrequestdescribequeriespaginatetypedef)
 - [DescribeQueriesRequestRequestTypeDef](./type_defs.md#describequeriesrequestrequesttypedef)
 - [DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)
 - [DescribeQueryDefinitionsRequestRequestTypeDef](./type_defs.md#describequerydefinitionsrequestrequesttypedef)
 - [DescribeQueryDefinitionsResponseTypeDef](./type_defs.md#describequerydefinitionsresponsetypedef)
+- [DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef](./type_defs.md#describeresourcepoliciesrequestdescriberesourcepoliciespaginatetypedef)
 - [DescribeResourcePoliciesRequestRequestTypeDef](./type_defs.md#describeresourcepoliciesrequestrequesttypedef)
 - [DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)
+- [DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef](./type_defs.md#describesubscriptionfiltersrequestdescribesubscriptionfilterspaginatetypedef)
 - [DescribeSubscriptionFiltersRequestRequestTypeDef](./type_defs.md#describesubscriptionfiltersrequestrequesttypedef)
 - [DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)
 - [DestinationTypeDef](./type_defs.md#destinationtypedef)
@@ -258,6 +187,7 @@ from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestRequestTypeDef, ...
 - [ExportTaskExecutionInfoTypeDef](./type_defs.md#exporttaskexecutioninfotypedef)
 - [ExportTaskStatusTypeDef](./type_defs.md#exporttaskstatustypedef)
 - [ExportTaskTypeDef](./type_defs.md#exporttasktypedef)
+- [FilterLogEventsRequestFilterLogEventsPaginateTypeDef](./type_defs.md#filterlogeventsrequestfilterlogeventspaginatetypedef)
 - [FilterLogEventsRequestRequestTypeDef](./type_defs.md#filterlogeventsrequestrequesttypedef)
 - [FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef)
 - [FilteredLogEventTypeDef](./type_defs.md#filteredlogeventtypedef)
@@ -309,3 +239,4 @@ from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestRequestTypeDef, ...
 - [TestMetricFilterRequestRequestTypeDef](./type_defs.md#testmetricfilterrequestrequesttypedef)
 - [TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef)
 - [UntagLogGroupRequestRequestTypeDef](./type_defs.md#untagloggrouprequestrequesttypedef)
+

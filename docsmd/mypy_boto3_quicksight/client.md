@@ -1,149 +1,18 @@
-<a id="quicksightclient-for-boto3-quicksight-module"></a>
-
-# QuickSightClient for boto3 QuickSight module
+# QuickSightClient
 
 > [Index](../README.md) > [QuickSight](./README.md) > QuickSightClient
 
-Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
-type annotations stubs module
-[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+!!! note ""
 
-- [QuickSightClient for boto3 QuickSight module](#quicksightclient-for-boto3-quicksight-module)
-  - [QuickSightClient](#quicksightclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_ingestion](#cancel_ingestion)
-    - [create_account_customization](#create_account_customization)
-    - [create_analysis](#create_analysis)
-    - [create_dashboard](#create_dashboard)
-    - [create_data_set](#create_data_set)
-    - [create_data_source](#create_data_source)
-    - [create_folder](#create_folder)
-    - [create_folder_membership](#create_folder_membership)
-    - [create_group](#create_group)
-    - [create_group_membership](#create_group_membership)
-    - [create_iam_policy_assignment](#create_iam_policy_assignment)
-    - [create_ingestion](#create_ingestion)
-    - [create_namespace](#create_namespace)
-    - [create_template](#create_template)
-    - [create_template_alias](#create_template_alias)
-    - [create_theme](#create_theme)
-    - [create_theme_alias](#create_theme_alias)
-    - [delete_account_customization](#delete_account_customization)
-    - [delete_analysis](#delete_analysis)
-    - [delete_dashboard](#delete_dashboard)
-    - [delete_data_set](#delete_data_set)
-    - [delete_data_source](#delete_data_source)
-    - [delete_folder](#delete_folder)
-    - [delete_folder_membership](#delete_folder_membership)
-    - [delete_group](#delete_group)
-    - [delete_group_membership](#delete_group_membership)
-    - [delete_iam_policy_assignment](#delete_iam_policy_assignment)
-    - [delete_namespace](#delete_namespace)
-    - [delete_template](#delete_template)
-    - [delete_template_alias](#delete_template_alias)
-    - [delete_theme](#delete_theme)
-    - [delete_theme_alias](#delete_theme_alias)
-    - [delete_user](#delete_user)
-    - [delete_user_by_principal_id](#delete_user_by_principal_id)
-    - [describe_account_customization](#describe_account_customization)
-    - [describe_account_settings](#describe_account_settings)
-    - [describe_analysis](#describe_analysis)
-    - [describe_analysis_permissions](#describe_analysis_permissions)
-    - [describe_dashboard](#describe_dashboard)
-    - [describe_dashboard_permissions](#describe_dashboard_permissions)
-    - [describe_data_set](#describe_data_set)
-    - [describe_data_set_permissions](#describe_data_set_permissions)
-    - [describe_data_source](#describe_data_source)
-    - [describe_data_source_permissions](#describe_data_source_permissions)
-    - [describe_folder](#describe_folder)
-    - [describe_folder_permissions](#describe_folder_permissions)
-    - [describe_folder_resolved_permissions](#describe_folder_resolved_permissions)
-    - [describe_group](#describe_group)
-    - [describe_group_membership](#describe_group_membership)
-    - [describe_iam_policy_assignment](#describe_iam_policy_assignment)
-    - [describe_ingestion](#describe_ingestion)
-    - [describe_ip_restriction](#describe_ip_restriction)
-    - [describe_namespace](#describe_namespace)
-    - [describe_template](#describe_template)
-    - [describe_template_alias](#describe_template_alias)
-    - [describe_template_permissions](#describe_template_permissions)
-    - [describe_theme](#describe_theme)
-    - [describe_theme_alias](#describe_theme_alias)
-    - [describe_theme_permissions](#describe_theme_permissions)
-    - [describe_user](#describe_user)
-    - [generate_embed_url_for_anonymous_user](#generate_embed_url_for_anonymous_user)
-    - [generate_embed_url_for_registered_user](#generate_embed_url_for_registered_user)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_dashboard_embed_url](#get_dashboard_embed_url)
-    - [get_session_embed_url](#get_session_embed_url)
-    - [list_analyses](#list_analyses)
-    - [list_dashboard_versions](#list_dashboard_versions)
-    - [list_dashboards](#list_dashboards)
-    - [list_data_sets](#list_data_sets)
-    - [list_data_sources](#list_data_sources)
-    - [list_folder_members](#list_folder_members)
-    - [list_folders](#list_folders)
-    - [list_group_memberships](#list_group_memberships)
-    - [list_groups](#list_groups)
-    - [list_iam_policy_assignments](#list_iam_policy_assignments)
-    - [list_iam_policy_assignments_for_user](#list_iam_policy_assignments_for_user)
-    - [list_ingestions](#list_ingestions)
-    - [list_namespaces](#list_namespaces)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_template_aliases](#list_template_aliases)
-    - [list_template_versions](#list_template_versions)
-    - [list_templates](#list_templates)
-    - [list_theme_aliases](#list_theme_aliases)
-    - [list_theme_versions](#list_theme_versions)
-    - [list_themes](#list_themes)
-    - [list_user_groups](#list_user_groups)
-    - [list_users](#list_users)
-    - [register_user](#register_user)
-    - [restore_analysis](#restore_analysis)
-    - [search_analyses](#search_analyses)
-    - [search_dashboards](#search_dashboards)
-    - [search_folders](#search_folders)
-    - [search_groups](#search_groups)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_account_customization](#update_account_customization)
-    - [update_account_settings](#update_account_settings)
-    - [update_analysis](#update_analysis)
-    - [update_analysis_permissions](#update_analysis_permissions)
-    - [update_dashboard](#update_dashboard)
-    - [update_dashboard_permissions](#update_dashboard_permissions)
-    - [update_dashboard_published_version](#update_dashboard_published_version)
-    - [update_data_set](#update_data_set)
-    - [update_data_set_permissions](#update_data_set_permissions)
-    - [update_data_source](#update_data_source)
-    - [update_data_source_permissions](#update_data_source_permissions)
-    - [update_folder](#update_folder)
-    - [update_folder_permissions](#update_folder_permissions)
-    - [update_group](#update_group)
-    - [update_iam_policy_assignment](#update_iam_policy_assignment)
-    - [update_ip_restriction](#update_ip_restriction)
-    - [update_template](#update_template)
-    - [update_template_alias](#update_template_alias)
-    - [update_template_permissions](#update_template_permissions)
-    - [update_theme](#update_theme)
-    - [update_theme_alias](#update_theme_alias)
-    - [update_theme_permissions](#update_theme_permissions)
-    - [update_user](#update_user)
-    - [get_paginator](#get_paginator)
-
-<a id="quicksightclient"></a>
+    Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+    type annotations stubs module [mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 ## QuickSightClient
 
-Type annotations for `boto3.client("quicksight")`
+Type annotations and code completion for `#!python boto3.client("quicksight")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_quicksight.client import QuickSightClient
 
@@ -151,3106 +20,4159 @@ def get_quicksight_client() -> QuickSightClient:
     return Session().client("quicksight")
 ```
 
-Boto3 documentation:
-[QuickSight.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("quicksight").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("quicksight")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConcurrentUpdatingException,
+    client.ConflictException,
+    client.DomainNotWhitelistedException,
+    client.IdentityTypeNotSupportedException,
+    client.InternalFailureException,
+    client.InvalidNextTokenException,
+    client.InvalidParameterValueException,
+    client.LimitExceededException,
+    client.PreconditionNotMetException,
+    client.QuickSightUserNotFoundException,
+    client.ResourceExistsException,
+    client.ResourceNotFoundException,
+    client.ResourceUnavailableException,
+    client.SessionLifetimeInMinutesInvalidException,
+    client.ThrottlingException,
+    client.UnsupportedPricingPlanException,
+    client.UnsupportedUserEditionException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_quicksight.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentUpdatingException`
-- `Exceptions.ConflictException`
-- `Exceptions.DomainNotWhitelistedException`
-- `Exceptions.IdentityTypeNotSupportedException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.PreconditionNotMetException`
-- `Exceptions.QuickSightUserNotFoundException`
-- `Exceptions.ResourceExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceUnavailableException`
-- `Exceptions.SessionLifetimeInMinutesInvalidException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UnsupportedPricingPlanException`
-- `Exceptions.UnsupportedUserEditionException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-QuickSightClient exceptions.
-
-Type annotations for `boto3.client("quicksight").exceptions` method.
-
-Boto3 documentation:
-[QuickSight.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("quicksight").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.can_paginate)
 
-Boto3 documentation:
-[QuickSight.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_ingestion"></a>
-
-### cancel_ingestion
+### cancel\_ingestion
 
 Cancels an ongoing ingestion of data into SPICE.
 
-Type annotations for `boto3.client("quicksight").cancel_ingestion` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").cancel_ingestion` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion)
 
-Boto3 documentation:
-[QuickSight.Client.cancel_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion)
+```python title="Method definition"
+def cancel_ingestion(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+    IngestionId: str,
+) -> CancelIngestionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelIngestionRequestRequestTypeDef](./type_defs.md#cancelingestionrequestrequesttypedef).
+1. See [:material-code-braces: CancelIngestionResponseTypeDef](./type_defs.md#cancelingestionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `IngestionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelIngestionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+    "IngestionId": ...,
+}
 
-Returns
-[CancelIngestionResponseTypeDef](./type_defs.md#cancelingestionresponsetypedef).
+parent.cancel_ingestion(**kwargs)
+```
 
-<a id="create\_account\_customization"></a>
+1. See [:material-code-braces: CancelIngestionRequestRequestTypeDef](./type_defs.md#cancelingestionrequestrequesttypedef) 
 
-### create_account_customization
+### create\_account\_customization
 
-Creates Amazon QuickSight customizations the current Amazon Web Services
-Region.
+Creates Amazon QuickSight customizations the current Amazon Web Services Region.
 
-Type annotations for `boto3.client("quicksight").create_account_customization`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_account_customization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
 
-Boto3 documentation:
-[QuickSight.Client.create_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
+```python title="Method definition"
+def create_account_customization(
+    self,
+    *,
+    AwsAccountId: str,
+    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+    Namespace: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAccountCustomizationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccountCustomizationRequestRequestTypeDef](./type_defs.md#createaccountcustomizationrequestrequesttypedef).
+1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAccountCustomizationResponseTypeDef](./type_defs.md#createaccountcustomizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AccountCustomization`:
-  [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
-  *(required)*
-- `Namespace`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAccountCustomizationRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AccountCustomization": ...,
+}
 
-Returns
-[CreateAccountCustomizationResponseTypeDef](./type_defs.md#createaccountcustomizationresponsetypedef).
+parent.create_account_customization(**kwargs)
+```
 
-<a id="create\_analysis"></a>
+1. See [:material-code-braces: CreateAccountCustomizationRequestRequestTypeDef](./type_defs.md#createaccountcustomizationrequestrequesttypedef) 
 
-### create_analysis
+### create\_analysis
 
 Creates an analysis in Amazon QuickSight.
 
-Type annotations for `boto3.client("quicksight").create_analysis` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_analysis)
 
-Boto3 documentation:
-[QuickSight.Client.create_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_analysis)
+```python title="Method definition"
+def create_analysis(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+    Name: str,
+    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
+    Parameters: ParametersTypeDef = ...,  # (2)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (3)
+    ThemeArn: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateAnalysisResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateAnalysisRequestRequestTypeDef](./type_defs.md#createanalysisrequestrequesttypedef).
+1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `SourceEntity`:
-  [AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef)
-  *(required)*
-- `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `ThemeArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAnalysisRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+    "Name": ...,
+    "SourceEntity": ...,
+}
 
-Returns
-[CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef).
+parent.create_analysis(**kwargs)
+```
 
-<a id="create\_dashboard"></a>
+1. See [:material-code-braces: CreateAnalysisRequestRequestTypeDef](./type_defs.md#createanalysisrequestrequesttypedef) 
 
-### create_dashboard
+### create\_dashboard
 
 Creates a dashboard from a template.
 
-Type annotations for `boto3.client("quicksight").create_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
 
-Boto3 documentation:
-[QuickSight.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
+```python title="Method definition"
+def create_dashboard(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    Name: str,
+    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
+    Parameters: ParametersTypeDef = ...,  # (2)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    VersionDescription: str = ...,
+    DashboardPublishOptions: DashboardPublishOptionsTypeDef = ...,  # (5)
+    ThemeArn: str = ...,
+) -> CreateDashboardResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateDashboardRequestRequestTypeDef](./type_defs.md#createdashboardrequestrequesttypedef).
+1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+6. See [:material-code-braces: CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `SourceEntity`:
-  [DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef)
-  *(required)*
-- `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VersionDescription`: `str`
-- `DashboardPublishOptions`:
-  [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
-- `ThemeArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDashboardRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+    "Name": ...,
+    "SourceEntity": ...,
+}
 
-Returns
-[CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
+parent.create_dashboard(**kwargs)
+```
 
-<a id="create\_data\_set"></a>
+1. See [:material-code-braces: CreateDashboardRequestRequestTypeDef](./type_defs.md#createdashboardrequestrequesttypedef) 
 
-### create_data_set
+### create\_data\_set
 
 Creates a dataset.
 
-Type annotations for `boto3.client("quicksight").create_data_set` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_set)
 
-Boto3 documentation:
-[QuickSight.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_set)
+```python title="Method definition"
+def create_data_set(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+    Name: str,
+    PhysicalTableMap: Mapping[str, PhysicalTableTypeDef],  # (1)
+    ImportMode: DataSetImportModeType,  # (2)
+    LogicalTableMap: Mapping[str, LogicalTableTypeDef] = ...,  # (3)
+    ColumnGroups: Sequence[ColumnGroupTypeDef] = ...,  # (4)
+    FieldFolders: Mapping[str, FieldFolderTypeDef] = ...,  # (5)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (6)
+    RowLevelPermissionDataSet: RowLevelPermissionDataSetTypeDef = ...,  # (7)
+    RowLevelPermissionTagConfiguration: RowLevelPermissionTagConfigurationTypeDef = ...,  # (8)
+    ColumnLevelPermissionRules: Sequence[ColumnLevelPermissionRuleTypeDef] = ...,  # (9)
+    Tags: Sequence[TagTypeDef] = ...,  # (10)
+    DataSetUsageConfiguration: DataSetUsageConfigurationTypeDef = ...,  # (11)
+) -> CreateDataSetResponseTypeDef:  # (12)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
+2. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
+3. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
+4. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
+5. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
+6. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+7. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
+8. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
+9. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+11. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
+12. See [:material-code-braces: CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `PhysicalTableMap`: `Mapping`\[`str`,
-  [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\] *(required)*
-- `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
-  *(required)*
-- `LogicalTableMap`: `Mapping`\[`str`,
-  [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
-- `ColumnGroups`:
-  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Mapping`\[`str`,
-  [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RowLevelPermissionDataSet`:
-  [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
-- `RowLevelPermissionTagConfiguration`:
-  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
-- `ColumnLevelPermissionRules`:
-  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DataSetUsageConfiguration`:
-  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDataSetRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+    "Name": ...,
+    "PhysicalTableMap": ...,
+    "ImportMode": ...,
+}
 
-Returns
-[CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_data_set(**kwargs)
+```
 
-<a id="create\_data\_source"></a>
+1. See [:material-code-braces: CreateDataSetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_data_source
+### create\_data\_source
 
 Creates a data source.
 
-Type annotations for `boto3.client("quicksight").create_data_source` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_source)
 
-Boto3 documentation:
-[QuickSight.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_source)
+```python title="Method definition"
+def create_data_source(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSourceId: str,
+    Name: str,
+    Type: DataSourceTypeType,  # (1)
+    DataSourceParameters: DataSourceParametersTypeDef = ...,  # (2)
+    Credentials: DataSourceCredentialsTypeDef = ...,  # (3)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (4)
+    VpcConnectionProperties: VpcConnectionPropertiesTypeDef = ...,  # (5)
+    SslProperties: SslPropertiesTypeDef = ...,  # (6)
+    Tags: Sequence[TagTypeDef] = ...,  # (7)
+) -> CreateDataSourceResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef).
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+3. See [:material-code-braces: DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef) 
+4. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+5. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
+6. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSourceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Type`: [DataSourceTypeType](./literals.md#datasourcetypetype) *(required)*
-- `DataSourceParameters`:
-  [DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)
-- `Credentials`:
-  [DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef)
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `VpcConnectionProperties`:
-  [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
-- `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDataSourceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSourceId": ...,
+    "Name": ...,
+    "Type": ...,
+}
 
-Returns
-[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+parent.create_data_source(**kwargs)
+```
 
-<a id="create\_folder"></a>
+1. See [:material-code-braces: CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef) 
 
-### create_folder
+### create\_folder
 
 Creates an empty shared folder.
 
-Type annotations for `boto3.client("quicksight").create_folder` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder)
 
-Boto3 documentation:
-[QuickSight.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder)
+```python title="Method definition"
+def create_folder(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+    Name: str = ...,
+    FolderType: FolderTypeType = ...,  # (1)
+    ParentFolderArn: str = ...,
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateFolderResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateFolderRequestRequestTypeDef](./type_defs.md#createfolderrequestrequesttypedef).
+1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
-- `Name`: `str`
-- `FolderType`: `Literal['SHARED']` (see
-  [FolderTypeType](./literals.md#foldertypetype))
-- `ParentFolderArn`: `str`
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFolderRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
+parent.create_folder(**kwargs)
+```
 
-<a id="create\_folder\_membership"></a>
+1. See [:material-code-braces: CreateFolderRequestRequestTypeDef](./type_defs.md#createfolderrequestrequesttypedef) 
 
-### create_folder_membership
+### create\_folder\_membership
 
 Adds an asset, such as a dashboard, analysis, or dataset into a folder.
 
-Type annotations for `boto3.client("quicksight").create_folder_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_folder_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder_membership)
 
-Boto3 documentation:
-[QuickSight.Client.create_folder_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder_membership)
+```python title="Method definition"
+def create_folder_membership(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+    MemberId: str,
+    MemberType: MemberTypeType,  # (1)
+) -> CreateFolderMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFolderMembershipRequestRequestTypeDef](./type_defs.md#createfoldermembershiprequestrequesttypedef).
+1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
+2. See [:material-code-braces: CreateFolderMembershipResponseTypeDef](./type_defs.md#createfoldermembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
-- `MemberType`: [MemberTypeType](./literals.md#membertypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateFolderMembershipRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+    "MemberId": ...,
+    "MemberType": ...,
+}
 
-Returns
-[CreateFolderMembershipResponseTypeDef](./type_defs.md#createfoldermembershipresponsetypedef).
+parent.create_folder_membership(**kwargs)
+```
 
-<a id="create\_group"></a>
+1. See [:material-code-braces: CreateFolderMembershipRequestRequestTypeDef](./type_defs.md#createfoldermembershiprequestrequesttypedef) 
 
-### create_group
+### create\_group
 
 Creates an Amazon QuickSight group.
 
-Type annotations for `boto3.client("quicksight").create_group` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group)
 
-Boto3 documentation:
-[QuickSight.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group)
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    Description: str = ...,
+) -> CreateGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+parent.create_group(**kwargs)
+```
 
-<a id="create\_group\_membership"></a>
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
-### create_group_membership
+### create\_group\_membership
 
 Adds an Amazon QuickSight user to an Amazon QuickSight group.
 
-Type annotations for `boto3.client("quicksight").create_group_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_group_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group_membership)
 
-Boto3 documentation:
-[QuickSight.Client.create_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group_membership)
+```python title="Method definition"
+def create_group_membership(
+    self,
+    *,
+    MemberName: str,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> CreateGroupMembershipResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupMembershipRequestRequestTypeDef](./type_defs.md#creategroupmembershiprequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupMembershipResponseTypeDef](./type_defs.md#creategroupmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MemberName`: `str` *(required)*
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateGroupMembershipRequestRequestTypeDef = {  # (1)
+    "MemberName": ...,
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[CreateGroupMembershipResponseTypeDef](./type_defs.md#creategroupmembershipresponsetypedef).
+parent.create_group_membership(**kwargs)
+```
 
-<a id="create\_iam\_policy\_assignment"></a>
+1. See [:material-code-braces: CreateGroupMembershipRequestRequestTypeDef](./type_defs.md#creategroupmembershiprequestrequesttypedef) 
 
-### create_iam_policy_assignment
+### create\_iam\_policy\_assignment
 
 Creates an assignment with one specified IAM policy, identified by its Amazon
 Resource Name (ARN).
 
-Type annotations for `boto3.client("quicksight").create_iam_policy_assignment`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_iam_policy_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment)
 
-Boto3 documentation:
-[QuickSight.Client.create_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment)
+```python title="Method definition"
+def create_iam_policy_assignment(
+    self,
+    *,
+    AwsAccountId: str,
+    AssignmentName: str,
+    AssignmentStatus: AssignmentStatusType,  # (1)
+    Namespace: str,
+    PolicyArn: str = ...,
+    Identities: Mapping[str, Sequence[str]] = ...,
+) -> CreateIAMPolicyAssignmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#createiampolicyassignmentrequestrequesttypedef).
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: CreateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#createiampolicyassignmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AssignmentName`: `str` *(required)*
-- `AssignmentStatus`:
-  [AssignmentStatusType](./literals.md#assignmentstatustype) *(required)*
-- `Namespace`: `str` *(required)*
-- `PolicyArn`: `str`
-- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+```python title="Usage example with kwargs"
+kwargs: CreateIAMPolicyAssignmentRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AssignmentName": ...,
+    "AssignmentStatus": ...,
+    "Namespace": ...,
+}
 
-Returns
-[CreateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#createiampolicyassignmentresponsetypedef).
+parent.create_iam_policy_assignment(**kwargs)
+```
 
-<a id="create\_ingestion"></a>
+1. See [:material-code-braces: CreateIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#createiampolicyassignmentrequestrequesttypedef) 
 
-### create_ingestion
+### create\_ingestion
 
 Creates and starts a new SPICE ingestion for a dataset.
 
-Type annotations for `boto3.client("quicksight").create_ingestion` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_ingestion` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_ingestion)
 
-Boto3 documentation:
-[QuickSight.Client.create_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_ingestion)
+```python title="Method definition"
+def create_ingestion(
+    self,
+    *,
+    DataSetId: str,
+    IngestionId: str,
+    AwsAccountId: str,
+    IngestionType: IngestionTypeType = ...,  # (1)
+) -> CreateIngestionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateIngestionRequestRequestTypeDef](./type_defs.md#createingestionrequestrequesttypedef).
+1. See [:material-code-brackets: IngestionTypeType](./literals.md#ingestiontypetype) 
+2. See [:material-code-braces: CreateIngestionResponseTypeDef](./type_defs.md#createingestionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `IngestionId`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `IngestionType`: [IngestionTypeType](./literals.md#ingestiontypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateIngestionRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "IngestionId": ...,
+    "AwsAccountId": ...,
+}
 
-Returns
-[CreateIngestionResponseTypeDef](./type_defs.md#createingestionresponsetypedef).
+parent.create_ingestion(**kwargs)
+```
 
-<a id="create\_namespace"></a>
+1. See [:material-code-braces: CreateIngestionRequestRequestTypeDef](./type_defs.md#createingestionrequestrequesttypedef) 
 
-### create_namespace
+### create\_namespace
 
 (Enterprise edition only) Creates a new namespace for you to use with Amazon
 QuickSight.
 
-Type annotations for `boto3.client("quicksight").create_namespace` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_namespace)
 
-Boto3 documentation:
-[QuickSight.Client.create_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_namespace)
+```python title="Method definition"
+def create_namespace(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+    IdentityStore: IdentityStoreType,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateNamespaceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateNamespaceRequestRequestTypeDef](./type_defs.md#createnamespacerequestrequesttypedef).
+1. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateNamespaceResponseTypeDef](./type_defs.md#createnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `IdentityStore`: `Literal['QUICKSIGHT']` (see
-  [IdentityStoreType](./literals.md#identitystoretype)) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateNamespaceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+    "IdentityStore": ...,
+}
 
-Returns
-[CreateNamespaceResponseTypeDef](./type_defs.md#createnamespaceresponsetypedef).
+parent.create_namespace(**kwargs)
+```
 
-<a id="create\_template"></a>
+1. See [:material-code-braces: CreateNamespaceRequestRequestTypeDef](./type_defs.md#createnamespacerequestrequesttypedef) 
 
-### create_template
+### create\_template
 
 Creates a template from an existing Amazon QuickSight analysis or template.
 
-Type annotations for `boto3.client("quicksight").create_template` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template)
 
-Boto3 documentation:
-[QuickSight.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template)
+```python title="Method definition"
+def create_template(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
+    Name: str = ...,
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    VersionDescription: str = ...,
+) -> CreateTemplateResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateTemplateRequestRequestTypeDef](./type_defs.md#createtemplaterequestrequesttypedef).
+1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `SourceEntity`:
-  [TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef)
-  *(required)*
-- `Name`: `str`
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VersionDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTemplateRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+    "SourceEntity": ...,
+}
 
-Returns
-[CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef).
+parent.create_template(**kwargs)
+```
 
-<a id="create\_template\_alias"></a>
+1. See [:material-code-braces: CreateTemplateRequestRequestTypeDef](./type_defs.md#createtemplaterequestrequesttypedef) 
 
-### create_template_alias
+### create\_template\_alias
 
 Creates a template alias for a template.
 
-Type annotations for `boto3.client("quicksight").create_template_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_template_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template_alias)
 
-Boto3 documentation:
-[QuickSight.Client.create_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template_alias)
+```python title="Method definition"
+def create_template_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+    TemplateVersionNumber: int,
+) -> CreateTemplateAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTemplateAliasRequestRequestTypeDef](./type_defs.md#createtemplatealiasrequestrequesttypedef).
+1. See [:material-code-braces: CreateTemplateAliasResponseTypeDef](./type_defs.md#createtemplatealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
-- `TemplateVersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTemplateAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+    "AliasName": ...,
+    "TemplateVersionNumber": ...,
+}
 
-Returns
-[CreateTemplateAliasResponseTypeDef](./type_defs.md#createtemplatealiasresponsetypedef).
+parent.create_template_alias(**kwargs)
+```
 
-<a id="create\_theme"></a>
+1. See [:material-code-braces: CreateTemplateAliasRequestRequestTypeDef](./type_defs.md#createtemplatealiasrequestrequesttypedef) 
 
-### create_theme
+### create\_theme
 
 Creates a theme.
 
-Type annotations for `boto3.client("quicksight").create_theme` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_theme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme)
 
-Boto3 documentation:
-[QuickSight.Client.create_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme)
+```python title="Method definition"
+def create_theme(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    Name: str,
+    BaseThemeId: str,
+    Configuration: ThemeConfigurationTypeDef,  # (1)
+    VersionDescription: str = ...,
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateThemeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateThemeRequestRequestTypeDef](./type_defs.md#createthemerequestrequesttypedef).
+1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `BaseThemeId`: `str` *(required)*
-- `Configuration`:
-  [ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef)
-  *(required)*
-- `VersionDescription`: `str`
-- `Permissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateThemeRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+    "Name": ...,
+    "BaseThemeId": ...,
+    "Configuration": ...,
+}
 
-Returns
-[CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
+parent.create_theme(**kwargs)
+```
 
-<a id="create\_theme\_alias"></a>
+1. See [:material-code-braces: CreateThemeRequestRequestTypeDef](./type_defs.md#createthemerequestrequesttypedef) 
 
-### create_theme_alias
+### create\_theme\_alias
 
 Creates a theme alias for a theme.
 
-Type annotations for `boto3.client("quicksight").create_theme_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").create_theme_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme_alias)
 
-Boto3 documentation:
-[QuickSight.Client.create_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme_alias)
+```python title="Method definition"
+def create_theme_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+    ThemeVersionNumber: int,
+) -> CreateThemeAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateThemeAliasRequestRequestTypeDef](./type_defs.md#createthemealiasrequestrequesttypedef).
+1. See [:material-code-braces: CreateThemeAliasResponseTypeDef](./type_defs.md#createthemealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
-- `ThemeVersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateThemeAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+    "AliasName": ...,
+    "ThemeVersionNumber": ...,
+}
 
-Returns
-[CreateThemeAliasResponseTypeDef](./type_defs.md#createthemealiasresponsetypedef).
+parent.create_theme_alias(**kwargs)
+```
 
-<a id="delete\_account\_customization"></a>
+1. See [:material-code-braces: CreateThemeAliasRequestRequestTypeDef](./type_defs.md#createthemealiasrequestrequesttypedef) 
 
-### delete_account_customization
+### delete\_account\_customization
 
 Deletes all Amazon QuickSight customizations in this Amazon Web Services Region
 for the specified Amazon Web Services account and Amazon QuickSight namespace.
 
-Type annotations for `boto3.client("quicksight").delete_account_customization`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_account_customization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
 
-Boto3 documentation:
-[QuickSight.Client.delete_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
+```python title="Method definition"
+def delete_account_customization(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str = ...,
+) -> DeleteAccountCustomizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccountCustomizationRequestRequestTypeDef](./type_defs.md#deleteaccountcustomizationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAccountCustomizationResponseTypeDef](./type_defs.md#deleteaccountcustomizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountCustomizationRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[DeleteAccountCustomizationResponseTypeDef](./type_defs.md#deleteaccountcustomizationresponsetypedef).
+parent.delete_account_customization(**kwargs)
+```
 
-<a id="delete\_analysis"></a>
+1. See [:material-code-braces: DeleteAccountCustomizationRequestRequestTypeDef](./type_defs.md#deleteaccountcustomizationrequestrequesttypedef) 
 
-### delete_analysis
+### delete\_analysis
 
 Deletes an analysis from Amazon QuickSight.
 
-Type annotations for `boto3.client("quicksight").delete_analysis` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_analysis)
 
-Boto3 documentation:
-[QuickSight.Client.delete_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_analysis)
+```python title="Method definition"
+def delete_analysis(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+    RecoveryWindowInDays: int = ...,
+    ForceDeleteWithoutRecovery: bool = ...,
+) -> DeleteAnalysisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAnalysisRequestRequestTypeDef](./type_defs.md#deleteanalysisrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAnalysisResponseTypeDef](./type_defs.md#deleteanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
-- `RecoveryWindowInDays`: `int`
-- `ForceDeleteWithoutRecovery`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteAnalysisRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+}
 
-Returns
-[DeleteAnalysisResponseTypeDef](./type_defs.md#deleteanalysisresponsetypedef).
+parent.delete_analysis(**kwargs)
+```
 
-<a id="delete\_dashboard"></a>
+1. See [:material-code-braces: DeleteAnalysisRequestRequestTypeDef](./type_defs.md#deleteanalysisrequestrequesttypedef) 
 
-### delete_dashboard
+### delete\_dashboard
 
 Deletes a dashboard.
 
-Type annotations for `boto3.client("quicksight").delete_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_dashboard)
 
-Boto3 documentation:
-[QuickSight.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_dashboard)
+```python title="Method definition"
+def delete_dashboard(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: int = ...,
+) -> DeleteDashboardResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDashboardRequestRequestTypeDef](./type_defs.md#deletedashboardrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDashboardResponseTypeDef](./type_defs.md#deletedashboardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `VersionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteDashboardRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+}
 
-Returns
-[DeleteDashboardResponseTypeDef](./type_defs.md#deletedashboardresponsetypedef).
+parent.delete_dashboard(**kwargs)
+```
 
-<a id="delete\_data\_set"></a>
+1. See [:material-code-braces: DeleteDashboardRequestRequestTypeDef](./type_defs.md#deletedashboardrequestrequesttypedef) 
 
-### delete_data_set
+### delete\_data\_set
 
 Deletes a dataset.
 
-Type annotations for `boto3.client("quicksight").delete_data_set` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
 
-Boto3 documentation:
-[QuickSight.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
+```python title="Method definition"
+def delete_data_set(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+) -> DeleteDataSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataSetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDataSetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataSetRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+}
 
-Returns
-[DeleteDataSetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+parent.delete_data_set(**kwargs)
+```
 
-<a id="delete\_data\_source"></a>
+1. See [:material-code-braces: DeleteDataSetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-### delete_data_source
+### delete\_data\_source
 
 Deletes the data source permanently.
 
-Type annotations for `boto3.client("quicksight").delete_data_source` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
 
-Boto3 documentation:
-[QuickSight.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
+```python title="Method definition"
+def delete_data_source(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSourceId: str,
+) -> DeleteDataSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef).
+1. See [:material-code-braces: DeleteDataSourceResponseTypeDef](./type_defs.md#deletedatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataSourceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSourceId": ...,
+}
 
-Returns
-[DeleteDataSourceResponseTypeDef](./type_defs.md#deletedatasourceresponsetypedef).
+parent.delete_data_source(**kwargs)
+```
 
-<a id="delete\_folder"></a>
+1. See [:material-code-braces: DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef) 
 
-### delete_folder
+### delete\_folder
 
 Deletes an empty folder.
 
-Type annotations for `boto3.client("quicksight").delete_folder` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder)
 
-Boto3 documentation:
-[QuickSight.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder)
+```python title="Method definition"
+def delete_folder(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+) -> DeleteFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFolderRequestRequestTypeDef](./type_defs.md#deletefolderrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFolderResponseTypeDef](./type_defs.md#deletefolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFolderRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[DeleteFolderResponseTypeDef](./type_defs.md#deletefolderresponsetypedef).
+parent.delete_folder(**kwargs)
+```
 
-<a id="delete\_folder\_membership"></a>
+1. See [:material-code-braces: DeleteFolderRequestRequestTypeDef](./type_defs.md#deletefolderrequestrequesttypedef) 
 
-### delete_folder_membership
+### delete\_folder\_membership
 
 Removes an asset, such as a dashboard, analysis, or dataset, from a folder.
 
-Type annotations for `boto3.client("quicksight").delete_folder_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_folder_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder_membership)
 
-Boto3 documentation:
-[QuickSight.Client.delete_folder_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder_membership)
+```python title="Method definition"
+def delete_folder_membership(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+    MemberId: str,
+    MemberType: MemberTypeType,  # (1)
+) -> DeleteFolderMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFolderMembershipRequestRequestTypeDef](./type_defs.md#deletefoldermembershiprequestrequesttypedef).
+1. See [:material-code-brackets: MemberTypeType](./literals.md#membertypetype) 
+2. See [:material-code-braces: DeleteFolderMembershipResponseTypeDef](./type_defs.md#deletefoldermembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
-- `MemberType`: [MemberTypeType](./literals.md#membertypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFolderMembershipRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+    "MemberId": ...,
+    "MemberType": ...,
+}
 
-Returns
-[DeleteFolderMembershipResponseTypeDef](./type_defs.md#deletefoldermembershipresponsetypedef).
+parent.delete_folder_membership(**kwargs)
+```
 
-<a id="delete\_group"></a>
+1. See [:material-code-braces: DeleteFolderMembershipRequestRequestTypeDef](./type_defs.md#deletefoldermembershiprequestrequesttypedef) 
 
-### delete_group
+### delete\_group
 
 Removes a user group from Amazon QuickSight.
 
-Type annotations for `boto3.client("quicksight").delete_group` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group)
 
-Boto3 documentation:
-[QuickSight.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group)
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DeleteGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteGroupResponseTypeDef](./type_defs.md#deletegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DeleteGroupResponseTypeDef](./type_defs.md#deletegroupresponsetypedef).
+parent.delete_group(**kwargs)
+```
 
-<a id="delete\_group\_membership"></a>
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
 
-### delete_group_membership
+### delete\_group\_membership
 
-Removes a user from a group so that the user is no longer a member of the
-group.
+Removes a user from a group so that the user is no longer a member of the group.
 
-Type annotations for `boto3.client("quicksight").delete_group_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_group_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group_membership)
 
-Boto3 documentation:
-[QuickSight.Client.delete_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group_membership)
+```python title="Method definition"
+def delete_group_membership(
+    self,
+    *,
+    MemberName: str,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DeleteGroupMembershipResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupMembershipRequestRequestTypeDef](./type_defs.md#deletegroupmembershiprequestrequesttypedef).
+1. See [:material-code-braces: DeleteGroupMembershipResponseTypeDef](./type_defs.md#deletegroupmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MemberName`: `str` *(required)*
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupMembershipRequestRequestTypeDef = {  # (1)
+    "MemberName": ...,
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DeleteGroupMembershipResponseTypeDef](./type_defs.md#deletegroupmembershipresponsetypedef).
+parent.delete_group_membership(**kwargs)
+```
 
-<a id="delete\_iam\_policy\_assignment"></a>
+1. See [:material-code-braces: DeleteGroupMembershipRequestRequestTypeDef](./type_defs.md#deletegroupmembershiprequestrequesttypedef) 
 
-### delete_iam_policy_assignment
+### delete\_iam\_policy\_assignment
 
 Deletes an existing IAM policy assignment.
 
-Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_iam_policy_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment)
 
-Boto3 documentation:
-[QuickSight.Client.delete_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment)
+```python title="Method definition"
+def delete_iam_policy_assignment(
+    self,
+    *,
+    AwsAccountId: str,
+    AssignmentName: str,
+    Namespace: str,
+) -> DeleteIAMPolicyAssignmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#deleteiampolicyassignmentrequestrequesttypedef).
+1. See [:material-code-braces: DeleteIAMPolicyAssignmentResponseTypeDef](./type_defs.md#deleteiampolicyassignmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AssignmentName`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIAMPolicyAssignmentRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AssignmentName": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DeleteIAMPolicyAssignmentResponseTypeDef](./type_defs.md#deleteiampolicyassignmentresponsetypedef).
+parent.delete_iam_policy_assignment(**kwargs)
+```
 
-<a id="delete\_namespace"></a>
+1. See [:material-code-braces: DeleteIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#deleteiampolicyassignmentrequestrequesttypedef) 
 
-### delete_namespace
+### delete\_namespace
 
 Deletes a namespace and the users and groups that are associated with the
 namespace.
 
-Type annotations for `boto3.client("quicksight").delete_namespace` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
 
-Boto3 documentation:
-[QuickSight.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
+```python title="Method definition"
+def delete_namespace(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DeleteNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteNamespaceRequestRequestTypeDef](./type_defs.md#deletenamespacerequestrequesttypedef).
+1. See [:material-code-braces: DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNamespaceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
+parent.delete_namespace(**kwargs)
+```
 
-<a id="delete\_template"></a>
+1. See [:material-code-braces: DeleteNamespaceRequestRequestTypeDef](./type_defs.md#deletenamespacerequestrequesttypedef) 
 
-### delete_template
+### delete\_template
 
 Deletes a template.
 
-Type annotations for `boto3.client("quicksight").delete_template` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template)
 
-Boto3 documentation:
-[QuickSight.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template)
+```python title="Method definition"
+def delete_template(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    VersionNumber: int = ...,
+) -> DeleteTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTemplateRequestRequestTypeDef](./type_defs.md#deletetemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteTemplateResponseTypeDef](./type_defs.md#deletetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `VersionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteTemplateRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[DeleteTemplateResponseTypeDef](./type_defs.md#deletetemplateresponsetypedef).
+parent.delete_template(**kwargs)
+```
 
-<a id="delete\_template\_alias"></a>
+1. See [:material-code-braces: DeleteTemplateRequestRequestTypeDef](./type_defs.md#deletetemplaterequestrequesttypedef) 
 
-### delete_template_alias
+### delete\_template\_alias
 
 Deletes the item that the specified template alias points to.
 
-Type annotations for `boto3.client("quicksight").delete_template_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_template_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template_alias)
 
-Boto3 documentation:
-[QuickSight.Client.delete_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template_alias)
+```python title="Method definition"
+def delete_template_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+) -> DeleteTemplateAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTemplateAliasRequestRequestTypeDef](./type_defs.md#deletetemplatealiasrequestrequesttypedef).
+1. See [:material-code-braces: DeleteTemplateAliasResponseTypeDef](./type_defs.md#deletetemplatealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTemplateAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+    "AliasName": ...,
+}
 
-Returns
-[DeleteTemplateAliasResponseTypeDef](./type_defs.md#deletetemplatealiasresponsetypedef).
+parent.delete_template_alias(**kwargs)
+```
 
-<a id="delete\_theme"></a>
+1. See [:material-code-braces: DeleteTemplateAliasRequestRequestTypeDef](./type_defs.md#deletetemplatealiasrequestrequesttypedef) 
 
-### delete_theme
+### delete\_theme
 
 Deletes a theme.
 
-Type annotations for `boto3.client("quicksight").delete_theme` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_theme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme)
 
-Boto3 documentation:
-[QuickSight.Client.delete_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme)
+```python title="Method definition"
+def delete_theme(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    VersionNumber: int = ...,
+) -> DeleteThemeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteThemeRequestRequestTypeDef](./type_defs.md#deletethemerequestrequesttypedef).
+1. See [:material-code-braces: DeleteThemeResponseTypeDef](./type_defs.md#deletethemeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `VersionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteThemeRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+}
 
-Returns
-[DeleteThemeResponseTypeDef](./type_defs.md#deletethemeresponsetypedef).
+parent.delete_theme(**kwargs)
+```
 
-<a id="delete\_theme\_alias"></a>
+1. See [:material-code-braces: DeleteThemeRequestRequestTypeDef](./type_defs.md#deletethemerequestrequesttypedef) 
 
-### delete_theme_alias
+### delete\_theme\_alias
 
 Deletes the version of the theme that the specified theme alias points to.
 
-Type annotations for `boto3.client("quicksight").delete_theme_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_theme_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias)
 
-Boto3 documentation:
-[QuickSight.Client.delete_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias)
+```python title="Method definition"
+def delete_theme_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+) -> DeleteThemeAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteThemeAliasRequestRequestTypeDef](./type_defs.md#deletethemealiasrequestrequesttypedef).
+1. See [:material-code-braces: DeleteThemeAliasResponseTypeDef](./type_defs.md#deletethemealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteThemeAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+    "AliasName": ...,
+}
 
-Returns
-[DeleteThemeAliasResponseTypeDef](./type_defs.md#deletethemealiasresponsetypedef).
+parent.delete_theme_alias(**kwargs)
+```
 
-<a id="delete\_user"></a>
+1. See [:material-code-braces: DeleteThemeAliasRequestRequestTypeDef](./type_defs.md#deletethemealiasrequestrequesttypedef) 
 
-### delete_user
+### delete\_user
 
 Deletes the Amazon QuickSight user that is associated with the identity of the
 Identity and Access Management (IAM) user or role that's making the call.
 
-Type annotations for `boto3.client("quicksight").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user)
 
-Boto3 documentation:
-[QuickSight.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DeleteUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
+1. See [:material-code-braces: DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns [DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef).
+parent.delete_user(**kwargs)
+```
 
-<a id="delete\_user\_by\_principal\_id"></a>
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
 
-### delete_user_by_principal_id
+### delete\_user\_by\_principal\_id
 
 Deletes a user identified by its principal ID.
 
-Type annotations for `boto3.client("quicksight").delete_user_by_principal_id`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_user_by_principal_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id)
 
-Boto3 documentation:
-[QuickSight.Client.delete_user_by_principal_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id)
+```python title="Method definition"
+def delete_user_by_principal_id(
+    self,
+    *,
+    PrincipalId: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DeleteUserByPrincipalIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserByPrincipalIdRequestRequestTypeDef](./type_defs.md#deleteuserbyprincipalidrequestrequesttypedef).
+1. See [:material-code-braces: DeleteUserByPrincipalIdResponseTypeDef](./type_defs.md#deleteuserbyprincipalidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PrincipalId`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserByPrincipalIdRequestRequestTypeDef = {  # (1)
+    "PrincipalId": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DeleteUserByPrincipalIdResponseTypeDef](./type_defs.md#deleteuserbyprincipalidresponsetypedef).
+parent.delete_user_by_principal_id(**kwargs)
+```
 
-<a id="describe\_account\_customization"></a>
+1. See [:material-code-braces: DeleteUserByPrincipalIdRequestRequestTypeDef](./type_defs.md#deleteuserbyprincipalidrequestrequesttypedef) 
 
-### describe_account_customization
+### describe\_account\_customization
 
 Describes the customizations associated with the provided Amazon Web Services
-account and Amazon Amazon QuickSight namespace in an Amazon Web Services
-Region.
+account and Amazon Amazon QuickSight namespace in an Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("quicksight").describe_account_customization` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_account_customization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_customization)
 
-Boto3 documentation:
-[QuickSight.Client.describe_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_customization)
+```python title="Method definition"
+def describe_account_customization(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str = ...,
+    Resolved: bool = ...,
+) -> DescribeAccountCustomizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountCustomizationRequestRequestTypeDef](./type_defs.md#describeaccountcustomizationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccountCustomizationResponseTypeDef](./type_defs.md#describeaccountcustomizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str`
-- `Resolved`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountCustomizationRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[DescribeAccountCustomizationResponseTypeDef](./type_defs.md#describeaccountcustomizationresponsetypedef).
+parent.describe_account_customization(**kwargs)
+```
 
-<a id="describe\_account\_settings"></a>
+1. See [:material-code-braces: DescribeAccountCustomizationRequestRequestTypeDef](./type_defs.md#describeaccountcustomizationrequestrequesttypedef) 
 
-### describe_account_settings
+### describe\_account\_settings
 
 Describes the settings that were used when your Amazon QuickSight subscription
 was first created in this Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").describe_account_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
 
-Boto3 documentation:
-[QuickSight.Client.describe_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
+```python title="Method definition"
+def describe_account_settings(
+    self,
+    *,
+    AwsAccountId: str,
+) -> DescribeAccountSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountSettingsRequestRequestTypeDef](./type_defs.md#describeaccountsettingsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccountSettingsResponseTypeDef](./type_defs.md#describeaccountsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountSettingsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[DescribeAccountSettingsResponseTypeDef](./type_defs.md#describeaccountsettingsresponsetypedef).
+parent.describe_account_settings(**kwargs)
+```
 
-<a id="describe\_analysis"></a>
+1. See [:material-code-braces: DescribeAccountSettingsRequestRequestTypeDef](./type_defs.md#describeaccountsettingsrequestrequesttypedef) 
 
-### describe_analysis
+### describe\_analysis
 
 Provides a summary of the metadata for an analysis.
 
-Type annotations for `boto3.client("quicksight").describe_analysis` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
 
-Boto3 documentation:
-[QuickSight.Client.describe_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
+```python title="Method definition"
+def describe_analysis(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+) -> DescribeAnalysisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAnalysisRequestRequestTypeDef](./type_defs.md#describeanalysisrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAnalysisResponseTypeDef](./type_defs.md#describeanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAnalysisRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+}
 
-Returns
-[DescribeAnalysisResponseTypeDef](./type_defs.md#describeanalysisresponsetypedef).
+parent.describe_analysis(**kwargs)
+```
 
-<a id="describe\_analysis\_permissions"></a>
+1. See [:material-code-braces: DescribeAnalysisRequestRequestTypeDef](./type_defs.md#describeanalysisrequestrequesttypedef) 
 
-### describe_analysis_permissions
+### describe\_analysis\_permissions
 
 Provides the read and write permissions for an analysis.
 
-Type annotations for `boto3.client("quicksight").describe_analysis_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_analysis_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
+```python title="Method definition"
+def describe_analysis_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+) -> DescribeAnalysisPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAnalysisPermissionsRequestRequestTypeDef](./type_defs.md#describeanalysispermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAnalysisPermissionsResponseTypeDef](./type_defs.md#describeanalysispermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAnalysisPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+}
 
-Returns
-[DescribeAnalysisPermissionsResponseTypeDef](./type_defs.md#describeanalysispermissionsresponsetypedef).
+parent.describe_analysis_permissions(**kwargs)
+```
 
-<a id="describe\_dashboard"></a>
+1. See [:material-code-braces: DescribeAnalysisPermissionsRequestRequestTypeDef](./type_defs.md#describeanalysispermissionsrequestrequesttypedef) 
 
-### describe_dashboard
+### describe\_dashboard
 
 Provides a summary for a dashboard.
 
-Type annotations for `boto3.client("quicksight").describe_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard)
 
-Boto3 documentation:
-[QuickSight.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard)
+```python title="Method definition"
+def describe_dashboard(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: int = ...,
+    AliasName: str = ...,
+) -> DescribeDashboardResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `VersionNumber`: `int`
-- `AliasName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDashboardRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+}
 
-Returns
-[DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
+parent.describe_dashboard(**kwargs)
+```
 
-<a id="describe\_dashboard\_permissions"></a>
+1. See [:material-code-braces: DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef) 
 
-### describe_dashboard_permissions
+### describe\_dashboard\_permissions
 
 Describes read and write permissions for a dashboard.
 
-Type annotations for
-`boto3.client("quicksight").describe_dashboard_permissions` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_dashboard_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
+```python title="Method definition"
+def describe_dashboard_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+) -> DescribeDashboardPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDashboardPermissionsRequestRequestTypeDef](./type_defs.md#describedashboardpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDashboardPermissionsResponseTypeDef](./type_defs.md#describedashboardpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDashboardPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+}
 
-Returns
-[DescribeDashboardPermissionsResponseTypeDef](./type_defs.md#describedashboardpermissionsresponsetypedef).
+parent.describe_dashboard_permissions(**kwargs)
+```
 
-<a id="describe\_data\_set"></a>
+1. See [:material-code-braces: DescribeDashboardPermissionsRequestRequestTypeDef](./type_defs.md#describedashboardpermissionsrequestrequesttypedef) 
 
-### describe_data_set
+### describe\_data\_set
 
 Describes a dataset.
 
-Type annotations for `boto3.client("quicksight").describe_data_set` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
 
-Boto3 documentation:
-[QuickSight.Client.describe_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
+```python title="Method definition"
+def describe_data_set(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+) -> DescribeDataSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataSetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDataSetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSetRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+}
 
-Returns
-[DescribeDataSetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_data_set(**kwargs)
+```
 
-<a id="describe\_data\_set\_permissions"></a>
+1. See [:material-code-braces: DescribeDataSetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_data_set_permissions
+### describe\_data\_set\_permissions
 
 Describes the permissions on a dataset.
 
-Type annotations for `boto3.client("quicksight").describe_data_set_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_data_set_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
+```python title="Method definition"
+def describe_data_set_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+) -> DescribeDataSetPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataSetPermissionsRequestRequestTypeDef](./type_defs.md#describedatasetpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDataSetPermissionsResponseTypeDef](./type_defs.md#describedatasetpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSetPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+}
 
-Returns
-[DescribeDataSetPermissionsResponseTypeDef](./type_defs.md#describedatasetpermissionsresponsetypedef).
+parent.describe_data_set_permissions(**kwargs)
+```
 
-<a id="describe\_data\_source"></a>
+1. See [:material-code-braces: DescribeDataSetPermissionsRequestRequestTypeDef](./type_defs.md#describedatasetpermissionsrequestrequesttypedef) 
 
-### describe_data_source
+### describe\_data\_source
 
 Describes a data source.
 
-Type annotations for `boto3.client("quicksight").describe_data_source` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
 
-Boto3 documentation:
-[QuickSight.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
+```python title="Method definition"
+def describe_data_source(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSourceId: str,
+) -> DescribeDataSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataSourceRequestRequestTypeDef](./type_defs.md#describedatasourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSourceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSourceId": ...,
+}
 
-Returns
-[DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+parent.describe_data_source(**kwargs)
+```
 
-<a id="describe\_data\_source\_permissions"></a>
+1. See [:material-code-braces: DescribeDataSourceRequestRequestTypeDef](./type_defs.md#describedatasourcerequestrequesttypedef) 
 
-### describe_data_source_permissions
+### describe\_data\_source\_permissions
 
 Describes the resource permissions for a data source.
 
-Type annotations for
-`boto3.client("quicksight").describe_data_source_permissions` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_data_source_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
+```python title="Method definition"
+def describe_data_source_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSourceId: str,
+) -> DescribeDataSourcePermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataSourcePermissionsRequestRequestTypeDef](./type_defs.md#describedatasourcepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDataSourcePermissionsResponseTypeDef](./type_defs.md#describedatasourcepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSourcePermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSourceId": ...,
+}
 
-Returns
-[DescribeDataSourcePermissionsResponseTypeDef](./type_defs.md#describedatasourcepermissionsresponsetypedef).
+parent.describe_data_source_permissions(**kwargs)
+```
 
-<a id="describe\_folder"></a>
+1. See [:material-code-braces: DescribeDataSourcePermissionsRequestRequestTypeDef](./type_defs.md#describedatasourcepermissionsrequestrequesttypedef) 
 
-### describe_folder
+### describe\_folder
 
 Describes a folder.
 
-Type annotations for `boto3.client("quicksight").describe_folder` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder)
 
-Boto3 documentation:
-[QuickSight.Client.describe_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder)
+```python title="Method definition"
+def describe_folder(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+) -> DescribeFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFolderRequestRequestTypeDef](./type_defs.md#describefolderrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFolderResponseTypeDef](./type_defs.md#describefolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFolderRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[DescribeFolderResponseTypeDef](./type_defs.md#describefolderresponsetypedef).
+parent.describe_folder(**kwargs)
+```
 
-<a id="describe\_folder\_permissions"></a>
+1. See [:material-code-braces: DescribeFolderRequestRequestTypeDef](./type_defs.md#describefolderrequestrequesttypedef) 
 
-### describe_folder_permissions
+### describe\_folder\_permissions
 
 Describes permissions for a folder.
 
-Type annotations for `boto3.client("quicksight").describe_folder_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_folder_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_folder_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_permissions)
+```python title="Method definition"
+def describe_folder_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+) -> DescribeFolderPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFolderPermissionsRequestRequestTypeDef](./type_defs.md#describefolderpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFolderPermissionsResponseTypeDef](./type_defs.md#describefolderpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFolderPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[DescribeFolderPermissionsResponseTypeDef](./type_defs.md#describefolderpermissionsresponsetypedef).
+parent.describe_folder_permissions(**kwargs)
+```
 
-<a id="describe\_folder\_resolved\_permissions"></a>
+1. See [:material-code-braces: DescribeFolderPermissionsRequestRequestTypeDef](./type_defs.md#describefolderpermissionsrequestrequesttypedef) 
 
-### describe_folder_resolved_permissions
+### describe\_folder\_resolved\_permissions
 
 Describes the folder resolved permissions.
 
-Type annotations for
-`boto3.client("quicksight").describe_folder_resolved_permissions` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_folder_resolved_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_resolved_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_folder_resolved_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_resolved_permissions)
+```python title="Method definition"
+def describe_folder_resolved_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+) -> DescribeFolderResolvedPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFolderResolvedPermissionsRequestRequestTypeDef](./type_defs.md#describefolderresolvedpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFolderResolvedPermissionsResponseTypeDef](./type_defs.md#describefolderresolvedpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFolderResolvedPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[DescribeFolderResolvedPermissionsResponseTypeDef](./type_defs.md#describefolderresolvedpermissionsresponsetypedef).
+parent.describe_folder_resolved_permissions(**kwargs)
+```
 
-<a id="describe\_group"></a>
+1. See [:material-code-braces: DescribeFolderResolvedPermissionsRequestRequestTypeDef](./type_defs.md#describefolderresolvedpermissionsrequestrequesttypedef) 
 
-### describe_group
+### describe\_group
 
-Returns an Amazon QuickSight group's description and Amazon Resource Name
-(ARN).
+Returns an Amazon QuickSight group's description and Amazon Resource Name (ARN).
 
-Type annotations for `boto3.client("quicksight").describe_group` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group)
 
-Boto3 documentation:
-[QuickSight.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group)
+```python title="Method definition"
+def describe_group(
+    self,
+    *,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DescribeGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
+parent.describe_group(**kwargs)
+```
 
-<a id="describe\_group\_membership"></a>
+1. See [:material-code-braces: DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef) 
 
-### describe_group_membership
+### describe\_group\_membership
 
 Use the `DescribeGroupMembership` operation to determine if a user is a member
 of the specified group.
 
-Type annotations for `boto3.client("quicksight").describe_group_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_group_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group_membership)
 
-Boto3 documentation:
-[QuickSight.Client.describe_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group_membership)
+```python title="Method definition"
+def describe_group_membership(
+    self,
+    *,
+    MemberName: str,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DescribeGroupMembershipResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGroupMembershipRequestRequestTypeDef](./type_defs.md#describegroupmembershiprequestrequesttypedef).
+1. See [:material-code-braces: DescribeGroupMembershipResponseTypeDef](./type_defs.md#describegroupmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MemberName`: `str` *(required)*
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGroupMembershipRequestRequestTypeDef = {  # (1)
+    "MemberName": ...,
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DescribeGroupMembershipResponseTypeDef](./type_defs.md#describegroupmembershipresponsetypedef).
+parent.describe_group_membership(**kwargs)
+```
 
-<a id="describe\_iam\_policy\_assignment"></a>
+1. See [:material-code-braces: DescribeGroupMembershipRequestRequestTypeDef](./type_defs.md#describegroupmembershiprequestrequesttypedef) 
 
-### describe_iam_policy_assignment
+### describe\_iam\_policy\_assignment
 
 Describes an existing IAM policy assignment, as specified by the assignment
 name.
 
-Type annotations for
-`boto3.client("quicksight").describe_iam_policy_assignment` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_iam_policy_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment)
 
-Boto3 documentation:
-[QuickSight.Client.describe_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment)
+```python title="Method definition"
+def describe_iam_policy_assignment(
+    self,
+    *,
+    AwsAccountId: str,
+    AssignmentName: str,
+    Namespace: str,
+) -> DescribeIAMPolicyAssignmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#describeiampolicyassignmentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIAMPolicyAssignmentResponseTypeDef](./type_defs.md#describeiampolicyassignmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AssignmentName`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIAMPolicyAssignmentRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AssignmentName": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DescribeIAMPolicyAssignmentResponseTypeDef](./type_defs.md#describeiampolicyassignmentresponsetypedef).
+parent.describe_iam_policy_assignment(**kwargs)
+```
 
-<a id="describe\_ingestion"></a>
+1. See [:material-code-braces: DescribeIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#describeiampolicyassignmentrequestrequesttypedef) 
 
-### describe_ingestion
+### describe\_ingestion
 
 Describes a SPICE ingestion.
 
-Type annotations for `boto3.client("quicksight").describe_ingestion` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_ingestion` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ingestion)
 
-Boto3 documentation:
-[QuickSight.Client.describe_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ingestion)
+```python title="Method definition"
+def describe_ingestion(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+    IngestionId: str,
+) -> DescribeIngestionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIngestionRequestRequestTypeDef](./type_defs.md#describeingestionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIngestionResponseTypeDef](./type_defs.md#describeingestionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `IngestionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIngestionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+    "IngestionId": ...,
+}
 
-Returns
-[DescribeIngestionResponseTypeDef](./type_defs.md#describeingestionresponsetypedef).
+parent.describe_ingestion(**kwargs)
+```
 
-<a id="describe\_ip\_restriction"></a>
+1. See [:material-code-braces: DescribeIngestionRequestRequestTypeDef](./type_defs.md#describeingestionrequestrequesttypedef) 
 
-### describe_ip_restriction
+### describe\_ip\_restriction
 
 Provides a summary and status of IP rules.
 
-Type annotations for `boto3.client("quicksight").describe_ip_restriction`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_ip_restriction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ip_restriction)
 
-Boto3 documentation:
-[QuickSight.Client.describe_ip_restriction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ip_restriction)
+```python title="Method definition"
+def describe_ip_restriction(
+    self,
+    *,
+    AwsAccountId: str,
+) -> DescribeIpRestrictionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIpRestrictionRequestRequestTypeDef](./type_defs.md#describeiprestrictionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIpRestrictionResponseTypeDef](./type_defs.md#describeiprestrictionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIpRestrictionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[DescribeIpRestrictionResponseTypeDef](./type_defs.md#describeiprestrictionresponsetypedef).
+parent.describe_ip_restriction(**kwargs)
+```
 
-<a id="describe\_namespace"></a>
+1. See [:material-code-braces: DescribeIpRestrictionRequestRequestTypeDef](./type_defs.md#describeiprestrictionrequestrequesttypedef) 
 
-### describe_namespace
+### describe\_namespace
 
 Describes the current namespace.
 
-Type annotations for `boto3.client("quicksight").describe_namespace` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
 
-Boto3 documentation:
-[QuickSight.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
+```python title="Method definition"
+def describe_namespace(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DescribeNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNamespaceRequestRequestTypeDef](./type_defs.md#describenamespacerequestrequesttypedef).
+1. See [:material-code-braces: DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeNamespaceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef).
+parent.describe_namespace(**kwargs)
+```
 
-<a id="describe\_template"></a>
+1. See [:material-code-braces: DescribeNamespaceRequestRequestTypeDef](./type_defs.md#describenamespacerequestrequesttypedef) 
 
-### describe_template
+### describe\_template
 
 Describes a template's metadata.
 
-Type annotations for `boto3.client("quicksight").describe_template` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template)
 
-Boto3 documentation:
-[QuickSight.Client.describe_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template)
+```python title="Method definition"
+def describe_template(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    VersionNumber: int = ...,
+    AliasName: str = ...,
+) -> DescribeTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTemplateRequestRequestTypeDef](./type_defs.md#describetemplaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeTemplateResponseTypeDef](./type_defs.md#describetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `VersionNumber`: `int`
-- `AliasName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTemplateRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[DescribeTemplateResponseTypeDef](./type_defs.md#describetemplateresponsetypedef).
+parent.describe_template(**kwargs)
+```
 
-<a id="describe\_template\_alias"></a>
+1. See [:material-code-braces: DescribeTemplateRequestRequestTypeDef](./type_defs.md#describetemplaterequestrequesttypedef) 
 
-### describe_template_alias
+### describe\_template\_alias
 
 Describes the template alias for a template.
 
-Type annotations for `boto3.client("quicksight").describe_template_alias`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_template_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_alias)
 
-Boto3 documentation:
-[QuickSight.Client.describe_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_alias)
+```python title="Method definition"
+def describe_template_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+) -> DescribeTemplateAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTemplateAliasRequestRequestTypeDef](./type_defs.md#describetemplatealiasrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTemplateAliasResponseTypeDef](./type_defs.md#describetemplatealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTemplateAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+    "AliasName": ...,
+}
 
-Returns
-[DescribeTemplateAliasResponseTypeDef](./type_defs.md#describetemplatealiasresponsetypedef).
+parent.describe_template_alias(**kwargs)
+```
 
-<a id="describe\_template\_permissions"></a>
+1. See [:material-code-braces: DescribeTemplateAliasRequestRequestTypeDef](./type_defs.md#describetemplatealiasrequestrequesttypedef) 
 
-### describe_template_permissions
+### describe\_template\_permissions
 
 Describes read and write permissions on a template.
 
-Type annotations for `boto3.client("quicksight").describe_template_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_template_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
+```python title="Method definition"
+def describe_template_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+) -> DescribeTemplatePermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTemplatePermissionsRequestRequestTypeDef](./type_defs.md#describetemplatepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTemplatePermissionsResponseTypeDef](./type_defs.md#describetemplatepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTemplatePermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[DescribeTemplatePermissionsResponseTypeDef](./type_defs.md#describetemplatepermissionsresponsetypedef).
+parent.describe_template_permissions(**kwargs)
+```
 
-<a id="describe\_theme"></a>
+1. See [:material-code-braces: DescribeTemplatePermissionsRequestRequestTypeDef](./type_defs.md#describetemplatepermissionsrequestrequesttypedef) 
 
-### describe_theme
+### describe\_theme
 
 Describes a theme.
 
-Type annotations for `boto3.client("quicksight").describe_theme` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_theme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme)
 
-Boto3 documentation:
-[QuickSight.Client.describe_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme)
+```python title="Method definition"
+def describe_theme(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    VersionNumber: int = ...,
+    AliasName: str = ...,
+) -> DescribeThemeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThemeRequestRequestTypeDef](./type_defs.md#describethemerequestrequesttypedef).
+1. See [:material-code-braces: DescribeThemeResponseTypeDef](./type_defs.md#describethemeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `VersionNumber`: `int`
-- `AliasName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeThemeRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+}
 
-Returns
-[DescribeThemeResponseTypeDef](./type_defs.md#describethemeresponsetypedef).
+parent.describe_theme(**kwargs)
+```
 
-<a id="describe\_theme\_alias"></a>
+1. See [:material-code-braces: DescribeThemeRequestRequestTypeDef](./type_defs.md#describethemerequestrequesttypedef) 
 
-### describe_theme_alias
+### describe\_theme\_alias
 
 Describes the alias for a theme.
 
-Type annotations for `boto3.client("quicksight").describe_theme_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_theme_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias)
 
-Boto3 documentation:
-[QuickSight.Client.describe_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias)
+```python title="Method definition"
+def describe_theme_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+) -> DescribeThemeAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThemeAliasRequestRequestTypeDef](./type_defs.md#describethemealiasrequestrequesttypedef).
+1. See [:material-code-braces: DescribeThemeAliasResponseTypeDef](./type_defs.md#describethemealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThemeAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+    "AliasName": ...,
+}
 
-Returns
-[DescribeThemeAliasResponseTypeDef](./type_defs.md#describethemealiasresponsetypedef).
+parent.describe_theme_alias(**kwargs)
+```
 
-<a id="describe\_theme\_permissions"></a>
+1. See [:material-code-braces: DescribeThemeAliasRequestRequestTypeDef](./type_defs.md#describethemealiasrequestrequesttypedef) 
 
-### describe_theme_permissions
+### describe\_theme\_permissions
 
 Describes the read and write permissions for a theme.
 
-Type annotations for `boto3.client("quicksight").describe_theme_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_theme_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.describe_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
+```python title="Method definition"
+def describe_theme_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+) -> DescribeThemePermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThemePermissionsRequestRequestTypeDef](./type_defs.md#describethemepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeThemePermissionsResponseTypeDef](./type_defs.md#describethemepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThemePermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+}
 
-Returns
-[DescribeThemePermissionsResponseTypeDef](./type_defs.md#describethemepermissionsresponsetypedef).
+parent.describe_theme_permissions(**kwargs)
+```
 
-<a id="describe\_user"></a>
+1. See [:material-code-braces: DescribeThemePermissionsRequestRequestTypeDef](./type_defs.md#describethemepermissionsrequestrequesttypedef) 
 
-### describe_user
+### describe\_user
 
 Returns information about a user, given the user name.
 
-Type annotations for `boto3.client("quicksight").describe_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_user)
 
-Boto3 documentation:
-[QuickSight.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_user)
+```python title="Method definition"
+def describe_user(
+    self,
+    *,
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+) -> DescribeUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+parent.describe_user(**kwargs)
+```
 
-<a id="generate\_embed\_url\_for\_anonymous\_user"></a>
+1. See [:material-code-braces: DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef) 
 
-### generate_embed_url_for_anonymous_user
+### generate\_embed\_url\_for\_anonymous\_user
 
 Generates an embed URL that you can use to embed an Amazon QuickSight dashboard
 in your website, without having to register any reader users.
 
-Type annotations for
-`boto3.client("quicksight").generate_embed_url_for_anonymous_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").generate_embed_url_for_anonymous_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_anonymous_user)
 
-Boto3 documentation:
-[QuickSight.Client.generate_embed_url_for_anonymous_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_anonymous_user)
+```python title="Method definition"
+def generate_embed_url_for_anonymous_user(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+    AuthorizedResourceArns: Sequence[str],
+    ExperienceConfiguration: AnonymousUserEmbeddingExperienceConfigurationTypeDef,  # (1)
+    SessionLifetimeInMinutes: int = ...,
+    SessionTags: Sequence[SessionTagTypeDef] = ...,  # (2)
+) -> GenerateEmbedUrlForAnonymousUserResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef](./type_defs.md#generateembedurlforanonymoususerrequestrequesttypedef).
+1. See [:material-code-braces: AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef) 
+2. See [:material-code-braces: SessionTagTypeDef](./type_defs.md#sessiontagtypedef) 
+3. See [:material-code-braces: GenerateEmbedUrlForAnonymousUserResponseTypeDef](./type_defs.md#generateembedurlforanonymoususerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `AuthorizedResourceArns`: `Sequence`\[`str`\] *(required)*
-- `ExperienceConfiguration`:
-  [AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef)
-  *(required)*
-- `SessionLifetimeInMinutes`: `int`
-- `SessionTags`:
-  `Sequence`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+    "AuthorizedResourceArns": ...,
+    "ExperienceConfiguration": ...,
+}
 
-Returns
-[GenerateEmbedUrlForAnonymousUserResponseTypeDef](./type_defs.md#generateembedurlforanonymoususerresponsetypedef).
+parent.generate_embed_url_for_anonymous_user(**kwargs)
+```
 
-<a id="generate\_embed\_url\_for\_registered\_user"></a>
+1. See [:material-code-braces: GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef](./type_defs.md#generateembedurlforanonymoususerrequestrequesttypedef) 
 
-### generate_embed_url_for_registered_user
+### generate\_embed\_url\_for\_registered\_user
 
-Generates an embed URL that you can use to embed an Amazon QuickSight
-experience in your website.
+Generates an embed URL that you can use to embed an Amazon QuickSight experience
+in your website.
 
-Type annotations for
-`boto3.client("quicksight").generate_embed_url_for_registered_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").generate_embed_url_for_registered_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_registered_user)
 
-Boto3 documentation:
-[QuickSight.Client.generate_embed_url_for_registered_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_registered_user)
+```python title="Method definition"
+def generate_embed_url_for_registered_user(
+    self,
+    *,
+    AwsAccountId: str,
+    UserArn: str,
+    ExperienceConfiguration: RegisteredUserEmbeddingExperienceConfigurationTypeDef,  # (1)
+    SessionLifetimeInMinutes: int = ...,
+) -> GenerateEmbedUrlForRegisteredUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef](./type_defs.md#generateembedurlforregistereduserrequestrequesttypedef).
+1. See [:material-code-braces: RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef) 
+2. See [:material-code-braces: GenerateEmbedUrlForRegisteredUserResponseTypeDef](./type_defs.md#generateembedurlforregistereduserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `UserArn`: `str` *(required)*
-- `ExperienceConfiguration`:
-  [RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef)
-  *(required)*
-- `SessionLifetimeInMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "UserArn": ...,
+    "ExperienceConfiguration": ...,
+}
 
-Returns
-[GenerateEmbedUrlForRegisteredUserResponseTypeDef](./type_defs.md#generateembedurlforregistereduserresponsetypedef).
+parent.generate_embed_url_for_registered_user(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef](./type_defs.md#generateembedurlforregistereduserrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("quicksight").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_presigned_url)
 
-Boto3 documentation:
-[QuickSight.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_dashboard\_embed\_url"></a>
-
-### get_dashboard_embed_url
+### get\_dashboard\_embed\_url
 
 Generates a session URL and authorization code that you can use to embed an
 Amazon Amazon QuickSight read-only dashboard in your web server code.
 
-Type annotations for `boto3.client("quicksight").get_dashboard_embed_url`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").get_dashboard_embed_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
 
-Boto3 documentation:
-[QuickSight.Client.get_dashboard_embed_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
+```python title="Method definition"
+def get_dashboard_embed_url(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    IdentityType: EmbeddingIdentityTypeType,  # (1)
+    SessionLifetimeInMinutes: int = ...,
+    UndoRedoDisabled: bool = ...,
+    ResetDisabled: bool = ...,
+    StatePersistenceEnabled: bool = ...,
+    UserArn: str = ...,
+    Namespace: str = ...,
+    AdditionalDashboardIds: Sequence[str] = ...,
+) -> GetDashboardEmbedUrlResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetDashboardEmbedUrlRequestRequestTypeDef](./type_defs.md#getdashboardembedurlrequestrequesttypedef).
+1. See [:material-code-brackets: EmbeddingIdentityTypeType](./literals.md#embeddingidentitytypetype) 
+2. See [:material-code-braces: GetDashboardEmbedUrlResponseTypeDef](./type_defs.md#getdashboardembedurlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `IdentityType`:
-  [EmbeddingIdentityTypeType](./literals.md#embeddingidentitytypetype)
-  *(required)*
-- `SessionLifetimeInMinutes`: `int`
-- `UndoRedoDisabled`: `bool`
-- `ResetDisabled`: `bool`
-- `StatePersistenceEnabled`: `bool`
-- `UserArn`: `str`
-- `Namespace`: `str`
-- `AdditionalDashboardIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetDashboardEmbedUrlRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+    "IdentityType": ...,
+}
 
-Returns
-[GetDashboardEmbedUrlResponseTypeDef](./type_defs.md#getdashboardembedurlresponsetypedef).
+parent.get_dashboard_embed_url(**kwargs)
+```
 
-<a id="get\_session\_embed\_url"></a>
+1. See [:material-code-braces: GetDashboardEmbedUrlRequestRequestTypeDef](./type_defs.md#getdashboardembedurlrequestrequesttypedef) 
 
-### get_session_embed_url
+### get\_session\_embed\_url
 
 Generates a session URL and authorization code that you can use to embed the
 Amazon Amazon QuickSight console in your web server code.
 
-Type annotations for `boto3.client("quicksight").get_session_embed_url` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").get_session_embed_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url)
 
-Boto3 documentation:
-[QuickSight.Client.get_session_embed_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url)
+```python title="Method definition"
+def get_session_embed_url(
+    self,
+    *,
+    AwsAccountId: str,
+    EntryPoint: str = ...,
+    SessionLifetimeInMinutes: int = ...,
+    UserArn: str = ...,
+) -> GetSessionEmbedUrlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSessionEmbedUrlRequestRequestTypeDef](./type_defs.md#getsessionembedurlrequestrequesttypedef).
+1. See [:material-code-braces: GetSessionEmbedUrlResponseTypeDef](./type_defs.md#getsessionembedurlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `EntryPoint`: `str`
-- `SessionLifetimeInMinutes`: `int`
-- `UserArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSessionEmbedUrlRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[GetSessionEmbedUrlResponseTypeDef](./type_defs.md#getsessionembedurlresponsetypedef).
+parent.get_session_embed_url(**kwargs)
+```
 
-<a id="list\_analyses"></a>
+1. See [:material-code-braces: GetSessionEmbedUrlRequestRequestTypeDef](./type_defs.md#getsessionembedurlrequestrequesttypedef) 
 
-### list_analyses
+### list\_analyses
 
-Lists Amazon QuickSight analyses that exist in the specified Amazon Web
-Services account.
+Lists Amazon QuickSight analyses that exist in the specified Amazon Web Services
+account.
 
-Type annotations for `boto3.client("quicksight").list_analyses` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_analyses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_analyses)
 
-Boto3 documentation:
-[QuickSight.Client.list_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_analyses)
+```python title="Method definition"
+def list_analyses(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAnalysesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAnalysesRequestRequestTypeDef](./type_defs.md#listanalysesrequestrequesttypedef).
+1. See [:material-code-braces: ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAnalysesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef).
+parent.list_analyses(**kwargs)
+```
 
-<a id="list\_dashboard\_versions"></a>
+1. See [:material-code-braces: ListAnalysesRequestRequestTypeDef](./type_defs.md#listanalysesrequestrequesttypedef) 
 
-### list_dashboard_versions
+### list\_dashboard\_versions
 
 Lists all the versions of the dashboards in the Amazon QuickSight subscription.
 
-Type annotations for `boto3.client("quicksight").list_dashboard_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_dashboard_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions)
 
-Boto3 documentation:
-[QuickSight.Client.list_dashboard_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions)
+```python title="Method definition"
+def list_dashboard_versions(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDashboardVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDashboardVersionsRequestRequestTypeDef](./type_defs.md#listdashboardversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDashboardVersionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+}
 
-Returns
-[ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef).
+parent.list_dashboard_versions(**kwargs)
+```
 
-<a id="list\_dashboards"></a>
+1. See [:material-code-braces: ListDashboardVersionsRequestRequestTypeDef](./type_defs.md#listdashboardversionsrequestrequesttypedef) 
 
-### list_dashboards
+### list\_dashboards
 
 Lists dashboards in an Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").list_dashboards` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_dashboards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboards)
 
-Boto3 documentation:
-[QuickSight.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboards)
+```python title="Method definition"
+def list_dashboards(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDashboardsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef).
+1. See [:material-code-braces: ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDashboardsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
+parent.list_dashboards(**kwargs)
+```
 
-<a id="list\_data\_sets"></a>
+1. See [:material-code-braces: ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef) 
 
-### list_data_sets
+### list\_data\_sets
 
 Lists all of the datasets belonging to the current Amazon Web Services account
 in an Amazon Web Services Region.
 
-Type annotations for `boto3.client("quicksight").list_data_sets` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_data_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sets)
 
-Boto3 documentation:
-[QuickSight.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sets)
+```python title="Method definition"
+def list_data_sets(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataSetsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_data_sets(**kwargs)
+```
 
-<a id="list\_data\_sources"></a>
+1. See [:material-code-braces: ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_data_sources
+### list\_data\_sources
 
 Lists data sources in current Amazon Web Services Region that belong to this
 Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").list_data_sources` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_data_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sources)
 
-Boto3 documentation:
-[QuickSight.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sources)
+```python title="Method definition"
+def list_data_sources(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataSourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataSourcesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+parent.list_data_sources(**kwargs)
+```
 
-<a id="list\_folder\_members"></a>
+1. See [:material-code-braces: ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef) 
 
-### list_folder_members
+### list\_folder\_members
 
 List all assets (`DASHBOARD` , `ANALYSIS` , and `DATASET` ) in a folder.
 
-Type annotations for `boto3.client("quicksight").list_folder_members` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_folder_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folder_members)
 
-Boto3 documentation:
-[QuickSight.Client.list_folder_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folder_members)
+```python title="Method definition"
+def list_folder_members(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFolderMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFolderMembersRequestRequestTypeDef](./type_defs.md#listfoldermembersrequestrequesttypedef).
+1. See [:material-code-braces: ListFolderMembersResponseTypeDef](./type_defs.md#listfoldermembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFolderMembersRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[ListFolderMembersResponseTypeDef](./type_defs.md#listfoldermembersresponsetypedef).
+parent.list_folder_members(**kwargs)
+```
 
-<a id="list\_folders"></a>
+1. See [:material-code-braces: ListFolderMembersRequestRequestTypeDef](./type_defs.md#listfoldermembersrequestrequesttypedef) 
 
-### list_folders
+### list\_folders
 
 Lists all folders in an account.
 
-Type annotations for `boto3.client("quicksight").list_folders` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_folders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folders)
 
-Boto3 documentation:
-[QuickSight.Client.list_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folders)
+```python title="Method definition"
+def list_folders(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFoldersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFoldersRequestRequestTypeDef](./type_defs.md#listfoldersrequestrequesttypedef).
+1. See [:material-code-braces: ListFoldersResponseTypeDef](./type_defs.md#listfoldersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFoldersRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListFoldersResponseTypeDef](./type_defs.md#listfoldersresponsetypedef).
+parent.list_folders(**kwargs)
+```
 
-<a id="list\_group\_memberships"></a>
+1. See [:material-code-braces: ListFoldersRequestRequestTypeDef](./type_defs.md#listfoldersrequestrequesttypedef) 
 
-### list_group_memberships
+### list\_group\_memberships
 
 Lists member users in a group.
 
-Type annotations for `boto3.client("quicksight").list_group_memberships`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_group_memberships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_group_memberships)
 
-Boto3 documentation:
-[QuickSight.Client.list_group_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_group_memberships)
+```python title="Method definition"
+def list_group_memberships(
+    self,
+    *,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupMembershipsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupMembershipsRequestRequestTypeDef](./type_defs.md#listgroupmembershipsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupMembershipsResponseTypeDef](./type_defs.md#listgroupmembershipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupMembershipsRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[ListGroupMembershipsResponseTypeDef](./type_defs.md#listgroupmembershipsresponsetypedef).
+parent.list_group_memberships(**kwargs)
+```
 
-<a id="list\_groups"></a>
+1. See [:material-code-braces: ListGroupMembershipsRequestRequestTypeDef](./type_defs.md#listgroupmembershipsrequestrequesttypedef) 
 
-### list_groups
+### list\_groups
 
 Lists all user groups in Amazon QuickSight.
 
-Type annotations for `boto3.client("quicksight").list_groups` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_groups)
 
-Boto3 documentation:
-[QuickSight.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_groups)
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+parent.list_groups(**kwargs)
+```
 
-<a id="list\_iam\_policy\_assignments"></a>
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
-### list_iam_policy_assignments
+### list\_iam\_policy\_assignments
 
 Lists IAM policy assignments in the current Amazon QuickSight account.
 
-Type annotations for `boto3.client("quicksight").list_iam_policy_assignments`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_iam_policy_assignments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments)
 
-Boto3 documentation:
-[QuickSight.Client.list_iam_policy_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments)
+```python title="Method definition"
+def list_iam_policy_assignments(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+    AssignmentStatus: AssignmentStatusType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListIAMPolicyAssignmentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListIAMPolicyAssignmentsRequestRequestTypeDef](./type_defs.md#listiampolicyassignmentsrequestrequesttypedef).
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: ListIAMPolicyAssignmentsResponseTypeDef](./type_defs.md#listiampolicyassignmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `AssignmentStatus`:
-  [AssignmentStatusType](./literals.md#assignmentstatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIAMPolicyAssignmentsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[ListIAMPolicyAssignmentsResponseTypeDef](./type_defs.md#listiampolicyassignmentsresponsetypedef).
+parent.list_iam_policy_assignments(**kwargs)
+```
 
-<a id="list\_iam\_policy\_assignments\_for\_user"></a>
+1. See [:material-code-braces: ListIAMPolicyAssignmentsRequestRequestTypeDef](./type_defs.md#listiampolicyassignmentsrequestrequesttypedef) 
 
-### list_iam_policy_assignments_for_user
+### list\_iam\_policy\_assignments\_for\_user
 
-Lists all the IAM policy assignments, including the Amazon Resource Names
-(ARNs) for the IAM policies assigned to the specified user and group or groups
-that the user belongs to.
+Lists all the IAM policy assignments, including the Amazon Resource Names (ARNs)
+for the IAM policies assigned to the specified user and group or groups that the
+user belongs to.
 
-Type annotations for
-`boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user)
 
-Boto3 documentation:
-[QuickSight.Client.list_iam_policy_assignments_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user)
+```python title="Method definition"
+def list_iam_policy_assignments_for_user(
+    self,
+    *,
+    AwsAccountId: str,
+    UserName: str,
+    Namespace: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListIAMPolicyAssignmentsForUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIAMPolicyAssignmentsForUserRequestRequestTypeDef](./type_defs.md#listiampolicyassignmentsforuserrequestrequesttypedef).
+1. See [:material-code-braces: ListIAMPolicyAssignmentsForUserResponseTypeDef](./type_defs.md#listiampolicyassignmentsforuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `UserName`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIAMPolicyAssignmentsForUserRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "UserName": ...,
+    "Namespace": ...,
+}
 
-Returns
-[ListIAMPolicyAssignmentsForUserResponseTypeDef](./type_defs.md#listiampolicyassignmentsforuserresponsetypedef).
+parent.list_iam_policy_assignments_for_user(**kwargs)
+```
 
-<a id="list\_ingestions"></a>
+1. See [:material-code-braces: ListIAMPolicyAssignmentsForUserRequestRequestTypeDef](./type_defs.md#listiampolicyassignmentsforuserrequestrequesttypedef) 
 
-### list_ingestions
+### list\_ingestions
 
 Lists the history of SPICE ingestions for a dataset.
 
-Type annotations for `boto3.client("quicksight").list_ingestions` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_ingestions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_ingestions)
 
-Boto3 documentation:
-[QuickSight.Client.list_ingestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_ingestions)
+```python title="Method definition"
+def list_ingestions(
+    self,
+    *,
+    DataSetId: str,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListIngestionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIngestionsRequestRequestTypeDef](./type_defs.md#listingestionsrequestrequesttypedef).
+1. See [:material-code-braces: ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIngestionsRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef).
+parent.list_ingestions(**kwargs)
+```
 
-<a id="list\_namespaces"></a>
+1. See [:material-code-braces: ListIngestionsRequestRequestTypeDef](./type_defs.md#listingestionsrequestrequesttypedef) 
 
-### list_namespaces
+### list\_namespaces
 
 Lists the namespaces for the specified Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").list_namespaces` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_namespaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_namespaces)
 
-Boto3 documentation:
-[QuickSight.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_namespaces)
+```python title="Method definition"
+def list_namespaces(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListNamespacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef).
+1. See [:material-code-braces: ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListNamespacesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
+parent.list_namespaces(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags assigned to a resource.
 
-Type annotations for `boto3.client("quicksight").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[QuickSight.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_template\_aliases"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_template_aliases
+### list\_template\_aliases
 
 Lists all the aliases of a template.
 
-Type annotations for `boto3.client("quicksight").list_template_aliases` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_template_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_aliases)
 
-Boto3 documentation:
-[QuickSight.Client.list_template_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_aliases)
+```python title="Method definition"
+def list_template_aliases(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTemplateAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTemplateAliasesRequestRequestTypeDef](./type_defs.md#listtemplatealiasesrequestrequesttypedef).
+1. See [:material-code-braces: ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTemplateAliasesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef).
+parent.list_template_aliases(**kwargs)
+```
 
-<a id="list\_template\_versions"></a>
+1. See [:material-code-braces: ListTemplateAliasesRequestRequestTypeDef](./type_defs.md#listtemplatealiasesrequestrequesttypedef) 
 
-### list_template_versions
+### list\_template\_versions
 
 Lists all the versions of the templates in the current Amazon QuickSight
 account.
 
-Type annotations for `boto3.client("quicksight").list_template_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_template_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_versions)
 
-Boto3 documentation:
-[QuickSight.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_versions)
+```python title="Method definition"
+def list_template_versions(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTemplateVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTemplateVersionsRequestRequestTypeDef](./type_defs.md#listtemplateversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTemplateVersionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef).
+parent.list_template_versions(**kwargs)
+```
 
-<a id="list\_templates"></a>
+1. See [:material-code-braces: ListTemplateVersionsRequestRequestTypeDef](./type_defs.md#listtemplateversionsrequestrequesttypedef) 
 
-### list_templates
+### list\_templates
 
 Lists all the templates in the current Amazon QuickSight account.
 
-Type annotations for `boto3.client("quicksight").list_templates` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_templates)
 
-Boto3 documentation:
-[QuickSight.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_templates)
+```python title="Method definition"
+def list_templates(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTemplatesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
+parent.list_templates(**kwargs)
+```
 
-<a id="list\_theme\_aliases"></a>
+1. See [:material-code-braces: ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef) 
 
-### list_theme_aliases
+### list\_theme\_aliases
 
 Lists all the aliases of a theme.
 
-Type annotations for `boto3.client("quicksight").list_theme_aliases` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_theme_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases)
 
-Boto3 documentation:
-[QuickSight.Client.list_theme_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases)
+```python title="Method definition"
+def list_theme_aliases(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListThemeAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThemeAliasesRequestRequestTypeDef](./type_defs.md#listthemealiasesrequestrequesttypedef).
+1. See [:material-code-braces: ListThemeAliasesResponseTypeDef](./type_defs.md#listthemealiasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThemeAliasesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+}
 
-Returns
-[ListThemeAliasesResponseTypeDef](./type_defs.md#listthemealiasesresponsetypedef).
+parent.list_theme_aliases(**kwargs)
+```
 
-<a id="list\_theme\_versions"></a>
+1. See [:material-code-braces: ListThemeAliasesRequestRequestTypeDef](./type_defs.md#listthemealiasesrequestrequesttypedef) 
 
-### list_theme_versions
+### list\_theme\_versions
 
-Lists all the versions of the themes in the current Amazon Web Services
-account.
+Lists all the versions of the themes in the current Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").list_theme_versions` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_theme_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_versions)
 
-Boto3 documentation:
-[QuickSight.Client.list_theme_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_versions)
+```python title="Method definition"
+def list_theme_versions(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListThemeVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThemeVersionsRequestRequestTypeDef](./type_defs.md#listthemeversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThemeVersionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+}
 
-Returns
-[ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef).
+parent.list_theme_versions(**kwargs)
+```
 
-<a id="list\_themes"></a>
+1. See [:material-code-braces: ListThemeVersionsRequestRequestTypeDef](./type_defs.md#listthemeversionsrequestrequesttypedef) 
 
-### list_themes
+### list\_themes
 
 Lists all the themes in the current Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").list_themes` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_themes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_themes)
 
-Boto3 documentation:
-[QuickSight.Client.list_themes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_themes)
+```python title="Method definition"
+def list_themes(
+    self,
+    *,
+    AwsAccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Type: ThemeTypeType = ...,  # (1)
+) -> ListThemesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListThemesRequestRequestTypeDef](./type_defs.md#listthemesrequestrequesttypedef).
+1. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
+2. See [:material-code-braces: ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Type`: [ThemeTypeType](./literals.md#themetypetype)
+```python title="Usage example with kwargs"
+kwargs: ListThemesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef).
+parent.list_themes(**kwargs)
+```
 
-<a id="list\_user\_groups"></a>
+1. See [:material-code-braces: ListThemesRequestRequestTypeDef](./type_defs.md#listthemesrequestrequesttypedef) 
 
-### list_user_groups
+### list\_user\_groups
 
 Lists the Amazon QuickSight groups that an Amazon QuickSight user is a member
 of.
 
-Type annotations for `boto3.client("quicksight").list_user_groups` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_user_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_user_groups)
 
-Boto3 documentation:
-[QuickSight.Client.list_user_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_user_groups)
+```python title="Method definition"
+def list_user_groups(
+    self,
+    *,
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListUserGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserGroupsRequestRequestTypeDef](./type_defs.md#listusergroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserGroupsResponseTypeDef](./type_defs.md#listusergroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUserGroupsRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[ListUserGroupsResponseTypeDef](./type_defs.md#listusergroupsresponsetypedef).
+parent.list_user_groups(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListUserGroupsRequestRequestTypeDef](./type_defs.md#listusergroupsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Returns a list of all of the Amazon QuickSight users belonging to this account.
 
-Type annotations for `boto3.client("quicksight").list_users` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_users)
 
-Boto3 documentation:
-[QuickSight.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="register\_user"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### register_user
+### register\_user
 
 .
 
-Type annotations for `boto3.client("quicksight").register_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").register_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)
 
-Boto3 documentation:
-[QuickSight.Client.register_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)
+```python title="Method definition"
+def register_user(
+    self,
+    *,
+    IdentityType: IdentityTypeType,  # (1)
+    Email: str,
+    UserRole: UserRoleType,  # (2)
+    AwsAccountId: str,
+    Namespace: str,
+    IamArn: str = ...,
+    SessionName: str = ...,
+    UserName: str = ...,
+    CustomPermissionsName: str = ...,
+    ExternalLoginFederationProviderType: str = ...,
+    CustomFederationProviderUrl: str = ...,
+    ExternalLoginId: str = ...,
+) -> RegisterUserResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RegisterUserRequestRequestTypeDef](./type_defs.md#registeruserrequestrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+3. See [:material-code-braces: RegisterUserResponseTypeDef](./type_defs.md#registeruserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-  *(required)*
-- `Email`: `str` *(required)*
-- `UserRole`: [UserRoleType](./literals.md#userroletype) *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `IamArn`: `str`
-- `SessionName`: `str`
-- `UserName`: `str`
-- `CustomPermissionsName`: `str`
-- `ExternalLoginFederationProviderType`: `str`
-- `CustomFederationProviderUrl`: `str`
-- `ExternalLoginId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterUserRequestRequestTypeDef = {  # (1)
+    "IdentityType": ...,
+    "Email": ...,
+    "UserRole": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[RegisterUserResponseTypeDef](./type_defs.md#registeruserresponsetypedef).
+parent.register_user(**kwargs)
+```
 
-<a id="restore\_analysis"></a>
+1. See [:material-code-braces: RegisterUserRequestRequestTypeDef](./type_defs.md#registeruserrequestrequesttypedef) 
 
-### restore_analysis
+### restore\_analysis
 
 Restores an analysis.
 
-Type annotations for `boto3.client("quicksight").restore_analysis` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").restore_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
 
-Boto3 documentation:
-[QuickSight.Client.restore_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
+```python title="Method definition"
+def restore_analysis(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+) -> RestoreAnalysisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RestoreAnalysisRequestRequestTypeDef](./type_defs.md#restoreanalysisrequestrequesttypedef).
+1. See [:material-code-braces: RestoreAnalysisResponseTypeDef](./type_defs.md#restoreanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreAnalysisRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+}
 
-Returns
-[RestoreAnalysisResponseTypeDef](./type_defs.md#restoreanalysisresponsetypedef).
+parent.restore_analysis(**kwargs)
+```
 
-<a id="search\_analyses"></a>
+1. See [:material-code-braces: RestoreAnalysisRequestRequestTypeDef](./type_defs.md#restoreanalysisrequestrequesttypedef) 
 
-### search_analyses
+### search\_analyses
 
 Searches for analyses that belong to the user specified in the filter.
 
-Type annotations for `boto3.client("quicksight").search_analyses` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").search_analyses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_analyses)
 
-Boto3 documentation:
-[QuickSight.Client.search_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_analyses)
+```python title="Method definition"
+def search_analyses(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[AnalysisSearchFilterTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchAnalysesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchAnalysesRequestRequestTypeDef](./type_defs.md#searchanalysesrequestrequesttypedef).
+1. See [:material-code-braces: AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef) 
+2. See [:material-code-braces: SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchAnalysesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
 
-Returns
-[SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef).
+parent.search_analyses(**kwargs)
+```
 
-<a id="search\_dashboards"></a>
+1. See [:material-code-braces: SearchAnalysesRequestRequestTypeDef](./type_defs.md#searchanalysesrequestrequesttypedef) 
 
-### search_dashboards
+### search\_dashboards
 
 Searches for dashboards that belong to a user.
 
-Type annotations for `boto3.client("quicksight").search_dashboards` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").search_dashboards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_dashboards)
 
-Boto3 documentation:
-[QuickSight.Client.search_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_dashboards)
+```python title="Method definition"
+def search_dashboards(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[DashboardSearchFilterTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchDashboardsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchDashboardsRequestRequestTypeDef](./type_defs.md#searchdashboardsrequestrequesttypedef).
+1. See [:material-code-braces: DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef) 
+2. See [:material-code-braces: SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchDashboardsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
 
-Returns
-[SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef).
+parent.search_dashboards(**kwargs)
+```
 
-<a id="search\_folders"></a>
+1. See [:material-code-braces: SearchDashboardsRequestRequestTypeDef](./type_defs.md#searchdashboardsrequestrequesttypedef) 
 
-### search_folders
+### search\_folders
 
 Searches the subfolders in a folder.
 
-Type annotations for `boto3.client("quicksight").search_folders` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").search_folders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_folders)
 
-Boto3 documentation:
-[QuickSight.Client.search_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_folders)
+```python title="Method definition"
+def search_folders(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[FolderSearchFilterTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchFoldersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchFoldersRequestRequestTypeDef](./type_defs.md#searchfoldersrequestrequesttypedef).
+1. See [:material-code-braces: FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef) 
+2. See [:material-code-braces: SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchFoldersRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
 
-Returns
-[SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef).
+parent.search_folders(**kwargs)
+```
 
-<a id="search\_groups"></a>
+1. See [:material-code-braces: SearchFoldersRequestRequestTypeDef](./type_defs.md#searchfoldersrequestrequesttypedef) 
 
-### search_groups
+### search\_groups
 
 Use the `SearchGroups` operation to search groups in a specified Amazon
 QuickSight namespace using the supplied filters.
 
-Type annotations for `boto3.client("quicksight").search_groups` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").search_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_groups)
 
-Boto3 documentation:
-[QuickSight.Client.search_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_groups)
+```python title="Method definition"
+def search_groups(
+    self,
+    *,
+    AwsAccountId: str,
+    Namespace: str,
+    Filters: Sequence[GroupSearchFilterTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchGroupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchGroupsRequestRequestTypeDef](./type_defs.md#searchgroupsrequestrequesttypedef).
+1. See [:material-code-braces: GroupSearchFilterTypeDef](./type_defs.md#groupsearchfiltertypedef) 
+2. See [:material-code-braces: SearchGroupsResponseTypeDef](./type_defs.md#searchgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[GroupSearchFilterTypeDef](./type_defs.md#groupsearchfiltertypedef)\]
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchGroupsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Namespace": ...,
+    "Filters": ...,
+}
 
-Returns
-[SearchGroupsResponseTypeDef](./type_defs.md#searchgroupsresponsetypedef).
+parent.search_groups(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SearchGroupsRequestRequestTypeDef](./type_defs.md#searchgroupsrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight
 resource.
 
-Type annotations for `boto3.client("quicksight").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource)
 
-Boto3 documentation:
-[QuickSight.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> TagResourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns
-[TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag or tags from a resource.
 
-Type annotations for `boto3.client("quicksight").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource)
 
-Boto3 documentation:
-[QuickSight.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> UntagResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+1. See [:material-code-braces: UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns
-[UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_account\_customization"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_account_customization
+### update\_account\_customization
 
-Updates Amazon QuickSight customizations the current Amazon Web Services
-Region.
+Updates Amazon QuickSight customizations the current Amazon Web Services Region.
 
-Type annotations for `boto3.client("quicksight").update_account_customization`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_account_customization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
 
-Boto3 documentation:
-[QuickSight.Client.update_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
+```python title="Method definition"
+def update_account_customization(
+    self,
+    *,
+    AwsAccountId: str,
+    AccountCustomization: AccountCustomizationTypeDef,  # (1)
+    Namespace: str = ...,
+) -> UpdateAccountCustomizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountCustomizationRequestRequestTypeDef](./type_defs.md#updateaccountcustomizationrequestrequesttypedef).
+1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+2. See [:material-code-braces: UpdateAccountCustomizationResponseTypeDef](./type_defs.md#updateaccountcustomizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AccountCustomization`:
-  [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
-  *(required)*
-- `Namespace`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountCustomizationRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AccountCustomization": ...,
+}
 
-Returns
-[UpdateAccountCustomizationResponseTypeDef](./type_defs.md#updateaccountcustomizationresponsetypedef).
+parent.update_account_customization(**kwargs)
+```
 
-<a id="update\_account\_settings"></a>
+1. See [:material-code-braces: UpdateAccountCustomizationRequestRequestTypeDef](./type_defs.md#updateaccountcustomizationrequestrequesttypedef) 
 
-### update_account_settings
+### update\_account\_settings
 
 Updates the Amazon QuickSight settings in your Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").update_account_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_settings)
 
-Boto3 documentation:
-[QuickSight.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_settings)
+```python title="Method definition"
+def update_account_settings(
+    self,
+    *,
+    AwsAccountId: str,
+    DefaultNamespace: str,
+    NotificationEmail: str = ...,
+) -> UpdateAccountSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountSettingsRequestRequestTypeDef](./type_defs.md#updateaccountsettingsrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAccountSettingsResponseTypeDef](./type_defs.md#updateaccountsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DefaultNamespace`: `str` *(required)*
-- `NotificationEmail`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountSettingsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DefaultNamespace": ...,
+}
 
-Returns
-[UpdateAccountSettingsResponseTypeDef](./type_defs.md#updateaccountsettingsresponsetypedef).
+parent.update_account_settings(**kwargs)
+```
 
-<a id="update\_analysis"></a>
+1. See [:material-code-braces: UpdateAccountSettingsRequestRequestTypeDef](./type_defs.md#updateaccountsettingsrequestrequesttypedef) 
 
-### update_analysis
+### update\_analysis
 
-Updates an analysis in Amazon QuickSight See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/quicksight-2018-04-01/UpdateAnalysis).
+Updates an analysis in Amazon QuickSight See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/quicksight-2018-04-01/UpdateAnalysis).
 
-Type annotations for `boto3.client("quicksight").update_analysis` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis)
 
-Boto3 documentation:
-[QuickSight.Client.update_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis)
+```python title="Method definition"
+def update_analysis(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+    Name: str,
+    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
+    Parameters: ParametersTypeDef = ...,  # (2)
+    ThemeArn: str = ...,
+) -> UpdateAnalysisResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAnalysisRequestRequestTypeDef](./type_defs.md#updateanalysisrequestrequesttypedef).
+1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: UpdateAnalysisResponseTypeDef](./type_defs.md#updateanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `SourceEntity`:
-  [AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef)
-  *(required)*
-- `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
-- `ThemeArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAnalysisRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+    "Name": ...,
+    "SourceEntity": ...,
+}
 
-Returns
-[UpdateAnalysisResponseTypeDef](./type_defs.md#updateanalysisresponsetypedef).
+parent.update_analysis(**kwargs)
+```
 
-<a id="update\_analysis\_permissions"></a>
+1. See [:material-code-braces: UpdateAnalysisRequestRequestTypeDef](./type_defs.md#updateanalysisrequestrequesttypedef) 
 
-### update_analysis_permissions
+### update\_analysis\_permissions
 
 Updates the read and write permissions for an analysis.
 
-Type annotations for `boto3.client("quicksight").update_analysis_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_analysis_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions)
+```python title="Method definition"
+def update_analysis_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateAnalysisPermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAnalysisPermissionsRequestRequestTypeDef](./type_defs.md#updateanalysispermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: UpdateAnalysisPermissionsResponseTypeDef](./type_defs.md#updateanalysispermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AnalysisId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateAnalysisPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+}
 
-Returns
-[UpdateAnalysisPermissionsResponseTypeDef](./type_defs.md#updateanalysispermissionsresponsetypedef).
+parent.update_analysis_permissions(**kwargs)
+```
 
-<a id="update\_dashboard"></a>
+1. See [:material-code-braces: UpdateAnalysisPermissionsRequestRequestTypeDef](./type_defs.md#updateanalysispermissionsrequestrequesttypedef) 
 
-### update_dashboard
+### update\_dashboard
 
 Updates a dashboard in an Amazon Web Services account.
 
-Type annotations for `boto3.client("quicksight").update_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard)
 
-Boto3 documentation:
-[QuickSight.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard)
+```python title="Method definition"
+def update_dashboard(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    Name: str,
+    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
+    Parameters: ParametersTypeDef = ...,  # (2)
+    VersionDescription: str = ...,
+    DashboardPublishOptions: DashboardPublishOptionsTypeDef = ...,  # (3)
+    ThemeArn: str = ...,
+) -> UpdateDashboardResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDashboardRequestRequestTypeDef](./type_defs.md#updatedashboardrequestrequesttypedef).
+1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+4. See [:material-code-braces: UpdateDashboardResponseTypeDef](./type_defs.md#updatedashboardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `SourceEntity`:
-  [DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef)
-  *(required)*
-- `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
-- `VersionDescription`: `str`
-- `DashboardPublishOptions`:
-  [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
-- `ThemeArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDashboardRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+    "Name": ...,
+    "SourceEntity": ...,
+}
 
-Returns
-[UpdateDashboardResponseTypeDef](./type_defs.md#updatedashboardresponsetypedef).
+parent.update_dashboard(**kwargs)
+```
 
-<a id="update\_dashboard\_permissions"></a>
+1. See [:material-code-braces: UpdateDashboardRequestRequestTypeDef](./type_defs.md#updatedashboardrequestrequesttypedef) 
 
-### update_dashboard_permissions
+### update\_dashboard\_permissions
 
 Updates read and write permissions on a dashboard.
 
-Type annotations for `boto3.client("quicksight").update_dashboard_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_dashboard_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions)
+```python title="Method definition"
+def update_dashboard_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    GrantLinkPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokeLinkPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateDashboardPermissionsResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDashboardPermissionsRequestRequestTypeDef](./type_defs.md#updatedashboardpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+4. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+5. See [:material-code-braces: UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `GrantLinkPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokeLinkPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateDashboardPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+}
 
-Returns
-[UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef).
+parent.update_dashboard_permissions(**kwargs)
+```
 
-<a id="update\_dashboard\_published\_version"></a>
+1. See [:material-code-braces: UpdateDashboardPermissionsRequestRequestTypeDef](./type_defs.md#updatedashboardpermissionsrequestrequesttypedef) 
 
-### update_dashboard_published_version
+### update\_dashboard\_published\_version
 
 Updates the published version of a dashboard.
 
-Type annotations for
-`boto3.client("quicksight").update_dashboard_published_version` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_dashboard_published_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version)
 
-Boto3 documentation:
-[QuickSight.Client.update_dashboard_published_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version)
+```python title="Method definition"
+def update_dashboard_published_version(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: int,
+) -> UpdateDashboardPublishedVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDashboardPublishedVersionRequestRequestTypeDef](./type_defs.md#updatedashboardpublishedversionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateDashboardPublishedVersionResponseTypeDef](./type_defs.md#updatedashboardpublishedversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DashboardId`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDashboardPublishedVersionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+    "VersionNumber": ...,
+}
 
-Returns
-[UpdateDashboardPublishedVersionResponseTypeDef](./type_defs.md#updatedashboardpublishedversionresponsetypedef).
+parent.update_dashboard_published_version(**kwargs)
+```
 
-<a id="update\_data\_set"></a>
+1. See [:material-code-braces: UpdateDashboardPublishedVersionRequestRequestTypeDef](./type_defs.md#updatedashboardpublishedversionrequestrequesttypedef) 
 
-### update_data_set
+### update\_data\_set
 
 Updates a dataset.
 
-Type annotations for `boto3.client("quicksight").update_data_set` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set)
 
-Boto3 documentation:
-[QuickSight.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set)
+```python title="Method definition"
+def update_data_set(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+    Name: str,
+    PhysicalTableMap: Mapping[str, PhysicalTableTypeDef],  # (1)
+    ImportMode: DataSetImportModeType,  # (2)
+    LogicalTableMap: Mapping[str, LogicalTableTypeDef] = ...,  # (3)
+    ColumnGroups: Sequence[ColumnGroupTypeDef] = ...,  # (4)
+    FieldFolders: Mapping[str, FieldFolderTypeDef] = ...,  # (5)
+    RowLevelPermissionDataSet: RowLevelPermissionDataSetTypeDef = ...,  # (6)
+    RowLevelPermissionTagConfiguration: RowLevelPermissionTagConfigurationTypeDef = ...,  # (7)
+    ColumnLevelPermissionRules: Sequence[ColumnLevelPermissionRuleTypeDef] = ...,  # (8)
+    DataSetUsageConfiguration: DataSetUsageConfigurationTypeDef = ...,  # (9)
+) -> UpdateDataSetResponseTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
+1. See [:material-code-braces: PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef) 
+2. See [:material-code-brackets: DataSetImportModeType](./literals.md#datasetimportmodetype) 
+3. See [:material-code-braces: LogicalTableTypeDef](./type_defs.md#logicaltabletypedef) 
+4. See [:material-code-braces: ColumnGroupTypeDef](./type_defs.md#columngrouptypedef) 
+5. See [:material-code-braces: FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef) 
+6. See [:material-code-braces: RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef) 
+7. See [:material-code-braces: RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef) 
+8. See [:material-code-braces: ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef) 
+9. See [:material-code-braces: DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef) 
+10. See [:material-code-braces: UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `PhysicalTableMap`: `Mapping`\[`str`,
-  [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\] *(required)*
-- `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
-  *(required)*
-- `LogicalTableMap`: `Mapping`\[`str`,
-  [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
-- `ColumnGroups`:
-  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Mapping`\[`str`,
-  [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
-- `RowLevelPermissionDataSet`:
-  [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
-- `RowLevelPermissionTagConfiguration`:
-  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
-- `ColumnLevelPermissionRules`:
-  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
-- `DataSetUsageConfiguration`:
-  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSetRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+    "Name": ...,
+    "PhysicalTableMap": ...,
+    "ImportMode": ...,
+}
 
-Returns
-[UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+parent.update_data_set(**kwargs)
+```
 
-<a id="update\_data\_set\_permissions"></a>
+1. See [:material-code-braces: UpdateDataSetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef) 
 
-### update_data_set_permissions
+### update\_data\_set\_permissions
 
 Updates the permissions on a dataset.
 
-Type annotations for `boto3.client("quicksight").update_data_set_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_data_set_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions)
+```python title="Method definition"
+def update_data_set_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSetId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateDataSetPermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSetPermissionsRequestRequestTypeDef](./type_defs.md#updatedatasetpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: UpdateDataSetPermissionsResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSetPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSetId": ...,
+}
 
-Returns
-[UpdateDataSetPermissionsResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponsetypedef).
+parent.update_data_set_permissions(**kwargs)
+```
 
-<a id="update\_data\_source"></a>
+1. See [:material-code-braces: UpdateDataSetPermissionsRequestRequestTypeDef](./type_defs.md#updatedatasetpermissionsrequestrequesttypedef) 
 
-### update_data_source
+### update\_data\_source
 
 Updates a data source.
 
-Type annotations for `boto3.client("quicksight").update_data_source` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source)
 
-Boto3 documentation:
-[QuickSight.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source)
+```python title="Method definition"
+def update_data_source(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSourceId: str,
+    Name: str,
+    DataSourceParameters: DataSourceParametersTypeDef = ...,  # (1)
+    Credentials: DataSourceCredentialsTypeDef = ...,  # (2)
+    VpcConnectionProperties: VpcConnectionPropertiesTypeDef = ...,  # (3)
+    SslProperties: SslPropertiesTypeDef = ...,  # (4)
+) -> UpdateDataSourceResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef).
+1. See [:material-code-braces: DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef) 
+2. See [:material-code-braces: DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef) 
+3. See [:material-code-braces: VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef) 
+4. See [:material-code-braces: SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef) 
+5. See [:material-code-braces: UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSourceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `DataSourceParameters`:
-  [DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)
-- `Credentials`:
-  [DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef)
-- `VpcConnectionProperties`:
-  [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
-- `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSourceRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSourceId": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
+parent.update_data_source(**kwargs)
+```
 
-<a id="update\_data\_source\_permissions"></a>
+1. See [:material-code-braces: UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef) 
 
-### update_data_source_permissions
+### update\_data\_source\_permissions
 
 Updates the permissions to a data source.
 
-Type annotations for
-`boto3.client("quicksight").update_data_source_permissions` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_data_source_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions)
+```python title="Method definition"
+def update_data_source_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    DataSourceId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateDataSourcePermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSourcePermissionsRequestRequestTypeDef](./type_defs.md#updatedatasourcepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `DataSourceId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSourcePermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DataSourceId": ...,
+}
 
-Returns
-[UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef).
+parent.update_data_source_permissions(**kwargs)
+```
 
-<a id="update\_folder"></a>
+1. See [:material-code-braces: UpdateDataSourcePermissionsRequestRequestTypeDef](./type_defs.md#updatedatasourcepermissionsrequestrequesttypedef) 
 
-### update_folder
+### update\_folder
 
 Updates the name of a folder.
 
-Type annotations for `boto3.client("quicksight").update_folder` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder)
 
-Boto3 documentation:
-[QuickSight.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder)
+```python title="Method definition"
+def update_folder(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+    Name: str,
+) -> UpdateFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFolderRequestRequestTypeDef](./type_defs.md#updatefolderrequestrequesttypedef).
+1. See [:material-code-braces: UpdateFolderResponseTypeDef](./type_defs.md#updatefolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateFolderRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateFolderResponseTypeDef](./type_defs.md#updatefolderresponsetypedef).
+parent.update_folder(**kwargs)
+```
 
-<a id="update\_folder\_permissions"></a>
+1. See [:material-code-braces: UpdateFolderRequestRequestTypeDef](./type_defs.md#updatefolderrequestrequesttypedef) 
 
-### update_folder_permissions
+### update\_folder\_permissions
 
 Updates permissions of a folder.
 
-Type annotations for `boto3.client("quicksight").update_folder_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_folder_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_folder_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder_permissions)
+```python title="Method definition"
+def update_folder_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    FolderId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateFolderPermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFolderPermissionsRequestRequestTypeDef](./type_defs.md#updatefolderpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `FolderId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFolderPermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "FolderId": ...,
+}
 
-Returns
-[UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef).
+parent.update_folder_permissions(**kwargs)
+```
 
-<a id="update\_group"></a>
+1. See [:material-code-braces: UpdateFolderPermissionsRequestRequestTypeDef](./type_defs.md#updatefolderpermissionsrequestrequesttypedef) 
 
-### update_group
+### update\_group
 
 Changes a group description.
 
-Type annotations for `boto3.client("quicksight").update_group` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_group)
 
-Boto3 documentation:
-[QuickSight.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_group)
+```python title="Method definition"
+def update_group(
+    self,
+    *,
+    GroupName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    Description: str = ...,
+) -> UpdateGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
+1. See [:material-code-braces: UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+}
 
-Returns
-[UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef).
+parent.update_group(**kwargs)
+```
 
-<a id="update\_iam\_policy\_assignment"></a>
+1. See [:material-code-braces: UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef) 
 
-### update_iam_policy_assignment
+### update\_iam\_policy\_assignment
 
 Updates an existing IAM policy assignment.
 
-Type annotations for `boto3.client("quicksight").update_iam_policy_assignment`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_iam_policy_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment)
 
-Boto3 documentation:
-[QuickSight.Client.update_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment)
+```python title="Method definition"
+def update_iam_policy_assignment(
+    self,
+    *,
+    AwsAccountId: str,
+    AssignmentName: str,
+    Namespace: str,
+    AssignmentStatus: AssignmentStatusType = ...,  # (1)
+    PolicyArn: str = ...,
+    Identities: Mapping[str, Sequence[str]] = ...,
+) -> UpdateIAMPolicyAssignmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#updateiampolicyassignmentrequestrequesttypedef).
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `AssignmentName`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `AssignmentStatus`:
-  [AssignmentStatusType](./literals.md#assignmentstatustype)
-- `PolicyArn`: `str`
-- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+```python title="Usage example with kwargs"
+kwargs: UpdateIAMPolicyAssignmentRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AssignmentName": ...,
+    "Namespace": ...,
+}
 
-Returns
-[UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef).
+parent.update_iam_policy_assignment(**kwargs)
+```
 
-<a id="update\_ip\_restriction"></a>
+1. See [:material-code-braces: UpdateIAMPolicyAssignmentRequestRequestTypeDef](./type_defs.md#updateiampolicyassignmentrequestrequesttypedef) 
 
-### update_ip_restriction
+### update\_ip\_restriction
 
 Updates the content and status of IP rules.
 
-Type annotations for `boto3.client("quicksight").update_ip_restriction` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_ip_restriction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_ip_restriction)
 
-Boto3 documentation:
-[QuickSight.Client.update_ip_restriction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_ip_restriction)
+```python title="Method definition"
+def update_ip_restriction(
+    self,
+    *,
+    AwsAccountId: str,
+    IpRestrictionRuleMap: Mapping[str, str] = ...,
+    Enabled: bool = ...,
+) -> UpdateIpRestrictionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIpRestrictionRequestRequestTypeDef](./type_defs.md#updateiprestrictionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateIpRestrictionResponseTypeDef](./type_defs.md#updateiprestrictionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `IpRestrictionRuleMap`: `Mapping`\[`str`, `str`\]
-- `Enabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateIpRestrictionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
 
-Returns
-[UpdateIpRestrictionResponseTypeDef](./type_defs.md#updateiprestrictionresponsetypedef).
+parent.update_ip_restriction(**kwargs)
+```
 
-<a id="update\_template"></a>
+1. See [:material-code-braces: UpdateIpRestrictionRequestRequestTypeDef](./type_defs.md#updateiprestrictionrequestrequesttypedef) 
 
-### update_template
+### update\_template
 
 Updates a template from an existing Amazon QuickSight analysis or another
 template.
 
-Type annotations for `boto3.client("quicksight").update_template` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template)
 
-Boto3 documentation:
-[QuickSight.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template)
+```python title="Method definition"
+def update_template(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
+    VersionDescription: str = ...,
+    Name: str = ...,
+) -> UpdateTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTemplateRequestRequestTypeDef](./type_defs.md#updatetemplaterequestrequesttypedef).
+1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+2. See [:material-code-braces: UpdateTemplateResponseTypeDef](./type_defs.md#updatetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `SourceEntity`:
-  [TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef)
-  *(required)*
-- `VersionDescription`: `str`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTemplateRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+    "SourceEntity": ...,
+}
 
-Returns
-[UpdateTemplateResponseTypeDef](./type_defs.md#updatetemplateresponsetypedef).
+parent.update_template(**kwargs)
+```
 
-<a id="update\_template\_alias"></a>
+1. See [:material-code-braces: UpdateTemplateRequestRequestTypeDef](./type_defs.md#updatetemplaterequestrequesttypedef) 
 
-### update_template_alias
+### update\_template\_alias
 
 Updates the template alias of a template.
 
-Type annotations for `boto3.client("quicksight").update_template_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_template_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_alias)
 
-Boto3 documentation:
-[QuickSight.Client.update_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_alias)
+```python title="Method definition"
+def update_template_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    AliasName: str,
+    TemplateVersionNumber: int,
+) -> UpdateTemplateAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTemplateAliasRequestRequestTypeDef](./type_defs.md#updatetemplatealiasrequestrequesttypedef).
+1. See [:material-code-braces: UpdateTemplateAliasResponseTypeDef](./type_defs.md#updatetemplatealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
-- `TemplateVersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTemplateAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+    "AliasName": ...,
+    "TemplateVersionNumber": ...,
+}
 
-Returns
-[UpdateTemplateAliasResponseTypeDef](./type_defs.md#updatetemplatealiasresponsetypedef).
+parent.update_template_alias(**kwargs)
+```
 
-<a id="update\_template\_permissions"></a>
+1. See [:material-code-braces: UpdateTemplateAliasRequestRequestTypeDef](./type_defs.md#updatetemplatealiasrequestrequesttypedef) 
 
-### update_template_permissions
+### update\_template\_permissions
 
 Updates the resource permissions for a template.
 
-Type annotations for `boto3.client("quicksight").update_template_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_template_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_permissions)
+```python title="Method definition"
+def update_template_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateTemplatePermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTemplatePermissionsRequestRequestTypeDef](./type_defs.md#updatetemplatepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: UpdateTemplatePermissionsResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `TemplateId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateTemplatePermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
 
-Returns
-[UpdateTemplatePermissionsResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponsetypedef).
+parent.update_template_permissions(**kwargs)
+```
 
-<a id="update\_theme"></a>
+1. See [:material-code-braces: UpdateTemplatePermissionsRequestRequestTypeDef](./type_defs.md#updatetemplatepermissionsrequestrequesttypedef) 
 
-### update_theme
+### update\_theme
 
 Updates a theme.
 
-Type annotations for `boto3.client("quicksight").update_theme` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_theme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme)
 
-Boto3 documentation:
-[QuickSight.Client.update_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme)
+```python title="Method definition"
+def update_theme(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    BaseThemeId: str,
+    Name: str = ...,
+    VersionDescription: str = ...,
+    Configuration: ThemeConfigurationTypeDef = ...,  # (1)
+) -> UpdateThemeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateThemeRequestRequestTypeDef](./type_defs.md#updatethemerequestrequesttypedef).
+1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
+2. See [:material-code-braces: UpdateThemeResponseTypeDef](./type_defs.md#updatethemeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `BaseThemeId`: `str` *(required)*
-- `Name`: `str`
-- `VersionDescription`: `str`
-- `Configuration`:
-  [ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateThemeRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+    "BaseThemeId": ...,
+}
 
-Returns
-[UpdateThemeResponseTypeDef](./type_defs.md#updatethemeresponsetypedef).
+parent.update_theme(**kwargs)
+```
 
-<a id="update\_theme\_alias"></a>
+1. See [:material-code-braces: UpdateThemeRequestRequestTypeDef](./type_defs.md#updatethemerequestrequesttypedef) 
 
-### update_theme_alias
+### update\_theme\_alias
 
 Updates an alias of a theme.
 
-Type annotations for `boto3.client("quicksight").update_theme_alias` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_theme_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_alias)
 
-Boto3 documentation:
-[QuickSight.Client.update_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_alias)
+```python title="Method definition"
+def update_theme_alias(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    AliasName: str,
+    ThemeVersionNumber: int,
+) -> UpdateThemeAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateThemeAliasRequestRequestTypeDef](./type_defs.md#updatethemealiasrequestrequesttypedef).
+1. See [:material-code-braces: UpdateThemeAliasResponseTypeDef](./type_defs.md#updatethemealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `AliasName`: `str` *(required)*
-- `ThemeVersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateThemeAliasRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+    "AliasName": ...,
+    "ThemeVersionNumber": ...,
+}
 
-Returns
-[UpdateThemeAliasResponseTypeDef](./type_defs.md#updatethemealiasresponsetypedef).
+parent.update_theme_alias(**kwargs)
+```
 
-<a id="update\_theme\_permissions"></a>
+1. See [:material-code-braces: UpdateThemeAliasRequestRequestTypeDef](./type_defs.md#updatethemealiasrequestrequesttypedef) 
 
-### update_theme_permissions
+### update\_theme\_permissions
 
 Updates the resource permissions for a theme.
 
-Type annotations for `boto3.client("quicksight").update_theme_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_theme_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions)
 
-Boto3 documentation:
-[QuickSight.Client.update_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions)
+```python title="Method definition"
+def update_theme_permissions(
+    self,
+    *,
+    AwsAccountId: str,
+    ThemeId: str,
+    GrantPermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    RevokePermissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+) -> UpdateThemePermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateThemePermissionsRequestRequestTypeDef](./type_defs.md#updatethemepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: UpdateThemePermissionsResponseTypeDef](./type_defs.md#updatethemepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsAccountId`: `str` *(required)*
-- `ThemeId`: `str` *(required)*
-- `GrantPermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `RevokePermissions`:
-  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateThemePermissionsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "ThemeId": ...,
+}
 
-Returns
-[UpdateThemePermissionsResponseTypeDef](./type_defs.md#updatethemepermissionsresponsetypedef).
+parent.update_theme_permissions(**kwargs)
+```
 
-<a id="update\_user"></a>
+1. See [:material-code-braces: UpdateThemePermissionsRequestRequestTypeDef](./type_defs.md#updatethemepermissionsrequestrequesttypedef) 
 
-### update_user
+### update\_user
 
 Updates an Amazon QuickSight user.
 
-Type annotations for `boto3.client("quicksight").update_user` method.
+Type annotations and code completion for `#!python boto3.client("quicksight").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_user)
 
-Boto3 documentation:
-[QuickSight.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    UserName: str,
+    AwsAccountId: str,
+    Namespace: str,
+    Email: str,
+    Role: UserRoleType,  # (1)
+    CustomPermissionsName: str = ...,
+    UnapplyCustomPermissions: bool = ...,
+    ExternalLoginFederationProviderType: str = ...,
+    CustomFederationProviderUrl: str = ...,
+    ExternalLoginId: str = ...,
+) -> UpdateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
+1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+2. See [:material-code-braces: UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AwsAccountId`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `Email`: `str` *(required)*
-- `Role`: [UserRoleType](./literals.md#userroletype) *(required)*
-- `CustomPermissionsName`: `str`
-- `UnapplyCustomPermissions`: `bool`
-- `ExternalLoginFederationProviderType`: `str`
-- `CustomFederationProviderUrl`: `str`
-- `ExternalLoginId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AwsAccountId": ...,
+    "Namespace": ...,
+    "Email": ...,
+    "Role": ...,
+}
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+parent.update_user(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("quicksight").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("quicksight").get_paginator` method with overloads.
 
-- `client.get_paginator("list_analyses")` ->
-  [ListAnalysesPaginator](./paginators.md#listanalysespaginator)
-- `client.get_paginator("list_dashboard_versions")` ->
-  [ListDashboardVersionsPaginator](./paginators.md#listdashboardversionspaginator)
-- `client.get_paginator("list_dashboards")` ->
-  [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
-- `client.get_paginator("list_data_sets")` ->
-  [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_data_sources")` ->
-  [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
-- `client.get_paginator("list_ingestions")` ->
-  [ListIngestionsPaginator](./paginators.md#listingestionspaginator)
-- `client.get_paginator("list_namespaces")` ->
-  [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
-- `client.get_paginator("list_template_aliases")` ->
-  [ListTemplateAliasesPaginator](./paginators.md#listtemplatealiasespaginator)
-- `client.get_paginator("list_template_versions")` ->
-  [ListTemplateVersionsPaginator](./paginators.md#listtemplateversionspaginator)
-- `client.get_paginator("list_templates")` ->
-  [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
-- `client.get_paginator("list_theme_versions")` ->
-  [ListThemeVersionsPaginator](./paginators.md#listthemeversionspaginator)
-- `client.get_paginator("list_themes")` ->
-  [ListThemesPaginator](./paginators.md#listthemespaginator)
-- `client.get_paginator("search_analyses")` ->
-  [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
-- `client.get_paginator("search_dashboards")` ->
-  [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
+- `client.get_paginator("list_analyses")` -> [ListAnalysesPaginator](./paginators.md#listanalysespaginator)
+- `client.get_paginator("list_dashboard_versions")` -> [ListDashboardVersionsPaginator](./paginators.md#listdashboardversionspaginator)
+- `client.get_paginator("list_dashboards")` -> [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
+- `client.get_paginator("list_data_sets")` -> [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_data_sources")` -> [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
+- `client.get_paginator("list_ingestions")` -> [ListIngestionsPaginator](./paginators.md#listingestionspaginator)
+- `client.get_paginator("list_namespaces")` -> [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
+- `client.get_paginator("list_template_aliases")` -> [ListTemplateAliasesPaginator](./paginators.md#listtemplatealiasespaginator)
+- `client.get_paginator("list_template_versions")` -> [ListTemplateVersionsPaginator](./paginators.md#listtemplateversionspaginator)
+- `client.get_paginator("list_templates")` -> [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
+- `client.get_paginator("list_theme_versions")` -> [ListThemeVersionsPaginator](./paginators.md#listthemeversionspaginator)
+- `client.get_paginator("list_themes")` -> [ListThemesPaginator](./paginators.md#listthemespaginator)
+- `client.get_paginator("search_analyses")` -> [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
+- `client.get_paginator("search_dashboards")` -> [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
+
+
+

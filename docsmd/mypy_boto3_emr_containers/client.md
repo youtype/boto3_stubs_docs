@@ -1,47 +1,18 @@
-<a id="emrcontainersclient-for-boto3-emrcontainers-module"></a>
-
-# EMRContainersClient for boto3 EMRContainers module
+# EMRContainersClient
 
 > [Index](../README.md) > [EMRContainers](./README.md) > EMRContainersClient
 
-Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
-type annotations stubs module
-[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+!!! note ""
 
-- [EMRContainersClient for boto3 EMRContainers module](#emrcontainersclient-for-boto3-emrcontainers-module)
-  - [EMRContainersClient](#emrcontainersclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_job_run](#cancel_job_run)
-    - [create_managed_endpoint](#create_managed_endpoint)
-    - [create_virtual_cluster](#create_virtual_cluster)
-    - [delete_managed_endpoint](#delete_managed_endpoint)
-    - [delete_virtual_cluster](#delete_virtual_cluster)
-    - [describe_job_run](#describe_job_run)
-    - [describe_managed_endpoint](#describe_managed_endpoint)
-    - [describe_virtual_cluster](#describe_virtual_cluster)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_job_runs](#list_job_runs)
-    - [list_managed_endpoints](#list_managed_endpoints)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_virtual_clusters](#list_virtual_clusters)
-    - [start_job_run](#start_job_run)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="emrcontainersclient"></a>
+    Auto-generated documentation for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+    type annotations stubs module [mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 ## EMRContainersClient
 
-Type annotations for `boto3.client("emr-containers")`
+Type annotations and code completion for `#!python boto3.client("emr-containers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_emr_containers.client import EMRContainersClient
 
@@ -49,465 +20,581 @@ def get_emr-containers_client() -> EMRContainersClient:
     return Session().client("emr-containers")
 ```
 
-Boto3 documentation:
-[EMRContainers.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("emr-containers").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("emr-containers")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_emr_containers.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-EMRContainersClient exceptions.
-
-Type annotations for `boto3.client("emr-containers").exceptions` method.
-
-Boto3 documentation:
-[EMRContainers.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("emr-containers").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate)
 
-Boto3 documentation:
-[EMRContainers.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_job\_run"></a>
-
-### cancel_job_run
+### cancel\_job\_run
 
 Cancels a job run.
 
-Type annotations for `boto3.client("emr-containers").cancel_job_run` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").cancel_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
 
-Boto3 documentation:
-[EMRContainers.Client.cancel_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
+```python title="Method definition"
+def cancel_job_run(
+    self,
+    *,
+    id: str,
+    virtualClusterId: str,
+) -> CancelJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRunRequestRequestTypeDef](./type_defs.md#canceljobrunrequestrequesttypedef).
+1. See [:material-code-braces: CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `virtualClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJobRunRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "virtualClusterId": ...,
+}
 
-Returns
-[CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef).
+parent.cancel_job_run(**kwargs)
+```
 
-<a id="create\_managed\_endpoint"></a>
+1. See [:material-code-braces: CancelJobRunRequestRequestTypeDef](./type_defs.md#canceljobrunrequestrequesttypedef) 
 
-### create_managed_endpoint
+### create\_managed\_endpoint
 
 Creates a managed endpoint.
 
-Type annotations for `boto3.client("emr-containers").create_managed_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").create_managed_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
 
-Boto3 documentation:
-[EMRContainers.Client.create_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
+```python title="Method definition"
+def create_managed_endpoint(
+    self,
+    *,
+    name: str,
+    virtualClusterId: str,
+    type: str,
+    releaseLabel: str,
+    executionRoleArn: str,
+    clientToken: str,
+    certificateArn: str = ...,
+    configurationOverrides: ConfigurationOverridesTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateManagedEndpointResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateManagedEndpointRequestRequestTypeDef](./type_defs.md#createmanagedendpointrequestrequesttypedef).
+1. See [:material-code-braces: ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef) 
+2. See [:material-code-braces: CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `virtualClusterId`: `str` *(required)*
-- `type`: `str` *(required)*
-- `releaseLabel`: `str` *(required)*
-- `executionRoleArn`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `certificateArn`: `str`
-- `configurationOverrides`:
-  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateManagedEndpointRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "virtualClusterId": ...,
+    "type": ...,
+    "releaseLabel": ...,
+    "executionRoleArn": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef).
+parent.create_managed_endpoint(**kwargs)
+```
 
-<a id="create\_virtual\_cluster"></a>
+1. See [:material-code-braces: CreateManagedEndpointRequestRequestTypeDef](./type_defs.md#createmanagedendpointrequestrequesttypedef) 
 
-### create_virtual_cluster
+### create\_virtual\_cluster
 
 Creates a virtual cluster.
 
-Type annotations for `boto3.client("emr-containers").create_virtual_cluster`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").create_virtual_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
 
-Boto3 documentation:
-[EMRContainers.Client.create_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
+```python title="Method definition"
+def create_virtual_cluster(
+    self,
+    *,
+    name: str,
+    containerProvider: ContainerProviderTypeDef,  # (1)
+    clientToken: str,
+    tags: Mapping[str, str] = ...,
+) -> CreateVirtualClusterResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVirtualClusterRequestRequestTypeDef](./type_defs.md#createvirtualclusterrequestrequesttypedef).
+1. See [:material-code-braces: ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef) 
+2. See [:material-code-braces: CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `containerProvider`:
-  [ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef)
-  *(required)*
-- `clientToken`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateVirtualClusterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "containerProvider": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef).
+parent.create_virtual_cluster(**kwargs)
+```
 
-<a id="delete\_managed\_endpoint"></a>
+1. See [:material-code-braces: CreateVirtualClusterRequestRequestTypeDef](./type_defs.md#createvirtualclusterrequestrequesttypedef) 
 
-### delete_managed_endpoint
+### delete\_managed\_endpoint
 
 Deletes a managed endpoint.
 
-Type annotations for `boto3.client("emr-containers").delete_managed_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").delete_managed_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
 
-Boto3 documentation:
-[EMRContainers.Client.delete_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
+```python title="Method definition"
+def delete_managed_endpoint(
+    self,
+    *,
+    id: str,
+    virtualClusterId: str,
+) -> DeleteManagedEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteManagedEndpointRequestRequestTypeDef](./type_defs.md#deletemanagedendpointrequestrequesttypedef).
+1. See [:material-code-braces: DeleteManagedEndpointResponseTypeDef](./type_defs.md#deletemanagedendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `virtualClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteManagedEndpointRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "virtualClusterId": ...,
+}
 
-Returns
-[DeleteManagedEndpointResponseTypeDef](./type_defs.md#deletemanagedendpointresponsetypedef).
+parent.delete_managed_endpoint(**kwargs)
+```
 
-<a id="delete\_virtual\_cluster"></a>
+1. See [:material-code-braces: DeleteManagedEndpointRequestRequestTypeDef](./type_defs.md#deletemanagedendpointrequestrequesttypedef) 
 
-### delete_virtual_cluster
+### delete\_virtual\_cluster
 
 Deletes a virtual cluster.
 
-Type annotations for `boto3.client("emr-containers").delete_virtual_cluster`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").delete_virtual_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
 
-Boto3 documentation:
-[EMRContainers.Client.delete_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
+```python title="Method definition"
+def delete_virtual_cluster(
+    self,
+    *,
+    id: str,
+) -> DeleteVirtualClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVirtualClusterRequestRequestTypeDef](./type_defs.md#deletevirtualclusterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteVirtualClusterResponseTypeDef](./type_defs.md#deletevirtualclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVirtualClusterRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DeleteVirtualClusterResponseTypeDef](./type_defs.md#deletevirtualclusterresponsetypedef).
+parent.delete_virtual_cluster(**kwargs)
+```
 
-<a id="describe\_job\_run"></a>
+1. See [:material-code-braces: DeleteVirtualClusterRequestRequestTypeDef](./type_defs.md#deletevirtualclusterrequestrequesttypedef) 
 
-### describe_job_run
+### describe\_job\_run
 
 Displays detailed information about a job run.
 
-Type annotations for `boto3.client("emr-containers").describe_job_run` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").describe_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
 
-Boto3 documentation:
-[EMRContainers.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
+```python title="Method definition"
+def describe_job_run(
+    self,
+    *,
+    id: str,
+    virtualClusterId: str,
+) -> DescribeJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `virtualClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobRunRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "virtualClusterId": ...,
+}
 
-Returns
-[DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
+parent.describe_job_run(**kwargs)
+```
 
-<a id="describe\_managed\_endpoint"></a>
+1. See [:material-code-braces: DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef) 
 
-### describe_managed_endpoint
+### describe\_managed\_endpoint
 
 Displays detailed information about a managed endpoint.
 
-Type annotations for `boto3.client("emr-containers").describe_managed_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").describe_managed_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
 
-Boto3 documentation:
-[EMRContainers.Client.describe_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
+```python title="Method definition"
+def describe_managed_endpoint(
+    self,
+    *,
+    id: str,
+    virtualClusterId: str,
+) -> DescribeManagedEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeManagedEndpointRequestRequestTypeDef](./type_defs.md#describemanagedendpointrequestrequesttypedef).
+1. See [:material-code-braces: DescribeManagedEndpointResponseTypeDef](./type_defs.md#describemanagedendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `virtualClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeManagedEndpointRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "virtualClusterId": ...,
+}
 
-Returns
-[DescribeManagedEndpointResponseTypeDef](./type_defs.md#describemanagedendpointresponsetypedef).
+parent.describe_managed_endpoint(**kwargs)
+```
 
-<a id="describe\_virtual\_cluster"></a>
+1. See [:material-code-braces: DescribeManagedEndpointRequestRequestTypeDef](./type_defs.md#describemanagedendpointrequestrequesttypedef) 
 
-### describe_virtual_cluster
+### describe\_virtual\_cluster
 
 Displays detailed information about a specified virtual cluster.
 
-Type annotations for `boto3.client("emr-containers").describe_virtual_cluster`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").describe_virtual_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
 
-Boto3 documentation:
-[EMRContainers.Client.describe_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
+```python title="Method definition"
+def describe_virtual_cluster(
+    self,
+    *,
+    id: str,
+) -> DescribeVirtualClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVirtualClusterRequestRequestTypeDef](./type_defs.md#describevirtualclusterrequestrequesttypedef).
+1. See [:material-code-braces: DescribeVirtualClusterResponseTypeDef](./type_defs.md#describevirtualclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeVirtualClusterRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DescribeVirtualClusterResponseTypeDef](./type_defs.md#describevirtualclusterresponsetypedef).
+parent.describe_virtual_cluster(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeVirtualClusterRequestRequestTypeDef](./type_defs.md#describevirtualclusterrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("emr-containers").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url)
 
-Boto3 documentation:
-[EMRContainers.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_job\_runs"></a>
-
-### list_job_runs
+### list\_job\_runs
 
 Lists job runs based on a set of parameters.
 
-Type annotations for `boto3.client("emr-containers").list_job_runs` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").list_job_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
 
-Boto3 documentation:
-[EMRContainers.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
+```python title="Method definition"
+def list_job_runs(
+    self,
+    *,
+    virtualClusterId: str,
+    createdBefore: Union[datetime, str] = ...,
+    createdAfter: Union[datetime, str] = ...,
+    name: str = ...,
+    states: Sequence[JobRunStateType] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListJobRunsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef).
+1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
+2. See [:material-code-braces: ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `virtualClusterId`: `str` *(required)*
-- `createdBefore`: `Union`\[`datetime`, `str`\]
-- `createdAfter`: `Union`\[`datetime`, `str`\]
-- `name`: `str`
-- `states`: `Sequence`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobRunsRequestRequestTypeDef = {  # (1)
+    "virtualClusterId": ...,
+}
 
-Returns
-[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
+parent.list_job_runs(**kwargs)
+```
 
-<a id="list\_managed\_endpoints"></a>
+1. See [:material-code-braces: ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef) 
 
-### list_managed_endpoints
+### list\_managed\_endpoints
 
 Lists managed endpoints based on a set of parameters.
 
-Type annotations for `boto3.client("emr-containers").list_managed_endpoints`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").list_managed_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
 
-Boto3 documentation:
-[EMRContainers.Client.list_managed_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
+```python title="Method definition"
+def list_managed_endpoints(
+    self,
+    *,
+    virtualClusterId: str,
+    createdBefore: Union[datetime, str] = ...,
+    createdAfter: Union[datetime, str] = ...,
+    types: Sequence[str] = ...,
+    states: Sequence[EndpointStateType] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListManagedEndpointsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListManagedEndpointsRequestRequestTypeDef](./type_defs.md#listmanagedendpointsrequestrequesttypedef).
+1. See [:material-code-brackets: EndpointStateType](./literals.md#endpointstatetype) 
+2. See [:material-code-braces: ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `virtualClusterId`: `str` *(required)*
-- `createdBefore`: `Union`\[`datetime`, `str`\]
-- `createdAfter`: `Union`\[`datetime`, `str`\]
-- `types`: `Sequence`\[`str`\]
-- `states`: `Sequence`\[[EndpointStateType](./literals.md#endpointstatetype)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListManagedEndpointsRequestRequestTypeDef = {  # (1)
+    "virtualClusterId": ...,
+}
 
-Returns
-[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef).
+parent.list_managed_endpoints(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListManagedEndpointsRequestRequestTypeDef](./type_defs.md#listmanagedendpointsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags assigned to the resources.
 
-Type annotations for `boto3.client("emr-containers").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[EMRContainers.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_virtual\_clusters"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_virtual_clusters
+### list\_virtual\_clusters
 
 Lists information about the specified virtual cluster.
 
-Type annotations for `boto3.client("emr-containers").list_virtual_clusters`
-method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").list_virtual_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
 
-Boto3 documentation:
-[EMRContainers.Client.list_virtual_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
+```python title="Method definition"
+def list_virtual_clusters(
+    self,
+    *,
+    containerProviderId: str = ...,
+    containerProviderType: ContainerProviderTypeType = ...,  # (1)
+    createdAfter: Union[datetime, str] = ...,
+    createdBefore: Union[datetime, str] = ...,
+    states: Sequence[VirtualClusterStateType] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListVirtualClustersResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualClustersRequestRequestTypeDef](./type_defs.md#listvirtualclustersrequestrequesttypedef).
+1. See [:material-code-brackets: ContainerProviderTypeType](./literals.md#containerprovidertypetype) 
+2. See [:material-code-brackets: VirtualClusterStateType](./literals.md#virtualclusterstatetype) 
+3. See [:material-code-braces: ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerProviderId`: `str`
-- `containerProviderType`: `Literal['EKS']` (see
-  [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
-- `createdAfter`: `Union`\[`datetime`, `str`\]
-- `createdBefore`: `Union`\[`datetime`, `str`\]
-- `states`:
-  `Sequence`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualClustersRequestRequestTypeDef = {  # (1)
+    "containerProviderId": ...,
+}
 
-Returns
-[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef).
+parent.list_virtual_clusters(**kwargs)
+```
 
-<a id="start\_job\_run"></a>
+1. See [:material-code-braces: ListVirtualClustersRequestRequestTypeDef](./type_defs.md#listvirtualclustersrequestrequesttypedef) 
 
-### start_job_run
+### start\_job\_run
 
 Starts a job run.
 
-Type annotations for `boto3.client("emr-containers").start_job_run` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").start_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
 
-Boto3 documentation:
-[EMRContainers.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
+```python title="Method definition"
+def start_job_run(
+    self,
+    *,
+    virtualClusterId: str,
+    clientToken: str,
+    executionRoleArn: str,
+    releaseLabel: str,
+    jobDriver: JobDriverTypeDef,  # (1)
+    name: str = ...,
+    configurationOverrides: ConfigurationOverridesTypeDef = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> StartJobRunResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef).
+1. See [:material-code-braces: JobDriverTypeDef](./type_defs.md#jobdrivertypedef) 
+2. See [:material-code-braces: ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef) 
+3. See [:material-code-braces: StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `virtualClusterId`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `executionRoleArn`: `str` *(required)*
-- `releaseLabel`: `str` *(required)*
-- `jobDriver`: [JobDriverTypeDef](./type_defs.md#jobdrivertypedef) *(required)*
-- `name`: `str`
-- `configurationOverrides`:
-  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartJobRunRequestRequestTypeDef = {  # (1)
+    "virtualClusterId": ...,
+    "clientToken": ...,
+    "executionRoleArn": ...,
+    "releaseLabel": ...,
+    "jobDriver": ...,
+}
 
-Returns
-[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
+parent.start_job_run(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns tags to resources.
 
-Type annotations for `boto3.client("emr-containers").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
 
-Boto3 documentation:
-[EMRContainers.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from resources.
 
-Type annotations for `boto3.client("emr-containers").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("emr-containers").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
 
-Boto3 documentation:
-[EMRContainers.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("emr-containers").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("emr-containers").get_paginator` method with overloads.
 
-- `client.get_paginator("list_job_runs")` ->
-  [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
-- `client.get_paginator("list_managed_endpoints")` ->
-  [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
-- `client.get_paginator("list_virtual_clusters")` ->
-  [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
+- `client.get_paginator("list_job_runs")` -> [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
+- `client.get_paginator("list_managed_endpoints")` -> [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
+- `client.get_paginator("list_virtual_clusters")` -> [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
+
+
+

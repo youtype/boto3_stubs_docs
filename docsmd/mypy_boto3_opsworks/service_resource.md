@@ -1,228 +1,223 @@
-<a id="opsworksserviceresource-for-boto3-opsworks-module"></a>
-
-# OpsWorksServiceResource for boto3 OpsWorks module
+# OpsWorksServiceResource
 
 > [Index](../README.md) > [OpsWorks](./README.md) > OpsWorksServiceResource
 
-Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
-type annotations stubs module
-[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+!!! note ""
 
-- [OpsWorksServiceResource for boto3 OpsWorks module](#opsworksserviceresource-for-boto3-opsworks-module)
-  - [OpsWorksServiceResource](#opsworksserviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourceStacksCollection](#serviceresourcestackscollection)
-  - [Methods](#methods)
-    - [OpsWorksServiceResource.Layer method](#opsworksserviceresourcelayer-method)
-    - [OpsWorksServiceResource.Stack method](#opsworksserviceresourcestack-method)
-    - [OpsWorksServiceResource.StackSummary method](#opsworksserviceresourcestacksummary-method)
-    - [OpsWorksServiceResource.create_stack method](#opsworksserviceresourcecreate_stack-method)
-    - [OpsWorksServiceResource.get_available_subresources method](#opsworksserviceresourceget_available_subresources-method)
-  - [Layer](#layer)
-    - [Layer attributes](#layer-attributes)
-    - [Layer methods](#layer-methods)
-  - [Stack](#stack)
-    - [Stack attributes](#stack-attributes)
-    - [Stack collections](#stack-collections)
-    - [Stack methods](#stack-methods)
-  - [StackSummary](#stacksummary)
-    - [StackSummary attributes](#stacksummary-attributes)
-    - [StackSummary methods](#stacksummary-methods)
-
-<a id="opsworksserviceresource"></a>
+    Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+    type annotations stubs module [mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 ## OpsWorksServiceResource
 
-Type annotations for `boto3.resource("opsworks")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("opsworks")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
 
 def get_opsworks_resource() -> OpsWorksServiceResource:
     return boto3.resource("opsworks")
 ```
 
-Boto3 documentation:
-[OpsWorks.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
+
 
 - `meta`: [OpsWorksResourceMeta](#opsworksresourcemeta)
 
 - `stacks`: [ServiceResourceStacksCollection](#serviceresourcestackscollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourcestackscollection"></a>
-
 ### ServiceResourceStacksCollection
 
-Type annotations for `boto3.resource("opsworks").stacks` collection.
+Provides access to [Stack](#stack) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("opsworks").stacks` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.stacks)
 
-```python
-from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection,
+```python title="Usage example"
+from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection
 
 def get_collection() -> ServiceResourceStacksCollection:
     return boto3.resource("opsworks").stacks
 ```
 
-Provides access to [Stack](#stack) resource.
 
-Boto3 documentation:
-[OpsWorks.ServiceResource.stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.stacks)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="opsworksserviceresourcelayer-method"></a>
 
 ### OpsWorksServiceResource.Layer method
 
 Creates a Layer resource.
 
-Type annotations for `boto3.resource("opsworks").Layer` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").Layer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
 
-Boto3 documentation:
-[OpsWorks.ServiceResource.Layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
+```python title="Method definition"
+def Layer(
+    self,
+    id: str,
+) -> Layer:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceLayerRequestTypeDef](./type_defs.md#serviceresourcelayerrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceLayerRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [Layer](#layer).
+parent.Layer(**kwargs)
+```
 
-<a id="opsworksserviceresourcestack-method"></a>
+1. See [:material-code-braces: ServiceResourceLayerRequestTypeDef](./type_defs.md#serviceresourcelayerrequesttypedef) 
 
 ### OpsWorksServiceResource.Stack method
 
 Creates a Stack resource.
 
-Type annotations for `boto3.resource("opsworks").Stack` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").Stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
 
-Boto3 documentation:
-[OpsWorks.ServiceResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
+```python title="Method definition"
+def Stack(
+    self,
+    id: str,
+) -> Stack:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceStackRequestTypeDef](./type_defs.md#serviceresourcestackrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceStackRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [Stack](#stack).
+parent.Stack(**kwargs)
+```
 
-<a id="opsworksserviceresourcestacksummary-method"></a>
+1. See [:material-code-braces: ServiceResourceStackRequestTypeDef](./type_defs.md#serviceresourcestackrequesttypedef) 
 
 ### OpsWorksServiceResource.StackSummary method
 
 Creates a StackSummary resource.
 
-Type annotations for `boto3.resource("opsworks").StackSummary` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").StackSummary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
 
-Boto3 documentation:
-[OpsWorks.ServiceResource.StackSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
+```python title="Method definition"
+def StackSummary(
+    self,
+    stack_id: str,
+) -> StackSummary:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceStackSummaryRequestTypeDef](./type_defs.md#serviceresourcestacksummaryrequesttypedef).
 
-Arguments:
 
-- `stack_id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceStackSummaryRequestTypeDef = {  # (1)
+    "stack_id": ...,
+}
 
-Returns [StackSummary](#stacksummary).
+parent.StackSummary(**kwargs)
+```
 
-<a id="opsworksserviceresourcecreate\_stack-method"></a>
+1. See [:material-code-braces: ServiceResourceStackSummaryRequestTypeDef](./type_defs.md#serviceresourcestacksummaryrequesttypedef) 
 
-### OpsWorksServiceResource.create_stack method
+### OpsWorksServiceResource.create\_stack method
 
 Creates a new stack.
 
-Type annotations for `boto3.resource("opsworks").create_stack` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").create_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.create_stack)
 
-Boto3 documentation:
-[OpsWorks.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.create_stack)
+```python title="Method definition"
+def create_stack(
+    self,
+    *,
+    Name: str,
+    Region: str,
+    ServiceRoleArn: str,
+    DefaultInstanceProfileArn: str,
+    VpcId: str = ...,
+    Attributes: Mapping[StackAttributesKeysType, str] = ...,  # (1)
+    DefaultOs: str = ...,
+    HostnameTheme: str = ...,
+    DefaultAvailabilityZone: str = ...,
+    DefaultSubnetId: str = ...,
+    CustomJson: str = ...,
+    ConfigurationManager: StackConfigurationManagerTypeDef = ...,  # (2)
+    ChefConfiguration: ChefConfigurationTypeDef = ...,  # (3)
+    UseCustomCookbooks: bool = ...,
+    UseOpsworksSecurityGroups: bool = ...,
+    CustomCookbooksSource: SourceTypeDef = ...,  # (4)
+    DefaultSshKeyName: str = ...,
+    DefaultRootDeviceType: RootDeviceTypeType = ...,  # (5)
+    AgentVersion: str = ...,
+) -> Stack:
+    ...
+```
 
-Arguments mapping described in
-[CreateStackRequestServiceResourceCreateStackTypeDef](./type_defs.md#createstackrequestserviceresourcecreatestacktypedef).
+1. See [:material-code-brackets: StackAttributesKeysType](./literals.md#stackattributeskeystype) 
+2. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
+3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
+4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Region`: `str` *(required)*
-- `ServiceRoleArn`: `str` *(required)*
-- `DefaultInstanceProfileArn`: `str` *(required)*
-- `VpcId`: `str`
-- `Attributes`: `Mapping`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `AgentVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateStackRequestServiceResourceCreateStackTypeDef = {  # (1)
+    "Name": ...,
+    "Region": ...,
+    "ServiceRoleArn": ...,
+    "DefaultInstanceProfileArn": ...,
+}
 
-Returns [Stack](#stack).
+parent.create_stack(**kwargs)
+```
 
-<a id="opsworksserviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateStackRequestServiceResourceCreateStackTypeDef](./type_defs.md#createstackrequestserviceresourcecreatestacktypedef) 
 
-### OpsWorksServiceResource.get_available_subresources method
+### OpsWorksServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("opsworks").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[OpsWorks.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="layer"></a>
+
 
 ## Layer
 
-Type annotations for `boto3.resource("opsworks").Layer` class.
+Type annotations and code completion for `#!python boto3.resource("opsworks").Layer` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_opsworks.service_resource import Layer
 
 def get_resource() -> Layer:
     return boto3.resource("opsworks").Layer(...)
 ```
 
-Boto3 documentation:
-[OpsWorks.Layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
-
-<a id="layer-attributes"></a>
 
 ### Layer attributes
+
 
 - `arn`: `str`
 - `stack_id`: `str`
@@ -230,115 +225,120 @@ Boto3 documentation:
 - `type`: [LayerTypeType](./literals.md#layertypetype)
 - `name`: `str`
 - `shortname`: `str`
-- `attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `cloud_watch_logs_configuration`:
-  [CloudWatchLogsConfigurationResponseMetadataTypeDef](./type_defs.md#cloudwatchlogsconfigurationresponsemetadatatypedef)
+- `attributes`: `Dict`[[LayerAttributesKeysType](./literals.md#layerattributeskeystype), `str`]
+- `cloud_watch_logs_configuration`: [CloudWatchLogsConfigurationResponseMetadataTypeDef](./type_defs.md#cloudwatchlogsconfigurationresponsemetadatatypedef)
 - `custom_instance_profile_arn`: `str`
 - `custom_json`: `str`
-- `custom_security_group_ids`: `List`\[`str`\]
-- `default_security_group_names`: `List`\[`str`\]
-- `packages`: `List`\[`str`\]
-- `volume_configurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+- `custom_security_group_ids`: `List`[`str`]
+- `default_security_group_names`: `List`[`str`]
+- `packages`: `List`[`str`]
+- `volume_configurations`: `List`[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)]
 - `enable_auto_healing`: `bool`
 - `auto_assign_elastic_ips`: `bool`
 - `auto_assign_public_ips`: `bool`
-- `default_recipes`:
-  [RecipesResponseMetadataTypeDef](./type_defs.md#recipesresponsemetadatatypedef)
-- `custom_recipes`:
-  [RecipesResponseMetadataTypeDef](./type_defs.md#recipesresponsemetadatatypedef)
+- `default_recipes`: [RecipesResponseMetadataTypeDef](./type_defs.md#recipesresponsemetadatatypedef)
+- `custom_recipes`: [RecipesResponseMetadataTypeDef](./type_defs.md#recipesresponsemetadatatypedef)
 - `created_at`: `str`
 - `install_updates_on_boot`: `bool`
 - `use_ebs_optimized_instances`: `bool`
-- `lifecycle_event_configuration`:
-  [LifecycleEventConfigurationResponseMetadataTypeDef](./type_defs.md#lifecycleeventconfigurationresponsemetadatatypedef)
+- `lifecycle_event_configuration`: [LifecycleEventConfigurationResponseMetadataTypeDef](./type_defs.md#lifecycleeventconfigurationresponsemetadatatypedef)
 - `id`: `str`
 - `stack`: [Stack](#stack)
 
-<a id="layer-methods"></a>
+
+
+
 
 ### Layer methods
 
-<a id="layerdelete-method"></a>
 
 #### Layer.delete method
 
 Deletes a specified layer.
 
-Type annotations for `boto3.resource("opsworks").delete` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete)
 
-Boto3 documentation:
-[OpsWorks.Layer.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="layerget\_available\_subresources-method"></a>
 
-#### Layer.get_available_subresources method
+#### Layer.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("opsworks").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.get_available_subresources)
 
-Boto3 documentation:
-[OpsWorks.Layer.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="layerload-method"></a>
 
 #### Layer.load method
 
-Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of
-the Layer resource.
+Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of the
+Layer resource.
 
-Type annotations for `boto3.resource("opsworks").load` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.load)
 
-Boto3 documentation:
-[OpsWorks.Layer.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="layerreload-method"></a>
 
 #### Layer.reload method
 
-Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of
-the Layer resource.
+Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of the
+Layer resource.
 
-Type annotations for `boto3.resource("opsworks").reload` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.reload)
 
-Boto3 documentation:
-[OpsWorks.Layer.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stack"></a>
+
+
+
 
 ## Stack
 
-Type annotations for `boto3.resource("opsworks").Stack` class.
+Type annotations and code completion for `#!python boto3.resource("opsworks").Stack` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_opsworks.service_resource import Stack
 
 def get_resource() -> Stack:
     return boto3.resource("opsworks").Stack(...)
 ```
 
-Boto3 documentation:
-[OpsWorks.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
-
-<a id="stack-attributes"></a>
 
 ### Stack attributes
+
 
 - `stack_id`: `str`
 - `name`: `str`
 - `arn`: `str`
 - `region`: `str`
 - `vpc_id`: `str`
-- `attributes`: `Dict`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
+- `attributes`: `Dict`[`Literal['Color']` (see [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`]
 - `service_role_arn`: `str`
 - `default_instance_profile_arn`: `str`
 - `default_os`: `str`
@@ -346,235 +346,267 @@ Boto3 documentation:
 - `default_availability_zone`: `str`
 - `default_subnet_id`: `str`
 - `custom_json`: `str`
-- `configuration_manager`:
-  [StackConfigurationManagerResponseMetadataTypeDef](./type_defs.md#stackconfigurationmanagerresponsemetadatatypedef)
-- `chef_configuration`:
-  [ChefConfigurationResponseMetadataTypeDef](./type_defs.md#chefconfigurationresponsemetadatatypedef)
+- `configuration_manager`: [StackConfigurationManagerResponseMetadataTypeDef](./type_defs.md#stackconfigurationmanagerresponsemetadatatypedef)
+- `chef_configuration`: [ChefConfigurationResponseMetadataTypeDef](./type_defs.md#chefconfigurationresponsemetadatatypedef)
 - `use_custom_cookbooks`: `bool`
 - `use_opsworks_security_groups`: `bool`
-- `custom_cookbooks_source`:
-  [SourceResponseMetadataTypeDef](./type_defs.md#sourceresponsemetadatatypedef)
+- `custom_cookbooks_source`: [SourceResponseMetadataTypeDef](./type_defs.md#sourceresponsemetadatatypedef)
 - `default_ssh_key_name`: `str`
 - `created_at`: `str`
-- `default_root_device_type`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
+- `default_root_device_type`: [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `agent_version`: `str`
 - `id`: `str`
 - `layers`: [StackLayersCollection](#stacklayerscollection)
 
-<a id="stack-collections"></a>
+
 
 ### Stack collections
 
-<a id="stacklayers"></a>
 
 #### Stack.layers
 
-Type annotations for `boto3.resource("opsworks").Stack(...).layers` collection.
+Provides access to [Layer](#layer) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("opsworks").Stack(...).layers` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.layers)
 
-```python
-from mypy_boto3_opsworks.service_resource import StackLayersCollection,
+```python title="Usage example"
+from mypy_boto3_opsworks.service_resource import StackLayersCollection
 
 def get_collection() -> StackLayersCollection:
     resource = boto3.resource("opsworks").Stack(...)
     return resource.layers
 ```
 
-Provides access to [Layer](#layer) resource.
 
-Boto3 documentation:
-[OpsWorks.Stack.StackLayersCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.layers)
 
-<a id="stack-methods"></a>
 
 ### Stack methods
 
-<a id="stacksummary-method"></a>
 
 #### Stack.Summary method
 
 Creates a StackSummary resource.
 
-Type annotations for `boto3.resource("opsworks").Summary` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").Summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.Summary)
 
-Boto3 documentation:
-[OpsWorks.Stack.Summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.Summary)
+```python title="Method definition"
+def Summary(
+    self,
+) -> StackSummary:
+    ...
+```
 
-Returns [StackSummary](#stacksummary).
 
-<a id="stackcreate\_layer-method"></a>
-
-#### Stack.create_layer method
+#### Stack.create\_layer method
 
 Creates a layer.
 
-Type annotations for `boto3.resource("opsworks").create_layer` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").create_layer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.create_layer)
 
-Boto3 documentation:
-[OpsWorks.Stack.create_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.create_layer)
+```python title="Method definition"
+def create_layer(
+    self,
+    *,
+    Type: LayerTypeType,  # (1)
+    Name: str,
+    Shortname: str,
+    Attributes: Mapping[LayerAttributesKeysType, str] = ...,  # (2)
+    CloudWatchLogsConfiguration: CloudWatchLogsConfigurationTypeDef = ...,  # (3)
+    CustomInstanceProfileArn: str = ...,
+    CustomJson: str = ...,
+    CustomSecurityGroupIds: Sequence[str] = ...,
+    Packages: Sequence[str] = ...,
+    VolumeConfigurations: Sequence[VolumeConfigurationTypeDef] = ...,  # (4)
+    EnableAutoHealing: bool = ...,
+    AutoAssignElasticIps: bool = ...,
+    AutoAssignPublicIps: bool = ...,
+    CustomRecipes: RecipesTypeDef = ...,  # (5)
+    InstallUpdatesOnBoot: bool = ...,
+    UseEbsOptimizedInstances: bool = ...,
+    LifecycleEventConfiguration: LifecycleEventConfigurationTypeDef = ...,  # (6)
+) -> Layer:
+    ...
+```
 
-Arguments mapping described in
-[CreateLayerRequestStackCreateLayerTypeDef](./type_defs.md#createlayerrequeststackcreatelayertypedef).
+1. See [:material-code-brackets: LayerTypeType](./literals.md#layertypetype) 
+2. See [:material-code-brackets: LayerAttributesKeysType](./literals.md#layerattributeskeystype) 
+3. See [:material-code-braces: CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef) 
+4. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
+5. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
+6. See [:material-code-braces: LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [LayerTypeType](./literals.md#layertypetype) *(required)*
-- `Name`: `str` *(required)*
-- `Shortname`: `str` *(required)*
-- `Attributes`:
-  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
-- `CustomInstanceProfileArn`: `str`
-- `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
-- `Packages`: `Sequence`\[`str`\]
-- `VolumeConfigurations`:
-  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
-- `EnableAutoHealing`: `bool`
-- `AutoAssignElasticIps`: `bool`
-- `AutoAssignPublicIps`: `bool`
-- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `InstallUpdatesOnBoot`: `bool`
-- `UseEbsOptimizedInstances`: `bool`
-- `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateLayerRequestStackCreateLayerTypeDef = {  # (1)
+    "Type": ...,
+    "Name": ...,
+    "Shortname": ...,
+}
 
-Returns [Layer](#layer).
+parent.create_layer(**kwargs)
+```
 
-<a id="stackdelete-method"></a>
+1. See [:material-code-braces: CreateLayerRequestStackCreateLayerTypeDef](./type_defs.md#createlayerrequeststackcreatelayertypedef) 
 
 #### Stack.delete method
 
 Deletes a specified stack.
 
-Type annotations for `boto3.resource("opsworks").delete` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete)
 
-Boto3 documentation:
-[OpsWorks.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stackget\_available\_subresources-method"></a>
 
-#### Stack.get_available_subresources method
+#### Stack.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("opsworks").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.get_available_subresources)
 
-Boto3 documentation:
-[OpsWorks.Stack.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="stackload-method"></a>
 
 #### Stack.load method
 
-Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of
-the Stack resource.
+Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of the
+Stack resource.
 
-Type annotations for `boto3.resource("opsworks").load` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.load)
 
-Boto3 documentation:
-[OpsWorks.Stack.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stackreload-method"></a>
 
 #### Stack.reload method
 
-Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of
-the Stack resource.
+Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of the
+Stack resource.
 
-Type annotations for `boto3.resource("opsworks").reload` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.reload)
 
-Boto3 documentation:
-[OpsWorks.Stack.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stacksummary"></a>
+
+
+
 
 ## StackSummary
 
-Type annotations for `boto3.resource("opsworks").StackSummary` class.
+Type annotations and code completion for `#!python boto3.resource("opsworks").StackSummary` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_opsworks.service_resource import StackSummary
 
 def get_resource() -> StackSummary:
     return boto3.resource("opsworks").StackSummary(...)
 ```
 
-Boto3 documentation:
-[OpsWorks.StackSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
-
-<a id="stacksummary-attributes"></a>
 
 ### StackSummary attributes
+
 
 - `name`: `str`
 - `arn`: `str`
 - `layers_count`: `int`
 - `apps_count`: `int`
-- `instances_count`:
-  [InstancesCountResponseMetadataTypeDef](./type_defs.md#instancescountresponsemetadatatypedef)
+- `instances_count`: [InstancesCountResponseMetadataTypeDef](./type_defs.md#instancescountresponsemetadatatypedef)
 - `stack_id`: `str`
 
-<a id="stacksummary-methods"></a>
+
+
+
 
 ### StackSummary methods
 
-<a id="stacksummarystack-method"></a>
 
 #### StackSummary.Stack method
 
 Creates a Stack resource.
 
-Type annotations for `boto3.resource("opsworks").Stack` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").Stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.Stack)
 
-Boto3 documentation:
-[OpsWorks.StackSummary.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.Stack)
+```python title="Method definition"
+def Stack(
+    self,
+) -> Stack:
+    ...
+```
 
-Returns [Stack](#stack).
 
-<a id="stacksummaryget\_available\_subresources-method"></a>
-
-#### StackSummary.get_available_subresources method
+#### StackSummary.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("opsworks").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.get_available_subresources)
 
-Boto3 documentation:
-[OpsWorks.StackSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="stacksummaryload-method"></a>
 
 #### StackSummary.load method
 
-Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the
-attributes of the StackSummary resource.
+Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the attributes
+of the StackSummary resource.
 
-Type annotations for `boto3.resource("opsworks").load` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.load)
 
-Boto3 documentation:
-[OpsWorks.StackSummary.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stacksummaryreload-method"></a>
 
 #### StackSummary.reload method
 
-Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the
-attributes of the StackSummary resource.
+Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the attributes
+of the StackSummary resource.
 
-Type annotations for `boto3.resource("opsworks").reload` method.
+Type annotations and code completion for `#!python boto3.resource("opsworks").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.reload)
 
-Boto3 documentation:
-[OpsWorks.StackSummary.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
+
+
+
+

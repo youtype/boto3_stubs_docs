@@ -1,101 +1,125 @@
-<a id="typed-dictionaries-for-boto3-apigatewaymanagementapi-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ApiGatewayManagementApi module
+> [Index](../README.md) > [ApiGatewayManagementApi](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ApiGatewayManagementApi](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
-type annotations stubs module
-[mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
-
-- [Typed dictionaries for boto3 ApiGatewayManagementApi module](#typed-dictionaries-for-boto3-apigatewaymanagementapi-module)
-  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
-  - [GetConnectionRequestRequestTypeDef](#getconnectionrequestrequesttypedef)
-  - [GetConnectionResponseTypeDef](#getconnectionresponsetypedef)
-  - [IdentityTypeDef](#identitytypedef)
-  - [PostToConnectionRequestRequestTypeDef](#posttoconnectionrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-
-<a id="deleteconnectionrequestrequesttypedef"></a>
+    Auto-generated documentation for [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
+    type annotations stubs module [mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 ## DeleteConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestRequestTypeDef
+
+def get_value() -> DeleteConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionId`: `str`
-
-<a id="getconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionId: str,
+```
 
 ## GetConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionRequestRequestTypeDef
+
+def get_value() -> GetConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionId`: `str`
-
-<a id="getconnectionresponsetypedef"></a>
+```python title="Definition"
+class GetConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionId: str,
+```
 
 ## GetConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTypeDef
+
+def get_value() -> GetConnectionResponseTypeDef:
+    return {
+        "ConnectedAt": ...,
+        "Identity": ...,
+        "LastActiveAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectionResponseTypeDef(TypedDict):
+    ConnectedAt: datetime,
+    Identity: IdentityTypeDef,  # (1)
+    LastActiveAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectedAt`: `datetime`
-- `Identity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `LastActiveAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="identitytypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigatewaymanagementapi.type_defs import IdentityTypeDef
+
+def get_value() -> IdentityTypeDef:
+    return {
+        "SourceIp": ...,
+        "UserAgent": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceIp`: `str`
-- `UserAgent`: `str`
-
-<a id="posttoconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class IdentityTypeDef(TypedDict):
+    SourceIp: str,
+    UserAgent: str,
+```
 
 ## PostToConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigatewaymanagementapi.type_defs import PostToConnectionRequestRequestTypeDef
+
+def get_value() -> PostToConnectionRequestRequestTypeDef:
+    return {
+        "Data": ...,
+        "ConnectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ConnectionId`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PostToConnectionRequestRequestTypeDef(TypedDict):
+    Data: Union[bytes, IO[bytes], StreamingBody],
+    ConnectionId: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigatewaymanagementapi.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`

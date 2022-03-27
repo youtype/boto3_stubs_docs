@@ -1,1058 +1,1378 @@
-<a id="typed-dictionaries-for-boto3-ram-module"></a>
-
-# Typed dictionaries for boto3 RAM module
+# Typed dictionaries
 
 > [Index](../README.md) > [RAM](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
-type annotations stubs module
-[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
+!!! note ""
 
-- [Typed dictionaries for boto3 RAM module](#typed-dictionaries-for-boto3-ram-module)
-  - [AcceptResourceShareInvitationRequestRequestTypeDef](#acceptresourceshareinvitationrequestrequesttypedef)
-  - [AcceptResourceShareInvitationResponseTypeDef](#acceptresourceshareinvitationresponsetypedef)
-  - [AssociateResourceSharePermissionRequestRequestTypeDef](#associateresourcesharepermissionrequestrequesttypedef)
-  - [AssociateResourceSharePermissionResponseTypeDef](#associateresourcesharepermissionresponsetypedef)
-  - [AssociateResourceShareRequestRequestTypeDef](#associateresourcesharerequestrequesttypedef)
-  - [AssociateResourceShareResponseTypeDef](#associateresourceshareresponsetypedef)
-  - [CreateResourceShareRequestRequestTypeDef](#createresourcesharerequestrequesttypedef)
-  - [CreateResourceShareResponseTypeDef](#createresourceshareresponsetypedef)
-  - [DeleteResourceShareRequestRequestTypeDef](#deleteresourcesharerequestrequesttypedef)
-  - [DeleteResourceShareResponseTypeDef](#deleteresourceshareresponsetypedef)
-  - [DisassociateResourceSharePermissionRequestRequestTypeDef](#disassociateresourcesharepermissionrequestrequesttypedef)
-  - [DisassociateResourceSharePermissionResponseTypeDef](#disassociateresourcesharepermissionresponsetypedef)
-  - [DisassociateResourceShareRequestRequestTypeDef](#disassociateresourcesharerequestrequesttypedef)
-  - [DisassociateResourceShareResponseTypeDef](#disassociateresourceshareresponsetypedef)
-  - [EnableSharingWithAwsOrganizationResponseTypeDef](#enablesharingwithawsorganizationresponsetypedef)
-  - [GetPermissionRequestRequestTypeDef](#getpermissionrequestrequesttypedef)
-  - [GetPermissionResponseTypeDef](#getpermissionresponsetypedef)
-  - [GetResourcePoliciesRequestRequestTypeDef](#getresourcepoliciesrequestrequesttypedef)
-  - [GetResourcePoliciesResponseTypeDef](#getresourcepoliciesresponsetypedef)
-  - [GetResourceShareAssociationsRequestRequestTypeDef](#getresourceshareassociationsrequestrequesttypedef)
-  - [GetResourceShareAssociationsResponseTypeDef](#getresourceshareassociationsresponsetypedef)
-  - [GetResourceShareInvitationsRequestRequestTypeDef](#getresourceshareinvitationsrequestrequesttypedef)
-  - [GetResourceShareInvitationsResponseTypeDef](#getresourceshareinvitationsresponsetypedef)
-  - [GetResourceSharesRequestRequestTypeDef](#getresourcesharesrequestrequesttypedef)
-  - [GetResourceSharesResponseTypeDef](#getresourcesharesresponsetypedef)
-  - [ListPendingInvitationResourcesRequestRequestTypeDef](#listpendinginvitationresourcesrequestrequesttypedef)
-  - [ListPendingInvitationResourcesResponseTypeDef](#listpendinginvitationresourcesresponsetypedef)
-  - [ListPermissionVersionsRequestRequestTypeDef](#listpermissionversionsrequestrequesttypedef)
-  - [ListPermissionVersionsResponseTypeDef](#listpermissionversionsresponsetypedef)
-  - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
-  - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
-  - [ListPrincipalsRequestRequestTypeDef](#listprincipalsrequestrequesttypedef)
-  - [ListPrincipalsResponseTypeDef](#listprincipalsresponsetypedef)
-  - [ListResourceSharePermissionsRequestRequestTypeDef](#listresourcesharepermissionsrequestrequesttypedef)
-  - [ListResourceSharePermissionsResponseTypeDef](#listresourcesharepermissionsresponsetypedef)
-  - [ListResourceTypesRequestRequestTypeDef](#listresourcetypesrequestrequesttypedef)
-  - [ListResourceTypesResponseTypeDef](#listresourcetypesresponsetypedef)
-  - [ListResourcesRequestRequestTypeDef](#listresourcesrequestrequesttypedef)
-  - [ListResourcesResponseTypeDef](#listresourcesresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PrincipalTypeDef](#principaltypedef)
-  - [PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef](#promoteresourcesharecreatedfrompolicyrequestrequesttypedef)
-  - [PromoteResourceShareCreatedFromPolicyResponseTypeDef](#promoteresourcesharecreatedfrompolicyresponsetypedef)
-  - [RejectResourceShareInvitationRequestRequestTypeDef](#rejectresourceshareinvitationrequestrequesttypedef)
-  - [RejectResourceShareInvitationResponseTypeDef](#rejectresourceshareinvitationresponsetypedef)
-  - [ResourceShareAssociationTypeDef](#resourceshareassociationtypedef)
-  - [ResourceShareInvitationTypeDef](#resourceshareinvitationtypedef)
-  - [ResourceSharePermissionDetailTypeDef](#resourcesharepermissiondetailtypedef)
-  - [ResourceSharePermissionSummaryTypeDef](#resourcesharepermissionsummarytypedef)
-  - [ResourceShareTypeDef](#resourcesharetypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ServiceNameAndResourceTypeTypeDef](#servicenameandresourcetypetypedef)
-  - [TagFilterTypeDef](#tagfiltertypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateResourceShareRequestRequestTypeDef](#updateresourcesharerequestrequesttypedef)
-  - [UpdateResourceShareResponseTypeDef](#updateresourceshareresponsetypedef)
-
-<a id="acceptresourceshareinvitationrequestrequesttypedef"></a>
+    Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+    type annotations stubs module [mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 ## AcceptResourceShareInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequestTypeDef
+
+def get_value() -> AcceptResourceShareInvitationRequestRequestTypeDef:
+    return {
+        "resourceShareInvitationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareInvitationArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="acceptresourceshareinvitationresponsetypedef"></a>
+```python title="Definition"
+class AcceptResourceShareInvitationRequestRequestTypeDef(TypedDict):
+    resourceShareInvitationArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## AcceptResourceShareInvitationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationResponseTypeDef
+
+def get_value() -> AcceptResourceShareInvitationResponseTypeDef:
+    return {
+        "resourceShareInvitation": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptResourceShareInvitationResponseTypeDef(TypedDict):
+    resourceShareInvitation: ResourceShareInvitationTypeDef,  # (1)
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShareInvitation`:
-  [ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef)
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associateresourcesharepermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateResourceSharePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import AssociateResourceSharePermissionRequestRequestTypeDef
+
+def get_value() -> AssociateResourceSharePermissionRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+        "permissionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-- `permissionArn`: `str`
-
-Optional fields:
-
-- `replace`: `bool`
-- `clientToken`: `str`
-- `permissionVersion`: `int`
-
-<a id="associateresourcesharepermissionresponsetypedef"></a>
+```python title="Definition"
+class AssociateResourceSharePermissionRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    permissionArn: str,
+    replace: NotRequired[bool],
+    clientToken: NotRequired[str],
+    permissionVersion: NotRequired[int],
+```
 
 ## AssociateResourceSharePermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import AssociateResourceSharePermissionResponseTypeDef
+
+def get_value() -> AssociateResourceSharePermissionResponseTypeDef:
+    return {
+        "returnValue": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateResourceSharePermissionResponseTypeDef(TypedDict):
+    returnValue: bool,
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `returnValue`: `bool`
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associateresourcesharerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateResourceShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import AssociateResourceShareRequestRequestTypeDef
+
+def get_value() -> AssociateResourceShareRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-
-Optional fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-- `principals`: `Sequence`\[`str`\]
-- `clientToken`: `str`
-
-<a id="associateresourceshareresponsetypedef"></a>
+```python title="Definition"
+class AssociateResourceShareRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    resourceArns: NotRequired[Sequence[str]],
+    principals: NotRequired[Sequence[str]],
+    clientToken: NotRequired[str],
+```
 
 ## AssociateResourceShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import AssociateResourceShareResponseTypeDef
+
+def get_value() -> AssociateResourceShareResponseTypeDef:
+    return {
+        "resourceShareAssociations": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateResourceShareResponseTypeDef(TypedDict):
+    resourceShareAssociations: List[ResourceShareAssociationTypeDef],  # (1)
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresourcesharerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourceShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import CreateResourceShareRequestRequestTypeDef
+
+def get_value() -> CreateResourceShareRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourceShareRequestRequestTypeDef(TypedDict):
+    name: str,
+    resourceArns: NotRequired[Sequence[str]],
+    principals: NotRequired[Sequence[str]],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    allowExternalPrincipals: NotRequired[bool],
+    clientToken: NotRequired[str],
+    permissionArns: NotRequired[Sequence[str]],
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-- `principals`: `Sequence`\[`str`\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `allowExternalPrincipals`: `bool`
-- `clientToken`: `str`
-- `permissionArns`: `Sequence`\[`str`\]
-
-<a id="createresourceshareresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateResourceShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import CreateResourceShareResponseTypeDef
+
+def get_value() -> CreateResourceShareResponseTypeDef:
+    return {
+        "resourceShare": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourceShareResponseTypeDef(TypedDict):
+    resourceShare: ResourceShareTypeDef,  # (1)
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShare`: [ResourceShareTypeDef](./type_defs.md#resourcesharetypedef)
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcesharerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceShareTypeDef](./type_defs.md#resourcesharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourceShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import DeleteResourceShareRequestRequestTypeDef
+
+def get_value() -> DeleteResourceShareRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteresourceshareresponsetypedef"></a>
+```python title="Definition"
+class DeleteResourceShareRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteResourceShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import DeleteResourceShareResponseTypeDef
+
+def get_value() -> DeleteResourceShareResponseTypeDef:
+    return {
+        "returnValue": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteResourceShareResponseTypeDef(TypedDict):
+    returnValue: bool,
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `returnValue`: `bool`
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateresourcesharepermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateResourceSharePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import DisassociateResourceSharePermissionRequestRequestTypeDef
+
+def get_value() -> DisassociateResourceSharePermissionRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+        "permissionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-- `permissionArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="disassociateresourcesharepermissionresponsetypedef"></a>
+```python title="Definition"
+class DisassociateResourceSharePermissionRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    permissionArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## DisassociateResourceSharePermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import DisassociateResourceSharePermissionResponseTypeDef
+
+def get_value() -> DisassociateResourceSharePermissionResponseTypeDef:
+    return {
+        "returnValue": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateResourceSharePermissionResponseTypeDef(TypedDict):
+    returnValue: bool,
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `returnValue`: `bool`
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateresourcesharerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateResourceShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import DisassociateResourceShareRequestRequestTypeDef
+
+def get_value() -> DisassociateResourceShareRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-
-Optional fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-- `principals`: `Sequence`\[`str`\]
-- `clientToken`: `str`
-
-<a id="disassociateresourceshareresponsetypedef"></a>
+```python title="Definition"
+class DisassociateResourceShareRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    resourceArns: NotRequired[Sequence[str]],
+    principals: NotRequired[Sequence[str]],
+    clientToken: NotRequired[str],
+```
 
 ## DisassociateResourceShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import DisassociateResourceShareResponseTypeDef
+
+def get_value() -> DisassociateResourceShareResponseTypeDef:
+    return {
+        "resourceShareAssociations": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateResourceShareResponseTypeDef(TypedDict):
+    resourceShareAssociations: List[ResourceShareAssociationTypeDef],  # (1)
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="enablesharingwithawsorganizationresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableSharingWithAwsOrganizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import EnableSharingWithAwsOrganizationResponseTypeDef
+
+def get_value() -> EnableSharingWithAwsOrganizationResponseTypeDef:
+    return {
+        "returnValue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableSharingWithAwsOrganizationResponseTypeDef(TypedDict):
+    returnValue: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `returnValue`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetPermissionRequestRequestTypeDef
+
+def get_value() -> GetPermissionRequestRequestTypeDef:
+    return {
+        "permissionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `permissionArn`: `str`
-
-Optional fields:
-
-- `permissionVersion`: `int`
-
-<a id="getpermissionresponsetypedef"></a>
+```python title="Definition"
+class GetPermissionRequestRequestTypeDef(TypedDict):
+    permissionArn: str,
+    permissionVersion: NotRequired[int],
+```
 
 ## GetPermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetPermissionResponseTypeDef
+
+def get_value() -> GetPermissionResponseTypeDef:
+    return {
+        "permission": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPermissionResponseTypeDef(TypedDict):
+    permission: ResourceSharePermissionDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `permission`:
-  [ResourceSharePermissionDetailTypeDef](./type_defs.md#resourcesharepermissiondetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceSharePermissionDetailTypeDef](./type_defs.md#resourcesharepermissiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef
 
-<a id="getresourcepoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ram.type_defs import GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef
 
+def get_value() -> GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef:
+    return {
+        "resourceArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef(TypedDict):
+    resourceArns: Sequence[str],
+    principal: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourcePoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourcePoliciesRequestRequestTypeDef
+
+def get_value() -> GetResourcePoliciesRequestRequestTypeDef:
+    return {
+        "resourceArns": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `principal`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getresourcepoliciesresponsetypedef"></a>
+```python title="Definition"
+class GetResourcePoliciesRequestRequestTypeDef(TypedDict):
+    resourceArns: Sequence[str],
+    principal: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetResourcePoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourcePoliciesResponseTypeDef
+
+def get_value() -> GetResourcePoliciesResponseTypeDef:
+    return {
+        "policies": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePoliciesResponseTypeDef(TypedDict):
+    policies: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `policies`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceShareAssociationsRequestGetResourceShareAssociationsPaginateTypeDef
 
-<a id="getresourceshareassociationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ram.type_defs import GetResourceShareAssociationsRequestGetResourceShareAssociationsPaginateTypeDef
 
+def get_value() -> GetResourceShareAssociationsRequestGetResourceShareAssociationsPaginateTypeDef:
+    return {
+        "associationType": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceShareAssociationsRequestGetResourceShareAssociationsPaginateTypeDef(TypedDict):
+    associationType: ResourceShareAssociationTypeType,  # (1)
+    resourceShareArns: NotRequired[Sequence[str]],
+    resourceArn: NotRequired[str],
+    principal: NotRequired[str],
+    associationStatus: NotRequired[ResourceShareAssociationStatusType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype) 
+2. See [:material-code-brackets: ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourceShareAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourceShareAssociationsRequestRequestTypeDef
+
+def get_value() -> GetResourceShareAssociationsRequestRequestTypeDef:
+    return {
+        "associationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceShareAssociationsRequestRequestTypeDef(TypedDict):
+    associationType: ResourceShareAssociationTypeType,  # (1)
+    resourceShareArns: NotRequired[Sequence[str]],
+    resourceArn: NotRequired[str],
+    principal: NotRequired[str],
+    associationStatus: NotRequired[ResourceShareAssociationStatusType],  # (2)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `associationType`:
-  [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
-
-Optional fields:
-
-- `resourceShareArns`: `Sequence`\[`str`\]
-- `resourceArn`: `str`
-- `principal`: `str`
-- `associationStatus`:
-  [ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getresourceshareassociationsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype) 
+2. See [:material-code-brackets: ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype) 
 ## GetResourceShareAssociationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourceShareAssociationsResponseTypeDef
+
+def get_value() -> GetResourceShareAssociationsResponseTypeDef:
+    return {
+        "resourceShareAssociations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceShareAssociationsResponseTypeDef(TypedDict):
+    resourceShareAssociations: List[ResourceShareAssociationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceShareInvitationsRequestGetResourceShareInvitationsPaginateTypeDef
 
-<a id="getresourceshareinvitationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ram.type_defs import GetResourceShareInvitationsRequestGetResourceShareInvitationsPaginateTypeDef
 
+def get_value() -> GetResourceShareInvitationsRequestGetResourceShareInvitationsPaginateTypeDef:
+    return {
+        "resourceShareInvitationArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceShareInvitationsRequestGetResourceShareInvitationsPaginateTypeDef(TypedDict):
+    resourceShareInvitationArns: NotRequired[Sequence[str]],
+    resourceShareArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourceShareInvitationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourceShareInvitationsRequestRequestTypeDef
+
+def get_value() -> GetResourceShareInvitationsRequestRequestTypeDef:
+    return {
+        "resourceShareInvitationArns": ...,
+    }
 ```
 
-Optional fields:
-
-- `resourceShareInvitationArns`: `Sequence`\[`str`\]
-- `resourceShareArns`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getresourceshareinvitationsresponsetypedef"></a>
+```python title="Definition"
+class GetResourceShareInvitationsRequestRequestTypeDef(TypedDict):
+    resourceShareInvitationArns: NotRequired[Sequence[str]],
+    resourceShareArns: NotRequired[Sequence[str]],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetResourceShareInvitationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourceShareInvitationsResponseTypeDef
+
+def get_value() -> GetResourceShareInvitationsResponseTypeDef:
+    return {
+        "resourceShareInvitations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceShareInvitationsResponseTypeDef(TypedDict):
+    resourceShareInvitations: List[ResourceShareInvitationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShareInvitations`:
-  `List`\[[ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceSharesRequestGetResourceSharesPaginateTypeDef
 
-<a id="getresourcesharesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ram.type_defs import GetResourceSharesRequestGetResourceSharesPaginateTypeDef
 
+def get_value() -> GetResourceSharesRequestGetResourceSharesPaginateTypeDef:
+    return {
+        "resourceOwner": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceSharesRequestGetResourceSharesPaginateTypeDef(TypedDict):
+    resourceOwner: ResourceOwnerType,  # (1)
+    resourceShareArns: NotRequired[Sequence[str]],
+    resourceShareStatus: NotRequired[ResourceShareStatusType],  # (2)
+    name: NotRequired[str],
+    tagFilters: NotRequired[Sequence[TagFilterTypeDef]],  # (3)
+    permissionArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-brackets: ResourceShareStatusType](./literals.md#resourcesharestatustype) 
+3. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourceSharesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourceSharesRequestRequestTypeDef
+
+def get_value() -> GetResourceSharesRequestRequestTypeDef:
+    return {
+        "resourceOwner": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceSharesRequestRequestTypeDef(TypedDict):
+    resourceOwner: ResourceOwnerType,  # (1)
+    resourceShareArns: NotRequired[Sequence[str]],
+    resourceShareStatus: NotRequired[ResourceShareStatusType],  # (2)
+    name: NotRequired[str],
+    tagFilters: NotRequired[Sequence[TagFilterTypeDef]],  # (3)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    permissionArn: NotRequired[str],
+```
 
-- `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
-
-Optional fields:
-
-- `resourceShareArns`: `Sequence`\[`str`\]
-- `resourceShareStatus`:
-  [ResourceShareStatusType](./literals.md#resourcesharestatustype)
-- `name`: `str`
-- `tagFilters`:
-  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `permissionArn`: `str`
-
-<a id="getresourcesharesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-brackets: ResourceShareStatusType](./literals.md#resourcesharestatustype) 
+3. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
 ## GetResourceSharesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import GetResourceSharesResponseTypeDef
+
+def get_value() -> GetResourceSharesResponseTypeDef:
+    return {
+        "resourceShares": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceSharesResponseTypeDef(TypedDict):
+    resourceShares: List[ResourceShareTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShares`:
-  `List`\[[ResourceShareTypeDef](./type_defs.md#resourcesharetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpendinginvitationresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceShareTypeDef](./type_defs.md#resourcesharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPendingInvitationResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesRequestRequestTypeDef
+
+def get_value() -> ListPendingInvitationResourcesRequestRequestTypeDef:
+    return {
+        "resourceShareInvitationArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPendingInvitationResourcesRequestRequestTypeDef(TypedDict):
+    resourceShareInvitationArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    resourceRegionScope: NotRequired[ResourceRegionScopeFilterType],  # (1)
+```
 
-- `resourceShareInvitationArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `resourceRegionScope`:
-  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
-
-<a id="listpendinginvitationresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype) 
 ## ListPendingInvitationResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesResponseTypeDef
+
+def get_value() -> ListPendingInvitationResourcesResponseTypeDef:
+    return {
+        "resources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPendingInvitationResourcesResponseTypeDef(TypedDict):
+    resources: List[ResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpermissionversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPermissionVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPermissionVersionsRequestRequestTypeDef
+
+def get_value() -> ListPermissionVersionsRequestRequestTypeDef:
+    return {
+        "permissionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `permissionArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listpermissionversionsresponsetypedef"></a>
+```python title="Definition"
+class ListPermissionVersionsRequestRequestTypeDef(TypedDict):
+    permissionArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListPermissionVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPermissionVersionsResponseTypeDef
+
+def get_value() -> ListPermissionVersionsResponseTypeDef:
+    return {
+        "permissions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionVersionsResponseTypeDef(TypedDict):
+    permissions: List[ResourceSharePermissionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `permissions`:
-  `List`\[[ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPermissionsRequestRequestTypeDef
+
+def get_value() -> ListPermissionsRequestRequestTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `resourceType`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listpermissionsresponsetypedef"></a>
+```python title="Definition"
+class ListPermissionsRequestRequestTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListPermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPermissionsResponseTypeDef
+
+def get_value() -> ListPermissionsResponseTypeDef:
+    return {
+        "permissions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionsResponseTypeDef(TypedDict):
+    permissions: List[ResourceSharePermissionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `permissions`:
-  `List`\[[ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPrincipalsRequestListPrincipalsPaginateTypeDef
 
-<a id="listprincipalsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ram.type_defs import ListPrincipalsRequestListPrincipalsPaginateTypeDef
 
+def get_value() -> ListPrincipalsRequestListPrincipalsPaginateTypeDef:
+    return {
+        "resourceOwner": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrincipalsRequestListPrincipalsPaginateTypeDef(TypedDict):
+    resourceOwner: ResourceOwnerType,  # (1)
+    resourceArn: NotRequired[str],
+    principals: NotRequired[Sequence[str]],
+    resourceType: NotRequired[str],
+    resourceShareArns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPrincipalsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPrincipalsRequestRequestTypeDef
+
+def get_value() -> ListPrincipalsRequestRequestTypeDef:
+    return {
+        "resourceOwner": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPrincipalsRequestRequestTypeDef(TypedDict):
+    resourceOwner: ResourceOwnerType,  # (1)
+    resourceArn: NotRequired[str],
+    principals: NotRequired[Sequence[str]],
+    resourceType: NotRequired[str],
+    resourceShareArns: NotRequired[Sequence[str]],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
-
-Optional fields:
-
-- `resourceArn`: `str`
-- `principals`: `Sequence`\[`str`\]
-- `resourceType`: `str`
-- `resourceShareArns`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listprincipalsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
 ## ListPrincipalsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListPrincipalsResponseTypeDef
+
+def get_value() -> ListPrincipalsResponseTypeDef:
+    return {
+        "principals": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPrincipalsResponseTypeDef(TypedDict):
+    principals: List[PrincipalTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `principals`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresourcesharepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourceSharePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListResourceSharePermissionsRequestRequestTypeDef
+
+def get_value() -> ListResourceSharePermissionsRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listresourcesharepermissionsresponsetypedef"></a>
+```python title="Definition"
+class ListResourceSharePermissionsRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListResourceSharePermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListResourceSharePermissionsResponseTypeDef
+
+def get_value() -> ListResourceSharePermissionsResponseTypeDef:
+    return {
+        "permissions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceSharePermissionsResponseTypeDef(TypedDict):
+    permissions: List[ResourceSharePermissionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `permissions`:
-  `List`\[[ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresourcetypesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourceTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListResourceTypesRequestRequestTypeDef
+
+def get_value() -> ListResourceTypesRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListResourceTypesRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    resourceRegionScope: NotRequired[ResourceRegionScopeFilterType],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `resourceRegionScope`:
-  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
-
-<a id="listresourcetypesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype) 
 ## ListResourceTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListResourceTypesResponseTypeDef
+
+def get_value() -> ListResourceTypesResponseTypeDef:
+    return {
+        "resourceTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceTypesResponseTypeDef(TypedDict):
+    resourceTypes: List[ServiceNameAndResourceTypeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceTypes`:
-  `List`\[[ServiceNameAndResourceTypeTypeDef](./type_defs.md#servicenameandresourcetypetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceNameAndResourceTypeTypeDef](./type_defs.md#servicenameandresourcetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourcesRequestListResourcesPaginateTypeDef
 
-<a id="listresourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ram.type_defs import ListResourcesRequestListResourcesPaginateTypeDef
 
+def get_value() -> ListResourcesRequestListResourcesPaginateTypeDef:
+    return {
+        "resourceOwner": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcesRequestListResourcesPaginateTypeDef(TypedDict):
+    resourceOwner: ResourceOwnerType,  # (1)
+    principal: NotRequired[str],
+    resourceType: NotRequired[str],
+    resourceArns: NotRequired[Sequence[str]],
+    resourceShareArns: NotRequired[Sequence[str]],
+    resourceRegionScope: NotRequired[ResourceRegionScopeFilterType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-brackets: ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListResourcesRequestRequestTypeDef
+
+def get_value() -> ListResourcesRequestRequestTypeDef:
+    return {
+        "resourceOwner": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourcesRequestRequestTypeDef(TypedDict):
+    resourceOwner: ResourceOwnerType,  # (1)
+    principal: NotRequired[str],
+    resourceType: NotRequired[str],
+    resourceArns: NotRequired[Sequence[str]],
+    resourceShareArns: NotRequired[Sequence[str]],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    resourceRegionScope: NotRequired[ResourceRegionScopeFilterType],  # (2)
+```
 
-- `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
-
-Optional fields:
-
-- `principal`: `str`
-- `resourceType`: `str`
-- `resourceArns`: `Sequence`\[`str`\]
-- `resourceShareArns`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `resourceRegionScope`:
-  [ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype)
-
-<a id="listresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-brackets: ResourceRegionScopeFilterType](./literals.md#resourceregionscopefiltertype) 
 ## ListResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ListResourcesResponseTypeDef
+
+def get_value() -> ListResourcesResponseTypeDef:
+    return {
+        "resources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourcesResponseTypeDef(TypedDict):
+    resources: List[ResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="principaltypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PrincipalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import PrincipalTypeDef
+
+def get_value() -> PrincipalTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `resourceShareArn`: `str`
-- `creationTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `external`: `bool`
-
-<a id="promoteresourcesharecreatedfrompolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PrincipalTypeDef(TypedDict):
+    id: NotRequired[str],
+    resourceShareArn: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    external: NotRequired[bool],
+```
 
 ## PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef
+
+def get_value() -> PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-
-<a id="promoteresourcesharecreatedfrompolicyresponsetypedef"></a>
+```python title="Definition"
+class PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+```
 
 ## PromoteResourceShareCreatedFromPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyResponseTypeDef
+
+def get_value() -> PromoteResourceShareCreatedFromPolicyResponseTypeDef:
+    return {
+        "returnValue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PromoteResourceShareCreatedFromPolicyResponseTypeDef(TypedDict):
+    returnValue: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `returnValue`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rejectresourceshareinvitationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RejectResourceShareInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import RejectResourceShareInvitationRequestRequestTypeDef
+
+def get_value() -> RejectResourceShareInvitationRequestRequestTypeDef:
+    return {
+        "resourceShareInvitationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareInvitationArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="rejectresourceshareinvitationresponsetypedef"></a>
+```python title="Definition"
+class RejectResourceShareInvitationRequestRequestTypeDef(TypedDict):
+    resourceShareInvitationArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## RejectResourceShareInvitationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import RejectResourceShareInvitationResponseTypeDef
+
+def get_value() -> RejectResourceShareInvitationResponseTypeDef:
+    return {
+        "resourceShareInvitation": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RejectResourceShareInvitationResponseTypeDef(TypedDict):
+    resourceShareInvitation: ResourceShareInvitationTypeDef,  # (1)
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShareInvitation`:
-  [ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef)
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourceshareassociationtypedef"></a>
-
+1. See [:material-code-braces: ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceShareAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResourceShareAssociationTypeDef
+
+def get_value() -> ResourceShareAssociationTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceShareAssociationTypeDef(TypedDict):
+    resourceShareArn: NotRequired[str],
+    resourceShareName: NotRequired[str],
+    associatedEntity: NotRequired[str],
+    associationType: NotRequired[ResourceShareAssociationTypeType],  # (1)
+    status: NotRequired[ResourceShareAssociationStatusType],  # (2)
+    statusMessage: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    external: NotRequired[bool],
+```
 
-- `resourceShareArn`: `str`
-- `resourceShareName`: `str`
-- `associatedEntity`: `str`
-- `associationType`:
-  [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
-- `status`:
-  [ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype)
-- `statusMessage`: `str`
-- `creationTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `external`: `bool`
-
-<a id="resourceshareinvitationtypedef"></a>
-
+1. See [:material-code-brackets: ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype) 
+2. See [:material-code-brackets: ResourceShareAssociationStatusType](./literals.md#resourceshareassociationstatustype) 
 ## ResourceShareInvitationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResourceShareInvitationTypeDef
+
+def get_value() -> ResourceShareInvitationTypeDef:
+    return {
+        "resourceShareInvitationArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceShareInvitationTypeDef(TypedDict):
+    resourceShareInvitationArn: NotRequired[str],
+    resourceShareName: NotRequired[str],
+    resourceShareArn: NotRequired[str],
+    senderAccountId: NotRequired[str],
+    receiverAccountId: NotRequired[str],
+    invitationTimestamp: NotRequired[datetime],
+    status: NotRequired[ResourceShareInvitationStatusType],  # (1)
+    resourceShareAssociations: NotRequired[List[ResourceShareAssociationTypeDef]],  # (2)
+    receiverArn: NotRequired[str],
+```
 
-- `resourceShareInvitationArn`: `str`
-- `resourceShareName`: `str`
-- `resourceShareArn`: `str`
-- `senderAccountId`: `str`
-- `receiverAccountId`: `str`
-- `invitationTimestamp`: `datetime`
-- `status`:
-  [ResourceShareInvitationStatusType](./literals.md#resourceshareinvitationstatustype)
-- `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
-- `receiverArn`: `str`
-
-<a id="resourcesharepermissiondetailtypedef"></a>
-
+1. See [:material-code-brackets: ResourceShareInvitationStatusType](./literals.md#resourceshareinvitationstatustype) 
+2. See [:material-code-braces: ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef) 
 ## ResourceSharePermissionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResourceSharePermissionDetailTypeDef
+
+def get_value() -> ResourceSharePermissionDetailTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `version`: `str`
-- `defaultVersion`: `bool`
-- `name`: `str`
-- `resourceType`: `str`
-- `permission`: `str`
-- `creationTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `isResourceTypeDefault`: `bool`
-
-<a id="resourcesharepermissionsummarytypedef"></a>
+```python title="Definition"
+class ResourceSharePermissionDetailTypeDef(TypedDict):
+    arn: NotRequired[str],
+    version: NotRequired[str],
+    defaultVersion: NotRequired[bool],
+    name: NotRequired[str],
+    resourceType: NotRequired[str],
+    permission: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    isResourceTypeDefault: NotRequired[bool],
+```
 
 ## ResourceSharePermissionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResourceSharePermissionSummaryTypeDef
+
+def get_value() -> ResourceSharePermissionSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `version`: `str`
-- `defaultVersion`: `bool`
-- `name`: `str`
-- `resourceType`: `str`
-- `status`: `str`
-- `creationTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `isResourceTypeDefault`: `bool`
-
-<a id="resourcesharetypedef"></a>
+```python title="Definition"
+class ResourceSharePermissionSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    version: NotRequired[str],
+    defaultVersion: NotRequired[bool],
+    name: NotRequired[str],
+    resourceType: NotRequired[str],
+    status: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    isResourceTypeDefault: NotRequired[bool],
+```
 
 ## ResourceShareTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResourceShareTypeDef
+
+def get_value() -> ResourceShareTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceShareTypeDef(TypedDict):
+    resourceShareArn: NotRequired[str],
+    name: NotRequired[str],
+    owningAccountId: NotRequired[str],
+    allowExternalPrincipals: NotRequired[bool],
+    status: NotRequired[ResourceShareStatusType],  # (1)
+    statusMessage: NotRequired[str],
+    tags: NotRequired[List[TagTypeDef]],  # (2)
+    creationTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    featureSet: NotRequired[ResourceShareFeatureSetType],  # (3)
+```
 
-- `resourceShareArn`: `str`
-- `name`: `str`
-- `owningAccountId`: `str`
-- `allowExternalPrincipals`: `bool`
-- `status`: [ResourceShareStatusType](./literals.md#resourcesharestatustype)
-- `statusMessage`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `creationTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `featureSet`:
-  [ResourceShareFeatureSetType](./literals.md#resourcesharefeaturesettype)
-
-<a id="resourcetypedef"></a>
-
+1. See [:material-code-brackets: ResourceShareStatusType](./literals.md#resourcesharestatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ResourceShareFeatureSetType](./literals.md#resourcesharefeaturesettype) 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    arn: NotRequired[str],
+    type: NotRequired[str],
+    resourceShareArn: NotRequired[str],
+    resourceGroupArn: NotRequired[str],
+    status: NotRequired[ResourceStatusType],  # (1)
+    statusMessage: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    resourceRegionScope: NotRequired[ResourceRegionScopeType],  # (2)
+```
 
-- `arn`: `str`
-- `type`: `str`
-- `resourceShareArn`: `str`
-- `resourceGroupArn`: `str`
-- `status`: [ResourceStatusType](./literals.md#resourcestatustype)
-- `statusMessage`: `str`
-- `creationTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `resourceRegionScope`:
-  [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-brackets: ResourceRegionScopeType](./literals.md#resourceregionscopetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="servicenameandresourcetypetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ServiceNameAndResourceTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import ServiceNameAndResourceTypeTypeDef
+
+def get_value() -> ServiceNameAndResourceTypeTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceNameAndResourceTypeTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+    serviceName: NotRequired[str],
+    resourceRegionScope: NotRequired[ResourceRegionScopeType],  # (1)
+```
 
-- `resourceType`: `str`
-- `serviceName`: `str`
-- `resourceRegionScope`:
-  [ResourceRegionScopeType](./literals.md#resourceregionscopetype)
-
-<a id="tagfiltertypedef"></a>
-
+1. See [:material-code-brackets: ResourceRegionScopeType](./literals.md#resourceregionscopetype) 
 ## TagFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import TagFilterTypeDef
+
+def get_value() -> TagFilterTypeDef:
+    return {
+        "tagKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `tagKey`: `str`
-- `tagValues`: `Sequence`\[`str`\]
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagFilterTypeDef(TypedDict):
+    tagKey: NotRequired[str],
+    tagValues: NotRequired[Sequence[str]],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceShareArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateresourcesharerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateResourceShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import UpdateResourceShareRequestRequestTypeDef
+
+def get_value() -> UpdateResourceShareRequestRequestTypeDef:
+    return {
+        "resourceShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceShareArn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `allowExternalPrincipals`: `bool`
-- `clientToken`: `str`
-
-<a id="updateresourceshareresponsetypedef"></a>
+```python title="Definition"
+class UpdateResourceShareRequestRequestTypeDef(TypedDict):
+    resourceShareArn: str,
+    name: NotRequired[str],
+    allowExternalPrincipals: NotRequired[bool],
+    clientToken: NotRequired[str],
+```
 
 ## UpdateResourceShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.type_defs import UpdateResourceShareResponseTypeDef
+
+def get_value() -> UpdateResourceShareResponseTypeDef:
+    return {
+        "resourceShare": ...,
+        "clientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceShareResponseTypeDef(TypedDict):
+    resourceShare: ResourceShareTypeDef,  # (1)
+    clientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceShare`: [ResourceShareTypeDef](./type_defs.md#resourcesharetypedef)
-- `clientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceShareTypeDef](./type_defs.md#resourcesharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -1,659 +1,696 @@
-<a id="literals-for-boto3-finspacedata-module"></a>
-
-# Literals for boto3 FinSpaceData module
+# Literals
 
 > [Index](../README.md) > [FinSpaceData](./README.md) > Literals
 
-Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
-type annotations stubs module
-[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
+!!! note ""
 
-- [Literals for boto3 FinSpaceData module](#literals-for-boto3-finspacedata-module)
-  - [ApiAccessType](#apiaccesstype)
-  - [ApplicationPermissionType](#applicationpermissiontype)
-  - [ChangeTypeType](#changetypetype)
-  - [ColumnDataTypeType](#columndatatypetype)
-  - [DataViewStatusType](#dataviewstatustype)
-  - [DatasetKindType](#datasetkindtype)
-  - [DatasetStatusType](#datasetstatustype)
-  - [ErrorCategoryType](#errorcategorytype)
-  - [ExportFileFormatType](#exportfileformattype)
-  - [IngestionStatusType](#ingestionstatustype)
-  - [ListChangesetsPaginatorName](#listchangesetspaginatorname)
-  - [ListDataViewsPaginatorName](#listdataviewspaginatorname)
-  - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
-  - [ListPermissionGroupsPaginatorName](#listpermissiongroupspaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [UserStatusType](#userstatustype)
-  - [UserTypeType](#usertypetype)
-  - [locationTypeType](#locationtypetype)
-  - [FinSpaceDataServiceName](#finspacedataservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="apiaccesstype"></a>
+    Auto-generated documentation for [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+    type annotations stubs module [mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 ## ApiAccessType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ApiAccessType
+
+def get_value() -> ApiAccessType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="applicationpermissiontype"></a>
-
+```python title="Definition"
+ApiAccessType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ApplicationPermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ApplicationPermissionType
+
+def get_value() -> ApplicationPermissionType:
+    return "AccessNotebooks"
 ```
 
-Values:
-
-- `AccessNotebooks`
-- `CreateDataset`
-- `GetTemporaryCredentials`
-- `ManageAttributeSets`
-- `ManageClusters`
-- `ManageUsersAndGroups`
-- `ViewAuditData`
-
-<a id="changetypetype"></a>
-
+```python title="Definition"
+ApplicationPermissionType = Literal[
+    "AccessNotebooks",
+    "CreateDataset",
+    "GetTemporaryCredentials",
+    "ManageAttributeSets",
+    "ManageClusters",
+    "ManageUsersAndGroups",
+    "ViewAuditData",
+]
+```
 ## ChangeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ChangeTypeType
+
+def get_value() -> ChangeTypeType:
+    return "APPEND"
 ```
 
-Values:
-
-- `APPEND`
-- `MODIFY`
-- `REPLACE`
-
-<a id="columndatatypetype"></a>
-
+```python title="Definition"
+ChangeTypeType = Literal[
+    "APPEND",
+    "MODIFY",
+    "REPLACE",
+]
+```
 ## ColumnDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ColumnDataTypeType
+
+def get_value() -> ColumnDataTypeType:
+    return "BIGINT"
 ```
 
-Values:
-
-- `BIGINT`
-- `BINARY`
-- `BOOLEAN`
-- `CHAR`
-- `DATE`
-- `DATETIME`
-- `DOUBLE`
-- `FLOAT`
-- `INTEGER`
-- `SMALLINT`
-- `STRING`
-- `TINYINT`
-
-<a id="dataviewstatustype"></a>
-
+```python title="Definition"
+ColumnDataTypeType = Literal[
+    "BIGINT",
+    "BINARY",
+    "BOOLEAN",
+    "CHAR",
+    "DATE",
+    "DATETIME",
+    "DOUBLE",
+    "FLOAT",
+    "INTEGER",
+    "SMALLINT",
+    "STRING",
+    "TINYINT",
+]
+```
 ## DataViewStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import DataViewStatusType
+
+def get_value() -> DataViewStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `FAILED_CLEANUP_FAILED`
-- `PENDING`
-- `RUNNING`
-- `STARTING`
-- `SUCCESS`
-- `TIMEOUT`
-
-<a id="datasetkindtype"></a>
-
+```python title="Definition"
+DataViewStatusType = Literal[
+    "CANCELLED",
+    "FAILED",
+    "FAILED_CLEANUP_FAILED",
+    "PENDING",
+    "RUNNING",
+    "STARTING",
+    "SUCCESS",
+    "TIMEOUT",
+]
+```
 ## DatasetKindType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import DatasetKindType
+
+def get_value() -> DatasetKindType:
+    return "NON_TABULAR"
 ```
 
-Values:
-
-- `NON_TABULAR`
-- `TABULAR`
-
-<a id="datasetstatustype"></a>
-
+```python title="Definition"
+DatasetKindType = Literal[
+    "NON_TABULAR",
+    "TABULAR",
+]
+```
 ## DatasetStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import DatasetStatusType
+
+def get_value() -> DatasetStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PENDING`
-- `RUNNING`
-- `SUCCESS`
-
-<a id="errorcategorytype"></a>
-
+```python title="Definition"
+DatasetStatusType = Literal[
+    "FAILED",
+    "PENDING",
+    "RUNNING",
+    "SUCCESS",
+]
+```
 ## ErrorCategoryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ErrorCategoryType
+
+def get_value() -> ErrorCategoryType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `CANCELLED`
-- `INTERNAL_SERVICE_EXCEPTION`
-- `RESOURCE_NOT_FOUND`
-- `SERVICE_QUOTA_EXCEEDED`
-- `THROTTLING`
-- `USER_RECOVERABLE`
-- `VALIDATION`
-
-<a id="exportfileformattype"></a>
-
+```python title="Definition"
+ErrorCategoryType = Literal[
+    "ACCESS_DENIED",
+    "CANCELLED",
+    "INTERNAL_SERVICE_EXCEPTION",
+    "RESOURCE_NOT_FOUND",
+    "SERVICE_QUOTA_EXCEEDED",
+    "THROTTLING",
+    "USER_RECOVERABLE",
+    "VALIDATION",
+]
+```
 ## ExportFileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ExportFileFormatType
+
+def get_value() -> ExportFileFormatType:
+    return "DELIMITED_TEXT"
 ```
 
-Values:
-
-- `DELIMITED_TEXT`
-- `PARQUET`
-
-<a id="ingestionstatustype"></a>
-
+```python title="Definition"
+ExportFileFormatType = Literal[
+    "DELIMITED_TEXT",
+    "PARQUET",
+]
+```
 ## IngestionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import IngestionStatusType
+
+def get_value() -> IngestionStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PENDING`
-- `RUNNING`
-- `STOP_REQUESTED`
-- `SUCCESS`
-
-<a id="listchangesetspaginatorname"></a>
-
+```python title="Definition"
+IngestionStatusType = Literal[
+    "FAILED",
+    "PENDING",
+    "RUNNING",
+    "STOP_REQUESTED",
+    "SUCCESS",
+]
+```
 ## ListChangesetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ListChangesetsPaginatorName
+
+def get_value() -> ListChangesetsPaginatorName:
+    return "list_changesets"
 ```
 
-Values:
-
-- `list_changesets`
-
-<a id="listdataviewspaginatorname"></a>
-
+```python title="Definition"
+ListChangesetsPaginatorName = Literal[
+    "list_changesets",
+]
+```
 ## ListDataViewsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ListDataViewsPaginatorName
+
+def get_value() -> ListDataViewsPaginatorName:
+    return "list_data_views"
 ```
 
-Values:
-
-- `list_data_views`
-
-<a id="listdatasetspaginatorname"></a>
-
+```python title="Definition"
+ListDataViewsPaginatorName = Literal[
+    "list_data_views",
+]
+```
 ## ListDatasetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ListDatasetsPaginatorName
+
+def get_value() -> ListDatasetsPaginatorName:
+    return "list_datasets"
 ```
 
-Values:
-
-- `list_datasets`
-
-<a id="listpermissiongroupspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetsPaginatorName = Literal[
+    "list_datasets",
+]
+```
 ## ListPermissionGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ListPermissionGroupsPaginatorName
+
+def get_value() -> ListPermissionGroupsPaginatorName:
+    return "list_permission_groups"
 ```
 
-Values:
-
-- `list_permission_groups`
-
-<a id="listuserspaginatorname"></a>
-
+```python title="Definition"
+ListPermissionGroupsPaginatorName = Literal[
+    "list_permission_groups",
+]
+```
 ## ListUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
 ```
 
-Values:
-
-- `list_users`
-
-<a id="userstatustype"></a>
-
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## UserStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import UserStatusType
+
+def get_value() -> UserStatusType:
+    return "CREATING"
 ```
 
-Values:
-
-- `CREATING`
-- `DISABLED`
-- `ENABLED`
-
-<a id="usertypetype"></a>
-
+```python title="Definition"
+UserStatusType = Literal[
+    "CREATING",
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## UserTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import UserTypeType
+
+def get_value() -> UserTypeType:
+    return "APP_USER"
 ```
 
-Values:
-
-- `APP_USER`
-- `SUPER_USER`
-
-<a id="locationtypetype"></a>
-
+```python title="Definition"
+UserTypeType = Literal[
+    "APP_USER",
+    "SUPER_USER",
+]
+```
 ## locationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import locationTypeType
+
+def get_value() -> locationTypeType:
+    return "INGESTION"
 ```
 
-Values:
-
-- `INGESTION`
-- `SAGEMAKER`
-
-<a id="finspacedataservicename"></a>
-
+```python title="Definition"
+locationTypeType = Literal[
+    "INGESTION",
+    "SAGEMAKER",
+]
+```
 ## FinSpaceDataServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import FinSpaceDataServiceName
+
+def get_value() -> FinSpaceDataServiceName:
+    return "finspace-data"
 ```
 
-Values:
-
-- `finspace-data`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+FinSpaceDataServiceName = Literal[
+    "finspace-data",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace_data.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_changesets"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_changesets",
+    "list_data_views",
+    "list_datasets",
+    "list_permission_groups",
+    "list_users",
+]
+```
+## RegionName
 
-- `list_changesets`
-- `list_data_views`
-- `list_datasets`
-- `list_permission_groups`
-- `list_users`
+```python title="Usage Example"
+from mypy_boto3_finspace_data.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ca-central-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ca-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-serverlessapplicationrepository-module"></a>
+# Paginators
 
-# Paginators for boto3 ServerlessApplicationRepository module
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > Paginators
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
-> Paginators
+!!! note ""
 
-Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module
-[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
-
-- [Paginators for boto3 ServerlessApplicationRepository module](#paginators-for-boto3-serverlessapplicationrepository-module)
-  - [ListApplicationDependenciesPaginator](#listapplicationdependenciespaginator)
-  - [ListApplicationVersionsPaginator](#listapplicationversionspaginator)
-  - [ListApplicationsPaginator](#listapplicationspaginator)
-
-<a id="listapplicationdependenciespaginator"></a>
+    Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+    type annotations stubs module [mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ## ListApplicationDependenciesPaginator
 
-Type annotations for
-`boto3.client("serverlessrepo").get_paginator("list_application_dependencies")`.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_paginator("list_application_dependencies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator
@@ -33,29 +21,41 @@ def get_list_application_dependencies_paginator() -> ListApplicationDependencies
     return Session().client("serverlessrepo").get_paginator("list_application_dependencies")
 ```
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Paginator.ListApplicationDependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationDependencies)
 
-Arguments for `ListApplicationDependenciesPaginator.paginate` method:
+### paginate
 
-- `ApplicationId`: `str` *(required)*
-- `SemanticVersion`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationDependenciesPaginator.paginate` method.
 
-`ListApplicationDependenciesPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApplicationId: str,
+    SemanticVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApplicationDependenciesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listapplicationversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef](./type_defs.md#listapplicationdependenciesrequestlistapplicationdependenciespaginatetypedef) 
 ## ListApplicationVersionsPaginator
 
-Type annotations for
-`boto3.client("serverlessrepo").get_paginator("list_application_versions")`.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_paginator("list_application_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_serverlessrepo.paginator import ListApplicationVersionsPaginator
@@ -64,28 +64,40 @@ def get_list_application_versions_paginator() -> ListApplicationVersionsPaginato
     return Session().client("serverlessrepo").get_paginator("list_application_versions")
 ```
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Paginator.ListApplicationVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplicationVersions)
 
-Arguments for `ListApplicationVersionsPaginator.paginate` method:
+### paginate
 
-- `ApplicationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationVersionsPaginator.paginate` method.
 
-`ListApplicationVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApplicationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApplicationVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listapplicationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef](./type_defs.md#listapplicationversionsrequestlistapplicationversionspaginatetypedef) 
 ## ListApplicationsPaginator
 
-Type annotations for
-`boto3.client("serverlessrepo").get_paginator("list_applications")`.
+Type annotations and code completion for `#!python boto3.client("serverlessrepo").get_paginator("list_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_serverlessrepo.paginator import ListApplicationsPaginator
@@ -94,13 +106,30 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("serverlessrepo").get_paginator("list_applications")
 ```
 
-Boto3 documentation:
-[ServerlessApplicationRepository.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Paginator.ListApplications)
 
-Arguments for `ListApplicationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationsPaginator.paginate` method.
 
-`ListApplicationsPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApplicationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestListApplicationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef) 

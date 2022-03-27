@@ -1,37 +1,18 @@
-<a id="ebsclient-for-boto3-ebs-module"></a>
-
-# EBSClient for boto3 EBS module
+# EBSClient
 
 > [Index](../README.md) > [EBS](./README.md) > EBSClient
 
-Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
-type annotations stubs module
-[mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
+!!! note ""
 
-- [EBSClient for boto3 EBS module](#ebsclient-for-boto3-ebs-module)
-  - [EBSClient](#ebsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [complete_snapshot](#complete_snapshot)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_snapshot_block](#get_snapshot_block)
-    - [list_changed_blocks](#list_changed_blocks)
-    - [list_snapshot_blocks](#list_snapshot_blocks)
-    - [put_snapshot_block](#put_snapshot_block)
-    - [start_snapshot](#start_snapshot)
-
-<a id="ebsclient"></a>
+    Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+    type annotations stubs module [mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 ## EBSClient
 
-Type annotations for `boto3.client("ebs")`
+Type annotations and code completion for `#!python boto3.client("ebs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_ebs.client import EBSClient
 
@@ -39,243 +20,291 @@ def get_ebs_client() -> EBSClient:
     return Session().client("ebs")
 ```
 
-Boto3 documentation:
-[EBS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("ebs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("ebs")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConcurrentLimitExceededException,
+    client.ConflictException,
+    client.InternalServerException,
+    client.RequestThrottledException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_ebs.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentLimitExceededException`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.RequestThrottledException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-EBSClient exceptions.
-
-Type annotations for `boto3.client("ebs").exceptions` method.
-
-Boto3 documentation:
-[EBS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("ebs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("ebs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.can_paginate)
 
-Boto3 documentation:
-[EBS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="complete\_snapshot"></a>
-
-### complete_snapshot
+### complete\_snapshot
 
 Seals and completes the snapshot after all of the required blocks of data have
 been written to it.
 
-Type annotations for `boto3.client("ebs").complete_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("ebs").complete_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot)
 
-Boto3 documentation:
-[EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot)
+```python title="Method definition"
+def complete_snapshot(
+    self,
+    *,
+    SnapshotId: str,
+    ChangedBlocksCount: int,
+    Checksum: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    ChecksumAggregationMethod: ChecksumAggregationMethodType = ...,  # (2)
+) -> CompleteSnapshotResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CompleteSnapshotRequestRequestTypeDef](./type_defs.md#completesnapshotrequestrequesttypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype) 
+3. See [:material-code-braces: CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
-- `ChangedBlocksCount`: `int` *(required)*
-- `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
-- `ChecksumAggregationMethod`: `Literal['LINEAR']` (see
-  [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
+```python title="Usage example with kwargs"
+kwargs: CompleteSnapshotRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+    "ChangedBlocksCount": ...,
+}
 
-Returns
-[CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef).
+parent.complete_snapshot(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: CompleteSnapshotRequestRequestTypeDef](./type_defs.md#completesnapshotrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("ebs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("ebs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[EBS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_snapshot\_block"></a>
-
-### get_snapshot_block
+### get\_snapshot\_block
 
 Returns the data in a block in an Amazon Elastic Block Store snapshot.
 
-Type annotations for `boto3.client("ebs").get_snapshot_block` method.
+Type annotations and code completion for `#!python boto3.client("ebs").get_snapshot_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block)
 
-Boto3 documentation:
-[EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block)
+```python title="Method definition"
+def get_snapshot_block(
+    self,
+    *,
+    SnapshotId: str,
+    BlockIndex: int,
+    BlockToken: str,
+) -> GetSnapshotBlockResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSnapshotBlockRequestRequestTypeDef](./type_defs.md#getsnapshotblockrequestrequesttypedef).
+1. See [:material-code-braces: GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
-- `BlockIndex`: `int` *(required)*
-- `BlockToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSnapshotBlockRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+    "BlockIndex": ...,
+    "BlockToken": ...,
+}
 
-Returns
-[GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef).
+parent.get_snapshot_block(**kwargs)
+```
 
-<a id="list\_changed\_blocks"></a>
+1. See [:material-code-braces: GetSnapshotBlockRequestRequestTypeDef](./type_defs.md#getsnapshotblockrequestrequesttypedef) 
 
-### list_changed_blocks
+### list\_changed\_blocks
 
 Returns information about the blocks that are different between two Amazon
 Elastic Block Store snapshots of the same volume/snapshot lineage.
 
-Type annotations for `boto3.client("ebs").list_changed_blocks` method.
+Type annotations and code completion for `#!python boto3.client("ebs").list_changed_blocks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks)
 
-Boto3 documentation:
-[EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks)
+```python title="Method definition"
+def list_changed_blocks(
+    self,
+    *,
+    SecondSnapshotId: str,
+    FirstSnapshotId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StartingBlockIndex: int = ...,
+) -> ListChangedBlocksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChangedBlocksRequestRequestTypeDef](./type_defs.md#listchangedblocksrequestrequesttypedef).
+1. See [:material-code-braces: ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecondSnapshotId`: `str` *(required)*
-- `FirstSnapshotId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartingBlockIndex`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListChangedBlocksRequestRequestTypeDef = {  # (1)
+    "SecondSnapshotId": ...,
+}
 
-Returns
-[ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef).
+parent.list_changed_blocks(**kwargs)
+```
 
-<a id="list\_snapshot\_blocks"></a>
+1. See [:material-code-braces: ListChangedBlocksRequestRequestTypeDef](./type_defs.md#listchangedblocksrequestrequesttypedef) 
 
-### list_snapshot_blocks
+### list\_snapshot\_blocks
 
 Returns information about the blocks in an Amazon Elastic Block Store snapshot.
 
-Type annotations for `boto3.client("ebs").list_snapshot_blocks` method.
+Type annotations and code completion for `#!python boto3.client("ebs").list_snapshot_blocks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
 
-Boto3 documentation:
-[EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
+```python title="Method definition"
+def list_snapshot_blocks(
+    self,
+    *,
+    SnapshotId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StartingBlockIndex: int = ...,
+) -> ListSnapshotBlocksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSnapshotBlocksRequestRequestTypeDef](./type_defs.md#listsnapshotblocksrequestrequesttypedef).
+1. See [:material-code-braces: ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartingBlockIndex`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSnapshotBlocksRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+}
 
-Returns
-[ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef).
+parent.list_snapshot_blocks(**kwargs)
+```
 
-<a id="put\_snapshot\_block"></a>
+1. See [:material-code-braces: ListSnapshotBlocksRequestRequestTypeDef](./type_defs.md#listsnapshotblocksrequestrequesttypedef) 
 
-### put_snapshot_block
+### put\_snapshot\_block
 
 Writes a block of data to a snapshot.
 
-Type annotations for `boto3.client("ebs").put_snapshot_block` method.
+Type annotations and code completion for `#!python boto3.client("ebs").put_snapshot_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block)
 
-Boto3 documentation:
-[EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block)
+```python title="Method definition"
+def put_snapshot_block(
+    self,
+    *,
+    SnapshotId: str,
+    BlockIndex: int,
+    BlockData: Union[bytes, IO[bytes], StreamingBody],
+    DataLength: int,
+    Checksum: str,
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)
+    Progress: int = ...,
+) -> PutSnapshotBlockResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutSnapshotBlockRequestRequestTypeDef](./type_defs.md#putsnapshotblockrequestrequesttypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
-- `BlockIndex`: `int` *(required)*
-- `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `DataLength`: `int` *(required)*
-- `Checksum`: `str` *(required)*
-- `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)) *(required)*
-- `Progress`: `int`
+```python title="Usage example with kwargs"
+kwargs: PutSnapshotBlockRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+    "BlockIndex": ...,
+    "BlockData": ...,
+    "DataLength": ...,
+    "Checksum": ...,
+    "ChecksumAlgorithm": ...,
+}
 
-Returns
-[PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef).
+parent.put_snapshot_block(**kwargs)
+```
 
-<a id="start\_snapshot"></a>
+1. See [:material-code-braces: PutSnapshotBlockRequestRequestTypeDef](./type_defs.md#putsnapshotblockrequestrequesttypedef) 
 
-### start_snapshot
+### start\_snapshot
 
 Creates a new Amazon EBS snapshot.
 
-Type annotations for `boto3.client("ebs").start_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("ebs").start_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot)
 
-Boto3 documentation:
-[EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot)
+```python title="Method definition"
+def start_snapshot(
+    self,
+    *,
+    VolumeSize: int,
+    ParentSnapshotId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    Description: str = ...,
+    ClientToken: str = ...,
+    Encrypted: bool = ...,
+    KmsKeyArn: str = ...,
+    Timeout: int = ...,
+) -> StartSnapshotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartSnapshotRequestRequestTypeDef](./type_defs.md#startsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: StartSnapshotResponseTypeDef](./type_defs.md#startsnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VolumeSize`: `int` *(required)*
-- `ParentSnapshotId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Description`: `str`
-- `ClientToken`: `str`
-- `Encrypted`: `bool`
-- `KmsKeyArn`: `str`
-- `Timeout`: `int`
+```python title="Usage example with kwargs"
+kwargs: StartSnapshotRequestRequestTypeDef = {  # (1)
+    "VolumeSize": ...,
+}
 
-Returns
-[StartSnapshotResponseTypeDef](./type_defs.md#startsnapshotresponsetypedef).
+parent.start_snapshot(**kwargs)
+```
+
+1. See [:material-code-braces: StartSnapshotRequestRequestTypeDef](./type_defs.md#startsnapshotrequestrequesttypedef) 
+
+
+
+

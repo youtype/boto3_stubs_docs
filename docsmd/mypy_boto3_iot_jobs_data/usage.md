@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-iotjobsdataplane-module"></a>
-
-# Examples for boto3 IoTJobsDataPlane module
+# Examples
 
 > [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Examples
 
-- [Examples for boto3 IoTJobsDataPlane module](#examples-for-boto3-iotjobsdataplane-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+    type annotations stubs module [mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iot-jobs-data]` package installed.
 
-Write your `IoTJobsDataPlane` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `IoTJobsDataPlane` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoTJobsDataPlaneClient
-# and provides type checking and code completion
-client = session.client("iot-jobs-data")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("iot-jobs-data")  # (1)
+    result = client.describe_job_execution()  # (2)
+    ```
+
+    1. client: [IoTJobsDataPlaneClient](./client.md)
+    2. result: [:material-code-braces: DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iot-jobs-data]` or a standalone
-`mypy_boto3_iot_jobs_data` package, you have to explicitly specify
-`client: IoTJobsDataPlaneClient` type annotation.
+With `boto3-stubs-lite[iot-jobs-data]`
+or a standalone `mypy_boto3_iot_jobs_data` package, you have to explicitly specify `client: IoTJobsDataPlaneClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
+    from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseTypeDef
+    from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestRequestTypeDef
 
 
-from mypy_boto3_iot_jobs_data.type_defs import bool
+    session = Session()
+
+    client: IoTJobsDataPlaneClient = session.client("iot-jobs-data")
+
+    kwargs: DescribeJobExecutionRequestRequestTypeDef = {...}
+    result: DescribeJobExecutionResponseTypeDef = client.describe_job_execution(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: IoTJobsDataPlaneClient = session.client("iot-jobs-data")
 
-result: bool = client.can_paginate()
-```
+

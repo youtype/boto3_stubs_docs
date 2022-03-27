@@ -1,116 +1,127 @@
-<a id="typed-dictionaries-for-boto3-personalizeevents-module"></a>
-
-# Typed dictionaries for boto3 PersonalizeEvents module
+# Typed dictionaries
 
 > [Index](../README.md) > [PersonalizeEvents](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
-type annotations stubs module
-[mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
+!!! note ""
 
-- [Typed dictionaries for boto3 PersonalizeEvents module](#typed-dictionaries-for-boto3-personalizeevents-module)
-  - [EventTypeDef](#eventtypedef)
-  - [ItemTypeDef](#itemtypedef)
-  - [PutEventsRequestRequestTypeDef](#puteventsrequestrequesttypedef)
-  - [PutItemsRequestRequestTypeDef](#putitemsrequestrequesttypedef)
-  - [PutUsersRequestRequestTypeDef](#putusersrequestrequesttypedef)
-  - [UserTypeDef](#usertypedef)
-
-<a id="eventtypedef"></a>
+    Auto-generated documentation for [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
+    type annotations stubs module [mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize_events.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "eventType": ...,
+        "sentAt": ...,
+    }
 ```
 
-Required fields:
-
-- `eventType`: `str`
-- `sentAt`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `eventId`: `str`
-- `eventValue`: `float`
-- `itemId`: `str`
-- `properties`: `str`
-- `recommendationId`: `str`
-- `impression`: `Sequence`\[`str`\]
-
-<a id="itemtypedef"></a>
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    eventType: str,
+    sentAt: Union[datetime, str],
+    eventId: NotRequired[str],
+    eventValue: NotRequired[float],
+    itemId: NotRequired[str],
+    properties: NotRequired[str],
+    recommendationId: NotRequired[str],
+    impression: NotRequired[Sequence[str]],
+```
 
 ## ItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize_events.type_defs import ItemTypeDef
+
+def get_value() -> ItemTypeDef:
+    return {
+        "itemId": ...,
+    }
 ```
 
-Required fields:
-
-- `itemId`: `str`
-
-Optional fields:
-
-- `properties`: `str`
-
-<a id="puteventsrequestrequesttypedef"></a>
+```python title="Definition"
+class ItemTypeDef(TypedDict):
+    itemId: str,
+    properties: NotRequired[str],
+```
 
 ## PutEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize_events.type_defs import PutEventsRequestRequestTypeDef
+
+def get_value() -> PutEventsRequestRequestTypeDef:
+    return {
+        "trackingId": ...,
+        "sessionId": ...,
+        "eventList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEventsRequestRequestTypeDef(TypedDict):
+    trackingId: str,
+    sessionId: str,
+    eventList: Sequence[EventTypeDef],  # (1)
+    userId: NotRequired[str],
+```
 
-- `trackingId`: `str`
-- `sessionId`: `str`
-- `eventList`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-
-Optional fields:
-
-- `userId`: `str`
-
-<a id="putitemsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 ## PutItemsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize_events.type_defs import PutItemsRequestRequestTypeDef
+
+def get_value() -> PutItemsRequestRequestTypeDef:
+    return {
+        "datasetArn": ...,
+        "items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutItemsRequestRequestTypeDef(TypedDict):
+    datasetArn: str,
+    items: Sequence[ItemTypeDef],  # (1)
+```
 
-- `datasetArn`: `str`
-- `items`: `Sequence`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
-
-<a id="putusersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ItemTypeDef](./type_defs.md#itemtypedef) 
 ## PutUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize_events.type_defs import PutUsersRequestRequestTypeDef
+
+def get_value() -> PutUsersRequestRequestTypeDef:
+    return {
+        "datasetArn": ...,
+        "users": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutUsersRequestRequestTypeDef(TypedDict):
+    datasetArn: str,
+    users: Sequence[UserTypeDef],  # (1)
+```
 
-- `datasetArn`: `str`
-- `users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\]
-
-<a id="usertypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
 ## UserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize_events.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "userId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    userId: str,
+    properties: NotRequired[str],
+```
 
-- `userId`: `str`
-
-Optional fields:
-
-- `properties`: `str`

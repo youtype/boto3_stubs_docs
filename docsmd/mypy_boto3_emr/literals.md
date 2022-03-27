@@ -1,1211 +1,1300 @@
-<a id="literals-for-boto3-emr-module"></a>
-
-# Literals for boto3 EMR module
+# Literals
 
 > [Index](../README.md) > [EMR](./README.md) > Literals
 
-Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module
-[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
+!!! note ""
 
-- [Literals for boto3 EMR module](#literals-for-boto3-emr-module)
-  - [ActionOnFailureType](#actiononfailuretype)
-  - [AdjustmentTypeType](#adjustmenttypetype)
-  - [AuthModeType](#authmodetype)
-  - [AutoScalingPolicyStateChangeReasonCodeType](#autoscalingpolicystatechangereasoncodetype)
-  - [AutoScalingPolicyStateType](#autoscalingpolicystatetype)
-  - [CancelStepsRequestStatusType](#cancelstepsrequeststatustype)
-  - [ClusterRunningWaiterName](#clusterrunningwaitername)
-  - [ClusterStateChangeReasonCodeType](#clusterstatechangereasoncodetype)
-  - [ClusterStateType](#clusterstatetype)
-  - [ClusterTerminatedWaiterName](#clusterterminatedwaitername)
-  - [ComparisonOperatorType](#comparisonoperatortype)
-  - [ComputeLimitsUnitTypeType](#computelimitsunittypetype)
-  - [ExecutionEngineTypeType](#executionenginetypetype)
-  - [IdentityTypeType](#identitytypetype)
-  - [InstanceCollectionTypeType](#instancecollectiontypetype)
-  - [InstanceFleetStateChangeReasonCodeType](#instancefleetstatechangereasoncodetype)
-  - [InstanceFleetStateType](#instancefleetstatetype)
-  - [InstanceFleetTypeType](#instancefleettypetype)
-  - [InstanceGroupStateChangeReasonCodeType](#instancegroupstatechangereasoncodetype)
-  - [InstanceGroupStateType](#instancegroupstatetype)
-  - [InstanceGroupTypeType](#instancegrouptypetype)
-  - [InstanceRoleTypeType](#instanceroletypetype)
-  - [InstanceStateChangeReasonCodeType](#instancestatechangereasoncodetype)
-  - [InstanceStateType](#instancestatetype)
-  - [JobFlowExecutionStateType](#jobflowexecutionstatetype)
-  - [ListBootstrapActionsPaginatorName](#listbootstrapactionspaginatorname)
-  - [ListClustersPaginatorName](#listclusterspaginatorname)
-  - [ListInstanceFleetsPaginatorName](#listinstancefleetspaginatorname)
-  - [ListInstanceGroupsPaginatorName](#listinstancegroupspaginatorname)
-  - [ListInstancesPaginatorName](#listinstancespaginatorname)
-  - [ListNotebookExecutionsPaginatorName](#listnotebookexecutionspaginatorname)
-  - [ListSecurityConfigurationsPaginatorName](#listsecurityconfigurationspaginatorname)
-  - [ListStepsPaginatorName](#liststepspaginatorname)
-  - [ListStudioSessionMappingsPaginatorName](#liststudiosessionmappingspaginatorname)
-  - [ListStudiosPaginatorName](#liststudiospaginatorname)
-  - [MarketTypeType](#markettypetype)
-  - [NotebookExecutionStatusType](#notebookexecutionstatustype)
-  - [OnDemandCapacityReservationPreferenceType](#ondemandcapacityreservationpreferencetype)
-  - [OnDemandCapacityReservationUsageStrategyType](#ondemandcapacityreservationusagestrategytype)
-  - [OnDemandProvisioningAllocationStrategyType](#ondemandprovisioningallocationstrategytype)
-  - [PlacementGroupStrategyType](#placementgroupstrategytype)
-  - [RepoUpgradeOnBootType](#repoupgradeonboottype)
-  - [ScaleDownBehaviorType](#scaledownbehaviortype)
-  - [SpotProvisioningAllocationStrategyType](#spotprovisioningallocationstrategytype)
-  - [SpotProvisioningTimeoutActionType](#spotprovisioningtimeoutactiontype)
-  - [StatisticType](#statistictype)
-  - [StepCancellationOptionType](#stepcancellationoptiontype)
-  - [StepCompleteWaiterName](#stepcompletewaitername)
-  - [StepExecutionStateType](#stepexecutionstatetype)
-  - [StepStateChangeReasonCodeType](#stepstatechangereasoncodetype)
-  - [StepStateType](#stepstatetype)
-  - [UnitType](#unittype)
-  - [EMRServiceName](#emrservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="actiononfailuretype"></a>
+    Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+    type annotations stubs module [mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ## ActionOnFailureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ActionOnFailureType
+
+def get_value() -> ActionOnFailureType:
+    return "CANCEL_AND_WAIT"
 ```
 
-Values:
-
-- `CANCEL_AND_WAIT`
-- `CONTINUE`
-- `TERMINATE_CLUSTER`
-- `TERMINATE_JOB_FLOW`
-
-<a id="adjustmenttypetype"></a>
-
+```python title="Definition"
+ActionOnFailureType = Literal[
+    "CANCEL_AND_WAIT",
+    "CONTINUE",
+    "TERMINATE_CLUSTER",
+    "TERMINATE_JOB_FLOW",
+]
+```
 ## AdjustmentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import AdjustmentTypeType
+
+def get_value() -> AdjustmentTypeType:
+    return "CHANGE_IN_CAPACITY"
 ```
 
-Values:
-
-- `CHANGE_IN_CAPACITY`
-- `EXACT_CAPACITY`
-- `PERCENT_CHANGE_IN_CAPACITY`
-
-<a id="authmodetype"></a>
-
+```python title="Definition"
+AdjustmentTypeType = Literal[
+    "CHANGE_IN_CAPACITY",
+    "EXACT_CAPACITY",
+    "PERCENT_CHANGE_IN_CAPACITY",
+]
+```
 ## AuthModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import AuthModeType
+
+def get_value() -> AuthModeType:
+    return "IAM"
 ```
 
-Values:
-
-- `IAM`
-- `SSO`
-
-<a id="autoscalingpolicystatechangereasoncodetype"></a>
-
+```python title="Definition"
+AuthModeType = Literal[
+    "IAM",
+    "SSO",
+]
+```
 ## AutoScalingPolicyStateChangeReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import AutoScalingPolicyStateChangeReasonCodeType
+
+def get_value() -> AutoScalingPolicyStateChangeReasonCodeType:
+    return "CLEANUP_FAILURE"
 ```
 
-Values:
-
-- `CLEANUP_FAILURE`
-- `PROVISION_FAILURE`
-- `USER_REQUEST`
-
-<a id="autoscalingpolicystatetype"></a>
-
+```python title="Definition"
+AutoScalingPolicyStateChangeReasonCodeType = Literal[
+    "CLEANUP_FAILURE",
+    "PROVISION_FAILURE",
+    "USER_REQUEST",
+]
+```
 ## AutoScalingPolicyStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import AutoScalingPolicyStateType
+
+def get_value() -> AutoScalingPolicyStateType:
+    return "ATTACHED"
 ```
 
-Values:
-
-- `ATTACHED`
-- `ATTACHING`
-- `DETACHED`
-- `DETACHING`
-- `FAILED`
-- `PENDING`
-
-<a id="cancelstepsrequeststatustype"></a>
-
+```python title="Definition"
+AutoScalingPolicyStateType = Literal[
+    "ATTACHED",
+    "ATTACHING",
+    "DETACHED",
+    "DETACHING",
+    "FAILED",
+    "PENDING",
+]
+```
 ## CancelStepsRequestStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import CancelStepsRequestStatusType
+
+def get_value() -> CancelStepsRequestStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `SUBMITTED`
-
-<a id="clusterrunningwaitername"></a>
-
+```python title="Definition"
+CancelStepsRequestStatusType = Literal[
+    "FAILED",
+    "SUBMITTED",
+]
+```
 ## ClusterRunningWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ClusterRunningWaiterName
+
+def get_value() -> ClusterRunningWaiterName:
+    return "cluster_running"
 ```
 
-Values:
-
-- `cluster_running`
-
-<a id="clusterstatechangereasoncodetype"></a>
-
+```python title="Definition"
+ClusterRunningWaiterName = Literal[
+    "cluster_running",
+]
+```
 ## ClusterStateChangeReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ClusterStateChangeReasonCodeType
+
+def get_value() -> ClusterStateChangeReasonCodeType:
+    return "ALL_STEPS_COMPLETED"
 ```
 
-Values:
-
-- `ALL_STEPS_COMPLETED`
-- `BOOTSTRAP_FAILURE`
-- `INSTANCE_FAILURE`
-- `INSTANCE_FLEET_TIMEOUT`
-- `INTERNAL_ERROR`
-- `STEP_FAILURE`
-- `USER_REQUEST`
-- `VALIDATION_ERROR`
-
-<a id="clusterstatetype"></a>
-
+```python title="Definition"
+ClusterStateChangeReasonCodeType = Literal[
+    "ALL_STEPS_COMPLETED",
+    "BOOTSTRAP_FAILURE",
+    "INSTANCE_FAILURE",
+    "INSTANCE_FLEET_TIMEOUT",
+    "INTERNAL_ERROR",
+    "STEP_FAILURE",
+    "USER_REQUEST",
+    "VALIDATION_ERROR",
+]
+```
 ## ClusterStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ClusterStateType
+
+def get_value() -> ClusterStateType:
+    return "BOOTSTRAPPING"
 ```
 
-Values:
-
-- `BOOTSTRAPPING`
-- `RUNNING`
-- `STARTING`
-- `TERMINATED`
-- `TERMINATED_WITH_ERRORS`
-- `TERMINATING`
-- `WAITING`
-
-<a id="clusterterminatedwaitername"></a>
-
+```python title="Definition"
+ClusterStateType = Literal[
+    "BOOTSTRAPPING",
+    "RUNNING",
+    "STARTING",
+    "TERMINATED",
+    "TERMINATED_WITH_ERRORS",
+    "TERMINATING",
+    "WAITING",
+]
+```
 ## ClusterTerminatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ClusterTerminatedWaiterName
+
+def get_value() -> ClusterTerminatedWaiterName:
+    return "cluster_terminated"
 ```
 
-Values:
-
-- `cluster_terminated`
-
-<a id="comparisonoperatortype"></a>
-
+```python title="Definition"
+ClusterTerminatedWaiterName = Literal[
+    "cluster_terminated",
+]
+```
 ## ComparisonOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ComparisonOperatorType
+
+def get_value() -> ComparisonOperatorType:
+    return "GREATER_THAN"
 ```
 
-Values:
-
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL`
-
-<a id="computelimitsunittypetype"></a>
-
+```python title="Definition"
+ComparisonOperatorType = Literal[
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL",
+]
+```
 ## ComputeLimitsUnitTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ComputeLimitsUnitTypeType
+
+def get_value() -> ComputeLimitsUnitTypeType:
+    return "InstanceFleetUnits"
 ```
 
-Values:
-
-- `InstanceFleetUnits`
-- `Instances`
-- `VCPU`
-
-<a id="executionenginetypetype"></a>
-
+```python title="Definition"
+ComputeLimitsUnitTypeType = Literal[
+    "InstanceFleetUnits",
+    "Instances",
+    "VCPU",
+]
+```
 ## ExecutionEngineTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ExecutionEngineTypeType
+
+def get_value() -> ExecutionEngineTypeType:
+    return "EMR"
 ```
 
-Values:
-
-- `EMR`
-
-<a id="identitytypetype"></a>
-
+```python title="Definition"
+ExecutionEngineTypeType = Literal[
+    "EMR",
+]
+```
 ## IdentityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import IdentityTypeType
+
+def get_value() -> IdentityTypeType:
+    return "GROUP"
 ```
 
-Values:
-
-- `GROUP`
-- `USER`
-
-<a id="instancecollectiontypetype"></a>
-
+```python title="Definition"
+IdentityTypeType = Literal[
+    "GROUP",
+    "USER",
+]
+```
 ## InstanceCollectionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceCollectionTypeType
+
+def get_value() -> InstanceCollectionTypeType:
+    return "INSTANCE_FLEET"
 ```
 
-Values:
-
-- `INSTANCE_FLEET`
-- `INSTANCE_GROUP`
-
-<a id="instancefleetstatechangereasoncodetype"></a>
-
+```python title="Definition"
+InstanceCollectionTypeType = Literal[
+    "INSTANCE_FLEET",
+    "INSTANCE_GROUP",
+]
+```
 ## InstanceFleetStateChangeReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceFleetStateChangeReasonCodeType
+
+def get_value() -> InstanceFleetStateChangeReasonCodeType:
+    return "CLUSTER_TERMINATED"
 ```
 
-Values:
-
-- `CLUSTER_TERMINATED`
-- `INSTANCE_FAILURE`
-- `INTERNAL_ERROR`
-- `VALIDATION_ERROR`
-
-<a id="instancefleetstatetype"></a>
-
+```python title="Definition"
+InstanceFleetStateChangeReasonCodeType = Literal[
+    "CLUSTER_TERMINATED",
+    "INSTANCE_FAILURE",
+    "INTERNAL_ERROR",
+    "VALIDATION_ERROR",
+]
+```
 ## InstanceFleetStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceFleetStateType
+
+def get_value() -> InstanceFleetStateType:
+    return "BOOTSTRAPPING"
 ```
 
-Values:
-
-- `BOOTSTRAPPING`
-- `PROVISIONING`
-- `RESIZING`
-- `RUNNING`
-- `SUSPENDED`
-- `TERMINATED`
-- `TERMINATING`
-
-<a id="instancefleettypetype"></a>
-
+```python title="Definition"
+InstanceFleetStateType = Literal[
+    "BOOTSTRAPPING",
+    "PROVISIONING",
+    "RESIZING",
+    "RUNNING",
+    "SUSPENDED",
+    "TERMINATED",
+    "TERMINATING",
+]
+```
 ## InstanceFleetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceFleetTypeType
+
+def get_value() -> InstanceFleetTypeType:
+    return "CORE"
 ```
 
-Values:
-
-- `CORE`
-- `MASTER`
-- `TASK`
-
-<a id="instancegroupstatechangereasoncodetype"></a>
-
+```python title="Definition"
+InstanceFleetTypeType = Literal[
+    "CORE",
+    "MASTER",
+    "TASK",
+]
+```
 ## InstanceGroupStateChangeReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceGroupStateChangeReasonCodeType
+
+def get_value() -> InstanceGroupStateChangeReasonCodeType:
+    return "CLUSTER_TERMINATED"
 ```
 
-Values:
-
-- `CLUSTER_TERMINATED`
-- `INSTANCE_FAILURE`
-- `INTERNAL_ERROR`
-- `VALIDATION_ERROR`
-
-<a id="instancegroupstatetype"></a>
-
+```python title="Definition"
+InstanceGroupStateChangeReasonCodeType = Literal[
+    "CLUSTER_TERMINATED",
+    "INSTANCE_FAILURE",
+    "INTERNAL_ERROR",
+    "VALIDATION_ERROR",
+]
+```
 ## InstanceGroupStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceGroupStateType
+
+def get_value() -> InstanceGroupStateType:
+    return "ARRESTED"
 ```
 
-Values:
-
-- `ARRESTED`
-- `BOOTSTRAPPING`
-- `ENDED`
-- `PROVISIONING`
-- `RECONFIGURING`
-- `RESIZING`
-- `RUNNING`
-- `SHUTTING_DOWN`
-- `SUSPENDED`
-- `TERMINATED`
-- `TERMINATING`
-
-<a id="instancegrouptypetype"></a>
-
+```python title="Definition"
+InstanceGroupStateType = Literal[
+    "ARRESTED",
+    "BOOTSTRAPPING",
+    "ENDED",
+    "PROVISIONING",
+    "RECONFIGURING",
+    "RESIZING",
+    "RUNNING",
+    "SHUTTING_DOWN",
+    "SUSPENDED",
+    "TERMINATED",
+    "TERMINATING",
+]
+```
 ## InstanceGroupTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceGroupTypeType
+
+def get_value() -> InstanceGroupTypeType:
+    return "CORE"
 ```
 
-Values:
-
-- `CORE`
-- `MASTER`
-- `TASK`
-
-<a id="instanceroletypetype"></a>
-
+```python title="Definition"
+InstanceGroupTypeType = Literal[
+    "CORE",
+    "MASTER",
+    "TASK",
+]
+```
 ## InstanceRoleTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceRoleTypeType
+
+def get_value() -> InstanceRoleTypeType:
+    return "CORE"
 ```
 
-Values:
-
-- `CORE`
-- `MASTER`
-- `TASK`
-
-<a id="instancestatechangereasoncodetype"></a>
-
+```python title="Definition"
+InstanceRoleTypeType = Literal[
+    "CORE",
+    "MASTER",
+    "TASK",
+]
+```
 ## InstanceStateChangeReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceStateChangeReasonCodeType
+
+def get_value() -> InstanceStateChangeReasonCodeType:
+    return "BOOTSTRAP_FAILURE"
 ```
 
-Values:
-
-- `BOOTSTRAP_FAILURE`
-- `CLUSTER_TERMINATED`
-- `INSTANCE_FAILURE`
-- `INTERNAL_ERROR`
-- `VALIDATION_ERROR`
-
-<a id="instancestatetype"></a>
-
+```python title="Definition"
+InstanceStateChangeReasonCodeType = Literal[
+    "BOOTSTRAP_FAILURE",
+    "CLUSTER_TERMINATED",
+    "INSTANCE_FAILURE",
+    "INTERNAL_ERROR",
+    "VALIDATION_ERROR",
+]
+```
 ## InstanceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import InstanceStateType
+
+def get_value() -> InstanceStateType:
+    return "AWAITING_FULFILLMENT"
 ```
 
-Values:
-
-- `AWAITING_FULFILLMENT`
-- `BOOTSTRAPPING`
-- `PROVISIONING`
-- `RUNNING`
-- `TERMINATED`
-
-<a id="jobflowexecutionstatetype"></a>
-
+```python title="Definition"
+InstanceStateType = Literal[
+    "AWAITING_FULFILLMENT",
+    "BOOTSTRAPPING",
+    "PROVISIONING",
+    "RUNNING",
+    "TERMINATED",
+]
+```
 ## JobFlowExecutionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import JobFlowExecutionStateType
+
+def get_value() -> JobFlowExecutionStateType:
+    return "BOOTSTRAPPING"
 ```
 
-Values:
-
-- `BOOTSTRAPPING`
-- `COMPLETED`
-- `FAILED`
-- `RUNNING`
-- `SHUTTING_DOWN`
-- `STARTING`
-- `TERMINATED`
-- `WAITING`
-
-<a id="listbootstrapactionspaginatorname"></a>
-
+```python title="Definition"
+JobFlowExecutionStateType = Literal[
+    "BOOTSTRAPPING",
+    "COMPLETED",
+    "FAILED",
+    "RUNNING",
+    "SHUTTING_DOWN",
+    "STARTING",
+    "TERMINATED",
+    "WAITING",
+]
+```
 ## ListBootstrapActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListBootstrapActionsPaginatorName
+
+def get_value() -> ListBootstrapActionsPaginatorName:
+    return "list_bootstrap_actions"
 ```
 
-Values:
-
-- `list_bootstrap_actions`
-
-<a id="listclusterspaginatorname"></a>
-
+```python title="Definition"
+ListBootstrapActionsPaginatorName = Literal[
+    "list_bootstrap_actions",
+]
+```
 ## ListClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListClustersPaginatorName
+
+def get_value() -> ListClustersPaginatorName:
+    return "list_clusters"
 ```
 
-Values:
-
-- `list_clusters`
-
-<a id="listinstancefleetspaginatorname"></a>
-
+```python title="Definition"
+ListClustersPaginatorName = Literal[
+    "list_clusters",
+]
+```
 ## ListInstanceFleetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListInstanceFleetsPaginatorName
+
+def get_value() -> ListInstanceFleetsPaginatorName:
+    return "list_instance_fleets"
 ```
 
-Values:
-
-- `list_instance_fleets`
-
-<a id="listinstancegroupspaginatorname"></a>
-
+```python title="Definition"
+ListInstanceFleetsPaginatorName = Literal[
+    "list_instance_fleets",
+]
+```
 ## ListInstanceGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListInstanceGroupsPaginatorName
+
+def get_value() -> ListInstanceGroupsPaginatorName:
+    return "list_instance_groups"
 ```
 
-Values:
-
-- `list_instance_groups`
-
-<a id="listinstancespaginatorname"></a>
-
+```python title="Definition"
+ListInstanceGroupsPaginatorName = Literal[
+    "list_instance_groups",
+]
+```
 ## ListInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListInstancesPaginatorName
+
+def get_value() -> ListInstancesPaginatorName:
+    return "list_instances"
 ```
 
-Values:
-
-- `list_instances`
-
-<a id="listnotebookexecutionspaginatorname"></a>
-
+```python title="Definition"
+ListInstancesPaginatorName = Literal[
+    "list_instances",
+]
+```
 ## ListNotebookExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListNotebookExecutionsPaginatorName
+
+def get_value() -> ListNotebookExecutionsPaginatorName:
+    return "list_notebook_executions"
 ```
 
-Values:
-
-- `list_notebook_executions`
-
-<a id="listsecurityconfigurationspaginatorname"></a>
-
+```python title="Definition"
+ListNotebookExecutionsPaginatorName = Literal[
+    "list_notebook_executions",
+]
+```
 ## ListSecurityConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListSecurityConfigurationsPaginatorName
+
+def get_value() -> ListSecurityConfigurationsPaginatorName:
+    return "list_security_configurations"
 ```
 
-Values:
-
-- `list_security_configurations`
-
-<a id="liststepspaginatorname"></a>
-
+```python title="Definition"
+ListSecurityConfigurationsPaginatorName = Literal[
+    "list_security_configurations",
+]
+```
 ## ListStepsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListStepsPaginatorName
+
+def get_value() -> ListStepsPaginatorName:
+    return "list_steps"
 ```
 
-Values:
-
-- `list_steps`
-
-<a id="liststudiosessionmappingspaginatorname"></a>
-
+```python title="Definition"
+ListStepsPaginatorName = Literal[
+    "list_steps",
+]
+```
 ## ListStudioSessionMappingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListStudioSessionMappingsPaginatorName
+
+def get_value() -> ListStudioSessionMappingsPaginatorName:
+    return "list_studio_session_mappings"
 ```
 
-Values:
-
-- `list_studio_session_mappings`
-
-<a id="liststudiospaginatorname"></a>
-
+```python title="Definition"
+ListStudioSessionMappingsPaginatorName = Literal[
+    "list_studio_session_mappings",
+]
+```
 ## ListStudiosPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ListStudiosPaginatorName
+
+def get_value() -> ListStudiosPaginatorName:
+    return "list_studios"
 ```
 
-Values:
-
-- `list_studios`
-
-<a id="markettypetype"></a>
-
+```python title="Definition"
+ListStudiosPaginatorName = Literal[
+    "list_studios",
+]
+```
 ## MarketTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import MarketTypeType
+
+def get_value() -> MarketTypeType:
+    return "ON_DEMAND"
 ```
 
-Values:
-
-- `ON_DEMAND`
-- `SPOT`
-
-<a id="notebookexecutionstatustype"></a>
-
+```python title="Definition"
+MarketTypeType = Literal[
+    "ON_DEMAND",
+    "SPOT",
+]
+```
 ## NotebookExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import NotebookExecutionStatusType
+
+def get_value() -> NotebookExecutionStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `FAILING`
-- `FINISHED`
-- `FINISHING`
-- `RUNNING`
-- `START_PENDING`
-- `STARTING`
-- `STOP_PENDING`
-- `STOPPED`
-- `STOPPING`
-
-<a id="ondemandcapacityreservationpreferencetype"></a>
-
+```python title="Definition"
+NotebookExecutionStatusType = Literal[
+    "FAILED",
+    "FAILING",
+    "FINISHED",
+    "FINISHING",
+    "RUNNING",
+    "START_PENDING",
+    "STARTING",
+    "STOP_PENDING",
+    "STOPPED",
+    "STOPPING",
+]
+```
 ## OnDemandCapacityReservationPreferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import OnDemandCapacityReservationPreferenceType
+
+def get_value() -> OnDemandCapacityReservationPreferenceType:
+    return "none"
 ```
 
-Values:
-
-- `none`
-- `open`
-
-<a id="ondemandcapacityreservationusagestrategytype"></a>
-
+```python title="Definition"
+OnDemandCapacityReservationPreferenceType = Literal[
+    "none",
+    "open",
+]
+```
 ## OnDemandCapacityReservationUsageStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import OnDemandCapacityReservationUsageStrategyType
+
+def get_value() -> OnDemandCapacityReservationUsageStrategyType:
+    return "use-capacity-reservations-first"
 ```
 
-Values:
-
-- `use-capacity-reservations-first`
-
-<a id="ondemandprovisioningallocationstrategytype"></a>
-
+```python title="Definition"
+OnDemandCapacityReservationUsageStrategyType = Literal[
+    "use-capacity-reservations-first",
+]
+```
 ## OnDemandProvisioningAllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import OnDemandProvisioningAllocationStrategyType
+
+def get_value() -> OnDemandProvisioningAllocationStrategyType:
+    return "lowest-price"
 ```
 
-Values:
-
-- `lowest-price`
-
-<a id="placementgroupstrategytype"></a>
-
+```python title="Definition"
+OnDemandProvisioningAllocationStrategyType = Literal[
+    "lowest-price",
+]
+```
 ## PlacementGroupStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import PlacementGroupStrategyType
+
+def get_value() -> PlacementGroupStrategyType:
+    return "CLUSTER"
 ```
 
-Values:
-
-- `CLUSTER`
-- `NONE`
-- `PARTITION`
-- `SPREAD`
-
-<a id="repoupgradeonboottype"></a>
-
+```python title="Definition"
+PlacementGroupStrategyType = Literal[
+    "CLUSTER",
+    "NONE",
+    "PARTITION",
+    "SPREAD",
+]
+```
 ## RepoUpgradeOnBootType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import RepoUpgradeOnBootType
+
+def get_value() -> RepoUpgradeOnBootType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `SECURITY`
-
-<a id="scaledownbehaviortype"></a>
-
+```python title="Definition"
+RepoUpgradeOnBootType = Literal[
+    "NONE",
+    "SECURITY",
+]
+```
 ## ScaleDownBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ScaleDownBehaviorType
+
+def get_value() -> ScaleDownBehaviorType:
+    return "TERMINATE_AT_INSTANCE_HOUR"
 ```
 
-Values:
-
-- `TERMINATE_AT_INSTANCE_HOUR`
-- `TERMINATE_AT_TASK_COMPLETION`
-
-<a id="spotprovisioningallocationstrategytype"></a>
-
+```python title="Definition"
+ScaleDownBehaviorType = Literal[
+    "TERMINATE_AT_INSTANCE_HOUR",
+    "TERMINATE_AT_TASK_COMPLETION",
+]
+```
 ## SpotProvisioningAllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import SpotProvisioningAllocationStrategyType
+
+def get_value() -> SpotProvisioningAllocationStrategyType:
+    return "capacity-optimized"
 ```
 
-Values:
-
-- `capacity-optimized`
-
-<a id="spotprovisioningtimeoutactiontype"></a>
-
+```python title="Definition"
+SpotProvisioningAllocationStrategyType = Literal[
+    "capacity-optimized",
+]
+```
 ## SpotProvisioningTimeoutActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import SpotProvisioningTimeoutActionType
+
+def get_value() -> SpotProvisioningTimeoutActionType:
+    return "SWITCH_TO_ON_DEMAND"
 ```
 
-Values:
-
-- `SWITCH_TO_ON_DEMAND`
-- `TERMINATE_CLUSTER`
-
-<a id="statistictype"></a>
-
+```python title="Definition"
+SpotProvisioningTimeoutActionType = Literal[
+    "SWITCH_TO_ON_DEMAND",
+    "TERMINATE_CLUSTER",
+]
+```
 ## StatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import StatisticType
+
+def get_value() -> StatisticType:
+    return "AVERAGE"
 ```
 
-Values:
-
-- `AVERAGE`
-- `MAXIMUM`
-- `MINIMUM`
-- `SAMPLE_COUNT`
-- `SUM`
-
-<a id="stepcancellationoptiontype"></a>
-
+```python title="Definition"
+StatisticType = Literal[
+    "AVERAGE",
+    "MAXIMUM",
+    "MINIMUM",
+    "SAMPLE_COUNT",
+    "SUM",
+]
+```
 ## StepCancellationOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import StepCancellationOptionType
+
+def get_value() -> StepCancellationOptionType:
+    return "SEND_INTERRUPT"
 ```
 
-Values:
-
-- `SEND_INTERRUPT`
-- `TERMINATE_PROCESS`
-
-<a id="stepcompletewaitername"></a>
-
+```python title="Definition"
+StepCancellationOptionType = Literal[
+    "SEND_INTERRUPT",
+    "TERMINATE_PROCESS",
+]
+```
 ## StepCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import StepCompleteWaiterName
+
+def get_value() -> StepCompleteWaiterName:
+    return "step_complete"
 ```
 
-Values:
-
-- `step_complete`
-
-<a id="stepexecutionstatetype"></a>
-
+```python title="Definition"
+StepCompleteWaiterName = Literal[
+    "step_complete",
+]
+```
 ## StepExecutionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import StepExecutionStateType
+
+def get_value() -> StepExecutionStateType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `COMPLETED`
-- `CONTINUE`
-- `FAILED`
-- `INTERRUPTED`
-- `PENDING`
-- `RUNNING`
-
-<a id="stepstatechangereasoncodetype"></a>
-
+```python title="Definition"
+StepExecutionStateType = Literal[
+    "CANCELLED",
+    "COMPLETED",
+    "CONTINUE",
+    "FAILED",
+    "INTERRUPTED",
+    "PENDING",
+    "RUNNING",
+]
+```
 ## StepStateChangeReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import StepStateChangeReasonCodeType
+
+def get_value() -> StepStateChangeReasonCodeType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-
-<a id="stepstatetype"></a>
-
+```python title="Definition"
+StepStateChangeReasonCodeType = Literal[
+    "NONE",
+]
+```
 ## StepStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import StepStateType
+
+def get_value() -> StepStateType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCEL_PENDING`
-- `CANCELLED`
-- `COMPLETED`
-- `FAILED`
-- `INTERRUPTED`
-- `PENDING`
-- `RUNNING`
-
-<a id="unittype"></a>
-
+```python title="Definition"
+StepStateType = Literal[
+    "CANCEL_PENDING",
+    "CANCELLED",
+    "COMPLETED",
+    "FAILED",
+    "INTERRUPTED",
+    "PENDING",
+    "RUNNING",
+]
+```
 ## UnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import UnitType
+
+def get_value() -> UnitType:
+    return "BITS"
 ```
 
-Values:
-
-- `BITS`
-- `BITS_PER_SECOND`
-- `BYTES`
-- `BYTES_PER_SECOND`
-- `COUNT`
-- `COUNT_PER_SECOND`
-- `GIGA_BITS`
-- `GIGA_BITS_PER_SECOND`
-- `GIGA_BYTES`
-- `GIGA_BYTES_PER_SECOND`
-- `KILO_BITS`
-- `KILO_BITS_PER_SECOND`
-- `KILO_BYTES`
-- `KILO_BYTES_PER_SECOND`
-- `MEGA_BITS`
-- `MEGA_BITS_PER_SECOND`
-- `MEGA_BYTES`
-- `MEGA_BYTES_PER_SECOND`
-- `MICRO_SECONDS`
-- `MILLI_SECONDS`
-- `NONE`
-- `PERCENT`
-- `SECONDS`
-- `TERA_BITS`
-- `TERA_BITS_PER_SECOND`
-- `TERA_BYTES`
-- `TERA_BYTES_PER_SECOND`
-
-<a id="emrservicename"></a>
-
+```python title="Definition"
+UnitType = Literal[
+    "BITS",
+    "BITS_PER_SECOND",
+    "BYTES",
+    "BYTES_PER_SECOND",
+    "COUNT",
+    "COUNT_PER_SECOND",
+    "GIGA_BITS",
+    "GIGA_BITS_PER_SECOND",
+    "GIGA_BYTES",
+    "GIGA_BYTES_PER_SECOND",
+    "KILO_BITS",
+    "KILO_BITS_PER_SECOND",
+    "KILO_BYTES",
+    "KILO_BYTES_PER_SECOND",
+    "MEGA_BITS",
+    "MEGA_BITS_PER_SECOND",
+    "MEGA_BYTES",
+    "MEGA_BYTES_PER_SECOND",
+    "MICRO_SECONDS",
+    "MILLI_SECONDS",
+    "NONE",
+    "PERCENT",
+    "SECONDS",
+    "TERA_BITS",
+    "TERA_BITS_PER_SECOND",
+    "TERA_BYTES",
+    "TERA_BYTES_PER_SECOND",
+]
+```
 ## EMRServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import EMRServiceName
+
+def get_value() -> EMRServiceName:
+    return "emr"
 ```
 
-Values:
-
-- `emr`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+EMRServiceName = Literal[
+    "emr",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_bootstrap_actions"
 ```
 
-Values:
-
-- `list_bootstrap_actions`
-- `list_clusters`
-- `list_instance_fleets`
-- `list_instance_groups`
-- `list_instances`
-- `list_notebook_executions`
-- `list_security_configurations`
-- `list_steps`
-- `list_studio_session_mappings`
-- `list_studios`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_bootstrap_actions",
+    "list_clusters",
+    "list_instance_fleets",
+    "list_instance_groups",
+    "list_instances",
+    "list_notebook_executions",
+    "list_security_configurations",
+    "list_steps",
+    "list_studio_session_mappings",
+    "list_studios",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "cluster_running"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "cluster_running",
+    "cluster_terminated",
+    "step_complete",
+]
+```
+## RegionName
 
-- `cluster_running`
-- `cluster_terminated`
-- `step_complete`
+```python title="Usage Example"
+from mypy_boto3_emr.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

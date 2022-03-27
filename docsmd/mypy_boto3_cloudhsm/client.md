@@ -1,52 +1,18 @@
-<a id="cloudhsmclient-for-boto3-cloudhsm-module"></a>
-
-# CloudHSMClient for boto3 CloudHSM module
+# CloudHSMClient
 
 > [Index](../README.md) > [CloudHSM](./README.md) > CloudHSMClient
 
-Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
-type annotations stubs module
-[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+!!! note ""
 
-- [CloudHSMClient for boto3 CloudHSM module](#cloudhsmclient-for-boto3-cloudhsm-module)
-  - [CloudHSMClient](#cloudhsmclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags_to_resource](#add_tags_to_resource)
-    - [can_paginate](#can_paginate)
-    - [create_hapg](#create_hapg)
-    - [create_hsm](#create_hsm)
-    - [create_luna_client](#create_luna_client)
-    - [delete_hapg](#delete_hapg)
-    - [delete_hsm](#delete_hsm)
-    - [delete_luna_client](#delete_luna_client)
-    - [describe_hapg](#describe_hapg)
-    - [describe_hsm](#describe_hsm)
-    - [describe_luna_client](#describe_luna_client)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_config](#get_config)
-    - [list_available_zones](#list_available_zones)
-    - [list_hapgs](#list_hapgs)
-    - [list_hsms](#list_hsms)
-    - [list_luna_clients](#list_luna_clients)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [modify_hapg](#modify_hapg)
-    - [modify_hsm](#modify_hsm)
-    - [modify_luna_client](#modify_luna_client)
-    - [remove_tags_from_resource](#remove_tags_from_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="cloudhsmclient"></a>
+    Auto-generated documentation for [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+    type annotations stubs module [mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 ## CloudHSMClient
 
-Type annotations for `boto3.client("cloudhsm")`
+Type annotations and code completion for `#!python boto3.client("cloudhsm")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudhsm.client import CloudHSMClient
 
@@ -54,523 +20,681 @@ def get_cloudhsm_client() -> CloudHSMClient:
     return Session().client("cloudhsm")
 ```
 
-Boto3 documentation:
-[CloudHSM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudhsm").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudhsm")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.CloudHsmInternalException,
+    client.CloudHsmServiceException,
+    client.InvalidRequestException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudhsm.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.CloudHsmInternalException`
-- `Exceptions.CloudHsmServiceException`
-- `Exceptions.InvalidRequestException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudHSMClient exceptions.
-
-Type annotations for `boto3.client("cloudhsm").exceptions` method.
-
-Boto3 documentation:
-[CloudHSM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags\_to\_resource"></a>
-
-### add_tags_to_resource
+### add\_tags\_to\_resource
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").add_tags_to_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").add_tags_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
 
-Boto3 documentation:
-[CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
+```python title="Method definition"
+def add_tags_to_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+) -> AddTagsToResourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagList": ...,
+}
 
-Returns
-[AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
+parent.add_tags_to_resource(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudhsm").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate)
 
-Boto3 documentation:
-[CloudHSM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_hapg"></a>
-
-### create_hapg
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").create_hapg` method.
-
-Boto3 documentation:
-[CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
-
-Arguments mapping described in
-[CreateHapgRequestRequestTypeDef](./type_defs.md#createhapgrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Label`: `str` *(required)*
-
-Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
-
-<a id="create\_hsm"></a>
-
-### create_hsm
+### create\_hapg
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").create_hsm` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").create_hapg` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
 
-Boto3 documentation:
-[CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
+```python title="Method definition"
+def create_hapg(
+    self,
+    *,
+    Label: str,
+) -> CreateHapgResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateHsmRequestRequestTypeDef](./type_defs.md#createhsmrequestrequesttypedef).
+1. See [:material-code-braces: CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetId`: `str` *(required)*
-- `SshKey`: `str` *(required)*
-- `IamRoleArn`: `str` *(required)*
-- `SubscriptionType`: `Literal['PRODUCTION']` (see
-  [SubscriptionTypeType](./literals.md#subscriptiontypetype)) *(required)*
-- `EniIp`: `str`
-- `ExternalId`: `str`
-- `ClientToken`: `str`
-- `SyslogIp`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateHapgRequestRequestTypeDef = {  # (1)
+    "Label": ...,
+}
 
-Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
+parent.create_hapg(**kwargs)
+```
 
-<a id="create\_luna\_client"></a>
+1. See [:material-code-braces: CreateHapgRequestRequestTypeDef](./type_defs.md#createhapgrequestrequesttypedef) 
 
-### create_luna_client
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").create_luna_client` method.
-
-Boto3 documentation:
-[CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
-
-Arguments mapping described in
-[CreateLunaClientRequestRequestTypeDef](./type_defs.md#createlunaclientrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Certificate`: `str` *(required)*
-- `Label`: `str`
-
-Returns
-[CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef).
-
-<a id="delete\_hapg"></a>
-
-### delete_hapg
+### create\_hsm
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").delete_hapg` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").create_hsm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
 
-Boto3 documentation:
-[CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
+```python title="Method definition"
+def create_hsm(
+    self,
+    *,
+    SubnetId: str,
+    SshKey: str,
+    IamRoleArn: str,
+    SubscriptionType: SubscriptionTypeType,  # (1)
+    EniIp: str = ...,
+    ExternalId: str = ...,
+    ClientToken: str = ...,
+    SyslogIp: str = ...,
+) -> CreateHsmResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteHapgRequestRequestTypeDef](./type_defs.md#deletehapgrequestrequesttypedef).
+1. See [:material-code-brackets: SubscriptionTypeType](./literals.md#subscriptiontypetype) 
+2. See [:material-code-braces: CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HapgArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateHsmRequestRequestTypeDef = {  # (1)
+    "SubnetId": ...,
+    "SshKey": ...,
+    "IamRoleArn": ...,
+    "SubscriptionType": ...,
+}
 
-Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
+parent.create_hsm(**kwargs)
+```
 
-<a id="delete\_hsm"></a>
+1. See [:material-code-braces: CreateHsmRequestRequestTypeDef](./type_defs.md#createhsmrequestrequesttypedef) 
 
-### delete_hsm
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").delete_hsm` method.
-
-Boto3 documentation:
-[CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
-
-Arguments mapping described in
-[DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `HsmArn`: `str` *(required)*
-
-Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
-
-<a id="delete\_luna\_client"></a>
-
-### delete_luna_client
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").delete_luna_client` method.
-
-Boto3 documentation:
-[CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
-
-Arguments mapping described in
-[DeleteLunaClientRequestRequestTypeDef](./type_defs.md#deletelunaclientrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ClientArn`: `str` *(required)*
-
-Returns
-[DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef).
-
-<a id="describe\_hapg"></a>
-
-### describe_hapg
+### create\_luna\_client
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").describe_hapg` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").create_luna_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
 
-Boto3 documentation:
-[CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
+```python title="Method definition"
+def create_luna_client(
+    self,
+    *,
+    Certificate: str,
+    Label: str = ...,
+) -> CreateLunaClientResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeHapgRequestRequestTypeDef](./type_defs.md#describehapgrequestrequesttypedef).
+1. See [:material-code-braces: CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HapgArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLunaClientRequestRequestTypeDef = {  # (1)
+    "Certificate": ...,
+}
 
-Returns
-[DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef).
+parent.create_luna_client(**kwargs)
+```
 
-<a id="describe\_hsm"></a>
+1. See [:material-code-braces: CreateLunaClientRequestRequestTypeDef](./type_defs.md#createlunaclientrequestrequesttypedef) 
 
-### describe_hsm
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").describe_hsm` method.
-
-Boto3 documentation:
-[CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
-
-Arguments mapping described in
-[DescribeHsmRequestRequestTypeDef](./type_defs.md#describehsmrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `HsmArn`: `str`
-- `HsmSerialNumber`: `str`
-
-Returns
-[DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef).
-
-<a id="describe\_luna\_client"></a>
-
-### describe_luna_client
+### delete\_hapg
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").describe_luna_client` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").delete_hapg` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
 
-Boto3 documentation:
-[CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
+```python title="Method definition"
+def delete_hapg(
+    self,
+    *,
+    HapgArn: str,
+) -> DeleteHapgResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLunaClientRequestRequestTypeDef](./type_defs.md#describelunaclientrequestrequesttypedef).
+1. See [:material-code-braces: DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientArn`: `str`
-- `CertificateFingerprint`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteHapgRequestRequestTypeDef = {  # (1)
+    "HapgArn": ...,
+}
 
-Returns
-[DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef).
+parent.delete_hapg(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteHapgRequestRequestTypeDef](./type_defs.md#deletehapgrequestrequesttypedef) 
 
-### generate_presigned_url
+### delete\_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").delete_hsm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
+
+```python title="Method definition"
+def delete_hsm(
+    self,
+    *,
+    HsmArn: str,
+) -> DeleteHsmResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteHsmRequestRequestTypeDef = {  # (1)
+    "HsmArn": ...,
+}
+
+parent.delete_hsm(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef) 
+
+### delete\_luna\_client
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").delete_luna_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
+
+```python title="Method definition"
+def delete_luna_client(
+    self,
+    *,
+    ClientArn: str,
+) -> DeleteLunaClientResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLunaClientRequestRequestTypeDef = {  # (1)
+    "ClientArn": ...,
+}
+
+parent.delete_luna_client(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLunaClientRequestRequestTypeDef](./type_defs.md#deletelunaclientrequestrequesttypedef) 
+
+### describe\_hapg
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").describe_hapg` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
+
+```python title="Method definition"
+def describe_hapg(
+    self,
+    *,
+    HapgArn: str,
+) -> DescribeHapgResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHapgRequestRequestTypeDef = {  # (1)
+    "HapgArn": ...,
+}
+
+parent.describe_hapg(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHapgRequestRequestTypeDef](./type_defs.md#describehapgrequestrequesttypedef) 
+
+### describe\_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").describe_hsm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
+
+```python title="Method definition"
+def describe_hsm(
+    self,
+    *,
+    HsmArn: str = ...,
+    HsmSerialNumber: str = ...,
+) -> DescribeHsmResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHsmRequestRequestTypeDef = {  # (1)
+    "HsmArn": ...,
+}
+
+parent.describe_hsm(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHsmRequestRequestTypeDef](./type_defs.md#describehsmrequestrequesttypedef) 
+
+### describe\_luna\_client
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").describe_luna_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
+
+```python title="Method definition"
+def describe_luna_client(
+    self,
+    *,
+    ClientArn: str = ...,
+    CertificateFingerprint: str = ...,
+) -> DescribeLunaClientResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLunaClientRequestRequestTypeDef = {  # (1)
+    "ClientArn": ...,
+}
+
+parent.describe_luna_client(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLunaClientRequestRequestTypeDef](./type_defs.md#describelunaclientrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudhsm").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudHSM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_config"></a>
-
-### get_config
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").get_config` method.
-
-Boto3 documentation:
-[CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
-
-Arguments mapping described in
-[GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ClientArn`: `str` *(required)*
-- `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
-  *(required)*
-- `HapgList`: `Sequence`\[`str`\] *(required)*
-
-Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
-
-<a id="list\_available\_zones"></a>
-
-### list_available_zones
+### get\_config
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").list_available_zones` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").get_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
 
-Boto3 documentation:
-[CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
+```python title="Method definition"
+def get_config(
+    self,
+    *,
+    ClientArn: str,
+    ClientVersion: ClientVersionType,  # (1)
+    HapgList: Sequence[str],
+) -> GetConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Returns
-[ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
+1. See [:material-code-brackets: ClientVersionType](./literals.md#clientversiontype) 
+2. See [:material-code-braces: GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef) 
 
-<a id="list\_hapgs"></a>
 
-### list_hapgs
+```python title="Usage example with kwargs"
+kwargs: GetConfigRequestRequestTypeDef = {  # (1)
+    "ClientArn": ...,
+    "ClientVersion": ...,
+    "HapgList": ...,
+}
 
-This is documentation for **AWS CloudHSM Classic**.
+parent.get_config(**kwargs)
+```
 
-Type annotations for `boto3.client("cloudhsm").list_hapgs` method.
+1. See [:material-code-braces: GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef) 
 
-Boto3 documentation:
-[CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
-
-Arguments mapping described in
-[ListHapgsRequestRequestTypeDef](./type_defs.md#listhapgsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextToken`: `str`
-
-Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
-
-<a id="list\_hsms"></a>
-
-### list_hsms
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").list_hsms` method.
-
-Boto3 documentation:
-[CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
-
-Arguments mapping described in
-[ListHsmsRequestRequestTypeDef](./type_defs.md#listhsmsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextToken`: `str`
-
-Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
-
-<a id="list\_luna\_clients"></a>
-
-### list_luna_clients
+### list\_available\_zones
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").list_luna_clients` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").list_available_zones` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
 
-Boto3 documentation:
-[CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
+```python title="Method definition"
+def list_available_zones(
+    self,
+) -> ListAvailableZonesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLunaClientsRequestRequestTypeDef](./type_defs.md#listlunaclientsrequestrequesttypedef).
+1. See [:material-code-braces: ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef) 
 
-Keyword-only arguments:
-
-- `NextToken`: `str`
-
-Returns
-[ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef).
-
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_hapgs
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").list_hapgs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
 
-Boto3 documentation:
-[CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_hapgs(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListHapgsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListHapgsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_hapgs(**kwargs)
+```
 
-<a id="modify\_hapg"></a>
+1. See [:material-code-braces: ListHapgsRequestRequestTypeDef](./type_defs.md#listhapgsrequestrequesttypedef) 
 
-### modify_hapg
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").modify_hapg` method.
-
-Boto3 documentation:
-[CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
-
-Arguments mapping described in
-[ModifyHapgRequestRequestTypeDef](./type_defs.md#modifyhapgrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `HapgArn`: `str` *(required)*
-- `Label`: `str`
-- `PartitionSerialList`: `Sequence`\[`str`\]
-
-Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
-
-<a id="modify\_hsm"></a>
-
-### modify_hsm
+### list\_hsms
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").modify_hsm` method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").list_hsms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
 
-Boto3 documentation:
-[CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
+```python title="Method definition"
+def list_hsms(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListHsmsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyHsmRequestRequestTypeDef](./type_defs.md#modifyhsmrequestrequesttypedef).
+1. See [:material-code-braces: ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HsmArn`: `str` *(required)*
-- `SubnetId`: `str`
-- `EniIp`: `str`
-- `IamRoleArn`: `str`
-- `ExternalId`: `str`
-- `SyslogIp`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHsmsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
+parent.list_hsms(**kwargs)
+```
 
-<a id="modify\_luna\_client"></a>
+1. See [:material-code-braces: ListHsmsRequestRequestTypeDef](./type_defs.md#listhsmsrequestrequesttypedef) 
 
-### modify_luna_client
-
-This is documentation for **AWS CloudHSM Classic**.
-
-Type annotations for `boto3.client("cloudhsm").modify_luna_client` method.
-
-Boto3 documentation:
-[CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
-
-Arguments mapping described in
-[ModifyLunaClientRequestRequestTypeDef](./type_defs.md#modifylunaclientrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ClientArn`: `str` *(required)*
-- `Certificate`: `str` *(required)*
-
-Returns
-[ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef).
-
-<a id="remove\_tags\_from\_resource"></a>
-
-### remove_tags_from_resource
+### list\_luna\_clients
 
 This is documentation for **AWS CloudHSM Classic**.
 
-Type annotations for `boto3.client("cloudhsm").remove_tags_from_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").list_luna_clients` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
 
-Boto3 documentation:
-[CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
+```python title="Method definition"
+def list_luna_clients(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListLunaClientsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeyList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListLunaClientsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef).
+parent.list_luna_clients(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ListLunaClientsRequestRequestTypeDef](./type_defs.md#listlunaclientsrequestrequesttypedef) 
+
+### list\_tags\_for\_resource
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
+### modify\_hapg
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").modify_hapg` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
+
+```python title="Method definition"
+def modify_hapg(
+    self,
+    *,
+    HapgArn: str,
+    Label: str = ...,
+    PartitionSerialList: Sequence[str] = ...,
+) -> ModifyHapgResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyHapgRequestRequestTypeDef = {  # (1)
+    "HapgArn": ...,
+}
+
+parent.modify_hapg(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyHapgRequestRequestTypeDef](./type_defs.md#modifyhapgrequestrequesttypedef) 
+
+### modify\_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").modify_hsm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
+
+```python title="Method definition"
+def modify_hsm(
+    self,
+    *,
+    HsmArn: str,
+    SubnetId: str = ...,
+    EniIp: str = ...,
+    IamRoleArn: str = ...,
+    ExternalId: str = ...,
+    SyslogIp: str = ...,
+) -> ModifyHsmResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyHsmRequestRequestTypeDef = {  # (1)
+    "HsmArn": ...,
+}
+
+parent.modify_hsm(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyHsmRequestRequestTypeDef](./type_defs.md#modifyhsmrequestrequesttypedef) 
+
+### modify\_luna\_client
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").modify_luna_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
+
+```python title="Method definition"
+def modify_luna_client(
+    self,
+    *,
+    ClientArn: str,
+    Certificate: str,
+) -> ModifyLunaClientResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyLunaClientRequestRequestTypeDef = {  # (1)
+    "ClientArn": ...,
+    "Certificate": ...,
+}
+
+parent.modify_luna_client(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyLunaClientRequestRequestTypeDef](./type_defs.md#modifylunaclientrequestrequesttypedef) 
+
+### remove\_tags\_from\_resource
+
+This is documentation for **AWS CloudHSM Classic**.
+
+Type annotations and code completion for `#!python boto3.client("cloudhsm").remove_tags_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
+
+```python title="Method definition"
+def remove_tags_from_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeyList: Sequence[str],
+) -> RemoveTagsFromResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeyList": ...,
+}
+
+parent.remove_tags_from_resource(**kwargs)
+```
+
+1. See [:material-code-braces: RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudhsm").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudhsm").get_paginator` method with overloads.
 
-- `client.get_paginator("list_hapgs")` ->
-  [ListHapgsPaginator](./paginators.md#listhapgspaginator)
-- `client.get_paginator("list_hsms")` ->
-  [ListHsmsPaginator](./paginators.md#listhsmspaginator)
-- `client.get_paginator("list_luna_clients")` ->
-  [ListLunaClientsPaginator](./paginators.md#listlunaclientspaginator)
+- `client.get_paginator("list_hapgs")` -> [ListHapgsPaginator](./paginators.md#listhapgspaginator)
+- `client.get_paginator("list_hsms")` -> [ListHsmsPaginator](./paginators.md#listhsmspaginator)
+- `client.get_paginator("list_luna_clients")` -> [ListLunaClientsPaginator](./paginators.md#listlunaclientspaginator)
+
+
+

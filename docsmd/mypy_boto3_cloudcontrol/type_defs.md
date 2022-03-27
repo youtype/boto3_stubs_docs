@@ -1,364 +1,457 @@
-<a id="typed-dictionaries-for-boto3-cloudcontrolapi-module"></a>
-
-# Typed dictionaries for boto3 CloudControlApi module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudControlApi](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
-type annotations stubs module
-[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudControlApi module](#typed-dictionaries-for-boto3-cloudcontrolapi-module)
-  - [CancelResourceRequestInputRequestTypeDef](#cancelresourcerequestinputrequesttypedef)
-  - [CancelResourceRequestOutputTypeDef](#cancelresourcerequestoutputtypedef)
-  - [CreateResourceInputRequestTypeDef](#createresourceinputrequesttypedef)
-  - [CreateResourceOutputTypeDef](#createresourceoutputtypedef)
-  - [DeleteResourceInputRequestTypeDef](#deleteresourceinputrequesttypedef)
-  - [DeleteResourceOutputTypeDef](#deleteresourceoutputtypedef)
-  - [GetResourceInputRequestTypeDef](#getresourceinputrequesttypedef)
-  - [GetResourceOutputTypeDef](#getresourceoutputtypedef)
-  - [GetResourceRequestStatusInputRequestTypeDef](#getresourcerequeststatusinputrequesttypedef)
-  - [GetResourceRequestStatusOutputTypeDef](#getresourcerequeststatusoutputtypedef)
-  - [ListResourceRequestsInputRequestTypeDef](#listresourcerequestsinputrequesttypedef)
-  - [ListResourceRequestsOutputTypeDef](#listresourcerequestsoutputtypedef)
-  - [ListResourcesInputRequestTypeDef](#listresourcesinputrequesttypedef)
-  - [ListResourcesOutputTypeDef](#listresourcesoutputtypedef)
-  - [ProgressEventTypeDef](#progresseventtypedef)
-  - [ResourceDescriptionTypeDef](#resourcedescriptiontypedef)
-  - [ResourceRequestStatusFilterTypeDef](#resourcerequeststatusfiltertypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateResourceInputRequestTypeDef](#updateresourceinputrequesttypedef)
-  - [UpdateResourceOutputTypeDef](#updateresourceoutputtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="cancelresourcerequestinputrequesttypedef"></a>
+    Auto-generated documentation for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
+    type annotations stubs module [mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 ## CancelResourceRequestInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestInputRequestTypeDef
+
+def get_value() -> CancelResourceRequestInputRequestTypeDef:
+    return {
+        "RequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestToken`: `str`
-
-<a id="cancelresourcerequestoutputtypedef"></a>
+```python title="Definition"
+class CancelResourceRequestInputRequestTypeDef(TypedDict):
+    RequestToken: str,
+```
 
 ## CancelResourceRequestOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestOutputTypeDef
+
+def get_value() -> CancelResourceRequestOutputTypeDef:
+    return {
+        "ProgressEvent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelResourceRequestOutputTypeDef(TypedDict):
+    ProgressEvent: ProgressEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressEvent`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import CreateResourceInputRequestTypeDef
+
+def get_value() -> CreateResourceInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+        "DesiredState": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-- `DesiredState`: `str`
-
-Optional fields:
-
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `ClientToken`: `str`
-
-<a id="createresourceoutputtypedef"></a>
+```python title="Definition"
+class CreateResourceInputRequestTypeDef(TypedDict):
+    TypeName: str,
+    DesiredState: str,
+    TypeVersionId: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
 
 ## CreateResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import CreateResourceOutputTypeDef
+
+def get_value() -> CreateResourceOutputTypeDef:
+    return {
+        "ProgressEvent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourceOutputTypeDef(TypedDict):
+    ProgressEvent: ProgressEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressEvent`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import DeleteResourceInputRequestTypeDef
+
+def get_value() -> DeleteResourceInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-- `Identifier`: `str`
-
-Optional fields:
-
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `ClientToken`: `str`
-
-<a id="deleteresourceoutputtypedef"></a>
+```python title="Definition"
+class DeleteResourceInputRequestTypeDef(TypedDict):
+    TypeName: str,
+    Identifier: str,
+    TypeVersionId: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
 
 ## DeleteResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import DeleteResourceOutputTypeDef
+
+def get_value() -> DeleteResourceOutputTypeDef:
+    return {
+        "ProgressEvent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteResourceOutputTypeDef(TypedDict):
+    ProgressEvent: ProgressEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressEvent`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import GetResourceInputRequestTypeDef
+
+def get_value() -> GetResourceInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-- `Identifier`: `str`
-
-Optional fields:
-
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-
-<a id="getresourceoutputtypedef"></a>
+```python title="Definition"
+class GetResourceInputRequestTypeDef(TypedDict):
+    TypeName: str,
+    Identifier: str,
+    TypeVersionId: NotRequired[str],
+    RoleArn: NotRequired[str],
+```
 
 ## GetResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import GetResourceOutputTypeDef
+
+def get_value() -> GetResourceOutputTypeDef:
+    return {
+        "TypeName": ...,
+        "ResourceDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceOutputTypeDef(TypedDict):
+    TypeName: str,
+    ResourceDescription: ResourceDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TypeName`: `str`
-- `ResourceDescription`:
-  [ResourceDescriptionTypeDef](./type_defs.md#resourcedescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcerequeststatusinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceDescriptionTypeDef](./type_defs.md#resourcedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceRequestStatusInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import GetResourceRequestStatusInputRequestTypeDef
+
+def get_value() -> GetResourceRequestStatusInputRequestTypeDef:
+    return {
+        "RequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceRequestStatusInputRequestTypeDef(TypedDict):
+    RequestToken: str,
+```
 
-- `RequestToken`: `str`
+## GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef
 
-<a id="getresourcerequeststatusoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.type_defs import GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef
 
+def get_value() -> GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef:
+    return {
+        "RequestToken": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef(TypedDict):
+    RequestToken: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetResourceRequestStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import GetResourceRequestStatusOutputTypeDef
+
+def get_value() -> GetResourceRequestStatusOutputTypeDef:
+    return {
+        "ProgressEvent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceRequestStatusOutputTypeDef(TypedDict):
+    ProgressEvent: ProgressEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressEvent`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresourcerequestsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourceRequestsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ListResourceRequestsInputRequestTypeDef
+
+def get_value() -> ListResourceRequestsInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListResourceRequestsInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    ResourceRequestStatusFilter: NotRequired[ResourceRequestStatusFilterTypeDef],  # (1)
+```
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ResourceRequestStatusFilter`:
-  [ResourceRequestStatusFilterTypeDef](./type_defs.md#resourcerequeststatusfiltertypedef)
-
-<a id="listresourcerequestsoutputtypedef"></a>
-
+1. See [:material-code-braces: ResourceRequestStatusFilterTypeDef](./type_defs.md#resourcerequeststatusfiltertypedef) 
 ## ListResourceRequestsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ListResourceRequestsOutputTypeDef
+
+def get_value() -> ListResourceRequestsOutputTypeDef:
+    return {
+        "ResourceRequestStatusSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceRequestsOutputTypeDef(TypedDict):
+    ResourceRequestStatusSummaries: List[ProgressEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceRequestStatusSummaries`:
-  `List`\[[ProgressEventTypeDef](./type_defs.md#progresseventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresourcesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ListResourcesInputRequestTypeDef
+
+def get_value() -> ListResourcesInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-
-Optional fields:
-
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceModel`: `str`
-
-<a id="listresourcesoutputtypedef"></a>
+```python title="Definition"
+class ListResourcesInputRequestTypeDef(TypedDict):
+    TypeName: str,
+    TypeVersionId: NotRequired[str],
+    RoleArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ResourceModel: NotRequired[str],
+```
 
 ## ListResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ListResourcesOutputTypeDef
+
+def get_value() -> ListResourcesOutputTypeDef:
+    return {
+        "TypeName": ...,
+        "ResourceDescriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourcesOutputTypeDef(TypedDict):
+    TypeName: str,
+    ResourceDescriptions: List[ResourceDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TypeName`: `str`
-- `ResourceDescriptions`:
-  `List`\[[ResourceDescriptionTypeDef](./type_defs.md#resourcedescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="progresseventtypedef"></a>
-
+1. See [:material-code-braces: ResourceDescriptionTypeDef](./type_defs.md#resourcedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ProgressEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ProgressEventTypeDef
+
+def get_value() -> ProgressEventTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProgressEventTypeDef(TypedDict):
+    TypeName: NotRequired[str],
+    Identifier: NotRequired[str],
+    RequestToken: NotRequired[str],
+    Operation: NotRequired[OperationType],  # (1)
+    OperationStatus: NotRequired[OperationStatusType],  # (2)
+    EventTime: NotRequired[datetime],
+    ResourceModel: NotRequired[str],
+    StatusMessage: NotRequired[str],
+    ErrorCode: NotRequired[HandlerErrorCodeType],  # (3)
+    RetryAfter: NotRequired[datetime],
+```
 
-- `TypeName`: `str`
-- `Identifier`: `str`
-- `RequestToken`: `str`
-- `Operation`: [OperationType](./literals.md#operationtype)
-- `OperationStatus`: [OperationStatusType](./literals.md#operationstatustype)
-- `EventTime`: `datetime`
-- `ResourceModel`: `str`
-- `StatusMessage`: `str`
-- `ErrorCode`: [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
-- `RetryAfter`: `datetime`
-
-<a id="resourcedescriptiontypedef"></a>
-
+1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
+2. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+3. See [:material-code-brackets: HandlerErrorCodeType](./literals.md#handlererrorcodetype) 
 ## ResourceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ResourceDescriptionTypeDef
+
+def get_value() -> ResourceDescriptionTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `Identifier`: `str`
-- `Properties`: `str`
-
-<a id="resourcerequeststatusfiltertypedef"></a>
+```python title="Definition"
+class ResourceDescriptionTypeDef(TypedDict):
+    Identifier: NotRequired[str],
+    Properties: NotRequired[str],
+```
 
 ## ResourceRequestStatusFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ResourceRequestStatusFilterTypeDef
+
+def get_value() -> ResourceRequestStatusFilterTypeDef:
+    return {
+        "Operations": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceRequestStatusFilterTypeDef(TypedDict):
+    Operations: NotRequired[Sequence[OperationType]],  # (1)
+    OperationStatuses: NotRequired[Sequence[OperationStatusType]],  # (2)
+```
 
-- `Operations`: `Sequence`\[[OperationType](./literals.md#operationtype)\]
-- `OperationStatuses`:
-  `Sequence`\[[OperationStatusType](./literals.md#operationstatustype)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
+2. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="updateresourceinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## UpdateResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import UpdateResourceInputRequestTypeDef
+
+def get_value() -> UpdateResourceInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+        "Identifier": ...,
+        "PatchDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-- `Identifier`: `str`
-- `PatchDocument`: `str`
-
-Optional fields:
-
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `ClientToken`: `str`
-
-<a id="updateresourceoutputtypedef"></a>
+```python title="Definition"
+class UpdateResourceInputRequestTypeDef(TypedDict):
+    TypeName: str,
+    Identifier: str,
+    PatchDocument: str,
+    TypeVersionId: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
 
 ## UpdateResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import UpdateResourceOutputTypeDef
+
+def get_value() -> UpdateResourceOutputTypeDef:
+    return {
+        "ProgressEvent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceOutputTypeDef(TypedDict):
+    ProgressEvent: ProgressEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressEvent`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudcontrol.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

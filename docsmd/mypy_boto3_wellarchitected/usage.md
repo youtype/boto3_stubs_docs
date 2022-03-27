@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-wellarchitected-module"></a>
-
-# Examples for boto3 WellArchitected module
+# Examples
 
 > [Index](../README.md) > [WellArchitected](./README.md) > Examples
 
-- [Examples for boto3 WellArchitected module](#examples-for-boto3-wellarchitected-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+    type annotations stubs module [mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[wellarchitected]` package installed.
 
-Write your `WellArchitected` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `WellArchitected` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type WellArchitectedClient
-# and provides type checking and code completion
-client = session.client("wellarchitected")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_lenses()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("wellarchitected")  # (1)
+    result = client.create_lens_share()  # (2)
+    ```
+
+    1. client: [WellArchitectedClient](./client.md)
+    2. result: [:material-code-braces: CreateLensShareOutputTypeDef](./type_defs.md#createlensshareoutputtypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[wellarchitected]` or a standalone
-`mypy_boto3_wellarchitected` package, you have to explicitly specify
-`client: WellArchitectedClient` type annotation.
+With `boto3-stubs-lite[wellarchitected]`
+or a standalone `mypy_boto3_wellarchitected` package, you have to explicitly specify `client: WellArchitectedClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_wellarchitected.client import WellArchitectedClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_wellarchitected.client import WellArchitectedClient
+    from mypy_boto3_wellarchitected.type_defs import CreateLensShareOutputTypeDef
+    from mypy_boto3_wellarchitected.type_defs import CreateLensShareInputRequestTypeDef
 
 
-from mypy_boto3_wellarchitected.type_defs import None
+    session = Session()
+
+    client: WellArchitectedClient = session.client("wellarchitected")
+
+    kwargs: CreateLensShareInputRequestTypeDef = {...}
+    result: CreateLensShareOutputTypeDef = client.create_lens_share(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: WellArchitectedClient = session.client("wellarchitected")
 
-result: None = client.associate_lenses()
-```
+

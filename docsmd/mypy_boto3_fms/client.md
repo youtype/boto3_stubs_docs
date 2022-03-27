@@ -1,58 +1,18 @@
-<a id="fmsclient-for-boto3-fms-module"></a>
-
-# FMSClient for boto3 FMS module
+# FMSClient
 
 > [Index](../README.md) > [FMS](./README.md) > FMSClient
 
-Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module
-[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
+!!! note ""
 
-- [FMSClient for boto3 FMS module](#fmsclient-for-boto3-fms-module)
-  - [FMSClient](#fmsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_admin_account](#associate_admin_account)
-    - [can_paginate](#can_paginate)
-    - [delete_apps_list](#delete_apps_list)
-    - [delete_notification_channel](#delete_notification_channel)
-    - [delete_policy](#delete_policy)
-    - [delete_protocols_list](#delete_protocols_list)
-    - [disassociate_admin_account](#disassociate_admin_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_admin_account](#get_admin_account)
-    - [get_apps_list](#get_apps_list)
-    - [get_compliance_detail](#get_compliance_detail)
-    - [get_notification_channel](#get_notification_channel)
-    - [get_policy](#get_policy)
-    - [get_protection_status](#get_protection_status)
-    - [get_protocols_list](#get_protocols_list)
-    - [get_violation_details](#get_violation_details)
-    - [list_apps_lists](#list_apps_lists)
-    - [list_compliance_status](#list_compliance_status)
-    - [list_member_accounts](#list_member_accounts)
-    - [list_policies](#list_policies)
-    - [list_protocols_lists](#list_protocols_lists)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_apps_list](#put_apps_list)
-    - [put_notification_channel](#put_notification_channel)
-    - [put_policy](#put_policy)
-    - [put_protocols_list](#put_protocols_list)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="fmsclient"></a>
+    Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+    type annotations stubs module [mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 ## FMSClient
 
-Type annotations for `boto3.client("fms")`
+Type annotations and code completion for `#!python boto3.client("fms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_fms.client import FMSClient
 
@@ -60,631 +20,828 @@ def get_fms_client() -> FMSClient:
     return Session().client("fms")
 ```
 
-Boto3 documentation:
-[FMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("fms").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("fms")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalErrorException,
+    client.InvalidInputException,
+    client.InvalidOperationException,
+    client.InvalidTypeException,
+    client.LimitExceededException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_fms.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidOperationException`
-- `Exceptions.InvalidTypeException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-FMSClient exceptions.
-
-Type annotations for `boto3.client("fms").exceptions` method.
-
-Boto3 documentation:
-[FMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_admin\_account"></a>
-
-### associate_admin_account
+### associate\_admin\_account
 
 Sets the Firewall Manager administrator account.
 
-Type annotations for `boto3.client("fms").associate_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("fms").associate_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
 
-Boto3 documentation:
-[FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
+```python title="Method definition"
+def associate_admin_account(
+    self,
+    *,
+    AdminAccount: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateAdminAccountRequestRequestTypeDef](./type_defs.md#associateadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AdminAccount`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateAdminAccountRequestRequestTypeDef = {  # (1)
+    "AdminAccount": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.associate_admin_account(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AssociateAdminAccountRequestRequestTypeDef](./type_defs.md#associateadminaccountrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("fms").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("fms").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.can_paginate)
 
-Boto3 documentation:
-[FMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_apps\_list"></a>
-
-### delete_apps_list
+### delete\_apps\_list
 
 Permanently deletes an Firewall Manager applications list.
 
-Type annotations for `boto3.client("fms").delete_apps_list` method.
+Type annotations and code completion for `#!python boto3.client("fms").delete_apps_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
 
-Boto3 documentation:
-[FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
+```python title="Method definition"
+def delete_apps_list(
+    self,
+    *,
+    ListId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppsListRequestRequestTypeDef](./type_defs.md#deleteappslistrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ListId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppsListRequestRequestTypeDef = {  # (1)
+    "ListId": ...,
+}
 
-<a id="delete\_notification\_channel"></a>
+parent.delete_apps_list(**kwargs)
+```
 
-### delete_notification_channel
+1. See [:material-code-braces: DeleteAppsListRequestRequestTypeDef](./type_defs.md#deleteappslistrequestrequesttypedef) 
+
+### delete\_notification\_channel
 
 Deletes an Firewall Manager association with the IAM role and the Amazon Simple
 Notification Service (SNS) topic that is used to record Firewall Manager SNS
 logs.
 
-Type annotations for `boto3.client("fms").delete_notification_channel` method.
+Type annotations and code completion for `#!python boto3.client("fms").delete_notification_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel)
 
-Boto3 documentation:
-[FMS.Client.delete_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel)
+```python title="Method definition"
+def delete_notification_channel(
+    self,
+) -> None:
+    ...
+```
 
-<a id="delete\_policy"></a>
 
-### delete_policy
+### delete\_policy
 
 Permanently deletes an Firewall Manager policy.
 
-Type annotations for `boto3.client("fms").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("fms").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
 
-Boto3 documentation:
-[FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+    *,
+    PolicyId: str,
+    DeleteAllPolicyResources: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `DeleteAllPolicyResources`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-<a id="delete\_protocols\_list"></a>
+parent.delete_policy(**kwargs)
+```
 
-### delete_protocols_list
+1. See [:material-code-braces: DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef) 
+
+### delete\_protocols\_list
 
 Permanently deletes an Firewall Manager protocols list.
 
-Type annotations for `boto3.client("fms").delete_protocols_list` method.
+Type annotations and code completion for `#!python boto3.client("fms").delete_protocols_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
 
-Boto3 documentation:
-[FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
+```python title="Method definition"
+def delete_protocols_list(
+    self,
+    *,
+    ListId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProtocolsListRequestRequestTypeDef](./type_defs.md#deleteprotocolslistrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ListId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProtocolsListRequestRequestTypeDef = {  # (1)
+    "ListId": ...,
+}
 
-<a id="disassociate\_admin\_account"></a>
+parent.delete_protocols_list(**kwargs)
+```
 
-### disassociate_admin_account
+1. See [:material-code-braces: DeleteProtocolsListRequestRequestTypeDef](./type_defs.md#deleteprotocolslistrequestrequesttypedef) 
+
+### disassociate\_admin\_account
 
 Disassociates the account that has been set as the Firewall Manager
 administrator account.
 
-Type annotations for `boto3.client("fms").disassociate_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("fms").disassociate_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account)
 
-Boto3 documentation:
-[FMS.Client.disassociate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account)
+```python title="Method definition"
+def disassociate_admin_account(
+    self,
+) -> None:
+    ...
+```
 
-<a id="generate\_presigned\_url"></a>
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("fms").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("fms").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[FMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_admin\_account"></a>
-
-### get_admin_account
+### get\_admin\_account
 
 Returns the Organizations account that is associated with Firewall Manager as
 the Firewall Manager administrator.
 
-Type annotations for `boto3.client("fms").get_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
 
-Boto3 documentation:
-[FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
+```python title="Method definition"
+def get_admin_account(
+    self,
+) -> GetAdminAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef).
+1. See [:material-code-braces: GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef) 
 
-<a id="get\_apps\_list"></a>
-
-### get_apps_list
+### get\_apps\_list
 
 Returns information about the specified Firewall Manager applications list.
 
-Type annotations for `boto3.client("fms").get_apps_list` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_apps_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
 
-Boto3 documentation:
-[FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
+```python title="Method definition"
+def get_apps_list(
+    self,
+    *,
+    ListId: str,
+    DefaultList: bool = ...,
+) -> GetAppsListResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppsListRequestRequestTypeDef](./type_defs.md#getappslistrequestrequesttypedef).
+1. See [:material-code-braces: GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListId`: `str` *(required)*
-- `DefaultList`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetAppsListRequestRequestTypeDef = {  # (1)
+    "ListId": ...,
+}
 
-Returns
-[GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef).
+parent.get_apps_list(**kwargs)
+```
 
-<a id="get\_compliance\_detail"></a>
+1. See [:material-code-braces: GetAppsListRequestRequestTypeDef](./type_defs.md#getappslistrequestrequesttypedef) 
 
-### get_compliance_detail
+### get\_compliance\_detail
 
 Returns detailed compliance information about the specified member account.
 
-Type annotations for `boto3.client("fms").get_compliance_detail` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_compliance_detail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
 
-Boto3 documentation:
-[FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
+```python title="Method definition"
+def get_compliance_detail(
+    self,
+    *,
+    PolicyId: str,
+    MemberAccount: str,
+) -> GetComplianceDetailResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetComplianceDetailRequestRequestTypeDef](./type_defs.md#getcompliancedetailrequestrequesttypedef).
+1. See [:material-code-braces: GetComplianceDetailResponseTypeDef](./type_defs.md#getcompliancedetailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `MemberAccount`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetComplianceDetailRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+    "MemberAccount": ...,
+}
 
-Returns
-[GetComplianceDetailResponseTypeDef](./type_defs.md#getcompliancedetailresponsetypedef).
+parent.get_compliance_detail(**kwargs)
+```
 
-<a id="get\_notification\_channel"></a>
+1. See [:material-code-braces: GetComplianceDetailRequestRequestTypeDef](./type_defs.md#getcompliancedetailrequestrequesttypedef) 
 
-### get_notification_channel
+### get\_notification\_channel
 
 Information about the Amazon Simple Notification Service (SNS) topic that is
 used to record Firewall Manager SNS logs.
 
-Type annotations for `boto3.client("fms").get_notification_channel` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_notification_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
 
-Boto3 documentation:
-[FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
+```python title="Method definition"
+def get_notification_channel(
+    self,
+) -> GetNotificationChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef).
+1. See [:material-code-braces: GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef) 
 
-<a id="get\_policy"></a>
-
-### get_policy
+### get\_policy
 
 Returns information about the specified Firewall Manager policy.
 
-Type annotations for `boto3.client("fms").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
 
-Boto3 documentation:
-[FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+    *,
+    PolicyId: str,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+parent.get_policy(**kwargs)
+```
 
-<a id="get\_protection\_status"></a>
+1. See [:material-code-braces: GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef) 
 
-### get_protection_status
+### get\_protection\_status
 
 If you created a Shield Advanced policy, returns policy-level attack summary
 information in the event of a potential DDoS attack.
 
-Type annotations for `boto3.client("fms").get_protection_status` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_protection_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
 
-Boto3 documentation:
-[FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
+```python title="Method definition"
+def get_protection_status(
+    self,
+    *,
+    PolicyId: str,
+    MemberAccountId: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetProtectionStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProtectionStatusRequestRequestTypeDef](./type_defs.md#getprotectionstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `MemberAccountId`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetProtectionStatusRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns
-[GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef).
+parent.get_protection_status(**kwargs)
+```
 
-<a id="get\_protocols\_list"></a>
+1. See [:material-code-braces: GetProtectionStatusRequestRequestTypeDef](./type_defs.md#getprotectionstatusrequestrequesttypedef) 
 
-### get_protocols_list
+### get\_protocols\_list
 
 Returns information about the specified Firewall Manager protocols list.
 
-Type annotations for `boto3.client("fms").get_protocols_list` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_protocols_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
 
-Boto3 documentation:
-[FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
+```python title="Method definition"
+def get_protocols_list(
+    self,
+    *,
+    ListId: str,
+    DefaultList: bool = ...,
+) -> GetProtocolsListResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProtocolsListRequestRequestTypeDef](./type_defs.md#getprotocolslistrequestrequesttypedef).
+1. See [:material-code-braces: GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListId`: `str` *(required)*
-- `DefaultList`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetProtocolsListRequestRequestTypeDef = {  # (1)
+    "ListId": ...,
+}
 
-Returns
-[GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef).
+parent.get_protocols_list(**kwargs)
+```
 
-<a id="get\_violation\_details"></a>
+1. See [:material-code-braces: GetProtocolsListRequestRequestTypeDef](./type_defs.md#getprotocolslistrequestrequesttypedef) 
 
-### get_violation_details
+### get\_violation\_details
 
 Retrieves violations for a resource based on the specified Firewall Manager
 policy and Amazon Web Services account.
 
-Type annotations for `boto3.client("fms").get_violation_details` method.
+Type annotations and code completion for `#!python boto3.client("fms").get_violation_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
 
-Boto3 documentation:
-[FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
+```python title="Method definition"
+def get_violation_details(
+    self,
+    *,
+    PolicyId: str,
+    MemberAccount: str,
+    ResourceId: str,
+    ResourceType: str,
+) -> GetViolationDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetViolationDetailsRequestRequestTypeDef](./type_defs.md#getviolationdetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `MemberAccount`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `ResourceType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetViolationDetailsRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+    "MemberAccount": ...,
+    "ResourceId": ...,
+    "ResourceType": ...,
+}
 
-Returns
-[GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef).
+parent.get_violation_details(**kwargs)
+```
 
-<a id="list\_apps\_lists"></a>
+1. See [:material-code-braces: GetViolationDetailsRequestRequestTypeDef](./type_defs.md#getviolationdetailsrequestrequesttypedef) 
 
-### list_apps_lists
+### list\_apps\_lists
 
 Returns an array of `AppsListDataSummary` objects.
 
-Type annotations for `boto3.client("fms").list_apps_lists` method.
+Type annotations and code completion for `#!python boto3.client("fms").list_apps_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
 
-Boto3 documentation:
-[FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
+```python title="Method definition"
+def list_apps_lists(
+    self,
+    *,
+    MaxResults: int,
+    DefaultLists: bool = ...,
+    NextToken: str = ...,
+) -> ListAppsListsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppsListsRequestRequestTypeDef](./type_defs.md#listappslistsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int` *(required)*
-- `DefaultLists`: `bool`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppsListsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef).
+parent.list_apps_lists(**kwargs)
+```
 
-<a id="list\_compliance\_status"></a>
+1. See [:material-code-braces: ListAppsListsRequestRequestTypeDef](./type_defs.md#listappslistsrequestrequesttypedef) 
 
-### list_compliance_status
+### list\_compliance\_status
 
 Returns an array of `PolicyComplianceStatus` objects.
 
-Type annotations for `boto3.client("fms").list_compliance_status` method.
+Type annotations and code completion for `#!python boto3.client("fms").list_compliance_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
 
-Boto3 documentation:
-[FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
+```python title="Method definition"
+def list_compliance_status(
+    self,
+    *,
+    PolicyId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListComplianceStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListComplianceStatusRequestRequestTypeDef](./type_defs.md#listcompliancestatusrequestrequesttypedef).
+1. See [:material-code-braces: ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListComplianceStatusRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns
-[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef).
+parent.list_compliance_status(**kwargs)
+```
 
-<a id="list\_member\_accounts"></a>
+1. See [:material-code-braces: ListComplianceStatusRequestRequestTypeDef](./type_defs.md#listcompliancestatusrequestrequesttypedef) 
 
-### list_member_accounts
+### list\_member\_accounts
 
 Returns a `MemberAccounts` object that lists the member accounts in the
 administrator's Amazon Web Services organization.
 
-Type annotations for `boto3.client("fms").list_member_accounts` method.
+Type annotations and code completion for `#!python boto3.client("fms").list_member_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
 
-Boto3 documentation:
-[FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
+```python title="Method definition"
+def list_member_accounts(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMemberAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMemberAccountsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef).
+parent.list_member_accounts(**kwargs)
+```
 
-<a id="list\_policies"></a>
+1. See [:material-code-braces: ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef) 
 
-### list_policies
+### list\_policies
 
 Returns an array of `PolicySummary` objects.
 
-Type annotations for `boto3.client("fms").list_policies` method.
+Type annotations and code completion for `#!python boto3.client("fms").list_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
 
-Boto3 documentation:
-[FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
+```python title="Method definition"
+def list_policies(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+parent.list_policies(**kwargs)
+```
 
-<a id="list\_protocols\_lists"></a>
+1. See [:material-code-braces: ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef) 
 
-### list_protocols_lists
+### list\_protocols\_lists
 
 Returns an array of `ProtocolsListDataSummary` objects.
 
-Type annotations for `boto3.client("fms").list_protocols_lists` method.
+Type annotations and code completion for `#!python boto3.client("fms").list_protocols_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
 
-Boto3 documentation:
-[FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
+```python title="Method definition"
+def list_protocols_lists(
+    self,
+    *,
+    MaxResults: int,
+    DefaultLists: bool = ...,
+    NextToken: str = ...,
+) -> ListProtocolsListsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProtocolsListsRequestRequestTypeDef](./type_defs.md#listprotocolslistsrequestrequesttypedef).
+1. See [:material-code-braces: ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int` *(required)*
-- `DefaultLists`: `bool`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProtocolsListsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef).
+parent.list_protocols_lists(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProtocolsListsRequestRequestTypeDef](./type_defs.md#listprotocolslistsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the list of tags for the specified Amazon Web Services resource.
 
-Type annotations for `boto3.client("fms").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("fms").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_apps\_list"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_apps_list
+### put\_apps\_list
 
 Creates an Firewall Manager applications list.
 
-Type annotations for `boto3.client("fms").put_apps_list` method.
+Type annotations and code completion for `#!python boto3.client("fms").put_apps_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
 
-Boto3 documentation:
-[FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
+```python title="Method definition"
+def put_apps_list(
+    self,
+    *,
+    AppsList: AppsListDataTypeDef,  # (1)
+    TagList: Sequence[TagTypeDef] = ...,  # (2)
+) -> PutAppsListResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutAppsListRequestRequestTypeDef](./type_defs.md#putappslistrequestrequesttypedef).
+1. See [:material-code-braces: AppsListDataTypeDef](./type_defs.md#appslistdatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
-  *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutAppsListRequestRequestTypeDef = {  # (1)
+    "AppsList": ...,
+}
 
-Returns
-[PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef).
+parent.put_apps_list(**kwargs)
+```
 
-<a id="put\_notification\_channel"></a>
+1. See [:material-code-braces: PutAppsListRequestRequestTypeDef](./type_defs.md#putappslistrequestrequesttypedef) 
 
-### put_notification_channel
+### put\_notification\_channel
 
 Designates the IAM role and Amazon Simple Notification Service (SNS) topic that
 Firewall Manager uses to record SNS logs.
 
-Type annotations for `boto3.client("fms").put_notification_channel` method.
+Type annotations and code completion for `#!python boto3.client("fms").put_notification_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
 
-Boto3 documentation:
-[FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
+```python title="Method definition"
+def put_notification_channel(
+    self,
+    *,
+    SnsTopicArn: str,
+    SnsRoleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutNotificationChannelRequestRequestTypeDef](./type_defs.md#putnotificationchannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SnsTopicArn`: `str` *(required)*
-- `SnsRoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutNotificationChannelRequestRequestTypeDef = {  # (1)
+    "SnsTopicArn": ...,
+    "SnsRoleName": ...,
+}
 
-<a id="put\_policy"></a>
+parent.put_notification_channel(**kwargs)
+```
 
-### put_policy
+1. See [:material-code-braces: PutNotificationChannelRequestRequestTypeDef](./type_defs.md#putnotificationchannelrequestrequesttypedef) 
+
+### put\_policy
 
 Creates an Firewall Manager policy.
 
-Type annotations for `boto3.client("fms").put_policy` method.
+Type annotations and code completion for `#!python boto3.client("fms").put_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
 
-Boto3 documentation:
-[FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
+```python title="Method definition"
+def put_policy(
+    self,
+    *,
+    Policy: PolicyTypeDef,  # (1)
+    TagList: Sequence[TagTypeDef] = ...,  # (2)
+) -> PutPolicyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef).
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutPolicyRequestRequestTypeDef = {  # (1)
+    "Policy": ...,
+}
 
-Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
+parent.put_policy(**kwargs)
+```
 
-<a id="put\_protocols\_list"></a>
+1. See [:material-code-braces: PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef) 
 
-### put_protocols_list
+### put\_protocols\_list
 
 Creates an Firewall Manager protocols list.
 
-Type annotations for `boto3.client("fms").put_protocols_list` method.
+Type annotations and code completion for `#!python boto3.client("fms").put_protocols_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
 
-Boto3 documentation:
-[FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
+```python title="Method definition"
+def put_protocols_list(
+    self,
+    *,
+    ProtocolsList: ProtocolsListDataTypeDef,  # (1)
+    TagList: Sequence[TagTypeDef] = ...,  # (2)
+) -> PutProtocolsListResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutProtocolsListRequestRequestTypeDef](./type_defs.md#putprotocolslistrequestrequesttypedef).
+1. See [:material-code-braces: ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProtocolsList`:
-  [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
-  *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutProtocolsListRequestRequestTypeDef = {  # (1)
+    "ProtocolsList": ...,
+}
 
-Returns
-[PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef).
+parent.put_protocols_list(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutProtocolsListRequestRequestTypeDef](./type_defs.md#putprotocolslistrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to an Amazon Web Services resource.
 
-Type annotations for `boto3.client("fms").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("fms").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
 
-Boto3 documentation:
-[FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from an Amazon Web Services resource.
 
-Type annotations for `boto3.client("fms").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("fms").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
 
-Boto3 documentation:
-[FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("fms").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator` method with overloads.
 
-- `client.get_paginator("list_apps_lists")` ->
-  [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
-- `client.get_paginator("list_compliance_status")` ->
-  [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
-- `client.get_paginator("list_member_accounts")` ->
-  [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
-- `client.get_paginator("list_policies")` ->
-  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-- `client.get_paginator("list_protocols_lists")` ->
-  [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
+- `client.get_paginator("list_apps_lists")` -> [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
+- `client.get_paginator("list_compliance_status")` -> [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
+- `client.get_paginator("list_member_accounts")` -> [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
+- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_protocols_lists")` -> [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
+
+
+

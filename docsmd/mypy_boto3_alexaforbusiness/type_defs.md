@@ -1,3258 +1,4216 @@
-<a id="typed-dictionaries-for-boto3-alexaforbusiness-module"></a>
-
-# Typed dictionaries for boto3 AlexaForBusiness module
+# Typed dictionaries
 
 > [Index](../README.md) > [AlexaForBusiness](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
-type annotations stubs module
-[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AlexaForBusiness module](#typed-dictionaries-for-boto3-alexaforbusiness-module)
-  - [AddressBookDataTypeDef](#addressbookdatatypedef)
-  - [AddressBookTypeDef](#addressbooktypedef)
-  - [ApproveSkillRequestRequestTypeDef](#approveskillrequestrequesttypedef)
-  - [AssociateContactWithAddressBookRequestRequestTypeDef](#associatecontactwithaddressbookrequestrequesttypedef)
-  - [AssociateDeviceWithNetworkProfileRequestRequestTypeDef](#associatedevicewithnetworkprofilerequestrequesttypedef)
-  - [AssociateDeviceWithRoomRequestRequestTypeDef](#associatedevicewithroomrequestrequesttypedef)
-  - [AssociateSkillGroupWithRoomRequestRequestTypeDef](#associateskillgroupwithroomrequestrequesttypedef)
-  - [AssociateSkillWithSkillGroupRequestRequestTypeDef](#associateskillwithskillgrouprequestrequesttypedef)
-  - [AssociateSkillWithUsersRequestRequestTypeDef](#associateskillwithusersrequestrequesttypedef)
-  - [AudioTypeDef](#audiotypedef)
-  - [BusinessReportContentRangeTypeDef](#businessreportcontentrangetypedef)
-  - [BusinessReportRecurrenceTypeDef](#businessreportrecurrencetypedef)
-  - [BusinessReportS3LocationTypeDef](#businessreports3locationtypedef)
-  - [BusinessReportScheduleTypeDef](#businessreportscheduletypedef)
-  - [BusinessReportTypeDef](#businessreporttypedef)
-  - [CategoryTypeDef](#categorytypedef)
-  - [ConferencePreferenceTypeDef](#conferencepreferencetypedef)
-  - [ConferenceProviderTypeDef](#conferenceprovidertypedef)
-  - [ContactDataTypeDef](#contactdatatypedef)
-  - [ContactTypeDef](#contacttypedef)
-  - [ContentTypeDef](#contenttypedef)
-  - [CreateAddressBookRequestRequestTypeDef](#createaddressbookrequestrequesttypedef)
-  - [CreateAddressBookResponseTypeDef](#createaddressbookresponsetypedef)
-  - [CreateBusinessReportScheduleRequestRequestTypeDef](#createbusinessreportschedulerequestrequesttypedef)
-  - [CreateBusinessReportScheduleResponseTypeDef](#createbusinessreportscheduleresponsetypedef)
-  - [CreateConferenceProviderRequestRequestTypeDef](#createconferenceproviderrequestrequesttypedef)
-  - [CreateConferenceProviderResponseTypeDef](#createconferenceproviderresponsetypedef)
-  - [CreateContactRequestRequestTypeDef](#createcontactrequestrequesttypedef)
-  - [CreateContactResponseTypeDef](#createcontactresponsetypedef)
-  - [CreateEndOfMeetingReminderTypeDef](#createendofmeetingremindertypedef)
-  - [CreateGatewayGroupRequestRequestTypeDef](#creategatewaygrouprequestrequesttypedef)
-  - [CreateGatewayGroupResponseTypeDef](#creategatewaygroupresponsetypedef)
-  - [CreateInstantBookingTypeDef](#createinstantbookingtypedef)
-  - [CreateMeetingRoomConfigurationTypeDef](#createmeetingroomconfigurationtypedef)
-  - [CreateNetworkProfileRequestRequestTypeDef](#createnetworkprofilerequestrequesttypedef)
-  - [CreateNetworkProfileResponseTypeDef](#createnetworkprofileresponsetypedef)
-  - [CreateProfileRequestRequestTypeDef](#createprofilerequestrequesttypedef)
-  - [CreateProfileResponseTypeDef](#createprofileresponsetypedef)
-  - [CreateRequireCheckInTypeDef](#createrequirecheckintypedef)
-  - [CreateRoomRequestRequestTypeDef](#createroomrequestrequesttypedef)
-  - [CreateRoomResponseTypeDef](#createroomresponsetypedef)
-  - [CreateSkillGroupRequestRequestTypeDef](#createskillgrouprequestrequesttypedef)
-  - [CreateSkillGroupResponseTypeDef](#createskillgroupresponsetypedef)
-  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
-  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
-  - [DeleteAddressBookRequestRequestTypeDef](#deleteaddressbookrequestrequesttypedef)
-  - [DeleteBusinessReportScheduleRequestRequestTypeDef](#deletebusinessreportschedulerequestrequesttypedef)
-  - [DeleteConferenceProviderRequestRequestTypeDef](#deleteconferenceproviderrequestrequesttypedef)
-  - [DeleteContactRequestRequestTypeDef](#deletecontactrequestrequesttypedef)
-  - [DeleteDeviceRequestRequestTypeDef](#deletedevicerequestrequesttypedef)
-  - [DeleteDeviceUsageDataRequestRequestTypeDef](#deletedeviceusagedatarequestrequesttypedef)
-  - [DeleteGatewayGroupRequestRequestTypeDef](#deletegatewaygrouprequestrequesttypedef)
-  - [DeleteNetworkProfileRequestRequestTypeDef](#deletenetworkprofilerequestrequesttypedef)
-  - [DeleteProfileRequestRequestTypeDef](#deleteprofilerequestrequesttypedef)
-  - [DeleteRoomRequestRequestTypeDef](#deleteroomrequestrequesttypedef)
-  - [DeleteRoomSkillParameterRequestRequestTypeDef](#deleteroomskillparameterrequestrequesttypedef)
-  - [DeleteSkillAuthorizationRequestRequestTypeDef](#deleteskillauthorizationrequestrequesttypedef)
-  - [DeleteSkillGroupRequestRequestTypeDef](#deleteskillgrouprequestrequesttypedef)
-  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
-  - [DeveloperInfoTypeDef](#developerinfotypedef)
-  - [DeviceDataTypeDef](#devicedatatypedef)
-  - [DeviceEventTypeDef](#deviceeventtypedef)
-  - [DeviceNetworkProfileInfoTypeDef](#devicenetworkprofileinfotypedef)
-  - [DeviceStatusDetailTypeDef](#devicestatusdetailtypedef)
-  - [DeviceStatusInfoTypeDef](#devicestatusinfotypedef)
-  - [DeviceTypeDef](#devicetypedef)
-  - [DisassociateContactFromAddressBookRequestRequestTypeDef](#disassociatecontactfromaddressbookrequestrequesttypedef)
-  - [DisassociateDeviceFromRoomRequestRequestTypeDef](#disassociatedevicefromroomrequestrequesttypedef)
-  - [DisassociateSkillFromSkillGroupRequestRequestTypeDef](#disassociateskillfromskillgrouprequestrequesttypedef)
-  - [DisassociateSkillFromUsersRequestRequestTypeDef](#disassociateskillfromusersrequestrequesttypedef)
-  - [DisassociateSkillGroupFromRoomRequestRequestTypeDef](#disassociateskillgroupfromroomrequestrequesttypedef)
-  - [EndOfMeetingReminderTypeDef](#endofmeetingremindertypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [ForgetSmartHomeAppliancesRequestRequestTypeDef](#forgetsmarthomeappliancesrequestrequesttypedef)
-  - [GatewayGroupSummaryTypeDef](#gatewaygroupsummarytypedef)
-  - [GatewayGroupTypeDef](#gatewaygrouptypedef)
-  - [GatewaySummaryTypeDef](#gatewaysummarytypedef)
-  - [GatewayTypeDef](#gatewaytypedef)
-  - [GetAddressBookRequestRequestTypeDef](#getaddressbookrequestrequesttypedef)
-  - [GetAddressBookResponseTypeDef](#getaddressbookresponsetypedef)
-  - [GetConferencePreferenceResponseTypeDef](#getconferencepreferenceresponsetypedef)
-  - [GetConferenceProviderRequestRequestTypeDef](#getconferenceproviderrequestrequesttypedef)
-  - [GetConferenceProviderResponseTypeDef](#getconferenceproviderresponsetypedef)
-  - [GetContactRequestRequestTypeDef](#getcontactrequestrequesttypedef)
-  - [GetContactResponseTypeDef](#getcontactresponsetypedef)
-  - [GetDeviceRequestRequestTypeDef](#getdevicerequestrequesttypedef)
-  - [GetDeviceResponseTypeDef](#getdeviceresponsetypedef)
-  - [GetGatewayGroupRequestRequestTypeDef](#getgatewaygrouprequestrequesttypedef)
-  - [GetGatewayGroupResponseTypeDef](#getgatewaygroupresponsetypedef)
-  - [GetGatewayRequestRequestTypeDef](#getgatewayrequestrequesttypedef)
-  - [GetGatewayResponseTypeDef](#getgatewayresponsetypedef)
-  - [GetInvitationConfigurationResponseTypeDef](#getinvitationconfigurationresponsetypedef)
-  - [GetNetworkProfileRequestRequestTypeDef](#getnetworkprofilerequestrequesttypedef)
-  - [GetNetworkProfileResponseTypeDef](#getnetworkprofileresponsetypedef)
-  - [GetProfileRequestRequestTypeDef](#getprofilerequestrequesttypedef)
-  - [GetProfileResponseTypeDef](#getprofileresponsetypedef)
-  - [GetRoomRequestRequestTypeDef](#getroomrequestrequesttypedef)
-  - [GetRoomResponseTypeDef](#getroomresponsetypedef)
-  - [GetRoomSkillParameterRequestRequestTypeDef](#getroomskillparameterrequestrequesttypedef)
-  - [GetRoomSkillParameterResponseTypeDef](#getroomskillparameterresponsetypedef)
-  - [GetSkillGroupRequestRequestTypeDef](#getskillgrouprequestrequesttypedef)
-  - [GetSkillGroupResponseTypeDef](#getskillgroupresponsetypedef)
-  - [IPDialInTypeDef](#ipdialintypedef)
-  - [InstantBookingTypeDef](#instantbookingtypedef)
-  - [ListBusinessReportSchedulesRequestRequestTypeDef](#listbusinessreportschedulesrequestrequesttypedef)
-  - [ListBusinessReportSchedulesResponseTypeDef](#listbusinessreportschedulesresponsetypedef)
-  - [ListConferenceProvidersRequestRequestTypeDef](#listconferenceprovidersrequestrequesttypedef)
-  - [ListConferenceProvidersResponseTypeDef](#listconferenceprovidersresponsetypedef)
-  - [ListDeviceEventsRequestRequestTypeDef](#listdeviceeventsrequestrequesttypedef)
-  - [ListDeviceEventsResponseTypeDef](#listdeviceeventsresponsetypedef)
-  - [ListGatewayGroupsRequestRequestTypeDef](#listgatewaygroupsrequestrequesttypedef)
-  - [ListGatewayGroupsResponseTypeDef](#listgatewaygroupsresponsetypedef)
-  - [ListGatewaysRequestRequestTypeDef](#listgatewaysrequestrequesttypedef)
-  - [ListGatewaysResponseTypeDef](#listgatewaysresponsetypedef)
-  - [ListSkillsRequestRequestTypeDef](#listskillsrequestrequesttypedef)
-  - [ListSkillsResponseTypeDef](#listskillsresponsetypedef)
-  - [ListSkillsStoreCategoriesRequestRequestTypeDef](#listskillsstorecategoriesrequestrequesttypedef)
-  - [ListSkillsStoreCategoriesResponseTypeDef](#listskillsstorecategoriesresponsetypedef)
-  - [ListSkillsStoreSkillsByCategoryRequestRequestTypeDef](#listskillsstoreskillsbycategoryrequestrequesttypedef)
-  - [ListSkillsStoreSkillsByCategoryResponseTypeDef](#listskillsstoreskillsbycategoryresponsetypedef)
-  - [ListSmartHomeAppliancesRequestRequestTypeDef](#listsmarthomeappliancesrequestrequesttypedef)
-  - [ListSmartHomeAppliancesResponseTypeDef](#listsmarthomeappliancesresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [MeetingRoomConfigurationTypeDef](#meetingroomconfigurationtypedef)
-  - [MeetingSettingTypeDef](#meetingsettingtypedef)
-  - [NetworkProfileDataTypeDef](#networkprofiledatatypedef)
-  - [NetworkProfileTypeDef](#networkprofiletypedef)
-  - [PSTNDialInTypeDef](#pstndialintypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PhoneNumberTypeDef](#phonenumbertypedef)
-  - [ProfileDataTypeDef](#profiledatatypedef)
-  - [ProfileTypeDef](#profiletypedef)
-  - [PutConferencePreferenceRequestRequestTypeDef](#putconferencepreferencerequestrequesttypedef)
-  - [PutInvitationConfigurationRequestRequestTypeDef](#putinvitationconfigurationrequestrequesttypedef)
-  - [PutRoomSkillParameterRequestRequestTypeDef](#putroomskillparameterrequestrequesttypedef)
-  - [PutSkillAuthorizationRequestRequestTypeDef](#putskillauthorizationrequestrequesttypedef)
-  - [RegisterAVSDeviceRequestRequestTypeDef](#registeravsdevicerequestrequesttypedef)
-  - [RegisterAVSDeviceResponseTypeDef](#registeravsdeviceresponsetypedef)
-  - [RejectSkillRequestRequestTypeDef](#rejectskillrequestrequesttypedef)
-  - [RequireCheckInTypeDef](#requirecheckintypedef)
-  - [ResolveRoomRequestRequestTypeDef](#resolveroomrequestrequesttypedef)
-  - [ResolveRoomResponseTypeDef](#resolveroomresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevokeInvitationRequestRequestTypeDef](#revokeinvitationrequestrequesttypedef)
-  - [RoomDataTypeDef](#roomdatatypedef)
-  - [RoomSkillParameterTypeDef](#roomskillparametertypedef)
-  - [RoomTypeDef](#roomtypedef)
-  - [SearchAddressBooksRequestRequestTypeDef](#searchaddressbooksrequestrequesttypedef)
-  - [SearchAddressBooksResponseTypeDef](#searchaddressbooksresponsetypedef)
-  - [SearchContactsRequestRequestTypeDef](#searchcontactsrequestrequesttypedef)
-  - [SearchContactsResponseTypeDef](#searchcontactsresponsetypedef)
-  - [SearchDevicesRequestRequestTypeDef](#searchdevicesrequestrequesttypedef)
-  - [SearchDevicesResponseTypeDef](#searchdevicesresponsetypedef)
-  - [SearchNetworkProfilesRequestRequestTypeDef](#searchnetworkprofilesrequestrequesttypedef)
-  - [SearchNetworkProfilesResponseTypeDef](#searchnetworkprofilesresponsetypedef)
-  - [SearchProfilesRequestRequestTypeDef](#searchprofilesrequestrequesttypedef)
-  - [SearchProfilesResponseTypeDef](#searchprofilesresponsetypedef)
-  - [SearchRoomsRequestRequestTypeDef](#searchroomsrequestrequesttypedef)
-  - [SearchRoomsResponseTypeDef](#searchroomsresponsetypedef)
-  - [SearchSkillGroupsRequestRequestTypeDef](#searchskillgroupsrequestrequesttypedef)
-  - [SearchSkillGroupsResponseTypeDef](#searchskillgroupsresponsetypedef)
-  - [SearchUsersRequestRequestTypeDef](#searchusersrequestrequesttypedef)
-  - [SearchUsersResponseTypeDef](#searchusersresponsetypedef)
-  - [SendAnnouncementRequestRequestTypeDef](#sendannouncementrequestrequesttypedef)
-  - [SendAnnouncementResponseTypeDef](#sendannouncementresponsetypedef)
-  - [SendInvitationRequestRequestTypeDef](#sendinvitationrequestrequesttypedef)
-  - [SipAddressTypeDef](#sipaddresstypedef)
-  - [SkillDetailsTypeDef](#skilldetailstypedef)
-  - [SkillGroupDataTypeDef](#skillgroupdatatypedef)
-  - [SkillGroupTypeDef](#skillgrouptypedef)
-  - [SkillSummaryTypeDef](#skillsummarytypedef)
-  - [SkillsStoreSkillTypeDef](#skillsstoreskilltypedef)
-  - [SmartHomeApplianceTypeDef](#smarthomeappliancetypedef)
-  - [SortTypeDef](#sorttypedef)
-  - [SsmlTypeDef](#ssmltypedef)
-  - [StartDeviceSyncRequestRequestTypeDef](#startdevicesyncrequestrequesttypedef)
-  - [StartSmartHomeApplianceDiscoveryRequestRequestTypeDef](#startsmarthomeappliancediscoveryrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TextTypeDef](#texttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAddressBookRequestRequestTypeDef](#updateaddressbookrequestrequesttypedef)
-  - [UpdateBusinessReportScheduleRequestRequestTypeDef](#updatebusinessreportschedulerequestrequesttypedef)
-  - [UpdateConferenceProviderRequestRequestTypeDef](#updateconferenceproviderrequestrequesttypedef)
-  - [UpdateContactRequestRequestTypeDef](#updatecontactrequestrequesttypedef)
-  - [UpdateDeviceRequestRequestTypeDef](#updatedevicerequestrequesttypedef)
-  - [UpdateEndOfMeetingReminderTypeDef](#updateendofmeetingremindertypedef)
-  - [UpdateGatewayGroupRequestRequestTypeDef](#updategatewaygrouprequestrequesttypedef)
-  - [UpdateGatewayRequestRequestTypeDef](#updategatewayrequestrequesttypedef)
-  - [UpdateInstantBookingTypeDef](#updateinstantbookingtypedef)
-  - [UpdateMeetingRoomConfigurationTypeDef](#updatemeetingroomconfigurationtypedef)
-  - [UpdateNetworkProfileRequestRequestTypeDef](#updatenetworkprofilerequestrequesttypedef)
-  - [UpdateProfileRequestRequestTypeDef](#updateprofilerequestrequesttypedef)
-  - [UpdateRequireCheckInTypeDef](#updaterequirecheckintypedef)
-  - [UpdateRoomRequestRequestTypeDef](#updateroomrequestrequesttypedef)
-  - [UpdateSkillGroupRequestRequestTypeDef](#updateskillgrouprequestrequesttypedef)
-  - [UserDataTypeDef](#userdatatypedef)
-
-<a id="addressbookdatatypedef"></a>
+    Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+    type annotations stubs module [mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 ## AddressBookDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AddressBookDataTypeDef
+
+def get_value() -> AddressBookDataTypeDef:
+    return {
+        "AddressBookArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `AddressBookArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="addressbooktypedef"></a>
+```python title="Definition"
+class AddressBookDataTypeDef(TypedDict):
+    AddressBookArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## AddressBookTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AddressBookTypeDef
+
+def get_value() -> AddressBookTypeDef:
+    return {
+        "AddressBookArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `AddressBookArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="approveskillrequestrequesttypedef"></a>
+```python title="Definition"
+class AddressBookTypeDef(TypedDict):
+    AddressBookArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## ApproveSkillRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ApproveSkillRequestRequestTypeDef
+
+def get_value() -> ApproveSkillRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-<a id="associatecontactwithaddressbookrequestrequesttypedef"></a>
+```python title="Definition"
+class ApproveSkillRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+```
 
 ## AssociateContactWithAddressBookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AssociateContactWithAddressBookRequestRequestTypeDef
+
+def get_value() -> AssociateContactWithAddressBookRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+        "AddressBookArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactArn`: `str`
-- `AddressBookArn`: `str`
-
-<a id="associatedevicewithnetworkprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateContactWithAddressBookRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+    AddressBookArn: str,
+```
 
 ## AssociateDeviceWithNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AssociateDeviceWithNetworkProfileRequestRequestTypeDef
+
+def get_value() -> AssociateDeviceWithNetworkProfileRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceArn`: `str`
-- `NetworkProfileArn`: `str`
-
-<a id="associatedevicewithroomrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateDeviceWithNetworkProfileRequestRequestTypeDef(TypedDict):
+    DeviceArn: str,
+    NetworkProfileArn: str,
+```
 
 ## AssociateDeviceWithRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AssociateDeviceWithRoomRequestRequestTypeDef
+
+def get_value() -> AssociateDeviceWithRoomRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceArn`: `str`
-- `RoomArn`: `str`
-
-<a id="associateskillgroupwithroomrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateDeviceWithRoomRequestRequestTypeDef(TypedDict):
+    DeviceArn: NotRequired[str],
+    RoomArn: NotRequired[str],
+```
 
 ## AssociateSkillGroupWithRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AssociateSkillGroupWithRoomRequestRequestTypeDef
+
+def get_value() -> AssociateSkillGroupWithRoomRequestRequestTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-- `RoomArn`: `str`
-
-<a id="associateskillwithskillgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateSkillGroupWithRoomRequestRequestTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    RoomArn: NotRequired[str],
+```
 
 ## AssociateSkillWithSkillGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AssociateSkillWithSkillGroupRequestRequestTypeDef
+
+def get_value() -> AssociateSkillWithSkillGroupRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-Optional fields:
-
-- `SkillGroupArn`: `str`
-
-<a id="associateskillwithusersrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateSkillWithSkillGroupRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+    SkillGroupArn: NotRequired[str],
+```
 
 ## AssociateSkillWithUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AssociateSkillWithUsersRequestRequestTypeDef
+
+def get_value() -> AssociateSkillWithUsersRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-<a id="audiotypedef"></a>
+```python title="Definition"
+class AssociateSkillWithUsersRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+```
 
 ## AudioTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import AudioTypeDef
+
+def get_value() -> AudioTypeDef:
+    return {
+        "Locale": ...,
+        "Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AudioTypeDef(TypedDict):
+    Locale: LocaleType,  # (1)
+    Location: str,
+```
 
-- `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
-- `Location`: `str`
-
-<a id="businessreportcontentrangetypedef"></a>
-
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
 ## BusinessReportContentRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import BusinessReportContentRangeTypeDef
+
+def get_value() -> BusinessReportContentRangeTypeDef:
+    return {
+        "Interval": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BusinessReportContentRangeTypeDef(TypedDict):
+    Interval: BusinessReportIntervalType,  # (1)
+```
 
-- `Interval`:
-  [BusinessReportIntervalType](./literals.md#businessreportintervaltype)
-
-<a id="businessreportrecurrencetypedef"></a>
-
+1. See [:material-code-brackets: BusinessReportIntervalType](./literals.md#businessreportintervaltype) 
 ## BusinessReportRecurrenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import BusinessReportRecurrenceTypeDef
+
+def get_value() -> BusinessReportRecurrenceTypeDef:
+    return {
+        "StartDate": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartDate`: `str`
-
-<a id="businessreports3locationtypedef"></a>
+```python title="Definition"
+class BusinessReportRecurrenceTypeDef(TypedDict):
+    StartDate: NotRequired[str],
+```
 
 ## BusinessReportS3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import BusinessReportS3LocationTypeDef
+
+def get_value() -> BusinessReportS3LocationTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `Path`: `str`
-- `BucketName`: `str`
-
-<a id="businessreportscheduletypedef"></a>
+```python title="Definition"
+class BusinessReportS3LocationTypeDef(TypedDict):
+    Path: NotRequired[str],
+    BucketName: NotRequired[str],
+```
 
 ## BusinessReportScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import BusinessReportScheduleTypeDef
+
+def get_value() -> BusinessReportScheduleTypeDef:
+    return {
+        "ScheduleArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BusinessReportScheduleTypeDef(TypedDict):
+    ScheduleArn: NotRequired[str],
+    ScheduleName: NotRequired[str],
+    S3BucketName: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+    Format: NotRequired[BusinessReportFormatType],  # (1)
+    ContentRange: NotRequired[BusinessReportContentRangeTypeDef],  # (2)
+    Recurrence: NotRequired[BusinessReportRecurrenceTypeDef],  # (3)
+    LastBusinessReport: NotRequired[BusinessReportTypeDef],  # (4)
+```
 
-- `ScheduleArn`: `str`
-- `ScheduleName`: `str`
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
-- `ContentRange`:
-  [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
-- `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
-- `LastBusinessReport`:
-  [BusinessReportTypeDef](./type_defs.md#businessreporttypedef)
-
-<a id="businessreporttypedef"></a>
-
+1. See [:material-code-brackets: BusinessReportFormatType](./literals.md#businessreportformattype) 
+2. See [:material-code-braces: BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef) 
+3. See [:material-code-braces: BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef) 
+4. See [:material-code-braces: BusinessReportTypeDef](./type_defs.md#businessreporttypedef) 
 ## BusinessReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import BusinessReportTypeDef
+
+def get_value() -> BusinessReportTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BusinessReportTypeDef(TypedDict):
+    Status: NotRequired[BusinessReportStatusType],  # (1)
+    FailureCode: NotRequired[BusinessReportFailureCodeType],  # (2)
+    S3Location: NotRequired[BusinessReportS3LocationTypeDef],  # (3)
+    DeliveryTime: NotRequired[datetime],
+    DownloadUrl: NotRequired[str],
+```
 
-- `Status`: [BusinessReportStatusType](./literals.md#businessreportstatustype)
-- `FailureCode`:
-  [BusinessReportFailureCodeType](./literals.md#businessreportfailurecodetype)
-- `S3Location`:
-  [BusinessReportS3LocationTypeDef](./type_defs.md#businessreports3locationtypedef)
-- `DeliveryTime`: `datetime`
-- `DownloadUrl`: `str`
-
-<a id="categorytypedef"></a>
-
+1. See [:material-code-brackets: BusinessReportStatusType](./literals.md#businessreportstatustype) 
+2. See [:material-code-brackets: BusinessReportFailureCodeType](./literals.md#businessreportfailurecodetype) 
+3. See [:material-code-braces: BusinessReportS3LocationTypeDef](./type_defs.md#businessreports3locationtypedef) 
 ## CategoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CategoryTypeDef
+
+def get_value() -> CategoryTypeDef:
+    return {
+        "CategoryId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CategoryId`: `int`
-- `CategoryName`: `str`
-
-<a id="conferencepreferencetypedef"></a>
+```python title="Definition"
+class CategoryTypeDef(TypedDict):
+    CategoryId: NotRequired[int],
+    CategoryName: NotRequired[str],
+```
 
 ## ConferencePreferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ConferencePreferenceTypeDef
+
+def get_value() -> ConferencePreferenceTypeDef:
+    return {
+        "DefaultConferenceProviderArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultConferenceProviderArn`: `str`
-
-<a id="conferenceprovidertypedef"></a>
+```python title="Definition"
+class ConferencePreferenceTypeDef(TypedDict):
+    DefaultConferenceProviderArn: NotRequired[str],
+```
 
 ## ConferenceProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ConferenceProviderTypeDef
+
+def get_value() -> ConferenceProviderTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConferenceProviderTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[ConferenceProviderTypeType],  # (1)
+    IPDialIn: NotRequired[IPDialInTypeDef],  # (2)
+    PSTNDialIn: NotRequired[PSTNDialInTypeDef],  # (3)
+    MeetingSetting: NotRequired[MeetingSettingTypeDef],  # (4)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `Type`:
-  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
-- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
-- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
-
-<a id="contactdatatypedef"></a>
-
+1. See [:material-code-brackets: ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype) 
+2. See [:material-code-braces: IPDialInTypeDef](./type_defs.md#ipdialintypedef) 
+3. See [:material-code-braces: PSTNDialInTypeDef](./type_defs.md#pstndialintypedef) 
+4. See [:material-code-braces: MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) 
 ## ContactDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ContactDataTypeDef
+
+def get_value() -> ContactDataTypeDef:
+    return {
+        "ContactArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactDataTypeDef(TypedDict):
+    ContactArn: NotRequired[str],
+    DisplayName: NotRequired[str],
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    PhoneNumbers: NotRequired[List[PhoneNumberTypeDef]],  # (1)
+    SipAddresses: NotRequired[List[SipAddressTypeDef]],  # (2)
+```
 
-- `ContactArn`: `str`
-- `DisplayName`: `str`
-- `FirstName`: `str`
-- `LastName`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`:
-  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
-
-<a id="contacttypedef"></a>
-
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: SipAddressTypeDef](./type_defs.md#sipaddresstypedef) 
 ## ContactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ContactTypeDef
+
+def get_value() -> ContactTypeDef:
+    return {
+        "ContactArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactTypeDef(TypedDict):
+    ContactArn: NotRequired[str],
+    DisplayName: NotRequired[str],
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    PhoneNumbers: NotRequired[List[PhoneNumberTypeDef]],  # (1)
+    SipAddresses: NotRequired[List[SipAddressTypeDef]],  # (2)
+```
 
-- `ContactArn`: `str`
-- `DisplayName`: `str`
-- `FirstName`: `str`
-- `LastName`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`:
-  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
-
-<a id="contenttypedef"></a>
-
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: SipAddressTypeDef](./type_defs.md#sipaddresstypedef) 
 ## ContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ContentTypeDef
+
+def get_value() -> ContentTypeDef:
+    return {
+        "TextList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContentTypeDef(TypedDict):
+    TextList: NotRequired[Sequence[TextTypeDef]],  # (1)
+    SsmlList: NotRequired[Sequence[SsmlTypeDef]],  # (2)
+    AudioList: NotRequired[Sequence[AudioTypeDef]],  # (3)
+```
 
-- `TextList`: `Sequence`\[[TextTypeDef](./type_defs.md#texttypedef)\]
-- `SsmlList`: `Sequence`\[[SsmlTypeDef](./type_defs.md#ssmltypedef)\]
-- `AudioList`: `Sequence`\[[AudioTypeDef](./type_defs.md#audiotypedef)\]
-
-<a id="createaddressbookrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TextTypeDef](./type_defs.md#texttypedef) 
+2. See [:material-code-braces: SsmlTypeDef](./type_defs.md#ssmltypedef) 
+3. See [:material-code-braces: AudioTypeDef](./type_defs.md#audiotypedef) 
 ## CreateAddressBookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateAddressBookRequestRequestTypeDef
+
+def get_value() -> CreateAddressBookRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAddressBookRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createaddressbookresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateAddressBookResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateAddressBookResponseTypeDef
+
+def get_value() -> CreateAddressBookResponseTypeDef:
+    return {
+        "AddressBookArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAddressBookResponseTypeDef(TypedDict):
+    AddressBookArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AddressBookArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbusinessreportschedulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBusinessReportScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateBusinessReportScheduleRequestRequestTypeDef
+
+def get_value() -> CreateBusinessReportScheduleRequestRequestTypeDef:
+    return {
+        "Format": ...,
+        "ContentRange": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBusinessReportScheduleRequestRequestTypeDef(TypedDict):
+    Format: BusinessReportFormatType,  # (1)
+    ContentRange: BusinessReportContentRangeTypeDef,  # (2)
+    ScheduleName: NotRequired[str],
+    S3BucketName: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+    Recurrence: NotRequired[BusinessReportRecurrenceTypeDef],  # (3)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
-- `ContentRange`:
-  [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
-
-Optional fields:
-
-- `ScheduleName`: `str`
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createbusinessreportscheduleresponsetypedef"></a>
-
+1. See [:material-code-brackets: BusinessReportFormatType](./literals.md#businessreportformattype) 
+2. See [:material-code-braces: BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef) 
+3. See [:material-code-braces: BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateBusinessReportScheduleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateBusinessReportScheduleResponseTypeDef
+
+def get_value() -> CreateBusinessReportScheduleResponseTypeDef:
+    return {
+        "ScheduleArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBusinessReportScheduleResponseTypeDef(TypedDict):
+    ScheduleArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ScheduleArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createconferenceproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConferenceProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateConferenceProviderRequestRequestTypeDef
+
+def get_value() -> CreateConferenceProviderRequestRequestTypeDef:
+    return {
+        "ConferenceProviderName": ...,
+        "ConferenceProviderType": ...,
+        "MeetingSetting": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConferenceProviderRequestRequestTypeDef(TypedDict):
+    ConferenceProviderName: str,
+    ConferenceProviderType: ConferenceProviderTypeType,  # (1)
+    MeetingSetting: MeetingSettingTypeDef,  # (2)
+    IPDialIn: NotRequired[IPDialInTypeDef],  # (3)
+    PSTNDialIn: NotRequired[PSTNDialInTypeDef],  # (4)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `ConferenceProviderName`: `str`
-- `ConferenceProviderType`:
-  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
-
-Optional fields:
-
-- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
-- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createconferenceproviderresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype) 
+2. See [:material-code-braces: MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) 
+3. See [:material-code-braces: IPDialInTypeDef](./type_defs.md#ipdialintypedef) 
+4. See [:material-code-braces: PSTNDialInTypeDef](./type_defs.md#pstndialintypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateConferenceProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateConferenceProviderResponseTypeDef
+
+def get_value() -> CreateConferenceProviderResponseTypeDef:
+    return {
+        "ConferenceProviderArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConferenceProviderResponseTypeDef(TypedDict):
+    ConferenceProviderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConferenceProviderArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateContactRequestRequestTypeDef
+
+def get_value() -> CreateContactRequestRequestTypeDef:
+    return {
+        "FirstName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactRequestRequestTypeDef(TypedDict):
+    FirstName: str,
+    DisplayName: NotRequired[str],
+    LastName: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    PhoneNumbers: NotRequired[Sequence[PhoneNumberTypeDef]],  # (1)
+    SipAddresses: NotRequired[Sequence[SipAddressTypeDef]],  # (2)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `FirstName`: `str`
-
-Optional fields:
-
-- `DisplayName`: `str`
-- `LastName`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumbers`:
-  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`:
-  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcontactresponsetypedef"></a>
-
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: SipAddressTypeDef](./type_defs.md#sipaddresstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateContactResponseTypeDef
+
+def get_value() -> CreateContactResponseTypeDef:
+    return {
+        "ContactArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactResponseTypeDef(TypedDict):
+    ContactArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createendofmeetingremindertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEndOfMeetingReminderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateEndOfMeetingReminderTypeDef
+
+def get_value() -> CreateEndOfMeetingReminderTypeDef:
+    return {
+        "ReminderAtMinutes": ...,
+        "ReminderType": ...,
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEndOfMeetingReminderTypeDef(TypedDict):
+    ReminderAtMinutes: Sequence[int],
+    ReminderType: EndOfMeetingReminderTypeType,  # (1)
+    Enabled: bool,
+```
 
-- `ReminderAtMinutes`: `Sequence`\[`int`\]
-- `ReminderType`:
-  [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
-- `Enabled`: `bool`
-
-<a id="creategatewaygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype) 
 ## CreateGatewayGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateGatewayGroupRequestRequestTypeDef
+
+def get_value() -> CreateGatewayGroupRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGatewayGroupRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ClientRequestToken: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="creategatewaygroupresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateGatewayGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateGatewayGroupResponseTypeDef
+
+def get_value() -> CreateGatewayGroupResponseTypeDef:
+    return {
+        "GatewayGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGatewayGroupResponseTypeDef(TypedDict):
+    GatewayGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayGroupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinstantbookingtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInstantBookingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateInstantBookingTypeDef
+
+def get_value() -> CreateInstantBookingTypeDef:
+    return {
+        "DurationInMinutes": ...,
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `DurationInMinutes`: `int`
-- `Enabled`: `bool`
-
-<a id="createmeetingroomconfigurationtypedef"></a>
+```python title="Definition"
+class CreateInstantBookingTypeDef(TypedDict):
+    DurationInMinutes: int,
+    Enabled: bool,
+```
 
 ## CreateMeetingRoomConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateMeetingRoomConfigurationTypeDef
+
+def get_value() -> CreateMeetingRoomConfigurationTypeDef:
+    return {
+        "RoomUtilizationMetricsEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateMeetingRoomConfigurationTypeDef(TypedDict):
+    RoomUtilizationMetricsEnabled: NotRequired[bool],
+    EndOfMeetingReminder: NotRequired[CreateEndOfMeetingReminderTypeDef],  # (1)
+    InstantBooking: NotRequired[CreateInstantBookingTypeDef],  # (2)
+    RequireCheckIn: NotRequired[CreateRequireCheckInTypeDef],  # (3)
+```
 
-- `RoomUtilizationMetricsEnabled`: `bool`
-- `EndOfMeetingReminder`:
-  [CreateEndOfMeetingReminderTypeDef](./type_defs.md#createendofmeetingremindertypedef)
-- `InstantBooking`:
-  [CreateInstantBookingTypeDef](./type_defs.md#createinstantbookingtypedef)
-- `RequireCheckIn`:
-  [CreateRequireCheckInTypeDef](./type_defs.md#createrequirecheckintypedef)
-
-<a id="createnetworkprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CreateEndOfMeetingReminderTypeDef](./type_defs.md#createendofmeetingremindertypedef) 
+2. See [:material-code-braces: CreateInstantBookingTypeDef](./type_defs.md#createinstantbookingtypedef) 
+3. See [:material-code-braces: CreateRequireCheckInTypeDef](./type_defs.md#createrequirecheckintypedef) 
 ## CreateNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateNetworkProfileRequestRequestTypeDef
+
+def get_value() -> CreateNetworkProfileRequestRequestTypeDef:
+    return {
+        "NetworkProfileName": ...,
+        "Ssid": ...,
+        "SecurityType": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNetworkProfileRequestRequestTypeDef(TypedDict):
+    NetworkProfileName: str,
+    Ssid: str,
+    SecurityType: NetworkSecurityTypeType,  # (1)
+    ClientRequestToken: str,
+    Description: NotRequired[str],
+    EapMethod: NotRequired[NetworkEapMethodType],  # (2)
+    CurrentPassword: NotRequired[str],
+    NextPassword: NotRequired[str],
+    CertificateAuthorityArn: NotRequired[str],
+    TrustAnchors: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `NetworkProfileName`: `str`
-- `Ssid`: `str`
-- `SecurityType`:
-  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype)
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
-- `CurrentPassword`: `str`
-- `NextPassword`: `str`
-- `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createnetworkprofileresponsetypedef"></a>
-
+1. See [:material-code-brackets: NetworkSecurityTypeType](./literals.md#networksecuritytypetype) 
+2. See [:material-code-brackets: NetworkEapMethodType](./literals.md#networkeapmethodtype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateNetworkProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateNetworkProfileResponseTypeDef
+
+def get_value() -> CreateNetworkProfileResponseTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNetworkProfileResponseTypeDef(TypedDict):
+    NetworkProfileArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NetworkProfileArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateProfileRequestRequestTypeDef
+
+def get_value() -> CreateProfileRequestRequestTypeDef:
+    return {
+        "ProfileName": ...,
+        "Timezone": ...,
+        "Address": ...,
+        "DistanceUnit": ...,
+        "TemperatureUnit": ...,
+        "WakeWord": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProfileRequestRequestTypeDef(TypedDict):
+    ProfileName: str,
+    Timezone: str,
+    Address: str,
+    DistanceUnit: DistanceUnitType,  # (1)
+    TemperatureUnit: TemperatureUnitType,  # (2)
+    WakeWord: WakeWordType,  # (3)
+    Locale: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    SetupModeDisabled: NotRequired[bool],
+    MaxVolumeLimit: NotRequired[int],
+    PSTNEnabled: NotRequired[bool],
+    DataRetentionOptIn: NotRequired[bool],
+    MeetingRoomConfiguration: NotRequired[CreateMeetingRoomConfigurationTypeDef],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `ProfileName`: `str`
-- `Timezone`: `str`
-- `Address`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
-- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
-
-Optional fields:
-
-- `Locale`: `str`
-- `ClientRequestToken`: `str`
-- `SetupModeDisabled`: `bool`
-- `MaxVolumeLimit`: `int`
-- `PSTNEnabled`: `bool`
-- `DataRetentionOptIn`: `bool`
-- `MeetingRoomConfiguration`:
-  [CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createprofileresponsetypedef"></a>
-
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+2. See [:material-code-brackets: TemperatureUnitType](./literals.md#temperatureunittype) 
+3. See [:material-code-brackets: WakeWordType](./literals.md#wakewordtype) 
+4. See [:material-code-braces: CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateProfileResponseTypeDef
+
+def get_value() -> CreateProfileResponseTypeDef:
+    return {
+        "ProfileArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProfileResponseTypeDef(TypedDict):
+    ProfileArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProfileArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrequirecheckintypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRequireCheckInTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateRequireCheckInTypeDef
+
+def get_value() -> CreateRequireCheckInTypeDef:
+    return {
+        "ReleaseAfterMinutes": ...,
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `ReleaseAfterMinutes`: `int`
-- `Enabled`: `bool`
-
-<a id="createroomrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateRequireCheckInTypeDef(TypedDict):
+    ReleaseAfterMinutes: int,
+    Enabled: bool,
+```
 
 ## CreateRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateRoomRequestRequestTypeDef
+
+def get_value() -> CreateRoomRequestRequestTypeDef:
+    return {
+        "RoomName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoomRequestRequestTypeDef(TypedDict):
+    RoomName: str,
+    Description: NotRequired[str],
+    ProfileArn: NotRequired[str],
+    ProviderCalendarId: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `RoomName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ProfileArn`: `str`
-- `ProviderCalendarId`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createroomresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRoomResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateRoomResponseTypeDef
+
+def get_value() -> CreateRoomResponseTypeDef:
+    return {
+        "RoomArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoomResponseTypeDef(TypedDict):
+    RoomArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RoomArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createskillgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSkillGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateSkillGroupRequestRequestTypeDef
+
+def get_value() -> CreateSkillGroupRequestRequestTypeDef:
+    return {
+        "SkillGroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSkillGroupRequestRequestTypeDef(TypedDict):
+    SkillGroupName: str,
+    Description: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SkillGroupName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createskillgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSkillGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateSkillGroupResponseTypeDef
+
+def get_value() -> CreateSkillGroupResponseTypeDef:
+    return {
+        "SkillGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSkillGroupResponseTypeDef(TypedDict):
+    SkillGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SkillGroupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateUserRequestRequestTypeDef
+
+def get_value() -> CreateUserRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    Email: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `UserId`: `str`
-
-Optional fields:
-
-- `FirstName`: `str`
-- `LastName`: `str`
-- `Email`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createuserresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "UserArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    UserArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteaddressbookrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAddressBookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteAddressBookRequestRequestTypeDef
+
+def get_value() -> DeleteAddressBookRequestRequestTypeDef:
+    return {
+        "AddressBookArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AddressBookArn`: `str`
-
-<a id="deletebusinessreportschedulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAddressBookRequestRequestTypeDef(TypedDict):
+    AddressBookArn: str,
+```
 
 ## DeleteBusinessReportScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteBusinessReportScheduleRequestRequestTypeDef
+
+def get_value() -> DeleteBusinessReportScheduleRequestRequestTypeDef:
+    return {
+        "ScheduleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduleArn`: `str`
-
-<a id="deleteconferenceproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBusinessReportScheduleRequestRequestTypeDef(TypedDict):
+    ScheduleArn: str,
+```
 
 ## DeleteConferenceProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteConferenceProviderRequestRequestTypeDef
+
+def get_value() -> DeleteConferenceProviderRequestRequestTypeDef:
+    return {
+        "ConferenceProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ConferenceProviderArn`: `str`
-
-<a id="deletecontactrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConferenceProviderRequestRequestTypeDef(TypedDict):
+    ConferenceProviderArn: str,
+```
 
 ## DeleteContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteContactRequestRequestTypeDef
+
+def get_value() -> DeleteContactRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactArn`: `str`
-
-<a id="deletedevicerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteContactRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+```
 
 ## DeleteDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteDeviceRequestRequestTypeDef
+
+def get_value() -> DeleteDeviceRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceArn`: `str`
-
-<a id="deletedeviceusagedatarequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDeviceRequestRequestTypeDef(TypedDict):
+    DeviceArn: str,
+```
 
 ## DeleteDeviceUsageDataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteDeviceUsageDataRequestRequestTypeDef
+
+def get_value() -> DeleteDeviceUsageDataRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+        "DeviceUsageType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDeviceUsageDataRequestRequestTypeDef(TypedDict):
+    DeviceArn: str,
+    DeviceUsageType: DeviceUsageTypeType,  # (1)
+```
 
-- `DeviceArn`: `str`
-- `DeviceUsageType`: `Literal['VOICE']` (see
-  [DeviceUsageTypeType](./literals.md#deviceusagetypetype))
-
-<a id="deletegatewaygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceUsageTypeType](./literals.md#deviceusagetypetype) 
 ## DeleteGatewayGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteGatewayGroupRequestRequestTypeDef
+
+def get_value() -> DeleteGatewayGroupRequestRequestTypeDef:
+    return {
+        "GatewayGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayGroupArn`: `str`
-
-<a id="deletenetworkprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGatewayGroupRequestRequestTypeDef(TypedDict):
+    GatewayGroupArn: str,
+```
 
 ## DeleteNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteNetworkProfileRequestRequestTypeDef
+
+def get_value() -> DeleteNetworkProfileRequestRequestTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Required fields:
-
-- `NetworkProfileArn`: `str`
-
-<a id="deleteprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteNetworkProfileRequestRequestTypeDef(TypedDict):
+    NetworkProfileArn: str,
+```
 
 ## DeleteProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteProfileRequestRequestTypeDef
+
+def get_value() -> DeleteProfileRequestRequestTypeDef:
+    return {
+        "ProfileArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProfileArn`: `str`
-
-<a id="deleteroomrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProfileRequestRequestTypeDef(TypedDict):
+    ProfileArn: NotRequired[str],
+```
 
 ## DeleteRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteRoomRequestRequestTypeDef
+
+def get_value() -> DeleteRoomRequestRequestTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="deleteroomskillparameterrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRoomRequestRequestTypeDef(TypedDict):
+    RoomArn: NotRequired[str],
+```
 
 ## DeleteRoomSkillParameterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteRoomSkillParameterRequestRequestTypeDef
+
+def get_value() -> DeleteRoomSkillParameterRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+        "ParameterKey": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-- `ParameterKey`: `str`
-
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="deleteskillauthorizationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRoomSkillParameterRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+    ParameterKey: str,
+    RoomArn: NotRequired[str],
+```
 
 ## DeleteSkillAuthorizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteSkillAuthorizationRequestRequestTypeDef
+
+def get_value() -> DeleteSkillAuthorizationRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="deleteskillgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSkillAuthorizationRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+    RoomArn: NotRequired[str],
+```
 
 ## DeleteSkillGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteSkillGroupRequestRequestTypeDef
+
+def get_value() -> DeleteSkillGroupRequestRequestTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-
-<a id="deleteuserrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSkillGroupRequestRequestTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+```
 
 ## DeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "EnrollmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `EnrollmentId`: `str`
-
-Optional fields:
-
-- `UserArn`: `str`
-
-<a id="developerinfotypedef"></a>
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    EnrollmentId: str,
+    UserArn: NotRequired[str],
+```
 
 ## DeveloperInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeveloperInfoTypeDef
+
+def get_value() -> DeveloperInfoTypeDef:
+    return {
+        "DeveloperName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeveloperName`: `str`
-- `PrivacyPolicy`: `str`
-- `Email`: `str`
-- `Url`: `str`
-
-<a id="devicedatatypedef"></a>
+```python title="Definition"
+class DeveloperInfoTypeDef(TypedDict):
+    DeveloperName: NotRequired[str],
+    PrivacyPolicy: NotRequired[str],
+    Email: NotRequired[str],
+    Url: NotRequired[str],
+```
 
 ## DeviceDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeviceDataTypeDef
+
+def get_value() -> DeviceDataTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceDataTypeDef(TypedDict):
+    DeviceArn: NotRequired[str],
+    DeviceSerialNumber: NotRequired[str],
+    DeviceType: NotRequired[str],
+    DeviceName: NotRequired[str],
+    SoftwareVersion: NotRequired[str],
+    MacAddress: NotRequired[str],
+    DeviceStatus: NotRequired[DeviceStatusType],  # (1)
+    NetworkProfileArn: NotRequired[str],
+    NetworkProfileName: NotRequired[str],
+    RoomArn: NotRequired[str],
+    RoomName: NotRequired[str],
+    DeviceStatusInfo: NotRequired[DeviceStatusInfoTypeDef],  # (2)
+    CreatedTime: NotRequired[datetime],
+```
 
-- `DeviceArn`: `str`
-- `DeviceSerialNumber`: `str`
-- `DeviceType`: `str`
-- `DeviceName`: `str`
-- `SoftwareVersion`: `str`
-- `MacAddress`: `str`
-- `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
-- `NetworkProfileArn`: `str`
-- `NetworkProfileName`: `str`
-- `RoomArn`: `str`
-- `RoomName`: `str`
-- `DeviceStatusInfo`:
-  [DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef)
-- `CreatedTime`: `datetime`
-
-<a id="deviceeventtypedef"></a>
-
+1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+2. See [:material-code-braces: DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef) 
 ## DeviceEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeviceEventTypeDef
+
+def get_value() -> DeviceEventTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceEventTypeDef(TypedDict):
+    Type: NotRequired[DeviceEventTypeType],  # (1)
+    Value: NotRequired[str],
+    Timestamp: NotRequired[datetime],
+```
 
-- `Type`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
-- `Value`: `str`
-- `Timestamp`: `datetime`
-
-<a id="devicenetworkprofileinfotypedef"></a>
-
+1. See [:material-code-brackets: DeviceEventTypeType](./literals.md#deviceeventtypetype) 
 ## DeviceNetworkProfileInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeviceNetworkProfileInfoTypeDef
+
+def get_value() -> DeviceNetworkProfileInfoTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `NetworkProfileArn`: `str`
-- `CertificateArn`: `str`
-- `CertificateExpirationTime`: `datetime`
-
-<a id="devicestatusdetailtypedef"></a>
+```python title="Definition"
+class DeviceNetworkProfileInfoTypeDef(TypedDict):
+    NetworkProfileArn: NotRequired[str],
+    CertificateArn: NotRequired[str],
+    CertificateExpirationTime: NotRequired[datetime],
+```
 
 ## DeviceStatusDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeviceStatusDetailTypeDef
+
+def get_value() -> DeviceStatusDetailTypeDef:
+    return {
+        "Feature": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceStatusDetailTypeDef(TypedDict):
+    Feature: NotRequired[FeatureType],  # (1)
+    Code: NotRequired[DeviceStatusDetailCodeType],  # (2)
+```
 
-- `Feature`: [FeatureType](./literals.md#featuretype)
-- `Code`:
-  [DeviceStatusDetailCodeType](./literals.md#devicestatusdetailcodetype)
-
-<a id="devicestatusinfotypedef"></a>
-
+1. See [:material-code-brackets: FeatureType](./literals.md#featuretype) 
+2. See [:material-code-brackets: DeviceStatusDetailCodeType](./literals.md#devicestatusdetailcodetype) 
 ## DeviceStatusInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeviceStatusInfoTypeDef
+
+def get_value() -> DeviceStatusInfoTypeDef:
+    return {
+        "DeviceStatusDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceStatusInfoTypeDef(TypedDict):
+    DeviceStatusDetails: NotRequired[List[DeviceStatusDetailTypeDef]],  # (1)
+    ConnectionStatus: NotRequired[ConnectionStatusType],  # (2)
+    ConnectionStatusUpdatedTime: NotRequired[datetime],
+```
 
-- `DeviceStatusDetails`:
-  `List`\[[DeviceStatusDetailTypeDef](./type_defs.md#devicestatusdetailtypedef)\]
-- `ConnectionStatus`:
-  [ConnectionStatusType](./literals.md#connectionstatustype)
-- `ConnectionStatusUpdatedTime`: `datetime`
-
-<a id="devicetypedef"></a>
-
+1. See [:material-code-braces: DeviceStatusDetailTypeDef](./type_defs.md#devicestatusdetailtypedef) 
+2. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
 ## DeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    DeviceArn: NotRequired[str],
+    DeviceSerialNumber: NotRequired[str],
+    DeviceType: NotRequired[str],
+    DeviceName: NotRequired[str],
+    SoftwareVersion: NotRequired[str],
+    MacAddress: NotRequired[str],
+    RoomArn: NotRequired[str],
+    DeviceStatus: NotRequired[DeviceStatusType],  # (1)
+    DeviceStatusInfo: NotRequired[DeviceStatusInfoTypeDef],  # (2)
+    NetworkProfileInfo: NotRequired[DeviceNetworkProfileInfoTypeDef],  # (3)
+```
 
-- `DeviceArn`: `str`
-- `DeviceSerialNumber`: `str`
-- `DeviceType`: `str`
-- `DeviceName`: `str`
-- `SoftwareVersion`: `str`
-- `MacAddress`: `str`
-- `RoomArn`: `str`
-- `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
-- `DeviceStatusInfo`:
-  [DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef)
-- `NetworkProfileInfo`:
-  [DeviceNetworkProfileInfoTypeDef](./type_defs.md#devicenetworkprofileinfotypedef)
-
-<a id="disassociatecontactfromaddressbookrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+2. See [:material-code-braces: DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef) 
+3. See [:material-code-braces: DeviceNetworkProfileInfoTypeDef](./type_defs.md#devicenetworkprofileinfotypedef) 
 ## DisassociateContactFromAddressBookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DisassociateContactFromAddressBookRequestRequestTypeDef
+
+def get_value() -> DisassociateContactFromAddressBookRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+        "AddressBookArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactArn`: `str`
-- `AddressBookArn`: `str`
-
-<a id="disassociatedevicefromroomrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateContactFromAddressBookRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+    AddressBookArn: str,
+```
 
 ## DisassociateDeviceFromRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DisassociateDeviceFromRoomRequestRequestTypeDef
+
+def get_value() -> DisassociateDeviceFromRoomRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceArn`: `str`
-
-<a id="disassociateskillfromskillgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateDeviceFromRoomRequestRequestTypeDef(TypedDict):
+    DeviceArn: NotRequired[str],
+```
 
 ## DisassociateSkillFromSkillGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DisassociateSkillFromSkillGroupRequestRequestTypeDef
+
+def get_value() -> DisassociateSkillFromSkillGroupRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-Optional fields:
-
-- `SkillGroupArn`: `str`
-
-<a id="disassociateskillfromusersrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateSkillFromSkillGroupRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+    SkillGroupArn: NotRequired[str],
+```
 
 ## DisassociateSkillFromUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DisassociateSkillFromUsersRequestRequestTypeDef
+
+def get_value() -> DisassociateSkillFromUsersRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-<a id="disassociateskillgroupfromroomrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateSkillFromUsersRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+```
 
 ## DisassociateSkillGroupFromRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import DisassociateSkillGroupFromRoomRequestRequestTypeDef
+
+def get_value() -> DisassociateSkillGroupFromRoomRequestRequestTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-- `RoomArn`: `str`
-
-<a id="endofmeetingremindertypedef"></a>
+```python title="Definition"
+class DisassociateSkillGroupFromRoomRequestRequestTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    RoomArn: NotRequired[str],
+```
 
 ## EndOfMeetingReminderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import EndOfMeetingReminderTypeDef
+
+def get_value() -> EndOfMeetingReminderTypeDef:
+    return {
+        "ReminderAtMinutes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndOfMeetingReminderTypeDef(TypedDict):
+    ReminderAtMinutes: NotRequired[List[int]],
+    ReminderType: NotRequired[EndOfMeetingReminderTypeType],  # (1)
+    Enabled: NotRequired[bool],
+```
 
-- `ReminderAtMinutes`: `List`\[`int`\]
-- `ReminderType`:
-  [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
-- `Enabled`: `bool`
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-brackets: EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="forgetsmarthomeappliancesrequestrequesttypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Key: str,
+    Values: Sequence[str],
+```
 
 ## ForgetSmartHomeAppliancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ForgetSmartHomeAppliancesRequestRequestTypeDef
+
+def get_value() -> ForgetSmartHomeAppliancesRequestRequestTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoomArn`: `str`
-
-<a id="gatewaygroupsummarytypedef"></a>
+```python title="Definition"
+class ForgetSmartHomeAppliancesRequestRequestTypeDef(TypedDict):
+    RoomArn: str,
+```
 
 ## GatewayGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GatewayGroupSummaryTypeDef
+
+def get_value() -> GatewayGroupSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="gatewaygrouptypedef"></a>
+```python title="Definition"
+class GatewayGroupSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## GatewayGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GatewayGroupTypeDef
+
+def get_value() -> GatewayGroupTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="gatewaysummarytypedef"></a>
+```python title="Definition"
+class GatewayGroupTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## GatewaySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GatewaySummaryTypeDef
+
+def get_value() -> GatewaySummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `GatewayGroupArn`: `str`
-- `SoftwareVersion`: `str`
-
-<a id="gatewaytypedef"></a>
+```python title="Definition"
+class GatewaySummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    GatewayGroupArn: NotRequired[str],
+    SoftwareVersion: NotRequired[str],
+```
 
 ## GatewayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GatewayTypeDef
+
+def get_value() -> GatewayTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `GatewayGroupArn`: `str`
-- `SoftwareVersion`: `str`
-
-<a id="getaddressbookrequestrequesttypedef"></a>
+```python title="Definition"
+class GatewayTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    GatewayGroupArn: NotRequired[str],
+    SoftwareVersion: NotRequired[str],
+```
 
 ## GetAddressBookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetAddressBookRequestRequestTypeDef
+
+def get_value() -> GetAddressBookRequestRequestTypeDef:
+    return {
+        "AddressBookArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AddressBookArn`: `str`
-
-<a id="getaddressbookresponsetypedef"></a>
+```python title="Definition"
+class GetAddressBookRequestRequestTypeDef(TypedDict):
+    AddressBookArn: str,
+```
 
 ## GetAddressBookResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetAddressBookResponseTypeDef
+
+def get_value() -> GetAddressBookResponseTypeDef:
+    return {
+        "AddressBook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAddressBookResponseTypeDef(TypedDict):
+    AddressBook: AddressBookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AddressBook`: [AddressBookTypeDef](./type_defs.md#addressbooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconferencepreferenceresponsetypedef"></a>
-
+1. See [:material-code-braces: AddressBookTypeDef](./type_defs.md#addressbooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConferencePreferenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetConferencePreferenceResponseTypeDef
+
+def get_value() -> GetConferencePreferenceResponseTypeDef:
+    return {
+        "Preference": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConferencePreferenceResponseTypeDef(TypedDict):
+    Preference: ConferencePreferenceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Preference`:
-  [ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconferenceproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConferenceProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetConferenceProviderRequestRequestTypeDef
+
+def get_value() -> GetConferenceProviderRequestRequestTypeDef:
+    return {
+        "ConferenceProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ConferenceProviderArn`: `str`
-
-<a id="getconferenceproviderresponsetypedef"></a>
+```python title="Definition"
+class GetConferenceProviderRequestRequestTypeDef(TypedDict):
+    ConferenceProviderArn: str,
+```
 
 ## GetConferenceProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetConferenceProviderResponseTypeDef
+
+def get_value() -> GetConferenceProviderResponseTypeDef:
+    return {
+        "ConferenceProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConferenceProviderResponseTypeDef(TypedDict):
+    ConferenceProvider: ConferenceProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConferenceProvider`:
-  [ConferenceProviderTypeDef](./type_defs.md#conferenceprovidertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConferenceProviderTypeDef](./type_defs.md#conferenceprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetContactRequestRequestTypeDef
+
+def get_value() -> GetContactRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactArn`: `str`
-
-<a id="getcontactresponsetypedef"></a>
+```python title="Definition"
+class GetContactRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+```
 
 ## GetContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetContactResponseTypeDef
+
+def get_value() -> GetContactResponseTypeDef:
+    return {
+        "Contact": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContactResponseTypeDef(TypedDict):
+    Contact: ContactTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Contact`: [ContactTypeDef](./type_defs.md#contacttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetDeviceRequestRequestTypeDef
+
+def get_value() -> GetDeviceRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceArn`: `str`
-
-<a id="getdeviceresponsetypedef"></a>
+```python title="Definition"
+class GetDeviceRequestRequestTypeDef(TypedDict):
+    DeviceArn: NotRequired[str],
+```
 
 ## GetDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetDeviceResponseTypeDef
+
+def get_value() -> GetDeviceResponseTypeDef:
+    return {
+        "Device": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceResponseTypeDef(TypedDict):
+    Device: DeviceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgatewaygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGatewayGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetGatewayGroupRequestRequestTypeDef
+
+def get_value() -> GetGatewayGroupRequestRequestTypeDef:
+    return {
+        "GatewayGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayGroupArn`: `str`
-
-<a id="getgatewaygroupresponsetypedef"></a>
+```python title="Definition"
+class GetGatewayGroupRequestRequestTypeDef(TypedDict):
+    GatewayGroupArn: str,
+```
 
 ## GetGatewayGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetGatewayGroupResponseTypeDef
+
+def get_value() -> GetGatewayGroupResponseTypeDef:
+    return {
+        "GatewayGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGatewayGroupResponseTypeDef(TypedDict):
+    GatewayGroup: GatewayGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayGroup`: [GatewayGroupTypeDef](./type_defs.md#gatewaygrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayGroupTypeDef](./type_defs.md#gatewaygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetGatewayRequestRequestTypeDef
+
+def get_value() -> GetGatewayRequestRequestTypeDef:
+    return {
+        "GatewayArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayArn`: `str`
-
-<a id="getgatewayresponsetypedef"></a>
+```python title="Definition"
+class GetGatewayRequestRequestTypeDef(TypedDict):
+    GatewayArn: str,
+```
 
 ## GetGatewayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetGatewayResponseTypeDef
+
+def get_value() -> GetGatewayResponseTypeDef:
+    return {
+        "Gateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGatewayResponseTypeDef(TypedDict):
+    Gateway: GatewayTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Gateway`: [GatewayTypeDef](./type_defs.md#gatewaytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinvitationconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: GatewayTypeDef](./type_defs.md#gatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInvitationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetInvitationConfigurationResponseTypeDef
+
+def get_value() -> GetInvitationConfigurationResponseTypeDef:
+    return {
+        "OrganizationName": ...,
+        "ContactEmail": ...,
+        "PrivateSkillIds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInvitationConfigurationResponseTypeDef(TypedDict):
+    OrganizationName: str,
+    ContactEmail: str,
+    PrivateSkillIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OrganizationName`: `str`
-- `ContactEmail`: `str`
-- `PrivateSkillIds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getnetworkprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetNetworkProfileRequestRequestTypeDef
+
+def get_value() -> GetNetworkProfileRequestRequestTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Required fields:
-
-- `NetworkProfileArn`: `str`
-
-<a id="getnetworkprofileresponsetypedef"></a>
+```python title="Definition"
+class GetNetworkProfileRequestRequestTypeDef(TypedDict):
+    NetworkProfileArn: str,
+```
 
 ## GetNetworkProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetNetworkProfileResponseTypeDef
+
+def get_value() -> GetNetworkProfileResponseTypeDef:
+    return {
+        "NetworkProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetNetworkProfileResponseTypeDef(TypedDict):
+    NetworkProfile: NetworkProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NetworkProfile`:
-  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetProfileRequestRequestTypeDef
+
+def get_value() -> GetProfileRequestRequestTypeDef:
+    return {
+        "ProfileArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProfileArn`: `str`
-
-<a id="getprofileresponsetypedef"></a>
+```python title="Definition"
+class GetProfileRequestRequestTypeDef(TypedDict):
+    ProfileArn: NotRequired[str],
+```
 
 ## GetProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetProfileResponseTypeDef
+
+def get_value() -> GetProfileResponseTypeDef:
+    return {
+        "Profile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProfileResponseTypeDef(TypedDict):
+    Profile: ProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Profile`: [ProfileTypeDef](./type_defs.md#profiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getroomrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProfileTypeDef](./type_defs.md#profiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetRoomRequestRequestTypeDef
+
+def get_value() -> GetRoomRequestRequestTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="getroomresponsetypedef"></a>
+```python title="Definition"
+class GetRoomRequestRequestTypeDef(TypedDict):
+    RoomArn: NotRequired[str],
+```
 
 ## GetRoomResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetRoomResponseTypeDef
+
+def get_value() -> GetRoomResponseTypeDef:
+    return {
+        "Room": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRoomResponseTypeDef(TypedDict):
+    Room: RoomTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Room`: [RoomTypeDef](./type_defs.md#roomtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getroomskillparameterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoomTypeDef](./type_defs.md#roomtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRoomSkillParameterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetRoomSkillParameterRequestRequestTypeDef
+
+def get_value() -> GetRoomSkillParameterRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+        "ParameterKey": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-- `ParameterKey`: `str`
-
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="getroomskillparameterresponsetypedef"></a>
+```python title="Definition"
+class GetRoomSkillParameterRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+    ParameterKey: str,
+    RoomArn: NotRequired[str],
+```
 
 ## GetRoomSkillParameterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetRoomSkillParameterResponseTypeDef
+
+def get_value() -> GetRoomSkillParameterResponseTypeDef:
+    return {
+        "RoomSkillParameter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRoomSkillParameterResponseTypeDef(TypedDict):
+    RoomSkillParameter: RoomSkillParameterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RoomSkillParameter`:
-  [RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getskillgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSkillGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetSkillGroupRequestRequestTypeDef
+
+def get_value() -> GetSkillGroupRequestRequestTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-
-<a id="getskillgroupresponsetypedef"></a>
+```python title="Definition"
+class GetSkillGroupRequestRequestTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+```
 
 ## GetSkillGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import GetSkillGroupResponseTypeDef
+
+def get_value() -> GetSkillGroupResponseTypeDef:
+    return {
+        "SkillGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSkillGroupResponseTypeDef(TypedDict):
+    SkillGroup: SkillGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SkillGroup`: [SkillGroupTypeDef](./type_defs.md#skillgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ipdialintypedef"></a>
-
+1. See [:material-code-braces: SkillGroupTypeDef](./type_defs.md#skillgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IPDialInTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import IPDialInTypeDef
+
+def get_value() -> IPDialInTypeDef:
+    return {
+        "Endpoint": ...,
+        "CommsProtocol": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IPDialInTypeDef(TypedDict):
+    Endpoint: str,
+    CommsProtocol: CommsProtocolType,  # (1)
+```
 
-- `Endpoint`: `str`
-- `CommsProtocol`: [CommsProtocolType](./literals.md#commsprotocoltype)
-
-<a id="instantbookingtypedef"></a>
-
+1. See [:material-code-brackets: CommsProtocolType](./literals.md#commsprotocoltype) 
 ## InstantBookingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import InstantBookingTypeDef
+
+def get_value() -> InstantBookingTypeDef:
+    return {
+        "DurationInMinutes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstantBookingTypeDef(TypedDict):
+    DurationInMinutes: NotRequired[int],
+    Enabled: NotRequired[bool],
+```
 
-- `DurationInMinutes`: `int`
-- `Enabled`: `bool`
+## ListBusinessReportSchedulesRequestListBusinessReportSchedulesPaginateTypeDef
 
-<a id="listbusinessreportschedulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListBusinessReportSchedulesRequestListBusinessReportSchedulesPaginateTypeDef
 
+def get_value() -> ListBusinessReportSchedulesRequestListBusinessReportSchedulesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListBusinessReportSchedulesRequestListBusinessReportSchedulesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBusinessReportSchedulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListBusinessReportSchedulesRequestRequestTypeDef
+
+def get_value() -> ListBusinessReportSchedulesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbusinessreportschedulesresponsetypedef"></a>
+```python title="Definition"
+class ListBusinessReportSchedulesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListBusinessReportSchedulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListBusinessReportSchedulesResponseTypeDef
+
+def get_value() -> ListBusinessReportSchedulesResponseTypeDef:
+    return {
+        "BusinessReportSchedules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBusinessReportSchedulesResponseTypeDef(TypedDict):
+    BusinessReportSchedules: List[BusinessReportScheduleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BusinessReportSchedules`:
-  `List`\[[BusinessReportScheduleTypeDef](./type_defs.md#businessreportscheduletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BusinessReportScheduleTypeDef](./type_defs.md#businessreportscheduletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConferenceProvidersRequestListConferenceProvidersPaginateTypeDef
 
-<a id="listconferenceprovidersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListConferenceProvidersRequestListConferenceProvidersPaginateTypeDef
 
+def get_value() -> ListConferenceProvidersRequestListConferenceProvidersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListConferenceProvidersRequestListConferenceProvidersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListConferenceProvidersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListConferenceProvidersRequestRequestTypeDef
+
+def get_value() -> ListConferenceProvidersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listconferenceprovidersresponsetypedef"></a>
+```python title="Definition"
+class ListConferenceProvidersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListConferenceProvidersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListConferenceProvidersResponseTypeDef
+
+def get_value() -> ListConferenceProvidersResponseTypeDef:
+    return {
+        "ConferenceProviders": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConferenceProvidersResponseTypeDef(TypedDict):
+    ConferenceProviders: List[ConferenceProviderTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConferenceProviders`:
-  `List`\[[ConferenceProviderTypeDef](./type_defs.md#conferenceprovidertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConferenceProviderTypeDef](./type_defs.md#conferenceprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeviceEventsRequestListDeviceEventsPaginateTypeDef
 
-<a id="listdeviceeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListDeviceEventsRequestListDeviceEventsPaginateTypeDef
 
+def get_value() -> ListDeviceEventsRequestListDeviceEventsPaginateTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeviceEventsRequestListDeviceEventsPaginateTypeDef(TypedDict):
+    DeviceArn: str,
+    EventType: NotRequired[DeviceEventTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DeviceEventTypeType](./literals.md#deviceeventtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeviceEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListDeviceEventsRequestRequestTypeDef
+
+def get_value() -> ListDeviceEventsRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeviceEventsRequestRequestTypeDef(TypedDict):
+    DeviceArn: str,
+    EventType: NotRequired[DeviceEventTypeType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `DeviceArn`: `str`
-
-Optional fields:
-
-- `EventType`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdeviceeventsresponsetypedef"></a>
-
+1. See [:material-code-brackets: DeviceEventTypeType](./literals.md#deviceeventtypetype) 
 ## ListDeviceEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListDeviceEventsResponseTypeDef
+
+def get_value() -> ListDeviceEventsResponseTypeDef:
+    return {
+        "DeviceEvents": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeviceEventsResponseTypeDef(TypedDict):
+    DeviceEvents: List[DeviceEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeviceEvents`:
-  `List`\[[DeviceEventTypeDef](./type_defs.md#deviceeventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listgatewaygroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceEventTypeDef](./type_defs.md#deviceeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListGatewayGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListGatewayGroupsRequestRequestTypeDef
+
+def get_value() -> ListGatewayGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listgatewaygroupsresponsetypedef"></a>
+```python title="Definition"
+class ListGatewayGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListGatewayGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListGatewayGroupsResponseTypeDef
+
+def get_value() -> ListGatewayGroupsResponseTypeDef:
+    return {
+        "GatewayGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGatewayGroupsResponseTypeDef(TypedDict):
+    GatewayGroups: List[GatewayGroupSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayGroups`:
-  `List`\[[GatewayGroupSummaryTypeDef](./type_defs.md#gatewaygroupsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listgatewaysrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayGroupSummaryTypeDef](./type_defs.md#gatewaygroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListGatewaysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListGatewaysRequestRequestTypeDef
+
+def get_value() -> ListGatewaysRequestRequestTypeDef:
+    return {
+        "GatewayGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayGroupArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listgatewaysresponsetypedef"></a>
+```python title="Definition"
+class ListGatewaysRequestRequestTypeDef(TypedDict):
+    GatewayGroupArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListGatewaysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListGatewaysResponseTypeDef
+
+def get_value() -> ListGatewaysResponseTypeDef:
+    return {
+        "Gateways": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGatewaysResponseTypeDef(TypedDict):
+    Gateways: List[GatewaySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Gateways`:
-  `List`\[[GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSkillsRequestListSkillsPaginateTypeDef
 
-<a id="listskillsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListSkillsRequestListSkillsPaginateTypeDef
 
+def get_value() -> ListSkillsRequestListSkillsPaginateTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSkillsRequestListSkillsPaginateTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    EnablementType: NotRequired[EnablementTypeFilterType],  # (1)
+    SkillType: NotRequired[SkillTypeFilterType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EnablementTypeFilterType](./literals.md#enablementtypefiltertype) 
+2. See [:material-code-brackets: SkillTypeFilterType](./literals.md#skilltypefiltertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSkillsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSkillsRequestRequestTypeDef
+
+def get_value() -> ListSkillsRequestRequestTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSkillsRequestRequestTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    EnablementType: NotRequired[EnablementTypeFilterType],  # (1)
+    SkillType: NotRequired[SkillTypeFilterType],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `SkillGroupArn`: `str`
-- `EnablementType`:
-  [EnablementTypeFilterType](./literals.md#enablementtypefiltertype)
-- `SkillType`: [SkillTypeFilterType](./literals.md#skilltypefiltertype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listskillsresponsetypedef"></a>
-
+1. See [:material-code-brackets: EnablementTypeFilterType](./literals.md#enablementtypefiltertype) 
+2. See [:material-code-brackets: SkillTypeFilterType](./literals.md#skilltypefiltertype) 
 ## ListSkillsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSkillsResponseTypeDef
+
+def get_value() -> ListSkillsResponseTypeDef:
+    return {
+        "SkillSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSkillsResponseTypeDef(TypedDict):
+    SkillSummaries: List[SkillSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SkillSummaries`:
-  `List`\[[SkillSummaryTypeDef](./type_defs.md#skillsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SkillSummaryTypeDef](./type_defs.md#skillsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSkillsStoreCategoriesRequestListSkillsStoreCategoriesPaginateTypeDef
 
-<a id="listskillsstorecategoriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreCategoriesRequestListSkillsStoreCategoriesPaginateTypeDef
 
+def get_value() -> ListSkillsStoreCategoriesRequestListSkillsStoreCategoriesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSkillsStoreCategoriesRequestListSkillsStoreCategoriesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSkillsStoreCategoriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreCategoriesRequestRequestTypeDef
+
+def get_value() -> ListSkillsStoreCategoriesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listskillsstorecategoriesresponsetypedef"></a>
+```python title="Definition"
+class ListSkillsStoreCategoriesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListSkillsStoreCategoriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreCategoriesResponseTypeDef
+
+def get_value() -> ListSkillsStoreCategoriesResponseTypeDef:
+    return {
+        "CategoryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSkillsStoreCategoriesResponseTypeDef(TypedDict):
+    CategoryList: List[CategoryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CategoryList`: `List`\[[CategoryTypeDef](./type_defs.md#categorytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CategoryTypeDef](./type_defs.md#categorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSkillsStoreSkillsByCategoryRequestListSkillsStoreSkillsByCategoryPaginateTypeDef
 
-<a id="listskillsstoreskillsbycategoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreSkillsByCategoryRequestListSkillsStoreSkillsByCategoryPaginateTypeDef
 
+def get_value() -> ListSkillsStoreSkillsByCategoryRequestListSkillsStoreSkillsByCategoryPaginateTypeDef:
+    return {
+        "CategoryId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSkillsStoreSkillsByCategoryRequestListSkillsStoreSkillsByCategoryPaginateTypeDef(TypedDict):
+    CategoryId: int,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSkillsStoreSkillsByCategoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreSkillsByCategoryRequestRequestTypeDef
+
+def get_value() -> ListSkillsStoreSkillsByCategoryRequestRequestTypeDef:
+    return {
+        "CategoryId": ...,
+    }
 ```
 
-Required fields:
-
-- `CategoryId`: `int`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listskillsstoreskillsbycategoryresponsetypedef"></a>
+```python title="Definition"
+class ListSkillsStoreSkillsByCategoryRequestRequestTypeDef(TypedDict):
+    CategoryId: int,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListSkillsStoreSkillsByCategoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreSkillsByCategoryResponseTypeDef
+
+def get_value() -> ListSkillsStoreSkillsByCategoryResponseTypeDef:
+    return {
+        "SkillsStoreSkills": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSkillsStoreSkillsByCategoryResponseTypeDef(TypedDict):
+    SkillsStoreSkills: List[SkillsStoreSkillTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SkillsStoreSkills`:
-  `List`\[[SkillsStoreSkillTypeDef](./type_defs.md#skillsstoreskilltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SkillsStoreSkillTypeDef](./type_defs.md#skillsstoreskilltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSmartHomeAppliancesRequestListSmartHomeAppliancesPaginateTypeDef
 
-<a id="listsmarthomeappliancesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListSmartHomeAppliancesRequestListSmartHomeAppliancesPaginateTypeDef
 
+def get_value() -> ListSmartHomeAppliancesRequestListSmartHomeAppliancesPaginateTypeDef:
+    return {
+        "RoomArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSmartHomeAppliancesRequestListSmartHomeAppliancesPaginateTypeDef(TypedDict):
+    RoomArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSmartHomeAppliancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSmartHomeAppliancesRequestRequestTypeDef
+
+def get_value() -> ListSmartHomeAppliancesRequestRequestTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoomArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listsmarthomeappliancesresponsetypedef"></a>
+```python title="Definition"
+class ListSmartHomeAppliancesRequestRequestTypeDef(TypedDict):
+    RoomArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListSmartHomeAppliancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListSmartHomeAppliancesResponseTypeDef
+
+def get_value() -> ListSmartHomeAppliancesResponseTypeDef:
+    return {
+        "SmartHomeAppliances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSmartHomeAppliancesResponseTypeDef(TypedDict):
+    SmartHomeAppliances: List[SmartHomeApplianceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SmartHomeAppliances`:
-  `List`\[[SmartHomeApplianceTypeDef](./type_defs.md#smarthomeappliancetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SmartHomeApplianceTypeDef](./type_defs.md#smarthomeappliancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsRequestListTagsPaginateTypeDef
 
-<a id="listtagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import ListTagsRequestListTagsPaginateTypeDef
 
+def get_value() -> ListTagsRequestListTagsPaginateTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsRequestListTagsPaginateTypeDef(TypedDict):
+    Arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="meetingroomconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MeetingRoomConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import MeetingRoomConfigurationTypeDef
+
+def get_value() -> MeetingRoomConfigurationTypeDef:
+    return {
+        "RoomUtilizationMetricsEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MeetingRoomConfigurationTypeDef(TypedDict):
+    RoomUtilizationMetricsEnabled: NotRequired[bool],
+    EndOfMeetingReminder: NotRequired[EndOfMeetingReminderTypeDef],  # (1)
+    InstantBooking: NotRequired[InstantBookingTypeDef],  # (2)
+    RequireCheckIn: NotRequired[RequireCheckInTypeDef],  # (3)
+```
 
-- `RoomUtilizationMetricsEnabled`: `bool`
-- `EndOfMeetingReminder`:
-  [EndOfMeetingReminderTypeDef](./type_defs.md#endofmeetingremindertypedef)
-- `InstantBooking`:
-  [InstantBookingTypeDef](./type_defs.md#instantbookingtypedef)
-- `RequireCheckIn`:
-  [RequireCheckInTypeDef](./type_defs.md#requirecheckintypedef)
-
-<a id="meetingsettingtypedef"></a>
-
+1. See [:material-code-braces: EndOfMeetingReminderTypeDef](./type_defs.md#endofmeetingremindertypedef) 
+2. See [:material-code-braces: InstantBookingTypeDef](./type_defs.md#instantbookingtypedef) 
+3. See [:material-code-braces: RequireCheckInTypeDef](./type_defs.md#requirecheckintypedef) 
 ## MeetingSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import MeetingSettingTypeDef
+
+def get_value() -> MeetingSettingTypeDef:
+    return {
+        "RequirePin": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MeetingSettingTypeDef(TypedDict):
+    RequirePin: RequirePinType,  # (1)
+```
 
-- `RequirePin`: [RequirePinType](./literals.md#requirepintype)
-
-<a id="networkprofiledatatypedef"></a>
-
+1. See [:material-code-brackets: RequirePinType](./literals.md#requirepintype) 
 ## NetworkProfileDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import NetworkProfileDataTypeDef
+
+def get_value() -> NetworkProfileDataTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkProfileDataTypeDef(TypedDict):
+    NetworkProfileArn: NotRequired[str],
+    NetworkProfileName: NotRequired[str],
+    Description: NotRequired[str],
+    Ssid: NotRequired[str],
+    SecurityType: NotRequired[NetworkSecurityTypeType],  # (1)
+    EapMethod: NotRequired[NetworkEapMethodType],  # (2)
+    CertificateAuthorityArn: NotRequired[str],
+```
 
-- `NetworkProfileArn`: `str`
-- `NetworkProfileName`: `str`
-- `Description`: `str`
-- `Ssid`: `str`
-- `SecurityType`:
-  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype)
-- `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
-- `CertificateAuthorityArn`: `str`
-
-<a id="networkprofiletypedef"></a>
-
+1. See [:material-code-brackets: NetworkSecurityTypeType](./literals.md#networksecuritytypetype) 
+2. See [:material-code-brackets: NetworkEapMethodType](./literals.md#networkeapmethodtype) 
 ## NetworkProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import NetworkProfileTypeDef
+
+def get_value() -> NetworkProfileTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkProfileTypeDef(TypedDict):
+    NetworkProfileArn: NotRequired[str],
+    NetworkProfileName: NotRequired[str],
+    Description: NotRequired[str],
+    Ssid: NotRequired[str],
+    SecurityType: NotRequired[NetworkSecurityTypeType],  # (1)
+    EapMethod: NotRequired[NetworkEapMethodType],  # (2)
+    CurrentPassword: NotRequired[str],
+    NextPassword: NotRequired[str],
+    CertificateAuthorityArn: NotRequired[str],
+    TrustAnchors: NotRequired[List[str]],
+```
 
-- `NetworkProfileArn`: `str`
-- `NetworkProfileName`: `str`
-- `Description`: `str`
-- `Ssid`: `str`
-- `SecurityType`:
-  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype)
-- `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
-- `CurrentPassword`: `str`
-- `NextPassword`: `str`
-- `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `List`\[`str`\]
-
-<a id="pstndialintypedef"></a>
-
+1. See [:material-code-brackets: NetworkSecurityTypeType](./literals.md#networksecuritytypetype) 
+2. See [:material-code-brackets: NetworkEapMethodType](./literals.md#networkeapmethodtype) 
 ## PSTNDialInTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PSTNDialInTypeDef
+
+def get_value() -> PSTNDialInTypeDef:
+    return {
+        "CountryCode": ...,
+        "PhoneNumber": ...,
+        "OneClickIdDelay": ...,
+        "OneClickPinDelay": ...,
+    }
 ```
 
-Required fields:
-
-- `CountryCode`: `str`
-- `PhoneNumber`: `str`
-- `OneClickIdDelay`: `str`
-- `OneClickPinDelay`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class PSTNDialInTypeDef(TypedDict):
+    CountryCode: str,
+    PhoneNumber: str,
+    OneClickIdDelay: str,
+    OneClickPinDelay: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="phonenumbertypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PhoneNumberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PhoneNumberTypeDef
+
+def get_value() -> PhoneNumberTypeDef:
+    return {
+        "Number": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PhoneNumberTypeDef(TypedDict):
+    Number: str,
+    Type: PhoneNumberTypeType,  # (1)
+```
 
-- `Number`: `str`
-- `Type`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
-
-<a id="profiledatatypedef"></a>
-
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
 ## ProfileDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ProfileDataTypeDef
+
+def get_value() -> ProfileDataTypeDef:
+    return {
+        "ProfileArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProfileDataTypeDef(TypedDict):
+    ProfileArn: NotRequired[str],
+    ProfileName: NotRequired[str],
+    IsDefault: NotRequired[bool],
+    Address: NotRequired[str],
+    Timezone: NotRequired[str],
+    DistanceUnit: NotRequired[DistanceUnitType],  # (1)
+    TemperatureUnit: NotRequired[TemperatureUnitType],  # (2)
+    WakeWord: NotRequired[WakeWordType],  # (3)
+    Locale: NotRequired[str],
+```
 
-- `ProfileArn`: `str`
-- `ProfileName`: `str`
-- `IsDefault`: `bool`
-- `Address`: `str`
-- `Timezone`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
-- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
-- `Locale`: `str`
-
-<a id="profiletypedef"></a>
-
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+2. See [:material-code-brackets: TemperatureUnitType](./literals.md#temperatureunittype) 
+3. See [:material-code-brackets: WakeWordType](./literals.md#wakewordtype) 
 ## ProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ProfileTypeDef
+
+def get_value() -> ProfileTypeDef:
+    return {
+        "ProfileArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProfileTypeDef(TypedDict):
+    ProfileArn: NotRequired[str],
+    ProfileName: NotRequired[str],
+    IsDefault: NotRequired[bool],
+    Address: NotRequired[str],
+    Timezone: NotRequired[str],
+    DistanceUnit: NotRequired[DistanceUnitType],  # (1)
+    TemperatureUnit: NotRequired[TemperatureUnitType],  # (2)
+    WakeWord: NotRequired[WakeWordType],  # (3)
+    Locale: NotRequired[str],
+    SetupModeDisabled: NotRequired[bool],
+    MaxVolumeLimit: NotRequired[int],
+    PSTNEnabled: NotRequired[bool],
+    DataRetentionOptIn: NotRequired[bool],
+    AddressBookArn: NotRequired[str],
+    MeetingRoomConfiguration: NotRequired[MeetingRoomConfigurationTypeDef],  # (4)
+```
 
-- `ProfileArn`: `str`
-- `ProfileName`: `str`
-- `IsDefault`: `bool`
-- `Address`: `str`
-- `Timezone`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
-- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
-- `Locale`: `str`
-- `SetupModeDisabled`: `bool`
-- `MaxVolumeLimit`: `int`
-- `PSTNEnabled`: `bool`
-- `DataRetentionOptIn`: `bool`
-- `AddressBookArn`: `str`
-- `MeetingRoomConfiguration`:
-  [MeetingRoomConfigurationTypeDef](./type_defs.md#meetingroomconfigurationtypedef)
-
-<a id="putconferencepreferencerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+2. See [:material-code-brackets: TemperatureUnitType](./literals.md#temperatureunittype) 
+3. See [:material-code-brackets: WakeWordType](./literals.md#wakewordtype) 
+4. See [:material-code-braces: MeetingRoomConfigurationTypeDef](./type_defs.md#meetingroomconfigurationtypedef) 
 ## PutConferencePreferenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PutConferencePreferenceRequestRequestTypeDef
+
+def get_value() -> PutConferencePreferenceRequestRequestTypeDef:
+    return {
+        "ConferencePreference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConferencePreferenceRequestRequestTypeDef(TypedDict):
+    ConferencePreference: ConferencePreferenceTypeDef,  # (1)
+```
 
-- `ConferencePreference`:
-  [ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef)
-
-<a id="putinvitationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef) 
 ## PutInvitationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PutInvitationConfigurationRequestRequestTypeDef
+
+def get_value() -> PutInvitationConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationName": ...,
+    }
 ```
 
-Required fields:
-
-- `OrganizationName`: `str`
-
-Optional fields:
-
-- `ContactEmail`: `str`
-- `PrivateSkillIds`: `Sequence`\[`str`\]
-
-<a id="putroomskillparameterrequestrequesttypedef"></a>
+```python title="Definition"
+class PutInvitationConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationName: str,
+    ContactEmail: NotRequired[str],
+    PrivateSkillIds: NotRequired[Sequence[str]],
+```
 
 ## PutRoomSkillParameterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PutRoomSkillParameterRequestRequestTypeDef
+
+def get_value() -> PutRoomSkillParameterRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+        "RoomSkillParameter": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRoomSkillParameterRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+    RoomSkillParameter: RoomSkillParameterTypeDef,  # (1)
+    RoomArn: NotRequired[str],
+```
 
-- `SkillId`: `str`
-- `RoomSkillParameter`:
-  [RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)
-
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="putskillauthorizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef) 
 ## PutSkillAuthorizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import PutSkillAuthorizationRequestRequestTypeDef
+
+def get_value() -> PutSkillAuthorizationRequestRequestTypeDef:
+    return {
+        "AuthorizationResult": ...,
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthorizationResult`: `Mapping`\[`str`, `str`\]
-- `SkillId`: `str`
-
-Optional fields:
-
-- `RoomArn`: `str`
-
-<a id="registeravsdevicerequestrequesttypedef"></a>
+```python title="Definition"
+class PutSkillAuthorizationRequestRequestTypeDef(TypedDict):
+    AuthorizationResult: Mapping[str, str],
+    SkillId: str,
+    RoomArn: NotRequired[str],
+```
 
 ## RegisterAVSDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RegisterAVSDeviceRequestRequestTypeDef
+
+def get_value() -> RegisterAVSDeviceRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "UserCode": ...,
+        "ProductId": ...,
+        "AmazonId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterAVSDeviceRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    UserCode: str,
+    ProductId: str,
+    AmazonId: str,
+    DeviceSerialNumber: NotRequired[str],
+    RoomArn: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ClientId`: `str`
-- `UserCode`: `str`
-- `ProductId`: `str`
-- `AmazonId`: `str`
-
-Optional fields:
-
-- `DeviceSerialNumber`: `str`
-- `RoomArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="registeravsdeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RegisterAVSDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RegisterAVSDeviceResponseTypeDef
+
+def get_value() -> RegisterAVSDeviceResponseTypeDef:
+    return {
+        "DeviceArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterAVSDeviceResponseTypeDef(TypedDict):
+    DeviceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeviceArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rejectskillrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RejectSkillRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RejectSkillRequestRequestTypeDef
+
+def get_value() -> RejectSkillRequestRequestTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `SkillId`: `str`
-
-<a id="requirecheckintypedef"></a>
+```python title="Definition"
+class RejectSkillRequestRequestTypeDef(TypedDict):
+    SkillId: str,
+```
 
 ## RequireCheckInTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RequireCheckInTypeDef
+
+def get_value() -> RequireCheckInTypeDef:
+    return {
+        "ReleaseAfterMinutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReleaseAfterMinutes`: `int`
-- `Enabled`: `bool`
-
-<a id="resolveroomrequestrequesttypedef"></a>
+```python title="Definition"
+class RequireCheckInTypeDef(TypedDict):
+    ReleaseAfterMinutes: NotRequired[int],
+    Enabled: NotRequired[bool],
+```
 
 ## ResolveRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ResolveRoomRequestRequestTypeDef
+
+def get_value() -> ResolveRoomRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+        "SkillId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserId`: `str`
-- `SkillId`: `str`
-
-<a id="resolveroomresponsetypedef"></a>
+```python title="Definition"
+class ResolveRoomRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    SkillId: str,
+```
 
 ## ResolveRoomResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ResolveRoomResponseTypeDef
+
+def get_value() -> ResolveRoomResponseTypeDef:
+    return {
+        "RoomArn": ...,
+        "RoomName": ...,
+        "RoomSkillParameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResolveRoomResponseTypeDef(TypedDict):
+    RoomArn: str,
+    RoomName: str,
+    RoomSkillParameters: List[RoomSkillParameterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RoomArn`: `str`
-- `RoomName`: `str`
-- `RoomSkillParameters`:
-  `List`\[[RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="revokeinvitationrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RevokeInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RevokeInvitationRequestRequestTypeDef
+
+def get_value() -> RevokeInvitationRequestRequestTypeDef:
+    return {
+        "UserArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserArn`: `str`
-- `EnrollmentId`: `str`
-
-<a id="roomdatatypedef"></a>
+```python title="Definition"
+class RevokeInvitationRequestRequestTypeDef(TypedDict):
+    UserArn: NotRequired[str],
+    EnrollmentId: NotRequired[str],
+```
 
 ## RoomDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RoomDataTypeDef
+
+def get_value() -> RoomDataTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoomArn`: `str`
-- `RoomName`: `str`
-- `Description`: `str`
-- `ProviderCalendarId`: `str`
-- `ProfileArn`: `str`
-- `ProfileName`: `str`
-
-<a id="roomskillparametertypedef"></a>
+```python title="Definition"
+class RoomDataTypeDef(TypedDict):
+    RoomArn: NotRequired[str],
+    RoomName: NotRequired[str],
+    Description: NotRequired[str],
+    ProviderCalendarId: NotRequired[str],
+    ProfileArn: NotRequired[str],
+    ProfileName: NotRequired[str],
+```
 
 ## RoomSkillParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RoomSkillParameterTypeDef
+
+def get_value() -> RoomSkillParameterTypeDef:
+    return {
+        "ParameterKey": ...,
+        "ParameterValue": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterKey`: `str`
-- `ParameterValue`: `str`
-
-<a id="roomtypedef"></a>
+```python title="Definition"
+class RoomSkillParameterTypeDef(TypedDict):
+    ParameterKey: str,
+    ParameterValue: str,
+```
 
 ## RoomTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import RoomTypeDef
+
+def get_value() -> RoomTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoomArn`: `str`
-- `RoomName`: `str`
-- `Description`: `str`
-- `ProviderCalendarId`: `str`
-- `ProfileArn`: `str`
-
-<a id="searchaddressbooksrequestrequesttypedef"></a>
+```python title="Definition"
+class RoomTypeDef(TypedDict):
+    RoomArn: NotRequired[str],
+    RoomName: NotRequired[str],
+    Description: NotRequired[str],
+    ProviderCalendarId: NotRequired[str],
+    ProfileArn: NotRequired[str],
+```
 
 ## SearchAddressBooksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchAddressBooksRequestRequestTypeDef
+
+def get_value() -> SearchAddressBooksRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchAddressBooksRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="searchaddressbooksresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
 ## SearchAddressBooksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchAddressBooksResponseTypeDef
+
+def get_value() -> SearchAddressBooksResponseTypeDef:
+    return {
+        "AddressBooks": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchAddressBooksResponseTypeDef(TypedDict):
+    AddressBooks: List[AddressBookDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AddressBooks`:
-  `List`\[[AddressBookDataTypeDef](./type_defs.md#addressbookdatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchcontactsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AddressBookDataTypeDef](./type_defs.md#addressbookdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchContactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchContactsRequestRequestTypeDef
+
+def get_value() -> SearchContactsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchContactsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="searchcontactsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
 ## SearchContactsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchContactsResponseTypeDef
+
+def get_value() -> SearchContactsResponseTypeDef:
+    return {
+        "Contacts": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchContactsResponseTypeDef(TypedDict):
+    Contacts: List[ContactDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Contacts`: `List`\[[ContactDataTypeDef](./type_defs.md#contactdatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchdevicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContactDataTypeDef](./type_defs.md#contactdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchDevicesRequestRequestTypeDef
+
+def get_value() -> SearchDevicesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchDevicesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+## SearchDevicesRequestSearchDevicesPaginateTypeDef
 
-<a id="searchdevicesresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import SearchDevicesRequestSearchDevicesPaginateTypeDef
 
+def get_value() -> SearchDevicesRequestSearchDevicesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDevicesRequestSearchDevicesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchDevicesResponseTypeDef
+
+def get_value() -> SearchDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Devices`: `List`\[[DeviceDataTypeDef](./type_defs.md#devicedatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchnetworkprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceDataTypeDef](./type_defs.md#devicedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchNetworkProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchNetworkProfilesRequestRequestTypeDef
+
+def get_value() -> SearchNetworkProfilesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchNetworkProfilesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
-
-<a id="searchnetworkprofilesresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
 ## SearchNetworkProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchNetworkProfilesResponseTypeDef
+
+def get_value() -> SearchNetworkProfilesResponseTypeDef:
+    return {
+        "NetworkProfiles": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchNetworkProfilesResponseTypeDef(TypedDict):
+    NetworkProfiles: List[NetworkProfileDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NetworkProfiles`:
-  `List`\[[NetworkProfileDataTypeDef](./type_defs.md#networkprofiledatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NetworkProfileDataTypeDef](./type_defs.md#networkprofiledatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchProfilesRequestRequestTypeDef
+
+def get_value() -> SearchProfilesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchProfilesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+## SearchProfilesRequestSearchProfilesPaginateTypeDef
 
-<a id="searchprofilesresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import SearchProfilesRequestSearchProfilesPaginateTypeDef
 
+def get_value() -> SearchProfilesRequestSearchProfilesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProfilesRequestSearchProfilesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchProfilesResponseTypeDef
+
+def get_value() -> SearchProfilesResponseTypeDef:
+    return {
+        "Profiles": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchProfilesResponseTypeDef(TypedDict):
+    Profiles: List[ProfileDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Profiles`: `List`\[[ProfileDataTypeDef](./type_defs.md#profiledatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchroomsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProfileDataTypeDef](./type_defs.md#profiledatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchRoomsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchRoomsRequestRequestTypeDef
+
+def get_value() -> SearchRoomsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchRoomsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+## SearchRoomsRequestSearchRoomsPaginateTypeDef
 
-<a id="searchroomsresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import SearchRoomsRequestSearchRoomsPaginateTypeDef
 
+def get_value() -> SearchRoomsRequestSearchRoomsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchRoomsRequestSearchRoomsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchRoomsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchRoomsResponseTypeDef
+
+def get_value() -> SearchRoomsResponseTypeDef:
+    return {
+        "Rooms": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchRoomsResponseTypeDef(TypedDict):
+    Rooms: List[RoomDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rooms`: `List`\[[RoomDataTypeDef](./type_defs.md#roomdatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchskillgroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoomDataTypeDef](./type_defs.md#roomdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchSkillGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchSkillGroupsRequestRequestTypeDef
+
+def get_value() -> SearchSkillGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchSkillGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+## SearchSkillGroupsRequestSearchSkillGroupsPaginateTypeDef
 
-<a id="searchskillgroupsresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import SearchSkillGroupsRequestSearchSkillGroupsPaginateTypeDef
 
+def get_value() -> SearchSkillGroupsRequestSearchSkillGroupsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchSkillGroupsRequestSearchSkillGroupsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchSkillGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchSkillGroupsResponseTypeDef
+
+def get_value() -> SearchSkillGroupsResponseTypeDef:
+    return {
+        "SkillGroups": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchSkillGroupsResponseTypeDef(TypedDict):
+    SkillGroups: List[SkillGroupDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SkillGroups`:
-  `List`\[[SkillGroupDataTypeDef](./type_defs.md#skillgroupdatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchusersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SkillGroupDataTypeDef](./type_defs.md#skillgroupdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchUsersRequestRequestTypeDef
+
+def get_value() -> SearchUsersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchUsersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+## SearchUsersRequestSearchUsersPaginateTypeDef
 
-<a id="searchusersresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_alexaforbusiness.type_defs import SearchUsersRequestSearchUsersPaginateTypeDef
 
+def get_value() -> SearchUsersRequestSearchUsersPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchUsersRequestSearchUsersPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortCriteria: NotRequired[Sequence[SortTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SearchUsersResponseTypeDef
+
+def get_value() -> SearchUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "TotalCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchUsersResponseTypeDef(TypedDict):
+    Users: List[UserDataTypeDef],  # (1)
+    NextToken: str,
+    TotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserDataTypeDef](./type_defs.md#userdatatypedef)\]
-- `NextToken`: `str`
-- `TotalCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sendannouncementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserDataTypeDef](./type_defs.md#userdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendAnnouncementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SendAnnouncementRequestRequestTypeDef
+
+def get_value() -> SendAnnouncementRequestRequestTypeDef:
+    return {
+        "RoomFilters": ...,
+        "Content": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendAnnouncementRequestRequestTypeDef(TypedDict):
+    RoomFilters: Sequence[FilterTypeDef],  # (1)
+    Content: ContentTypeDef,  # (2)
+    ClientRequestToken: str,
+    TimeToLiveInSeconds: NotRequired[int],
+```
 
-- `RoomFilters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Content`: [ContentTypeDef](./type_defs.md#contenttypedef)
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `TimeToLiveInSeconds`: `int`
-
-<a id="sendannouncementresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
 ## SendAnnouncementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SendAnnouncementResponseTypeDef
+
+def get_value() -> SendAnnouncementResponseTypeDef:
+    return {
+        "AnnouncementArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendAnnouncementResponseTypeDef(TypedDict):
+    AnnouncementArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AnnouncementArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sendinvitationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SendInvitationRequestRequestTypeDef
+
+def get_value() -> SendInvitationRequestRequestTypeDef:
+    return {
+        "UserArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserArn`: `str`
-
-<a id="sipaddresstypedef"></a>
+```python title="Definition"
+class SendInvitationRequestRequestTypeDef(TypedDict):
+    UserArn: NotRequired[str],
+```
 
 ## SipAddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SipAddressTypeDef
+
+def get_value() -> SipAddressTypeDef:
+    return {
+        "Uri": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SipAddressTypeDef(TypedDict):
+    Uri: str,
+    Type: SipTypeType,  # (1)
+```
 
-- `Uri`: `str`
-- `Type`: `Literal['WORK']` (see [SipTypeType](./literals.md#siptypetype))
-
-<a id="skilldetailstypedef"></a>
-
+1. See [:material-code-brackets: SipTypeType](./literals.md#siptypetype) 
 ## SkillDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SkillDetailsTypeDef
+
+def get_value() -> SkillDetailsTypeDef:
+    return {
+        "ProductDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SkillDetailsTypeDef(TypedDict):
+    ProductDescription: NotRequired[str],
+    InvocationPhrase: NotRequired[str],
+    ReleaseDate: NotRequired[str],
+    EndUserLicenseAgreement: NotRequired[str],
+    GenericKeywords: NotRequired[List[str]],
+    BulletPoints: NotRequired[List[str]],
+    NewInThisVersionBulletPoints: NotRequired[List[str]],
+    SkillTypes: NotRequired[List[str]],
+    Reviews: NotRequired[Dict[str, str]],
+    DeveloperInfo: NotRequired[DeveloperInfoTypeDef],  # (1)
+```
 
-- `ProductDescription`: `str`
-- `InvocationPhrase`: `str`
-- `ReleaseDate`: `str`
-- `EndUserLicenseAgreement`: `str`
-- `GenericKeywords`: `List`\[`str`\]
-- `BulletPoints`: `List`\[`str`\]
-- `NewInThisVersionBulletPoints`: `List`\[`str`\]
-- `SkillTypes`: `List`\[`str`\]
-- `Reviews`: `Dict`\[`str`, `str`\]
-- `DeveloperInfo`: [DeveloperInfoTypeDef](./type_defs.md#developerinfotypedef)
-
-<a id="skillgroupdatatypedef"></a>
-
+1. See [:material-code-braces: DeveloperInfoTypeDef](./type_defs.md#developerinfotypedef) 
 ## SkillGroupDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SkillGroupDataTypeDef
+
+def get_value() -> SkillGroupDataTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-- `SkillGroupName`: `str`
-- `Description`: `str`
-
-<a id="skillgrouptypedef"></a>
+```python title="Definition"
+class SkillGroupDataTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    SkillGroupName: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## SkillGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SkillGroupTypeDef
+
+def get_value() -> SkillGroupTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-- `SkillGroupName`: `str`
-- `Description`: `str`
-
-<a id="skillsummarytypedef"></a>
+```python title="Definition"
+class SkillGroupTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    SkillGroupName: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## SkillSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SkillSummaryTypeDef
+
+def get_value() -> SkillSummaryTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SkillSummaryTypeDef(TypedDict):
+    SkillId: NotRequired[str],
+    SkillName: NotRequired[str],
+    SupportsLinking: NotRequired[bool],
+    EnablementType: NotRequired[EnablementTypeType],  # (1)
+    SkillType: NotRequired[SkillTypeType],  # (2)
+```
 
-- `SkillId`: `str`
-- `SkillName`: `str`
-- `SupportsLinking`: `bool`
-- `EnablementType`: [EnablementTypeType](./literals.md#enablementtypetype)
-- `SkillType`: [SkillTypeType](./literals.md#skilltypetype)
-
-<a id="skillsstoreskilltypedef"></a>
-
+1. See [:material-code-brackets: EnablementTypeType](./literals.md#enablementtypetype) 
+2. See [:material-code-brackets: SkillTypeType](./literals.md#skilltypetype) 
 ## SkillsStoreSkillTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SkillsStoreSkillTypeDef
+
+def get_value() -> SkillsStoreSkillTypeDef:
+    return {
+        "SkillId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SkillsStoreSkillTypeDef(TypedDict):
+    SkillId: NotRequired[str],
+    SkillName: NotRequired[str],
+    ShortDescription: NotRequired[str],
+    IconUrl: NotRequired[str],
+    SampleUtterances: NotRequired[List[str]],
+    SkillDetails: NotRequired[SkillDetailsTypeDef],  # (1)
+    SupportsLinking: NotRequired[bool],
+```
 
-- `SkillId`: `str`
-- `SkillName`: `str`
-- `ShortDescription`: `str`
-- `IconUrl`: `str`
-- `SampleUtterances`: `List`\[`str`\]
-- `SkillDetails`: [SkillDetailsTypeDef](./type_defs.md#skilldetailstypedef)
-- `SupportsLinking`: `bool`
-
-<a id="smarthomeappliancetypedef"></a>
-
+1. See [:material-code-braces: SkillDetailsTypeDef](./type_defs.md#skilldetailstypedef) 
 ## SmartHomeApplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SmartHomeApplianceTypeDef
+
+def get_value() -> SmartHomeApplianceTypeDef:
+    return {
+        "FriendlyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FriendlyName`: `str`
-- `Description`: `str`
-- `ManufacturerName`: `str`
-
-<a id="sorttypedef"></a>
+```python title="Definition"
+class SmartHomeApplianceTypeDef(TypedDict):
+    FriendlyName: NotRequired[str],
+    Description: NotRequired[str],
+    ManufacturerName: NotRequired[str],
+```
 
 ## SortTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SortTypeDef
+
+def get_value() -> SortTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SortTypeDef(TypedDict):
+    Key: str,
+    Value: SortValueType,  # (1)
+```
 
-- `Key`: `str`
-- `Value`: [SortValueType](./literals.md#sortvaluetype)
-
-<a id="ssmltypedef"></a>
-
+1. See [:material-code-brackets: SortValueType](./literals.md#sortvaluetype) 
 ## SsmlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import SsmlTypeDef
+
+def get_value() -> SsmlTypeDef:
+    return {
+        "Locale": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SsmlTypeDef(TypedDict):
+    Locale: LocaleType,  # (1)
+    Value: str,
+```
 
-- `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
-- `Value`: `str`
-
-<a id="startdevicesyncrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
 ## StartDeviceSyncRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import StartDeviceSyncRequestRequestTypeDef
+
+def get_value() -> StartDeviceSyncRequestRequestTypeDef:
+    return {
+        "Features": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDeviceSyncRequestRequestTypeDef(TypedDict):
+    Features: Sequence[FeatureType],  # (1)
+    RoomArn: NotRequired[str],
+    DeviceArn: NotRequired[str],
+```
 
-- `Features`: `Sequence`\[[FeatureType](./literals.md#featuretype)\]
-
-Optional fields:
-
-- `RoomArn`: `str`
-- `DeviceArn`: `str`
-
-<a id="startsmarthomeappliancediscoveryrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FeatureType](./literals.md#featuretype) 
 ## StartSmartHomeApplianceDiscoveryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import StartSmartHomeApplianceDiscoveryRequestRequestTypeDef
+
+def get_value() -> StartSmartHomeApplianceDiscoveryRequestRequestTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoomArn`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StartSmartHomeApplianceDiscoveryRequestRequestTypeDef(TypedDict):
+    RoomArn: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `Arn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="texttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import TextTypeDef
+
+def get_value() -> TextTypeDef:
+    return {
+        "Locale": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TextTypeDef(TypedDict):
+    Locale: LocaleType,  # (1)
+    Value: str,
+```
 
-- `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateaddressbookrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAddressBookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateAddressBookRequestRequestTypeDef
+
+def get_value() -> UpdateAddressBookRequestRequestTypeDef:
+    return {
+        "AddressBookArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AddressBookArn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updatebusinessreportschedulerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateAddressBookRequestRequestTypeDef(TypedDict):
+    AddressBookArn: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateBusinessReportScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateBusinessReportScheduleRequestRequestTypeDef
+
+def get_value() -> UpdateBusinessReportScheduleRequestRequestTypeDef:
+    return {
+        "ScheduleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBusinessReportScheduleRequestRequestTypeDef(TypedDict):
+    ScheduleArn: str,
+    S3BucketName: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+    Format: NotRequired[BusinessReportFormatType],  # (1)
+    ScheduleName: NotRequired[str],
+    Recurrence: NotRequired[BusinessReportRecurrenceTypeDef],  # (2)
+```
 
-- `ScheduleArn`: `str`
-
-Optional fields:
-
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
-- `ScheduleName`: `str`
-- `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
-
-<a id="updateconferenceproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BusinessReportFormatType](./literals.md#businessreportformattype) 
+2. See [:material-code-braces: BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef) 
 ## UpdateConferenceProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateConferenceProviderRequestRequestTypeDef
+
+def get_value() -> UpdateConferenceProviderRequestRequestTypeDef:
+    return {
+        "ConferenceProviderArn": ...,
+        "ConferenceProviderType": ...,
+        "MeetingSetting": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConferenceProviderRequestRequestTypeDef(TypedDict):
+    ConferenceProviderArn: str,
+    ConferenceProviderType: ConferenceProviderTypeType,  # (1)
+    MeetingSetting: MeetingSettingTypeDef,  # (2)
+    IPDialIn: NotRequired[IPDialInTypeDef],  # (3)
+    PSTNDialIn: NotRequired[PSTNDialInTypeDef],  # (4)
+```
 
-- `ConferenceProviderArn`: `str`
-- `ConferenceProviderType`:
-  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
-
-Optional fields:
-
-- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
-- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
-
-<a id="updatecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype) 
+2. See [:material-code-braces: MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) 
+3. See [:material-code-braces: IPDialInTypeDef](./type_defs.md#ipdialintypedef) 
+4. See [:material-code-braces: PSTNDialInTypeDef](./type_defs.md#pstndialintypedef) 
 ## UpdateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateContactRequestRequestTypeDef
+
+def get_value() -> UpdateContactRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContactRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+    DisplayName: NotRequired[str],
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    PhoneNumbers: NotRequired[Sequence[PhoneNumberTypeDef]],  # (1)
+    SipAddresses: NotRequired[Sequence[SipAddressTypeDef]],  # (2)
+```
 
-- `ContactArn`: `str`
-
-Optional fields:
-
-- `DisplayName`: `str`
-- `FirstName`: `str`
-- `LastName`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumbers`:
-  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`:
-  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
-
-<a id="updatedevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: SipAddressTypeDef](./type_defs.md#sipaddresstypedef) 
 ## UpdateDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateDeviceRequestRequestTypeDef
+
+def get_value() -> UpdateDeviceRequestRequestTypeDef:
+    return {
+        "DeviceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceArn`: `str`
-- `DeviceName`: `str`
-
-<a id="updateendofmeetingremindertypedef"></a>
+```python title="Definition"
+class UpdateDeviceRequestRequestTypeDef(TypedDict):
+    DeviceArn: NotRequired[str],
+    DeviceName: NotRequired[str],
+```
 
 ## UpdateEndOfMeetingReminderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateEndOfMeetingReminderTypeDef
+
+def get_value() -> UpdateEndOfMeetingReminderTypeDef:
+    return {
+        "ReminderAtMinutes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateEndOfMeetingReminderTypeDef(TypedDict):
+    ReminderAtMinutes: NotRequired[Sequence[int]],
+    ReminderType: NotRequired[EndOfMeetingReminderTypeType],  # (1)
+    Enabled: NotRequired[bool],
+```
 
-- `ReminderAtMinutes`: `Sequence`\[`int`\]
-- `ReminderType`:
-  [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
-- `Enabled`: `bool`
-
-<a id="updategatewaygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype) 
 ## UpdateGatewayGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateGatewayGroupRequestRequestTypeDef
+
+def get_value() -> UpdateGatewayGroupRequestRequestTypeDef:
+    return {
+        "GatewayGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayGroupArn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updategatewayrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateGatewayGroupRequestRequestTypeDef(TypedDict):
+    GatewayGroupArn: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateGatewayRequestRequestTypeDef
+
+def get_value() -> UpdateGatewayRequestRequestTypeDef:
+    return {
+        "GatewayArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayArn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `SoftwareVersion`: `str`
-
-<a id="updateinstantbookingtypedef"></a>
+```python title="Definition"
+class UpdateGatewayRequestRequestTypeDef(TypedDict):
+    GatewayArn: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    SoftwareVersion: NotRequired[str],
+```
 
 ## UpdateInstantBookingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateInstantBookingTypeDef
+
+def get_value() -> UpdateInstantBookingTypeDef:
+    return {
+        "DurationInMinutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInMinutes`: `int`
-- `Enabled`: `bool`
-
-<a id="updatemeetingroomconfigurationtypedef"></a>
+```python title="Definition"
+class UpdateInstantBookingTypeDef(TypedDict):
+    DurationInMinutes: NotRequired[int],
+    Enabled: NotRequired[bool],
+```
 
 ## UpdateMeetingRoomConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateMeetingRoomConfigurationTypeDef
+
+def get_value() -> UpdateMeetingRoomConfigurationTypeDef:
+    return {
+        "RoomUtilizationMetricsEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateMeetingRoomConfigurationTypeDef(TypedDict):
+    RoomUtilizationMetricsEnabled: NotRequired[bool],
+    EndOfMeetingReminder: NotRequired[UpdateEndOfMeetingReminderTypeDef],  # (1)
+    InstantBooking: NotRequired[UpdateInstantBookingTypeDef],  # (2)
+    RequireCheckIn: NotRequired[UpdateRequireCheckInTypeDef],  # (3)
+```
 
-- `RoomUtilizationMetricsEnabled`: `bool`
-- `EndOfMeetingReminder`:
-  [UpdateEndOfMeetingReminderTypeDef](./type_defs.md#updateendofmeetingremindertypedef)
-- `InstantBooking`:
-  [UpdateInstantBookingTypeDef](./type_defs.md#updateinstantbookingtypedef)
-- `RequireCheckIn`:
-  [UpdateRequireCheckInTypeDef](./type_defs.md#updaterequirecheckintypedef)
-
-<a id="updatenetworkprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateEndOfMeetingReminderTypeDef](./type_defs.md#updateendofmeetingremindertypedef) 
+2. See [:material-code-braces: UpdateInstantBookingTypeDef](./type_defs.md#updateinstantbookingtypedef) 
+3. See [:material-code-braces: UpdateRequireCheckInTypeDef](./type_defs.md#updaterequirecheckintypedef) 
 ## UpdateNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateNetworkProfileRequestRequestTypeDef
+
+def get_value() -> UpdateNetworkProfileRequestRequestTypeDef:
+    return {
+        "NetworkProfileArn": ...,
+    }
 ```
 
-Required fields:
-
-- `NetworkProfileArn`: `str`
-
-Optional fields:
-
-- `NetworkProfileName`: `str`
-- `Description`: `str`
-- `CurrentPassword`: `str`
-- `NextPassword`: `str`
-- `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `Sequence`\[`str`\]
-
-<a id="updateprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateNetworkProfileRequestRequestTypeDef(TypedDict):
+    NetworkProfileArn: str,
+    NetworkProfileName: NotRequired[str],
+    Description: NotRequired[str],
+    CurrentPassword: NotRequired[str],
+    NextPassword: NotRequired[str],
+    CertificateAuthorityArn: NotRequired[str],
+    TrustAnchors: NotRequired[Sequence[str]],
+```
 
 ## UpdateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateProfileRequestRequestTypeDef
+
+def get_value() -> UpdateProfileRequestRequestTypeDef:
+    return {
+        "ProfileArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateProfileRequestRequestTypeDef(TypedDict):
+    ProfileArn: NotRequired[str],
+    ProfileName: NotRequired[str],
+    IsDefault: NotRequired[bool],
+    Timezone: NotRequired[str],
+    Address: NotRequired[str],
+    DistanceUnit: NotRequired[DistanceUnitType],  # (1)
+    TemperatureUnit: NotRequired[TemperatureUnitType],  # (2)
+    WakeWord: NotRequired[WakeWordType],  # (3)
+    Locale: NotRequired[str],
+    SetupModeDisabled: NotRequired[bool],
+    MaxVolumeLimit: NotRequired[int],
+    PSTNEnabled: NotRequired[bool],
+    DataRetentionOptIn: NotRequired[bool],
+    MeetingRoomConfiguration: NotRequired[UpdateMeetingRoomConfigurationTypeDef],  # (4)
+```
 
-- `ProfileArn`: `str`
-- `ProfileName`: `str`
-- `IsDefault`: `bool`
-- `Timezone`: `str`
-- `Address`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
-- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
-- `Locale`: `str`
-- `SetupModeDisabled`: `bool`
-- `MaxVolumeLimit`: `int`
-- `PSTNEnabled`: `bool`
-- `DataRetentionOptIn`: `bool`
-- `MeetingRoomConfiguration`:
-  [UpdateMeetingRoomConfigurationTypeDef](./type_defs.md#updatemeetingroomconfigurationtypedef)
-
-<a id="updaterequirecheckintypedef"></a>
-
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+2. See [:material-code-brackets: TemperatureUnitType](./literals.md#temperatureunittype) 
+3. See [:material-code-brackets: WakeWordType](./literals.md#wakewordtype) 
+4. See [:material-code-braces: UpdateMeetingRoomConfigurationTypeDef](./type_defs.md#updatemeetingroomconfigurationtypedef) 
 ## UpdateRequireCheckInTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateRequireCheckInTypeDef
+
+def get_value() -> UpdateRequireCheckInTypeDef:
+    return {
+        "ReleaseAfterMinutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReleaseAfterMinutes`: `int`
-- `Enabled`: `bool`
-
-<a id="updateroomrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateRequireCheckInTypeDef(TypedDict):
+    ReleaseAfterMinutes: NotRequired[int],
+    Enabled: NotRequired[bool],
+```
 
 ## UpdateRoomRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateRoomRequestRequestTypeDef
+
+def get_value() -> UpdateRoomRequestRequestTypeDef:
+    return {
+        "RoomArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoomArn`: `str`
-- `RoomName`: `str`
-- `Description`: `str`
-- `ProviderCalendarId`: `str`
-- `ProfileArn`: `str`
-
-<a id="updateskillgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateRoomRequestRequestTypeDef(TypedDict):
+    RoomArn: NotRequired[str],
+    RoomName: NotRequired[str],
+    Description: NotRequired[str],
+    ProviderCalendarId: NotRequired[str],
+    ProfileArn: NotRequired[str],
+```
 
 ## UpdateSkillGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UpdateSkillGroupRequestRequestTypeDef
+
+def get_value() -> UpdateSkillGroupRequestRequestTypeDef:
+    return {
+        "SkillGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkillGroupArn`: `str`
-- `SkillGroupName`: `str`
-- `Description`: `str`
-
-<a id="userdatatypedef"></a>
+```python title="Definition"
+class UpdateSkillGroupRequestRequestTypeDef(TypedDict):
+    SkillGroupArn: NotRequired[str],
+    SkillGroupName: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UserDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_alexaforbusiness.type_defs import UserDataTypeDef
+
+def get_value() -> UserDataTypeDef:
+    return {
+        "UserArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserDataTypeDef(TypedDict):
+    UserArn: NotRequired[str],
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    Email: NotRequired[str],
+    EnrollmentStatus: NotRequired[EnrollmentStatusType],  # (1)
+    EnrollmentId: NotRequired[str],
+```
 
-- `UserArn`: `str`
-- `FirstName`: `str`
-- `LastName`: `str`
-- `Email`: `str`
-- `EnrollmentStatus`:
-  [EnrollmentStatusType](./literals.md#enrollmentstatustype)
-- `EnrollmentId`: `str`
+1. See [:material-code-brackets: EnrollmentStatusType](./literals.md#enrollmentstatustype) 

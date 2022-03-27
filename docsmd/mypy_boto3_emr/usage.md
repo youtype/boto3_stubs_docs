@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-emr-module"></a>
-
-# Examples for boto3 EMR module
+# Examples
 
 > [Index](../README.md) > [EMR](./README.md) > Examples
 
-- [Examples for boto3 EMR module](#examples-for-boto3-emr-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+    type annotations stubs module [mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[emr]` package installed.
 
-Write your `EMR` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `EMR` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type EMRClient
-# and provides type checking and code completion
-client = session.client("emr")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddInstanceFleetOutputTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_instance_fleet()
 
-# paginator has type ListBootstrapActionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_bootstrap_actions")
-for item in paginator.paginate(...):
-    # item has type ListBootstrapActionsOutputTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type ClusterRunningWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("cluster_running")
-waiter.wait()
-```
+    client = session.client("emr")  # (1)
+    result = client.add_instance_fleet()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [EMRClient](./client.md)
+    2. result: [:material-code-braces: AddInstanceFleetOutputTypeDef](./type_defs.md#addinstancefleetoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("emr")  # (1)
+
+    paginator = client.get_paginator("list_bootstrap_actions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [EMRClient](./client.md)
+    2. paginator: [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
+    3. item: [:material-code-braces: ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("emr")  # (1)
+
+    waiter = client.get_waiter("cluster_running")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [EMRClient](./client.md)
+    2. waiter: [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[emr]` or a standalone `mypy_boto3_emr` package, you have
-to explicitly specify `client: EMRClient` type annotation.
+With `boto3-stubs-lite[emr]`
+or a standalone `mypy_boto3_emr` package, you have to explicitly specify `client: EMRClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_emr.client import EMRClient
-from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
-from mypy_boto3_emr.waiter import ClusterRunningWaiter
-from mypy_boto3_emr.literals import PaginatorName
-from mypy_boto3_emr.literals import WaiterName
-from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef
-from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: EMRClient = session.client("emr")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AddInstanceFleetOutputTypeDef = client.add_instance_fleet()
+    from mypy_boto3_emr.client import EMRClient
+    from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef
+    from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_bootstrap_actions"
-paginator: ListBootstrapActionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListBootstrapActionsOutputTypeDef
-    print(item)
 
-waiter_name: WaiterName = "cluster_running"
-waiter: ClusterRunningWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: EMRClient = session.client("emr")
+
+    kwargs: AddInstanceFleetInputRequestTypeDef = {...}
+    result: AddInstanceFleetOutputTypeDef = client.add_instance_fleet(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_emr.client import EMRClient
+    from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
+    from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputTypeDef
+
+
+    session = Session()
+    client: EMRClient = session.client("emr")
+
+    paginator: ListBootstrapActionsPaginator = client.get_paginator("list_bootstrap_actions")
+    for item in paginator.paginate(...):
+        item: ListBootstrapActionsOutputTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_emr.client import EMRClient
+    from mypy_boto3_emr.waiter import ClusterRunningWaiter
+
+    session = Session()
+    client: EMRClient = session.client("emr")
+
+    waiter: ClusterRunningWaiter = client.get_waiter("cluster_running")
+    waiter.wait()
+    ```
+
+

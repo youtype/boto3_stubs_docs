@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-guardduty-module"></a>
-
-# Type annotations for boto3 GuardDuty module
+#  GuardDuty module
 
 > [Index](../README.md) > GuardDuty
 
-Auto-generated documentation for
-[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
-type annotations stubs module
-[mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+!!! note ""
 
-- [Type annotations for boto3 GuardDuty module](#type-annotations-for-boto3-guardduty-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GuardDutyClient](#guarddutyclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+    type annotations stubs module [mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GuardDuty`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[guardduty]'
 python -m pip install mypy-boto3-guardduty
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,113 +42,37 @@ python -m pip install mypy-boto3-guardduty
 python -m pip uninstall -y mypy-boto3-guardduty
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="guarddutyclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GuardDutyClient
 
-Type annotations for `boto3.client("guardduty")` as
-[GuardDutyClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("guardduty")` as [GuardDutyClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_guardduty.client import GuardDutyClient
+
+def get_client() -> GuardDutyClient:
+    return Session().cleint("guardduty")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_invitation](./client.md#accept_invitation)
-- [archive_findings](./client.md#archive_findings)
-- [can_paginate](./client.md#can_paginate)
-- [create_detector](./client.md#create_detector)
-- [create_filter](./client.md#create_filter)
-- [create_ip_set](./client.md#create_ip_set)
-- [create_members](./client.md#create_members)
-- [create_publishing_destination](./client.md#create_publishing_destination)
-- [create_sample_findings](./client.md#create_sample_findings)
-- [create_threat_intel_set](./client.md#create_threat_intel_set)
-- [decline_invitations](./client.md#decline_invitations)
-- [delete_detector](./client.md#delete_detector)
-- [delete_filter](./client.md#delete_filter)
-- [delete_invitations](./client.md#delete_invitations)
-- [delete_ip_set](./client.md#delete_ip_set)
-- [delete_members](./client.md#delete_members)
-- [delete_publishing_destination](./client.md#delete_publishing_destination)
-- [delete_threat_intel_set](./client.md#delete_threat_intel_set)
-- [describe_organization_configuration](./client.md#describe_organization_configuration)
-- [describe_publishing_destination](./client.md#describe_publishing_destination)
-- [disable_organization_admin_account](./client.md#disable_organization_admin_account)
-- [disassociate_from_master_account](./client.md#disassociate_from_master_account)
-- [disassociate_members](./client.md#disassociate_members)
-- [enable_organization_admin_account](./client.md#enable_organization_admin_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_detector](./client.md#get_detector)
-- [get_filter](./client.md#get_filter)
-- [get_findings](./client.md#get_findings)
-- [get_findings_statistics](./client.md#get_findings_statistics)
-- [get_invitations_count](./client.md#get_invitations_count)
-- [get_ip_set](./client.md#get_ip_set)
-- [get_master_account](./client.md#get_master_account)
-- [get_member_detectors](./client.md#get_member_detectors)
-- [get_members](./client.md#get_members)
-- [get_paginator](./client.md#get_paginator)
-- [get_threat_intel_set](./client.md#get_threat_intel_set)
-- [get_usage_statistics](./client.md#get_usage_statistics)
-- [invite_members](./client.md#invite_members)
-- [list_detectors](./client.md#list_detectors)
-- [list_filters](./client.md#list_filters)
-- [list_findings](./client.md#list_findings)
-- [list_invitations](./client.md#list_invitations)
-- [list_ip_sets](./client.md#list_ip_sets)
-- [list_members](./client.md#list_members)
-- [list_organization_admin_accounts](./client.md#list_organization_admin_accounts)
-- [list_publishing_destinations](./client.md#list_publishing_destinations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_threat_intel_sets](./client.md#list_threat_intel_sets)
-- [start_monitoring_members](./client.md#start_monitoring_members)
-- [stop_monitoring_members](./client.md#stop_monitoring_members)
-- [tag_resource](./client.md#tag_resource)
-- [unarchive_findings](./client.md#unarchive_findings)
-- [untag_resource](./client.md#untag_resource)
-- [update_detector](./client.md#update_detector)
-- [update_filter](./client.md#update_filter)
-- [update_findings_feedback](./client.md#update_findings_feedback)
-- [update_ip_set](./client.md#update_ip_set)
-- [update_member_detectors](./client.md#update_member_detectors)
-- [update_organization_configuration](./client.md#update_organization_configuration)
-- [update_publishing_destination](./client.md#update_publishing_destination)
-- [update_threat_intel_set](./client.md#update_threat_intel_set)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GuardDutyClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- InternalServerErrorException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("guardduty").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("guardduty").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_guardduty.paginator import ListDetectorsPaginator, ...
+from mypy_boto3_guardduty.paginator import ListDetectorsPaginator
+
+def get_list_detectors_paginator() -> ListDetectorsPaginator:
+    return Session().client("guardduty").get_paginator("list_detectors"))
 ```
 
 - [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
@@ -182,16 +84,23 @@ from mypy_boto3_guardduty.paginator import ListDetectorsPaginator, ...
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
 - [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_guardduty.literals import AdminStatusType
 
-```python
-from mypy_boto3_guardduty.literals import AdminStatusType, ...
+def get_value() -> AdminStatusType:
+    return "DISABLE_IN_PROGRESS"
 ```
 
 - [AdminStatusType](./literals.md#adminstatustype)
@@ -222,18 +131,24 @@ from mypy_boto3_guardduty.literals import AdminStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_guardduty.type_defs import AcceptInvitationRequestRequestTypeDef
 
-```python
-from mypy_boto3_guardduty.type_defs import AcceptInvitationRequestRequestTypeDef, ...
+def get_value() -> AcceptInvitationRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+        "MasterId": ...,
+        "InvitationId": ...,
+    }
 ```
 
 - [AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef)
@@ -336,24 +251,32 @@ from mypy_boto3_guardduty.type_defs import AcceptInvitationRequestRequestTypeDef
 - [KubernetesDetailsTypeDef](./type_defs.md#kubernetesdetailstypedef)
 - [KubernetesUserDetailsTypeDef](./type_defs.md#kubernetesuserdetailstypedef)
 - [KubernetesWorkloadDetailsTypeDef](./type_defs.md#kubernetesworkloaddetailstypedef)
+- [ListDetectorsRequestListDetectorsPaginateTypeDef](./type_defs.md#listdetectorsrequestlistdetectorspaginatetypedef)
 - [ListDetectorsRequestRequestTypeDef](./type_defs.md#listdetectorsrequestrequesttypedef)
 - [ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef)
+- [ListFiltersRequestListFiltersPaginateTypeDef](./type_defs.md#listfiltersrequestlistfilterspaginatetypedef)
 - [ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef)
 - [ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef)
+- [ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef)
 - [ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef)
 - [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)
+- [ListIPSetsRequestListIPSetsPaginateTypeDef](./type_defs.md#listipsetsrequestlistipsetspaginatetypedef)
 - [ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef)
 - [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef)
+- [ListInvitationsRequestListInvitationsPaginateTypeDef](./type_defs.md#listinvitationsrequestlistinvitationspaginatetypedef)
 - [ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef)
 - [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)
+- [ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
+- [ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef)
 - [ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListPublishingDestinationsRequestRequestTypeDef](./type_defs.md#listpublishingdestinationsrequestrequesttypedef)
 - [ListPublishingDestinationsResponseTypeDef](./type_defs.md#listpublishingdestinationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef](./type_defs.md#listthreatintelsetsrequestlistthreatintelsetspaginatetypedef)
 - [ListThreatIntelSetsRequestRequestTypeDef](./type_defs.md#listthreatintelsetsrequestrequesttypedef)
 - [ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef)
 - [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
@@ -420,3 +343,4 @@ from mypy_boto3_guardduty.type_defs import AcceptInvitationRequestRequestTypeDef
 - [UsageStatisticsTypeDef](./type_defs.md#usagestatisticstypedef)
 - [VolumeMountTypeDef](./type_defs.md#volumemounttypedef)
 - [VolumeTypeDef](./type_defs.md#volumetypedef)
+

@@ -1,1053 +1,1129 @@
-<a id="literals-for-boto3-cognitoidentityprovider-module"></a>
-
-# Literals for boto3 CognitoIdentityProvider module
+# Literals
 
 > [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Literals
 
-Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module
-[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+!!! note ""
 
-- [Literals for boto3 CognitoIdentityProvider module](#literals-for-boto3-cognitoidentityprovider-module)
-  - [AccountTakeoverEventActionTypeType](#accounttakeovereventactiontypetype)
-  - [AdminListGroupsForUserPaginatorName](#adminlistgroupsforuserpaginatorname)
-  - [AdminListUserAuthEventsPaginatorName](#adminlistuserautheventspaginatorname)
-  - [AdvancedSecurityModeTypeType](#advancedsecuritymodetypetype)
-  - [AliasAttributeTypeType](#aliasattributetypetype)
-  - [AttributeDataTypeType](#attributedatatypetype)
-  - [AuthFlowTypeType](#authflowtypetype)
-  - [ChallengeNameType](#challengenametype)
-  - [ChallengeNameTypeType](#challengenametypetype)
-  - [ChallengeResponseType](#challengeresponsetype)
-  - [CompromisedCredentialsEventActionTypeType](#compromisedcredentialseventactiontypetype)
-  - [CustomEmailSenderLambdaVersionTypeType](#customemailsenderlambdaversiontypetype)
-  - [CustomSMSSenderLambdaVersionTypeType](#customsmssenderlambdaversiontypetype)
-  - [DefaultEmailOptionTypeType](#defaultemailoptiontypetype)
-  - [DeliveryMediumTypeType](#deliverymediumtypetype)
-  - [DeviceRememberedStatusTypeType](#devicerememberedstatustypetype)
-  - [DomainStatusTypeType](#domainstatustypetype)
-  - [EmailSendingAccountTypeType](#emailsendingaccounttypetype)
-  - [EventFilterTypeType](#eventfiltertypetype)
-  - [EventResponseTypeType](#eventresponsetypetype)
-  - [EventTypeType](#eventtypetype)
-  - [ExplicitAuthFlowsTypeType](#explicitauthflowstypetype)
-  - [FeedbackValueTypeType](#feedbackvaluetypetype)
-  - [IdentityProviderTypeTypeType](#identityprovidertypetypetype)
-  - [ListGroupsPaginatorName](#listgroupspaginatorname)
-  - [ListIdentityProvidersPaginatorName](#listidentityproviderspaginatorname)
-  - [ListResourceServersPaginatorName](#listresourceserverspaginatorname)
-  - [ListUserPoolClientsPaginatorName](#listuserpoolclientspaginatorname)
-  - [ListUserPoolsPaginatorName](#listuserpoolspaginatorname)
-  - [ListUsersInGroupPaginatorName](#listusersingrouppaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [MessageActionTypeType](#messageactiontypetype)
-  - [OAuthFlowTypeType](#oauthflowtypetype)
-  - [PreventUserExistenceErrorTypesType](#preventuserexistenceerrortypestype)
-  - [RecoveryOptionNameTypeType](#recoveryoptionnametypetype)
-  - [RiskDecisionTypeType](#riskdecisiontypetype)
-  - [RiskLevelTypeType](#riskleveltypetype)
-  - [StatusTypeType](#statustypetype)
-  - [TimeUnitsTypeType](#timeunitstypetype)
-  - [UserImportJobStatusTypeType](#userimportjobstatustypetype)
-  - [UserPoolMfaTypeType](#userpoolmfatypetype)
-  - [UserStatusTypeType](#userstatustypetype)
-  - [UsernameAttributeTypeType](#usernameattributetypetype)
-  - [VerifiedAttributeTypeType](#verifiedattributetypetype)
-  - [VerifySoftwareTokenResponseTypeType](#verifysoftwaretokenresponsetypetype)
-  - [CognitoIdentityProviderServiceName](#cognitoidentityproviderservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accounttakeovereventactiontypetype"></a>
+    Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+    type annotations stubs module [mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ## AccountTakeoverEventActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType
+
+def get_value() -> AccountTakeoverEventActionTypeType:
+    return "BLOCK"
 ```
 
-Values:
-
-- `BLOCK`
-- `MFA_IF_CONFIGURED`
-- `MFA_REQUIRED`
-- `NO_ACTION`
-
-<a id="adminlistgroupsforuserpaginatorname"></a>
-
+```python title="Definition"
+AccountTakeoverEventActionTypeType = Literal[
+    "BLOCK",
+    "MFA_IF_CONFIGURED",
+    "MFA_REQUIRED",
+    "NO_ACTION",
+]
+```
 ## AdminListGroupsForUserPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AdminListGroupsForUserPaginatorName
+
+def get_value() -> AdminListGroupsForUserPaginatorName:
+    return "admin_list_groups_for_user"
 ```
 
-Values:
-
-- `admin_list_groups_for_user`
-
-<a id="adminlistuserautheventspaginatorname"></a>
-
+```python title="Definition"
+AdminListGroupsForUserPaginatorName = Literal[
+    "admin_list_groups_for_user",
+]
+```
 ## AdminListUserAuthEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AdminListUserAuthEventsPaginatorName
+
+def get_value() -> AdminListUserAuthEventsPaginatorName:
+    return "admin_list_user_auth_events"
 ```
 
-Values:
-
-- `admin_list_user_auth_events`
-
-<a id="advancedsecuritymodetypetype"></a>
-
+```python title="Definition"
+AdminListUserAuthEventsPaginatorName = Literal[
+    "admin_list_user_auth_events",
+]
+```
 ## AdvancedSecurityModeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AdvancedSecurityModeTypeType
+
+def get_value() -> AdvancedSecurityModeTypeType:
+    return "AUDIT"
 ```
 
-Values:
-
-- `AUDIT`
-- `ENFORCED`
-- `OFF`
-
-<a id="aliasattributetypetype"></a>
-
+```python title="Definition"
+AdvancedSecurityModeTypeType = Literal[
+    "AUDIT",
+    "ENFORCED",
+    "OFF",
+]
+```
 ## AliasAttributeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AliasAttributeTypeType
+
+def get_value() -> AliasAttributeTypeType:
+    return "email"
 ```
 
-Values:
-
-- `email`
-- `phone_number`
-- `preferred_username`
-
-<a id="attributedatatypetype"></a>
-
+```python title="Definition"
+AliasAttributeTypeType = Literal[
+    "email",
+    "phone_number",
+    "preferred_username",
+]
+```
 ## AttributeDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AttributeDataTypeType
+
+def get_value() -> AttributeDataTypeType:
+    return "Boolean"
 ```
 
-Values:
-
-- `Boolean`
-- `DateTime`
-- `Number`
-- `String`
-
-<a id="authflowtypetype"></a>
-
+```python title="Definition"
+AttributeDataTypeType = Literal[
+    "Boolean",
+    "DateTime",
+    "Number",
+    "String",
+]
+```
 ## AuthFlowTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import AuthFlowTypeType
+
+def get_value() -> AuthFlowTypeType:
+    return "ADMIN_NO_SRP_AUTH"
 ```
 
-Values:
-
-- `ADMIN_NO_SRP_AUTH`
-- `ADMIN_USER_PASSWORD_AUTH`
-- `CUSTOM_AUTH`
-- `REFRESH_TOKEN`
-- `REFRESH_TOKEN_AUTH`
-- `USER_PASSWORD_AUTH`
-- `USER_SRP_AUTH`
-
-<a id="challengenametype"></a>
-
+```python title="Definition"
+AuthFlowTypeType = Literal[
+    "ADMIN_NO_SRP_AUTH",
+    "ADMIN_USER_PASSWORD_AUTH",
+    "CUSTOM_AUTH",
+    "REFRESH_TOKEN",
+    "REFRESH_TOKEN_AUTH",
+    "USER_PASSWORD_AUTH",
+    "USER_SRP_AUTH",
+]
+```
 ## ChallengeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ChallengeNameType
+
+def get_value() -> ChallengeNameType:
+    return "Mfa"
 ```
 
-Values:
-
-- `Mfa`
-- `Password`
-
-<a id="challengenametypetype"></a>
-
+```python title="Definition"
+ChallengeNameType = Literal[
+    "Mfa",
+    "Password",
+]
+```
 ## ChallengeNameTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ChallengeNameTypeType
+
+def get_value() -> ChallengeNameTypeType:
+    return "ADMIN_NO_SRP_AUTH"
 ```
 
-Values:
-
-- `ADMIN_NO_SRP_AUTH`
-- `CUSTOM_CHALLENGE`
-- `DEVICE_PASSWORD_VERIFIER`
-- `DEVICE_SRP_AUTH`
-- `MFA_SETUP`
-- `NEW_PASSWORD_REQUIRED`
-- `PASSWORD_VERIFIER`
-- `SELECT_MFA_TYPE`
-- `SMS_MFA`
-- `SOFTWARE_TOKEN_MFA`
-
-<a id="challengeresponsetype"></a>
-
+```python title="Definition"
+ChallengeNameTypeType = Literal[
+    "ADMIN_NO_SRP_AUTH",
+    "CUSTOM_CHALLENGE",
+    "DEVICE_PASSWORD_VERIFIER",
+    "DEVICE_SRP_AUTH",
+    "MFA_SETUP",
+    "NEW_PASSWORD_REQUIRED",
+    "PASSWORD_VERIFIER",
+    "SELECT_MFA_TYPE",
+    "SMS_MFA",
+    "SOFTWARE_TOKEN_MFA",
+]
+```
 ## ChallengeResponseType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ChallengeResponseType
+
+def get_value() -> ChallengeResponseType:
+    return "Failure"
 ```
 
-Values:
-
-- `Failure`
-- `Success`
-
-<a id="compromisedcredentialseventactiontypetype"></a>
-
+```python title="Definition"
+ChallengeResponseType = Literal[
+    "Failure",
+    "Success",
+]
+```
 ## CompromisedCredentialsEventActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import CompromisedCredentialsEventActionTypeType
+
+def get_value() -> CompromisedCredentialsEventActionTypeType:
+    return "BLOCK"
 ```
 
-Values:
-
-- `BLOCK`
-- `NO_ACTION`
-
-<a id="customemailsenderlambdaversiontypetype"></a>
-
+```python title="Definition"
+CompromisedCredentialsEventActionTypeType = Literal[
+    "BLOCK",
+    "NO_ACTION",
+]
+```
 ## CustomEmailSenderLambdaVersionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import CustomEmailSenderLambdaVersionTypeType
+
+def get_value() -> CustomEmailSenderLambdaVersionTypeType:
+    return "V1_0"
 ```
 
-Values:
-
-- `V1_0`
-
-<a id="customsmssenderlambdaversiontypetype"></a>
-
+```python title="Definition"
+CustomEmailSenderLambdaVersionTypeType = Literal[
+    "V1_0",
+]
+```
 ## CustomSMSSenderLambdaVersionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import CustomSMSSenderLambdaVersionTypeType
+
+def get_value() -> CustomSMSSenderLambdaVersionTypeType:
+    return "V1_0"
 ```
 
-Values:
-
-- `V1_0`
-
-<a id="defaultemailoptiontypetype"></a>
-
+```python title="Definition"
+CustomSMSSenderLambdaVersionTypeType = Literal[
+    "V1_0",
+]
+```
 ## DefaultEmailOptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import DefaultEmailOptionTypeType
+
+def get_value() -> DefaultEmailOptionTypeType:
+    return "CONFIRM_WITH_CODE"
 ```
 
-Values:
-
-- `CONFIRM_WITH_CODE`
-- `CONFIRM_WITH_LINK`
-
-<a id="deliverymediumtypetype"></a>
-
+```python title="Definition"
+DefaultEmailOptionTypeType = Literal[
+    "CONFIRM_WITH_CODE",
+    "CONFIRM_WITH_LINK",
+]
+```
 ## DeliveryMediumTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import DeliveryMediumTypeType
+
+def get_value() -> DeliveryMediumTypeType:
+    return "EMAIL"
 ```
 
-Values:
-
-- `EMAIL`
-- `SMS`
-
-<a id="devicerememberedstatustypetype"></a>
-
+```python title="Definition"
+DeliveryMediumTypeType = Literal[
+    "EMAIL",
+    "SMS",
+]
+```
 ## DeviceRememberedStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import DeviceRememberedStatusTypeType
+
+def get_value() -> DeviceRememberedStatusTypeType:
+    return "not_remembered"
 ```
 
-Values:
-
-- `not_remembered`
-- `remembered`
-
-<a id="domainstatustypetype"></a>
-
+```python title="Definition"
+DeviceRememberedStatusTypeType = Literal[
+    "not_remembered",
+    "remembered",
+]
+```
 ## DomainStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import DomainStatusTypeType
+
+def get_value() -> DomainStatusTypeType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="emailsendingaccounttypetype"></a>
-
+```python title="Definition"
+DomainStatusTypeType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## EmailSendingAccountTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import EmailSendingAccountTypeType
+
+def get_value() -> EmailSendingAccountTypeType:
+    return "COGNITO_DEFAULT"
 ```
 
-Values:
-
-- `COGNITO_DEFAULT`
-- `DEVELOPER`
-
-<a id="eventfiltertypetype"></a>
-
+```python title="Definition"
+EmailSendingAccountTypeType = Literal[
+    "COGNITO_DEFAULT",
+    "DEVELOPER",
+]
+```
 ## EventFilterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import EventFilterTypeType
+
+def get_value() -> EventFilterTypeType:
+    return "PASSWORD_CHANGE"
 ```
 
-Values:
-
-- `PASSWORD_CHANGE`
-- `SIGN_IN`
-- `SIGN_UP`
-
-<a id="eventresponsetypetype"></a>
-
+```python title="Definition"
+EventFilterTypeType = Literal[
+    "PASSWORD_CHANGE",
+    "SIGN_IN",
+    "SIGN_UP",
+]
+```
 ## EventResponseTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import EventResponseTypeType
+
+def get_value() -> EventResponseTypeType:
+    return "Failure"
 ```
 
-Values:
-
-- `Failure`
-- `Success`
-
-<a id="eventtypetype"></a>
-
+```python title="Definition"
+EventResponseTypeType = Literal[
+    "Failure",
+    "Success",
+]
+```
 ## EventTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import EventTypeType
+
+def get_value() -> EventTypeType:
+    return "ForgotPassword"
 ```
 
-Values:
-
-- `ForgotPassword`
-- `SignIn`
-- `SignUp`
-
-<a id="explicitauthflowstypetype"></a>
-
+```python title="Definition"
+EventTypeType = Literal[
+    "ForgotPassword",
+    "SignIn",
+    "SignUp",
+]
+```
 ## ExplicitAuthFlowsTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ExplicitAuthFlowsTypeType
+
+def get_value() -> ExplicitAuthFlowsTypeType:
+    return "ADMIN_NO_SRP_AUTH"
 ```
 
-Values:
-
-- `ADMIN_NO_SRP_AUTH`
-- `ALLOW_ADMIN_USER_PASSWORD_AUTH`
-- `ALLOW_CUSTOM_AUTH`
-- `ALLOW_REFRESH_TOKEN_AUTH`
-- `ALLOW_USER_PASSWORD_AUTH`
-- `ALLOW_USER_SRP_AUTH`
-- `CUSTOM_AUTH_FLOW_ONLY`
-- `USER_PASSWORD_AUTH`
-
-<a id="feedbackvaluetypetype"></a>
-
+```python title="Definition"
+ExplicitAuthFlowsTypeType = Literal[
+    "ADMIN_NO_SRP_AUTH",
+    "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+    "ALLOW_CUSTOM_AUTH",
+    "ALLOW_REFRESH_TOKEN_AUTH",
+    "ALLOW_USER_PASSWORD_AUTH",
+    "ALLOW_USER_SRP_AUTH",
+    "CUSTOM_AUTH_FLOW_ONLY",
+    "USER_PASSWORD_AUTH",
+]
+```
 ## FeedbackValueTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import FeedbackValueTypeType
+
+def get_value() -> FeedbackValueTypeType:
+    return "Invalid"
 ```
 
-Values:
-
-- `Invalid`
-- `Valid`
-
-<a id="identityprovidertypetypetype"></a>
-
+```python title="Definition"
+FeedbackValueTypeType = Literal[
+    "Invalid",
+    "Valid",
+]
+```
 ## IdentityProviderTypeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import IdentityProviderTypeTypeType
+
+def get_value() -> IdentityProviderTypeTypeType:
+    return "Facebook"
 ```
 
-Values:
-
-- `Facebook`
-- `Google`
-- `LoginWithAmazon`
-- `OIDC`
-- `SAML`
-- `SignInWithApple`
-
-<a id="listgroupspaginatorname"></a>
-
+```python title="Definition"
+IdentityProviderTypeTypeType = Literal[
+    "Facebook",
+    "Google",
+    "LoginWithAmazon",
+    "OIDC",
+    "SAML",
+    "SignInWithApple",
+]
+```
 ## ListGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListGroupsPaginatorName
+
+def get_value() -> ListGroupsPaginatorName:
+    return "list_groups"
 ```
 
-Values:
-
-- `list_groups`
-
-<a id="listidentityproviderspaginatorname"></a>
-
+```python title="Definition"
+ListGroupsPaginatorName = Literal[
+    "list_groups",
+]
+```
 ## ListIdentityProvidersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListIdentityProvidersPaginatorName
+
+def get_value() -> ListIdentityProvidersPaginatorName:
+    return "list_identity_providers"
 ```
 
-Values:
-
-- `list_identity_providers`
-
-<a id="listresourceserverspaginatorname"></a>
-
+```python title="Definition"
+ListIdentityProvidersPaginatorName = Literal[
+    "list_identity_providers",
+]
+```
 ## ListResourceServersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListResourceServersPaginatorName
+
+def get_value() -> ListResourceServersPaginatorName:
+    return "list_resource_servers"
 ```
 
-Values:
-
-- `list_resource_servers`
-
-<a id="listuserpoolclientspaginatorname"></a>
-
+```python title="Definition"
+ListResourceServersPaginatorName = Literal[
+    "list_resource_servers",
+]
+```
 ## ListUserPoolClientsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListUserPoolClientsPaginatorName
+
+def get_value() -> ListUserPoolClientsPaginatorName:
+    return "list_user_pool_clients"
 ```
 
-Values:
-
-- `list_user_pool_clients`
-
-<a id="listuserpoolspaginatorname"></a>
-
+```python title="Definition"
+ListUserPoolClientsPaginatorName = Literal[
+    "list_user_pool_clients",
+]
+```
 ## ListUserPoolsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListUserPoolsPaginatorName
+
+def get_value() -> ListUserPoolsPaginatorName:
+    return "list_user_pools"
 ```
 
-Values:
-
-- `list_user_pools`
-
-<a id="listusersingrouppaginatorname"></a>
-
+```python title="Definition"
+ListUserPoolsPaginatorName = Literal[
+    "list_user_pools",
+]
+```
 ## ListUsersInGroupPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListUsersInGroupPaginatorName
+
+def get_value() -> ListUsersInGroupPaginatorName:
+    return "list_users_in_group"
 ```
 
-Values:
-
-- `list_users_in_group`
-
-<a id="listuserspaginatorname"></a>
-
+```python title="Definition"
+ListUsersInGroupPaginatorName = Literal[
+    "list_users_in_group",
+]
+```
 ## ListUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
 ```
 
-Values:
-
-- `list_users`
-
-<a id="messageactiontypetype"></a>
-
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## MessageActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import MessageActionTypeType
+
+def get_value() -> MessageActionTypeType:
+    return "RESEND"
 ```
 
-Values:
-
-- `RESEND`
-- `SUPPRESS`
-
-<a id="oauthflowtypetype"></a>
-
+```python title="Definition"
+MessageActionTypeType = Literal[
+    "RESEND",
+    "SUPPRESS",
+]
+```
 ## OAuthFlowTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import OAuthFlowTypeType
+
+def get_value() -> OAuthFlowTypeType:
+    return "client_credentials"
 ```
 
-Values:
-
-- `client_credentials`
-- `code`
-- `implicit`
-
-<a id="preventuserexistenceerrortypestype"></a>
-
+```python title="Definition"
+OAuthFlowTypeType = Literal[
+    "client_credentials",
+    "code",
+    "implicit",
+]
+```
 ## PreventUserExistenceErrorTypesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import PreventUserExistenceErrorTypesType
+
+def get_value() -> PreventUserExistenceErrorTypesType:
+    return "ENABLED"
 ```
 
-Values:
-
-- `ENABLED`
-- `LEGACY`
-
-<a id="recoveryoptionnametypetype"></a>
-
+```python title="Definition"
+PreventUserExistenceErrorTypesType = Literal[
+    "ENABLED",
+    "LEGACY",
+]
+```
 ## RecoveryOptionNameTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import RecoveryOptionNameTypeType
+
+def get_value() -> RecoveryOptionNameTypeType:
+    return "admin_only"
 ```
 
-Values:
-
-- `admin_only`
-- `verified_email`
-- `verified_phone_number`
-
-<a id="riskdecisiontypetype"></a>
-
+```python title="Definition"
+RecoveryOptionNameTypeType = Literal[
+    "admin_only",
+    "verified_email",
+    "verified_phone_number",
+]
+```
 ## RiskDecisionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import RiskDecisionTypeType
+
+def get_value() -> RiskDecisionTypeType:
+    return "AccountTakeover"
 ```
 
-Values:
-
-- `AccountTakeover`
-- `Block`
-- `NoRisk`
-
-<a id="riskleveltypetype"></a>
-
+```python title="Definition"
+RiskDecisionTypeType = Literal[
+    "AccountTakeover",
+    "Block",
+    "NoRisk",
+]
+```
 ## RiskLevelTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import RiskLevelTypeType
+
+def get_value() -> RiskLevelTypeType:
+    return "High"
 ```
 
-Values:
-
-- `High`
-- `Low`
-- `Medium`
-
-<a id="statustypetype"></a>
-
+```python title="Definition"
+RiskLevelTypeType = Literal[
+    "High",
+    "Low",
+    "Medium",
+]
+```
 ## StatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import StatusTypeType
+
+def get_value() -> StatusTypeType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="timeunitstypetype"></a>
-
+```python title="Definition"
+StatusTypeType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## TimeUnitsTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import TimeUnitsTypeType
+
+def get_value() -> TimeUnitsTypeType:
+    return "days"
 ```
 
-Values:
-
-- `days`
-- `hours`
-- `minutes`
-- `seconds`
-
-<a id="userimportjobstatustypetype"></a>
-
+```python title="Definition"
+TimeUnitsTypeType = Literal[
+    "days",
+    "hours",
+    "minutes",
+    "seconds",
+]
+```
 ## UserImportJobStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import UserImportJobStatusTypeType
+
+def get_value() -> UserImportJobStatusTypeType:
+    return "Created"
 ```
 
-Values:
-
-- `Created`
-- `Expired`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Stopped`
-- `Stopping`
-- `Succeeded`
-
-<a id="userpoolmfatypetype"></a>
-
+```python title="Definition"
+UserImportJobStatusTypeType = Literal[
+    "Created",
+    "Expired",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Stopped",
+    "Stopping",
+    "Succeeded",
+]
+```
 ## UserPoolMfaTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import UserPoolMfaTypeType
+
+def get_value() -> UserPoolMfaTypeType:
+    return "OFF"
 ```
 
-Values:
-
-- `OFF`
-- `ON`
-- `OPTIONAL`
-
-<a id="userstatustypetype"></a>
-
+```python title="Definition"
+UserPoolMfaTypeType = Literal[
+    "OFF",
+    "ON",
+    "OPTIONAL",
+]
+```
 ## UserStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import UserStatusTypeType
+
+def get_value() -> UserStatusTypeType:
+    return "ARCHIVED"
 ```
 
-Values:
-
-- `ARCHIVED`
-- `COMPROMISED`
-- `CONFIRMED`
-- `FORCE_CHANGE_PASSWORD`
-- `RESET_REQUIRED`
-- `UNCONFIRMED`
-- `UNKNOWN`
-
-<a id="usernameattributetypetype"></a>
-
+```python title="Definition"
+UserStatusTypeType = Literal[
+    "ARCHIVED",
+    "COMPROMISED",
+    "CONFIRMED",
+    "FORCE_CHANGE_PASSWORD",
+    "RESET_REQUIRED",
+    "UNCONFIRMED",
+    "UNKNOWN",
+]
+```
 ## UsernameAttributeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import UsernameAttributeTypeType
+
+def get_value() -> UsernameAttributeTypeType:
+    return "email"
 ```
 
-Values:
-
-- `email`
-- `phone_number`
-
-<a id="verifiedattributetypetype"></a>
-
+```python title="Definition"
+UsernameAttributeTypeType = Literal[
+    "email",
+    "phone_number",
+]
+```
 ## VerifiedAttributeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import VerifiedAttributeTypeType
+
+def get_value() -> VerifiedAttributeTypeType:
+    return "email"
 ```
 
-Values:
-
-- `email`
-- `phone_number`
-
-<a id="verifysoftwaretokenresponsetypetype"></a>
-
+```python title="Definition"
+VerifiedAttributeTypeType = Literal[
+    "email",
+    "phone_number",
+]
+```
 ## VerifySoftwareTokenResponseTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import VerifySoftwareTokenResponseTypeType
+
+def get_value() -> VerifySoftwareTokenResponseTypeType:
+    return "ERROR"
 ```
 
-Values:
-
-- `ERROR`
-- `SUCCESS`
-
-<a id="cognitoidentityproviderservicename"></a>
-
+```python title="Definition"
+VerifySoftwareTokenResponseTypeType = Literal[
+    "ERROR",
+    "SUCCESS",
+]
+```
 ## CognitoIdentityProviderServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import CognitoIdentityProviderServiceName
+
+def get_value() -> CognitoIdentityProviderServiceName:
+    return "cognito-idp"
 ```
 
-Values:
-
-- `cognito-idp`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+CognitoIdentityProviderServiceName = Literal[
+    "cognito-idp",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "admin_list_groups_for_user"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "admin_list_groups_for_user",
+    "admin_list_user_auth_events",
+    "list_groups",
+    "list_identity_providers",
+    "list_resource_servers",
+    "list_user_pool_clients",
+    "list_user_pools",
+    "list_users",
+    "list_users_in_group",
+]
+```
+## RegionName
 
-- `admin_list_groups_for_user`
-- `admin_list_user_auth_events`
-- `list_groups`
-- `list_identity_providers`
-- `list_resource_servers`
-- `list_user_pool_clients`
-- `list_user_pools`
-- `list_users`
-- `list_users_in_group`
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

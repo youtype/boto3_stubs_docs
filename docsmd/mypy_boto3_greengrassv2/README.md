@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-greengrassv2-module"></a>
-
-# Type annotations for boto3 GreengrassV2 module
+#  GreengrassV2 module
 
 > [Index](../README.md) > GreengrassV2
 
-Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
-type annotations stubs module
-[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+!!! note ""
 
-- [Type annotations for boto3 GreengrassV2 module](#type-annotations-for-boto3-greengrassv2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GreengrassV2Client](#greengrassv2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+    type annotations stubs module [mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GreengrassV2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[greengrassv2]'
 python -m pip install mypy-boto3-greengrassv2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,37 @@ python -m pip install mypy-boto3-greengrassv2
 python -m pip uninstall -y mypy-boto3-greengrassv2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="greengrassv2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GreengrassV2Client
 
-Type annotations for `boto3.client("greengrassv2")` as
-[GreengrassV2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("greengrassv2")` as [GreengrassV2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
+
+def get_client() -> GreengrassV2Client:
+    return Session().cleint("greengrassv2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_service_role_to_account](./client.md#associate_service_role_to_account)
-- [batch_associate_client_device_with_core_device](./client.md#batch_associate_client_device_with_core_device)
-- [batch_disassociate_client_device_from_core_device](./client.md#batch_disassociate_client_device_from_core_device)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_deployment](./client.md#cancel_deployment)
-- [create_component_version](./client.md#create_component_version)
-- [create_deployment](./client.md#create_deployment)
-- [delete_component](./client.md#delete_component)
-- [delete_core_device](./client.md#delete_core_device)
-- [describe_component](./client.md#describe_component)
-- [disassociate_service_role_from_account](./client.md#disassociate_service_role_from_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_component](./client.md#get_component)
-- [get_component_version_artifact](./client.md#get_component_version_artifact)
-- [get_connectivity_info](./client.md#get_connectivity_info)
-- [get_core_device](./client.md#get_core_device)
-- [get_deployment](./client.md#get_deployment)
-- [get_paginator](./client.md#get_paginator)
-- [get_service_role_for_account](./client.md#get_service_role_for_account)
-- [list_client_devices_associated_with_core_device](./client.md#list_client_devices_associated_with_core_device)
-- [list_component_versions](./client.md#list_component_versions)
-- [list_components](./client.md#list_components)
-- [list_core_devices](./client.md#list_core_devices)
-- [list_deployments](./client.md#list_deployments)
-- [list_effective_deployments](./client.md#list_effective_deployments)
-- [list_installed_components](./client.md#list_installed_components)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [resolve_component_candidates](./client.md#resolve_component_candidates)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_connectivity_info](./client.md#update_connectivity_info)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GreengrassV2Client [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- RequestAlreadyInProgressException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("greengrassv2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("greengrassv2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator, ...
+from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator
+
+def get_list_client_devices_associated_with_core_device_paginator() -> ListClientDevicesAssociatedWithCoreDevicePaginator:
+    return Session().client("greengrassv2").get_paginator("list_client_devices_associated_with_core_device"))
 ```
 
 - [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
@@ -157,16 +83,23 @@ from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCor
 - [ListEffectiveDeploymentsPaginator](./paginators.md#listeffectivedeploymentspaginator)
 - [ListInstalledComponentsPaginator](./paginators.md#listinstalledcomponentspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_greengrassv2.literals import CloudComponentStateType
 
-```python
-from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
+def get_value() -> CloudComponentStateType:
+    return "DEPLOYABLE"
 ```
 
 - [CloudComponentStateType](./literals.md#cloudcomponentstatetype)
@@ -197,18 +130,22 @@ from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceEntryTypeDef
 
-```python
-from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceEntryTypeDef, ...
+def get_value() -> AssociateClientDeviceWithCoreDeviceEntryTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
 - [AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)
@@ -276,18 +213,25 @@ from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDevic
 - [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - [LambdaLinuxProcessParamsTypeDef](./type_defs.md#lambdalinuxprocessparamstypedef)
 - [LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef)
+- [ListClientDevicesAssociatedWithCoreDeviceRequestListClientDevicesAssociatedWithCoreDevicePaginateTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequestlistclientdevicesassociatedwithcoredevicepaginatetypedef)
 - [ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequestrequesttypedef)
 - [ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef)
+- [ListComponentVersionsRequestListComponentVersionsPaginateTypeDef](./type_defs.md#listcomponentversionsrequestlistcomponentversionspaginatetypedef)
 - [ListComponentVersionsRequestRequestTypeDef](./type_defs.md#listcomponentversionsrequestrequesttypedef)
 - [ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef)
+- [ListComponentsRequestListComponentsPaginateTypeDef](./type_defs.md#listcomponentsrequestlistcomponentspaginatetypedef)
 - [ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef)
 - [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)
+- [ListCoreDevicesRequestListCoreDevicesPaginateTypeDef](./type_defs.md#listcoredevicesrequestlistcoredevicespaginatetypedef)
 - [ListCoreDevicesRequestRequestTypeDef](./type_defs.md#listcoredevicesrequestrequesttypedef)
 - [ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef)
+- [ListDeploymentsRequestListDeploymentsPaginateTypeDef](./type_defs.md#listdeploymentsrequestlistdeploymentspaginatetypedef)
 - [ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef)
 - [ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)
+- [ListEffectiveDeploymentsRequestListEffectiveDeploymentsPaginateTypeDef](./type_defs.md#listeffectivedeploymentsrequestlisteffectivedeploymentspaginatetypedef)
 - [ListEffectiveDeploymentsRequestRequestTypeDef](./type_defs.md#listeffectivedeploymentsrequestrequesttypedef)
 - [ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef)
+- [ListInstalledComponentsRequestListInstalledComponentsPaginateTypeDef](./type_defs.md#listinstalledcomponentsrequestlistinstalledcomponentspaginatetypedef)
 - [ListInstalledComponentsRequestRequestTypeDef](./type_defs.md#listinstalledcomponentsrequestrequesttypedef)
 - [ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -302,3 +246,4 @@ from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDevic
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef)
 - [UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef)
+

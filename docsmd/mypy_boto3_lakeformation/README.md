@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-lakeformation-module"></a>
-
-# Type annotations for boto3 LakeFormation module
+#  LakeFormation module
 
 > [Index](../README.md) > LakeFormation
 
-Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
-type annotations stubs module
-[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+!!! note ""
 
-- [Type annotations for boto3 LakeFormation module](#type-annotations-for-boto3-lakeformation-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LakeFormationClient](#lakeformationclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+    type annotations stubs module [mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LakeFormation`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lakeformation]'
 python -m pip install mypy-boto3-lakeformation
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,115 +42,37 @@ python -m pip install mypy-boto3-lakeformation
 python -m pip uninstall -y mypy-boto3-lakeformation
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lakeformationclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LakeFormationClient
 
-Type annotations for `boto3.client("lakeformation")` as
-[LakeFormationClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lakeformation")` as [LakeFormationClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lakeformation.client import LakeFormationClient
+
+def get_client() -> LakeFormationClient:
+    return Session().cleint("lakeformation")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_lf_tags_to_resource](./client.md#add_lf_tags_to_resource)
-- [batch_grant_permissions](./client.md#batch_grant_permissions)
-- [batch_revoke_permissions](./client.md#batch_revoke_permissions)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_transaction](./client.md#cancel_transaction)
-- [commit_transaction](./client.md#commit_transaction)
-- [create_data_cells_filter](./client.md#create_data_cells_filter)
-- [create_lf_tag](./client.md#create_lf_tag)
-- [delete_data_cells_filter](./client.md#delete_data_cells_filter)
-- [delete_lf_tag](./client.md#delete_lf_tag)
-- [delete_objects_on_cancel](./client.md#delete_objects_on_cancel)
-- [deregister_resource](./client.md#deregister_resource)
-- [describe_resource](./client.md#describe_resource)
-- [describe_transaction](./client.md#describe_transaction)
-- [exceptions](./client.md#exceptions)
-- [extend_transaction](./client.md#extend_transaction)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_data_lake_settings](./client.md#get_data_lake_settings)
-- [get_effective_permissions_for_path](./client.md#get_effective_permissions_for_path)
-- [get_lf_tag](./client.md#get_lf_tag)
-- [get_paginator](./client.md#get_paginator)
-- [get_query_state](./client.md#get_query_state)
-- [get_query_statistics](./client.md#get_query_statistics)
-- [get_resource_lf_tags](./client.md#get_resource_lf_tags)
-- [get_table_objects](./client.md#get_table_objects)
-- [get_temporary_glue_partition_credentials](./client.md#get_temporary_glue_partition_credentials)
-- [get_temporary_glue_table_credentials](./client.md#get_temporary_glue_table_credentials)
-- [get_work_unit_results](./client.md#get_work_unit_results)
-- [get_work_units](./client.md#get_work_units)
-- [grant_permissions](./client.md#grant_permissions)
-- [list_data_cells_filter](./client.md#list_data_cells_filter)
-- [list_lf_tags](./client.md#list_lf_tags)
-- [list_permissions](./client.md#list_permissions)
-- [list_resources](./client.md#list_resources)
-- [list_table_storage_optimizers](./client.md#list_table_storage_optimizers)
-- [list_transactions](./client.md#list_transactions)
-- [put_data_lake_settings](./client.md#put_data_lake_settings)
-- [register_resource](./client.md#register_resource)
-- [remove_lf_tags_from_resource](./client.md#remove_lf_tags_from_resource)
-- [revoke_permissions](./client.md#revoke_permissions)
-- [search_databases_by_lf_tags](./client.md#search_databases_by_lf_tags)
-- [search_tables_by_lf_tags](./client.md#search_tables_by_lf_tags)
-- [start_query_planning](./client.md#start_query_planning)
-- [start_transaction](./client.md#start_transaction)
-- [update_lf_tag](./client.md#update_lf_tag)
-- [update_resource](./client.md#update_resource)
-- [update_table_objects](./client.md#update_table_objects)
-- [update_table_storage_optimizer](./client.md#update_table_storage_optimizer)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LakeFormationClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AlreadyExistsException
-- ClientError
-- ConcurrentModificationException
-- EntityNotFoundException
-- ExpiredException
-- GlueEncryptionException
-- InternalServiceException
-- InvalidInputException
-- OperationTimeoutException
-- PermissionTypeMismatchException
-- ResourceNotReadyException
-- ResourceNumberLimitExceededException
-- StatisticsNotReadyYetException
-- ThrottledException
-- TransactionCanceledException
-- TransactionCommitInProgressException
-- TransactionCommittedException
-- WorkUnitsNotReadyYetException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("lakeformation").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("lakeformation").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator, ...
+from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator
+
+def get_get_work_units_paginator() -> GetWorkUnitsPaginator:
+    return Session().client("lakeformation").get_paginator("get_work_units"))
 ```
 
 - [GetWorkUnitsPaginator](./paginators.md#getworkunitspaginator)
@@ -181,16 +81,23 @@ from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator, ...
 - [SearchDatabasesByLFTagsPaginator](./paginators.md#searchdatabasesbylftagspaginator)
 - [SearchTablesByLFTagsPaginator](./paginators.md#searchtablesbylftagspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lakeformation.literals import ComparisonOperatorType
 
-```python
-from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
+def get_value() -> ComparisonOperatorType:
+    return "BEGINS_WITH"
 ```
 
 - [ComparisonOperatorType](./literals.md#comparisonoperatortype)
@@ -214,18 +121,23 @@ from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequestTypeDef
 
-```python
-from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequestTypeDef, ...
+def get_value() -> AddLFTagsToResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "LFTags": ...,
+    }
 ```
 
 - [AddLFTagsToResourceRequestRequestTypeDef](./type_defs.md#addlftagstoresourcerequestrequesttypedef)
@@ -285,6 +197,7 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef)
 - [GetWorkUnitResultsRequestRequestTypeDef](./type_defs.md#getworkunitresultsrequestrequesttypedef)
 - [GetWorkUnitResultsResponseTypeDef](./type_defs.md#getworkunitresultsresponsetypedef)
+- [GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef](./type_defs.md#getworkunitsrequestgetworkunitspaginatetypedef)
 - [GetWorkUnitsRequestRequestTypeDef](./type_defs.md#getworkunitsrequestrequesttypedef)
 - [GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef)
 - [GrantPermissionsRequestRequestTypeDef](./type_defs.md#grantpermissionsrequestrequesttypedef)
@@ -293,8 +206,10 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)
 - [LFTagPolicyResourceTypeDef](./type_defs.md#lftagpolicyresourcetypedef)
 - [LFTagTypeDef](./type_defs.md#lftagtypedef)
+- [ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef](./type_defs.md#listdatacellsfilterrequestlistdatacellsfilterpaginatetypedef)
 - [ListDataCellsFilterRequestRequestTypeDef](./type_defs.md#listdatacellsfilterrequestrequesttypedef)
 - [ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef)
+- [ListLFTagsRequestListLFTagsPaginateTypeDef](./type_defs.md#listlftagsrequestlistlftagspaginatetypedef)
 - [ListLFTagsRequestRequestTypeDef](./type_defs.md#listlftagsrequestrequesttypedef)
 - [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef)
 - [ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef)
@@ -322,8 +237,10 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [RevokePermissionsRequestRequestTypeDef](./type_defs.md#revokepermissionsrequestrequesttypedef)
 - [RowFilterTypeDef](./type_defs.md#rowfiltertypedef)
 - [SearchDatabasesByLFTagsRequestRequestTypeDef](./type_defs.md#searchdatabasesbylftagsrequestrequesttypedef)
+- [SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef](./type_defs.md#searchdatabasesbylftagsrequestsearchdatabasesbylftagspaginatetypedef)
 - [SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef)
 - [SearchTablesByLFTagsRequestRequestTypeDef](./type_defs.md#searchtablesbylftagsrequestrequesttypedef)
+- [SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef](./type_defs.md#searchtablesbylftagsrequestsearchtablesbylftagspaginatetypedef)
 - [SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef)
 - [StartQueryPlanningRequestRequestTypeDef](./type_defs.md#startqueryplanningrequestrequesttypedef)
 - [StartQueryPlanningResponseTypeDef](./type_defs.md#startqueryplanningresponsetypedef)
@@ -344,3 +261,4 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [VirtualObjectTypeDef](./type_defs.md#virtualobjecttypedef)
 - [WorkUnitRangeTypeDef](./type_defs.md#workunitrangetypedef)
 - [WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)
+

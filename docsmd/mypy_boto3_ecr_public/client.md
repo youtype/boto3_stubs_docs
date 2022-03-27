@@ -1,55 +1,18 @@
-<a id="ecrpublicclient-for-boto3-ecrpublic-module"></a>
-
-# ECRPublicClient for boto3 ECRPublic module
+# ECRPublicClient
 
 > [Index](../README.md) > [ECRPublic](./README.md) > ECRPublicClient
 
-Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
-type annotations stubs module
-[mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
+!!! note ""
 
-- [ECRPublicClient for boto3 ECRPublic module](#ecrpublicclient-for-boto3-ecrpublic-module)
-  - [ECRPublicClient](#ecrpublicclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_check_layer_availability](#batch_check_layer_availability)
-    - [batch_delete_image](#batch_delete_image)
-    - [can_paginate](#can_paginate)
-    - [complete_layer_upload](#complete_layer_upload)
-    - [create_repository](#create_repository)
-    - [delete_repository](#delete_repository)
-    - [delete_repository_policy](#delete_repository_policy)
-    - [describe_image_tags](#describe_image_tags)
-    - [describe_images](#describe_images)
-    - [describe_registries](#describe_registries)
-    - [describe_repositories](#describe_repositories)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_authorization_token](#get_authorization_token)
-    - [get_registry_catalog_data](#get_registry_catalog_data)
-    - [get_repository_catalog_data](#get_repository_catalog_data)
-    - [get_repository_policy](#get_repository_policy)
-    - [initiate_layer_upload](#initiate_layer_upload)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_image](#put_image)
-    - [put_registry_catalog_data](#put_registry_catalog_data)
-    - [put_repository_catalog_data](#put_repository_catalog_data)
-    - [set_repository_policy](#set_repository_policy)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [upload_layer_part](#upload_layer_part)
-    - [get_paginator](#get_paginator)
-
-<a id="ecrpublicclient"></a>
+    Auto-generated documentation for [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
+    type annotations stubs module [mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 ## ECRPublicClient
 
-Type annotations for `boto3.client("ecr-public")`
+Type annotations and code completion for `#!python boto3.client("ecr-public")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_ecr_public.client import ECRPublicClient
 
@@ -57,644 +20,806 @@ def get_ecr-public_client() -> ECRPublicClient:
     return Session().client("ecr-public")
 ```
 
-Boto3 documentation:
-[ECRPublic.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("ecr-public").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("ecr-public")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.EmptyUploadException,
+    client.ImageAlreadyExistsException,
+    client.ImageDigestDoesNotMatchException,
+    client.ImageNotFoundException,
+    client.ImageTagAlreadyExistsException,
+    client.InvalidLayerException,
+    client.InvalidLayerPartException,
+    client.InvalidParameterException,
+    client.InvalidTagParameterException,
+    client.LayerAlreadyExistsException,
+    client.LayerPartTooSmallException,
+    client.LayersNotFoundException,
+    client.LimitExceededException,
+    client.ReferencedImagesNotFoundException,
+    client.RegistryNotFoundException,
+    client.RepositoryAlreadyExistsException,
+    client.RepositoryNotEmptyException,
+    client.RepositoryNotFoundException,
+    client.RepositoryPolicyNotFoundException,
+    client.ServerException,
+    client.TooManyTagsException,
+    client.UnsupportedCommandException,
+    client.UploadNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_ecr_public.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.EmptyUploadException`
-- `Exceptions.ImageAlreadyExistsException`
-- `Exceptions.ImageDigestDoesNotMatchException`
-- `Exceptions.ImageNotFoundException`
-- `Exceptions.ImageTagAlreadyExistsException`
-- `Exceptions.InvalidLayerException`
-- `Exceptions.InvalidLayerPartException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidTagParameterException`
-- `Exceptions.LayerAlreadyExistsException`
-- `Exceptions.LayerPartTooSmallException`
-- `Exceptions.LayersNotFoundException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ReferencedImagesNotFoundException`
-- `Exceptions.RegistryNotFoundException`
-- `Exceptions.RepositoryAlreadyExistsException`
-- `Exceptions.RepositoryNotEmptyException`
-- `Exceptions.RepositoryNotFoundException`
-- `Exceptions.RepositoryPolicyNotFoundException`
-- `Exceptions.ServerException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.UnsupportedCommandException`
-- `Exceptions.UploadNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ECRPublicClient exceptions.
-
-Type annotations for `boto3.client("ecr-public").exceptions` method.
-
-Boto3 documentation:
-[ECRPublic.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_check\_layer\_availability"></a>
-
-### batch_check_layer_availability
+### batch\_check\_layer\_availability
 
 Checks the availability of one or more image layers within a repository in a
 public registry.
 
-Type annotations for
-`boto3.client("ecr-public").batch_check_layer_availability` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").batch_check_layer_availability` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_check_layer_availability)
 
-Boto3 documentation:
-[ECRPublic.Client.batch_check_layer_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_check_layer_availability)
+```python title="Method definition"
+def batch_check_layer_availability(
+    self,
+    *,
+    repositoryName: str,
+    layerDigests: Sequence[str],
+    registryId: str = ...,
+) -> BatchCheckLayerAvailabilityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchCheckLayerAvailabilityRequestRequestTypeDef](./type_defs.md#batchchecklayeravailabilityrequestrequesttypedef).
+1. See [:material-code-braces: BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `layerDigests`: `Sequence`\[`str`\] *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchCheckLayerAvailabilityRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "layerDigests": ...,
+}
 
-Returns
-[BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef).
+parent.batch_check_layer_availability(**kwargs)
+```
 
-<a id="batch\_delete\_image"></a>
+1. See [:material-code-braces: BatchCheckLayerAvailabilityRequestRequestTypeDef](./type_defs.md#batchchecklayeravailabilityrequestrequesttypedef) 
 
-### batch_delete_image
+### batch\_delete\_image
 
 Deletes a list of specified images within a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").batch_delete_image` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").batch_delete_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_delete_image)
 
-Boto3 documentation:
-[ECRPublic.Client.batch_delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_delete_image)
+```python title="Method definition"
+def batch_delete_image(
+    self,
+    *,
+    repositoryName: str,
+    imageIds: Sequence[ImageIdentifierTypeDef],  # (1)
+    registryId: str = ...,
+) -> BatchDeleteImageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteImageRequestRequestTypeDef](./type_defs.md#batchdeleteimagerequestrequesttypedef).
+1. See [:material-code-braces: ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef) 
+2. See [:material-code-braces: BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `imageIds`:
-  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
-  *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteImageRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "imageIds": ...,
+}
 
-Returns
-[BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef).
+parent.batch_delete_image(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDeleteImageRequestRequestTypeDef](./type_defs.md#batchdeleteimagerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("ecr-public").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.can_paginate)
 
-Boto3 documentation:
-[ECRPublic.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="complete\_layer\_upload"></a>
-
-### complete_layer_upload
+### complete\_layer\_upload
 
 Informs Amazon ECR that the image layer upload has completed for a specified
 public registry, repository name, and upload ID.
 
-Type annotations for `boto3.client("ecr-public").complete_layer_upload` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").complete_layer_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.complete_layer_upload)
 
-Boto3 documentation:
-[ECRPublic.Client.complete_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.complete_layer_upload)
+```python title="Method definition"
+def complete_layer_upload(
+    self,
+    *,
+    repositoryName: str,
+    uploadId: str,
+    layerDigests: Sequence[str],
+    registryId: str = ...,
+) -> CompleteLayerUploadResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CompleteLayerUploadRequestRequestTypeDef](./type_defs.md#completelayeruploadrequestrequesttypedef).
+1. See [:material-code-braces: CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `uploadId`: `str` *(required)*
-- `layerDigests`: `Sequence`\[`str`\] *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CompleteLayerUploadRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "uploadId": ...,
+    "layerDigests": ...,
+}
 
-Returns
-[CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
+parent.complete_layer_upload(**kwargs)
+```
 
-<a id="create\_repository"></a>
+1. See [:material-code-braces: CompleteLayerUploadRequestRequestTypeDef](./type_defs.md#completelayeruploadrequestrequesttypedef) 
 
-### create_repository
+### create\_repository
 
 Creates a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").create_repository` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").create_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.create_repository)
 
-Boto3 documentation:
-[ECRPublic.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.create_repository)
+```python title="Method definition"
+def create_repository(
+    self,
+    *,
+    repositoryName: str,
+    catalogData: RepositoryCatalogDataInputTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateRepositoryResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRepositoryRequestRequestTypeDef](./type_defs.md#createrepositoryrequestrequesttypedef).
+1. See [:material-code-braces: RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `catalogData`:
-  [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRepositoryRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
+parent.create_repository(**kwargs)
+```
 
-<a id="delete\_repository"></a>
+1. See [:material-code-braces: CreateRepositoryRequestRequestTypeDef](./type_defs.md#createrepositoryrequestrequesttypedef) 
 
-### delete_repository
+### delete\_repository
 
 Deletes a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").delete_repository` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").delete_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository)
 
-Boto3 documentation:
-[ECRPublic.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository)
+```python title="Method definition"
+def delete_repository(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+    force: bool = ...,
+) -> DeleteRepositoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
-- `force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteRepositoryRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef).
+parent.delete_repository(**kwargs)
+```
 
-<a id="delete\_repository\_policy"></a>
+1. See [:material-code-braces: DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef) 
 
-### delete_repository_policy
+### delete\_repository\_policy
 
 Deletes the repository policy associated with the specified repository.
 
-Type annotations for `boto3.client("ecr-public").delete_repository_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").delete_repository_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository_policy)
 
-Boto3 documentation:
-[ECRPublic.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository_policy)
+```python title="Method definition"
+def delete_repository_policy(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+) -> DeleteRepositoryPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRepositoryPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRepositoryPolicyRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
+parent.delete_repository_policy(**kwargs)
+```
 
-<a id="describe\_image\_tags"></a>
+1. See [:material-code-braces: DeleteRepositoryPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypolicyrequestrequesttypedef) 
 
-### describe_image_tags
+### describe\_image\_tags
 
 Returns the image tag details for a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").describe_image_tags` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").describe_image_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_image_tags)
 
-Boto3 documentation:
-[ECRPublic.Client.describe_image_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_image_tags)
+```python title="Method definition"
+def describe_image_tags(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeImageTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImageTagsRequestRequestTypeDef](./type_defs.md#describeimagetagsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeImageTagsRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef).
+parent.describe_image_tags(**kwargs)
+```
 
-<a id="describe\_images"></a>
+1. See [:material-code-braces: DescribeImageTagsRequestRequestTypeDef](./type_defs.md#describeimagetagsrequestrequesttypedef) 
 
-### describe_images
+### describe\_images
 
 Returns metadata about the images in a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").describe_images` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").describe_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_images)
 
-Boto3 documentation:
-[ECRPublic.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_images)
+```python title="Method definition"
+def describe_images(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+    imageIds: Sequence[ImageIdentifierTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeImagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef).
+1. See [:material-code-braces: ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef) 
+2. See [:material-code-braces: DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
-- `imageIds`:
-  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
+parent.describe_images(**kwargs)
+```
 
-<a id="describe\_registries"></a>
+1. See [:material-code-braces: DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef) 
 
-### describe_registries
+### describe\_registries
 
 Returns details for a public registry.
 
-Type annotations for `boto3.client("ecr-public").describe_registries` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").describe_registries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_registries)
 
-Boto3 documentation:
-[ECRPublic.Client.describe_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_registries)
+```python title="Method definition"
+def describe_registries(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeRegistriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRegistriesRequestRequestTypeDef](./type_defs.md#describeregistriesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeRegistriesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef).
+parent.describe_registries(**kwargs)
+```
 
-<a id="describe\_repositories"></a>
+1. See [:material-code-braces: DescribeRegistriesRequestRequestTypeDef](./type_defs.md#describeregistriesrequestrequesttypedef) 
 
-### describe_repositories
+### describe\_repositories
 
 Describes repositories in a public registry.
 
-Type annotations for `boto3.client("ecr-public").describe_repositories` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").describe_repositories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_repositories)
 
-Boto3 documentation:
-[ECRPublic.Client.describe_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_repositories)
+```python title="Method definition"
+def describe_repositories(
+    self,
+    *,
+    registryId: str = ...,
+    repositoryNames: Sequence[str] = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeRepositoriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRepositoriesRequestRequestTypeDef](./type_defs.md#describerepositoriesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `registryId`: `str`
-- `repositoryNames`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeRepositoriesRequestRequestTypeDef = {  # (1)
+    "registryId": ...,
+}
 
-Returns
-[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef).
+parent.describe_repositories(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeRepositoriesRequestRequestTypeDef](./type_defs.md#describerepositoriesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("ecr-public").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ECRPublic.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_authorization\_token"></a>
-
-### get_authorization_token
+### get\_authorization\_token
 
 Retrieves an authorization token.
 
-Type annotations for `boto3.client("ecr-public").get_authorization_token`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_authorization_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_authorization_token)
 
-Boto3 documentation:
-[ECRPublic.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_authorization_token)
+```python title="Method definition"
+def get_authorization_token(
+    self,
+) -> GetAuthorizationTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
+1. See [:material-code-braces: GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef) 
 
-<a id="get\_registry\_catalog\_data"></a>
-
-### get_registry_catalog_data
+### get\_registry\_catalog\_data
 
 Retrieves catalog metadata for a public registry.
 
-Type annotations for `boto3.client("ecr-public").get_registry_catalog_data`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_registry_catalog_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_registry_catalog_data)
 
-Boto3 documentation:
-[ECRPublic.Client.get_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_registry_catalog_data)
+```python title="Method definition"
+def get_registry_catalog_data(
+    self,
+) -> GetRegistryCatalogDataResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetRegistryCatalogDataResponseTypeDef](./type_defs.md#getregistrycatalogdataresponsetypedef).
+1. See [:material-code-braces: GetRegistryCatalogDataResponseTypeDef](./type_defs.md#getregistrycatalogdataresponsetypedef) 
 
-<a id="get\_repository\_catalog\_data"></a>
-
-### get_repository_catalog_data
+### get\_repository\_catalog\_data
 
 Retrieve catalog metadata for a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").get_repository_catalog_data`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_repository_catalog_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_repository_catalog_data)
 
-Boto3 documentation:
-[ECRPublic.Client.get_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_repository_catalog_data)
+```python title="Method definition"
+def get_repository_catalog_data(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+) -> GetRepositoryCatalogDataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRepositoryCatalogDataRequestRequestTypeDef](./type_defs.md#getrepositorycatalogdatarequestrequesttypedef).
+1. See [:material-code-braces: GetRepositoryCatalogDataResponseTypeDef](./type_defs.md#getrepositorycatalogdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRepositoryCatalogDataRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[GetRepositoryCatalogDataResponseTypeDef](./type_defs.md#getrepositorycatalogdataresponsetypedef).
+parent.get_repository_catalog_data(**kwargs)
+```
 
-<a id="get\_repository\_policy"></a>
+1. See [:material-code-braces: GetRepositoryCatalogDataRequestRequestTypeDef](./type_defs.md#getrepositorycatalogdatarequestrequesttypedef) 
 
-### get_repository_policy
+### get\_repository\_policy
 
 Retrieves the repository policy for the specified repository.
 
-Type annotations for `boto3.client("ecr-public").get_repository_policy` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_repository_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_repository_policy)
 
-Boto3 documentation:
-[ECRPublic.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_repository_policy)
+```python title="Method definition"
+def get_repository_policy(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+) -> GetRepositoryPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRepositoryPolicyRequestRequestTypeDef](./type_defs.md#getrepositorypolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRepositoryPolicyRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef).
+parent.get_repository_policy(**kwargs)
+```
 
-<a id="initiate\_layer\_upload"></a>
+1. See [:material-code-braces: GetRepositoryPolicyRequestRequestTypeDef](./type_defs.md#getrepositorypolicyrequestrequesttypedef) 
 
-### initiate_layer_upload
+### initiate\_layer\_upload
 
 Notifies Amazon ECR that you intend to upload an image layer.
 
-Type annotations for `boto3.client("ecr-public").initiate_layer_upload` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").initiate_layer_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.initiate_layer_upload)
 
-Boto3 documentation:
-[ECRPublic.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.initiate_layer_upload)
+```python title="Method definition"
+def initiate_layer_upload(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+) -> InitiateLayerUploadResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InitiateLayerUploadRequestRequestTypeDef](./type_defs.md#initiatelayeruploadrequestrequesttypedef).
+1. See [:material-code-braces: InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: InitiateLayerUploadRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+}
 
-Returns
-[InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef).
+parent.initiate_layer_upload(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: InitiateLayerUploadRequestRequestTypeDef](./type_defs.md#initiatelayeruploadrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List the tags for an Amazon ECR Public resource.
 
-Type annotations for `boto3.client("ecr-public").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ECRPublic.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_image"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_image
+### put\_image
 
 Creates or updates the image manifest and tags associated with an image.
 
-Type annotations for `boto3.client("ecr-public").put_image` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").put_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_image)
 
-Boto3 documentation:
-[ECRPublic.Client.put_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_image)
+```python title="Method definition"
+def put_image(
+    self,
+    *,
+    repositoryName: str,
+    imageManifest: str,
+    registryId: str = ...,
+    imageManifestMediaType: str = ...,
+    imageTag: str = ...,
+    imageDigest: str = ...,
+) -> PutImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutImageRequestRequestTypeDef](./type_defs.md#putimagerequestrequesttypedef).
+1. See [:material-code-braces: PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `imageManifest`: `str` *(required)*
-- `registryId`: `str`
-- `imageManifestMediaType`: `str`
-- `imageTag`: `str`
-- `imageDigest`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutImageRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "imageManifest": ...,
+}
 
-Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
+parent.put_image(**kwargs)
+```
 
-<a id="put\_registry\_catalog\_data"></a>
+1. See [:material-code-braces: PutImageRequestRequestTypeDef](./type_defs.md#putimagerequestrequesttypedef) 
 
-### put_registry_catalog_data
+### put\_registry\_catalog\_data
 
 Create or updates the catalog data for a public registry.
 
-Type annotations for `boto3.client("ecr-public").put_registry_catalog_data`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").put_registry_catalog_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_registry_catalog_data)
 
-Boto3 documentation:
-[ECRPublic.Client.put_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_registry_catalog_data)
+```python title="Method definition"
+def put_registry_catalog_data(
+    self,
+    *,
+    displayName: str = ...,
+) -> PutRegistryCatalogDataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutRegistryCatalogDataRequestRequestTypeDef](./type_defs.md#putregistrycatalogdatarequestrequesttypedef).
+1. See [:material-code-braces: PutRegistryCatalogDataResponseTypeDef](./type_defs.md#putregistrycatalogdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `displayName`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRegistryCatalogDataRequestRequestTypeDef = {  # (1)
+    "displayName": ...,
+}
 
-Returns
-[PutRegistryCatalogDataResponseTypeDef](./type_defs.md#putregistrycatalogdataresponsetypedef).
+parent.put_registry_catalog_data(**kwargs)
+```
 
-<a id="put\_repository\_catalog\_data"></a>
+1. See [:material-code-braces: PutRegistryCatalogDataRequestRequestTypeDef](./type_defs.md#putregistrycatalogdatarequestrequesttypedef) 
 
-### put_repository_catalog_data
+### put\_repository\_catalog\_data
 
 Creates or updates the catalog data for a repository in a public registry.
 
-Type annotations for `boto3.client("ecr-public").put_repository_catalog_data`
-method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").put_repository_catalog_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_repository_catalog_data)
 
-Boto3 documentation:
-[ECRPublic.Client.put_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_repository_catalog_data)
+```python title="Method definition"
+def put_repository_catalog_data(
+    self,
+    *,
+    repositoryName: str,
+    catalogData: RepositoryCatalogDataInputTypeDef,  # (1)
+    registryId: str = ...,
+) -> PutRepositoryCatalogDataResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutRepositoryCatalogDataRequestRequestTypeDef](./type_defs.md#putrepositorycatalogdatarequestrequesttypedef).
+1. See [:material-code-braces: RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef) 
+2. See [:material-code-braces: PutRepositoryCatalogDataResponseTypeDef](./type_defs.md#putrepositorycatalogdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `catalogData`:
-  [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
-  *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRepositoryCatalogDataRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "catalogData": ...,
+}
 
-Returns
-[PutRepositoryCatalogDataResponseTypeDef](./type_defs.md#putrepositorycatalogdataresponsetypedef).
+parent.put_repository_catalog_data(**kwargs)
+```
 
-<a id="set\_repository\_policy"></a>
+1. See [:material-code-braces: PutRepositoryCatalogDataRequestRequestTypeDef](./type_defs.md#putrepositorycatalogdatarequestrequesttypedef) 
 
-### set_repository_policy
+### set\_repository\_policy
 
-Applies a repository policy to the specified public repository to control
-access permissions.
+Applies a repository policy to the specified public repository to control access
+permissions.
 
-Type annotations for `boto3.client("ecr-public").set_repository_policy` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").set_repository_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.set_repository_policy)
 
-Boto3 documentation:
-[ECRPublic.Client.set_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.set_repository_policy)
+```python title="Method definition"
+def set_repository_policy(
+    self,
+    *,
+    repositoryName: str,
+    policyText: str,
+    registryId: str = ...,
+    force: bool = ...,
+) -> SetRepositoryPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetRepositoryPolicyRequestRequestTypeDef](./type_defs.md#setrepositorypolicyrequestrequesttypedef).
+1. See [:material-code-braces: SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `policyText`: `str` *(required)*
-- `registryId`: `str`
-- `force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SetRepositoryPolicyRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "policyText": ...,
+}
 
-Returns
-[SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef).
+parent.set_repository_policy(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SetRepositoryPolicyRequestRequestTypeDef](./type_defs.md#setrepositorypolicyrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("ecr-public").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.tag_resource)
 
-Boto3 documentation:
-[ECRPublic.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("ecr-public").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.untag_resource)
 
-Boto3 documentation:
-[ECRPublic.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="upload\_layer\_part"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### upload_layer_part
+### upload\_layer\_part
 
 Uploads an image layer part to Amazon ECR.
 
-Type annotations for `boto3.client("ecr-public").upload_layer_part` method.
+Type annotations and code completion for `#!python boto3.client("ecr-public").upload_layer_part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.upload_layer_part)
 
-Boto3 documentation:
-[ECRPublic.Client.upload_layer_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.upload_layer_part)
+```python title="Method definition"
+def upload_layer_part(
+    self,
+    *,
+    repositoryName: str,
+    uploadId: str,
+    partFirstByte: int,
+    partLastByte: int,
+    layerPartBlob: Union[bytes, IO[bytes], StreamingBody],
+    registryId: str = ...,
+) -> UploadLayerPartResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UploadLayerPartRequestRequestTypeDef](./type_defs.md#uploadlayerpartrequestrequesttypedef).
+1. See [:material-code-braces: UploadLayerPartResponseTypeDef](./type_defs.md#uploadlayerpartresponsetypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `uploadId`: `str` *(required)*
-- `partFirstByte`: `int` *(required)*
-- `partLastByte`: `int` *(required)*
-- `layerPartBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `registryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UploadLayerPartRequestRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "uploadId": ...,
+    "partFirstByte": ...,
+    "partLastByte": ...,
+    "layerPartBlob": ...,
+}
 
-Returns
-[UploadLayerPartResponseTypeDef](./type_defs.md#uploadlayerpartresponsetypedef).
+parent.upload_layer_part(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UploadLayerPartRequestRequestTypeDef](./type_defs.md#uploadlayerpartrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("ecr-public").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_image_tags")` ->
-  [DescribeImageTagsPaginator](./paginators.md#describeimagetagspaginator)
-- `client.get_paginator("describe_images")` ->
-  [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
-- `client.get_paginator("describe_registries")` ->
-  [DescribeRegistriesPaginator](./paginators.md#describeregistriespaginator)
-- `client.get_paginator("describe_repositories")` ->
-  [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
+- `client.get_paginator("describe_image_tags")` -> [DescribeImageTagsPaginator](./paginators.md#describeimagetagspaginator)
+- `client.get_paginator("describe_images")` -> [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+- `client.get_paginator("describe_registries")` -> [DescribeRegistriesPaginator](./paginators.md#describeregistriespaginator)
+- `client.get_paginator("describe_repositories")` -> [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
+
+
+

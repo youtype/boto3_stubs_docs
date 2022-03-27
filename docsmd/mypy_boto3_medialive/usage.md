@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-medialive-module"></a>
-
-# Examples for boto3 MediaLive module
+# Examples
 
 > [Index](../README.md) > [MediaLive](./README.md) > Examples
 
-- [Examples for boto3 MediaLive module](#examples-for-boto3-medialive-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+    type annotations stubs module [mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[medialive]` package installed.
 
-Write your `MediaLive` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `MediaLive` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MediaLiveClient
-# and provides type checking and code completion
-client = session.client("medialive")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_input_device_transfer()
 
-# paginator has type DescribeSchedulePaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_schedule")
-for item in paginator.paginate(...):
-    # item has type DescribeScheduleResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type ChannelCreatedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("channel_created")
-waiter.wait()
-```
+    client = session.client("medialive")  # (1)
+    result = client.batch_delete()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [MediaLiveClient](./client.md)
+    2. result: [:material-code-braces: BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("medialive")  # (1)
+
+    paginator = client.get_paginator("describe_schedule")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MediaLiveClient](./client.md)
+    2. paginator: [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
+    3. item: [:material-code-braces: DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("medialive")  # (1)
+
+    waiter = client.get_waiter("channel_created")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [MediaLiveClient](./client.md)
+    2. waiter: [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[medialive]` or a standalone `mypy_boto3_medialive`
-package, you have to explicitly specify `client: MediaLiveClient` type
-annotation.
+With `boto3-stubs-lite[medialive]`
+or a standalone `mypy_boto3_medialive` package, you have to explicitly specify `client: MediaLiveClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_medialive.client import MediaLiveClient
-from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
-from mypy_boto3_medialive.waiter import ChannelCreatedWaiter
-from mypy_boto3_medialive.literals import PaginatorName
-from mypy_boto3_medialive.literals import WaiterName
-from mypy_boto3_medialive.type_defs import Dict[str, Any]
-from mypy_boto3_medialive.type_defs import DescribeScheduleResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MediaLiveClient = session.client("medialive")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.accept_input_device_transfer()
+    from mypy_boto3_medialive.client import MediaLiveClient
+    from mypy_boto3_medialive.type_defs import BatchDeleteResponseTypeDef
+    from mypy_boto3_medialive.type_defs import BatchDeleteRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_schedule"
-paginator: DescribeSchedulePaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeScheduleResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "channel_created"
-waiter: ChannelCreatedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: MediaLiveClient = session.client("medialive")
+
+    kwargs: BatchDeleteRequestRequestTypeDef = {...}
+    result: BatchDeleteResponseTypeDef = client.batch_delete(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_medialive.client import MediaLiveClient
+    from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
+    from mypy_boto3_medialive.type_defs import DescribeScheduleResponseTypeDef
+
+
+    session = Session()
+    client: MediaLiveClient = session.client("medialive")
+
+    paginator: DescribeSchedulePaginator = client.get_paginator("describe_schedule")
+    for item in paginator.paginate(...):
+        item: DescribeScheduleResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_medialive.client import MediaLiveClient
+    from mypy_boto3_medialive.waiter import ChannelCreatedWaiter
+
+    session = Session()
+    client: MediaLiveClient = session.client("medialive")
+
+    waiter: ChannelCreatedWaiter = client.get_waiter("channel_created")
+    waiter.wait()
+    ```
+
+

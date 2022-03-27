@@ -1,5277 +1,6425 @@
-<a id="typed-dictionaries-for-boto3-cloudfront-module"></a>
-
-# Typed dictionaries for boto3 CloudFront module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudFront](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module
-[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudFront module](#typed-dictionaries-for-boto3-cloudfront-module)
-  - [ActiveTrustedKeyGroupsTypeDef](#activetrustedkeygroupstypedef)
-  - [ActiveTrustedSignersTypeDef](#activetrustedsignerstypedef)
-  - [AliasICPRecordalTypeDef](#aliasicprecordaltypedef)
-  - [AliasesTypeDef](#aliasestypedef)
-  - [AllowedMethodsTypeDef](#allowedmethodstypedef)
-  - [AssociateAliasRequestRequestTypeDef](#associatealiasrequestrequesttypedef)
-  - [CacheBehaviorTypeDef](#cachebehaviortypedef)
-  - [CacheBehaviorsTypeDef](#cachebehaviorstypedef)
-  - [CachePolicyConfigTypeDef](#cachepolicyconfigtypedef)
-  - [CachePolicyCookiesConfigTypeDef](#cachepolicycookiesconfigtypedef)
-  - [CachePolicyHeadersConfigTypeDef](#cachepolicyheadersconfigtypedef)
-  - [CachePolicyListTypeDef](#cachepolicylisttypedef)
-  - [CachePolicyQueryStringsConfigTypeDef](#cachepolicyquerystringsconfigtypedef)
-  - [CachePolicySummaryTypeDef](#cachepolicysummarytypedef)
-  - [CachePolicyTypeDef](#cachepolicytypedef)
-  - [CachedMethodsTypeDef](#cachedmethodstypedef)
-  - [CloudFrontOriginAccessIdentityConfigTypeDef](#cloudfrontoriginaccessidentityconfigtypedef)
-  - [CloudFrontOriginAccessIdentityListTypeDef](#cloudfrontoriginaccessidentitylisttypedef)
-  - [CloudFrontOriginAccessIdentitySummaryTypeDef](#cloudfrontoriginaccessidentitysummarytypedef)
-  - [CloudFrontOriginAccessIdentityTypeDef](#cloudfrontoriginaccessidentitytypedef)
-  - [ConflictingAliasTypeDef](#conflictingaliastypedef)
-  - [ConflictingAliasesListTypeDef](#conflictingaliaseslisttypedef)
-  - [ContentTypeProfileConfigTypeDef](#contenttypeprofileconfigtypedef)
-  - [ContentTypeProfileTypeDef](#contenttypeprofiletypedef)
-  - [ContentTypeProfilesTypeDef](#contenttypeprofilestypedef)
-  - [CookieNamesTypeDef](#cookienamestypedef)
-  - [CookiePreferenceTypeDef](#cookiepreferencetypedef)
-  - [CreateCachePolicyRequestRequestTypeDef](#createcachepolicyrequestrequesttypedef)
-  - [CreateCachePolicyResultTypeDef](#createcachepolicyresulttypedef)
-  - [CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef](#createcloudfrontoriginaccessidentityrequestrequesttypedef)
-  - [CreateCloudFrontOriginAccessIdentityResultTypeDef](#createcloudfrontoriginaccessidentityresulttypedef)
-  - [CreateDistributionRequestRequestTypeDef](#createdistributionrequestrequesttypedef)
-  - [CreateDistributionResultTypeDef](#createdistributionresulttypedef)
-  - [CreateDistributionWithTagsRequestRequestTypeDef](#createdistributionwithtagsrequestrequesttypedef)
-  - [CreateDistributionWithTagsResultTypeDef](#createdistributionwithtagsresulttypedef)
-  - [CreateFieldLevelEncryptionConfigRequestRequestTypeDef](#createfieldlevelencryptionconfigrequestrequesttypedef)
-  - [CreateFieldLevelEncryptionConfigResultTypeDef](#createfieldlevelencryptionconfigresulttypedef)
-  - [CreateFieldLevelEncryptionProfileRequestRequestTypeDef](#createfieldlevelencryptionprofilerequestrequesttypedef)
-  - [CreateFieldLevelEncryptionProfileResultTypeDef](#createfieldlevelencryptionprofileresulttypedef)
-  - [CreateFunctionRequestRequestTypeDef](#createfunctionrequestrequesttypedef)
-  - [CreateFunctionResultTypeDef](#createfunctionresulttypedef)
-  - [CreateInvalidationRequestRequestTypeDef](#createinvalidationrequestrequesttypedef)
-  - [CreateInvalidationResultTypeDef](#createinvalidationresulttypedef)
-  - [CreateKeyGroupRequestRequestTypeDef](#createkeygrouprequestrequesttypedef)
-  - [CreateKeyGroupResultTypeDef](#createkeygroupresulttypedef)
-  - [CreateMonitoringSubscriptionRequestRequestTypeDef](#createmonitoringsubscriptionrequestrequesttypedef)
-  - [CreateMonitoringSubscriptionResultTypeDef](#createmonitoringsubscriptionresulttypedef)
-  - [CreateOriginRequestPolicyRequestRequestTypeDef](#createoriginrequestpolicyrequestrequesttypedef)
-  - [CreateOriginRequestPolicyResultTypeDef](#createoriginrequestpolicyresulttypedef)
-  - [CreatePublicKeyRequestRequestTypeDef](#createpublickeyrequestrequesttypedef)
-  - [CreatePublicKeyResultTypeDef](#createpublickeyresulttypedef)
-  - [CreateRealtimeLogConfigRequestRequestTypeDef](#createrealtimelogconfigrequestrequesttypedef)
-  - [CreateRealtimeLogConfigResultTypeDef](#createrealtimelogconfigresulttypedef)
-  - [CreateResponseHeadersPolicyRequestRequestTypeDef](#createresponseheaderspolicyrequestrequesttypedef)
-  - [CreateResponseHeadersPolicyResultTypeDef](#createresponseheaderspolicyresulttypedef)
-  - [CreateStreamingDistributionRequestRequestTypeDef](#createstreamingdistributionrequestrequesttypedef)
-  - [CreateStreamingDistributionResultTypeDef](#createstreamingdistributionresulttypedef)
-  - [CreateStreamingDistributionWithTagsRequestRequestTypeDef](#createstreamingdistributionwithtagsrequestrequesttypedef)
-  - [CreateStreamingDistributionWithTagsResultTypeDef](#createstreamingdistributionwithtagsresulttypedef)
-  - [CustomErrorResponseTypeDef](#customerrorresponsetypedef)
-  - [CustomErrorResponsesTypeDef](#customerrorresponsestypedef)
-  - [CustomHeadersTypeDef](#customheaderstypedef)
-  - [CustomOriginConfigTypeDef](#customoriginconfigtypedef)
-  - [DefaultCacheBehaviorTypeDef](#defaultcachebehaviortypedef)
-  - [DeleteCachePolicyRequestRequestTypeDef](#deletecachepolicyrequestrequesttypedef)
-  - [DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef](#deletecloudfrontoriginaccessidentityrequestrequesttypedef)
-  - [DeleteDistributionRequestRequestTypeDef](#deletedistributionrequestrequesttypedef)
-  - [DeleteFieldLevelEncryptionConfigRequestRequestTypeDef](#deletefieldlevelencryptionconfigrequestrequesttypedef)
-  - [DeleteFieldLevelEncryptionProfileRequestRequestTypeDef](#deletefieldlevelencryptionprofilerequestrequesttypedef)
-  - [DeleteFunctionRequestRequestTypeDef](#deletefunctionrequestrequesttypedef)
-  - [DeleteKeyGroupRequestRequestTypeDef](#deletekeygrouprequestrequesttypedef)
-  - [DeleteMonitoringSubscriptionRequestRequestTypeDef](#deletemonitoringsubscriptionrequestrequesttypedef)
-  - [DeleteOriginRequestPolicyRequestRequestTypeDef](#deleteoriginrequestpolicyrequestrequesttypedef)
-  - [DeletePublicKeyRequestRequestTypeDef](#deletepublickeyrequestrequesttypedef)
-  - [DeleteRealtimeLogConfigRequestRequestTypeDef](#deleterealtimelogconfigrequestrequesttypedef)
-  - [DeleteResponseHeadersPolicyRequestRequestTypeDef](#deleteresponseheaderspolicyrequestrequesttypedef)
-  - [DeleteStreamingDistributionRequestRequestTypeDef](#deletestreamingdistributionrequestrequesttypedef)
-  - [DescribeFunctionRequestRequestTypeDef](#describefunctionrequestrequesttypedef)
-  - [DescribeFunctionResultTypeDef](#describefunctionresulttypedef)
-  - [DistributionConfigTypeDef](#distributionconfigtypedef)
-  - [DistributionConfigWithTagsTypeDef](#distributionconfigwithtagstypedef)
-  - [DistributionIdListTypeDef](#distributionidlisttypedef)
-  - [DistributionListTypeDef](#distributionlisttypedef)
-  - [DistributionSummaryTypeDef](#distributionsummarytypedef)
-  - [DistributionTypeDef](#distributiontypedef)
-  - [EncryptionEntitiesTypeDef](#encryptionentitiestypedef)
-  - [EncryptionEntityTypeDef](#encryptionentitytypedef)
-  - [EndPointTypeDef](#endpointtypedef)
-  - [FieldLevelEncryptionConfigTypeDef](#fieldlevelencryptionconfigtypedef)
-  - [FieldLevelEncryptionListTypeDef](#fieldlevelencryptionlisttypedef)
-  - [FieldLevelEncryptionProfileConfigTypeDef](#fieldlevelencryptionprofileconfigtypedef)
-  - [FieldLevelEncryptionProfileListTypeDef](#fieldlevelencryptionprofilelisttypedef)
-  - [FieldLevelEncryptionProfileSummaryTypeDef](#fieldlevelencryptionprofilesummarytypedef)
-  - [FieldLevelEncryptionProfileTypeDef](#fieldlevelencryptionprofiletypedef)
-  - [FieldLevelEncryptionSummaryTypeDef](#fieldlevelencryptionsummarytypedef)
-  - [FieldLevelEncryptionTypeDef](#fieldlevelencryptiontypedef)
-  - [FieldPatternsTypeDef](#fieldpatternstypedef)
-  - [ForwardedValuesTypeDef](#forwardedvaluestypedef)
-  - [FunctionAssociationTypeDef](#functionassociationtypedef)
-  - [FunctionAssociationsTypeDef](#functionassociationstypedef)
-  - [FunctionConfigTypeDef](#functionconfigtypedef)
-  - [FunctionListTypeDef](#functionlisttypedef)
-  - [FunctionMetadataTypeDef](#functionmetadatatypedef)
-  - [FunctionSummaryTypeDef](#functionsummarytypedef)
-  - [GeoRestrictionTypeDef](#georestrictiontypedef)
-  - [GetCachePolicyConfigRequestRequestTypeDef](#getcachepolicyconfigrequestrequesttypedef)
-  - [GetCachePolicyConfigResultTypeDef](#getcachepolicyconfigresulttypedef)
-  - [GetCachePolicyRequestRequestTypeDef](#getcachepolicyrequestrequesttypedef)
-  - [GetCachePolicyResultTypeDef](#getcachepolicyresulttypedef)
-  - [GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef](#getcloudfrontoriginaccessidentityconfigrequestrequesttypedef)
-  - [GetCloudFrontOriginAccessIdentityConfigResultTypeDef](#getcloudfrontoriginaccessidentityconfigresulttypedef)
-  - [GetCloudFrontOriginAccessIdentityRequestRequestTypeDef](#getcloudfrontoriginaccessidentityrequestrequesttypedef)
-  - [GetCloudFrontOriginAccessIdentityResultTypeDef](#getcloudfrontoriginaccessidentityresulttypedef)
-  - [GetDistributionConfigRequestRequestTypeDef](#getdistributionconfigrequestrequesttypedef)
-  - [GetDistributionConfigResultTypeDef](#getdistributionconfigresulttypedef)
-  - [GetDistributionRequestRequestTypeDef](#getdistributionrequestrequesttypedef)
-  - [GetDistributionResultTypeDef](#getdistributionresulttypedef)
-  - [GetFieldLevelEncryptionConfigRequestRequestTypeDef](#getfieldlevelencryptionconfigrequestrequesttypedef)
-  - [GetFieldLevelEncryptionConfigResultTypeDef](#getfieldlevelencryptionconfigresulttypedef)
-  - [GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef](#getfieldlevelencryptionprofileconfigrequestrequesttypedef)
-  - [GetFieldLevelEncryptionProfileConfigResultTypeDef](#getfieldlevelencryptionprofileconfigresulttypedef)
-  - [GetFieldLevelEncryptionProfileRequestRequestTypeDef](#getfieldlevelencryptionprofilerequestrequesttypedef)
-  - [GetFieldLevelEncryptionProfileResultTypeDef](#getfieldlevelencryptionprofileresulttypedef)
-  - [GetFieldLevelEncryptionRequestRequestTypeDef](#getfieldlevelencryptionrequestrequesttypedef)
-  - [GetFieldLevelEncryptionResultTypeDef](#getfieldlevelencryptionresulttypedef)
-  - [GetFunctionRequestRequestTypeDef](#getfunctionrequestrequesttypedef)
-  - [GetFunctionResultTypeDef](#getfunctionresulttypedef)
-  - [GetInvalidationRequestRequestTypeDef](#getinvalidationrequestrequesttypedef)
-  - [GetInvalidationResultTypeDef](#getinvalidationresulttypedef)
-  - [GetKeyGroupConfigRequestRequestTypeDef](#getkeygroupconfigrequestrequesttypedef)
-  - [GetKeyGroupConfigResultTypeDef](#getkeygroupconfigresulttypedef)
-  - [GetKeyGroupRequestRequestTypeDef](#getkeygrouprequestrequesttypedef)
-  - [GetKeyGroupResultTypeDef](#getkeygroupresulttypedef)
-  - [GetMonitoringSubscriptionRequestRequestTypeDef](#getmonitoringsubscriptionrequestrequesttypedef)
-  - [GetMonitoringSubscriptionResultTypeDef](#getmonitoringsubscriptionresulttypedef)
-  - [GetOriginRequestPolicyConfigRequestRequestTypeDef](#getoriginrequestpolicyconfigrequestrequesttypedef)
-  - [GetOriginRequestPolicyConfigResultTypeDef](#getoriginrequestpolicyconfigresulttypedef)
-  - [GetOriginRequestPolicyRequestRequestTypeDef](#getoriginrequestpolicyrequestrequesttypedef)
-  - [GetOriginRequestPolicyResultTypeDef](#getoriginrequestpolicyresulttypedef)
-  - [GetPublicKeyConfigRequestRequestTypeDef](#getpublickeyconfigrequestrequesttypedef)
-  - [GetPublicKeyConfigResultTypeDef](#getpublickeyconfigresulttypedef)
-  - [GetPublicKeyRequestRequestTypeDef](#getpublickeyrequestrequesttypedef)
-  - [GetPublicKeyResultTypeDef](#getpublickeyresulttypedef)
-  - [GetRealtimeLogConfigRequestRequestTypeDef](#getrealtimelogconfigrequestrequesttypedef)
-  - [GetRealtimeLogConfigResultTypeDef](#getrealtimelogconfigresulttypedef)
-  - [GetResponseHeadersPolicyConfigRequestRequestTypeDef](#getresponseheaderspolicyconfigrequestrequesttypedef)
-  - [GetResponseHeadersPolicyConfigResultTypeDef](#getresponseheaderspolicyconfigresulttypedef)
-  - [GetResponseHeadersPolicyRequestRequestTypeDef](#getresponseheaderspolicyrequestrequesttypedef)
-  - [GetResponseHeadersPolicyResultTypeDef](#getresponseheaderspolicyresulttypedef)
-  - [GetStreamingDistributionConfigRequestRequestTypeDef](#getstreamingdistributionconfigrequestrequesttypedef)
-  - [GetStreamingDistributionConfigResultTypeDef](#getstreamingdistributionconfigresulttypedef)
-  - [GetStreamingDistributionRequestRequestTypeDef](#getstreamingdistributionrequestrequesttypedef)
-  - [GetStreamingDistributionResultTypeDef](#getstreamingdistributionresulttypedef)
-  - [HeadersTypeDef](#headerstypedef)
-  - [InvalidationBatchTypeDef](#invalidationbatchtypedef)
-  - [InvalidationListTypeDef](#invalidationlisttypedef)
-  - [InvalidationSummaryTypeDef](#invalidationsummarytypedef)
-  - [InvalidationTypeDef](#invalidationtypedef)
-  - [KGKeyPairIdsTypeDef](#kgkeypairidstypedef)
-  - [KeyGroupConfigTypeDef](#keygroupconfigtypedef)
-  - [KeyGroupListTypeDef](#keygrouplisttypedef)
-  - [KeyGroupSummaryTypeDef](#keygroupsummarytypedef)
-  - [KeyGroupTypeDef](#keygrouptypedef)
-  - [KeyPairIdsTypeDef](#keypairidstypedef)
-  - [KinesisStreamConfigTypeDef](#kinesisstreamconfigtypedef)
-  - [LambdaFunctionAssociationTypeDef](#lambdafunctionassociationtypedef)
-  - [LambdaFunctionAssociationsTypeDef](#lambdafunctionassociationstypedef)
-  - [ListCachePoliciesRequestRequestTypeDef](#listcachepoliciesrequestrequesttypedef)
-  - [ListCachePoliciesResultTypeDef](#listcachepoliciesresulttypedef)
-  - [ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef](#listcloudfrontoriginaccessidentitiesrequestrequesttypedef)
-  - [ListCloudFrontOriginAccessIdentitiesResultTypeDef](#listcloudfrontoriginaccessidentitiesresulttypedef)
-  - [ListConflictingAliasesRequestRequestTypeDef](#listconflictingaliasesrequestrequesttypedef)
-  - [ListConflictingAliasesResultTypeDef](#listconflictingaliasesresulttypedef)
-  - [ListDistributionsByCachePolicyIdRequestRequestTypeDef](#listdistributionsbycachepolicyidrequestrequesttypedef)
-  - [ListDistributionsByCachePolicyIdResultTypeDef](#listdistributionsbycachepolicyidresulttypedef)
-  - [ListDistributionsByKeyGroupRequestRequestTypeDef](#listdistributionsbykeygrouprequestrequesttypedef)
-  - [ListDistributionsByKeyGroupResultTypeDef](#listdistributionsbykeygroupresulttypedef)
-  - [ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef](#listdistributionsbyoriginrequestpolicyidrequestrequesttypedef)
-  - [ListDistributionsByOriginRequestPolicyIdResultTypeDef](#listdistributionsbyoriginrequestpolicyidresulttypedef)
-  - [ListDistributionsByRealtimeLogConfigRequestRequestTypeDef](#listdistributionsbyrealtimelogconfigrequestrequesttypedef)
-  - [ListDistributionsByRealtimeLogConfigResultTypeDef](#listdistributionsbyrealtimelogconfigresulttypedef)
-  - [ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef](#listdistributionsbyresponseheaderspolicyidrequestrequesttypedef)
-  - [ListDistributionsByResponseHeadersPolicyIdResultTypeDef](#listdistributionsbyresponseheaderspolicyidresulttypedef)
-  - [ListDistributionsByWebACLIdRequestRequestTypeDef](#listdistributionsbywebaclidrequestrequesttypedef)
-  - [ListDistributionsByWebACLIdResultTypeDef](#listdistributionsbywebaclidresulttypedef)
-  - [ListDistributionsRequestRequestTypeDef](#listdistributionsrequestrequesttypedef)
-  - [ListDistributionsResultTypeDef](#listdistributionsresulttypedef)
-  - [ListFieldLevelEncryptionConfigsRequestRequestTypeDef](#listfieldlevelencryptionconfigsrequestrequesttypedef)
-  - [ListFieldLevelEncryptionConfigsResultTypeDef](#listfieldlevelencryptionconfigsresulttypedef)
-  - [ListFieldLevelEncryptionProfilesRequestRequestTypeDef](#listfieldlevelencryptionprofilesrequestrequesttypedef)
-  - [ListFieldLevelEncryptionProfilesResultTypeDef](#listfieldlevelencryptionprofilesresulttypedef)
-  - [ListFunctionsRequestRequestTypeDef](#listfunctionsrequestrequesttypedef)
-  - [ListFunctionsResultTypeDef](#listfunctionsresulttypedef)
-  - [ListInvalidationsRequestRequestTypeDef](#listinvalidationsrequestrequesttypedef)
-  - [ListInvalidationsResultTypeDef](#listinvalidationsresulttypedef)
-  - [ListKeyGroupsRequestRequestTypeDef](#listkeygroupsrequestrequesttypedef)
-  - [ListKeyGroupsResultTypeDef](#listkeygroupsresulttypedef)
-  - [ListOriginRequestPoliciesRequestRequestTypeDef](#listoriginrequestpoliciesrequestrequesttypedef)
-  - [ListOriginRequestPoliciesResultTypeDef](#listoriginrequestpoliciesresulttypedef)
-  - [ListPublicKeysRequestRequestTypeDef](#listpublickeysrequestrequesttypedef)
-  - [ListPublicKeysResultTypeDef](#listpublickeysresulttypedef)
-  - [ListRealtimeLogConfigsRequestRequestTypeDef](#listrealtimelogconfigsrequestrequesttypedef)
-  - [ListRealtimeLogConfigsResultTypeDef](#listrealtimelogconfigsresulttypedef)
-  - [ListResponseHeadersPoliciesRequestRequestTypeDef](#listresponseheaderspoliciesrequestrequesttypedef)
-  - [ListResponseHeadersPoliciesResultTypeDef](#listresponseheaderspoliciesresulttypedef)
-  - [ListStreamingDistributionsRequestRequestTypeDef](#liststreamingdistributionsrequestrequesttypedef)
-  - [ListStreamingDistributionsResultTypeDef](#liststreamingdistributionsresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [LoggingConfigTypeDef](#loggingconfigtypedef)
-  - [MonitoringSubscriptionTypeDef](#monitoringsubscriptiontypedef)
-  - [OriginCustomHeaderTypeDef](#origincustomheadertypedef)
-  - [OriginGroupFailoverCriteriaTypeDef](#origingroupfailovercriteriatypedef)
-  - [OriginGroupMemberTypeDef](#origingroupmembertypedef)
-  - [OriginGroupMembersTypeDef](#origingroupmemberstypedef)
-  - [OriginGroupTypeDef](#origingrouptypedef)
-  - [OriginGroupsTypeDef](#origingroupstypedef)
-  - [OriginRequestPolicyConfigTypeDef](#originrequestpolicyconfigtypedef)
-  - [OriginRequestPolicyCookiesConfigTypeDef](#originrequestpolicycookiesconfigtypedef)
-  - [OriginRequestPolicyHeadersConfigTypeDef](#originrequestpolicyheadersconfigtypedef)
-  - [OriginRequestPolicyListTypeDef](#originrequestpolicylisttypedef)
-  - [OriginRequestPolicyQueryStringsConfigTypeDef](#originrequestpolicyquerystringsconfigtypedef)
-  - [OriginRequestPolicySummaryTypeDef](#originrequestpolicysummarytypedef)
-  - [OriginRequestPolicyTypeDef](#originrequestpolicytypedef)
-  - [OriginShieldTypeDef](#originshieldtypedef)
-  - [OriginSslProtocolsTypeDef](#originsslprotocolstypedef)
-  - [OriginTypeDef](#origintypedef)
-  - [OriginsTypeDef](#originstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParametersInCacheKeyAndForwardedToOriginTypeDef](#parametersincachekeyandforwardedtoorigintypedef)
-  - [PathsTypeDef](#pathstypedef)
-  - [PublicKeyConfigTypeDef](#publickeyconfigtypedef)
-  - [PublicKeyListTypeDef](#publickeylisttypedef)
-  - [PublicKeySummaryTypeDef](#publickeysummarytypedef)
-  - [PublicKeyTypeDef](#publickeytypedef)
-  - [PublishFunctionRequestRequestTypeDef](#publishfunctionrequestrequesttypedef)
-  - [PublishFunctionResultTypeDef](#publishfunctionresulttypedef)
-  - [QueryArgProfileConfigTypeDef](#queryargprofileconfigtypedef)
-  - [QueryArgProfileTypeDef](#queryargprofiletypedef)
-  - [QueryArgProfilesTypeDef](#queryargprofilestypedef)
-  - [QueryStringCacheKeysTypeDef](#querystringcachekeystypedef)
-  - [QueryStringNamesTypeDef](#querystringnamestypedef)
-  - [RealtimeLogConfigTypeDef](#realtimelogconfigtypedef)
-  - [RealtimeLogConfigsTypeDef](#realtimelogconfigstypedef)
-  - [RealtimeMetricsSubscriptionConfigTypeDef](#realtimemetricssubscriptionconfigtypedef)
-  - [ResponseHeadersPolicyAccessControlAllowHeadersTypeDef](#responseheaderspolicyaccesscontrolallowheaderstypedef)
-  - [ResponseHeadersPolicyAccessControlAllowMethodsTypeDef](#responseheaderspolicyaccesscontrolallowmethodstypedef)
-  - [ResponseHeadersPolicyAccessControlAllowOriginsTypeDef](#responseheaderspolicyaccesscontrolalloworiginstypedef)
-  - [ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](#responseheaderspolicyaccesscontrolexposeheaderstypedef)
-  - [ResponseHeadersPolicyConfigTypeDef](#responseheaderspolicyconfigtypedef)
-  - [ResponseHeadersPolicyContentSecurityPolicyTypeDef](#responseheaderspolicycontentsecuritypolicytypedef)
-  - [ResponseHeadersPolicyContentTypeOptionsTypeDef](#responseheaderspolicycontenttypeoptionstypedef)
-  - [ResponseHeadersPolicyCorsConfigTypeDef](#responseheaderspolicycorsconfigtypedef)
-  - [ResponseHeadersPolicyCustomHeaderTypeDef](#responseheaderspolicycustomheadertypedef)
-  - [ResponseHeadersPolicyCustomHeadersConfigTypeDef](#responseheaderspolicycustomheadersconfigtypedef)
-  - [ResponseHeadersPolicyFrameOptionsTypeDef](#responseheaderspolicyframeoptionstypedef)
-  - [ResponseHeadersPolicyListTypeDef](#responseheaderspolicylisttypedef)
-  - [ResponseHeadersPolicyReferrerPolicyTypeDef](#responseheaderspolicyreferrerpolicytypedef)
-  - [ResponseHeadersPolicySecurityHeadersConfigTypeDef](#responseheaderspolicysecurityheadersconfigtypedef)
-  - [ResponseHeadersPolicyStrictTransportSecurityTypeDef](#responseheaderspolicystricttransportsecuritytypedef)
-  - [ResponseHeadersPolicySummaryTypeDef](#responseheaderspolicysummarytypedef)
-  - [ResponseHeadersPolicyTypeDef](#responseheaderspolicytypedef)
-  - [ResponseHeadersPolicyXSSProtectionTypeDef](#responseheaderspolicyxssprotectiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestrictionsTypeDef](#restrictionstypedef)
-  - [S3OriginConfigTypeDef](#s3originconfigtypedef)
-  - [S3OriginTypeDef](#s3origintypedef)
-  - [SignerTypeDef](#signertypedef)
-  - [StatusCodesTypeDef](#statuscodestypedef)
-  - [StreamingDistributionConfigTypeDef](#streamingdistributionconfigtypedef)
-  - [StreamingDistributionConfigWithTagsTypeDef](#streamingdistributionconfigwithtagstypedef)
-  - [StreamingDistributionListTypeDef](#streamingdistributionlisttypedef)
-  - [StreamingDistributionSummaryTypeDef](#streamingdistributionsummarytypedef)
-  - [StreamingDistributionTypeDef](#streamingdistributiontypedef)
-  - [StreamingLoggingConfigTypeDef](#streamingloggingconfigtypedef)
-  - [TagKeysTypeDef](#tagkeystypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TagsTypeDef](#tagstypedef)
-  - [TestFunctionRequestRequestTypeDef](#testfunctionrequestrequesttypedef)
-  - [TestFunctionResultTypeDef](#testfunctionresulttypedef)
-  - [TestResultTypeDef](#testresulttypedef)
-  - [TrustedKeyGroupsTypeDef](#trustedkeygroupstypedef)
-  - [TrustedSignersTypeDef](#trustedsignerstypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateCachePolicyRequestRequestTypeDef](#updatecachepolicyrequestrequesttypedef)
-  - [UpdateCachePolicyResultTypeDef](#updatecachepolicyresulttypedef)
-  - [UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef](#updatecloudfrontoriginaccessidentityrequestrequesttypedef)
-  - [UpdateCloudFrontOriginAccessIdentityResultTypeDef](#updatecloudfrontoriginaccessidentityresulttypedef)
-  - [UpdateDistributionRequestRequestTypeDef](#updatedistributionrequestrequesttypedef)
-  - [UpdateDistributionResultTypeDef](#updatedistributionresulttypedef)
-  - [UpdateFieldLevelEncryptionConfigRequestRequestTypeDef](#updatefieldlevelencryptionconfigrequestrequesttypedef)
-  - [UpdateFieldLevelEncryptionConfigResultTypeDef](#updatefieldlevelencryptionconfigresulttypedef)
-  - [UpdateFieldLevelEncryptionProfileRequestRequestTypeDef](#updatefieldlevelencryptionprofilerequestrequesttypedef)
-  - [UpdateFieldLevelEncryptionProfileResultTypeDef](#updatefieldlevelencryptionprofileresulttypedef)
-  - [UpdateFunctionRequestRequestTypeDef](#updatefunctionrequestrequesttypedef)
-  - [UpdateFunctionResultTypeDef](#updatefunctionresulttypedef)
-  - [UpdateKeyGroupRequestRequestTypeDef](#updatekeygrouprequestrequesttypedef)
-  - [UpdateKeyGroupResultTypeDef](#updatekeygroupresulttypedef)
-  - [UpdateOriginRequestPolicyRequestRequestTypeDef](#updateoriginrequestpolicyrequestrequesttypedef)
-  - [UpdateOriginRequestPolicyResultTypeDef](#updateoriginrequestpolicyresulttypedef)
-  - [UpdatePublicKeyRequestRequestTypeDef](#updatepublickeyrequestrequesttypedef)
-  - [UpdatePublicKeyResultTypeDef](#updatepublickeyresulttypedef)
-  - [UpdateRealtimeLogConfigRequestRequestTypeDef](#updaterealtimelogconfigrequestrequesttypedef)
-  - [UpdateRealtimeLogConfigResultTypeDef](#updaterealtimelogconfigresulttypedef)
-  - [UpdateResponseHeadersPolicyRequestRequestTypeDef](#updateresponseheaderspolicyrequestrequesttypedef)
-  - [UpdateResponseHeadersPolicyResultTypeDef](#updateresponseheaderspolicyresulttypedef)
-  - [UpdateStreamingDistributionRequestRequestTypeDef](#updatestreamingdistributionrequestrequesttypedef)
-  - [UpdateStreamingDistributionResultTypeDef](#updatestreamingdistributionresulttypedef)
-  - [ViewerCertificateTypeDef](#viewercertificatetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="activetrustedkeygroupstypedef"></a>
+    Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+    type annotations stubs module [mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ## ActiveTrustedKeyGroupsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef
+
+def get_value() -> ActiveTrustedKeyGroupsTypeDef:
+    return {
+        "Enabled": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActiveTrustedKeyGroupsTypeDef(TypedDict):
+    Enabled: bool,
+    Quantity: int,
+    Items: NotRequired[List[KGKeyPairIdsTypeDef]],  # (1)
+```
 
-- `Enabled`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `List`\[[KGKeyPairIdsTypeDef](./type_defs.md#kgkeypairidstypedef)\]
-
-<a id="activetrustedsignerstypedef"></a>
-
+1. See [:material-code-braces: KGKeyPairIdsTypeDef](./type_defs.md#kgkeypairidstypedef) 
 ## ActiveTrustedSignersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ActiveTrustedSignersTypeDef
+
+def get_value() -> ActiveTrustedSignersTypeDef:
+    return {
+        "Enabled": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActiveTrustedSignersTypeDef(TypedDict):
+    Enabled: bool,
+    Quantity: int,
+    Items: NotRequired[List[SignerTypeDef]],  # (1)
+```
 
-- `Enabled`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `List`\[[SignerTypeDef](./type_defs.md#signertypedef)\]
-
-<a id="aliasicprecordaltypedef"></a>
-
+1. See [:material-code-braces: SignerTypeDef](./type_defs.md#signertypedef) 
 ## AliasICPRecordalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import AliasICPRecordalTypeDef
+
+def get_value() -> AliasICPRecordalTypeDef:
+    return {
+        "CNAME": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AliasICPRecordalTypeDef(TypedDict):
+    CNAME: NotRequired[str],
+    ICPRecordalStatus: NotRequired[ICPRecordalStatusType],  # (1)
+```
 
-- `CNAME`: `str`
-- `ICPRecordalStatus`:
-  [ICPRecordalStatusType](./literals.md#icprecordalstatustype)
-
-<a id="aliasestypedef"></a>
-
+1. See [:material-code-brackets: ICPRecordalStatusType](./literals.md#icprecordalstatustype) 
 ## AliasesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import AliasesTypeDef
+
+def get_value() -> AliasesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="allowedmethodstypedef"></a>
+```python title="Definition"
+class AliasesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## AllowedMethodsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import AllowedMethodsTypeDef
+
+def get_value() -> AllowedMethodsTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AllowedMethodsTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[MethodType],  # (1)
+    CachedMethods: NotRequired[CachedMethodsTypeDef],  # (2)
+```
 
-- `Quantity`: `int`
-- `Items`: `Sequence`\[[MethodType](./literals.md#methodtype)\]
-
-Optional fields:
-
-- `CachedMethods`: [CachedMethodsTypeDef](./type_defs.md#cachedmethodstypedef)
-
-<a id="associatealiasrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MethodType](./literals.md#methodtype) 
+2. See [:material-code-braces: CachedMethodsTypeDef](./type_defs.md#cachedmethodstypedef) 
 ## AssociateAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import AssociateAliasRequestRequestTypeDef
+
+def get_value() -> AssociateAliasRequestRequestTypeDef:
+    return {
+        "TargetDistributionId": ...,
+        "Alias": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetDistributionId`: `str`
-- `Alias`: `str`
-
-<a id="cachebehaviortypedef"></a>
+```python title="Definition"
+class AssociateAliasRequestRequestTypeDef(TypedDict):
+    TargetDistributionId: str,
+    Alias: str,
+```
 
 ## CacheBehaviorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CacheBehaviorTypeDef
+
+def get_value() -> CacheBehaviorTypeDef:
+    return {
+        "PathPattern": ...,
+        "TargetOriginId": ...,
+        "ViewerProtocolPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CacheBehaviorTypeDef(TypedDict):
+    PathPattern: str,
+    TargetOriginId: str,
+    ViewerProtocolPolicy: ViewerProtocolPolicyType,  # (3)
+    TrustedSigners: NotRequired[TrustedSignersTypeDef],  # (1)
+    TrustedKeyGroups: NotRequired[TrustedKeyGroupsTypeDef],  # (2)
+    AllowedMethods: NotRequired[AllowedMethodsTypeDef],  # (4)
+    SmoothStreaming: NotRequired[bool],
+    Compress: NotRequired[bool],
+    LambdaFunctionAssociations: NotRequired[LambdaFunctionAssociationsTypeDef],  # (5)
+    FunctionAssociations: NotRequired[FunctionAssociationsTypeDef],  # (6)
+    FieldLevelEncryptionId: NotRequired[str],
+    RealtimeLogConfigArn: NotRequired[str],
+    CachePolicyId: NotRequired[str],
+    OriginRequestPolicyId: NotRequired[str],
+    ResponseHeadersPolicyId: NotRequired[str],
+    ForwardedValues: NotRequired[ForwardedValuesTypeDef],  # (7)
+    MinTTL: NotRequired[int],
+    DefaultTTL: NotRequired[int],
+    MaxTTL: NotRequired[int],
+```
 
-- `PathPattern`: `str`
-- `TargetOriginId`: `str`
-- `ViewerProtocolPolicy`:
-  [ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype)
-
-Optional fields:
-
-- `TrustedSigners`:
-  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
-- `TrustedKeyGroups`:
-  [TrustedKeyGroupsTypeDef](./type_defs.md#trustedkeygroupstypedef)
-- `AllowedMethods`:
-  [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
-- `SmoothStreaming`: `bool`
-- `Compress`: `bool`
-- `LambdaFunctionAssociations`:
-  [LambdaFunctionAssociationsTypeDef](./type_defs.md#lambdafunctionassociationstypedef)
-- `FunctionAssociations`:
-  [FunctionAssociationsTypeDef](./type_defs.md#functionassociationstypedef)
-- `FieldLevelEncryptionId`: `str`
-- `RealtimeLogConfigArn`: `str`
-- `CachePolicyId`: `str`
-- `OriginRequestPolicyId`: `str`
-- `ResponseHeadersPolicyId`: `str`
-- `ForwardedValues`:
-  [ForwardedValuesTypeDef](./type_defs.md#forwardedvaluestypedef)
-- `MinTTL`: `int`
-- `DefaultTTL`: `int`
-- `MaxTTL`: `int`
-
-<a id="cachebehaviorstypedef"></a>
-
+1. See [:material-code-braces: TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef) 
+2. See [:material-code-braces: TrustedKeyGroupsTypeDef](./type_defs.md#trustedkeygroupstypedef) 
+3. See [:material-code-brackets: ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype) 
+4. See [:material-code-braces: AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef) 
+5. See [:material-code-braces: LambdaFunctionAssociationsTypeDef](./type_defs.md#lambdafunctionassociationstypedef) 
+6. See [:material-code-braces: FunctionAssociationsTypeDef](./type_defs.md#functionassociationstypedef) 
+7. See [:material-code-braces: ForwardedValuesTypeDef](./type_defs.md#forwardedvaluestypedef) 
 ## CacheBehaviorsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CacheBehaviorsTypeDef
+
+def get_value() -> CacheBehaviorsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CacheBehaviorsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[CacheBehaviorTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)\]
-
-<a id="cachepolicyconfigtypedef"></a>
-
+1. See [:material-code-braces: CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef) 
 ## CachePolicyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicyConfigTypeDef
+
+def get_value() -> CachePolicyConfigTypeDef:
+    return {
+        "Name": ...,
+        "MinTTL": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicyConfigTypeDef(TypedDict):
+    Name: str,
+    MinTTL: int,
+    Comment: NotRequired[str],
+    DefaultTTL: NotRequired[int],
+    MaxTTL: NotRequired[int],
+    ParametersInCacheKeyAndForwardedToOrigin: NotRequired[ParametersInCacheKeyAndForwardedToOriginTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `MinTTL`: `int`
-
-Optional fields:
-
-- `Comment`: `str`
-- `DefaultTTL`: `int`
-- `MaxTTL`: `int`
-- `ParametersInCacheKeyAndForwardedToOrigin`:
-  [ParametersInCacheKeyAndForwardedToOriginTypeDef](./type_defs.md#parametersincachekeyandforwardedtoorigintypedef)
-
-<a id="cachepolicycookiesconfigtypedef"></a>
-
+1. See [:material-code-braces: ParametersInCacheKeyAndForwardedToOriginTypeDef](./type_defs.md#parametersincachekeyandforwardedtoorigintypedef) 
 ## CachePolicyCookiesConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicyCookiesConfigTypeDef
+
+def get_value() -> CachePolicyCookiesConfigTypeDef:
+    return {
+        "CookieBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicyCookiesConfigTypeDef(TypedDict):
+    CookieBehavior: CachePolicyCookieBehaviorType,  # (1)
+    Cookies: NotRequired[CookieNamesTypeDef],  # (2)
+```
 
-- `CookieBehavior`:
-  [CachePolicyCookieBehaviorType](./literals.md#cachepolicycookiebehaviortype)
-
-Optional fields:
-
-- `Cookies`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
-
-<a id="cachepolicyheadersconfigtypedef"></a>
-
+1. See [:material-code-brackets: CachePolicyCookieBehaviorType](./literals.md#cachepolicycookiebehaviortype) 
+2. See [:material-code-braces: CookieNamesTypeDef](./type_defs.md#cookienamestypedef) 
 ## CachePolicyHeadersConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicyHeadersConfigTypeDef
+
+def get_value() -> CachePolicyHeadersConfigTypeDef:
+    return {
+        "HeaderBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicyHeadersConfigTypeDef(TypedDict):
+    HeaderBehavior: CachePolicyHeaderBehaviorType,  # (1)
+    Headers: NotRequired[HeadersTypeDef],  # (2)
+```
 
-- `HeaderBehavior`:
-  [CachePolicyHeaderBehaviorType](./literals.md#cachepolicyheaderbehaviortype)
-
-Optional fields:
-
-- `Headers`: [HeadersTypeDef](./type_defs.md#headerstypedef)
-
-<a id="cachepolicylisttypedef"></a>
-
+1. See [:material-code-brackets: CachePolicyHeaderBehaviorType](./literals.md#cachepolicyheaderbehaviortype) 
+2. See [:material-code-braces: HeadersTypeDef](./type_defs.md#headerstypedef) 
 ## CachePolicyListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicyListTypeDef
+
+def get_value() -> CachePolicyListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicyListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[CachePolicySummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[CachePolicySummaryTypeDef](./type_defs.md#cachepolicysummarytypedef)\]
-
-<a id="cachepolicyquerystringsconfigtypedef"></a>
-
+1. See [:material-code-braces: CachePolicySummaryTypeDef](./type_defs.md#cachepolicysummarytypedef) 
 ## CachePolicyQueryStringsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicyQueryStringsConfigTypeDef
+
+def get_value() -> CachePolicyQueryStringsConfigTypeDef:
+    return {
+        "QueryStringBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicyQueryStringsConfigTypeDef(TypedDict):
+    QueryStringBehavior: CachePolicyQueryStringBehaviorType,  # (1)
+    QueryStrings: NotRequired[QueryStringNamesTypeDef],  # (2)
+```
 
-- `QueryStringBehavior`:
-  [CachePolicyQueryStringBehaviorType](./literals.md#cachepolicyquerystringbehaviortype)
-
-Optional fields:
-
-- `QueryStrings`:
-  [QueryStringNamesTypeDef](./type_defs.md#querystringnamestypedef)
-
-<a id="cachepolicysummarytypedef"></a>
-
+1. See [:material-code-brackets: CachePolicyQueryStringBehaviorType](./literals.md#cachepolicyquerystringbehaviortype) 
+2. See [:material-code-braces: QueryStringNamesTypeDef](./type_defs.md#querystringnamestypedef) 
 ## CachePolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicySummaryTypeDef
+
+def get_value() -> CachePolicySummaryTypeDef:
+    return {
+        "Type": ...,
+        "CachePolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicySummaryTypeDef(TypedDict):
+    Type: CachePolicyTypeType,  # (1)
+    CachePolicy: CachePolicyTypeDef,  # (2)
+```
 
-- `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
-- `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
-
-<a id="cachepolicytypedef"></a>
-
+1. See [:material-code-brackets: CachePolicyTypeType](./literals.md#cachepolicytypetype) 
+2. See [:material-code-braces: CachePolicyTypeDef](./type_defs.md#cachepolicytypedef) 
 ## CachePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachePolicyTypeDef
+
+def get_value() -> CachePolicyTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "CachePolicyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachePolicyTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    CachePolicyConfig: CachePolicyConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
-
-<a id="cachedmethodstypedef"></a>
-
+1. See [:material-code-braces: CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef) 
 ## CachedMethodsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CachedMethodsTypeDef
+
+def get_value() -> CachedMethodsTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CachedMethodsTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[MethodType],  # (1)
+```
 
-- `Quantity`: `int`
-- `Items`: `Sequence`\[[MethodType](./literals.md#methodtype)\]
-
-<a id="cloudfrontoriginaccessidentityconfigtypedef"></a>
-
+1. See [:material-code-brackets: MethodType](./literals.md#methodtype) 
 ## CloudFrontOriginAccessIdentityConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CloudFrontOriginAccessIdentityConfigTypeDef
+
+def get_value() -> CloudFrontOriginAccessIdentityConfigTypeDef:
+    return {
+        "CallerReference": ...,
+        "Comment": ...,
+    }
 ```
 
-Required fields:
-
-- `CallerReference`: `str`
-- `Comment`: `str`
-
-<a id="cloudfrontoriginaccessidentitylisttypedef"></a>
+```python title="Definition"
+class CloudFrontOriginAccessIdentityConfigTypeDef(TypedDict):
+    CallerReference: str,
+    Comment: str,
+```
 
 ## CloudFrontOriginAccessIdentityListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CloudFrontOriginAccessIdentityListTypeDef
+
+def get_value() -> CloudFrontOriginAccessIdentityListTypeDef:
+    return {
+        "Marker": ...,
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudFrontOriginAccessIdentityListTypeDef(TypedDict):
+    Marker: str,
+    MaxItems: int,
+    IsTruncated: bool,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[CloudFrontOriginAccessIdentitySummaryTypeDef]],  # (1)
+```
 
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `IsTruncated`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[CloudFrontOriginAccessIdentitySummaryTypeDef](./type_defs.md#cloudfrontoriginaccessidentitysummarytypedef)\]
-
-<a id="cloudfrontoriginaccessidentitysummarytypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentitySummaryTypeDef](./type_defs.md#cloudfrontoriginaccessidentitysummarytypedef) 
 ## CloudFrontOriginAccessIdentitySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CloudFrontOriginAccessIdentitySummaryTypeDef
+
+def get_value() -> CloudFrontOriginAccessIdentitySummaryTypeDef:
+    return {
+        "Id": ...,
+        "S3CanonicalUserId": ...,
+        "Comment": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `S3CanonicalUserId`: `str`
-- `Comment`: `str`
-
-<a id="cloudfrontoriginaccessidentitytypedef"></a>
+```python title="Definition"
+class CloudFrontOriginAccessIdentitySummaryTypeDef(TypedDict):
+    Id: str,
+    S3CanonicalUserId: str,
+    Comment: str,
+```
 
 ## CloudFrontOriginAccessIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CloudFrontOriginAccessIdentityTypeDef
+
+def get_value() -> CloudFrontOriginAccessIdentityTypeDef:
+    return {
+        "Id": ...,
+        "S3CanonicalUserId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudFrontOriginAccessIdentityTypeDef(TypedDict):
+    Id: str,
+    S3CanonicalUserId: str,
+    CloudFrontOriginAccessIdentityConfig: NotRequired[CloudFrontOriginAccessIdentityConfigTypeDef],  # (1)
+```
 
-- `Id`: `str`
-- `S3CanonicalUserId`: `str`
-
-Optional fields:
-
-- `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
-
-<a id="conflictingaliastypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef) 
 ## ConflictingAliasTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ConflictingAliasTypeDef
+
+def get_value() -> ConflictingAliasTypeDef:
+    return {
+        "Alias": ...,
+    }
 ```
 
-Optional fields:
-
-- `Alias`: `str`
-- `DistributionId`: `str`
-- `AccountId`: `str`
-
-<a id="conflictingaliaseslisttypedef"></a>
+```python title="Definition"
+class ConflictingAliasTypeDef(TypedDict):
+    Alias: NotRequired[str],
+    DistributionId: NotRequired[str],
+    AccountId: NotRequired[str],
+```
 
 ## ConflictingAliasesListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ConflictingAliasesListTypeDef
+
+def get_value() -> ConflictingAliasesListTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConflictingAliasesListTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    MaxItems: NotRequired[int],
+    Quantity: NotRequired[int],
+    Items: NotRequired[List[ConflictingAliasTypeDef]],  # (1)
+```
 
-- `NextMarker`: `str`
-- `MaxItems`: `int`
-- `Quantity`: `int`
-- `Items`:
-  `List`\[[ConflictingAliasTypeDef](./type_defs.md#conflictingaliastypedef)\]
-
-<a id="contenttypeprofileconfigtypedef"></a>
-
+1. See [:material-code-braces: ConflictingAliasTypeDef](./type_defs.md#conflictingaliastypedef) 
 ## ContentTypeProfileConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ContentTypeProfileConfigTypeDef
+
+def get_value() -> ContentTypeProfileConfigTypeDef:
+    return {
+        "ForwardWhenContentTypeIsUnknown": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContentTypeProfileConfigTypeDef(TypedDict):
+    ForwardWhenContentTypeIsUnknown: bool,
+    ContentTypeProfiles: NotRequired[ContentTypeProfilesTypeDef],  # (1)
+```
 
-- `ForwardWhenContentTypeIsUnknown`: `bool`
-
-Optional fields:
-
-- `ContentTypeProfiles`:
-  [ContentTypeProfilesTypeDef](./type_defs.md#contenttypeprofilestypedef)
-
-<a id="contenttypeprofiletypedef"></a>
-
+1. See [:material-code-braces: ContentTypeProfilesTypeDef](./type_defs.md#contenttypeprofilestypedef) 
 ## ContentTypeProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ContentTypeProfileTypeDef
+
+def get_value() -> ContentTypeProfileTypeDef:
+    return {
+        "Format": ...,
+        "ContentType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContentTypeProfileTypeDef(TypedDict):
+    Format: FormatType,  # (1)
+    ContentType: str,
+    ProfileId: NotRequired[str],
+```
 
-- `Format`: `Literal['URLEncoded']` (see
-  [FormatType](./literals.md#formattype))
-- `ContentType`: `str`
-
-Optional fields:
-
-- `ProfileId`: `str`
-
-<a id="contenttypeprofilestypedef"></a>
-
+1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 ## ContentTypeProfilesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ContentTypeProfilesTypeDef
+
+def get_value() -> ContentTypeProfilesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContentTypeProfilesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[ContentTypeProfileTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef)\]
-
-<a id="cookienamestypedef"></a>
-
+1. See [:material-code-braces: ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef) 
 ## CookieNamesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CookieNamesTypeDef
+
+def get_value() -> CookieNamesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="cookiepreferencetypedef"></a>
+```python title="Definition"
+class CookieNamesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## CookiePreferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CookiePreferenceTypeDef
+
+def get_value() -> CookiePreferenceTypeDef:
+    return {
+        "Forward": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CookiePreferenceTypeDef(TypedDict):
+    Forward: ItemSelectionType,  # (1)
+    WhitelistedNames: NotRequired[CookieNamesTypeDef],  # (2)
+```
 
-- `Forward`: [ItemSelectionType](./literals.md#itemselectiontype)
-
-Optional fields:
-
-- `WhitelistedNames`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
-
-<a id="createcachepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ItemSelectionType](./literals.md#itemselectiontype) 
+2. See [:material-code-braces: CookieNamesTypeDef](./type_defs.md#cookienamestypedef) 
 ## CreateCachePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateCachePolicyRequestRequestTypeDef
+
+def get_value() -> CreateCachePolicyRequestRequestTypeDef:
+    return {
+        "CachePolicyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCachePolicyRequestRequestTypeDef(TypedDict):
+    CachePolicyConfig: CachePolicyConfigTypeDef,  # (1)
+```
 
-- `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
-
-<a id="createcachepolicyresulttypedef"></a>
-
+1. See [:material-code-braces: CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef) 
 ## CreateCachePolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateCachePolicyResultTypeDef
+
+def get_value() -> CreateCachePolicyResultTypeDef:
+    return {
+        "CachePolicy": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCachePolicyResultTypeDef(TypedDict):
+    CachePolicy: CachePolicyTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcloudfrontoriginaccessidentityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CachePolicyTypeDef](./type_defs.md#cachepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef
+
+def get_value() -> CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentityConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfigTypeDef,  # (1)
+```
 
-- `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
-
-<a id="createcloudfrontoriginaccessidentityresulttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef) 
 ## CreateCloudFrontOriginAccessIdentityResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateCloudFrontOriginAccessIdentityResultTypeDef
+
+def get_value() -> CreateCloudFrontOriginAccessIdentityResultTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentity": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCloudFrontOriginAccessIdentityResultTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentity: CloudFrontOriginAccessIdentityTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CloudFrontOriginAccessIdentity`:
-  [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdistributionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateDistributionRequestRequestTypeDef
+
+def get_value() -> CreateDistributionRequestRequestTypeDef:
+    return {
+        "DistributionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDistributionRequestRequestTypeDef(TypedDict):
+    DistributionConfig: DistributionConfigTypeDef,  # (1)
+```
 
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-
-<a id="createdistributionresulttypedef"></a>
-
+1. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
 ## CreateDistributionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateDistributionResultTypeDef
+
+def get_value() -> CreateDistributionResultTypeDef:
+    return {
+        "Distribution": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDistributionResultTypeDef(TypedDict):
+    Distribution: DistributionTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdistributionwithtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDistributionWithTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateDistributionWithTagsRequestRequestTypeDef
+
+def get_value() -> CreateDistributionWithTagsRequestRequestTypeDef:
+    return {
+        "DistributionConfigWithTags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDistributionWithTagsRequestRequestTypeDef(TypedDict):
+    DistributionConfigWithTags: DistributionConfigWithTagsTypeDef,  # (1)
+```
 
-- `DistributionConfigWithTags`:
-  [DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef)
-
-<a id="createdistributionwithtagsresulttypedef"></a>
-
+1. See [:material-code-braces: DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef) 
 ## CreateDistributionWithTagsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateDistributionWithTagsResultTypeDef
+
+def get_value() -> CreateDistributionWithTagsResultTypeDef:
+    return {
+        "Distribution": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDistributionWithTagsResultTypeDef(TypedDict):
+    Distribution: DistributionTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfieldlevelencryptionconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFieldLevelEncryptionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionConfigRequestRequestTypeDef
+
+def get_value() -> CreateFieldLevelEncryptionConfigRequestRequestTypeDef:
+    return {
+        "FieldLevelEncryptionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFieldLevelEncryptionConfigRequestRequestTypeDef(TypedDict):
+    FieldLevelEncryptionConfig: FieldLevelEncryptionConfigTypeDef,  # (1)
+```
 
-- `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
-
-<a id="createfieldlevelencryptionconfigresulttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef) 
 ## CreateFieldLevelEncryptionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionConfigResultTypeDef
+
+def get_value() -> CreateFieldLevelEncryptionConfigResultTypeDef:
+    return {
+        "FieldLevelEncryption": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFieldLevelEncryptionConfigResultTypeDef(TypedDict):
+    FieldLevelEncryption: FieldLevelEncryptionTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryption`:
-  [FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfieldlevelencryptionprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFieldLevelEncryptionProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionProfileRequestRequestTypeDef
+
+def get_value() -> CreateFieldLevelEncryptionProfileRequestRequestTypeDef:
+    return {
+        "FieldLevelEncryptionProfileConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFieldLevelEncryptionProfileRequestRequestTypeDef(TypedDict):
+    FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfigTypeDef,  # (1)
+```
 
-- `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
-
-<a id="createfieldlevelencryptionprofileresulttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef) 
 ## CreateFieldLevelEncryptionProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionProfileResultTypeDef
+
+def get_value() -> CreateFieldLevelEncryptionProfileResultTypeDef:
+    return {
+        "FieldLevelEncryptionProfile": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFieldLevelEncryptionProfileResultTypeDef(TypedDict):
+    FieldLevelEncryptionProfile: FieldLevelEncryptionProfileTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionProfile`:
-  [FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateFunctionRequestRequestTypeDef
+
+def get_value() -> CreateFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "FunctionConfig": ...,
+        "FunctionCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    FunctionConfig: FunctionConfigTypeDef,  # (1)
+    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+```
 
-- `Name`: `str`
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="createfunctionresulttypedef"></a>
-
+1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 
 ## CreateFunctionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateFunctionResultTypeDef
+
+def get_value() -> CreateFunctionResultTypeDef:
+    return {
+        "FunctionSummary": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFunctionResultTypeDef(TypedDict):
+    FunctionSummary: FunctionSummaryTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FunctionSummary`:
-  [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinvalidationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInvalidationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateInvalidationRequestRequestTypeDef
+
+def get_value() -> CreateInvalidationRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+        "InvalidationBatch": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInvalidationRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+    InvalidationBatch: InvalidationBatchTypeDef,  # (1)
+```
 
-- `DistributionId`: `str`
-- `InvalidationBatch`:
-  [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
-
-<a id="createinvalidationresulttypedef"></a>
-
+1. See [:material-code-braces: InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef) 
 ## CreateInvalidationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateInvalidationResultTypeDef
+
+def get_value() -> CreateInvalidationResultTypeDef:
+    return {
+        "Location": ...,
+        "Invalidation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInvalidationResultTypeDef(TypedDict):
+    Location: str,
+    Invalidation: InvalidationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Location`: `str`
-- `Invalidation`: [InvalidationTypeDef](./type_defs.md#invalidationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createkeygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InvalidationTypeDef](./type_defs.md#invalidationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateKeyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateKeyGroupRequestRequestTypeDef
+
+def get_value() -> CreateKeyGroupRequestRequestTypeDef:
+    return {
+        "KeyGroupConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateKeyGroupRequestRequestTypeDef(TypedDict):
+    KeyGroupConfig: KeyGroupConfigTypeDef,  # (1)
+```
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
-
-<a id="createkeygroupresulttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
 ## CreateKeyGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateKeyGroupResultTypeDef
+
+def get_value() -> CreateKeyGroupResultTypeDef:
+    return {
+        "KeyGroup": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateKeyGroupResultTypeDef(TypedDict):
+    KeyGroup: KeyGroupTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmonitoringsubscriptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupTypeDef](./type_defs.md#keygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMonitoringSubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateMonitoringSubscriptionRequestRequestTypeDef
+
+def get_value() -> CreateMonitoringSubscriptionRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+        "MonitoringSubscription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMonitoringSubscriptionRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+    MonitoringSubscription: MonitoringSubscriptionTypeDef,  # (1)
+```
 
-- `DistributionId`: `str`
-- `MonitoringSubscription`:
-  [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
-
-<a id="createmonitoringsubscriptionresulttypedef"></a>
-
+1. See [:material-code-braces: MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef) 
 ## CreateMonitoringSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateMonitoringSubscriptionResultTypeDef
+
+def get_value() -> CreateMonitoringSubscriptionResultTypeDef:
+    return {
+        "MonitoringSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMonitoringSubscriptionResultTypeDef(TypedDict):
+    MonitoringSubscription: MonitoringSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MonitoringSubscription`:
-  [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createoriginrequestpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOriginRequestPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateOriginRequestPolicyRequestRequestTypeDef
+
+def get_value() -> CreateOriginRequestPolicyRequestRequestTypeDef:
+    return {
+        "OriginRequestPolicyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOriginRequestPolicyRequestRequestTypeDef(TypedDict):
+    OriginRequestPolicyConfig: OriginRequestPolicyConfigTypeDef,  # (1)
+```
 
-- `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
-
-<a id="createoriginrequestpolicyresulttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
 ## CreateOriginRequestPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateOriginRequestPolicyResultTypeDef
+
+def get_value() -> CreateOriginRequestPolicyResultTypeDef:
+    return {
+        "OriginRequestPolicy": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOriginRequestPolicyResultTypeDef(TypedDict):
+    OriginRequestPolicy: OriginRequestPolicyTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OriginRequestPolicy`:
-  [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpublickeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreatePublicKeyRequestRequestTypeDef
+
+def get_value() -> CreatePublicKeyRequestRequestTypeDef:
+    return {
+        "PublicKeyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePublicKeyRequestRequestTypeDef(TypedDict):
+    PublicKeyConfig: PublicKeyConfigTypeDef,  # (1)
+```
 
-- `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
-
-<a id="createpublickeyresulttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) 
 ## CreatePublicKeyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreatePublicKeyResultTypeDef
+
+def get_value() -> CreatePublicKeyResultTypeDef:
+    return {
+        "PublicKey": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePublicKeyResultTypeDef(TypedDict):
+    PublicKey: PublicKeyTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicKey`: [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrealtimelogconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyTypeDef](./type_defs.md#publickeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRealtimeLogConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateRealtimeLogConfigRequestRequestTypeDef
+
+def get_value() -> CreateRealtimeLogConfigRequestRequestTypeDef:
+    return {
+        "EndPoints": ...,
+        "Fields": ...,
+        "Name": ...,
+        "SamplingRate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRealtimeLogConfigRequestRequestTypeDef(TypedDict):
+    EndPoints: Sequence[EndPointTypeDef],  # (1)
+    Fields: Sequence[str],
+    Name: str,
+    SamplingRate: int,
+```
 
-- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `Sequence`\[`str`\]
-- `Name`: `str`
-- `SamplingRate`: `int`
-
-<a id="createrealtimelogconfigresulttypedef"></a>
-
+1. See [:material-code-braces: EndPointTypeDef](./type_defs.md#endpointtypedef) 
 ## CreateRealtimeLogConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateRealtimeLogConfigResultTypeDef
+
+def get_value() -> CreateRealtimeLogConfigResultTypeDef:
+    return {
+        "RealtimeLogConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRealtimeLogConfigResultTypeDef(TypedDict):
+    RealtimeLogConfig: RealtimeLogConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RealtimeLogConfig`:
-  [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresponseheaderspolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResponseHeadersPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateResponseHeadersPolicyRequestRequestTypeDef
+
+def get_value() -> CreateResponseHeadersPolicyRequestRequestTypeDef:
+    return {
+        "ResponseHeadersPolicyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResponseHeadersPolicyRequestRequestTypeDef(TypedDict):
+    ResponseHeadersPolicyConfig: ResponseHeadersPolicyConfigTypeDef,  # (1)
+```
 
-- `ResponseHeadersPolicyConfig`:
-  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
-
-<a id="createresponseheaderspolicyresulttypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef) 
 ## CreateResponseHeadersPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateResponseHeadersPolicyResultTypeDef
+
+def get_value() -> CreateResponseHeadersPolicyResultTypeDef:
+    return {
+        "ResponseHeadersPolicy": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResponseHeadersPolicyResultTypeDef(TypedDict):
+    ResponseHeadersPolicy: ResponseHeadersPolicyTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResponseHeadersPolicy`:
-  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstreamingdistributionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStreamingDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionRequestRequestTypeDef
+
+def get_value() -> CreateStreamingDistributionRequestRequestTypeDef:
+    return {
+        "StreamingDistributionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStreamingDistributionRequestRequestTypeDef(TypedDict):
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (1)
+```
 
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-
-<a id="createstreamingdistributionresulttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
 ## CreateStreamingDistributionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionResultTypeDef
+
+def get_value() -> CreateStreamingDistributionResultTypeDef:
+    return {
+        "StreamingDistribution": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStreamingDistributionResultTypeDef(TypedDict):
+    StreamingDistribution: StreamingDistributionTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamingDistribution`:
-  [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstreamingdistributionwithtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStreamingDistributionWithTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionWithTagsRequestRequestTypeDef
+
+def get_value() -> CreateStreamingDistributionWithTagsRequestRequestTypeDef:
+    return {
+        "StreamingDistributionConfigWithTags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStreamingDistributionWithTagsRequestRequestTypeDef(TypedDict):
+    StreamingDistributionConfigWithTags: StreamingDistributionConfigWithTagsTypeDef,  # (1)
+```
 
-- `StreamingDistributionConfigWithTags`:
-  [StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef)
-
-<a id="createstreamingdistributionwithtagsresulttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef) 
 ## CreateStreamingDistributionWithTagsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionWithTagsResultTypeDef
+
+def get_value() -> CreateStreamingDistributionWithTagsResultTypeDef:
+    return {
+        "StreamingDistribution": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStreamingDistributionWithTagsResultTypeDef(TypedDict):
+    StreamingDistribution: StreamingDistributionTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamingDistribution`:
-  [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
-- `Location`: `str`
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customerrorresponsetypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomErrorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CustomErrorResponseTypeDef
+
+def get_value() -> CustomErrorResponseTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Required fields:
-
-- `ErrorCode`: `int`
-
-Optional fields:
-
-- `ResponsePagePath`: `str`
-- `ResponseCode`: `str`
-- `ErrorCachingMinTTL`: `int`
-
-<a id="customerrorresponsestypedef"></a>
+```python title="Definition"
+class CustomErrorResponseTypeDef(TypedDict):
+    ErrorCode: int,
+    ResponsePagePath: NotRequired[str],
+    ResponseCode: NotRequired[str],
+    ErrorCachingMinTTL: NotRequired[int],
+```
 
 ## CustomErrorResponsesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CustomErrorResponsesTypeDef
+
+def get_value() -> CustomErrorResponsesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomErrorResponsesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[CustomErrorResponseTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[CustomErrorResponseTypeDef](./type_defs.md#customerrorresponsetypedef)\]
-
-<a id="customheaderstypedef"></a>
-
+1. See [:material-code-braces: CustomErrorResponseTypeDef](./type_defs.md#customerrorresponsetypedef) 
 ## CustomHeadersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CustomHeadersTypeDef
+
+def get_value() -> CustomHeadersTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomHeadersTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[OriginCustomHeaderTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[OriginCustomHeaderTypeDef](./type_defs.md#origincustomheadertypedef)\]
-
-<a id="customoriginconfigtypedef"></a>
-
+1. See [:material-code-braces: OriginCustomHeaderTypeDef](./type_defs.md#origincustomheadertypedef) 
 ## CustomOriginConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import CustomOriginConfigTypeDef
+
+def get_value() -> CustomOriginConfigTypeDef:
+    return {
+        "HTTPPort": ...,
+        "HTTPSPort": ...,
+        "OriginProtocolPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomOriginConfigTypeDef(TypedDict):
+    HTTPPort: int,
+    HTTPSPort: int,
+    OriginProtocolPolicy: OriginProtocolPolicyType,  # (1)
+    OriginSslProtocols: NotRequired[OriginSslProtocolsTypeDef],  # (2)
+    OriginReadTimeout: NotRequired[int],
+    OriginKeepaliveTimeout: NotRequired[int],
+```
 
-- `HTTPPort`: `int`
-- `HTTPSPort`: `int`
-- `OriginProtocolPolicy`:
-  [OriginProtocolPolicyType](./literals.md#originprotocolpolicytype)
-
-Optional fields:
-
-- `OriginSslProtocols`:
-  [OriginSslProtocolsTypeDef](./type_defs.md#originsslprotocolstypedef)
-- `OriginReadTimeout`: `int`
-- `OriginKeepaliveTimeout`: `int`
-
-<a id="defaultcachebehaviortypedef"></a>
-
+1. See [:material-code-brackets: OriginProtocolPolicyType](./literals.md#originprotocolpolicytype) 
+2. See [:material-code-braces: OriginSslProtocolsTypeDef](./type_defs.md#originsslprotocolstypedef) 
 ## DefaultCacheBehaviorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DefaultCacheBehaviorTypeDef
+
+def get_value() -> DefaultCacheBehaviorTypeDef:
+    return {
+        "TargetOriginId": ...,
+        "ViewerProtocolPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefaultCacheBehaviorTypeDef(TypedDict):
+    TargetOriginId: str,
+    ViewerProtocolPolicy: ViewerProtocolPolicyType,  # (3)
+    TrustedSigners: NotRequired[TrustedSignersTypeDef],  # (1)
+    TrustedKeyGroups: NotRequired[TrustedKeyGroupsTypeDef],  # (2)
+    AllowedMethods: NotRequired[AllowedMethodsTypeDef],  # (4)
+    SmoothStreaming: NotRequired[bool],
+    Compress: NotRequired[bool],
+    LambdaFunctionAssociations: NotRequired[LambdaFunctionAssociationsTypeDef],  # (5)
+    FunctionAssociations: NotRequired[FunctionAssociationsTypeDef],  # (6)
+    FieldLevelEncryptionId: NotRequired[str],
+    RealtimeLogConfigArn: NotRequired[str],
+    CachePolicyId: NotRequired[str],
+    OriginRequestPolicyId: NotRequired[str],
+    ResponseHeadersPolicyId: NotRequired[str],
+    ForwardedValues: NotRequired[ForwardedValuesTypeDef],  # (7)
+    MinTTL: NotRequired[int],
+    DefaultTTL: NotRequired[int],
+    MaxTTL: NotRequired[int],
+```
 
-- `TargetOriginId`: `str`
-- `ViewerProtocolPolicy`:
-  [ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype)
-
-Optional fields:
-
-- `TrustedSigners`:
-  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
-- `TrustedKeyGroups`:
-  [TrustedKeyGroupsTypeDef](./type_defs.md#trustedkeygroupstypedef)
-- `AllowedMethods`:
-  [AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef)
-- `SmoothStreaming`: `bool`
-- `Compress`: `bool`
-- `LambdaFunctionAssociations`:
-  [LambdaFunctionAssociationsTypeDef](./type_defs.md#lambdafunctionassociationstypedef)
-- `FunctionAssociations`:
-  [FunctionAssociationsTypeDef](./type_defs.md#functionassociationstypedef)
-- `FieldLevelEncryptionId`: `str`
-- `RealtimeLogConfigArn`: `str`
-- `CachePolicyId`: `str`
-- `OriginRequestPolicyId`: `str`
-- `ResponseHeadersPolicyId`: `str`
-- `ForwardedValues`:
-  [ForwardedValuesTypeDef](./type_defs.md#forwardedvaluestypedef)
-- `MinTTL`: `int`
-- `DefaultTTL`: `int`
-- `MaxTTL`: `int`
-
-<a id="deletecachepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef) 
+2. See [:material-code-braces: TrustedKeyGroupsTypeDef](./type_defs.md#trustedkeygroupstypedef) 
+3. See [:material-code-brackets: ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype) 
+4. See [:material-code-braces: AllowedMethodsTypeDef](./type_defs.md#allowedmethodstypedef) 
+5. See [:material-code-braces: LambdaFunctionAssociationsTypeDef](./type_defs.md#lambdafunctionassociationstypedef) 
+6. See [:material-code-braces: FunctionAssociationsTypeDef](./type_defs.md#functionassociationstypedef) 
+7. See [:material-code-braces: ForwardedValuesTypeDef](./type_defs.md#forwardedvaluestypedef) 
 ## DeleteCachePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteCachePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteCachePolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletecloudfrontoriginaccessidentityrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCachePolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef
+
+def get_value() -> DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletedistributionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteDistributionRequestRequestTypeDef
+
+def get_value() -> DeleteDistributionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletefieldlevelencryptionconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDistributionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteFieldLevelEncryptionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteFieldLevelEncryptionConfigRequestRequestTypeDef
+
+def get_value() -> DeleteFieldLevelEncryptionConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletefieldlevelencryptionprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFieldLevelEncryptionConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteFieldLevelEncryptionProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteFieldLevelEncryptionProfileRequestRequestTypeDef
+
+def get_value() -> DeleteFieldLevelEncryptionProfileRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletefunctionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFieldLevelEncryptionProfileRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteFunctionRequestRequestTypeDef
+
+def get_value() -> DeleteFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IfMatch": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `IfMatch`: `str`
-
-<a id="deletekeygrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IfMatch: str,
+```
 
 ## DeleteKeyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteKeyGroupRequestRequestTypeDef
+
+def get_value() -> DeleteKeyGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletemonitoringsubscriptionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteKeyGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteMonitoringSubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteMonitoringSubscriptionRequestRequestTypeDef
+
+def get_value() -> DeleteMonitoringSubscriptionRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DistributionId`: `str`
-
-<a id="deleteoriginrequestpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteMonitoringSubscriptionRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+```
 
 ## DeleteOriginRequestPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteOriginRequestPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteOriginRequestPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletepublickeyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteOriginRequestPolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeletePublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeletePublicKeyRequestRequestTypeDef
+
+def get_value() -> DeletePublicKeyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deleterealtimelogconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePublicKeyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteRealtimeLogConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteRealtimeLogConfigRequestRequestTypeDef
+
+def get_value() -> DeleteRealtimeLogConfigRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `ARN`: `str`
-
-<a id="deleteresponseheaderspolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRealtimeLogConfigRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ARN: NotRequired[str],
+```
 
 ## DeleteResponseHeadersPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteResponseHeadersPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResponseHeadersPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="deletestreamingdistributionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResponseHeadersPolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DeleteStreamingDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DeleteStreamingDistributionRequestRequestTypeDef
+
+def get_value() -> DeleteStreamingDistributionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="describefunctionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteStreamingDistributionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
 ## DescribeFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DescribeFunctionRequestRequestTypeDef
+
+def get_value() -> DescribeFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Stage: NotRequired[FunctionStageType],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
-
-<a id="describefunctionresulttypedef"></a>
-
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
 ## DescribeFunctionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DescribeFunctionResultTypeDef
+
+def get_value() -> DescribeFunctionResultTypeDef:
+    return {
+        "FunctionSummary": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFunctionResultTypeDef(TypedDict):
+    FunctionSummary: FunctionSummaryTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FunctionSummary`:
-  [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="distributionconfigtypedef"></a>
-
+1. See [:material-code-braces: FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DistributionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DistributionConfigTypeDef
+
+def get_value() -> DistributionConfigTypeDef:
+    return {
+        "CallerReference": ...,
+        "Origins": ...,
+        "DefaultCacheBehavior": ...,
+        "Comment": ...,
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DistributionConfigTypeDef(TypedDict):
+    CallerReference: str,
+    Origins: OriginsTypeDef,  # (2)
+    DefaultCacheBehavior: DefaultCacheBehaviorTypeDef,  # (4)
+    Comment: str,
+    Enabled: bool,
+    Aliases: NotRequired[AliasesTypeDef],  # (1)
+    DefaultRootObject: NotRequired[str],
+    OriginGroups: NotRequired[OriginGroupsTypeDef],  # (3)
+    CacheBehaviors: NotRequired[CacheBehaviorsTypeDef],  # (5)
+    CustomErrorResponses: NotRequired[CustomErrorResponsesTypeDef],  # (6)
+    Logging: NotRequired[LoggingConfigTypeDef],  # (7)
+    PriceClass: NotRequired[PriceClassType],  # (8)
+    ViewerCertificate: NotRequired[ViewerCertificateTypeDef],  # (9)
+    Restrictions: NotRequired[RestrictionsTypeDef],  # (10)
+    WebACLId: NotRequired[str],
+    HttpVersion: NotRequired[HttpVersionType],  # (11)
+    IsIPV6Enabled: NotRequired[bool],
+```
 
-- `CallerReference`: `str`
-- `Origins`: [OriginsTypeDef](./type_defs.md#originstypedef)
-- `DefaultCacheBehavior`:
-  [DefaultCacheBehaviorTypeDef](./type_defs.md#defaultcachebehaviortypedef)
-- `Comment`: `str`
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
-- `DefaultRootObject`: `str`
-- `OriginGroups`: [OriginGroupsTypeDef](./type_defs.md#origingroupstypedef)
-- `CacheBehaviors`:
-  [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
-- `CustomErrorResponses`:
-  [CustomErrorResponsesTypeDef](./type_defs.md#customerrorresponsestypedef)
-- `Logging`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
-- `ViewerCertificate`:
-  [ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef)
-- `Restrictions`: [RestrictionsTypeDef](./type_defs.md#restrictionstypedef)
-- `WebACLId`: `str`
-- `HttpVersion`: [HttpVersionType](./literals.md#httpversiontype)
-- `IsIPV6Enabled`: `bool`
-
-<a id="distributionconfigwithtagstypedef"></a>
-
+1. See [:material-code-braces: AliasesTypeDef](./type_defs.md#aliasestypedef) 
+2. See [:material-code-braces: OriginsTypeDef](./type_defs.md#originstypedef) 
+3. See [:material-code-braces: OriginGroupsTypeDef](./type_defs.md#origingroupstypedef) 
+4. See [:material-code-braces: DefaultCacheBehaviorTypeDef](./type_defs.md#defaultcachebehaviortypedef) 
+5. See [:material-code-braces: CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef) 
+6. See [:material-code-braces: CustomErrorResponsesTypeDef](./type_defs.md#customerrorresponsestypedef) 
+7. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+8. See [:material-code-brackets: PriceClassType](./literals.md#priceclasstype) 
+9. See [:material-code-braces: ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef) 
+10. See [:material-code-braces: RestrictionsTypeDef](./type_defs.md#restrictionstypedef) 
+11. See [:material-code-brackets: HttpVersionType](./literals.md#httpversiontype) 
 ## DistributionConfigWithTagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DistributionConfigWithTagsTypeDef
+
+def get_value() -> DistributionConfigWithTagsTypeDef:
+    return {
+        "DistributionConfig": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DistributionConfigWithTagsTypeDef(TypedDict):
+    DistributionConfig: DistributionConfigTypeDef,  # (1)
+    Tags: TagsTypeDef,  # (2)
+```
 
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
-
-<a id="distributionidlisttypedef"></a>
-
+1. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
+2. See [:material-code-braces: TagsTypeDef](./type_defs.md#tagstypedef) 
 ## DistributionIdListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DistributionIdListTypeDef
+
+def get_value() -> DistributionIdListTypeDef:
+    return {
+        "Marker": ...,
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `IsTruncated`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`: `List`\[`str`\]
-
-<a id="distributionlisttypedef"></a>
+```python title="Definition"
+class DistributionIdListTypeDef(TypedDict):
+    Marker: str,
+    MaxItems: int,
+    IsTruncated: bool,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[str]],
+```
 
 ## DistributionListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DistributionListTypeDef
+
+def get_value() -> DistributionListTypeDef:
+    return {
+        "Marker": ...,
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DistributionListTypeDef(TypedDict):
+    Marker: str,
+    MaxItems: int,
+    IsTruncated: bool,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[DistributionSummaryTypeDef]],  # (1)
+```
 
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `IsTruncated`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[DistributionSummaryTypeDef](./type_defs.md#distributionsummarytypedef)\]
-
-<a id="distributionsummarytypedef"></a>
-
+1. See [:material-code-braces: DistributionSummaryTypeDef](./type_defs.md#distributionsummarytypedef) 
 ## DistributionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DistributionSummaryTypeDef
+
+def get_value() -> DistributionSummaryTypeDef:
+    return {
+        "Id": ...,
+        "ARN": ...,
+        "Status": ...,
+        "LastModifiedTime": ...,
+        "DomainName": ...,
+        "Aliases": ...,
+        "Origins": ...,
+        "DefaultCacheBehavior": ...,
+        "CacheBehaviors": ...,
+        "CustomErrorResponses": ...,
+        "Comment": ...,
+        "PriceClass": ...,
+        "Enabled": ...,
+        "ViewerCertificate": ...,
+        "Restrictions": ...,
+        "WebACLId": ...,
+        "HttpVersion": ...,
+        "IsIPV6Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DistributionSummaryTypeDef(TypedDict):
+    Id: str,
+    ARN: str,
+    Status: str,
+    LastModifiedTime: datetime,
+    DomainName: str,
+    Aliases: AliasesTypeDef,  # (1)
+    Origins: OriginsTypeDef,  # (2)
+    DefaultCacheBehavior: DefaultCacheBehaviorTypeDef,  # (4)
+    CacheBehaviors: CacheBehaviorsTypeDef,  # (5)
+    CustomErrorResponses: CustomErrorResponsesTypeDef,  # (6)
+    Comment: str,
+    PriceClass: PriceClassType,  # (7)
+    Enabled: bool,
+    ViewerCertificate: ViewerCertificateTypeDef,  # (8)
+    Restrictions: RestrictionsTypeDef,  # (9)
+    WebACLId: str,
+    HttpVersion: HttpVersionType,  # (10)
+    IsIPV6Enabled: bool,
+    OriginGroups: NotRequired[OriginGroupsTypeDef],  # (3)
+    AliasICPRecordals: NotRequired[List[AliasICPRecordalTypeDef]],  # (11)
+```
 
-- `Id`: `str`
-- `ARN`: `str`
-- `Status`: `str`
-- `LastModifiedTime`: `datetime`
-- `DomainName`: `str`
-- `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
-- `Origins`: [OriginsTypeDef](./type_defs.md#originstypedef)
-- `DefaultCacheBehavior`:
-  [DefaultCacheBehaviorTypeDef](./type_defs.md#defaultcachebehaviortypedef)
-- `CacheBehaviors`:
-  [CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef)
-- `CustomErrorResponses`:
-  [CustomErrorResponsesTypeDef](./type_defs.md#customerrorresponsestypedef)
-- `Comment`: `str`
-- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
-- `Enabled`: `bool`
-- `ViewerCertificate`:
-  [ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef)
-- `Restrictions`: [RestrictionsTypeDef](./type_defs.md#restrictionstypedef)
-- `WebACLId`: `str`
-- `HttpVersion`: [HttpVersionType](./literals.md#httpversiontype)
-- `IsIPV6Enabled`: `bool`
-
-Optional fields:
-
-- `OriginGroups`: [OriginGroupsTypeDef](./type_defs.md#origingroupstypedef)
-- `AliasICPRecordals`:
-  `List`\[[AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef)\]
-
-<a id="distributiontypedef"></a>
-
+1. See [:material-code-braces: AliasesTypeDef](./type_defs.md#aliasestypedef) 
+2. See [:material-code-braces: OriginsTypeDef](./type_defs.md#originstypedef) 
+3. See [:material-code-braces: OriginGroupsTypeDef](./type_defs.md#origingroupstypedef) 
+4. See [:material-code-braces: DefaultCacheBehaviorTypeDef](./type_defs.md#defaultcachebehaviortypedef) 
+5. See [:material-code-braces: CacheBehaviorsTypeDef](./type_defs.md#cachebehaviorstypedef) 
+6. See [:material-code-braces: CustomErrorResponsesTypeDef](./type_defs.md#customerrorresponsestypedef) 
+7. See [:material-code-brackets: PriceClassType](./literals.md#priceclasstype) 
+8. See [:material-code-braces: ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef) 
+9. See [:material-code-braces: RestrictionsTypeDef](./type_defs.md#restrictionstypedef) 
+10. See [:material-code-brackets: HttpVersionType](./literals.md#httpversiontype) 
+11. See [:material-code-braces: AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef) 
 ## DistributionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import DistributionTypeDef
+
+def get_value() -> DistributionTypeDef:
+    return {
+        "Id": ...,
+        "ARN": ...,
+        "Status": ...,
+        "LastModifiedTime": ...,
+        "InProgressInvalidationBatches": ...,
+        "DomainName": ...,
+        "DistributionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DistributionTypeDef(TypedDict):
+    Id: str,
+    ARN: str,
+    Status: str,
+    LastModifiedTime: datetime,
+    InProgressInvalidationBatches: int,
+    DomainName: str,
+    DistributionConfig: DistributionConfigTypeDef,  # (3)
+    ActiveTrustedSigners: NotRequired[ActiveTrustedSignersTypeDef],  # (1)
+    ActiveTrustedKeyGroups: NotRequired[ActiveTrustedKeyGroupsTypeDef],  # (2)
+    AliasICPRecordals: NotRequired[List[AliasICPRecordalTypeDef]],  # (4)
+```
 
-- `Id`: `str`
-- `ARN`: `str`
-- `Status`: `str`
-- `LastModifiedTime`: `datetime`
-- `InProgressInvalidationBatches`: `int`
-- `DomainName`: `str`
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-
-Optional fields:
-
-- `ActiveTrustedSigners`:
-  [ActiveTrustedSignersTypeDef](./type_defs.md#activetrustedsignerstypedef)
-- `ActiveTrustedKeyGroups`:
-  [ActiveTrustedKeyGroupsTypeDef](./type_defs.md#activetrustedkeygroupstypedef)
-- `AliasICPRecordals`:
-  `List`\[[AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef)\]
-
-<a id="encryptionentitiestypedef"></a>
-
+1. See [:material-code-braces: ActiveTrustedSignersTypeDef](./type_defs.md#activetrustedsignerstypedef) 
+2. See [:material-code-braces: ActiveTrustedKeyGroupsTypeDef](./type_defs.md#activetrustedkeygroupstypedef) 
+3. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
+4. See [:material-code-braces: AliasICPRecordalTypeDef](./type_defs.md#aliasicprecordaltypedef) 
 ## EncryptionEntitiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import EncryptionEntitiesTypeDef
+
+def get_value() -> EncryptionEntitiesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionEntitiesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[EncryptionEntityTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[EncryptionEntityTypeDef](./type_defs.md#encryptionentitytypedef)\]
-
-<a id="encryptionentitytypedef"></a>
-
+1. See [:material-code-braces: EncryptionEntityTypeDef](./type_defs.md#encryptionentitytypedef) 
 ## EncryptionEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import EncryptionEntityTypeDef
+
+def get_value() -> EncryptionEntityTypeDef:
+    return {
+        "PublicKeyId": ...,
+        "ProviderId": ...,
+        "FieldPatterns": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionEntityTypeDef(TypedDict):
+    PublicKeyId: str,
+    ProviderId: str,
+    FieldPatterns: FieldPatternsTypeDef,  # (1)
+```
 
-- `PublicKeyId`: `str`
-- `ProviderId`: `str`
-- `FieldPatterns`: [FieldPatternsTypeDef](./type_defs.md#fieldpatternstypedef)
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-braces: FieldPatternsTypeDef](./type_defs.md#fieldpatternstypedef) 
 ## EndPointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import EndPointTypeDef
+
+def get_value() -> EndPointTypeDef:
+    return {
+        "StreamType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EndPointTypeDef(TypedDict):
+    StreamType: str,
+    KinesisStreamConfig: NotRequired[KinesisStreamConfigTypeDef],  # (1)
+```
 
-- `StreamType`: `str`
-
-Optional fields:
-
-- `KinesisStreamConfig`:
-  [KinesisStreamConfigTypeDef](./type_defs.md#kinesisstreamconfigtypedef)
-
-<a id="fieldlevelencryptionconfigtypedef"></a>
-
+1. See [:material-code-braces: KinesisStreamConfigTypeDef](./type_defs.md#kinesisstreamconfigtypedef) 
 ## FieldLevelEncryptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionConfigTypeDef
+
+def get_value() -> FieldLevelEncryptionConfigTypeDef:
+    return {
+        "CallerReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionConfigTypeDef(TypedDict):
+    CallerReference: str,
+    Comment: NotRequired[str],
+    QueryArgProfileConfig: NotRequired[QueryArgProfileConfigTypeDef],  # (1)
+    ContentTypeProfileConfig: NotRequired[ContentTypeProfileConfigTypeDef],  # (2)
+```
 
-- `CallerReference`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-- `QueryArgProfileConfig`:
-  [QueryArgProfileConfigTypeDef](./type_defs.md#queryargprofileconfigtypedef)
-- `ContentTypeProfileConfig`:
-  [ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef)
-
-<a id="fieldlevelencryptionlisttypedef"></a>
-
+1. See [:material-code-braces: QueryArgProfileConfigTypeDef](./type_defs.md#queryargprofileconfigtypedef) 
+2. See [:material-code-braces: ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef) 
 ## FieldLevelEncryptionListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionListTypeDef
+
+def get_value() -> FieldLevelEncryptionListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[FieldLevelEncryptionSummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[FieldLevelEncryptionSummaryTypeDef](./type_defs.md#fieldlevelencryptionsummarytypedef)\]
-
-<a id="fieldlevelencryptionprofileconfigtypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionSummaryTypeDef](./type_defs.md#fieldlevelencryptionsummarytypedef) 
 ## FieldLevelEncryptionProfileConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionProfileConfigTypeDef
+
+def get_value() -> FieldLevelEncryptionProfileConfigTypeDef:
+    return {
+        "Name": ...,
+        "CallerReference": ...,
+        "EncryptionEntities": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionProfileConfigTypeDef(TypedDict):
+    Name: str,
+    CallerReference: str,
+    EncryptionEntities: EncryptionEntitiesTypeDef,  # (1)
+    Comment: NotRequired[str],
+```
 
-- `Name`: `str`
-- `CallerReference`: `str`
-- `EncryptionEntities`:
-  [EncryptionEntitiesTypeDef](./type_defs.md#encryptionentitiestypedef)
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="fieldlevelencryptionprofilelisttypedef"></a>
-
+1. See [:material-code-braces: EncryptionEntitiesTypeDef](./type_defs.md#encryptionentitiestypedef) 
 ## FieldLevelEncryptionProfileListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionProfileListTypeDef
+
+def get_value() -> FieldLevelEncryptionProfileListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionProfileListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[FieldLevelEncryptionProfileSummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[FieldLevelEncryptionProfileSummaryTypeDef](./type_defs.md#fieldlevelencryptionprofilesummarytypedef)\]
-
-<a id="fieldlevelencryptionprofilesummarytypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileSummaryTypeDef](./type_defs.md#fieldlevelencryptionprofilesummarytypedef) 
 ## FieldLevelEncryptionProfileSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionProfileSummaryTypeDef
+
+def get_value() -> FieldLevelEncryptionProfileSummaryTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "Name": ...,
+        "EncryptionEntities": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionProfileSummaryTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    Name: str,
+    EncryptionEntities: EncryptionEntitiesTypeDef,  # (1)
+    Comment: NotRequired[str],
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `Name`: `str`
-- `EncryptionEntities`:
-  [EncryptionEntitiesTypeDef](./type_defs.md#encryptionentitiestypedef)
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="fieldlevelencryptionprofiletypedef"></a>
-
+1. See [:material-code-braces: EncryptionEntitiesTypeDef](./type_defs.md#encryptionentitiestypedef) 
 ## FieldLevelEncryptionProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionProfileTypeDef
+
+def get_value() -> FieldLevelEncryptionProfileTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "FieldLevelEncryptionProfileConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionProfileTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
-
-<a id="fieldlevelencryptionsummarytypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef) 
 ## FieldLevelEncryptionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionSummaryTypeDef
+
+def get_value() -> FieldLevelEncryptionSummaryTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionSummaryTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    Comment: NotRequired[str],
+    QueryArgProfileConfig: NotRequired[QueryArgProfileConfigTypeDef],  # (1)
+    ContentTypeProfileConfig: NotRequired[ContentTypeProfileConfigTypeDef],  # (2)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-
-Optional fields:
-
-- `Comment`: `str`
-- `QueryArgProfileConfig`:
-  [QueryArgProfileConfigTypeDef](./type_defs.md#queryargprofileconfigtypedef)
-- `ContentTypeProfileConfig`:
-  [ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef)
-
-<a id="fieldlevelencryptiontypedef"></a>
-
+1. See [:material-code-braces: QueryArgProfileConfigTypeDef](./type_defs.md#queryargprofileconfigtypedef) 
+2. See [:material-code-braces: ContentTypeProfileConfigTypeDef](./type_defs.md#contenttypeprofileconfigtypedef) 
 ## FieldLevelEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldLevelEncryptionTypeDef
+
+def get_value() -> FieldLevelEncryptionTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "FieldLevelEncryptionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldLevelEncryptionTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    FieldLevelEncryptionConfig: FieldLevelEncryptionConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
-
-<a id="fieldpatternstypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef) 
 ## FieldPatternsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FieldPatternsTypeDef
+
+def get_value() -> FieldPatternsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="forwardedvaluestypedef"></a>
+```python title="Definition"
+class FieldPatternsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## ForwardedValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ForwardedValuesTypeDef
+
+def get_value() -> ForwardedValuesTypeDef:
+    return {
+        "QueryString": ...,
+        "Cookies": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ForwardedValuesTypeDef(TypedDict):
+    QueryString: bool,
+    Cookies: CookiePreferenceTypeDef,  # (1)
+    Headers: NotRequired[HeadersTypeDef],  # (2)
+    QueryStringCacheKeys: NotRequired[QueryStringCacheKeysTypeDef],  # (3)
+```
 
-- `QueryString`: `bool`
-- `Cookies`: [CookiePreferenceTypeDef](./type_defs.md#cookiepreferencetypedef)
-
-Optional fields:
-
-- `Headers`: [HeadersTypeDef](./type_defs.md#headerstypedef)
-- `QueryStringCacheKeys`:
-  [QueryStringCacheKeysTypeDef](./type_defs.md#querystringcachekeystypedef)
-
-<a id="functionassociationtypedef"></a>
-
+1. See [:material-code-braces: CookiePreferenceTypeDef](./type_defs.md#cookiepreferencetypedef) 
+2. See [:material-code-braces: HeadersTypeDef](./type_defs.md#headerstypedef) 
+3. See [:material-code-braces: QueryStringCacheKeysTypeDef](./type_defs.md#querystringcachekeystypedef) 
 ## FunctionAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FunctionAssociationTypeDef
+
+def get_value() -> FunctionAssociationTypeDef:
+    return {
+        "FunctionARN": ...,
+        "EventType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionAssociationTypeDef(TypedDict):
+    FunctionARN: str,
+    EventType: EventTypeType,  # (1)
+```
 
-- `FunctionARN`: `str`
-- `EventType`: [EventTypeType](./literals.md#eventtypetype)
-
-<a id="functionassociationstypedef"></a>
-
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
 ## FunctionAssociationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FunctionAssociationsTypeDef
+
+def get_value() -> FunctionAssociationsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionAssociationsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[FunctionAssociationTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[FunctionAssociationTypeDef](./type_defs.md#functionassociationtypedef)\]
-
-<a id="functionconfigtypedef"></a>
-
+1. See [:material-code-braces: FunctionAssociationTypeDef](./type_defs.md#functionassociationtypedef) 
 ## FunctionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FunctionConfigTypeDef
+
+def get_value() -> FunctionConfigTypeDef:
+    return {
+        "Comment": ...,
+        "Runtime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionConfigTypeDef(TypedDict):
+    Comment: str,
+    Runtime: FunctionRuntimeType,  # (1)
+```
 
-- `Comment`: `str`
-- `Runtime`: `Literal['cloudfront-js-1.0']` (see
-  [FunctionRuntimeType](./literals.md#functionruntimetype))
-
-<a id="functionlisttypedef"></a>
-
+1. See [:material-code-brackets: FunctionRuntimeType](./literals.md#functionruntimetype) 
 ## FunctionListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FunctionListTypeDef
+
+def get_value() -> FunctionListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[FunctionSummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)\]
-
-<a id="functionmetadatatypedef"></a>
-
+1. See [:material-code-braces: FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef) 
 ## FunctionMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FunctionMetadataTypeDef
+
+def get_value() -> FunctionMetadataTypeDef:
+    return {
+        "FunctionARN": ...,
+        "LastModifiedTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionMetadataTypeDef(TypedDict):
+    FunctionARN: str,
+    LastModifiedTime: datetime,
+    Stage: NotRequired[FunctionStageType],  # (1)
+    CreatedTime: NotRequired[datetime],
+```
 
-- `FunctionARN`: `str`
-- `LastModifiedTime`: `datetime`
-
-Optional fields:
-
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
-- `CreatedTime`: `datetime`
-
-<a id="functionsummarytypedef"></a>
-
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
 ## FunctionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import FunctionSummaryTypeDef
+
+def get_value() -> FunctionSummaryTypeDef:
+    return {
+        "Name": ...,
+        "FunctionConfig": ...,
+        "FunctionMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionSummaryTypeDef(TypedDict):
+    Name: str,
+    FunctionConfig: FunctionConfigTypeDef,  # (1)
+    FunctionMetadata: FunctionMetadataTypeDef,  # (2)
+    Status: NotRequired[str],
+```
 
-- `Name`: `str`
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
-- `FunctionMetadata`:
-  [FunctionMetadataTypeDef](./type_defs.md#functionmetadatatypedef)
-
-Optional fields:
-
-- `Status`: `str`
-
-<a id="georestrictiontypedef"></a>
-
+1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 
+2. See [:material-code-braces: FunctionMetadataTypeDef](./type_defs.md#functionmetadatatypedef) 
 ## GeoRestrictionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GeoRestrictionTypeDef
+
+def get_value() -> GeoRestrictionTypeDef:
+    return {
+        "RestrictionType": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GeoRestrictionTypeDef(TypedDict):
+    RestrictionType: GeoRestrictionTypeType,  # (1)
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
-- `RestrictionType`:
-  [GeoRestrictionTypeType](./literals.md#georestrictiontypetype)
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="getcachepolicyconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: GeoRestrictionTypeType](./literals.md#georestrictiontypetype) 
 ## GetCachePolicyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCachePolicyConfigRequestRequestTypeDef
+
+def get_value() -> GetCachePolicyConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getcachepolicyconfigresulttypedef"></a>
+```python title="Definition"
+class GetCachePolicyConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetCachePolicyConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCachePolicyConfigResultTypeDef
+
+def get_value() -> GetCachePolicyConfigResultTypeDef:
+    return {
+        "CachePolicyConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCachePolicyConfigResultTypeDef(TypedDict):
+    CachePolicyConfig: CachePolicyConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcachepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCachePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCachePolicyRequestRequestTypeDef
+
+def get_value() -> GetCachePolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getcachepolicyresulttypedef"></a>
+```python title="Definition"
+class GetCachePolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetCachePolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCachePolicyResultTypeDef
+
+def get_value() -> GetCachePolicyResultTypeDef:
+    return {
+        "CachePolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCachePolicyResultTypeDef(TypedDict):
+    CachePolicy: CachePolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcloudfrontoriginaccessidentityconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CachePolicyTypeDef](./type_defs.md#cachepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef
+
+def get_value() -> GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getcloudfrontoriginaccessidentityconfigresulttypedef"></a>
+```python title="Definition"
+class GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetCloudFrontOriginAccessIdentityConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityConfigResultTypeDef
+
+def get_value() -> GetCloudFrontOriginAccessIdentityConfigResultTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentityConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCloudFrontOriginAccessIdentityConfigResultTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcloudfrontoriginaccessidentityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityRequestRequestTypeDef
+
+def get_value() -> GetCloudFrontOriginAccessIdentityRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getcloudfrontoriginaccessidentityresulttypedef"></a>
+```python title="Definition"
+class GetCloudFrontOriginAccessIdentityRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetCloudFrontOriginAccessIdentityResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityResultTypeDef
+
+def get_value() -> GetCloudFrontOriginAccessIdentityResultTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentity": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCloudFrontOriginAccessIdentityResultTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentity: CloudFrontOriginAccessIdentityTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CloudFrontOriginAccessIdentity`:
-  [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdistributionconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDistributionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetDistributionConfigRequestRequestTypeDef
+
+def get_value() -> GetDistributionConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getdistributionconfigresulttypedef"></a>
+```python title="Definition"
+class GetDistributionConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetDistributionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetDistributionConfigResultTypeDef
+
+def get_value() -> GetDistributionConfigResultTypeDef:
+    return {
+        "DistributionConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDistributionConfigResultTypeDef(TypedDict):
+    DistributionConfig: DistributionConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDistributionRequestDistributionDeployedWaitTypeDef
 
-<a id="getdistributionrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetDistributionRequestDistributionDeployedWaitTypeDef
 
+def get_value() -> GetDistributionRequestDistributionDeployedWaitTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetDistributionRequestDistributionDeployedWaitTypeDef(TypedDict):
+    Id: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetDistributionRequestRequestTypeDef
+
+def get_value() -> GetDistributionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getdistributionresulttypedef"></a>
+```python title="Definition"
+class GetDistributionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetDistributionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetDistributionResultTypeDef
+
+def get_value() -> GetDistributionResultTypeDef:
+    return {
+        "Distribution": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDistributionResultTypeDef(TypedDict):
+    Distribution: DistributionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfieldlevelencryptionconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFieldLevelEncryptionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionConfigRequestRequestTypeDef
+
+def get_value() -> GetFieldLevelEncryptionConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getfieldlevelencryptionconfigresulttypedef"></a>
+```python title="Definition"
+class GetFieldLevelEncryptionConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetFieldLevelEncryptionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionConfigResultTypeDef
+
+def get_value() -> GetFieldLevelEncryptionConfigResultTypeDef:
+    return {
+        "FieldLevelEncryptionConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFieldLevelEncryptionConfigResultTypeDef(TypedDict):
+    FieldLevelEncryptionConfig: FieldLevelEncryptionConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfieldlevelencryptionprofileconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef
+
+def get_value() -> GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getfieldlevelencryptionprofileconfigresulttypedef"></a>
+```python title="Definition"
+class GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetFieldLevelEncryptionProfileConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileConfigResultTypeDef
+
+def get_value() -> GetFieldLevelEncryptionProfileConfigResultTypeDef:
+    return {
+        "FieldLevelEncryptionProfileConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFieldLevelEncryptionProfileConfigResultTypeDef(TypedDict):
+    FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfieldlevelencryptionprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFieldLevelEncryptionProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileRequestRequestTypeDef
+
+def get_value() -> GetFieldLevelEncryptionProfileRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getfieldlevelencryptionprofileresulttypedef"></a>
+```python title="Definition"
+class GetFieldLevelEncryptionProfileRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetFieldLevelEncryptionProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileResultTypeDef
+
+def get_value() -> GetFieldLevelEncryptionProfileResultTypeDef:
+    return {
+        "FieldLevelEncryptionProfile": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFieldLevelEncryptionProfileResultTypeDef(TypedDict):
+    FieldLevelEncryptionProfile: FieldLevelEncryptionProfileTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionProfile`:
-  [FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfieldlevelencryptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFieldLevelEncryptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionRequestRequestTypeDef
+
+def get_value() -> GetFieldLevelEncryptionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getfieldlevelencryptionresulttypedef"></a>
+```python title="Definition"
+class GetFieldLevelEncryptionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetFieldLevelEncryptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionResultTypeDef
+
+def get_value() -> GetFieldLevelEncryptionResultTypeDef:
+    return {
+        "FieldLevelEncryption": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFieldLevelEncryptionResultTypeDef(TypedDict):
+    FieldLevelEncryption: FieldLevelEncryptionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryption`:
-  [FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFunctionRequestRequestTypeDef
+
+def get_value() -> GetFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Stage: NotRequired[FunctionStageType],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
-
-<a id="getfunctionresulttypedef"></a>
-
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
 ## GetFunctionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetFunctionResultTypeDef
+
+def get_value() -> GetFunctionResultTypeDef:
+    return {
+        "FunctionCode": ...,
+        "ETag": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFunctionResultTypeDef(TypedDict):
+    FunctionCode: StreamingBody,
+    ETag: str,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FunctionCode`: `StreamingBody`
-- `ETag`: `str`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInvalidationRequestInvalidationCompletedWaitTypeDef
 
-<a id="getinvalidationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetInvalidationRequestInvalidationCompletedWaitTypeDef
 
+def get_value() -> GetInvalidationRequestInvalidationCompletedWaitTypeDef:
+    return {
+        "DistributionId": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetInvalidationRequestInvalidationCompletedWaitTypeDef(TypedDict):
+    DistributionId: str,
+    Id: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetInvalidationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetInvalidationRequestRequestTypeDef
+
+def get_value() -> GetInvalidationRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `DistributionId`: `str`
-- `Id`: `str`
-
-<a id="getinvalidationresulttypedef"></a>
+```python title="Definition"
+class GetInvalidationRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+    Id: str,
+```
 
 ## GetInvalidationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetInvalidationResultTypeDef
+
+def get_value() -> GetInvalidationResultTypeDef:
+    return {
+        "Invalidation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInvalidationResultTypeDef(TypedDict):
+    Invalidation: InvalidationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Invalidation`: [InvalidationTypeDef](./type_defs.md#invalidationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getkeygroupconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InvalidationTypeDef](./type_defs.md#invalidationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetKeyGroupConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigRequestRequestTypeDef
+
+def get_value() -> GetKeyGroupConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getkeygroupconfigresulttypedef"></a>
+```python title="Definition"
+class GetKeyGroupConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetKeyGroupConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigResultTypeDef
+
+def get_value() -> GetKeyGroupConfigResultTypeDef:
+    return {
+        "KeyGroupConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetKeyGroupConfigResultTypeDef(TypedDict):
+    KeyGroupConfig: KeyGroupConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getkeygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetKeyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetKeyGroupRequestRequestTypeDef
+
+def get_value() -> GetKeyGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getkeygroupresulttypedef"></a>
+```python title="Definition"
+class GetKeyGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetKeyGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetKeyGroupResultTypeDef
+
+def get_value() -> GetKeyGroupResultTypeDef:
+    return {
+        "KeyGroup": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetKeyGroupResultTypeDef(TypedDict):
+    KeyGroup: KeyGroupTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmonitoringsubscriptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupTypeDef](./type_defs.md#keygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMonitoringSubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetMonitoringSubscriptionRequestRequestTypeDef
+
+def get_value() -> GetMonitoringSubscriptionRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DistributionId`: `str`
-
-<a id="getmonitoringsubscriptionresulttypedef"></a>
+```python title="Definition"
+class GetMonitoringSubscriptionRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+```
 
 ## GetMonitoringSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetMonitoringSubscriptionResultTypeDef
+
+def get_value() -> GetMonitoringSubscriptionResultTypeDef:
+    return {
+        "MonitoringSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMonitoringSubscriptionResultTypeDef(TypedDict):
+    MonitoringSubscription: MonitoringSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MonitoringSubscription`:
-  [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getoriginrequestpolicyconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOriginRequestPolicyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyConfigRequestRequestTypeDef
+
+def get_value() -> GetOriginRequestPolicyConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getoriginrequestpolicyconfigresulttypedef"></a>
+```python title="Definition"
+class GetOriginRequestPolicyConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetOriginRequestPolicyConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyConfigResultTypeDef
+
+def get_value() -> GetOriginRequestPolicyConfigResultTypeDef:
+    return {
+        "OriginRequestPolicyConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOriginRequestPolicyConfigResultTypeDef(TypedDict):
+    OriginRequestPolicyConfig: OriginRequestPolicyConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getoriginrequestpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOriginRequestPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyRequestRequestTypeDef
+
+def get_value() -> GetOriginRequestPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getoriginrequestpolicyresulttypedef"></a>
+```python title="Definition"
+class GetOriginRequestPolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetOriginRequestPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyResultTypeDef
+
+def get_value() -> GetOriginRequestPolicyResultTypeDef:
+    return {
+        "OriginRequestPolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOriginRequestPolicyResultTypeDef(TypedDict):
+    OriginRequestPolicy: OriginRequestPolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OriginRequestPolicy`:
-  [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpublickeyconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPublicKeyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetPublicKeyConfigRequestRequestTypeDef
+
+def get_value() -> GetPublicKeyConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getpublickeyconfigresulttypedef"></a>
+```python title="Definition"
+class GetPublicKeyConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetPublicKeyConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetPublicKeyConfigResultTypeDef
+
+def get_value() -> GetPublicKeyConfigResultTypeDef:
+    return {
+        "PublicKeyConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPublicKeyConfigResultTypeDef(TypedDict):
+    PublicKeyConfig: PublicKeyConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpublickeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetPublicKeyRequestRequestTypeDef
+
+def get_value() -> GetPublicKeyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getpublickeyresulttypedef"></a>
+```python title="Definition"
+class GetPublicKeyRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetPublicKeyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetPublicKeyResultTypeDef
+
+def get_value() -> GetPublicKeyResultTypeDef:
+    return {
+        "PublicKey": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPublicKeyResultTypeDef(TypedDict):
+    PublicKey: PublicKeyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicKey`: [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrealtimelogconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyTypeDef](./type_defs.md#publickeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRealtimeLogConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetRealtimeLogConfigRequestRequestTypeDef
+
+def get_value() -> GetRealtimeLogConfigRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `ARN`: `str`
-
-<a id="getrealtimelogconfigresulttypedef"></a>
+```python title="Definition"
+class GetRealtimeLogConfigRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ARN: NotRequired[str],
+```
 
 ## GetRealtimeLogConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetRealtimeLogConfigResultTypeDef
+
+def get_value() -> GetRealtimeLogConfigResultTypeDef:
+    return {
+        "RealtimeLogConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRealtimeLogConfigResultTypeDef(TypedDict):
+    RealtimeLogConfig: RealtimeLogConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RealtimeLogConfig`:
-  [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresponseheaderspolicyconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResponseHeadersPolicyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyConfigRequestRequestTypeDef
+
+def get_value() -> GetResponseHeadersPolicyConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getresponseheaderspolicyconfigresulttypedef"></a>
+```python title="Definition"
+class GetResponseHeadersPolicyConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetResponseHeadersPolicyConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyConfigResultTypeDef
+
+def get_value() -> GetResponseHeadersPolicyConfigResultTypeDef:
+    return {
+        "ResponseHeadersPolicyConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResponseHeadersPolicyConfigResultTypeDef(TypedDict):
+    ResponseHeadersPolicyConfig: ResponseHeadersPolicyConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResponseHeadersPolicyConfig`:
-  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresponseheaderspolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResponseHeadersPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyRequestRequestTypeDef
+
+def get_value() -> GetResponseHeadersPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getresponseheaderspolicyresulttypedef"></a>
+```python title="Definition"
+class GetResponseHeadersPolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetResponseHeadersPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetResponseHeadersPolicyResultTypeDef
+
+def get_value() -> GetResponseHeadersPolicyResultTypeDef:
+    return {
+        "ResponseHeadersPolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResponseHeadersPolicyResultTypeDef(TypedDict):
+    ResponseHeadersPolicy: ResponseHeadersPolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResponseHeadersPolicy`:
-  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstreamingdistributionconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStreamingDistributionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionConfigRequestRequestTypeDef
+
+def get_value() -> GetStreamingDistributionConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getstreamingdistributionconfigresulttypedef"></a>
+```python title="Definition"
+class GetStreamingDistributionConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetStreamingDistributionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionConfigResultTypeDef
+
+def get_value() -> GetStreamingDistributionConfigResultTypeDef:
+    return {
+        "StreamingDistributionConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStreamingDistributionConfigResultTypeDef(TypedDict):
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstreamingdistributionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStreamingDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionRequestRequestTypeDef
+
+def get_value() -> GetStreamingDistributionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStreamingDistributionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
-- `Id`: `str`
+## GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef
 
-<a id="getstreamingdistributionresulttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef
 
+def get_value() -> GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef(TypedDict):
+    Id: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetStreamingDistributionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionResultTypeDef
+
+def get_value() -> GetStreamingDistributionResultTypeDef:
+    return {
+        "StreamingDistribution": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStreamingDistributionResultTypeDef(TypedDict):
+    StreamingDistribution: StreamingDistributionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamingDistribution`:
-  [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="headerstypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HeadersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import HeadersTypeDef
+
+def get_value() -> HeadersTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="invalidationbatchtypedef"></a>
+```python title="Definition"
+class HeadersTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## InvalidationBatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import InvalidationBatchTypeDef
+
+def get_value() -> InvalidationBatchTypeDef:
+    return {
+        "Paths": ...,
+        "CallerReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvalidationBatchTypeDef(TypedDict):
+    Paths: PathsTypeDef,  # (1)
+    CallerReference: str,
+```
 
-- `Paths`: [PathsTypeDef](./type_defs.md#pathstypedef)
-- `CallerReference`: `str`
-
-<a id="invalidationlisttypedef"></a>
-
+1. See [:material-code-braces: PathsTypeDef](./type_defs.md#pathstypedef) 
 ## InvalidationListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import InvalidationListTypeDef
+
+def get_value() -> InvalidationListTypeDef:
+    return {
+        "Marker": ...,
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvalidationListTypeDef(TypedDict):
+    Marker: str,
+    MaxItems: int,
+    IsTruncated: bool,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[InvalidationSummaryTypeDef]],  # (1)
+```
 
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `IsTruncated`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[InvalidationSummaryTypeDef](./type_defs.md#invalidationsummarytypedef)\]
-
-<a id="invalidationsummarytypedef"></a>
-
+1. See [:material-code-braces: InvalidationSummaryTypeDef](./type_defs.md#invalidationsummarytypedef) 
 ## InvalidationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import InvalidationSummaryTypeDef
+
+def get_value() -> InvalidationSummaryTypeDef:
+    return {
+        "Id": ...,
+        "CreateTime": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `CreateTime`: `datetime`
-- `Status`: `str`
-
-<a id="invalidationtypedef"></a>
+```python title="Definition"
+class InvalidationSummaryTypeDef(TypedDict):
+    Id: str,
+    CreateTime: datetime,
+    Status: str,
+```
 
 ## InvalidationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import InvalidationTypeDef
+
+def get_value() -> InvalidationTypeDef:
+    return {
+        "Id": ...,
+        "Status": ...,
+        "CreateTime": ...,
+        "InvalidationBatch": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvalidationTypeDef(TypedDict):
+    Id: str,
+    Status: str,
+    CreateTime: datetime,
+    InvalidationBatch: InvalidationBatchTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Status`: `str`
-- `CreateTime`: `datetime`
-- `InvalidationBatch`:
-  [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
-
-<a id="kgkeypairidstypedef"></a>
-
+1. See [:material-code-braces: InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef) 
 ## KGKeyPairIdsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KGKeyPairIdsTypeDef
+
+def get_value() -> KGKeyPairIdsTypeDef:
+    return {
+        "KeyGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KGKeyPairIdsTypeDef(TypedDict):
+    KeyGroupId: NotRequired[str],
+    KeyPairIds: NotRequired[KeyPairIdsTypeDef],  # (1)
+```
 
-- `KeyGroupId`: `str`
-- `KeyPairIds`: [KeyPairIdsTypeDef](./type_defs.md#keypairidstypedef)
-
-<a id="keygroupconfigtypedef"></a>
-
+1. See [:material-code-braces: KeyPairIdsTypeDef](./type_defs.md#keypairidstypedef) 
 ## KeyGroupConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KeyGroupConfigTypeDef
+
+def get_value() -> KeyGroupConfigTypeDef:
+    return {
+        "Name": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Items`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="keygrouplisttypedef"></a>
+```python title="Definition"
+class KeyGroupConfigTypeDef(TypedDict):
+    Name: str,
+    Items: Sequence[str],
+    Comment: NotRequired[str],
+```
 
 ## KeyGroupListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KeyGroupListTypeDef
+
+def get_value() -> KeyGroupListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KeyGroupListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[KeyGroupSummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[KeyGroupSummaryTypeDef](./type_defs.md#keygroupsummarytypedef)\]
-
-<a id="keygroupsummarytypedef"></a>
-
+1. See [:material-code-braces: KeyGroupSummaryTypeDef](./type_defs.md#keygroupsummarytypedef) 
 ## KeyGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KeyGroupSummaryTypeDef
+
+def get_value() -> KeyGroupSummaryTypeDef:
+    return {
+        "KeyGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KeyGroupSummaryTypeDef(TypedDict):
+    KeyGroup: KeyGroupTypeDef,  # (1)
+```
 
-- `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
-
-<a id="keygrouptypedef"></a>
-
+1. See [:material-code-braces: KeyGroupTypeDef](./type_defs.md#keygrouptypedef) 
 ## KeyGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KeyGroupTypeDef
+
+def get_value() -> KeyGroupTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "KeyGroupConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KeyGroupTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    KeyGroupConfig: KeyGroupConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
-
-<a id="keypairidstypedef"></a>
-
+1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
 ## KeyPairIdsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KeyPairIdsTypeDef
+
+def get_value() -> KeyPairIdsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `List`\[`str`\]
-
-<a id="kinesisstreamconfigtypedef"></a>
+```python title="Definition"
+class KeyPairIdsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[List[str]],
+```
 
 ## KinesisStreamConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import KinesisStreamConfigTypeDef
+
+def get_value() -> KinesisStreamConfigTypeDef:
+    return {
+        "RoleARN": ...,
+        "StreamARN": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleARN`: `str`
-- `StreamARN`: `str`
-
-<a id="lambdafunctionassociationtypedef"></a>
+```python title="Definition"
+class KinesisStreamConfigTypeDef(TypedDict):
+    RoleARN: str,
+    StreamARN: str,
+```
 
 ## LambdaFunctionAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import LambdaFunctionAssociationTypeDef
+
+def get_value() -> LambdaFunctionAssociationTypeDef:
+    return {
+        "LambdaFunctionARN": ...,
+        "EventType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaFunctionAssociationTypeDef(TypedDict):
+    LambdaFunctionARN: str,
+    EventType: EventTypeType,  # (1)
+    IncludeBody: NotRequired[bool],
+```
 
-- `LambdaFunctionARN`: `str`
-- `EventType`: [EventTypeType](./literals.md#eventtypetype)
-
-Optional fields:
-
-- `IncludeBody`: `bool`
-
-<a id="lambdafunctionassociationstypedef"></a>
-
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
 ## LambdaFunctionAssociationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import LambdaFunctionAssociationsTypeDef
+
+def get_value() -> LambdaFunctionAssociationsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaFunctionAssociationsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[LambdaFunctionAssociationTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef)\]
-
-<a id="listcachepoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef) 
 ## ListCachePoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListCachePoliciesRequestRequestTypeDef
+
+def get_value() -> ListCachePoliciesRequestRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCachePoliciesRequestRequestTypeDef(TypedDict):
+    Type: NotRequired[CachePolicyTypeType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
-- `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listcachepoliciesresulttypedef"></a>
-
+1. See [:material-code-brackets: CachePolicyTypeType](./literals.md#cachepolicytypetype) 
 ## ListCachePoliciesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListCachePoliciesResultTypeDef
+
+def get_value() -> ListCachePoliciesResultTypeDef:
+    return {
+        "CachePolicyList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCachePoliciesResultTypeDef(TypedDict):
+    CachePolicyList: CachePolicyListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CachePolicyList`:
-  [CachePolicyListTypeDef](./type_defs.md#cachepolicylisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CachePolicyListTypeDef](./type_defs.md#cachepolicylisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCloudFrontOriginAccessIdentitiesRequestListCloudFrontOriginAccessIdentitiesPaginateTypeDef
 
-<a id="listcloudfrontoriginaccessidentitiesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesRequestListCloudFrontOriginAccessIdentitiesPaginateTypeDef
 
+def get_value() -> ListCloudFrontOriginAccessIdentitiesRequestListCloudFrontOriginAccessIdentitiesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCloudFrontOriginAccessIdentitiesRequestListCloudFrontOriginAccessIdentitiesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef
+
+def get_value() -> ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listcloudfrontoriginaccessidentitiesresulttypedef"></a>
+```python title="Definition"
+class ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListCloudFrontOriginAccessIdentitiesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesResultTypeDef
+
+def get_value() -> ListCloudFrontOriginAccessIdentitiesResultTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentityList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCloudFrontOriginAccessIdentitiesResultTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentityList: CloudFrontOriginAccessIdentityListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CloudFrontOriginAccessIdentityList`:
-  [CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listconflictingaliasesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListConflictingAliasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListConflictingAliasesRequestRequestTypeDef
+
+def get_value() -> ListConflictingAliasesRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+        "Alias": ...,
+    }
 ```
 
-Required fields:
-
-- `DistributionId`: `str`
-- `Alias`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listconflictingaliasesresulttypedef"></a>
+```python title="Definition"
+class ListConflictingAliasesRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+    Alias: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListConflictingAliasesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListConflictingAliasesResultTypeDef
+
+def get_value() -> ListConflictingAliasesResultTypeDef:
+    return {
+        "ConflictingAliasesList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConflictingAliasesResultTypeDef(TypedDict):
+    ConflictingAliasesList: ConflictingAliasesListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConflictingAliasesList`:
-  [ConflictingAliasesListTypeDef](./type_defs.md#conflictingaliaseslisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdistributionsbycachepolicyidrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConflictingAliasesListTypeDef](./type_defs.md#conflictingaliaseslisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDistributionsByCachePolicyIdRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByCachePolicyIdRequestRequestTypeDef
+
+def get_value() -> ListDistributionsByCachePolicyIdRequestRequestTypeDef:
+    return {
+        "CachePolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `CachePolicyId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listdistributionsbycachepolicyidresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsByCachePolicyIdRequestRequestTypeDef(TypedDict):
+    CachePolicyId: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListDistributionsByCachePolicyIdResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByCachePolicyIdResultTypeDef
+
+def get_value() -> ListDistributionsByCachePolicyIdResultTypeDef:
+    return {
+        "DistributionIdList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsByCachePolicyIdResultTypeDef(TypedDict):
+    DistributionIdList: DistributionIdListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionIdList`:
-  [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdistributionsbykeygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDistributionsByKeyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByKeyGroupRequestRequestTypeDef
+
+def get_value() -> ListDistributionsByKeyGroupRequestRequestTypeDef:
+    return {
+        "KeyGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `KeyGroupId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listdistributionsbykeygroupresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsByKeyGroupRequestRequestTypeDef(TypedDict):
+    KeyGroupId: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListDistributionsByKeyGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByKeyGroupResultTypeDef
+
+def get_value() -> ListDistributionsByKeyGroupResultTypeDef:
+    return {
+        "DistributionIdList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsByKeyGroupResultTypeDef(TypedDict):
+    DistributionIdList: DistributionIdListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionIdList`:
-  [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdistributionsbyoriginrequestpolicyidrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef
+
+def get_value() -> ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef:
+    return {
+        "OriginRequestPolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `OriginRequestPolicyId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listdistributionsbyoriginrequestpolicyidresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef(TypedDict):
+    OriginRequestPolicyId: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListDistributionsByOriginRequestPolicyIdResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByOriginRequestPolicyIdResultTypeDef
+
+def get_value() -> ListDistributionsByOriginRequestPolicyIdResultTypeDef:
+    return {
+        "DistributionIdList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsByOriginRequestPolicyIdResultTypeDef(TypedDict):
+    DistributionIdList: DistributionIdListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionIdList`:
-  [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdistributionsbyrealtimelogconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDistributionsByRealtimeLogConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByRealtimeLogConfigRequestRequestTypeDef
+
+def get_value() -> ListDistributionsByRealtimeLogConfigRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-- `RealtimeLogConfigName`: `str`
-- `RealtimeLogConfigArn`: `str`
-
-<a id="listdistributionsbyrealtimelogconfigresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsByRealtimeLogConfigRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+    RealtimeLogConfigName: NotRequired[str],
+    RealtimeLogConfigArn: NotRequired[str],
+```
 
 ## ListDistributionsByRealtimeLogConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByRealtimeLogConfigResultTypeDef
+
+def get_value() -> ListDistributionsByRealtimeLogConfigResultTypeDef:
+    return {
+        "DistributionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsByRealtimeLogConfigResultTypeDef(TypedDict):
+    DistributionList: DistributionListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionList`:
-  [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdistributionsbyresponseheaderspolicyidrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionListTypeDef](./type_defs.md#distributionlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef
+
+def get_value() -> ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef:
+    return {
+        "ResponseHeadersPolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResponseHeadersPolicyId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listdistributionsbyresponseheaderspolicyidresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef(TypedDict):
+    ResponseHeadersPolicyId: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListDistributionsByResponseHeadersPolicyIdResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByResponseHeadersPolicyIdResultTypeDef
+
+def get_value() -> ListDistributionsByResponseHeadersPolicyIdResultTypeDef:
+    return {
+        "DistributionIdList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsByResponseHeadersPolicyIdResultTypeDef(TypedDict):
+    DistributionIdList: DistributionIdListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionIdList`:
-  [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdistributionsbywebaclidrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDistributionsByWebACLIdRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByWebACLIdRequestRequestTypeDef
+
+def get_value() -> ListDistributionsByWebACLIdRequestRequestTypeDef:
+    return {
+        "WebACLId": ...,
+    }
 ```
 
-Required fields:
-
-- `WebACLId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listdistributionsbywebaclidresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsByWebACLIdRequestRequestTypeDef(TypedDict):
+    WebACLId: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListDistributionsByWebACLIdResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsByWebACLIdResultTypeDef
+
+def get_value() -> ListDistributionsByWebACLIdResultTypeDef:
+    return {
+        "DistributionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsByWebACLIdResultTypeDef(TypedDict):
+    DistributionList: DistributionListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionList`:
-  [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DistributionListTypeDef](./type_defs.md#distributionlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDistributionsRequestListDistributionsPaginateTypeDef
 
-<a id="listdistributionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListDistributionsRequestListDistributionsPaginateTypeDef
 
+def get_value() -> ListDistributionsRequestListDistributionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDistributionsRequestListDistributionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDistributionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsRequestRequestTypeDef
+
+def get_value() -> ListDistributionsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listdistributionsresulttypedef"></a>
+```python title="Definition"
+class ListDistributionsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListDistributionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListDistributionsResultTypeDef
+
+def get_value() -> ListDistributionsResultTypeDef:
+    return {
+        "DistributionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDistributionsResultTypeDef(TypedDict):
+    DistributionList: DistributionListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DistributionList`:
-  [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listfieldlevelencryptionconfigsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionListTypeDef](./type_defs.md#distributionlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFieldLevelEncryptionConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionConfigsRequestRequestTypeDef
+
+def get_value() -> ListFieldLevelEncryptionConfigsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listfieldlevelencryptionconfigsresulttypedef"></a>
+```python title="Definition"
+class ListFieldLevelEncryptionConfigsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListFieldLevelEncryptionConfigsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionConfigsResultTypeDef
+
+def get_value() -> ListFieldLevelEncryptionConfigsResultTypeDef:
+    return {
+        "FieldLevelEncryptionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFieldLevelEncryptionConfigsResultTypeDef(TypedDict):
+    FieldLevelEncryptionList: FieldLevelEncryptionListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionList`:
-  [FieldLevelEncryptionListTypeDef](./type_defs.md#fieldlevelencryptionlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listfieldlevelencryptionprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionListTypeDef](./type_defs.md#fieldlevelencryptionlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFieldLevelEncryptionProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionProfilesRequestRequestTypeDef
+
+def get_value() -> ListFieldLevelEncryptionProfilesRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listfieldlevelencryptionprofilesresulttypedef"></a>
+```python title="Definition"
+class ListFieldLevelEncryptionProfilesRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListFieldLevelEncryptionProfilesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionProfilesResultTypeDef
+
+def get_value() -> ListFieldLevelEncryptionProfilesResultTypeDef:
+    return {
+        "FieldLevelEncryptionProfileList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFieldLevelEncryptionProfilesResultTypeDef(TypedDict):
+    FieldLevelEncryptionProfileList: FieldLevelEncryptionProfileListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionProfileList`:
-  [FieldLevelEncryptionProfileListTypeDef](./type_defs.md#fieldlevelencryptionprofilelisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listfunctionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileListTypeDef](./type_defs.md#fieldlevelencryptionprofilelisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFunctionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListFunctionsRequestRequestTypeDef
+
+def get_value() -> ListFunctionsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFunctionsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+    Stage: NotRequired[FunctionStageType],  # (1)
+```
 
-- `Marker`: `str`
-- `MaxItems`: `str`
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
-
-<a id="listfunctionsresulttypedef"></a>
-
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
 ## ListFunctionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListFunctionsResultTypeDef
+
+def get_value() -> ListFunctionsResultTypeDef:
+    return {
+        "FunctionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFunctionsResultTypeDef(TypedDict):
+    FunctionList: FunctionListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FunctionList`: [FunctionListTypeDef](./type_defs.md#functionlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FunctionListTypeDef](./type_defs.md#functionlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInvalidationsRequestListInvalidationsPaginateTypeDef
 
-<a id="listinvalidationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListInvalidationsRequestListInvalidationsPaginateTypeDef
 
+def get_value() -> ListInvalidationsRequestListInvalidationsPaginateTypeDef:
+    return {
+        "DistributionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListInvalidationsRequestListInvalidationsPaginateTypeDef(TypedDict):
+    DistributionId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInvalidationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListInvalidationsRequestRequestTypeDef
+
+def get_value() -> ListInvalidationsRequestRequestTypeDef:
+    return {
+        "DistributionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DistributionId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listinvalidationsresulttypedef"></a>
+```python title="Definition"
+class ListInvalidationsRequestRequestTypeDef(TypedDict):
+    DistributionId: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListInvalidationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListInvalidationsResultTypeDef
+
+def get_value() -> ListInvalidationsResultTypeDef:
+    return {
+        "InvalidationList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInvalidationsResultTypeDef(TypedDict):
+    InvalidationList: InvalidationListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InvalidationList`:
-  [InvalidationListTypeDef](./type_defs.md#invalidationlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listkeygroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InvalidationListTypeDef](./type_defs.md#invalidationlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListKeyGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListKeyGroupsRequestRequestTypeDef
+
+def get_value() -> ListKeyGroupsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listkeygroupsresulttypedef"></a>
+```python title="Definition"
+class ListKeyGroupsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListKeyGroupsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListKeyGroupsResultTypeDef
+
+def get_value() -> ListKeyGroupsResultTypeDef:
+    return {
+        "KeyGroupList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListKeyGroupsResultTypeDef(TypedDict):
+    KeyGroupList: KeyGroupListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `KeyGroupList`: [KeyGroupListTypeDef](./type_defs.md#keygrouplisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listoriginrequestpoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupListTypeDef](./type_defs.md#keygrouplisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOriginRequestPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListOriginRequestPoliciesRequestRequestTypeDef
+
+def get_value() -> ListOriginRequestPoliciesRequestRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListOriginRequestPoliciesRequestRequestTypeDef(TypedDict):
+    Type: NotRequired[OriginRequestPolicyTypeType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
-- `Type`:
-  [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listoriginrequestpoliciesresulttypedef"></a>
-
+1. See [:material-code-brackets: OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype) 
 ## ListOriginRequestPoliciesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListOriginRequestPoliciesResultTypeDef
+
+def get_value() -> ListOriginRequestPoliciesResultTypeDef:
+    return {
+        "OriginRequestPolicyList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOriginRequestPoliciesResultTypeDef(TypedDict):
+    OriginRequestPolicyList: OriginRequestPolicyListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OriginRequestPolicyList`:
-  [OriginRequestPolicyListTypeDef](./type_defs.md#originrequestpolicylisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpublickeysrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyListTypeDef](./type_defs.md#originrequestpolicylisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPublicKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListPublicKeysRequestRequestTypeDef
+
+def get_value() -> ListPublicKeysRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listpublickeysresulttypedef"></a>
+```python title="Definition"
+class ListPublicKeysRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListPublicKeysResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListPublicKeysResultTypeDef
+
+def get_value() -> ListPublicKeysResultTypeDef:
+    return {
+        "PublicKeyList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPublicKeysResultTypeDef(TypedDict):
+    PublicKeyList: PublicKeyListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicKeyList`: [PublicKeyListTypeDef](./type_defs.md#publickeylisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listrealtimelogconfigsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyListTypeDef](./type_defs.md#publickeylisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRealtimeLogConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListRealtimeLogConfigsRequestRequestTypeDef
+
+def get_value() -> ListRealtimeLogConfigsRequestRequestTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `str`
-- `Marker`: `str`
-
-<a id="listrealtimelogconfigsresulttypedef"></a>
+```python title="Definition"
+class ListRealtimeLogConfigsRequestRequestTypeDef(TypedDict):
+    MaxItems: NotRequired[str],
+    Marker: NotRequired[str],
+```
 
 ## ListRealtimeLogConfigsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListRealtimeLogConfigsResultTypeDef
+
+def get_value() -> ListRealtimeLogConfigsResultTypeDef:
+    return {
+        "RealtimeLogConfigs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRealtimeLogConfigsResultTypeDef(TypedDict):
+    RealtimeLogConfigs: RealtimeLogConfigsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RealtimeLogConfigs`:
-  [RealtimeLogConfigsTypeDef](./type_defs.md#realtimelogconfigstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresponseheaderspoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RealtimeLogConfigsTypeDef](./type_defs.md#realtimelogconfigstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResponseHeadersPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListResponseHeadersPoliciesRequestRequestTypeDef
+
+def get_value() -> ListResponseHeadersPoliciesRequestRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListResponseHeadersPoliciesRequestRequestTypeDef(TypedDict):
+    Type: NotRequired[ResponseHeadersPolicyTypeType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
-- `Type`:
-  [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listresponseheaderspoliciesresulttypedef"></a>
-
+1. See [:material-code-brackets: ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype) 
 ## ListResponseHeadersPoliciesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListResponseHeadersPoliciesResultTypeDef
+
+def get_value() -> ListResponseHeadersPoliciesResultTypeDef:
+    return {
+        "ResponseHeadersPolicyList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResponseHeadersPoliciesResultTypeDef(TypedDict):
+    ResponseHeadersPolicyList: ResponseHeadersPolicyListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResponseHeadersPolicyList`:
-  [ResponseHeadersPolicyListTypeDef](./type_defs.md#responseheaderspolicylisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseHeadersPolicyListTypeDef](./type_defs.md#responseheaderspolicylisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStreamingDistributionsRequestListStreamingDistributionsPaginateTypeDef
 
-<a id="liststreamingdistributionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListStreamingDistributionsRequestListStreamingDistributionsPaginateTypeDef
 
+def get_value() -> ListStreamingDistributionsRequestListStreamingDistributionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamingDistributionsRequestListStreamingDistributionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStreamingDistributionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListStreamingDistributionsRequestRequestTypeDef
+
+def get_value() -> ListStreamingDistributionsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="liststreamingdistributionsresulttypedef"></a>
+```python title="Definition"
+class ListStreamingDistributionsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListStreamingDistributionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListStreamingDistributionsResultTypeDef
+
+def get_value() -> ListStreamingDistributionsResultTypeDef:
+    return {
+        "StreamingDistributionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStreamingDistributionsResultTypeDef(TypedDict):
+    StreamingDistributionList: StreamingDistributionListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamingDistributionList`:
-  [StreamingDistributionListTypeDef](./type_defs.md#streamingdistributionlisttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionListTypeDef](./type_defs.md#streamingdistributionlisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+    }
 ```
 
-Required fields:
-
-- `Resource`: `str`
-
-<a id="listtagsforresourceresulttypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    Resource: str,
+```
 
 ## ListTagsForResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    Tags: TagsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingconfigtypedef"></a>
-
+1. See [:material-code-braces: TagsTypeDef](./type_defs.md#tagstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import LoggingConfigTypeDef
+
+def get_value() -> LoggingConfigTypeDef:
+    return {
+        "Enabled": ...,
+        "IncludeCookies": ...,
+        "Bucket": ...,
+        "Prefix": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-- `IncludeCookies`: `bool`
-- `Bucket`: `str`
-- `Prefix`: `str`
-
-<a id="monitoringsubscriptiontypedef"></a>
+```python title="Definition"
+class LoggingConfigTypeDef(TypedDict):
+    Enabled: bool,
+    IncludeCookies: bool,
+    Bucket: str,
+    Prefix: str,
+```
 
 ## MonitoringSubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import MonitoringSubscriptionTypeDef
+
+def get_value() -> MonitoringSubscriptionTypeDef:
+    return {
+        "RealtimeMetricsSubscriptionConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MonitoringSubscriptionTypeDef(TypedDict):
+    RealtimeMetricsSubscriptionConfig: NotRequired[RealtimeMetricsSubscriptionConfigTypeDef],  # (1)
+```
 
-- `RealtimeMetricsSubscriptionConfig`:
-  [RealtimeMetricsSubscriptionConfigTypeDef](./type_defs.md#realtimemetricssubscriptionconfigtypedef)
-
-<a id="origincustomheadertypedef"></a>
-
+1. See [:material-code-braces: RealtimeMetricsSubscriptionConfigTypeDef](./type_defs.md#realtimemetricssubscriptionconfigtypedef) 
 ## OriginCustomHeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginCustomHeaderTypeDef
+
+def get_value() -> OriginCustomHeaderTypeDef:
+    return {
+        "HeaderName": ...,
+        "HeaderValue": ...,
+    }
 ```
 
-Required fields:
-
-- `HeaderName`: `str`
-- `HeaderValue`: `str`
-
-<a id="origingroupfailovercriteriatypedef"></a>
+```python title="Definition"
+class OriginCustomHeaderTypeDef(TypedDict):
+    HeaderName: str,
+    HeaderValue: str,
+```
 
 ## OriginGroupFailoverCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginGroupFailoverCriteriaTypeDef
+
+def get_value() -> OriginGroupFailoverCriteriaTypeDef:
+    return {
+        "StatusCodes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginGroupFailoverCriteriaTypeDef(TypedDict):
+    StatusCodes: StatusCodesTypeDef,  # (1)
+```
 
-- `StatusCodes`: [StatusCodesTypeDef](./type_defs.md#statuscodestypedef)
-
-<a id="origingroupmembertypedef"></a>
-
+1. See [:material-code-braces: StatusCodesTypeDef](./type_defs.md#statuscodestypedef) 
 ## OriginGroupMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginGroupMemberTypeDef
+
+def get_value() -> OriginGroupMemberTypeDef:
+    return {
+        "OriginId": ...,
+    }
 ```
 
-Required fields:
-
-- `OriginId`: `str`
-
-<a id="origingroupmemberstypedef"></a>
+```python title="Definition"
+class OriginGroupMemberTypeDef(TypedDict):
+    OriginId: str,
+```
 
 ## OriginGroupMembersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginGroupMembersTypeDef
+
+def get_value() -> OriginGroupMembersTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginGroupMembersTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[OriginGroupMemberTypeDef],  # (1)
+```
 
-- `Quantity`: `int`
-- `Items`:
-  `Sequence`\[[OriginGroupMemberTypeDef](./type_defs.md#origingroupmembertypedef)\]
-
-<a id="origingrouptypedef"></a>
-
+1. See [:material-code-braces: OriginGroupMemberTypeDef](./type_defs.md#origingroupmembertypedef) 
 ## OriginGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginGroupTypeDef
+
+def get_value() -> OriginGroupTypeDef:
+    return {
+        "Id": ...,
+        "FailoverCriteria": ...,
+        "Members": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginGroupTypeDef(TypedDict):
+    Id: str,
+    FailoverCriteria: OriginGroupFailoverCriteriaTypeDef,  # (1)
+    Members: OriginGroupMembersTypeDef,  # (2)
+```
 
-- `Id`: `str`
-- `FailoverCriteria`:
-  [OriginGroupFailoverCriteriaTypeDef](./type_defs.md#origingroupfailovercriteriatypedef)
-- `Members`:
-  [OriginGroupMembersTypeDef](./type_defs.md#origingroupmemberstypedef)
-
-<a id="origingroupstypedef"></a>
-
+1. See [:material-code-braces: OriginGroupFailoverCriteriaTypeDef](./type_defs.md#origingroupfailovercriteriatypedef) 
+2. See [:material-code-braces: OriginGroupMembersTypeDef](./type_defs.md#origingroupmemberstypedef) 
 ## OriginGroupsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginGroupsTypeDef
+
+def get_value() -> OriginGroupsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginGroupsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[OriginGroupTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[OriginGroupTypeDef](./type_defs.md#origingrouptypedef)\]
-
-<a id="originrequestpolicyconfigtypedef"></a>
-
+1. See [:material-code-braces: OriginGroupTypeDef](./type_defs.md#origingrouptypedef) 
 ## OriginRequestPolicyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyConfigTypeDef
+
+def get_value() -> OriginRequestPolicyConfigTypeDef:
+    return {
+        "Name": ...,
+        "HeadersConfig": ...,
+        "CookiesConfig": ...,
+        "QueryStringsConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicyConfigTypeDef(TypedDict):
+    Name: str,
+    HeadersConfig: OriginRequestPolicyHeadersConfigTypeDef,  # (1)
+    CookiesConfig: OriginRequestPolicyCookiesConfigTypeDef,  # (2)
+    QueryStringsConfig: OriginRequestPolicyQueryStringsConfigTypeDef,  # (3)
+    Comment: NotRequired[str],
+```
 
-- `Name`: `str`
-- `HeadersConfig`:
-  [OriginRequestPolicyHeadersConfigTypeDef](./type_defs.md#originrequestpolicyheadersconfigtypedef)
-- `CookiesConfig`:
-  [OriginRequestPolicyCookiesConfigTypeDef](./type_defs.md#originrequestpolicycookiesconfigtypedef)
-- `QueryStringsConfig`:
-  [OriginRequestPolicyQueryStringsConfigTypeDef](./type_defs.md#originrequestpolicyquerystringsconfigtypedef)
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="originrequestpolicycookiesconfigtypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyHeadersConfigTypeDef](./type_defs.md#originrequestpolicyheadersconfigtypedef) 
+2. See [:material-code-braces: OriginRequestPolicyCookiesConfigTypeDef](./type_defs.md#originrequestpolicycookiesconfigtypedef) 
+3. See [:material-code-braces: OriginRequestPolicyQueryStringsConfigTypeDef](./type_defs.md#originrequestpolicyquerystringsconfigtypedef) 
 ## OriginRequestPolicyCookiesConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyCookiesConfigTypeDef
+
+def get_value() -> OriginRequestPolicyCookiesConfigTypeDef:
+    return {
+        "CookieBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicyCookiesConfigTypeDef(TypedDict):
+    CookieBehavior: OriginRequestPolicyCookieBehaviorType,  # (1)
+    Cookies: NotRequired[CookieNamesTypeDef],  # (2)
+```
 
-- `CookieBehavior`:
-  [OriginRequestPolicyCookieBehaviorType](./literals.md#originrequestpolicycookiebehaviortype)
-
-Optional fields:
-
-- `Cookies`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
-
-<a id="originrequestpolicyheadersconfigtypedef"></a>
-
+1. See [:material-code-brackets: OriginRequestPolicyCookieBehaviorType](./literals.md#originrequestpolicycookiebehaviortype) 
+2. See [:material-code-braces: CookieNamesTypeDef](./type_defs.md#cookienamestypedef) 
 ## OriginRequestPolicyHeadersConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyHeadersConfigTypeDef
+
+def get_value() -> OriginRequestPolicyHeadersConfigTypeDef:
+    return {
+        "HeaderBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicyHeadersConfigTypeDef(TypedDict):
+    HeaderBehavior: OriginRequestPolicyHeaderBehaviorType,  # (1)
+    Headers: NotRequired[HeadersTypeDef],  # (2)
+```
 
-- `HeaderBehavior`:
-  [OriginRequestPolicyHeaderBehaviorType](./literals.md#originrequestpolicyheaderbehaviortype)
-
-Optional fields:
-
-- `Headers`: [HeadersTypeDef](./type_defs.md#headerstypedef)
-
-<a id="originrequestpolicylisttypedef"></a>
-
+1. See [:material-code-brackets: OriginRequestPolicyHeaderBehaviorType](./literals.md#originrequestpolicyheaderbehaviortype) 
+2. See [:material-code-braces: HeadersTypeDef](./type_defs.md#headerstypedef) 
 ## OriginRequestPolicyListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyListTypeDef
+
+def get_value() -> OriginRequestPolicyListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicyListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[OriginRequestPolicySummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[OriginRequestPolicySummaryTypeDef](./type_defs.md#originrequestpolicysummarytypedef)\]
-
-<a id="originrequestpolicyquerystringsconfigtypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicySummaryTypeDef](./type_defs.md#originrequestpolicysummarytypedef) 
 ## OriginRequestPolicyQueryStringsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyQueryStringsConfigTypeDef
+
+def get_value() -> OriginRequestPolicyQueryStringsConfigTypeDef:
+    return {
+        "QueryStringBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicyQueryStringsConfigTypeDef(TypedDict):
+    QueryStringBehavior: OriginRequestPolicyQueryStringBehaviorType,  # (1)
+    QueryStrings: NotRequired[QueryStringNamesTypeDef],  # (2)
+```
 
-- `QueryStringBehavior`:
-  [OriginRequestPolicyQueryStringBehaviorType](./literals.md#originrequestpolicyquerystringbehaviortype)
-
-Optional fields:
-
-- `QueryStrings`:
-  [QueryStringNamesTypeDef](./type_defs.md#querystringnamestypedef)
-
-<a id="originrequestpolicysummarytypedef"></a>
-
+1. See [:material-code-brackets: OriginRequestPolicyQueryStringBehaviorType](./literals.md#originrequestpolicyquerystringbehaviortype) 
+2. See [:material-code-braces: QueryStringNamesTypeDef](./type_defs.md#querystringnamestypedef) 
 ## OriginRequestPolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicySummaryTypeDef
+
+def get_value() -> OriginRequestPolicySummaryTypeDef:
+    return {
+        "Type": ...,
+        "OriginRequestPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicySummaryTypeDef(TypedDict):
+    Type: OriginRequestPolicyTypeType,  # (1)
+    OriginRequestPolicy: OriginRequestPolicyTypeDef,  # (2)
+```
 
-- `Type`:
-  [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
-- `OriginRequestPolicy`:
-  [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
-
-<a id="originrequestpolicytypedef"></a>
-
+1. See [:material-code-brackets: OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype) 
+2. See [:material-code-braces: OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef) 
 ## OriginRequestPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginRequestPolicyTypeDef
+
+def get_value() -> OriginRequestPolicyTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "OriginRequestPolicyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginRequestPolicyTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    OriginRequestPolicyConfig: OriginRequestPolicyConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
-
-<a id="originshieldtypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
 ## OriginShieldTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginShieldTypeDef
+
+def get_value() -> OriginShieldTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `OriginShieldRegion`: `str`
-
-<a id="originsslprotocolstypedef"></a>
+```python title="Definition"
+class OriginShieldTypeDef(TypedDict):
+    Enabled: bool,
+    OriginShieldRegion: NotRequired[str],
+```
 
 ## OriginSslProtocolsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginSslProtocolsTypeDef
+
+def get_value() -> OriginSslProtocolsTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginSslProtocolsTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[SslProtocolType],  # (1)
+```
 
-- `Quantity`: `int`
-- `Items`: `Sequence`\[[SslProtocolType](./literals.md#sslprotocoltype)\]
-
-<a id="origintypedef"></a>
-
+1. See [:material-code-brackets: SslProtocolType](./literals.md#sslprotocoltype) 
 ## OriginTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginTypeDef
+
+def get_value() -> OriginTypeDef:
+    return {
+        "Id": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginTypeDef(TypedDict):
+    Id: str,
+    DomainName: str,
+    OriginPath: NotRequired[str],
+    CustomHeaders: NotRequired[CustomHeadersTypeDef],  # (1)
+    S3OriginConfig: NotRequired[S3OriginConfigTypeDef],  # (2)
+    CustomOriginConfig: NotRequired[CustomOriginConfigTypeDef],  # (3)
+    ConnectionAttempts: NotRequired[int],
+    ConnectionTimeout: NotRequired[int],
+    OriginShield: NotRequired[OriginShieldTypeDef],  # (4)
+```
 
-- `Id`: `str`
-- `DomainName`: `str`
-
-Optional fields:
-
-- `OriginPath`: `str`
-- `CustomHeaders`: [CustomHeadersTypeDef](./type_defs.md#customheaderstypedef)
-- `S3OriginConfig`:
-  [S3OriginConfigTypeDef](./type_defs.md#s3originconfigtypedef)
-- `CustomOriginConfig`:
-  [CustomOriginConfigTypeDef](./type_defs.md#customoriginconfigtypedef)
-- `ConnectionAttempts`: `int`
-- `ConnectionTimeout`: `int`
-- `OriginShield`: [OriginShieldTypeDef](./type_defs.md#originshieldtypedef)
-
-<a id="originstypedef"></a>
-
+1. See [:material-code-braces: CustomHeadersTypeDef](./type_defs.md#customheaderstypedef) 
+2. See [:material-code-braces: S3OriginConfigTypeDef](./type_defs.md#s3originconfigtypedef) 
+3. See [:material-code-braces: CustomOriginConfigTypeDef](./type_defs.md#customoriginconfigtypedef) 
+4. See [:material-code-braces: OriginShieldTypeDef](./type_defs.md#originshieldtypedef) 
 ## OriginsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import OriginsTypeDef
+
+def get_value() -> OriginsTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OriginsTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[OriginTypeDef],  # (1)
+```
 
-- `Quantity`: `int`
-- `Items`: `Sequence`\[[OriginTypeDef](./type_defs.md#origintypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: OriginTypeDef](./type_defs.md#origintypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parametersincachekeyandforwardedtoorigintypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParametersInCacheKeyAndForwardedToOriginTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ParametersInCacheKeyAndForwardedToOriginTypeDef
+
+def get_value() -> ParametersInCacheKeyAndForwardedToOriginTypeDef:
+    return {
+        "EnableAcceptEncodingGzip": ...,
+        "HeadersConfig": ...,
+        "CookiesConfig": ...,
+        "QueryStringsConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ParametersInCacheKeyAndForwardedToOriginTypeDef(TypedDict):
+    EnableAcceptEncodingGzip: bool,
+    HeadersConfig: CachePolicyHeadersConfigTypeDef,  # (1)
+    CookiesConfig: CachePolicyCookiesConfigTypeDef,  # (2)
+    QueryStringsConfig: CachePolicyQueryStringsConfigTypeDef,  # (3)
+    EnableAcceptEncodingBrotli: NotRequired[bool],
+```
 
-- `EnableAcceptEncodingGzip`: `bool`
-- `HeadersConfig`:
-  [CachePolicyHeadersConfigTypeDef](./type_defs.md#cachepolicyheadersconfigtypedef)
-- `CookiesConfig`:
-  [CachePolicyCookiesConfigTypeDef](./type_defs.md#cachepolicycookiesconfigtypedef)
-- `QueryStringsConfig`:
-  [CachePolicyQueryStringsConfigTypeDef](./type_defs.md#cachepolicyquerystringsconfigtypedef)
-
-Optional fields:
-
-- `EnableAcceptEncodingBrotli`: `bool`
-
-<a id="pathstypedef"></a>
-
+1. See [:material-code-braces: CachePolicyHeadersConfigTypeDef](./type_defs.md#cachepolicyheadersconfigtypedef) 
+2. See [:material-code-braces: CachePolicyCookiesConfigTypeDef](./type_defs.md#cachepolicycookiesconfigtypedef) 
+3. See [:material-code-braces: CachePolicyQueryStringsConfigTypeDef](./type_defs.md#cachepolicyquerystringsconfigtypedef) 
 ## PathsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PathsTypeDef
+
+def get_value() -> PathsTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="publickeyconfigtypedef"></a>
+```python title="Definition"
+class PathsTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## PublicKeyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PublicKeyConfigTypeDef
+
+def get_value() -> PublicKeyConfigTypeDef:
+    return {
+        "CallerReference": ...,
+        "Name": ...,
+        "EncodedKey": ...,
+    }
 ```
 
-Required fields:
-
-- `CallerReference`: `str`
-- `Name`: `str`
-- `EncodedKey`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="publickeylisttypedef"></a>
+```python title="Definition"
+class PublicKeyConfigTypeDef(TypedDict):
+    CallerReference: str,
+    Name: str,
+    EncodedKey: str,
+    Comment: NotRequired[str],
+```
 
 ## PublicKeyListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PublicKeyListTypeDef
+
+def get_value() -> PublicKeyListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublicKeyListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[PublicKeySummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[PublicKeySummaryTypeDef](./type_defs.md#publickeysummarytypedef)\]
-
-<a id="publickeysummarytypedef"></a>
-
+1. See [:material-code-braces: PublicKeySummaryTypeDef](./type_defs.md#publickeysummarytypedef) 
 ## PublicKeySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PublicKeySummaryTypeDef
+
+def get_value() -> PublicKeySummaryTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "CreatedTime": ...,
+        "EncodedKey": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Name`: `str`
-- `CreatedTime`: `datetime`
-- `EncodedKey`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="publickeytypedef"></a>
+```python title="Definition"
+class PublicKeySummaryTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    CreatedTime: datetime,
+    EncodedKey: str,
+    Comment: NotRequired[str],
+```
 
 ## PublicKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PublicKeyTypeDef
+
+def get_value() -> PublicKeyTypeDef:
+    return {
+        "Id": ...,
+        "CreatedTime": ...,
+        "PublicKeyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublicKeyTypeDef(TypedDict):
+    Id: str,
+    CreatedTime: datetime,
+    PublicKeyConfig: PublicKeyConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `CreatedTime`: `datetime`
-- `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
-
-<a id="publishfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) 
 ## PublishFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PublishFunctionRequestRequestTypeDef
+
+def get_value() -> PublishFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IfMatch": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `IfMatch`: `str`
-
-<a id="publishfunctionresulttypedef"></a>
+```python title="Definition"
+class PublishFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IfMatch: str,
+```
 
 ## PublishFunctionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import PublishFunctionResultTypeDef
+
+def get_value() -> PublishFunctionResultTypeDef:
+    return {
+        "FunctionSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishFunctionResultTypeDef(TypedDict):
+    FunctionSummary: FunctionSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FunctionSummary`:
-  [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="queryargprofileconfigtypedef"></a>
-
+1. See [:material-code-braces: FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QueryArgProfileConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import QueryArgProfileConfigTypeDef
+
+def get_value() -> QueryArgProfileConfigTypeDef:
+    return {
+        "ForwardWhenQueryArgProfileIsUnknown": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryArgProfileConfigTypeDef(TypedDict):
+    ForwardWhenQueryArgProfileIsUnknown: bool,
+    QueryArgProfiles: NotRequired[QueryArgProfilesTypeDef],  # (1)
+```
 
-- `ForwardWhenQueryArgProfileIsUnknown`: `bool`
-
-Optional fields:
-
-- `QueryArgProfiles`:
-  [QueryArgProfilesTypeDef](./type_defs.md#queryargprofilestypedef)
-
-<a id="queryargprofiletypedef"></a>
-
+1. See [:material-code-braces: QueryArgProfilesTypeDef](./type_defs.md#queryargprofilestypedef) 
 ## QueryArgProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import QueryArgProfileTypeDef
+
+def get_value() -> QueryArgProfileTypeDef:
+    return {
+        "QueryArg": ...,
+        "ProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryArg`: `str`
-- `ProfileId`: `str`
-
-<a id="queryargprofilestypedef"></a>
+```python title="Definition"
+class QueryArgProfileTypeDef(TypedDict):
+    QueryArg: str,
+    ProfileId: str,
+```
 
 ## QueryArgProfilesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import QueryArgProfilesTypeDef
+
+def get_value() -> QueryArgProfilesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryArgProfilesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[QueryArgProfileTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[QueryArgProfileTypeDef](./type_defs.md#queryargprofiletypedef)\]
-
-<a id="querystringcachekeystypedef"></a>
-
+1. See [:material-code-braces: QueryArgProfileTypeDef](./type_defs.md#queryargprofiletypedef) 
 ## QueryStringCacheKeysTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import QueryStringCacheKeysTypeDef
+
+def get_value() -> QueryStringCacheKeysTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="querystringnamestypedef"></a>
+```python title="Definition"
+class QueryStringCacheKeysTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## QueryStringNamesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import QueryStringNamesTypeDef
+
+def get_value() -> QueryStringNamesTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="realtimelogconfigtypedef"></a>
+```python title="Definition"
+class QueryStringNamesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## RealtimeLogConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import RealtimeLogConfigTypeDef
+
+def get_value() -> RealtimeLogConfigTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "SamplingRate": ...,
+        "EndPoints": ...,
+        "Fields": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RealtimeLogConfigTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    SamplingRate: int,
+    EndPoints: List[EndPointTypeDef],  # (1)
+    Fields: List[str],
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `SamplingRate`: `int`
-- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `List`\[`str`\]
-
-<a id="realtimelogconfigstypedef"></a>
-
+1. See [:material-code-braces: EndPointTypeDef](./type_defs.md#endpointtypedef) 
 ## RealtimeLogConfigsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import RealtimeLogConfigsTypeDef
+
+def get_value() -> RealtimeLogConfigsTypeDef:
+    return {
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RealtimeLogConfigsTypeDef(TypedDict):
+    MaxItems: int,
+    IsTruncated: bool,
+    Marker: str,
+    Items: NotRequired[List[RealtimeLogConfigTypeDef]],  # (1)
+    NextMarker: NotRequired[str],
+```
 
-- `MaxItems`: `int`
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-
-Optional fields:
-
-- `Items`:
-  `List`\[[RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)\]
-- `NextMarker`: `str`
-
-<a id="realtimemetricssubscriptionconfigtypedef"></a>
-
+1. See [:material-code-braces: RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef) 
 ## RealtimeMetricsSubscriptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import RealtimeMetricsSubscriptionConfigTypeDef
+
+def get_value() -> RealtimeMetricsSubscriptionConfigTypeDef:
+    return {
+        "RealtimeMetricsSubscriptionStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RealtimeMetricsSubscriptionConfigTypeDef(TypedDict):
+    RealtimeMetricsSubscriptionStatus: RealtimeMetricsSubscriptionStatusType,  # (1)
+```
 
-- `RealtimeMetricsSubscriptionStatus`:
-  [RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype)
-
-<a id="responseheaderspolicyaccesscontrolallowheaderstypedef"></a>
-
+1. See [:material-code-brackets: RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype) 
 ## ResponseHeadersPolicyAccessControlAllowHeadersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlAllowHeadersTypeDef
+
+def get_value() -> ResponseHeadersPolicyAccessControlAllowHeadersTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-- `Items`: `Sequence`\[`str`\]
-
-<a id="responseheaderspolicyaccesscontrolallowmethodstypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyAccessControlAllowHeadersTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[str],
+```
 
 ## ResponseHeadersPolicyAccessControlAllowMethodsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlAllowMethodsTypeDef
+
+def get_value() -> ResponseHeadersPolicyAccessControlAllowMethodsTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyAccessControlAllowMethodsTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[ResponseHeadersPolicyAccessControlAllowMethodsValuesType],  # (1)
+```
 
-- `Quantity`: `int`
-- `Items`:
-  `Sequence`\[[ResponseHeadersPolicyAccessControlAllowMethodsValuesType](./literals.md#responseheaderspolicyaccesscontrolallowmethodsvaluestype)\]
-
-<a id="responseheaderspolicyaccesscontrolalloworiginstypedef"></a>
-
+1. See [:material-code-brackets: ResponseHeadersPolicyAccessControlAllowMethodsValuesType](./literals.md#responseheaderspolicyaccesscontrolallowmethodsvaluestype) 
 ## ResponseHeadersPolicyAccessControlAllowOriginsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlAllowOriginsTypeDef
+
+def get_value() -> ResponseHeadersPolicyAccessControlAllowOriginsTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-- `Items`: `Sequence`\[`str`\]
-
-<a id="responseheaderspolicyaccesscontrolexposeheaderstypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyAccessControlAllowOriginsTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[str],
+```
 
 ## ResponseHeadersPolicyAccessControlExposeHeadersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyAccessControlExposeHeadersTypeDef
+
+def get_value() -> ResponseHeadersPolicyAccessControlExposeHeadersTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="responseheaderspolicyconfigtypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyAccessControlExposeHeadersTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## ResponseHeadersPolicyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyConfigTypeDef
+
+def get_value() -> ResponseHeadersPolicyConfigTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyConfigTypeDef(TypedDict):
+    Name: str,
+    Comment: NotRequired[str],
+    CorsConfig: NotRequired[ResponseHeadersPolicyCorsConfigTypeDef],  # (1)
+    SecurityHeadersConfig: NotRequired[ResponseHeadersPolicySecurityHeadersConfigTypeDef],  # (2)
+    CustomHeadersConfig: NotRequired[ResponseHeadersPolicyCustomHeadersConfigTypeDef],  # (3)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-- `CorsConfig`:
-  [ResponseHeadersPolicyCorsConfigTypeDef](./type_defs.md#responseheaderspolicycorsconfigtypedef)
-- `SecurityHeadersConfig`:
-  [ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef)
-- `CustomHeadersConfig`:
-  [ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef)
-
-<a id="responseheaderspolicycontentsecuritypolicytypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyCorsConfigTypeDef](./type_defs.md#responseheaderspolicycorsconfigtypedef) 
+2. See [:material-code-braces: ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef) 
+3. See [:material-code-braces: ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef) 
 ## ResponseHeadersPolicyContentSecurityPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyContentSecurityPolicyTypeDef
+
+def get_value() -> ResponseHeadersPolicyContentSecurityPolicyTypeDef:
+    return {
+        "Override": ...,
+        "ContentSecurityPolicy": ...,
+    }
 ```
 
-Required fields:
-
-- `Override`: `bool`
-- `ContentSecurityPolicy`: `str`
-
-<a id="responseheaderspolicycontenttypeoptionstypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyContentSecurityPolicyTypeDef(TypedDict):
+    Override: bool,
+    ContentSecurityPolicy: str,
+```
 
 ## ResponseHeadersPolicyContentTypeOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyContentTypeOptionsTypeDef
+
+def get_value() -> ResponseHeadersPolicyContentTypeOptionsTypeDef:
+    return {
+        "Override": ...,
+    }
 ```
 
-Required fields:
-
-- `Override`: `bool`
-
-<a id="responseheaderspolicycorsconfigtypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyContentTypeOptionsTypeDef(TypedDict):
+    Override: bool,
+```
 
 ## ResponseHeadersPolicyCorsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyCorsConfigTypeDef
+
+def get_value() -> ResponseHeadersPolicyCorsConfigTypeDef:
+    return {
+        "AccessControlAllowOrigins": ...,
+        "AccessControlAllowHeaders": ...,
+        "AccessControlAllowMethods": ...,
+        "AccessControlAllowCredentials": ...,
+        "OriginOverride": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyCorsConfigTypeDef(TypedDict):
+    AccessControlAllowOrigins: ResponseHeadersPolicyAccessControlAllowOriginsTypeDef,  # (1)
+    AccessControlAllowHeaders: ResponseHeadersPolicyAccessControlAllowHeadersTypeDef,  # (2)
+    AccessControlAllowMethods: ResponseHeadersPolicyAccessControlAllowMethodsTypeDef,  # (3)
+    AccessControlAllowCredentials: bool,
+    OriginOverride: bool,
+    AccessControlExposeHeaders: NotRequired[ResponseHeadersPolicyAccessControlExposeHeadersTypeDef],  # (4)
+    AccessControlMaxAgeSec: NotRequired[int],
+```
 
-- `AccessControlAllowOrigins`:
-  [ResponseHeadersPolicyAccessControlAllowOriginsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolalloworiginstypedef)
-- `AccessControlAllowHeaders`:
-  [ResponseHeadersPolicyAccessControlAllowHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowheaderstypedef)
-- `AccessControlAllowMethods`:
-  [ResponseHeadersPolicyAccessControlAllowMethodsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowmethodstypedef)
-- `AccessControlAllowCredentials`: `bool`
-- `OriginOverride`: `bool`
-
-Optional fields:
-
-- `AccessControlExposeHeaders`:
-  [ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolexposeheaderstypedef)
-- `AccessControlMaxAgeSec`: `int`
-
-<a id="responseheaderspolicycustomheadertypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyAccessControlAllowOriginsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolalloworiginstypedef) 
+2. See [:material-code-braces: ResponseHeadersPolicyAccessControlAllowHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowheaderstypedef) 
+3. See [:material-code-braces: ResponseHeadersPolicyAccessControlAllowMethodsTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolallowmethodstypedef) 
+4. See [:material-code-braces: ResponseHeadersPolicyAccessControlExposeHeadersTypeDef](./type_defs.md#responseheaderspolicyaccesscontrolexposeheaderstypedef) 
 ## ResponseHeadersPolicyCustomHeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyCustomHeaderTypeDef
+
+def get_value() -> ResponseHeadersPolicyCustomHeaderTypeDef:
+    return {
+        "Header": ...,
+        "Value": ...,
+        "Override": ...,
+    }
 ```
 
-Required fields:
-
-- `Header`: `str`
-- `Value`: `str`
-- `Override`: `bool`
-
-<a id="responseheaderspolicycustomheadersconfigtypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyCustomHeaderTypeDef(TypedDict):
+    Header: str,
+    Value: str,
+    Override: bool,
+```
 
 ## ResponseHeadersPolicyCustomHeadersConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyCustomHeadersConfigTypeDef
+
+def get_value() -> ResponseHeadersPolicyCustomHeadersConfigTypeDef:
+    return {
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyCustomHeadersConfigTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[ResponseHeadersPolicyCustomHeaderTypeDef]],  # (1)
+```
 
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`:
-  `Sequence`\[[ResponseHeadersPolicyCustomHeaderTypeDef](./type_defs.md#responseheaderspolicycustomheadertypedef)\]
-
-<a id="responseheaderspolicyframeoptionstypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyCustomHeaderTypeDef](./type_defs.md#responseheaderspolicycustomheadertypedef) 
 ## ResponseHeadersPolicyFrameOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyFrameOptionsTypeDef
+
+def get_value() -> ResponseHeadersPolicyFrameOptionsTypeDef:
+    return {
+        "Override": ...,
+        "FrameOption": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyFrameOptionsTypeDef(TypedDict):
+    Override: bool,
+    FrameOption: FrameOptionsListType,  # (1)
+```
 
-- `Override`: `bool`
-- `FrameOption`: [FrameOptionsListType](./literals.md#frameoptionslisttype)
-
-<a id="responseheaderspolicylisttypedef"></a>
-
+1. See [:material-code-brackets: FrameOptionsListType](./literals.md#frameoptionslisttype) 
 ## ResponseHeadersPolicyListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyListTypeDef
+
+def get_value() -> ResponseHeadersPolicyListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[ResponseHeadersPolicySummaryTypeDef]],  # (1)
+```
 
-- `MaxItems`: `int`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[ResponseHeadersPolicySummaryTypeDef](./type_defs.md#responseheaderspolicysummarytypedef)\]
-
-<a id="responseheaderspolicyreferrerpolicytypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicySummaryTypeDef](./type_defs.md#responseheaderspolicysummarytypedef) 
 ## ResponseHeadersPolicyReferrerPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyReferrerPolicyTypeDef
+
+def get_value() -> ResponseHeadersPolicyReferrerPolicyTypeDef:
+    return {
+        "Override": ...,
+        "ReferrerPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyReferrerPolicyTypeDef(TypedDict):
+    Override: bool,
+    ReferrerPolicy: ReferrerPolicyListType,  # (1)
+```
 
-- `Override`: `bool`
-- `ReferrerPolicy`:
-  [ReferrerPolicyListType](./literals.md#referrerpolicylisttype)
-
-<a id="responseheaderspolicysecurityheadersconfigtypedef"></a>
-
+1. See [:material-code-brackets: ReferrerPolicyListType](./literals.md#referrerpolicylisttype) 
 ## ResponseHeadersPolicySecurityHeadersConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicySecurityHeadersConfigTypeDef
+
+def get_value() -> ResponseHeadersPolicySecurityHeadersConfigTypeDef:
+    return {
+        "XSSProtection": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResponseHeadersPolicySecurityHeadersConfigTypeDef(TypedDict):
+    XSSProtection: NotRequired[ResponseHeadersPolicyXSSProtectionTypeDef],  # (1)
+    FrameOptions: NotRequired[ResponseHeadersPolicyFrameOptionsTypeDef],  # (2)
+    ReferrerPolicy: NotRequired[ResponseHeadersPolicyReferrerPolicyTypeDef],  # (3)
+    ContentSecurityPolicy: NotRequired[ResponseHeadersPolicyContentSecurityPolicyTypeDef],  # (4)
+    ContentTypeOptions: NotRequired[ResponseHeadersPolicyContentTypeOptionsTypeDef],  # (5)
+    StrictTransportSecurity: NotRequired[ResponseHeadersPolicyStrictTransportSecurityTypeDef],  # (6)
+```
 
-- `XSSProtection`:
-  [ResponseHeadersPolicyXSSProtectionTypeDef](./type_defs.md#responseheaderspolicyxssprotectiontypedef)
-- `FrameOptions`:
-  [ResponseHeadersPolicyFrameOptionsTypeDef](./type_defs.md#responseheaderspolicyframeoptionstypedef)
-- `ReferrerPolicy`:
-  [ResponseHeadersPolicyReferrerPolicyTypeDef](./type_defs.md#responseheaderspolicyreferrerpolicytypedef)
-- `ContentSecurityPolicy`:
-  [ResponseHeadersPolicyContentSecurityPolicyTypeDef](./type_defs.md#responseheaderspolicycontentsecuritypolicytypedef)
-- `ContentTypeOptions`:
-  [ResponseHeadersPolicyContentTypeOptionsTypeDef](./type_defs.md#responseheaderspolicycontenttypeoptionstypedef)
-- `StrictTransportSecurity`:
-  [ResponseHeadersPolicyStrictTransportSecurityTypeDef](./type_defs.md#responseheaderspolicystricttransportsecuritytypedef)
-
-<a id="responseheaderspolicystricttransportsecuritytypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyXSSProtectionTypeDef](./type_defs.md#responseheaderspolicyxssprotectiontypedef) 
+2. See [:material-code-braces: ResponseHeadersPolicyFrameOptionsTypeDef](./type_defs.md#responseheaderspolicyframeoptionstypedef) 
+3. See [:material-code-braces: ResponseHeadersPolicyReferrerPolicyTypeDef](./type_defs.md#responseheaderspolicyreferrerpolicytypedef) 
+4. See [:material-code-braces: ResponseHeadersPolicyContentSecurityPolicyTypeDef](./type_defs.md#responseheaderspolicycontentsecuritypolicytypedef) 
+5. See [:material-code-braces: ResponseHeadersPolicyContentTypeOptionsTypeDef](./type_defs.md#responseheaderspolicycontenttypeoptionstypedef) 
+6. See [:material-code-braces: ResponseHeadersPolicyStrictTransportSecurityTypeDef](./type_defs.md#responseheaderspolicystricttransportsecuritytypedef) 
 ## ResponseHeadersPolicyStrictTransportSecurityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyStrictTransportSecurityTypeDef
+
+def get_value() -> ResponseHeadersPolicyStrictTransportSecurityTypeDef:
+    return {
+        "Override": ...,
+        "AccessControlMaxAgeSec": ...,
+    }
 ```
 
-Required fields:
-
-- `Override`: `bool`
-- `AccessControlMaxAgeSec`: `int`
-
-Optional fields:
-
-- `IncludeSubdomains`: `bool`
-- `Preload`: `bool`
-
-<a id="responseheaderspolicysummarytypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyStrictTransportSecurityTypeDef(TypedDict):
+    Override: bool,
+    AccessControlMaxAgeSec: int,
+    IncludeSubdomains: NotRequired[bool],
+    Preload: NotRequired[bool],
+```
 
 ## ResponseHeadersPolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicySummaryTypeDef
+
+def get_value() -> ResponseHeadersPolicySummaryTypeDef:
+    return {
+        "Type": ...,
+        "ResponseHeadersPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicySummaryTypeDef(TypedDict):
+    Type: ResponseHeadersPolicyTypeType,  # (1)
+    ResponseHeadersPolicy: ResponseHeadersPolicyTypeDef,  # (2)
+```
 
-- `Type`:
-  [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
-- `ResponseHeadersPolicy`:
-  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
-
-<a id="responseheaderspolicytypedef"></a>
-
+1. See [:material-code-brackets: ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype) 
+2. See [:material-code-braces: ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef) 
 ## ResponseHeadersPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyTypeDef
+
+def get_value() -> ResponseHeadersPolicyTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "ResponseHeadersPolicyConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseHeadersPolicyTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    ResponseHeadersPolicyConfig: ResponseHeadersPolicyConfigTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LastModifiedTime`: `datetime`
-- `ResponseHeadersPolicyConfig`:
-  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
-
-<a id="responseheaderspolicyxssprotectiontypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef) 
 ## ResponseHeadersPolicyXSSProtectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyXSSProtectionTypeDef
+
+def get_value() -> ResponseHeadersPolicyXSSProtectionTypeDef:
+    return {
+        "Override": ...,
+        "Protection": ...,
+    }
 ```
 
-Required fields:
-
-- `Override`: `bool`
-- `Protection`: `bool`
-
-Optional fields:
-
-- `ModeBlock`: `bool`
-- `ReportUri`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResponseHeadersPolicyXSSProtectionTypeDef(TypedDict):
+    Override: bool,
+    Protection: bool,
+    ModeBlock: NotRequired[bool],
+    ReportUri: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restrictionstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestrictionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import RestrictionsTypeDef
+
+def get_value() -> RestrictionsTypeDef:
+    return {
+        "GeoRestriction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestrictionsTypeDef(TypedDict):
+    GeoRestriction: GeoRestrictionTypeDef,  # (1)
+```
 
-- `GeoRestriction`:
-  [GeoRestrictionTypeDef](./type_defs.md#georestrictiontypedef)
-
-<a id="s3originconfigtypedef"></a>
-
+1. See [:material-code-braces: GeoRestrictionTypeDef](./type_defs.md#georestrictiontypedef) 
 ## S3OriginConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import S3OriginConfigTypeDef
+
+def get_value() -> S3OriginConfigTypeDef:
+    return {
+        "OriginAccessIdentity": ...,
+    }
 ```
 
-Required fields:
-
-- `OriginAccessIdentity`: `str`
-
-<a id="s3origintypedef"></a>
+```python title="Definition"
+class S3OriginConfigTypeDef(TypedDict):
+    OriginAccessIdentity: str,
+```
 
 ## S3OriginTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import S3OriginTypeDef
+
+def get_value() -> S3OriginTypeDef:
+    return {
+        "DomainName": ...,
+        "OriginAccessIdentity": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `OriginAccessIdentity`: `str`
-
-<a id="signertypedef"></a>
+```python title="Definition"
+class S3OriginTypeDef(TypedDict):
+    DomainName: str,
+    OriginAccessIdentity: str,
+```
 
 ## SignerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import SignerTypeDef
+
+def get_value() -> SignerTypeDef:
+    return {
+        "AwsAccountNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SignerTypeDef(TypedDict):
+    AwsAccountNumber: NotRequired[str],
+    KeyPairIds: NotRequired[KeyPairIdsTypeDef],  # (1)
+```
 
-- `AwsAccountNumber`: `str`
-- `KeyPairIds`: [KeyPairIdsTypeDef](./type_defs.md#keypairidstypedef)
-
-<a id="statuscodestypedef"></a>
-
+1. See [:material-code-braces: KeyPairIdsTypeDef](./type_defs.md#keypairidstypedef) 
 ## StatusCodesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StatusCodesTypeDef
+
+def get_value() -> StatusCodesTypeDef:
+    return {
+        "Quantity": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
-
-- `Quantity`: `int`
-- `Items`: `Sequence`\[`int`\]
-
-<a id="streamingdistributionconfigtypedef"></a>
+```python title="Definition"
+class StatusCodesTypeDef(TypedDict):
+    Quantity: int,
+    Items: Sequence[int],
+```
 
 ## StreamingDistributionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StreamingDistributionConfigTypeDef
+
+def get_value() -> StreamingDistributionConfigTypeDef:
+    return {
+        "CallerReference": ...,
+        "S3Origin": ...,
+        "Comment": ...,
+        "TrustedSigners": ...,
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamingDistributionConfigTypeDef(TypedDict):
+    CallerReference: str,
+    S3Origin: S3OriginTypeDef,  # (1)
+    Comment: str,
+    TrustedSigners: TrustedSignersTypeDef,  # (4)
+    Enabled: bool,
+    Aliases: NotRequired[AliasesTypeDef],  # (2)
+    Logging: NotRequired[StreamingLoggingConfigTypeDef],  # (3)
+    PriceClass: NotRequired[PriceClassType],  # (5)
+```
 
-- `CallerReference`: `str`
-- `S3Origin`: [S3OriginTypeDef](./type_defs.md#s3origintypedef)
-- `Comment`: `str`
-- `TrustedSigners`:
-  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
-- `Logging`:
-  [StreamingLoggingConfigTypeDef](./type_defs.md#streamingloggingconfigtypedef)
-- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
-
-<a id="streamingdistributionconfigwithtagstypedef"></a>
-
+1. See [:material-code-braces: S3OriginTypeDef](./type_defs.md#s3origintypedef) 
+2. See [:material-code-braces: AliasesTypeDef](./type_defs.md#aliasestypedef) 
+3. See [:material-code-braces: StreamingLoggingConfigTypeDef](./type_defs.md#streamingloggingconfigtypedef) 
+4. See [:material-code-braces: TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef) 
+5. See [:material-code-brackets: PriceClassType](./literals.md#priceclasstype) 
 ## StreamingDistributionConfigWithTagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StreamingDistributionConfigWithTagsTypeDef
+
+def get_value() -> StreamingDistributionConfigWithTagsTypeDef:
+    return {
+        "StreamingDistributionConfig": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamingDistributionConfigWithTagsTypeDef(TypedDict):
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (1)
+    Tags: TagsTypeDef,  # (2)
+```
 
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
-
-<a id="streamingdistributionlisttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
+2. See [:material-code-braces: TagsTypeDef](./type_defs.md#tagstypedef) 
 ## StreamingDistributionListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StreamingDistributionListTypeDef
+
+def get_value() -> StreamingDistributionListTypeDef:
+    return {
+        "Marker": ...,
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamingDistributionListTypeDef(TypedDict):
+    Marker: str,
+    MaxItems: int,
+    IsTruncated: bool,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[StreamingDistributionSummaryTypeDef]],  # (1)
+```
 
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `IsTruncated`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Items`:
-  `List`\[[StreamingDistributionSummaryTypeDef](./type_defs.md#streamingdistributionsummarytypedef)\]
-
-<a id="streamingdistributionsummarytypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionSummaryTypeDef](./type_defs.md#streamingdistributionsummarytypedef) 
 ## StreamingDistributionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StreamingDistributionSummaryTypeDef
+
+def get_value() -> StreamingDistributionSummaryTypeDef:
+    return {
+        "Id": ...,
+        "ARN": ...,
+        "Status": ...,
+        "LastModifiedTime": ...,
+        "DomainName": ...,
+        "S3Origin": ...,
+        "Aliases": ...,
+        "TrustedSigners": ...,
+        "Comment": ...,
+        "PriceClass": ...,
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamingDistributionSummaryTypeDef(TypedDict):
+    Id: str,
+    ARN: str,
+    Status: str,
+    LastModifiedTime: datetime,
+    DomainName: str,
+    S3Origin: S3OriginTypeDef,  # (1)
+    Aliases: AliasesTypeDef,  # (2)
+    TrustedSigners: TrustedSignersTypeDef,  # (3)
+    Comment: str,
+    PriceClass: PriceClassType,  # (4)
+    Enabled: bool,
+```
 
-- `Id`: `str`
-- `ARN`: `str`
-- `Status`: `str`
-- `LastModifiedTime`: `datetime`
-- `DomainName`: `str`
-- `S3Origin`: [S3OriginTypeDef](./type_defs.md#s3origintypedef)
-- `Aliases`: [AliasesTypeDef](./type_defs.md#aliasestypedef)
-- `TrustedSigners`:
-  [TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef)
-- `Comment`: `str`
-- `PriceClass`: [PriceClassType](./literals.md#priceclasstype)
-- `Enabled`: `bool`
-
-<a id="streamingdistributiontypedef"></a>
-
+1. See [:material-code-braces: S3OriginTypeDef](./type_defs.md#s3origintypedef) 
+2. See [:material-code-braces: AliasesTypeDef](./type_defs.md#aliasestypedef) 
+3. See [:material-code-braces: TrustedSignersTypeDef](./type_defs.md#trustedsignerstypedef) 
+4. See [:material-code-brackets: PriceClassType](./literals.md#priceclasstype) 
 ## StreamingDistributionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StreamingDistributionTypeDef
+
+def get_value() -> StreamingDistributionTypeDef:
+    return {
+        "Id": ...,
+        "ARN": ...,
+        "Status": ...,
+        "DomainName": ...,
+        "ActiveTrustedSigners": ...,
+        "StreamingDistributionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamingDistributionTypeDef(TypedDict):
+    Id: str,
+    ARN: str,
+    Status: str,
+    DomainName: str,
+    ActiveTrustedSigners: ActiveTrustedSignersTypeDef,  # (1)
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (2)
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `Id`: `str`
-- `ARN`: `str`
-- `Status`: `str`
-- `DomainName`: `str`
-- `ActiveTrustedSigners`:
-  [ActiveTrustedSignersTypeDef](./type_defs.md#activetrustedsignerstypedef)
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-
-Optional fields:
-
-- `LastModifiedTime`: `datetime`
-
-<a id="streamingloggingconfigtypedef"></a>
-
+1. See [:material-code-braces: ActiveTrustedSignersTypeDef](./type_defs.md#activetrustedsignerstypedef) 
+2. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
 ## StreamingLoggingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import StreamingLoggingConfigTypeDef
+
+def get_value() -> StreamingLoggingConfigTypeDef:
+    return {
+        "Enabled": ...,
+        "Bucket": ...,
+        "Prefix": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-- `Bucket`: `str`
-- `Prefix`: `str`
-
-<a id="tagkeystypedef"></a>
+```python title="Definition"
+class StreamingLoggingConfigTypeDef(TypedDict):
+    Enabled: bool,
+    Bucket: str,
+    Prefix: str,
+```
 
 ## TagKeysTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TagKeysTypeDef
+
+def get_value() -> TagKeysTypeDef:
+    return {
+        "Items": ...,
+    }
 ```
 
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagKeysTypeDef(TypedDict):
+    Items: NotRequired[Sequence[str]],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    Resource: str,
+    Tags: TagsTypeDef,  # (1)
+```
 
-- `Resource`: `str`
-- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagsTypeDef](./type_defs.md#tagstypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="tagstypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## TagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TagsTypeDef
+
+def get_value() -> TagsTypeDef:
+    return {
+        "Items": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagsTypeDef(TypedDict):
+    Items: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Items`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="testfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TestFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TestFunctionRequestRequestTypeDef
+
+def get_value() -> TestFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IfMatch": ...,
+        "EventObject": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IfMatch: str,
+    EventObject: Union[bytes, IO[bytes], StreamingBody],
+    Stage: NotRequired[FunctionStageType],  # (1)
+```
 
-- `Name`: `str`
-- `IfMatch`: `str`
-- `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-Optional fields:
-
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
-
-<a id="testfunctionresulttypedef"></a>
-
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
 ## TestFunctionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TestFunctionResultTypeDef
+
+def get_value() -> TestFunctionResultTypeDef:
+    return {
+        "TestResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestFunctionResultTypeDef(TypedDict):
+    TestResult: TestResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TestResult`: [TestResultTypeDef](./type_defs.md#testresulttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="testresulttypedef"></a>
-
+1. See [:material-code-braces: TestResultTypeDef](./type_defs.md#testresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TestResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TestResultTypeDef
+
+def get_value() -> TestResultTypeDef:
+    return {
+        "FunctionSummary": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestResultTypeDef(TypedDict):
+    FunctionSummary: NotRequired[FunctionSummaryTypeDef],  # (1)
+    ComputeUtilization: NotRequired[str],
+    FunctionExecutionLogs: NotRequired[List[str]],
+    FunctionErrorMessage: NotRequired[str],
+    FunctionOutput: NotRequired[str],
+```
 
-- `FunctionSummary`:
-  [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
-- `ComputeUtilization`: `str`
-- `FunctionExecutionLogs`: `List`\[`str`\]
-- `FunctionErrorMessage`: `str`
-- `FunctionOutput`: `str`
-
-<a id="trustedkeygroupstypedef"></a>
-
+1. See [:material-code-braces: FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef) 
 ## TrustedKeyGroupsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TrustedKeyGroupsTypeDef
+
+def get_value() -> TrustedKeyGroupsTypeDef:
+    return {
+        "Enabled": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="trustedsignerstypedef"></a>
+```python title="Definition"
+class TrustedKeyGroupsTypeDef(TypedDict):
+    Enabled: bool,
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## TrustedSignersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import TrustedSignersTypeDef
+
+def get_value() -> TrustedSignersTypeDef:
+    return {
+        "Enabled": ...,
+        "Quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-- `Quantity`: `int`
-
-Optional fields:
-
-- `Items`: `Sequence`\[`str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TrustedSignersTypeDef(TypedDict):
+    Enabled: bool,
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    Resource: str,
+    TagKeys: TagKeysTypeDef,  # (1)
+```
 
-- `Resource`: `str`
-- `TagKeys`: [TagKeysTypeDef](./type_defs.md#tagkeystypedef)
-
-<a id="updatecachepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagKeysTypeDef](./type_defs.md#tagkeystypedef) 
 ## UpdateCachePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateCachePolicyRequestRequestTypeDef
+
+def get_value() -> UpdateCachePolicyRequestRequestTypeDef:
+    return {
+        "CachePolicyConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCachePolicyRequestRequestTypeDef(TypedDict):
+    CachePolicyConfig: CachePolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatecachepolicyresulttypedef"></a>
-
+1. See [:material-code-braces: CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef) 
 ## UpdateCachePolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateCachePolicyResultTypeDef
+
+def get_value() -> UpdateCachePolicyResultTypeDef:
+    return {
+        "CachePolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCachePolicyResultTypeDef(TypedDict):
+    CachePolicy: CachePolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecloudfrontoriginaccessidentityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CachePolicyTypeDef](./type_defs.md#cachepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef
+
+def get_value() -> UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentityConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatecloudfrontoriginaccessidentityresulttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef) 
 ## UpdateCloudFrontOriginAccessIdentityResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateCloudFrontOriginAccessIdentityResultTypeDef
+
+def get_value() -> UpdateCloudFrontOriginAccessIdentityResultTypeDef:
+    return {
+        "CloudFrontOriginAccessIdentity": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCloudFrontOriginAccessIdentityResultTypeDef(TypedDict):
+    CloudFrontOriginAccessIdentity: CloudFrontOriginAccessIdentityTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CloudFrontOriginAccessIdentity`:
-  [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedistributionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateDistributionRequestRequestTypeDef
+
+def get_value() -> UpdateDistributionRequestRequestTypeDef:
+    return {
+        "DistributionConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDistributionRequestRequestTypeDef(TypedDict):
+    DistributionConfig: DistributionConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatedistributionresulttypedef"></a>
-
+1. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
 ## UpdateDistributionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateDistributionResultTypeDef
+
+def get_value() -> UpdateDistributionResultTypeDef:
+    return {
+        "Distribution": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDistributionResultTypeDef(TypedDict):
+    Distribution: DistributionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefieldlevelencryptionconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFieldLevelEncryptionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionConfigRequestRequestTypeDef
+
+def get_value() -> UpdateFieldLevelEncryptionConfigRequestRequestTypeDef:
+    return {
+        "FieldLevelEncryptionConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFieldLevelEncryptionConfigRequestRequestTypeDef(TypedDict):
+    FieldLevelEncryptionConfig: FieldLevelEncryptionConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatefieldlevelencryptionconfigresulttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef) 
 ## UpdateFieldLevelEncryptionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionConfigResultTypeDef
+
+def get_value() -> UpdateFieldLevelEncryptionConfigResultTypeDef:
+    return {
+        "FieldLevelEncryption": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFieldLevelEncryptionConfigResultTypeDef(TypedDict):
+    FieldLevelEncryption: FieldLevelEncryptionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryption`:
-  [FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefieldlevelencryptionprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFieldLevelEncryptionProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionProfileRequestRequestTypeDef
+
+def get_value() -> UpdateFieldLevelEncryptionProfileRequestRequestTypeDef:
+    return {
+        "FieldLevelEncryptionProfileConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFieldLevelEncryptionProfileRequestRequestTypeDef(TypedDict):
+    FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatefieldlevelencryptionprofileresulttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef) 
 ## UpdateFieldLevelEncryptionProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionProfileResultTypeDef
+
+def get_value() -> UpdateFieldLevelEncryptionProfileResultTypeDef:
+    return {
+        "FieldLevelEncryptionProfile": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFieldLevelEncryptionProfileResultTypeDef(TypedDict):
+    FieldLevelEncryptionProfile: FieldLevelEncryptionProfileTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FieldLevelEncryptionProfile`:
-  [FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateFunctionRequestRequestTypeDef
+
+def get_value() -> UpdateFunctionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IfMatch": ...,
+        "FunctionConfig": ...,
+        "FunctionCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFunctionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IfMatch: str,
+    FunctionConfig: FunctionConfigTypeDef,  # (1)
+    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+```
 
-- `Name`: `str`
-- `IfMatch`: `str`
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="updatefunctionresulttypedef"></a>
-
+1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 
 ## UpdateFunctionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateFunctionResultTypeDef
+
+def get_value() -> UpdateFunctionResultTypeDef:
+    return {
+        "FunctionSummary": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFunctionResultTypeDef(TypedDict):
+    FunctionSummary: FunctionSummaryTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FunctionSummary`:
-  [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatekeygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateKeyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateKeyGroupRequestRequestTypeDef
+
+def get_value() -> UpdateKeyGroupRequestRequestTypeDef:
+    return {
+        "KeyGroupConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateKeyGroupRequestRequestTypeDef(TypedDict):
+    KeyGroupConfig: KeyGroupConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatekeygroupresulttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
 ## UpdateKeyGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateKeyGroupResultTypeDef
+
+def get_value() -> UpdateKeyGroupResultTypeDef:
+    return {
+        "KeyGroup": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateKeyGroupResultTypeDef(TypedDict):
+    KeyGroup: KeyGroupTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateoriginrequestpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KeyGroupTypeDef](./type_defs.md#keygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateOriginRequestPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateOriginRequestPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateOriginRequestPolicyRequestRequestTypeDef:
+    return {
+        "OriginRequestPolicyConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOriginRequestPolicyRequestRequestTypeDef(TypedDict):
+    OriginRequestPolicyConfig: OriginRequestPolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updateoriginrequestpolicyresulttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
 ## UpdateOriginRequestPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateOriginRequestPolicyResultTypeDef
+
+def get_value() -> UpdateOriginRequestPolicyResultTypeDef:
+    return {
+        "OriginRequestPolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOriginRequestPolicyResultTypeDef(TypedDict):
+    OriginRequestPolicy: OriginRequestPolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OriginRequestPolicy`:
-  [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepublickeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdatePublicKeyRequestRequestTypeDef
+
+def get_value() -> UpdatePublicKeyRequestRequestTypeDef:
+    return {
+        "PublicKeyConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePublicKeyRequestRequestTypeDef(TypedDict):
+    PublicKeyConfig: PublicKeyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatepublickeyresulttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) 
 ## UpdatePublicKeyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdatePublicKeyResultTypeDef
+
+def get_value() -> UpdatePublicKeyResultTypeDef:
+    return {
+        "PublicKey": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePublicKeyResultTypeDef(TypedDict):
+    PublicKey: PublicKeyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicKey`: [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterealtimelogconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyTypeDef](./type_defs.md#publickeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRealtimeLogConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateRealtimeLogConfigRequestRequestTypeDef
+
+def get_value() -> UpdateRealtimeLogConfigRequestRequestTypeDef:
+    return {
+        "EndPoints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateRealtimeLogConfigRequestRequestTypeDef(TypedDict):
+    EndPoints: NotRequired[Sequence[EndPointTypeDef]],  # (1)
+    Fields: NotRequired[Sequence[str]],
+    Name: NotRequired[str],
+    ARN: NotRequired[str],
+    SamplingRate: NotRequired[int],
+```
 
-- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `Sequence`\[`str`\]
-- `Name`: `str`
-- `ARN`: `str`
-- `SamplingRate`: `int`
-
-<a id="updaterealtimelogconfigresulttypedef"></a>
-
+1. See [:material-code-braces: EndPointTypeDef](./type_defs.md#endpointtypedef) 
 ## UpdateRealtimeLogConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateRealtimeLogConfigResultTypeDef
+
+def get_value() -> UpdateRealtimeLogConfigResultTypeDef:
+    return {
+        "RealtimeLogConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRealtimeLogConfigResultTypeDef(TypedDict):
+    RealtimeLogConfig: RealtimeLogConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RealtimeLogConfig`:
-  [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateresponseheaderspolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResponseHeadersPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateResponseHeadersPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateResponseHeadersPolicyRequestRequestTypeDef:
+    return {
+        "ResponseHeadersPolicyConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResponseHeadersPolicyRequestRequestTypeDef(TypedDict):
+    ResponseHeadersPolicyConfig: ResponseHeadersPolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `ResponseHeadersPolicyConfig`:
-  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updateresponseheaderspolicyresulttypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef) 
 ## UpdateResponseHeadersPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateResponseHeadersPolicyResultTypeDef
+
+def get_value() -> UpdateResponseHeadersPolicyResultTypeDef:
+    return {
+        "ResponseHeadersPolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResponseHeadersPolicyResultTypeDef(TypedDict):
+    ResponseHeadersPolicy: ResponseHeadersPolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResponseHeadersPolicy`:
-  [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatestreamingdistributionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateStreamingDistributionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateStreamingDistributionRequestRequestTypeDef
+
+def get_value() -> UpdateStreamingDistributionRequestRequestTypeDef:
+    return {
+        "StreamingDistributionConfig": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStreamingDistributionRequestRequestTypeDef(TypedDict):
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
 
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-- `Id`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-
-<a id="updatestreamingdistributionresulttypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
 ## UpdateStreamingDistributionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import UpdateStreamingDistributionResultTypeDef
+
+def get_value() -> UpdateStreamingDistributionResultTypeDef:
+    return {
+        "StreamingDistribution": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStreamingDistributionResultTypeDef(TypedDict):
+    StreamingDistribution: StreamingDistributionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamingDistribution`:
-  [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
-- `ETag`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="viewercertificatetypedef"></a>
-
+1. See [:material-code-braces: StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ViewerCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import ViewerCertificateTypeDef
+
+def get_value() -> ViewerCertificateTypeDef:
+    return {
+        "CloudFrontDefaultCertificate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ViewerCertificateTypeDef(TypedDict):
+    CloudFrontDefaultCertificate: NotRequired[bool],
+    IAMCertificateId: NotRequired[str],
+    ACMCertificateArn: NotRequired[str],
+    SSLSupportMethod: NotRequired[SSLSupportMethodType],  # (1)
+    MinimumProtocolVersion: NotRequired[MinimumProtocolVersionType],  # (2)
+    Certificate: NotRequired[str],
+    CertificateSource: NotRequired[CertificateSourceType],  # (3)
+```
 
-- `CloudFrontDefaultCertificate`: `bool`
-- `IAMCertificateId`: `str`
-- `ACMCertificateArn`: `str`
-- `SSLSupportMethod`:
-  [SSLSupportMethodType](./literals.md#sslsupportmethodtype)
-- `MinimumProtocolVersion`:
-  [MinimumProtocolVersionType](./literals.md#minimumprotocolversiontype)
-- `Certificate`: `str`
-- `CertificateSource`:
-  [CertificateSourceType](./literals.md#certificatesourcetype)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-brackets: SSLSupportMethodType](./literals.md#sslsupportmethodtype) 
+2. See [:material-code-brackets: MinimumProtocolVersionType](./literals.md#minimumprotocolversiontype) 
+3. See [:material-code-brackets: CertificateSourceType](./literals.md#certificatesourcetype) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudfront.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

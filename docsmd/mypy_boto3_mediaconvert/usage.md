@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-mediaconvert-module"></a>
-
-# Examples for boto3 MediaConvert module
+# Examples
 
 > [Index](../README.md) > [MediaConvert](./README.md) > Examples
 
-- [Examples for boto3 MediaConvert module](#examples-for-boto3-mediaconvert-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+    type annotations stubs module [mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mediaconvert]` package installed.
 
-Write your `MediaConvert` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `MediaConvert` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MediaConvertClient
-# and provides type checking and code completion
-client = session.client("mediaconvert")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_certificate()
 
-# paginator has type DescribeEndpointsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_endpoints")
-for item in paginator.paginate(...):
-    # item has type DescribeEndpointsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mediaconvert")  # (1)
+    result = client.create_job()  # (2)
+    ```
+
+    1. client: [MediaConvertClient](./client.md)
+    2. result: [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mediaconvert")  # (1)
+
+    paginator = client.get_paginator("describe_endpoints")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MediaConvertClient](./client.md)
+    2. paginator: [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+    3. item: [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mediaconvert]` or a standalone `mypy_boto3_mediaconvert`
-package, you have to explicitly specify `client: MediaConvertClient` type
-annotation.
+With `boto3-stubs-lite[mediaconvert]`
+or a standalone `mypy_boto3_mediaconvert` package, you have to explicitly specify `client: MediaConvertClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mediaconvert.client import MediaConvertClient
-from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
-
-from mypy_boto3_mediaconvert.literals import PaginatorName
-
-from mypy_boto3_mediaconvert.type_defs import Dict[str, Any]
-from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MediaConvertClient = session.client("mediaconvert")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.associate_certificate()
+    from mypy_boto3_mediaconvert.client import MediaConvertClient
+    from mypy_boto3_mediaconvert.type_defs import CreateJobResponseTypeDef
+    from mypy_boto3_mediaconvert.type_defs import CreateJobRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_endpoints"
-paginator: DescribeEndpointsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeEndpointsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: MediaConvertClient = session.client("mediaconvert")
+
+    kwargs: CreateJobRequestRequestTypeDef = {...}
+    result: CreateJobResponseTypeDef = client.create_job(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mediaconvert.client import MediaConvertClient
+    from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
+    from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseTypeDef
+
+
+    session = Session()
+    client: MediaConvertClient = session.client("mediaconvert")
+
+    paginator: DescribeEndpointsPaginator = client.get_paginator("describe_endpoints")
+    for item in paginator.paginate(...):
+        item: DescribeEndpointsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

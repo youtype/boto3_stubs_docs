@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-prometheusservice-module"></a>
-
-# Waiters for boto3 PrometheusService module
+# Waiters
 
 > [Index](../README.md) > [PrometheusService](./README.md) > Waiters
 
-Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module
-[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
+!!! note ""
 
-- [Waiters for boto3 PrometheusService module](#waiters-for-boto3-prometheusservice-module)
-  - [WorkspaceActiveWaiter](#workspaceactivewaiter)
-  - [WorkspaceDeletedWaiter](#workspacedeletedwaiter)
-
-<a id="workspaceactivewaiter"></a>
+    Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+    type annotations stubs module [mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 ## WorkspaceActiveWaiter
 
-Type annotations for `boto3.client("amp").get_waiter("workspace_active")`.
+Type annotations and code completion for `#!python boto3.client("amp").get_waiter("workspace_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Waiter.WorkspaceActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_amp.waiter import WorkspaceActiveWaiter
@@ -30,23 +21,39 @@ def get_workspace_active_waiter() -> WorkspaceActiveWaiter:
     return Session().client("amp").get_waiter("workspace_active")
 ```
 
-Boto3 documentation:
-[PrometheusService.Waiter.workspace_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Waiter.WorkspaceActive)
 
-Arguments for `WorkspaceActiveWaiter.wait` method:
+### wait
 
-- `workspaceId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python WorkspaceActiveWaiter.wait` method.
 
-<a id="workspacedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    workspaceId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef = {  # (1)
+    "workspaceId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef](./type_defs.md#describeworkspacerequestworkspaceactivewaittypedef) 
 ## WorkspaceDeletedWaiter
 
-Type annotations for `boto3.client("amp").get_waiter("workspace_deleted")`.
+Type annotations and code completion for `#!python boto3.client("amp").get_waiter("workspace_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Waiter.WorkspaceDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_amp.waiter import WorkspaceDeletedWaiter
@@ -55,10 +62,30 @@ def get_workspace_deleted_waiter() -> WorkspaceDeletedWaiter:
     return Session().client("amp").get_waiter("workspace_deleted")
 ```
 
-Boto3 documentation:
-[PrometheusService.Waiter.workspace_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Waiter.WorkspaceDeleted)
 
-Arguments for `WorkspaceDeletedWaiter.wait` method:
+### wait
 
-- `workspaceId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python WorkspaceDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    workspaceId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef = {  # (1)
+    "workspaceId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef](./type_defs.md#describeworkspacerequestworkspacedeletedwaittypedef) 

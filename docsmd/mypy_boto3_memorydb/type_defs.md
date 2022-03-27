@@ -1,1738 +1,2117 @@
-<a id="typed-dictionaries-for-boto3-memorydb-module"></a>
-
-# Typed dictionaries for boto3 MemoryDB module
+# Typed dictionaries
 
 > [Index](../README.md) > [MemoryDB](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
-type annotations stubs module
-[mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MemoryDB module](#typed-dictionaries-for-boto3-memorydb-module)
-  - [ACLPendingChangesTypeDef](#aclpendingchangestypedef)
-  - [ACLTypeDef](#acltypedef)
-  - [ACLsUpdateStatusTypeDef](#aclsupdatestatustypedef)
-  - [AuthenticationModeTypeDef](#authenticationmodetypedef)
-  - [AuthenticationTypeDef](#authenticationtypedef)
-  - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
-  - [BatchUpdateClusterRequestRequestTypeDef](#batchupdateclusterrequestrequesttypedef)
-  - [BatchUpdateClusterResponseTypeDef](#batchupdateclusterresponsetypedef)
-  - [ClusterConfigurationTypeDef](#clusterconfigurationtypedef)
-  - [ClusterPendingUpdatesTypeDef](#clusterpendingupdatestypedef)
-  - [ClusterTypeDef](#clustertypedef)
-  - [CopySnapshotRequestRequestTypeDef](#copysnapshotrequestrequesttypedef)
-  - [CopySnapshotResponseTypeDef](#copysnapshotresponsetypedef)
-  - [CreateACLRequestRequestTypeDef](#createaclrequestrequesttypedef)
-  - [CreateACLResponseTypeDef](#createaclresponsetypedef)
-  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
-  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
-  - [CreateParameterGroupRequestRequestTypeDef](#createparametergrouprequestrequesttypedef)
-  - [CreateParameterGroupResponseTypeDef](#createparametergroupresponsetypedef)
-  - [CreateSnapshotRequestRequestTypeDef](#createsnapshotrequestrequesttypedef)
-  - [CreateSnapshotResponseTypeDef](#createsnapshotresponsetypedef)
-  - [CreateSubnetGroupRequestRequestTypeDef](#createsubnetgrouprequestrequesttypedef)
-  - [CreateSubnetGroupResponseTypeDef](#createsubnetgroupresponsetypedef)
-  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
-  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
-  - [DeleteACLRequestRequestTypeDef](#deleteaclrequestrequesttypedef)
-  - [DeleteACLResponseTypeDef](#deleteaclresponsetypedef)
-  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
-  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
-  - [DeleteParameterGroupRequestRequestTypeDef](#deleteparametergrouprequestrequesttypedef)
-  - [DeleteParameterGroupResponseTypeDef](#deleteparametergroupresponsetypedef)
-  - [DeleteSnapshotRequestRequestTypeDef](#deletesnapshotrequestrequesttypedef)
-  - [DeleteSnapshotResponseTypeDef](#deletesnapshotresponsetypedef)
-  - [DeleteSubnetGroupRequestRequestTypeDef](#deletesubnetgrouprequestrequesttypedef)
-  - [DeleteSubnetGroupResponseTypeDef](#deletesubnetgroupresponsetypedef)
-  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
-  - [DeleteUserResponseTypeDef](#deleteuserresponsetypedef)
-  - [DescribeACLsRequestRequestTypeDef](#describeaclsrequestrequesttypedef)
-  - [DescribeACLsResponseTypeDef](#describeaclsresponsetypedef)
-  - [DescribeClustersRequestRequestTypeDef](#describeclustersrequestrequesttypedef)
-  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
-  - [DescribeEngineVersionsRequestRequestTypeDef](#describeengineversionsrequestrequesttypedef)
-  - [DescribeEngineVersionsResponseTypeDef](#describeengineversionsresponsetypedef)
-  - [DescribeEventsRequestRequestTypeDef](#describeeventsrequestrequesttypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeParameterGroupsRequestRequestTypeDef](#describeparametergroupsrequestrequesttypedef)
-  - [DescribeParameterGroupsResponseTypeDef](#describeparametergroupsresponsetypedef)
-  - [DescribeParametersRequestRequestTypeDef](#describeparametersrequestrequesttypedef)
-  - [DescribeParametersResponseTypeDef](#describeparametersresponsetypedef)
-  - [DescribeServiceUpdatesRequestRequestTypeDef](#describeserviceupdatesrequestrequesttypedef)
-  - [DescribeServiceUpdatesResponseTypeDef](#describeserviceupdatesresponsetypedef)
-  - [DescribeSnapshotsRequestRequestTypeDef](#describesnapshotsrequestrequesttypedef)
-  - [DescribeSnapshotsResponseTypeDef](#describesnapshotsresponsetypedef)
-  - [DescribeSubnetGroupsRequestRequestTypeDef](#describesubnetgroupsrequestrequesttypedef)
-  - [DescribeSubnetGroupsResponseTypeDef](#describesubnetgroupsresponsetypedef)
-  - [DescribeUsersRequestRequestTypeDef](#describeusersrequestrequesttypedef)
-  - [DescribeUsersResponseTypeDef](#describeusersresponsetypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [EngineVersionInfoTypeDef](#engineversioninfotypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [FailoverShardRequestRequestTypeDef](#failovershardrequestrequesttypedef)
-  - [FailoverShardResponseTypeDef](#failovershardresponsetypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [ListAllowedNodeTypeUpdatesRequestRequestTypeDef](#listallowednodetypeupdatesrequestrequesttypedef)
-  - [ListAllowedNodeTypeUpdatesResponseTypeDef](#listallowednodetypeupdatesresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [NodeTypeDef](#nodetypedef)
-  - [ParameterGroupTypeDef](#parametergrouptypedef)
-  - [ParameterNameValueTypeDef](#parameternamevaluetypedef)
-  - [ParameterTypeDef](#parametertypedef)
-  - [PendingModifiedServiceUpdateTypeDef](#pendingmodifiedserviceupdatetypedef)
-  - [ReplicaConfigurationRequestTypeDef](#replicaconfigurationrequesttypedef)
-  - [ResetParameterGroupRequestRequestTypeDef](#resetparametergrouprequestrequesttypedef)
-  - [ResetParameterGroupResponseTypeDef](#resetparametergroupresponsetypedef)
-  - [ReshardingStatusTypeDef](#reshardingstatustypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SecurityGroupMembershipTypeDef](#securitygroupmembershiptypedef)
-  - [ServiceUpdateRequestTypeDef](#serviceupdaterequesttypedef)
-  - [ServiceUpdateTypeDef](#serviceupdatetypedef)
-  - [ShardConfigurationRequestTypeDef](#shardconfigurationrequesttypedef)
-  - [ShardConfigurationTypeDef](#shardconfigurationtypedef)
-  - [ShardDetailTypeDef](#sharddetailtypedef)
-  - [ShardTypeDef](#shardtypedef)
-  - [SlotMigrationTypeDef](#slotmigrationtypedef)
-  - [SnapshotTypeDef](#snapshottypedef)
-  - [SubnetGroupTypeDef](#subnetgrouptypedef)
-  - [SubnetTypeDef](#subnettypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagResourceResponseTypeDef](#tagresourceresponsetypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UnprocessedClusterTypeDef](#unprocessedclustertypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UntagResourceResponseTypeDef](#untagresourceresponsetypedef)
-  - [UpdateACLRequestRequestTypeDef](#updateaclrequestrequesttypedef)
-  - [UpdateACLResponseTypeDef](#updateaclresponsetypedef)
-  - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
-  - [UpdateClusterResponseTypeDef](#updateclusterresponsetypedef)
-  - [UpdateParameterGroupRequestRequestTypeDef](#updateparametergrouprequestrequesttypedef)
-  - [UpdateParameterGroupResponseTypeDef](#updateparametergroupresponsetypedef)
-  - [UpdateSubnetGroupRequestRequestTypeDef](#updatesubnetgrouprequestrequesttypedef)
-  - [UpdateSubnetGroupResponseTypeDef](#updatesubnetgroupresponsetypedef)
-  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
-  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
-  - [UserTypeDef](#usertypedef)
-
-<a id="aclpendingchangestypedef"></a>
+    Auto-generated documentation for [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
+    type annotations stubs module [mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 ## ACLPendingChangesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ACLPendingChangesTypeDef
+
+def get_value() -> ACLPendingChangesTypeDef:
+    return {
+        "UserNamesToRemove": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserNamesToRemove`: `List`\[`str`\]
-- `UserNamesToAdd`: `List`\[`str`\]
-
-<a id="acltypedef"></a>
+```python title="Definition"
+class ACLPendingChangesTypeDef(TypedDict):
+    UserNamesToRemove: NotRequired[List[str]],
+    UserNamesToAdd: NotRequired[List[str]],
+```
 
 ## ACLTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ACLTypeDef
+
+def get_value() -> ACLTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ACLTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+    UserNames: NotRequired[List[str]],
+    MinimumEngineVersion: NotRequired[str],
+    PendingChanges: NotRequired[ACLPendingChangesTypeDef],  # (1)
+    Clusters: NotRequired[List[str]],
+    ARN: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Status`: `str`
-- `UserNames`: `List`\[`str`\]
-- `MinimumEngineVersion`: `str`
-- `PendingChanges`:
-  [ACLPendingChangesTypeDef](./type_defs.md#aclpendingchangestypedef)
-- `Clusters`: `List`\[`str`\]
-- `ARN`: `str`
-
-<a id="aclsupdatestatustypedef"></a>
-
+1. See [:material-code-braces: ACLPendingChangesTypeDef](./type_defs.md#aclpendingchangestypedef) 
 ## ACLsUpdateStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ACLsUpdateStatusTypeDef
+
+def get_value() -> ACLsUpdateStatusTypeDef:
+    return {
+        "ACLToApply": ...,
+    }
 ```
 
-Optional fields:
-
-- `ACLToApply`: `str`
-
-<a id="authenticationmodetypedef"></a>
+```python title="Definition"
+class ACLsUpdateStatusTypeDef(TypedDict):
+    ACLToApply: NotRequired[str],
+```
 
 ## AuthenticationModeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import AuthenticationModeTypeDef
+
+def get_value() -> AuthenticationModeTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AuthenticationModeTypeDef(TypedDict):
+    Type: NotRequired[InputAuthenticationTypeType],  # (1)
+    Passwords: NotRequired[Sequence[str]],
+```
 
-- `Type`: `Literal['password']` (see
-  [InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype))
-- `Passwords`: `Sequence`\[`str`\]
-
-<a id="authenticationtypedef"></a>
-
+1. See [:material-code-brackets: InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype) 
 ## AuthenticationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import AuthenticationTypeDef
+
+def get_value() -> AuthenticationTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AuthenticationTypeDef(TypedDict):
+    Type: NotRequired[AuthenticationTypeType],  # (1)
+    PasswordCount: NotRequired[int],
+```
 
-- `Type`: [AuthenticationTypeType](./literals.md#authenticationtypetype)
-- `PasswordCount`: `int`
-
-<a id="availabilityzonetypedef"></a>
-
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 ## AvailabilityZoneTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import AvailabilityZoneTypeDef
+
+def get_value() -> AvailabilityZoneTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="batchupdateclusterrequestrequesttypedef"></a>
+```python title="Definition"
+class AvailabilityZoneTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## BatchUpdateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import BatchUpdateClusterRequestRequestTypeDef
+
+def get_value() -> BatchUpdateClusterRequestRequestTypeDef:
+    return {
+        "ClusterNames": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateClusterRequestRequestTypeDef(TypedDict):
+    ClusterNames: Sequence[str],
+    ServiceUpdate: NotRequired[ServiceUpdateRequestTypeDef],  # (1)
+```
 
-- `ClusterNames`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `ServiceUpdate`:
-  [ServiceUpdateRequestTypeDef](./type_defs.md#serviceupdaterequesttypedef)
-
-<a id="batchupdateclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: ServiceUpdateRequestTypeDef](./type_defs.md#serviceupdaterequesttypedef) 
 ## BatchUpdateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import BatchUpdateClusterResponseTypeDef
+
+def get_value() -> BatchUpdateClusterResponseTypeDef:
+    return {
+        "ProcessedClusters": ...,
+        "UnprocessedClusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateClusterResponseTypeDef(TypedDict):
+    ProcessedClusters: List[ClusterTypeDef],  # (1)
+    UnprocessedClusters: List[UnprocessedClusterTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProcessedClusters`:
-  `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
-- `UnprocessedClusters`:
-  `List`\[[UnprocessedClusterTypeDef](./type_defs.md#unprocessedclustertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clusterconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: UnprocessedClusterTypeDef](./type_defs.md#unprocessedclustertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ClusterConfigurationTypeDef
+
+def get_value() -> ClusterConfigurationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterConfigurationTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    NodeType: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    MaintenanceWindow: NotRequired[str],
+    TopicArn: NotRequired[str],
+    Port: NotRequired[int],
+    ParameterGroupName: NotRequired[str],
+    SubnetGroupName: NotRequired[str],
+    VpcId: NotRequired[str],
+    SnapshotRetentionLimit: NotRequired[int],
+    SnapshotWindow: NotRequired[str],
+    NumShards: NotRequired[int],
+    Shards: NotRequired[List[ShardDetailTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `NodeType`: `str`
-- `EngineVersion`: `str`
-- `MaintenanceWindow`: `str`
-- `TopicArn`: `str`
-- `Port`: `int`
-- `ParameterGroupName`: `str`
-- `SubnetGroupName`: `str`
-- `VpcId`: `str`
-- `SnapshotRetentionLimit`: `int`
-- `SnapshotWindow`: `str`
-- `NumShards`: `int`
-- `Shards`: `List`\[[ShardDetailTypeDef](./type_defs.md#sharddetailtypedef)\]
-
-<a id="clusterpendingupdatestypedef"></a>
-
+1. See [:material-code-braces: ShardDetailTypeDef](./type_defs.md#sharddetailtypedef) 
 ## ClusterPendingUpdatesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ClusterPendingUpdatesTypeDef
+
+def get_value() -> ClusterPendingUpdatesTypeDef:
+    return {
+        "Resharding": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterPendingUpdatesTypeDef(TypedDict):
+    Resharding: NotRequired[ReshardingStatusTypeDef],  # (1)
+    ACLs: NotRequired[ACLsUpdateStatusTypeDef],  # (2)
+    ServiceUpdates: NotRequired[List[PendingModifiedServiceUpdateTypeDef]],  # (3)
+```
 
-- `Resharding`:
-  [ReshardingStatusTypeDef](./type_defs.md#reshardingstatustypedef)
-- `ACLs`: [ACLsUpdateStatusTypeDef](./type_defs.md#aclsupdatestatustypedef)
-- `ServiceUpdates`:
-  `List`\[[PendingModifiedServiceUpdateTypeDef](./type_defs.md#pendingmodifiedserviceupdatetypedef)\]
-
-<a id="clustertypedef"></a>
-
+1. See [:material-code-braces: ReshardingStatusTypeDef](./type_defs.md#reshardingstatustypedef) 
+2. See [:material-code-braces: ACLsUpdateStatusTypeDef](./type_defs.md#aclsupdatestatustypedef) 
+3. See [:material-code-braces: PendingModifiedServiceUpdateTypeDef](./type_defs.md#pendingmodifiedserviceupdatetypedef) 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[str],
+    PendingUpdates: NotRequired[ClusterPendingUpdatesTypeDef],  # (1)
+    NumberOfShards: NotRequired[int],
+    Shards: NotRequired[List[ShardTypeDef]],  # (2)
+    AvailabilityMode: NotRequired[AZStatusType],  # (3)
+    ClusterEndpoint: NotRequired[EndpointTypeDef],  # (4)
+    NodeType: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    EnginePatchVersion: NotRequired[str],
+    ParameterGroupName: NotRequired[str],
+    ParameterGroupStatus: NotRequired[str],
+    SecurityGroups: NotRequired[List[SecurityGroupMembershipTypeDef]],  # (5)
+    SubnetGroupName: NotRequired[str],
+    TLSEnabled: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    ARN: NotRequired[str],
+    SnsTopicArn: NotRequired[str],
+    SnsTopicStatus: NotRequired[str],
+    SnapshotRetentionLimit: NotRequired[int],
+    MaintenanceWindow: NotRequired[str],
+    SnapshotWindow: NotRequired[str],
+    ACLName: NotRequired[str],
+    AutoMinorVersionUpgrade: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `Status`: `str`
-- `PendingUpdates`:
-  [ClusterPendingUpdatesTypeDef](./type_defs.md#clusterpendingupdatestypedef)
-- `NumberOfShards`: `int`
-- `Shards`: `List`\[[ShardTypeDef](./type_defs.md#shardtypedef)\]
-- `AvailabilityMode`: [AZStatusType](./literals.md#azstatustype)
-- `ClusterEndpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- `NodeType`: `str`
-- `EngineVersion`: `str`
-- `EnginePatchVersion`: `str`
-- `ParameterGroupName`: `str`
-- `ParameterGroupStatus`: `str`
-- `SecurityGroups`:
-  `List`\[[SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef)\]
-- `SubnetGroupName`: `str`
-- `TLSEnabled`: `bool`
-- `KmsKeyId`: `str`
-- `ARN`: `str`
-- `SnsTopicArn`: `str`
-- `SnsTopicStatus`: `str`
-- `SnapshotRetentionLimit`: `int`
-- `MaintenanceWindow`: `str`
-- `SnapshotWindow`: `str`
-- `ACLName`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-
-<a id="copysnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterPendingUpdatesTypeDef](./type_defs.md#clusterpendingupdatestypedef) 
+2. See [:material-code-braces: ShardTypeDef](./type_defs.md#shardtypedef) 
+3. See [:material-code-brackets: AZStatusType](./literals.md#azstatustype) 
+4. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+5. See [:material-code-braces: SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef) 
 ## CopySnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CopySnapshotRequestRequestTypeDef
+
+def get_value() -> CopySnapshotRequestRequestTypeDef:
+    return {
+        "SourceSnapshotName": ...,
+        "TargetSnapshotName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopySnapshotRequestRequestTypeDef(TypedDict):
+    SourceSnapshotName: str,
+    TargetSnapshotName: str,
+    TargetBucket: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SourceSnapshotName`: `str`
-- `TargetSnapshotName`: `str`
-
-Optional fields:
-
-- `TargetBucket`: `str`
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="copysnapshotresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CopySnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CopySnapshotResponseTypeDef
+
+def get_value() -> CopySnapshotResponseTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopySnapshotResponseTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateACLRequestRequestTypeDef
+
+def get_value() -> CreateACLRequestRequestTypeDef:
+    return {
+        "ACLName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateACLRequestRequestTypeDef(TypedDict):
+    ACLName: str,
+    UserNames: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ACLName`: `str`
-
-Optional fields:
-
-- `UserNames`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createaclresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateACLResponseTypeDef
+
+def get_value() -> CreateACLResponseTypeDef:
+    return {
+        "ACL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateACLResponseTypeDef(TypedDict):
+    ACL: ACLTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ACL`: [ACLTypeDef](./type_defs.md#acltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ACLTypeDef](./type_defs.md#acltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateClusterRequestRequestTypeDef
+
+def get_value() -> CreateClusterRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "NodeType": ...,
+        "ACLName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    NodeType: str,
+    ACLName: str,
+    ParameterGroupName: NotRequired[str],
+    Description: NotRequired[str],
+    NumShards: NotRequired[int],
+    NumReplicasPerShard: NotRequired[int],
+    SubnetGroupName: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    MaintenanceWindow: NotRequired[str],
+    Port: NotRequired[int],
+    SnsTopicArn: NotRequired[str],
+    TLSEnabled: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    SnapshotArns: NotRequired[Sequence[str]],
+    SnapshotName: NotRequired[str],
+    SnapshotRetentionLimit: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    SnapshotWindow: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    AutoMinorVersionUpgrade: NotRequired[bool],
+```
 
-- `ClusterName`: `str`
-- `NodeType`: `str`
-- `ACLName`: `str`
-
-Optional fields:
-
-- `ParameterGroupName`: `str`
-- `Description`: `str`
-- `NumShards`: `int`
-- `NumReplicasPerShard`: `int`
-- `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `MaintenanceWindow`: `str`
-- `Port`: `int`
-- `SnsTopicArn`: `str`
-- `TLSEnabled`: `bool`
-- `KmsKeyId`: `str`
-- `SnapshotArns`: `Sequence`\[`str`\]
-- `SnapshotName`: `str`
-- `SnapshotRetentionLimit`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SnapshotWindow`: `str`
-- `EngineVersion`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-
-<a id="createclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateClusterResponseTypeDef
+
+def get_value() -> CreateClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createparametergrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateParameterGroupRequestRequestTypeDef
+
+def get_value() -> CreateParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+        "Family": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Family: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `Family`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createparametergroupresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateParameterGroupResponseTypeDef
+
+def get_value() -> CreateParameterGroupResponseTypeDef:
+    return {
+        "ParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateParameterGroupResponseTypeDef(TypedDict):
+    ParameterGroup: ParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateSnapshotRequestRequestTypeDef
+
+def get_value() -> CreateSnapshotRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "SnapshotName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    SnapshotName: str,
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ClusterName`: `str`
-- `SnapshotName`: `str`
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsnapshotresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateSnapshotResponseTypeDef
+
+def get_value() -> CreateSnapshotResponseTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotResponseTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsubnetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSubnetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateSubnetGroupRequestRequestTypeDef
+
+def get_value() -> CreateSubnetGroupRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSubnetGroupRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SubnetGroupName`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsubnetgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSubnetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateSubnetGroupResponseTypeDef
+
+def get_value() -> CreateSubnetGroupResponseTypeDef:
+    return {
+        "SubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSubnetGroupResponseTypeDef(TypedDict):
+    SubnetGroup: SubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateUserRequestRequestTypeDef
+
+def get_value() -> CreateUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "AuthenticationMode": ...,
+        "AccessString": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    AuthenticationMode: AuthenticationModeTypeDef,  # (1)
+    AccessString: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `UserName`: `str`
-- `AuthenticationMode`:
-  [AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef)
-- `AccessString`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createuserresponsetypedef"></a>
-
+1. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteACLRequestRequestTypeDef
+
+def get_value() -> DeleteACLRequestRequestTypeDef:
+    return {
+        "ACLName": ...,
+    }
 ```
 
-Required fields:
-
-- `ACLName`: `str`
-
-<a id="deleteaclresponsetypedef"></a>
+```python title="Definition"
+class DeleteACLRequestRequestTypeDef(TypedDict):
+    ACLName: str,
+```
 
 ## DeleteACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteACLResponseTypeDef
+
+def get_value() -> DeleteACLResponseTypeDef:
+    return {
+        "ACL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteACLResponseTypeDef(TypedDict):
+    ACL: ACLTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ACL`: [ACLTypeDef](./type_defs.md#acltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ACLTypeDef](./type_defs.md#acltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteClusterRequestRequestTypeDef
+
+def get_value() -> DeleteClusterRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-
-Optional fields:
-
-- `FinalSnapshotName`: `str`
-
-<a id="deleteclusterresponsetypedef"></a>
+```python title="Definition"
+class DeleteClusterRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    FinalSnapshotName: NotRequired[str],
+```
 
 ## DeleteClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteClusterResponseTypeDef
+
+def get_value() -> DeleteClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteparametergrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteParameterGroupRequestRequestTypeDef
+
+def get_value() -> DeleteParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-<a id="deleteparametergroupresponsetypedef"></a>
+```python title="Definition"
+class DeleteParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+```
 
 ## DeleteParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteParameterGroupResponseTypeDef
+
+def get_value() -> DeleteParameterGroupResponseTypeDef:
+    return {
+        "ParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteParameterGroupResponseTypeDef(TypedDict):
+    ParameterGroup: ParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteSnapshotRequestRequestTypeDef
+
+def get_value() -> DeleteSnapshotRequestRequestTypeDef:
+    return {
+        "SnapshotName": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotName`: `str`
-
-<a id="deletesnapshotresponsetypedef"></a>
+```python title="Definition"
+class DeleteSnapshotRequestRequestTypeDef(TypedDict):
+    SnapshotName: str,
+```
 
 ## DeleteSnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteSnapshotResponseTypeDef
+
+def get_value() -> DeleteSnapshotResponseTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSnapshotResponseTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesubnetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSubnetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteSubnetGroupRequestRequestTypeDef
+
+def get_value() -> DeleteSubnetGroupRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetGroupName`: `str`
-
-<a id="deletesubnetgroupresponsetypedef"></a>
+```python title="Definition"
+class DeleteSubnetGroupRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: str,
+```
 
 ## DeleteSubnetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteSubnetGroupResponseTypeDef
+
+def get_value() -> DeleteSubnetGroupResponseTypeDef:
+    return {
+        "SubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSubnetGroupResponseTypeDef(TypedDict):
+    SubnetGroup: SubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="deleteuserresponsetypedef"></a>
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## DeleteUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DeleteUserResponseTypeDef
+
+def get_value() -> DeleteUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeaclsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeACLsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeACLsRequestRequestTypeDef
+
+def get_value() -> DescribeACLsRequestRequestTypeDef:
+    return {
+        "ACLName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ACLName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeaclsresponsetypedef"></a>
+```python title="Definition"
+class DescribeACLsRequestRequestTypeDef(TypedDict):
+    ACLName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeACLsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeACLsResponseTypeDef
+
+def get_value() -> DescribeACLsResponseTypeDef:
+    return {
+        "ACLs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeACLsResponseTypeDef(TypedDict):
+    ACLs: List[ACLTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ACLs`: `List`\[[ACLTypeDef](./type_defs.md#acltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeclustersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ACLTypeDef](./type_defs.md#acltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeClustersRequestRequestTypeDef
+
+def get_value() -> DescribeClustersRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ShowShardDetails`: `bool`
-
-<a id="describeclustersresponsetypedef"></a>
+```python title="Definition"
+class DescribeClustersRequestRequestTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    ShowShardDetails: NotRequired[bool],
+```
 
 ## DescribeClustersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeClustersResponseTypeDef
+
+def get_value() -> DescribeClustersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Clusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClustersResponseTypeDef(TypedDict):
+    NextToken: str,
+    Clusters: List[ClusterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeengineversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEngineVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeEngineVersionsRequestRequestTypeDef
+
+def get_value() -> DescribeEngineVersionsRequestRequestTypeDef:
+    return {
+        "EngineVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `EngineVersion`: `str`
-- `ParameterGroupFamily`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DefaultOnly`: `bool`
-
-<a id="describeengineversionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeEngineVersionsRequestRequestTypeDef(TypedDict):
+    EngineVersion: NotRequired[str],
+    ParameterGroupFamily: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DefaultOnly: NotRequired[bool],
+```
 
 ## DescribeEngineVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeEngineVersionsResponseTypeDef
+
+def get_value() -> DescribeEngineVersionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "EngineVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEngineVersionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    EngineVersions: List[EngineVersionInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `EngineVersions`:
-  `List`\[[EngineVersionInfoTypeDef](./type_defs.md#engineversioninfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EngineVersionInfoTypeDef](./type_defs.md#engineversioninfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeEventsRequestRequestTypeDef
+
+def get_value() -> DescribeEventsRequestRequestTypeDef:
+    return {
+        "SourceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsRequestRequestTypeDef(TypedDict):
+    SourceName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeeventsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## DescribeEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeEventsResponseTypeDef
+
+def get_value() -> DescribeEventsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Events": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Events: List[EventTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeparametergroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeParameterGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeParameterGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeParameterGroupsRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterGroupName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeparametergroupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeParameterGroupsRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeParameterGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeParameterGroupsResponseTypeDef
+
+def get_value() -> DescribeParameterGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ParameterGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeParameterGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    ParameterGroups: List[ParameterGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ParameterGroups`:
-  `List`\[[ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeparametersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeParametersRequestRequestTypeDef
+
+def get_value() -> DescribeParametersRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeparametersresponsetypedef"></a>
+```python title="Definition"
+class DescribeParametersRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeParametersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeParametersResponseTypeDef
+
+def get_value() -> DescribeParametersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Parameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeParametersResponseTypeDef(TypedDict):
+    NextToken: str,
+    Parameters: List[ParameterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeserviceupdatesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceUpdatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeServiceUpdatesRequestRequestTypeDef
+
+def get_value() -> DescribeServiceUpdatesRequestRequestTypeDef:
+    return {
+        "ServiceUpdateName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeServiceUpdatesRequestRequestTypeDef(TypedDict):
+    ServiceUpdateName: NotRequired[str],
+    ClusterNames: NotRequired[Sequence[str]],
+    Status: NotRequired[Sequence[ServiceUpdateStatusType]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceUpdateName`: `str`
-- `ClusterNames`: `Sequence`\[`str`\]
-- `Status`:
-  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeserviceupdatesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
 ## DescribeServiceUpdatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeServiceUpdatesResponseTypeDef
+
+def get_value() -> DescribeServiceUpdatesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ServiceUpdates": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServiceUpdatesResponseTypeDef(TypedDict):
+    NextToken: str,
+    ServiceUpdates: List[ServiceUpdateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ServiceUpdates`:
-  `List`\[[ServiceUpdateTypeDef](./type_defs.md#serviceupdatetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesnapshotsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceUpdateTypeDef](./type_defs.md#serviceupdatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSnapshotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeSnapshotsRequestRequestTypeDef
+
+def get_value() -> DescribeSnapshotsRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterName`: `str`
-- `SnapshotName`: `str`
-- `Source`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ShowDetail`: `bool`
-
-<a id="describesnapshotsresponsetypedef"></a>
+```python title="Definition"
+class DescribeSnapshotsRequestRequestTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    SnapshotName: NotRequired[str],
+    Source: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ShowDetail: NotRequired[bool],
+```
 
 ## DescribeSnapshotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeSnapshotsResponseTypeDef
+
+def get_value() -> DescribeSnapshotsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Snapshots": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSnapshotsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Snapshots: List[SnapshotTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesubnetgroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSubnetGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeSubnetGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeSubnetGroupsRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubnetGroupName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describesubnetgroupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeSubnetGroupsRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeSubnetGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeSubnetGroupsResponseTypeDef
+
+def get_value() -> DescribeSubnetGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "SubnetGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSubnetGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    SubnetGroups: List[SubnetGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `SubnetGroups`:
-  `List`\[[SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeusersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeUsersRequestRequestTypeDef
+
+def get_value() -> DescribeUsersRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeUsersRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `UserName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeusersresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import DescribeUsersResponseTypeDef
+
+def get_value() -> DescribeUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+    }
 ```
 
-Optional fields:
-
-- `Address`: `str`
-- `Port`: `int`
-
-<a id="engineversioninfotypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: NotRequired[str],
+    Port: NotRequired[int],
+```
 
 ## EngineVersionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import EngineVersionInfoTypeDef
+
+def get_value() -> EngineVersionInfoTypeDef:
+    return {
+        "EngineVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `EngineVersion`: `str`
-- `EnginePatchVersion`: `str`
-- `ParameterGroupFamily`: `str`
-
-<a id="eventtypedef"></a>
+```python title="Definition"
+class EngineVersionInfoTypeDef(TypedDict):
+    EngineVersion: NotRequired[str],
+    EnginePatchVersion: NotRequired[str],
+    ParameterGroupFamily: NotRequired[str],
+```
 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "SourceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    SourceName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    Message: NotRequired[str],
+    Date: NotRequired[datetime],
+```
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Message`: `str`
-- `Date`: `datetime`
-
-<a id="failovershardrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## FailoverShardRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import FailoverShardRequestRequestTypeDef
+
+def get_value() -> FailoverShardRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "ShardName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-- `ShardName`: `str`
-
-<a id="failovershardresponsetypedef"></a>
+```python title="Definition"
+class FailoverShardRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    ShardName: str,
+```
 
 ## FailoverShardResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import FailoverShardResponseTypeDef
+
+def get_value() -> FailoverShardResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FailoverShardResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="listallowednodetypeupdatesrequestrequesttypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Name: str,
+    Values: Sequence[str],
+```
 
 ## ListAllowedNodeTypeUpdatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ListAllowedNodeTypeUpdatesRequestRequestTypeDef
+
+def get_value() -> ListAllowedNodeTypeUpdatesRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-
-<a id="listallowednodetypeupdatesresponsetypedef"></a>
+```python title="Definition"
+class ListAllowedNodeTypeUpdatesRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+```
 
 ## ListAllowedNodeTypeUpdatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ListAllowedNodeTypeUpdatesResponseTypeDef
+
+def get_value() -> ListAllowedNodeTypeUpdatesResponseTypeDef:
+    return {
+        "ScaleUpNodeTypes": ...,
+        "ScaleDownNodeTypes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAllowedNodeTypeUpdatesResponseTypeDef(TypedDict):
+    ScaleUpNodeTypes: List[str],
+    ScaleDownNodeTypes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ScaleUpNodeTypes`: `List`\[`str`\]
-- `ScaleDownNodeTypes`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="nodetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import NodeTypeDef
+
+def get_value() -> NodeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    Endpoint: NotRequired[EndpointTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `Status`: `str`
-- `AvailabilityZone`: `str`
-- `CreateTime`: `datetime`
-- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
-
-<a id="parametergrouptypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
 ## ParameterGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ParameterGroupTypeDef
+
+def get_value() -> ParameterGroupTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Family`: `str`
-- `Description`: `str`
-- `ARN`: `str`
-
-<a id="parameternamevaluetypedef"></a>
+```python title="Definition"
+class ParameterGroupTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Family: NotRequired[str],
+    Description: NotRequired[str],
+    ARN: NotRequired[str],
+```
 
 ## ParameterNameValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ParameterNameValueTypeDef
+
+def get_value() -> ParameterNameValueTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterName`: `str`
-- `ParameterValue`: `str`
-
-<a id="parametertypedef"></a>
+```python title="Definition"
+class ParameterNameValueTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterValue: NotRequired[str],
+```
 
 ## ParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `str`
-- `Description`: `str`
-- `DataType`: `str`
-- `AllowedValues`: `str`
-- `MinimumEngineVersion`: `str`
-
-<a id="pendingmodifiedserviceupdatetypedef"></a>
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+    Description: NotRequired[str],
+    DataType: NotRequired[str],
+    AllowedValues: NotRequired[str],
+    MinimumEngineVersion: NotRequired[str],
+```
 
 ## PendingModifiedServiceUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import PendingModifiedServiceUpdateTypeDef
+
+def get_value() -> PendingModifiedServiceUpdateTypeDef:
+    return {
+        "ServiceUpdateName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PendingModifiedServiceUpdateTypeDef(TypedDict):
+    ServiceUpdateName: NotRequired[str],
+    Status: NotRequired[ServiceUpdateStatusType],  # (1)
+```
 
-- `ServiceUpdateName`: `str`
-- `Status`: [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
-
-<a id="replicaconfigurationrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
 ## ReplicaConfigurationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ReplicaConfigurationRequestTypeDef
+
+def get_value() -> ReplicaConfigurationRequestTypeDef:
+    return {
+        "ReplicaCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReplicaCount`: `int`
-
-<a id="resetparametergrouprequestrequesttypedef"></a>
+```python title="Definition"
+class ReplicaConfigurationRequestTypeDef(TypedDict):
+    ReplicaCount: NotRequired[int],
+```
 
 ## ResetParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ResetParameterGroupRequestRequestTypeDef
+
+def get_value() -> ResetParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-Optional fields:
-
-- `AllParameters`: `bool`
-- `ParameterNames`: `Sequence`\[`str`\]
-
-<a id="resetparametergroupresponsetypedef"></a>
+```python title="Definition"
+class ResetParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    AllParameters: NotRequired[bool],
+    ParameterNames: NotRequired[Sequence[str]],
+```
 
 ## ResetParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ResetParameterGroupResponseTypeDef
+
+def get_value() -> ResetParameterGroupResponseTypeDef:
+    return {
+        "ParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetParameterGroupResponseTypeDef(TypedDict):
+    ParameterGroup: ParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="reshardingstatustypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReshardingStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ReshardingStatusTypeDef
+
+def get_value() -> ReshardingStatusTypeDef:
+    return {
+        "SlotMigration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReshardingStatusTypeDef(TypedDict):
+    SlotMigration: NotRequired[SlotMigrationTypeDef],  # (1)
+```
 
-- `SlotMigration`: [SlotMigrationTypeDef](./type_defs.md#slotmigrationtypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: SlotMigrationTypeDef](./type_defs.md#slotmigrationtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="securitygroupmembershiptypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SecurityGroupMembershipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import SecurityGroupMembershipTypeDef
+
+def get_value() -> SecurityGroupMembershipTypeDef:
+    return {
+        "SecurityGroupId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SecurityGroupId`: `str`
-- `Status`: `str`
-
-<a id="serviceupdaterequesttypedef"></a>
+```python title="Definition"
+class SecurityGroupMembershipTypeDef(TypedDict):
+    SecurityGroupId: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## ServiceUpdateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ServiceUpdateRequestTypeDef
+
+def get_value() -> ServiceUpdateRequestTypeDef:
+    return {
+        "ServiceUpdateNameToApply": ...,
+    }
 ```
 
-Optional fields:
-
-- `ServiceUpdateNameToApply`: `str`
-
-<a id="serviceupdatetypedef"></a>
+```python title="Definition"
+class ServiceUpdateRequestTypeDef(TypedDict):
+    ServiceUpdateNameToApply: NotRequired[str],
+```
 
 ## ServiceUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ServiceUpdateTypeDef
+
+def get_value() -> ServiceUpdateTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceUpdateTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    ServiceUpdateName: NotRequired[str],
+    ReleaseDate: NotRequired[datetime],
+    Description: NotRequired[str],
+    Status: NotRequired[ServiceUpdateStatusType],  # (1)
+    Type: NotRequired[ServiceUpdateTypeType],  # (2)
+    NodesUpdated: NotRequired[str],
+    AutoUpdateStartDate: NotRequired[datetime],
+```
 
-- `ClusterName`: `str`
-- `ServiceUpdateName`: `str`
-- `ReleaseDate`: `datetime`
-- `Description`: `str`
-- `Status`: [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
-- `Type`: `Literal['security-update']` (see
-  [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype))
-- `NodesUpdated`: `str`
-- `AutoUpdateStartDate`: `datetime`
-
-<a id="shardconfigurationrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
+2. See [:material-code-brackets: ServiceUpdateTypeType](./literals.md#serviceupdatetypetype) 
 ## ShardConfigurationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ShardConfigurationRequestTypeDef
+
+def get_value() -> ShardConfigurationRequestTypeDef:
+    return {
+        "ShardCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `ShardCount`: `int`
-
-<a id="shardconfigurationtypedef"></a>
+```python title="Definition"
+class ShardConfigurationRequestTypeDef(TypedDict):
+    ShardCount: NotRequired[int],
+```
 
 ## ShardConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ShardConfigurationTypeDef
+
+def get_value() -> ShardConfigurationTypeDef:
+    return {
+        "Slots": ...,
+    }
 ```
 
-Optional fields:
-
-- `Slots`: `str`
-- `ReplicaCount`: `int`
-
-<a id="sharddetailtypedef"></a>
+```python title="Definition"
+class ShardConfigurationTypeDef(TypedDict):
+    Slots: NotRequired[str],
+    ReplicaCount: NotRequired[int],
+```
 
 ## ShardDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ShardDetailTypeDef
+
+def get_value() -> ShardDetailTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShardDetailTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Configuration: NotRequired[ShardConfigurationTypeDef],  # (1)
+    Size: NotRequired[str],
+    SnapshotCreationTime: NotRequired[datetime],
+```
 
-- `Name`: `str`
-- `Configuration`:
-  [ShardConfigurationTypeDef](./type_defs.md#shardconfigurationtypedef)
-- `Size`: `str`
-- `SnapshotCreationTime`: `datetime`
-
-<a id="shardtypedef"></a>
-
+1. See [:material-code-braces: ShardConfigurationTypeDef](./type_defs.md#shardconfigurationtypedef) 
 ## ShardTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import ShardTypeDef
+
+def get_value() -> ShardTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShardTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+    Slots: NotRequired[str],
+    Nodes: NotRequired[List[NodeTypeDef]],  # (1)
+    NumberOfNodes: NotRequired[int],
+```
 
-- `Name`: `str`
-- `Status`: `str`
-- `Slots`: `str`
-- `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
-- `NumberOfNodes`: `int`
-
-<a id="slotmigrationtypedef"></a>
-
+1. See [:material-code-braces: NodeTypeDef](./type_defs.md#nodetypedef) 
 ## SlotMigrationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import SlotMigrationTypeDef
+
+def get_value() -> SlotMigrationTypeDef:
+    return {
+        "ProgressPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProgressPercentage`: `float`
-
-<a id="snapshottypedef"></a>
+```python title="Definition"
+class SlotMigrationTypeDef(TypedDict):
+    ProgressPercentage: NotRequired[float],
+```
 
 ## SnapshotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import SnapshotTypeDef
+
+def get_value() -> SnapshotTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SnapshotTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+    Source: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    ARN: NotRequired[str],
+    ClusterConfiguration: NotRequired[ClusterConfigurationTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `Status`: `str`
-- `Source`: `str`
-- `KmsKeyId`: `str`
-- `ARN`: `str`
-- `ClusterConfiguration`:
-  [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
-
-<a id="subnetgrouptypedef"></a>
-
+1. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
 ## SubnetGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import SubnetGroupTypeDef
+
+def get_value() -> SubnetGroupTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubnetGroupTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    VpcId: NotRequired[str],
+    Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
+    ARN: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `VpcId`: `str`
-- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
-- `ARN`: `str`
-
-<a id="subnettypedef"></a>
-
+1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
 ## SubnetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import SubnetTypeDef
+
+def get_value() -> SubnetTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubnetTypeDef(TypedDict):
+    Identifier: NotRequired[str],
+    AvailabilityZone: NotRequired[AvailabilityZoneTypeDef],  # (1)
+```
 
-- `Identifier`: `str`
-- `AvailabilityZone`:
-  [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagresourceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import TagResourceResponseTypeDef
+
+def get_value() -> TagResourceResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="unprocessedclustertypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UnprocessedClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UnprocessedClusterTypeDef
+
+def get_value() -> UnprocessedClusterTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterName`: `str`
-- `ErrorType`: `str`
-- `ErrorMessage`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UnprocessedClusterTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    ErrorType: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagresourceresponsetypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UntagResourceResponseTypeDef
+
+def get_value() -> UntagResourceResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateACLRequestRequestTypeDef
+
+def get_value() -> UpdateACLRequestRequestTypeDef:
+    return {
+        "ACLName": ...,
+    }
 ```
 
-Required fields:
-
-- `ACLName`: `str`
-
-Optional fields:
-
-- `UserNamesToAdd`: `Sequence`\[`str`\]
-- `UserNamesToRemove`: `Sequence`\[`str`\]
-
-<a id="updateaclresponsetypedef"></a>
+```python title="Definition"
+class UpdateACLRequestRequestTypeDef(TypedDict):
+    ACLName: str,
+    UserNamesToAdd: NotRequired[Sequence[str]],
+    UserNamesToRemove: NotRequired[Sequence[str]],
+```
 
 ## UpdateACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateACLResponseTypeDef
+
+def get_value() -> UpdateACLResponseTypeDef:
+    return {
+        "ACL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateACLResponseTypeDef(TypedDict):
+    ACL: ACLTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ACL`: [ACLTypeDef](./type_defs.md#acltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ACLTypeDef](./type_defs.md#acltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateClusterRequestRequestTypeDef
+
+def get_value() -> UpdateClusterRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    Description: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    MaintenanceWindow: NotRequired[str],
+    SnsTopicArn: NotRequired[str],
+    SnsTopicStatus: NotRequired[str],
+    ParameterGroupName: NotRequired[str],
+    SnapshotWindow: NotRequired[str],
+    SnapshotRetentionLimit: NotRequired[int],
+    NodeType: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    ReplicaConfiguration: NotRequired[ReplicaConfigurationRequestTypeDef],  # (1)
+    ShardConfiguration: NotRequired[ShardConfigurationRequestTypeDef],  # (2)
+    ACLName: NotRequired[str],
+```
 
-- `ClusterName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `MaintenanceWindow`: `str`
-- `SnsTopicArn`: `str`
-- `SnsTopicStatus`: `str`
-- `ParameterGroupName`: `str`
-- `SnapshotWindow`: `str`
-- `SnapshotRetentionLimit`: `int`
-- `NodeType`: `str`
-- `EngineVersion`: `str`
-- `ReplicaConfiguration`:
-  [ReplicaConfigurationRequestTypeDef](./type_defs.md#replicaconfigurationrequesttypedef)
-- `ShardConfiguration`:
-  [ShardConfigurationRequestTypeDef](./type_defs.md#shardconfigurationrequesttypedef)
-- `ACLName`: `str`
-
-<a id="updateclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: ReplicaConfigurationRequestTypeDef](./type_defs.md#replicaconfigurationrequesttypedef) 
+2. See [:material-code-braces: ShardConfigurationRequestTypeDef](./type_defs.md#shardconfigurationrequesttypedef) 
 ## UpdateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateClusterResponseTypeDef
+
+def get_value() -> UpdateClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateparametergrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateParameterGroupRequestRequestTypeDef
+
+def get_value() -> UpdateParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+        "ParameterNameValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    ParameterNameValues: Sequence[ParameterNameValueTypeDef],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `ParameterNameValues`:
-  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
-
-<a id="updateparametergroupresponsetypedef"></a>
-
+1. See [:material-code-braces: ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef) 
 ## UpdateParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateParameterGroupResponseTypeDef
+
+def get_value() -> UpdateParameterGroupResponseTypeDef:
+    return {
+        "ParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateParameterGroupResponseTypeDef(TypedDict):
+    ParameterGroup: ParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesubnetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSubnetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateSubnetGroupRequestRequestTypeDef
+
+def get_value() -> UpdateSubnetGroupRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetGroupName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-<a id="updatesubnetgroupresponsetypedef"></a>
+```python title="Definition"
+class UpdateSubnetGroupRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: str,
+    Description: NotRequired[str],
+    SubnetIds: NotRequired[Sequence[str]],
+```
 
 ## UpdateSubnetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateSubnetGroupResponseTypeDef
+
+def get_value() -> UpdateSubnetGroupResponseTypeDef:
+    return {
+        "SubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSubnetGroupResponseTypeDef(TypedDict):
+    SubnetGroup: SubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateUserRequestRequestTypeDef
+
+def get_value() -> UpdateUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    AuthenticationMode: NotRequired[AuthenticationModeTypeDef],  # (1)
+    AccessString: NotRequired[str],
+```
 
-- `UserName`: `str`
-
-Optional fields:
-
-- `AuthenticationMode`:
-  [AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef)
-- `AccessString`: `str`
-
-<a id="updateuserresponsetypedef"></a>
-
+1. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
 ## UpdateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UpdateUserResponseTypeDef
+
+def get_value() -> UpdateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="usertypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_memorydb.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+    AccessString: NotRequired[str],
+    ACLNames: NotRequired[List[str]],
+    MinimumEngineVersion: NotRequired[str],
+    Authentication: NotRequired[AuthenticationTypeDef],  # (1)
+    ARN: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Status`: `str`
-- `AccessString`: `str`
-- `ACLNames`: `List`\[`str`\]
-- `MinimumEngineVersion`: `str`
-- `Authentication`:
-  [AuthenticationTypeDef](./type_defs.md#authenticationtypedef)
-- `ARN`: `str`
+1. See [:material-code-braces: AuthenticationTypeDef](./type_defs.md#authenticationtypedef) 

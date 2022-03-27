@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-kinesis-module"></a>
-
-# Paginators for boto3 Kinesis module
+# Paginators
 
 > [Index](../README.md) > [Kinesis](./README.md) > Paginators
 
-Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
-type annotations stubs module
-[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+!!! note ""
 
-- [Paginators for boto3 Kinesis module](#paginators-for-boto3-kinesis-module)
-  - [DescribeStreamPaginator](#describestreampaginator)
-  - [ListShardsPaginator](#listshardspaginator)
-  - [ListStreamConsumersPaginator](#liststreamconsumerspaginator)
-  - [ListStreamsPaginator](#liststreamspaginator)
-
-<a id="describestreampaginator"></a>
+    Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+    type annotations stubs module [mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 ## DescribeStreamPaginator
 
-Type annotations for
-`boto3.client("kinesis").get_paginator("describe_stream")`.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_paginator("describe_stream")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kinesis.paginator import DescribeStreamPaginator
@@ -33,27 +21,40 @@ def get_describe_stream_paginator() -> DescribeStreamPaginator:
     return Session().client("kinesis").get_paginator("describe_stream")
 ```
 
-Boto3 documentation:
-[Kinesis.Paginator.DescribeStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
 
-Arguments for `DescribeStreamPaginator.paginate` method:
+### paginate
 
-- `StreamName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeStreamPaginator.paginate` method.
 
-`DescribeStreamPaginator.paginate` returns
-`_PageIterator`\[[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StreamName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeStreamOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listshardspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamInputDescribeStreamPaginateTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStreamInputDescribeStreamPaginateTypeDef](./type_defs.md#describestreaminputdescribestreampaginatetypedef) 
 ## ListShardsPaginator
 
-Type annotations for `boto3.client("kinesis").get_paginator("list_shards")`.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_paginator("list_shards")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kinesis.paginator import ListShardsPaginator
@@ -62,31 +63,44 @@ def get_list_shards_paginator() -> ListShardsPaginator:
     return Session().client("kinesis").get_paginator("list_shards")
 ```
 
-Boto3 documentation:
-[Kinesis.Paginator.ListShards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
 
-Arguments for `ListShardsPaginator.paginate` method:
+### paginate
 
-- `StreamName`: `str`
-- `ExclusiveStartShardId`: `str`
-- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
-- `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListShardsPaginator.paginate` method.
 
-`ListShardsPaginator.paginate` returns
-`_PageIterator`\[[ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StreamName: str = ...,
+    ExclusiveStartShardId: str = ...,
+    StreamCreationTimestamp: Union[datetime, str] = ...,
+    ShardFilter: ShardFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListShardsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="liststreamconsumerspaginator"></a>
+1. See [:material-code-braces: ShardFilterTypeDef](./type_defs.md#shardfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListShardsInputListShardsPaginateTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListShardsInputListShardsPaginateTypeDef](./type_defs.md#listshardsinputlistshardspaginatetypedef) 
 ## ListStreamConsumersPaginator
 
-Type annotations for
-`boto3.client("kinesis").get_paginator("list_stream_consumers")`.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_paginator("list_stream_consumers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kinesis.paginator import ListStreamConsumersPaginator
@@ -95,28 +109,41 @@ def get_list_stream_consumers_paginator() -> ListStreamConsumersPaginator:
     return Session().client("kinesis").get_paginator("list_stream_consumers")
 ```
 
-Boto3 documentation:
-[Kinesis.Paginator.ListStreamConsumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
 
-Arguments for `ListStreamConsumersPaginator.paginate` method:
+### paginate
 
-- `StreamARN`: `str` *(required)*
-- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStreamConsumersPaginator.paginate` method.
 
-`ListStreamConsumersPaginator.paginate` returns
-`_PageIterator`\[[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StreamARN: str,
+    StreamCreationTimestamp: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStreamConsumersOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststreamspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamConsumersInputListStreamConsumersPaginateTypeDef = {  # (1)
+    "StreamARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamConsumersInputListStreamConsumersPaginateTypeDef](./type_defs.md#liststreamconsumersinputliststreamconsumerspaginatetypedef) 
 ## ListStreamsPaginator
 
-Type annotations for `boto3.client("kinesis").get_paginator("list_streams")`.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_paginator("list_streams")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kinesis.paginator import ListStreamsPaginator
@@ -125,13 +152,30 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return Session().client("kinesis").get_paginator("list_streams")
 ```
 
-Boto3 documentation:
-[Kinesis.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
 
-Arguments for `ListStreamsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStreamsPaginator.paginate` method.
 
-`ListStreamsPaginator.paginate` returns
-`_PageIterator`\[[ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStreamsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamsInputListStreamsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamsInputListStreamsPaginateTypeDef](./type_defs.md#liststreamsinputliststreamspaginatetypedef) 

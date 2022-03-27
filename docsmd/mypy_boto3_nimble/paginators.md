@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-nimblestudio-module"></a>
-
-# Paginators for boto3 NimbleStudio module
+# Paginators
 
 > [Index](../README.md) > [NimbleStudio](./README.md) > Paginators
 
-Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module
-[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
+!!! note ""
 
-- [Paginators for boto3 NimbleStudio module](#paginators-for-boto3-nimblestudio-module)
-  - [ListEulaAcceptancesPaginator](#listeulaacceptancespaginator)
-  - [ListEulasPaginator](#listeulaspaginator)
-  - [ListLaunchProfileMembersPaginator](#listlaunchprofilememberspaginator)
-  - [ListLaunchProfilesPaginator](#listlaunchprofilespaginator)
-  - [ListStreamingImagesPaginator](#liststreamingimagespaginator)
-  - [ListStreamingSessionsPaginator](#liststreamingsessionspaginator)
-  - [ListStudioComponentsPaginator](#liststudiocomponentspaginator)
-  - [ListStudioMembersPaginator](#liststudiomemberspaginator)
-  - [ListStudiosPaginator](#liststudiospaginator)
-
-<a id="listeulaacceptancespaginator"></a>
+    Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+    type annotations stubs module [mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 ## ListEulaAcceptancesPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_eula_acceptances")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_eula_acceptances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulaAcceptances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator
@@ -38,28 +21,41 @@ def get_list_eula_acceptances_paginator() -> ListEulaAcceptancesPaginator:
     return Session().client("nimble").get_paginator("list_eula_acceptances")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListEulaAcceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulaAcceptances)
 
-Arguments for `ListEulaAcceptancesPaginator.paginate` method:
+### paginate
 
-- `studioId`: `str` *(required)*
-- `eulaIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEulaAcceptancesPaginator.paginate` method.
 
-`ListEulaAcceptancesPaginator.paginate` returns
-`_PageIterator`\[[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    eulaIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEulaAcceptancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listeulaspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEulaAcceptancesRequestListEulaAcceptancesPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEulaAcceptancesRequestListEulaAcceptancesPaginateTypeDef](./type_defs.md#listeulaacceptancesrequestlisteulaacceptancespaginatetypedef) 
 ## ListEulasPaginator
 
-Type annotations for `boto3.client("nimble").get_paginator("list_eulas")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_eulas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListEulasPaginator
@@ -68,28 +64,40 @@ def get_list_eulas_paginator() -> ListEulasPaginator:
     return Session().client("nimble").get_paginator("list_eulas")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListEulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListEulas)
 
-Arguments for `ListEulasPaginator.paginate` method:
+### paginate
 
-- `eulaIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEulasPaginator.paginate` method.
 
-`ListEulasPaginator.paginate` returns
-`_PageIterator`\[[ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    eulaIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEulasResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listlaunchprofilememberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEulasRequestListEulasPaginateTypeDef = {  # (1)
+    "eulaIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEulasRequestListEulasPaginateTypeDef](./type_defs.md#listeulasrequestlisteulaspaginatetypedef) 
 ## ListLaunchProfileMembersPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_launch_profile_members")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_launch_profile_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfileMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListLaunchProfileMembersPaginator
@@ -98,29 +106,42 @@ def get_list_launch_profile_members_paginator() -> ListLaunchProfileMembersPagin
     return Session().client("nimble").get_paginator("list_launch_profile_members")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListLaunchProfileMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfileMembers)
 
-Arguments for `ListLaunchProfileMembersPaginator.paginate` method:
+### paginate
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLaunchProfileMembersPaginator.paginate` method.
 
-`ListLaunchProfileMembersPaginator.paginate` returns
-`_PageIterator`\[[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLaunchProfileMembersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listlaunchprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLaunchProfileMembersRequestListLaunchProfileMembersPaginateTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLaunchProfileMembersRequestListLaunchProfileMembersPaginateTypeDef](./type_defs.md#listlaunchprofilemembersrequestlistlaunchprofilememberspaginatetypedef) 
 ## ListLaunchProfilesPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_launch_profiles")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_launch_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListLaunchProfilesPaginator
@@ -129,31 +150,43 @@ def get_list_launch_profiles_paginator() -> ListLaunchProfilesPaginator:
     return Session().client("nimble").get_paginator("list_launch_profiles")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListLaunchProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListLaunchProfiles)
 
-Arguments for `ListLaunchProfilesPaginator.paginate` method:
+### paginate
 
-- `studioId`: `str` *(required)*
-- `principalId`: `str`
-- `states`:
-  `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLaunchProfilesPaginator.paginate` method.
 
-`ListLaunchProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    principalId: str = ...,
+    states: Sequence[LaunchProfileStateType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListLaunchProfilesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="liststreamingimagespaginator"></a>
+1. See [:material-code-brackets: LaunchProfileStateType](./literals.md#launchprofilestatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLaunchProfilesRequestListLaunchProfilesPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLaunchProfilesRequestListLaunchProfilesPaginateTypeDef](./type_defs.md#listlaunchprofilesrequestlistlaunchprofilespaginatetypedef) 
 ## ListStreamingImagesPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_streaming_images")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_streaming_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingImages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListStreamingImagesPaginator
@@ -162,29 +195,41 @@ def get_list_streaming_images_paginator() -> ListStreamingImagesPaginator:
     return Session().client("nimble").get_paginator("list_streaming_images")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListStreamingImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingImages)
 
-Arguments for `ListStreamingImagesPaginator.paginate` method:
+### paginate
 
-- `studioId`: `str` *(required)*
-- `owner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStreamingImagesPaginator.paginate` method.
 
-`ListStreamingImagesPaginator.paginate` returns
-`_PageIterator`\[[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    owner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStreamingImagesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststreamingsessionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamingImagesRequestListStreamingImagesPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamingImagesRequestListStreamingImagesPaginateTypeDef](./type_defs.md#liststreamingimagesrequestliststreamingimagespaginatetypedef) 
 ## ListStreamingSessionsPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_streaming_sessions")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_streaming_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListStreamingSessionsPaginator
@@ -193,31 +238,43 @@ def get_list_streaming_sessions_paginator() -> ListStreamingSessionsPaginator:
     return Session().client("nimble").get_paginator("list_streaming_sessions")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListStreamingSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessions)
 
-Arguments for `ListStreamingSessionsPaginator.paginate` method:
+### paginate
 
-- `studioId`: `str` *(required)*
-- `createdBy`: `str`
-- `ownedBy`: `str`
-- `sessionIds`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStreamingSessionsPaginator.paginate` method.
 
-`ListStreamingSessionsPaginator.paginate` returns
-`_PageIterator`\[[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    createdBy: str = ...,
+    ownedBy: str = ...,
+    sessionIds: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStreamingSessionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststudiocomponentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamingSessionsRequestListStreamingSessionsPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamingSessionsRequestListStreamingSessionsPaginateTypeDef](./type_defs.md#liststreamingsessionsrequestliststreamingsessionspaginatetypedef) 
 ## ListStudioComponentsPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_studio_components")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_studio_components")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioComponents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListStudioComponentsPaginator
@@ -226,32 +283,44 @@ def get_list_studio_components_paginator() -> ListStudioComponentsPaginator:
     return Session().client("nimble").get_paginator("list_studio_components")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListStudioComponents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioComponents)
 
-Arguments for `ListStudioComponentsPaginator.paginate` method:
+### paginate
 
-- `studioId`: `str` *(required)*
-- `states`:
-  `Sequence`\[[StudioComponentStateType](./literals.md#studiocomponentstatetype)\]
-- `types`:
-  `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStudioComponentsPaginator.paginate` method.
 
-`ListStudioComponentsPaginator.paginate` returns
-`_PageIterator`\[[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    states: Sequence[StudioComponentStateType] = ...,  # (1)
+    types: Sequence[StudioComponentTypeType] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListStudioComponentsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="liststudiomemberspaginator"></a>
+1. See [:material-code-brackets: StudioComponentStateType](./literals.md#studiocomponentstatetype) 
+2. See [:material-code-brackets: StudioComponentTypeType](./literals.md#studiocomponenttypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStudioComponentsRequestListStudioComponentsPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStudioComponentsRequestListStudioComponentsPaginateTypeDef](./type_defs.md#liststudiocomponentsrequestliststudiocomponentspaginatetypedef) 
 ## ListStudioMembersPaginator
 
-Type annotations for
-`boto3.client("nimble").get_paginator("list_studio_members")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_studio_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListStudioMembersPaginator
@@ -260,27 +329,40 @@ def get_list_studio_members_paginator() -> ListStudioMembersPaginator:
     return Session().client("nimble").get_paginator("list_studio_members")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListStudioMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudioMembers)
 
-Arguments for `ListStudioMembersPaginator.paginate` method:
+### paginate
 
-- `studioId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStudioMembersPaginator.paginate` method.
 
-`ListStudioMembersPaginator.paginate` returns
-`_PageIterator`\[[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStudioMembersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststudiospaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStudioMembersRequestListStudioMembersPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStudioMembersRequestListStudioMembersPaginateTypeDef](./type_defs.md#liststudiomembersrequestliststudiomemberspaginatetypedef) 
 ## ListStudiosPaginator
 
-Type annotations for `boto3.client("nimble").get_paginator("list_studios")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_studios")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudios)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.paginator import ListStudiosPaginator
@@ -289,13 +371,30 @@ def get_list_studios_paginator() -> ListStudiosPaginator:
     return Session().client("nimble").get_paginator("list_studios")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Paginator.ListStudios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStudios)
 
-Arguments for `ListStudiosPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStudiosPaginator.paginate` method.
 
-`ListStudiosPaginator.paginate` returns
-`_PageIterator`\[[ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStudiosResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStudiosRequestListStudiosPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStudiosRequestListStudiosPaginateTypeDef](./type_defs.md#liststudiosrequestliststudiospaginatetypedef) 

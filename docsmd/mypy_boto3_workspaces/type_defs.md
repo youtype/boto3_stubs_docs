@@ -1,2034 +1,2644 @@
-<a id="typed-dictionaries-for-boto3-workspaces-module"></a>
-
-# Typed dictionaries for boto3 WorkSpaces module
+# Typed dictionaries
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module
-[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+!!! note ""
 
-- [Typed dictionaries for boto3 WorkSpaces module](#typed-dictionaries-for-boto3-workspaces-module)
-  - [AccountModificationTypeDef](#accountmodificationtypedef)
-  - [AssociateConnectionAliasRequestRequestTypeDef](#associateconnectionaliasrequestrequesttypedef)
-  - [AssociateConnectionAliasResultTypeDef](#associateconnectionaliasresulttypedef)
-  - [AssociateIpGroupsRequestRequestTypeDef](#associateipgroupsrequestrequesttypedef)
-  - [AuthorizeIpRulesRequestRequestTypeDef](#authorizeiprulesrequestrequesttypedef)
-  - [ClientPropertiesResultTypeDef](#clientpropertiesresulttypedef)
-  - [ClientPropertiesTypeDef](#clientpropertiestypedef)
-  - [ComputeTypeTypeDef](#computetypetypedef)
-  - [ConnectClientAddInTypeDef](#connectclientaddintypedef)
-  - [ConnectionAliasAssociationTypeDef](#connectionaliasassociationtypedef)
-  - [ConnectionAliasPermissionTypeDef](#connectionaliaspermissiontypedef)
-  - [ConnectionAliasTypeDef](#connectionaliastypedef)
-  - [CopyWorkspaceImageRequestRequestTypeDef](#copyworkspaceimagerequestrequesttypedef)
-  - [CopyWorkspaceImageResultTypeDef](#copyworkspaceimageresulttypedef)
-  - [CreateConnectClientAddInRequestRequestTypeDef](#createconnectclientaddinrequestrequesttypedef)
-  - [CreateConnectClientAddInResultTypeDef](#createconnectclientaddinresulttypedef)
-  - [CreateConnectionAliasRequestRequestTypeDef](#createconnectionaliasrequestrequesttypedef)
-  - [CreateConnectionAliasResultTypeDef](#createconnectionaliasresulttypedef)
-  - [CreateIpGroupRequestRequestTypeDef](#createipgrouprequestrequesttypedef)
-  - [CreateIpGroupResultTypeDef](#createipgroupresulttypedef)
-  - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
-  - [CreateUpdatedWorkspaceImageRequestRequestTypeDef](#createupdatedworkspaceimagerequestrequesttypedef)
-  - [CreateUpdatedWorkspaceImageResultTypeDef](#createupdatedworkspaceimageresulttypedef)
-  - [CreateWorkspaceBundleRequestRequestTypeDef](#createworkspacebundlerequestrequesttypedef)
-  - [CreateWorkspaceBundleResultTypeDef](#createworkspacebundleresulttypedef)
-  - [CreateWorkspacesRequestRequestTypeDef](#createworkspacesrequestrequesttypedef)
-  - [CreateWorkspacesResultTypeDef](#createworkspacesresulttypedef)
-  - [DefaultWorkspaceCreationPropertiesTypeDef](#defaultworkspacecreationpropertiestypedef)
-  - [DeleteConnectClientAddInRequestRequestTypeDef](#deleteconnectclientaddinrequestrequesttypedef)
-  - [DeleteConnectionAliasRequestRequestTypeDef](#deleteconnectionaliasrequestrequesttypedef)
-  - [DeleteIpGroupRequestRequestTypeDef](#deleteipgrouprequestrequesttypedef)
-  - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
-  - [DeleteWorkspaceBundleRequestRequestTypeDef](#deleteworkspacebundlerequestrequesttypedef)
-  - [DeleteWorkspaceImageRequestRequestTypeDef](#deleteworkspaceimagerequestrequesttypedef)
-  - [DeregisterWorkspaceDirectoryRequestRequestTypeDef](#deregisterworkspacedirectoryrequestrequesttypedef)
-  - [DescribeAccountModificationsRequestRequestTypeDef](#describeaccountmodificationsrequestrequesttypedef)
-  - [DescribeAccountModificationsResultTypeDef](#describeaccountmodificationsresulttypedef)
-  - [DescribeAccountResultTypeDef](#describeaccountresulttypedef)
-  - [DescribeClientPropertiesRequestRequestTypeDef](#describeclientpropertiesrequestrequesttypedef)
-  - [DescribeClientPropertiesResultTypeDef](#describeclientpropertiesresulttypedef)
-  - [DescribeConnectClientAddInsRequestRequestTypeDef](#describeconnectclientaddinsrequestrequesttypedef)
-  - [DescribeConnectClientAddInsResultTypeDef](#describeconnectclientaddinsresulttypedef)
-  - [DescribeConnectionAliasPermissionsRequestRequestTypeDef](#describeconnectionaliaspermissionsrequestrequesttypedef)
-  - [DescribeConnectionAliasPermissionsResultTypeDef](#describeconnectionaliaspermissionsresulttypedef)
-  - [DescribeConnectionAliasesRequestRequestTypeDef](#describeconnectionaliasesrequestrequesttypedef)
-  - [DescribeConnectionAliasesResultTypeDef](#describeconnectionaliasesresulttypedef)
-  - [DescribeIpGroupsRequestRequestTypeDef](#describeipgroupsrequestrequesttypedef)
-  - [DescribeIpGroupsResultTypeDef](#describeipgroupsresulttypedef)
-  - [DescribeTagsRequestRequestTypeDef](#describetagsrequestrequesttypedef)
-  - [DescribeTagsResultTypeDef](#describetagsresulttypedef)
-  - [DescribeWorkspaceBundlesRequestRequestTypeDef](#describeworkspacebundlesrequestrequesttypedef)
-  - [DescribeWorkspaceBundlesResultTypeDef](#describeworkspacebundlesresulttypedef)
-  - [DescribeWorkspaceDirectoriesRequestRequestTypeDef](#describeworkspacedirectoriesrequestrequesttypedef)
-  - [DescribeWorkspaceDirectoriesResultTypeDef](#describeworkspacedirectoriesresulttypedef)
-  - [DescribeWorkspaceImagePermissionsRequestRequestTypeDef](#describeworkspaceimagepermissionsrequestrequesttypedef)
-  - [DescribeWorkspaceImagePermissionsResultTypeDef](#describeworkspaceimagepermissionsresulttypedef)
-  - [DescribeWorkspaceImagesRequestRequestTypeDef](#describeworkspaceimagesrequestrequesttypedef)
-  - [DescribeWorkspaceImagesResultTypeDef](#describeworkspaceimagesresulttypedef)
-  - [DescribeWorkspaceSnapshotsRequestRequestTypeDef](#describeworkspacesnapshotsrequestrequesttypedef)
-  - [DescribeWorkspaceSnapshotsResultTypeDef](#describeworkspacesnapshotsresulttypedef)
-  - [DescribeWorkspacesConnectionStatusRequestRequestTypeDef](#describeworkspacesconnectionstatusrequestrequesttypedef)
-  - [DescribeWorkspacesConnectionStatusResultTypeDef](#describeworkspacesconnectionstatusresulttypedef)
-  - [DescribeWorkspacesRequestRequestTypeDef](#describeworkspacesrequestrequesttypedef)
-  - [DescribeWorkspacesResultTypeDef](#describeworkspacesresulttypedef)
-  - [DisassociateConnectionAliasRequestRequestTypeDef](#disassociateconnectionaliasrequestrequesttypedef)
-  - [DisassociateIpGroupsRequestRequestTypeDef](#disassociateipgroupsrequestrequesttypedef)
-  - [FailedCreateWorkspaceRequestTypeDef](#failedcreateworkspacerequesttypedef)
-  - [FailedWorkspaceChangeRequestTypeDef](#failedworkspacechangerequesttypedef)
-  - [ImagePermissionTypeDef](#imagepermissiontypedef)
-  - [ImportWorkspaceImageRequestRequestTypeDef](#importworkspaceimagerequestrequesttypedef)
-  - [ImportWorkspaceImageResultTypeDef](#importworkspaceimageresulttypedef)
-  - [IpRuleItemTypeDef](#ipruleitemtypedef)
-  - [ListAvailableManagementCidrRangesRequestRequestTypeDef](#listavailablemanagementcidrrangesrequestrequesttypedef)
-  - [ListAvailableManagementCidrRangesResultTypeDef](#listavailablemanagementcidrrangesresulttypedef)
-  - [MigrateWorkspaceRequestRequestTypeDef](#migrateworkspacerequestrequesttypedef)
-  - [MigrateWorkspaceResultTypeDef](#migrateworkspaceresulttypedef)
-  - [ModificationStateTypeDef](#modificationstatetypedef)
-  - [ModifyAccountRequestRequestTypeDef](#modifyaccountrequestrequesttypedef)
-  - [ModifyClientPropertiesRequestRequestTypeDef](#modifyclientpropertiesrequestrequesttypedef)
-  - [ModifySelfservicePermissionsRequestRequestTypeDef](#modifyselfservicepermissionsrequestrequesttypedef)
-  - [ModifyWorkspaceAccessPropertiesRequestRequestTypeDef](#modifyworkspaceaccesspropertiesrequestrequesttypedef)
-  - [ModifyWorkspaceCreationPropertiesRequestRequestTypeDef](#modifyworkspacecreationpropertiesrequestrequesttypedef)
-  - [ModifyWorkspacePropertiesRequestRequestTypeDef](#modifyworkspacepropertiesrequestrequesttypedef)
-  - [ModifyWorkspaceStateRequestRequestTypeDef](#modifyworkspacestaterequestrequesttypedef)
-  - [OperatingSystemTypeDef](#operatingsystemtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RebootRequestTypeDef](#rebootrequesttypedef)
-  - [RebootWorkspacesRequestRequestTypeDef](#rebootworkspacesrequestrequesttypedef)
-  - [RebootWorkspacesResultTypeDef](#rebootworkspacesresulttypedef)
-  - [RebuildRequestTypeDef](#rebuildrequesttypedef)
-  - [RebuildWorkspacesRequestRequestTypeDef](#rebuildworkspacesrequestrequesttypedef)
-  - [RebuildWorkspacesResultTypeDef](#rebuildworkspacesresulttypedef)
-  - [RegisterWorkspaceDirectoryRequestRequestTypeDef](#registerworkspacedirectoryrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreWorkspaceRequestRequestTypeDef](#restoreworkspacerequestrequesttypedef)
-  - [RevokeIpRulesRequestRequestTypeDef](#revokeiprulesrequestrequesttypedef)
-  - [RootStorageTypeDef](#rootstoragetypedef)
-  - [SelfservicePermissionsTypeDef](#selfservicepermissionstypedef)
-  - [SnapshotTypeDef](#snapshottypedef)
-  - [StartRequestTypeDef](#startrequesttypedef)
-  - [StartWorkspacesRequestRequestTypeDef](#startworkspacesrequestrequesttypedef)
-  - [StartWorkspacesResultTypeDef](#startworkspacesresulttypedef)
-  - [StopRequestTypeDef](#stoprequesttypedef)
-  - [StopWorkspacesRequestRequestTypeDef](#stopworkspacesrequestrequesttypedef)
-  - [StopWorkspacesResultTypeDef](#stopworkspacesresulttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TerminateRequestTypeDef](#terminaterequesttypedef)
-  - [TerminateWorkspacesRequestRequestTypeDef](#terminateworkspacesrequestrequesttypedef)
-  - [TerminateWorkspacesResultTypeDef](#terminateworkspacesresulttypedef)
-  - [UpdateConnectClientAddInRequestRequestTypeDef](#updateconnectclientaddinrequestrequesttypedef)
-  - [UpdateConnectionAliasPermissionRequestRequestTypeDef](#updateconnectionaliaspermissionrequestrequesttypedef)
-  - [UpdateResultTypeDef](#updateresulttypedef)
-  - [UpdateRulesOfIpGroupRequestRequestTypeDef](#updaterulesofipgrouprequestrequesttypedef)
-  - [UpdateWorkspaceBundleRequestRequestTypeDef](#updateworkspacebundlerequestrequesttypedef)
-  - [UpdateWorkspaceImagePermissionRequestRequestTypeDef](#updateworkspaceimagepermissionrequestrequesttypedef)
-  - [UserStorageTypeDef](#userstoragetypedef)
-  - [WorkspaceAccessPropertiesTypeDef](#workspaceaccesspropertiestypedef)
-  - [WorkspaceBundleTypeDef](#workspacebundletypedef)
-  - [WorkspaceConnectionStatusTypeDef](#workspaceconnectionstatustypedef)
-  - [WorkspaceCreationPropertiesTypeDef](#workspacecreationpropertiestypedef)
-  - [WorkspaceDirectoryTypeDef](#workspacedirectorytypedef)
-  - [WorkspaceImageTypeDef](#workspaceimagetypedef)
-  - [WorkspacePropertiesTypeDef](#workspacepropertiestypedef)
-  - [WorkspaceRequestTypeDef](#workspacerequesttypedef)
-  - [WorkspaceTypeDef](#workspacetypedef)
-  - [WorkspacesIpGroupTypeDef](#workspacesipgrouptypedef)
-
-<a id="accountmodificationtypedef"></a>
+    Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+    type annotations stubs module [mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 ## AccountModificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef
+
+def get_value() -> AccountModificationTypeDef:
+    return {
+        "ModificationState": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountModificationTypeDef(TypedDict):
+    ModificationState: NotRequired[DedicatedTenancyModificationStateEnumType],  # (1)
+    DedicatedTenancySupport: NotRequired[DedicatedTenancySupportResultEnumType],  # (2)
+    DedicatedTenancyManagementCidrRange: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
-- `ModificationState`:
-  [DedicatedTenancyModificationStateEnumType](./literals.md#dedicatedtenancymodificationstateenumtype)
-- `DedicatedTenancySupport`:
-  [DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype)
-- `DedicatedTenancyManagementCidrRange`: `str`
-- `StartTime`: `datetime`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="associateconnectionaliasrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DedicatedTenancyModificationStateEnumType](./literals.md#dedicatedtenancymodificationstateenumtype) 
+2. See [:material-code-brackets: DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype) 
 ## AssociateConnectionAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import AssociateConnectionAliasRequestRequestTypeDef
+
+def get_value() -> AssociateConnectionAliasRequestRequestTypeDef:
+    return {
+        "AliasId": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `AliasId`: `str`
-- `ResourceId`: `str`
-
-<a id="associateconnectionaliasresulttypedef"></a>
+```python title="Definition"
+class AssociateConnectionAliasRequestRequestTypeDef(TypedDict):
+    AliasId: str,
+    ResourceId: str,
+```
 
 ## AssociateConnectionAliasResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import AssociateConnectionAliasResultTypeDef
+
+def get_value() -> AssociateConnectionAliasResultTypeDef:
+    return {
+        "ConnectionIdentifier": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateConnectionAliasResultTypeDef(TypedDict):
+    ConnectionIdentifier: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConnectionIdentifier`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associateipgroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateIpGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import AssociateIpGroupsRequestRequestTypeDef
+
+def get_value() -> AssociateIpGroupsRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "GroupIds": ...,
+    }
 ```
 
-Required fields:
-
-- `DirectoryId`: `str`
-- `GroupIds`: `Sequence`\[`str`\]
-
-<a id="authorizeiprulesrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateIpGroupsRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    GroupIds: Sequence[str],
+```
 
 ## AuthorizeIpRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import AuthorizeIpRulesRequestRequestTypeDef
+
+def get_value() -> AuthorizeIpRulesRequestRequestTypeDef:
+    return {
+        "GroupId": ...,
+        "UserRules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AuthorizeIpRulesRequestRequestTypeDef(TypedDict):
+    GroupId: str,
+    UserRules: Sequence[IpRuleItemTypeDef],  # (1)
+```
 
-- `GroupId`: `str`
-- `UserRules`:
-  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-
-<a id="clientpropertiesresulttypedef"></a>
-
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
 ## ClientPropertiesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ClientPropertiesResultTypeDef
+
+def get_value() -> ClientPropertiesResultTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClientPropertiesResultTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    ClientProperties: NotRequired[ClientPropertiesTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `ClientProperties`:
-  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef)
-
-<a id="clientpropertiestypedef"></a>
-
+1. See [:material-code-braces: ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef) 
 ## ClientPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ClientPropertiesTypeDef
+
+def get_value() -> ClientPropertiesTypeDef:
+    return {
+        "ReconnectEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClientPropertiesTypeDef(TypedDict):
+    ReconnectEnabled: NotRequired[ReconnectEnumType],  # (1)
+```
 
-- `ReconnectEnabled`: [ReconnectEnumType](./literals.md#reconnectenumtype)
-
-<a id="computetypetypedef"></a>
-
+1. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
 ## ComputeTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ComputeTypeTypeDef
+
+def get_value() -> ComputeTypeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComputeTypeTypeDef(TypedDict):
+    Name: NotRequired[ComputeType],  # (1)
+```
 
-- `Name`: [ComputeType](./literals.md#computetype)
-
-<a id="connectclientaddintypedef"></a>
-
+1. See [:material-code-brackets: ComputeType](./literals.md#computetype) 
 ## ConnectClientAddInTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ConnectClientAddInTypeDef
+
+def get_value() -> ConnectClientAddInTypeDef:
+    return {
+        "AddInId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AddInId`: `str`
-- `ResourceId`: `str`
-- `Name`: `str`
-- `URL`: `str`
-
-<a id="connectionaliasassociationtypedef"></a>
+```python title="Definition"
+class ConnectClientAddInTypeDef(TypedDict):
+    AddInId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Name: NotRequired[str],
+    URL: NotRequired[str],
+```
 
 ## ConnectionAliasAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ConnectionAliasAssociationTypeDef
+
+def get_value() -> ConnectionAliasAssociationTypeDef:
+    return {
+        "AssociationStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionAliasAssociationTypeDef(TypedDict):
+    AssociationStatus: NotRequired[AssociationStatusType],  # (1)
+    AssociatedAccountId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ConnectionIdentifier: NotRequired[str],
+```
 
-- `AssociationStatus`:
-  [AssociationStatusType](./literals.md#associationstatustype)
-- `AssociatedAccountId`: `str`
-- `ResourceId`: `str`
-- `ConnectionIdentifier`: `str`
-
-<a id="connectionaliaspermissiontypedef"></a>
-
+1. See [:material-code-brackets: AssociationStatusType](./literals.md#associationstatustype) 
 ## ConnectionAliasPermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ConnectionAliasPermissionTypeDef
+
+def get_value() -> ConnectionAliasPermissionTypeDef:
+    return {
+        "SharedAccountId": ...,
+        "AllowAssociation": ...,
+    }
 ```
 
-Required fields:
-
-- `SharedAccountId`: `str`
-- `AllowAssociation`: `bool`
-
-<a id="connectionaliastypedef"></a>
+```python title="Definition"
+class ConnectionAliasPermissionTypeDef(TypedDict):
+    SharedAccountId: str,
+    AllowAssociation: bool,
+```
 
 ## ConnectionAliasTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ConnectionAliasTypeDef
+
+def get_value() -> ConnectionAliasTypeDef:
+    return {
+        "ConnectionString": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionAliasTypeDef(TypedDict):
+    ConnectionString: NotRequired[str],
+    AliasId: NotRequired[str],
+    State: NotRequired[ConnectionAliasStateType],  # (1)
+    OwnerAccountId: NotRequired[str],
+    Associations: NotRequired[List[ConnectionAliasAssociationTypeDef]],  # (2)
+```
 
-- `ConnectionString`: `str`
-- `AliasId`: `str`
-- `State`: [ConnectionAliasStateType](./literals.md#connectionaliasstatetype)
-- `OwnerAccountId`: `str`
-- `Associations`:
-  `List`\[[ConnectionAliasAssociationTypeDef](./type_defs.md#connectionaliasassociationtypedef)\]
-
-<a id="copyworkspaceimagerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionAliasStateType](./literals.md#connectionaliasstatetype) 
+2. See [:material-code-braces: ConnectionAliasAssociationTypeDef](./type_defs.md#connectionaliasassociationtypedef) 
 ## CopyWorkspaceImageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageRequestRequestTypeDef
+
+def get_value() -> CopyWorkspaceImageRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "SourceImageId": ...,
+        "SourceRegion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyWorkspaceImageRequestRequestTypeDef(TypedDict):
+    Name: str,
+    SourceImageId: str,
+    SourceRegion: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `SourceImageId`: `str`
-- `SourceRegion`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="copyworkspaceimageresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CopyWorkspaceImageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageResultTypeDef
+
+def get_value() -> CopyWorkspaceImageResultTypeDef:
+    return {
+        "ImageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyWorkspaceImageResultTypeDef(TypedDict):
+    ImageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ImageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createconnectclientaddinrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConnectClientAddInRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateConnectClientAddInRequestRequestTypeDef
+
+def get_value() -> CreateConnectClientAddInRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Name": ...,
+        "URL": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-- `Name`: `str`
-- `URL`: `str`
-
-<a id="createconnectclientaddinresulttypedef"></a>
+```python title="Definition"
+class CreateConnectClientAddInRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Name: str,
+    URL: str,
+```
 
 ## CreateConnectClientAddInResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateConnectClientAddInResultTypeDef
+
+def get_value() -> CreateConnectClientAddInResultTypeDef:
+    return {
+        "AddInId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectClientAddInResultTypeDef(TypedDict):
+    AddInId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AddInId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createconnectionaliasrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConnectionAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateConnectionAliasRequestRequestTypeDef
+
+def get_value() -> CreateConnectionAliasRequestRequestTypeDef:
+    return {
+        "ConnectionString": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionAliasRequestRequestTypeDef(TypedDict):
+    ConnectionString: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ConnectionString`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createconnectionaliasresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateConnectionAliasResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateConnectionAliasResultTypeDef
+
+def get_value() -> CreateConnectionAliasResultTypeDef:
+    return {
+        "AliasId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionAliasResultTypeDef(TypedDict):
+    AliasId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AliasId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createipgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIpGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateIpGroupRequestRequestTypeDef
+
+def get_value() -> CreateIpGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIpGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    GroupDesc: NotRequired[str],
+    UserRules: NotRequired[Sequence[IpRuleItemTypeDef]],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `GroupName`: `str`
-
-Optional fields:
-
-- `GroupDesc`: `str`
-- `UserRules`:
-  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createipgroupresulttypedef"></a>
-
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateIpGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateIpGroupResultTypeDef
+
+def get_value() -> CreateIpGroupResultTypeDef:
+    return {
+        "GroupId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIpGroupResultTypeDef(TypedDict):
+    GroupId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GroupId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateTagsRequestRequestTypeDef
+
+def get_value() -> CreateTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTagsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createupdatedworkspaceimagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUpdatedWorkspaceImageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateUpdatedWorkspaceImageRequestRequestTypeDef
+
+def get_value() -> CreateUpdatedWorkspaceImageRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "SourceImageId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUpdatedWorkspaceImageRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    SourceImageId: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `SourceImageId`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createupdatedworkspaceimageresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUpdatedWorkspaceImageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateUpdatedWorkspaceImageResultTypeDef
+
+def get_value() -> CreateUpdatedWorkspaceImageResultTypeDef:
+    return {
+        "ImageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUpdatedWorkspaceImageResultTypeDef(TypedDict):
+    ImageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ImageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkspacebundlerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkspaceBundleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateWorkspaceBundleRequestRequestTypeDef
+
+def get_value() -> CreateWorkspaceBundleRequestRequestTypeDef:
+    return {
+        "BundleName": ...,
+        "BundleDescription": ...,
+        "ImageId": ...,
+        "ComputeType": ...,
+        "UserStorage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkspaceBundleRequestRequestTypeDef(TypedDict):
+    BundleName: str,
+    BundleDescription: str,
+    ImageId: str,
+    ComputeType: ComputeTypeTypeDef,  # (1)
+    UserStorage: UserStorageTypeDef,  # (2)
+    RootStorage: NotRequired[RootStorageTypeDef],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `BundleName`: `str`
-- `BundleDescription`: `str`
-- `ImageId`: `str`
-- `ComputeType`: [ComputeTypeTypeDef](./type_defs.md#computetypetypedef)
-- `UserStorage`: [UserStorageTypeDef](./type_defs.md#userstoragetypedef)
-
-Optional fields:
-
-- `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createworkspacebundleresulttypedef"></a>
-
+1. See [:material-code-braces: ComputeTypeTypeDef](./type_defs.md#computetypetypedef) 
+2. See [:material-code-braces: UserStorageTypeDef](./type_defs.md#userstoragetypedef) 
+3. See [:material-code-braces: RootStorageTypeDef](./type_defs.md#rootstoragetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateWorkspaceBundleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateWorkspaceBundleResultTypeDef
+
+def get_value() -> CreateWorkspaceBundleResultTypeDef:
+    return {
+        "WorkspaceBundle": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkspaceBundleResultTypeDef(TypedDict):
+    WorkspaceBundle: WorkspaceBundleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkspaceBundle`:
-  [WorkspaceBundleTypeDef](./type_defs.md#workspacebundletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkspacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceBundleTypeDef](./type_defs.md#workspacebundletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateWorkspacesRequestRequestTypeDef
+
+def get_value() -> CreateWorkspacesRequestRequestTypeDef:
+    return {
+        "Workspaces": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkspacesRequestRequestTypeDef(TypedDict):
+    Workspaces: Sequence[WorkspaceRequestTypeDef],  # (1)
+```
 
-- `Workspaces`:
-  `Sequence`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
-
-<a id="createworkspacesresulttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef) 
 ## CreateWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import CreateWorkspacesResultTypeDef
+
+def get_value() -> CreateWorkspacesResultTypeDef:
+    return {
+        "FailedRequests": ...,
+        "PendingRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkspacesResultTypeDef(TypedDict):
+    FailedRequests: List[FailedCreateWorkspaceRequestTypeDef],  # (1)
+    PendingRequests: List[WorkspaceTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `FailedRequests`:
-  `List`\[[FailedCreateWorkspaceRequestTypeDef](./type_defs.md#failedcreateworkspacerequesttypedef)\]
-- `PendingRequests`:
-  `List`\[[WorkspaceTypeDef](./type_defs.md#workspacetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="defaultworkspacecreationpropertiestypedef"></a>
-
+1. See [:material-code-braces: FailedCreateWorkspaceRequestTypeDef](./type_defs.md#failedcreateworkspacerequesttypedef) 
+2. See [:material-code-braces: WorkspaceTypeDef](./type_defs.md#workspacetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DefaultWorkspaceCreationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DefaultWorkspaceCreationPropertiesTypeDef
+
+def get_value() -> DefaultWorkspaceCreationPropertiesTypeDef:
+    return {
+        "EnableWorkDocs": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnableWorkDocs`: `bool`
-- `EnableInternetAccess`: `bool`
-- `DefaultOu`: `str`
-- `CustomSecurityGroupId`: `str`
-- `UserEnabledAsLocalAdministrator`: `bool`
-- `EnableMaintenanceMode`: `bool`
-
-<a id="deleteconnectclientaddinrequestrequesttypedef"></a>
+```python title="Definition"
+class DefaultWorkspaceCreationPropertiesTypeDef(TypedDict):
+    EnableWorkDocs: NotRequired[bool],
+    EnableInternetAccess: NotRequired[bool],
+    DefaultOu: NotRequired[str],
+    CustomSecurityGroupId: NotRequired[str],
+    UserEnabledAsLocalAdministrator: NotRequired[bool],
+    EnableMaintenanceMode: NotRequired[bool],
+```
 
 ## DeleteConnectClientAddInRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeleteConnectClientAddInRequestRequestTypeDef
+
+def get_value() -> DeleteConnectClientAddInRequestRequestTypeDef:
+    return {
+        "AddInId": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `AddInId`: `str`
-- `ResourceId`: `str`
-
-<a id="deleteconnectionaliasrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectClientAddInRequestRequestTypeDef(TypedDict):
+    AddInId: str,
+    ResourceId: str,
+```
 
 ## DeleteConnectionAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeleteConnectionAliasRequestRequestTypeDef
+
+def get_value() -> DeleteConnectionAliasRequestRequestTypeDef:
+    return {
+        "AliasId": ...,
+    }
 ```
 
-Required fields:
-
-- `AliasId`: `str`
-
-<a id="deleteipgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectionAliasRequestRequestTypeDef(TypedDict):
+    AliasId: str,
+```
 
 ## DeleteIpGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeleteIpGroupRequestRequestTypeDef
+
+def get_value() -> DeleteIpGroupRequestRequestTypeDef:
+    return {
+        "GroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupId`: `str`
-
-<a id="deletetagsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteIpGroupRequestRequestTypeDef(TypedDict):
+    GroupId: str,
+```
 
 ## DeleteTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeleteTagsRequestRequestTypeDef
+
+def get_value() -> DeleteTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="deleteworkspacebundlerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTagsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagKeys: Sequence[str],
+```
 
 ## DeleteWorkspaceBundleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeleteWorkspaceBundleRequestRequestTypeDef
+
+def get_value() -> DeleteWorkspaceBundleRequestRequestTypeDef:
+    return {
+        "BundleId": ...,
+    }
 ```
 
-Optional fields:
-
-- `BundleId`: `str`
-
-<a id="deleteworkspaceimagerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteWorkspaceBundleRequestRequestTypeDef(TypedDict):
+    BundleId: NotRequired[str],
+```
 
 ## DeleteWorkspaceImageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeleteWorkspaceImageRequestRequestTypeDef
+
+def get_value() -> DeleteWorkspaceImageRequestRequestTypeDef:
+    return {
+        "ImageId": ...,
+    }
 ```
 
-Required fields:
-
-- `ImageId`: `str`
-
-<a id="deregisterworkspacedirectoryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteWorkspaceImageRequestRequestTypeDef(TypedDict):
+    ImageId: str,
+```
 
 ## DeregisterWorkspaceDirectoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DeregisterWorkspaceDirectoryRequestRequestTypeDef
+
+def get_value() -> DeregisterWorkspaceDirectoryRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterWorkspaceDirectoryRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+```
 
-- `DirectoryId`: `str`
+## DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef
 
-<a id="describeaccountmodificationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef
 
+def get_value() -> DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAccountModificationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsRequestRequestTypeDef
+
+def get_value() -> DescribeAccountModificationsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="describeaccountmodificationsresulttypedef"></a>
+```python title="Definition"
+class DescribeAccountModificationsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## DescribeAccountModificationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsResultTypeDef
+
+def get_value() -> DescribeAccountModificationsResultTypeDef:
+    return {
+        "AccountModifications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountModificationsResultTypeDef(TypedDict):
+    AccountModifications: List[AccountModificationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountModifications`:
-  `List`\[[AccountModificationTypeDef](./type_defs.md#accountmodificationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeaccountresulttypedef"></a>
-
+1. See [:material-code-braces: AccountModificationTypeDef](./type_defs.md#accountmodificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeAccountResultTypeDef
+
+def get_value() -> DescribeAccountResultTypeDef:
+    return {
+        "DedicatedTenancySupport": ...,
+        "DedicatedTenancyManagementCidrRange": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountResultTypeDef(TypedDict):
+    DedicatedTenancySupport: DedicatedTenancySupportResultEnumType,  # (1)
+    DedicatedTenancyManagementCidrRange: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DedicatedTenancySupport`:
-  [DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype)
-- `DedicatedTenancyManagementCidrRange`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeclientpropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClientPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesRequestRequestTypeDef
+
+def get_value() -> DescribeClientPropertiesRequestRequestTypeDef:
+    return {
+        "ResourceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceIds`: `Sequence`\[`str`\]
-
-<a id="describeclientpropertiesresulttypedef"></a>
+```python title="Definition"
+class DescribeClientPropertiesRequestRequestTypeDef(TypedDict):
+    ResourceIds: Sequence[str],
+```
 
 ## DescribeClientPropertiesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesResultTypeDef
+
+def get_value() -> DescribeClientPropertiesResultTypeDef:
+    return {
+        "ClientPropertiesList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClientPropertiesResultTypeDef(TypedDict):
+    ClientPropertiesList: List[ClientPropertiesResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClientPropertiesList`:
-  `List`\[[ClientPropertiesResultTypeDef](./type_defs.md#clientpropertiesresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectclientaddinsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClientPropertiesResultTypeDef](./type_defs.md#clientpropertiesresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectClientAddInsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeConnectClientAddInsRequestRequestTypeDef
+
+def get_value() -> DescribeConnectClientAddInsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeconnectclientaddinsresulttypedef"></a>
+```python title="Definition"
+class DescribeConnectClientAddInsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeConnectClientAddInsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeConnectClientAddInsResultTypeDef
+
+def get_value() -> DescribeConnectClientAddInsResultTypeDef:
+    return {
+        "AddIns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectClientAddInsResultTypeDef(TypedDict):
+    AddIns: List[ConnectClientAddInTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AddIns`:
-  `List`\[[ConnectClientAddInTypeDef](./type_defs.md#connectclientaddintypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectionaliaspermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectClientAddInTypeDef](./type_defs.md#connectclientaddintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectionAliasPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasPermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeConnectionAliasPermissionsRequestRequestTypeDef:
+    return {
+        "AliasId": ...,
+    }
 ```
 
-Required fields:
-
-- `AliasId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeconnectionaliaspermissionsresulttypedef"></a>
+```python title="Definition"
+class DescribeConnectionAliasPermissionsRequestRequestTypeDef(TypedDict):
+    AliasId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeConnectionAliasPermissionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasPermissionsResultTypeDef
+
+def get_value() -> DescribeConnectionAliasPermissionsResultTypeDef:
+    return {
+        "AliasId": ...,
+        "ConnectionAliasPermissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectionAliasPermissionsResultTypeDef(TypedDict):
+    AliasId: str,
+    ConnectionAliasPermissions: List[ConnectionAliasPermissionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AliasId`: `str`
-- `ConnectionAliasPermissions`:
-  `List`\[[ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectionaliasesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectionAliasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesRequestRequestTypeDef
+
+def get_value() -> DescribeConnectionAliasesRequestRequestTypeDef:
+    return {
+        "AliasIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `AliasIds`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeconnectionaliasesresulttypedef"></a>
+```python title="Definition"
+class DescribeConnectionAliasesRequestRequestTypeDef(TypedDict):
+    AliasIds: NotRequired[Sequence[str]],
+    ResourceId: NotRequired[str],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeConnectionAliasesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesResultTypeDef
+
+def get_value() -> DescribeConnectionAliasesResultTypeDef:
+    return {
+        "ConnectionAliases": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectionAliasesResultTypeDef(TypedDict):
+    ConnectionAliases: List[ConnectionAliasTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionAliases`:
-  `List`\[[ConnectionAliasTypeDef](./type_defs.md#connectionaliastypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConnectionAliasTypeDef](./type_defs.md#connectionaliastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef
 
-<a id="describeipgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef
 
+def get_value() -> DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef:
+    return {
+        "GroupIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef(TypedDict):
+    GroupIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeIpGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeIpGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeIpGroupsRequestRequestTypeDef:
+    return {
+        "GroupIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeipgroupsresulttypedef"></a>
+```python title="Definition"
+class DescribeIpGroupsRequestRequestTypeDef(TypedDict):
+    GroupIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeIpGroupsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeIpGroupsResultTypeDef
+
+def get_value() -> DescribeIpGroupsResultTypeDef:
+    return {
+        "Result": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeIpGroupsResultTypeDef(TypedDict):
+    Result: List[WorkspacesIpGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Result`:
-  `List`\[[WorkspacesIpGroupTypeDef](./type_defs.md#workspacesipgrouptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspacesIpGroupTypeDef](./type_defs.md#workspacesipgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeTagsRequestRequestTypeDef
+
+def get_value() -> DescribeTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-<a id="describetagsresulttypedef"></a>
+```python title="Definition"
+class DescribeTagsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+```
 
 ## DescribeTagsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeTagsResultTypeDef
+
+def get_value() -> DescribeTagsResultTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTagsResultTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef
 
-<a id="describeworkspacebundlesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef
 
+def get_value() -> DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef:
+    return {
+        "BundleIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef(TypedDict):
+    BundleIds: NotRequired[Sequence[str]],
+    Owner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeWorkspaceBundlesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspaceBundlesRequestRequestTypeDef:
+    return {
+        "BundleIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `BundleIds`: `Sequence`\[`str`\]
-- `Owner`: `str`
-- `NextToken`: `str`
-
-<a id="describeworkspacebundlesresulttypedef"></a>
+```python title="Definition"
+class DescribeWorkspaceBundlesRequestRequestTypeDef(TypedDict):
+    BundleIds: NotRequired[Sequence[str]],
+    Owner: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeWorkspaceBundlesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesResultTypeDef
+
+def get_value() -> DescribeWorkspaceBundlesResultTypeDef:
+    return {
+        "Bundles": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspaceBundlesResultTypeDef(TypedDict):
+    Bundles: List[WorkspaceBundleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Bundles`:
-  `List`\[[WorkspaceBundleTypeDef](./type_defs.md#workspacebundletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: WorkspaceBundleTypeDef](./type_defs.md#workspacebundletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef
 
-<a id="describeworkspacedirectoriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef
 
+def get_value() -> DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef:
+    return {
+        "DirectoryIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef(TypedDict):
+    DirectoryIds: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeWorkspaceDirectoriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspaceDirectoriesRequestRequestTypeDef:
+    return {
+        "DirectoryIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DirectoryIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeworkspacedirectoriesresulttypedef"></a>
+```python title="Definition"
+class DescribeWorkspaceDirectoriesRequestRequestTypeDef(TypedDict):
+    DirectoryIds: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeWorkspaceDirectoriesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesResultTypeDef
+
+def get_value() -> DescribeWorkspaceDirectoriesResultTypeDef:
+    return {
+        "Directories": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspaceDirectoriesResultTypeDef(TypedDict):
+    Directories: List[WorkspaceDirectoryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Directories`:
-  `List`\[[WorkspaceDirectoryTypeDef](./type_defs.md#workspacedirectorytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworkspaceimagepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceDirectoryTypeDef](./type_defs.md#workspacedirectorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorkspaceImagePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagePermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspaceImagePermissionsRequestRequestTypeDef:
+    return {
+        "ImageId": ...,
+    }
 ```
 
-Required fields:
-
-- `ImageId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeworkspaceimagepermissionsresulttypedef"></a>
+```python title="Definition"
+class DescribeWorkspaceImagePermissionsRequestRequestTypeDef(TypedDict):
+    ImageId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeWorkspaceImagePermissionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagePermissionsResultTypeDef
+
+def get_value() -> DescribeWorkspaceImagePermissionsResultTypeDef:
+    return {
+        "ImageId": ...,
+        "ImagePermissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspaceImagePermissionsResultTypeDef(TypedDict):
+    ImageId: str,
+    ImagePermissions: List[ImagePermissionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ImageId`: `str`
-- `ImagePermissions`:
-  `List`\[[ImagePermissionTypeDef](./type_defs.md#imagepermissiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ImagePermissionTypeDef](./type_defs.md#imagepermissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef
 
-<a id="describeworkspaceimagesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef
 
+def get_value() -> DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef:
+    return {
+        "ImageIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef(TypedDict):
+    ImageIds: NotRequired[Sequence[str]],
+    ImageType: NotRequired[ImageTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeWorkspaceImagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspaceImagesRequestRequestTypeDef:
+    return {
+        "ImageIds": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeWorkspaceImagesRequestRequestTypeDef(TypedDict):
+    ImageIds: NotRequired[Sequence[str]],
+    ImageType: NotRequired[ImageTypeType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `ImageIds`: `Sequence`\[`str`\]
-- `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeworkspaceimagesresulttypedef"></a>
-
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
 ## DescribeWorkspaceImagesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesResultTypeDef
+
+def get_value() -> DescribeWorkspaceImagesResultTypeDef:
+    return {
+        "Images": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspaceImagesResultTypeDef(TypedDict):
+    Images: List[WorkspaceImageTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Images`:
-  `List`\[[WorkspaceImageTypeDef](./type_defs.md#workspaceimagetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworkspacesnapshotsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceImageTypeDef](./type_defs.md#workspaceimagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorkspaceSnapshotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspaceSnapshotsRequestRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkspaceId`: `str`
-
-<a id="describeworkspacesnapshotsresulttypedef"></a>
+```python title="Definition"
+class DescribeWorkspaceSnapshotsRequestRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+```
 
 ## DescribeWorkspaceSnapshotsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsResultTypeDef
+
+def get_value() -> DescribeWorkspaceSnapshotsResultTypeDef:
+    return {
+        "RebuildSnapshots": ...,
+        "RestoreSnapshots": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspaceSnapshotsResultTypeDef(TypedDict):
+    RebuildSnapshots: List[SnapshotTypeDef],  # (1)
+    RestoreSnapshots: List[SnapshotTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `RebuildSnapshots`:
-  `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
-- `RestoreSnapshots`:
-  `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef
 
-<a id="describeworkspacesconnectionstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef
 
+def get_value() -> DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef:
+    return {
+        "WorkspaceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef(TypedDict):
+    WorkspaceIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeWorkspacesConnectionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspacesConnectionStatusRequestRequestTypeDef:
+    return {
+        "WorkspaceIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkspaceIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-
-<a id="describeworkspacesconnectionstatusresulttypedef"></a>
+```python title="Definition"
+class DescribeWorkspacesConnectionStatusRequestRequestTypeDef(TypedDict):
+    WorkspaceIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeWorkspacesConnectionStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusResultTypeDef
+
+def get_value() -> DescribeWorkspacesConnectionStatusResultTypeDef:
+    return {
+        "WorkspacesConnectionStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspacesConnectionStatusResultTypeDef(TypedDict):
+    WorkspacesConnectionStatus: List[WorkspaceConnectionStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkspacesConnectionStatus`:
-  `List`\[[WorkspaceConnectionStatusTypeDef](./type_defs.md#workspaceconnectionstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: WorkspaceConnectionStatusTypeDef](./type_defs.md#workspaceconnectionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef
 
-<a id="describeworkspacesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef
 
+def get_value() -> DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef:
+    return {
+        "WorkspaceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef(TypedDict):
+    WorkspaceIds: NotRequired[Sequence[str]],
+    DirectoryId: NotRequired[str],
+    UserName: NotRequired[str],
+    BundleId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspacesRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspacesRequestRequestTypeDef:
+    return {
+        "WorkspaceIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkspaceIds`: `Sequence`\[`str`\]
-- `DirectoryId`: `str`
-- `UserName`: `str`
-- `BundleId`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeworkspacesresulttypedef"></a>
+```python title="Definition"
+class DescribeWorkspacesRequestRequestTypeDef(TypedDict):
+    WorkspaceIds: NotRequired[Sequence[str]],
+    DirectoryId: NotRequired[str],
+    UserName: NotRequired[str],
+    BundleId: NotRequired[str],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DescribeWorkspacesResultTypeDef
+
+def get_value() -> DescribeWorkspacesResultTypeDef:
+    return {
+        "Workspaces": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkspacesResultTypeDef(TypedDict):
+    Workspaces: List[WorkspaceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Workspaces`: `List`\[[WorkspaceTypeDef](./type_defs.md#workspacetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateconnectionaliasrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceTypeDef](./type_defs.md#workspacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateConnectionAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DisassociateConnectionAliasRequestRequestTypeDef
+
+def get_value() -> DisassociateConnectionAliasRequestRequestTypeDef:
+    return {
+        "AliasId": ...,
+    }
 ```
 
-Required fields:
-
-- `AliasId`: `str`
-
-<a id="disassociateipgroupsrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateConnectionAliasRequestRequestTypeDef(TypedDict):
+    AliasId: str,
+```
 
 ## DisassociateIpGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import DisassociateIpGroupsRequestRequestTypeDef
+
+def get_value() -> DisassociateIpGroupsRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "GroupIds": ...,
+    }
 ```
 
-Required fields:
-
-- `DirectoryId`: `str`
-- `GroupIds`: `Sequence`\[`str`\]
-
-<a id="failedcreateworkspacerequesttypedef"></a>
+```python title="Definition"
+class DisassociateIpGroupsRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    GroupIds: Sequence[str],
+```
 
 ## FailedCreateWorkspaceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import FailedCreateWorkspaceRequestTypeDef
+
+def get_value() -> FailedCreateWorkspaceRequestTypeDef:
+    return {
+        "WorkspaceRequest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedCreateWorkspaceRequestTypeDef(TypedDict):
+    WorkspaceRequest: NotRequired[WorkspaceRequestTypeDef],  # (1)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
-- `WorkspaceRequest`:
-  [WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="failedworkspacechangerequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef) 
 ## FailedWorkspaceChangeRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import FailedWorkspaceChangeRequestTypeDef
+
+def get_value() -> FailedWorkspaceChangeRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkspaceId`: `str`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="imagepermissiontypedef"></a>
+```python title="Definition"
+class FailedWorkspaceChangeRequestTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## ImagePermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ImagePermissionTypeDef
+
+def get_value() -> ImagePermissionTypeDef:
+    return {
+        "SharedAccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SharedAccountId`: `str`
-
-<a id="importworkspaceimagerequestrequesttypedef"></a>
+```python title="Definition"
+class ImagePermissionTypeDef(TypedDict):
+    SharedAccountId: NotRequired[str],
+```
 
 ## ImportWorkspaceImageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ImportWorkspaceImageRequestRequestTypeDef
+
+def get_value() -> ImportWorkspaceImageRequestRequestTypeDef:
+    return {
+        "Ec2ImageId": ...,
+        "IngestionProcess": ...,
+        "ImageName": ...,
+        "ImageDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportWorkspaceImageRequestRequestTypeDef(TypedDict):
+    Ec2ImageId: str,
+    IngestionProcess: WorkspaceImageIngestionProcessType,  # (1)
+    ImageName: str,
+    ImageDescription: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Applications: NotRequired[Sequence[ApplicationType]],  # (3)
+```
 
-- `Ec2ImageId`: `str`
-- `IngestionProcess`:
-  [WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype)
-- `ImageName`: `str`
-- `ImageDescription`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Applications`:
-  `Sequence`\[[ApplicationType](./literals.md#applicationtype)\]
-
-<a id="importworkspaceimageresulttypedef"></a>
-
+1. See [:material-code-brackets: WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ApplicationType](./literals.md#applicationtype) 
 ## ImportWorkspaceImageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ImportWorkspaceImageResultTypeDef
+
+def get_value() -> ImportWorkspaceImageResultTypeDef:
+    return {
+        "ImageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportWorkspaceImageResultTypeDef(TypedDict):
+    ImageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ImageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ipruleitemtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IpRuleItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import IpRuleItemTypeDef
+
+def get_value() -> IpRuleItemTypeDef:
+    return {
+        "ipRule": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IpRuleItemTypeDef(TypedDict):
+    ipRule: NotRequired[str],
+    ruleDesc: NotRequired[str],
+```
 
-- `ipRule`: `str`
-- `ruleDesc`: `str`
+## ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef
 
-<a id="listavailablemanagementcidrrangesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef
 
+def get_value() -> ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef:
+    return {
+        "ManagementCidrRangeConstraint": ...,
+    }
+```
+
+```python title="Definition"
+class ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef(TypedDict):
+    ManagementCidrRangeConstraint: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAvailableManagementCidrRangesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesRequestRequestTypeDef
+
+def get_value() -> ListAvailableManagementCidrRangesRequestRequestTypeDef:
+    return {
+        "ManagementCidrRangeConstraint": ...,
+    }
 ```
 
-Required fields:
-
-- `ManagementCidrRangeConstraint`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listavailablemanagementcidrrangesresulttypedef"></a>
+```python title="Definition"
+class ListAvailableManagementCidrRangesRequestRequestTypeDef(TypedDict):
+    ManagementCidrRangeConstraint: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAvailableManagementCidrRangesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesResultTypeDef
+
+def get_value() -> ListAvailableManagementCidrRangesResultTypeDef:
+    return {
+        "ManagementCidrRanges": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableManagementCidrRangesResultTypeDef(TypedDict):
+    ManagementCidrRanges: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ManagementCidrRanges`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="migrateworkspacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MigrateWorkspaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import MigrateWorkspaceRequestRequestTypeDef
+
+def get_value() -> MigrateWorkspaceRequestRequestTypeDef:
+    return {
+        "SourceWorkspaceId": ...,
+        "BundleId": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceWorkspaceId`: `str`
-- `BundleId`: `str`
-
-<a id="migrateworkspaceresulttypedef"></a>
+```python title="Definition"
+class MigrateWorkspaceRequestRequestTypeDef(TypedDict):
+    SourceWorkspaceId: str,
+    BundleId: str,
+```
 
 ## MigrateWorkspaceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import MigrateWorkspaceResultTypeDef
+
+def get_value() -> MigrateWorkspaceResultTypeDef:
+    return {
+        "SourceWorkspaceId": ...,
+        "TargetWorkspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MigrateWorkspaceResultTypeDef(TypedDict):
+    SourceWorkspaceId: str,
+    TargetWorkspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SourceWorkspaceId`: `str`
-- `TargetWorkspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modificationstatetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModificationStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModificationStateTypeDef
+
+def get_value() -> ModificationStateTypeDef:
+    return {
+        "Resource": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModificationStateTypeDef(TypedDict):
+    Resource: NotRequired[ModificationResourceEnumType],  # (1)
+    State: NotRequired[ModificationStateEnumType],  # (2)
+```
 
-- `Resource`:
-  [ModificationResourceEnumType](./literals.md#modificationresourceenumtype)
-- `State`: [ModificationStateEnumType](./literals.md#modificationstateenumtype)
-
-<a id="modifyaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ModificationResourceEnumType](./literals.md#modificationresourceenumtype) 
+2. See [:material-code-brackets: ModificationStateEnumType](./literals.md#modificationstateenumtype) 
 ## ModifyAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifyAccountRequestRequestTypeDef
+
+def get_value() -> ModifyAccountRequestRequestTypeDef:
+    return {
+        "DedicatedTenancySupport": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModifyAccountRequestRequestTypeDef(TypedDict):
+    DedicatedTenancySupport: NotRequired[DedicatedTenancySupportEnumType],  # (1)
+    DedicatedTenancyManagementCidrRange: NotRequired[str],
+```
 
-- `DedicatedTenancySupport`: `Literal['ENABLED']` (see
-  [DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype))
-- `DedicatedTenancyManagementCidrRange`: `str`
-
-<a id="modifyclientpropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype) 
 ## ModifyClientPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifyClientPropertiesRequestRequestTypeDef
+
+def get_value() -> ModifyClientPropertiesRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "ClientProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClientPropertiesRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    ClientProperties: ClientPropertiesTypeDef,  # (1)
+```
 
-- `ResourceId`: `str`
-- `ClientProperties`:
-  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef)
-
-<a id="modifyselfservicepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef) 
 ## ModifySelfservicePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifySelfservicePermissionsRequestRequestTypeDef
+
+def get_value() -> ModifySelfservicePermissionsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "SelfservicePermissions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifySelfservicePermissionsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    SelfservicePermissions: SelfservicePermissionsTypeDef,  # (1)
+```
 
-- `ResourceId`: `str`
-- `SelfservicePermissions`:
-  [SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef)
-
-<a id="modifyworkspaceaccesspropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef) 
 ## ModifyWorkspaceAccessPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifyWorkspaceAccessPropertiesRequestRequestTypeDef
+
+def get_value() -> ModifyWorkspaceAccessPropertiesRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "WorkspaceAccessProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyWorkspaceAccessPropertiesRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    WorkspaceAccessProperties: WorkspaceAccessPropertiesTypeDef,  # (1)
+```
 
-- `ResourceId`: `str`
-- `WorkspaceAccessProperties`:
-  [WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef)
-
-<a id="modifyworkspacecreationpropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef) 
 ## ModifyWorkspaceCreationPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifyWorkspaceCreationPropertiesRequestRequestTypeDef
+
+def get_value() -> ModifyWorkspaceCreationPropertiesRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "WorkspaceCreationProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyWorkspaceCreationPropertiesRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    WorkspaceCreationProperties: WorkspaceCreationPropertiesTypeDef,  # (1)
+```
 
-- `ResourceId`: `str`
-- `WorkspaceCreationProperties`:
-  [WorkspaceCreationPropertiesTypeDef](./type_defs.md#workspacecreationpropertiestypedef)
-
-<a id="modifyworkspacepropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceCreationPropertiesTypeDef](./type_defs.md#workspacecreationpropertiestypedef) 
 ## ModifyWorkspacePropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifyWorkspacePropertiesRequestRequestTypeDef
+
+def get_value() -> ModifyWorkspacePropertiesRequestRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+        "WorkspaceProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyWorkspacePropertiesRequestRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+    WorkspaceProperties: WorkspacePropertiesTypeDef,  # (1)
+```
 
-- `WorkspaceId`: `str`
-- `WorkspaceProperties`:
-  [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
-
-<a id="modifyworkspacestaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
 ## ModifyWorkspaceStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ModifyWorkspaceStateRequestRequestTypeDef
+
+def get_value() -> ModifyWorkspaceStateRequestRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+        "WorkspaceState": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyWorkspaceStateRequestRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+    WorkspaceState: TargetWorkspaceStateType,  # (1)
+```
 
-- `WorkspaceId`: `str`
-- `WorkspaceState`:
-  [TargetWorkspaceStateType](./literals.md#targetworkspacestatetype)
-
-<a id="operatingsystemtypedef"></a>
-
+1. See [:material-code-brackets: TargetWorkspaceStateType](./literals.md#targetworkspacestatetype) 
 ## OperatingSystemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import OperatingSystemTypeDef
+
+def get_value() -> OperatingSystemTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OperatingSystemTypeDef(TypedDict):
+    Type: NotRequired[OperatingSystemTypeType],  # (1)
+```
 
-- `Type`: [OperatingSystemTypeType](./literals.md#operatingsystemtypetype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemTypeType](./literals.md#operatingsystemtypetype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="rebootrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## RebootRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RebootRequestTypeDef
+
+def get_value() -> RebootRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkspaceId`: `str`
-
-<a id="rebootworkspacesrequestrequesttypedef"></a>
+```python title="Definition"
+class RebootRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+```
 
 ## RebootWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RebootWorkspacesRequestRequestTypeDef
+
+def get_value() -> RebootWorkspacesRequestRequestTypeDef:
+    return {
+        "RebootWorkspaceRequests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebootWorkspacesRequestRequestTypeDef(TypedDict):
+    RebootWorkspaceRequests: Sequence[RebootRequestTypeDef],  # (1)
+```
 
-- `RebootWorkspaceRequests`:
-  `Sequence`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
-
-<a id="rebootworkspacesresulttypedef"></a>
-
+1. See [:material-code-braces: RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef) 
 ## RebootWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RebootWorkspacesResultTypeDef
+
+def get_value() -> RebootWorkspacesResultTypeDef:
+    return {
+        "FailedRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebootWorkspacesResultTypeDef(TypedDict):
+    FailedRequests: List[FailedWorkspaceChangeRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedRequests`:
-  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rebuildrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RebuildRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RebuildRequestTypeDef
+
+def get_value() -> RebuildRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkspaceId`: `str`
-
-<a id="rebuildworkspacesrequestrequesttypedef"></a>
+```python title="Definition"
+class RebuildRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+```
 
 ## RebuildWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RebuildWorkspacesRequestRequestTypeDef
+
+def get_value() -> RebuildWorkspacesRequestRequestTypeDef:
+    return {
+        "RebuildWorkspaceRequests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebuildWorkspacesRequestRequestTypeDef(TypedDict):
+    RebuildWorkspaceRequests: Sequence[RebuildRequestTypeDef],  # (1)
+```
 
-- `RebuildWorkspaceRequests`:
-  `Sequence`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
-
-<a id="rebuildworkspacesresulttypedef"></a>
-
+1. See [:material-code-braces: RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef) 
 ## RebuildWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RebuildWorkspacesResultTypeDef
+
+def get_value() -> RebuildWorkspacesResultTypeDef:
+    return {
+        "FailedRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebuildWorkspacesResultTypeDef(TypedDict):
+    FailedRequests: List[FailedWorkspaceChangeRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedRequests`:
-  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerworkspacedirectoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterWorkspaceDirectoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RegisterWorkspaceDirectoryRequestRequestTypeDef
+
+def get_value() -> RegisterWorkspaceDirectoryRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "EnableWorkDocs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterWorkspaceDirectoryRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    EnableWorkDocs: bool,
+    SubnetIds: NotRequired[Sequence[str]],
+    EnableSelfService: NotRequired[bool],
+    Tenancy: NotRequired[TenancyType],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `DirectoryId`: `str`
-- `EnableWorkDocs`: `bool`
-
-Optional fields:
-
-- `SubnetIds`: `Sequence`\[`str`\]
-- `EnableSelfService`: `bool`
-- `Tenancy`: [TenancyType](./literals.md#tenancytype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoreworkspacerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreWorkspaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RestoreWorkspaceRequestRequestTypeDef
+
+def get_value() -> RestoreWorkspaceRequestRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkspaceId`: `str`
-
-<a id="revokeiprulesrequestrequesttypedef"></a>
+```python title="Definition"
+class RestoreWorkspaceRequestRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+```
 
 ## RevokeIpRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RevokeIpRulesRequestRequestTypeDef
+
+def get_value() -> RevokeIpRulesRequestRequestTypeDef:
+    return {
+        "GroupId": ...,
+        "UserRules": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupId`: `str`
-- `UserRules`: `Sequence`\[`str`\]
-
-<a id="rootstoragetypedef"></a>
+```python title="Definition"
+class RevokeIpRulesRequestRequestTypeDef(TypedDict):
+    GroupId: str,
+    UserRules: Sequence[str],
+```
 
 ## RootStorageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import RootStorageTypeDef
+
+def get_value() -> RootStorageTypeDef:
+    return {
+        "Capacity": ...,
+    }
 ```
 
-Optional fields:
-
-- `Capacity`: `str`
-
-<a id="selfservicepermissionstypedef"></a>
+```python title="Definition"
+class RootStorageTypeDef(TypedDict):
+    Capacity: NotRequired[str],
+```
 
 ## SelfservicePermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import SelfservicePermissionsTypeDef
+
+def get_value() -> SelfservicePermissionsTypeDef:
+    return {
+        "RestartWorkspace": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SelfservicePermissionsTypeDef(TypedDict):
+    RestartWorkspace: NotRequired[ReconnectEnumType],  # (1)
+    IncreaseVolumeSize: NotRequired[ReconnectEnumType],  # (1)
+    ChangeComputeType: NotRequired[ReconnectEnumType],  # (1)
+    SwitchRunningMode: NotRequired[ReconnectEnumType],  # (1)
+    RebuildWorkspace: NotRequired[ReconnectEnumType],  # (1)
+```
 
-- `RestartWorkspace`: [ReconnectEnumType](./literals.md#reconnectenumtype)
-- `IncreaseVolumeSize`: [ReconnectEnumType](./literals.md#reconnectenumtype)
-- `ChangeComputeType`: [ReconnectEnumType](./literals.md#reconnectenumtype)
-- `SwitchRunningMode`: [ReconnectEnumType](./literals.md#reconnectenumtype)
-- `RebuildWorkspace`: [ReconnectEnumType](./literals.md#reconnectenumtype)
-
-<a id="snapshottypedef"></a>
-
+1. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
+2. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
+3. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
+4. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
+5. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
 ## SnapshotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import SnapshotTypeDef
+
+def get_value() -> SnapshotTypeDef:
+    return {
+        "SnapshotTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `SnapshotTime`: `datetime`
-
-<a id="startrequesttypedef"></a>
+```python title="Definition"
+class SnapshotTypeDef(TypedDict):
+    SnapshotTime: NotRequired[datetime],
+```
 
 ## StartRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import StartRequestTypeDef
+
+def get_value() -> StartRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkspaceId`: `str`
-
-<a id="startworkspacesrequestrequesttypedef"></a>
+```python title="Definition"
+class StartRequestTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+```
 
 ## StartWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import StartWorkspacesRequestRequestTypeDef
+
+def get_value() -> StartWorkspacesRequestRequestTypeDef:
+    return {
+        "StartWorkspaceRequests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartWorkspacesRequestRequestTypeDef(TypedDict):
+    StartWorkspaceRequests: Sequence[StartRequestTypeDef],  # (1)
+```
 
-- `StartWorkspaceRequests`:
-  `Sequence`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
-
-<a id="startworkspacesresulttypedef"></a>
-
+1. See [:material-code-braces: StartRequestTypeDef](./type_defs.md#startrequesttypedef) 
 ## StartWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import StartWorkspacesResultTypeDef
+
+def get_value() -> StartWorkspacesResultTypeDef:
+    return {
+        "FailedRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartWorkspacesResultTypeDef(TypedDict):
+    FailedRequests: List[FailedWorkspaceChangeRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedRequests`:
-  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stoprequesttypedef"></a>
-
+1. See [:material-code-braces: FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import StopRequestTypeDef
+
+def get_value() -> StopRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkspaceId`: `str`
-
-<a id="stopworkspacesrequestrequesttypedef"></a>
+```python title="Definition"
+class StopRequestTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+```
 
 ## StopWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import StopWorkspacesRequestRequestTypeDef
+
+def get_value() -> StopWorkspacesRequestRequestTypeDef:
+    return {
+        "StopWorkspaceRequests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopWorkspacesRequestRequestTypeDef(TypedDict):
+    StopWorkspaceRequests: Sequence[StopRequestTypeDef],  # (1)
+```
 
-- `StopWorkspaceRequests`:
-  `Sequence`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
-
-<a id="stopworkspacesresulttypedef"></a>
-
+1. See [:material-code-braces: StopRequestTypeDef](./type_defs.md#stoprequesttypedef) 
 ## StopWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import StopWorkspacesResultTypeDef
+
+def get_value() -> StopWorkspacesResultTypeDef:
+    return {
+        "FailedRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopWorkspacesResultTypeDef(TypedDict):
+    FailedRequests: List[FailedWorkspaceChangeRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedRequests`:
-  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="terminaterequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## TerminateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import TerminateRequestTypeDef
+
+def get_value() -> TerminateRequestTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkspaceId`: `str`
-
-<a id="terminateworkspacesrequestrequesttypedef"></a>
+```python title="Definition"
+class TerminateRequestTypeDef(TypedDict):
+    WorkspaceId: str,
+```
 
 ## TerminateWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import TerminateWorkspacesRequestRequestTypeDef
+
+def get_value() -> TerminateWorkspacesRequestRequestTypeDef:
+    return {
+        "TerminateWorkspaceRequests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TerminateWorkspacesRequestRequestTypeDef(TypedDict):
+    TerminateWorkspaceRequests: Sequence[TerminateRequestTypeDef],  # (1)
+```
 
-- `TerminateWorkspaceRequests`:
-  `Sequence`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
-
-<a id="terminateworkspacesresulttypedef"></a>
-
+1. See [:material-code-braces: TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef) 
 ## TerminateWorkspacesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import TerminateWorkspacesResultTypeDef
+
+def get_value() -> TerminateWorkspacesResultTypeDef:
+    return {
+        "FailedRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TerminateWorkspacesResultTypeDef(TypedDict):
+    FailedRequests: List[FailedWorkspaceChangeRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedRequests`:
-  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateconnectclientaddinrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateConnectClientAddInRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UpdateConnectClientAddInRequestRequestTypeDef
+
+def get_value() -> UpdateConnectClientAddInRequestRequestTypeDef:
+    return {
+        "AddInId": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `AddInId`: `str`
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `URL`: `str`
-
-<a id="updateconnectionaliaspermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateConnectClientAddInRequestRequestTypeDef(TypedDict):
+    AddInId: str,
+    ResourceId: str,
+    Name: NotRequired[str],
+    URL: NotRequired[str],
+```
 
 ## UpdateConnectionAliasPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UpdateConnectionAliasPermissionRequestRequestTypeDef
+
+def get_value() -> UpdateConnectionAliasPermissionRequestRequestTypeDef:
+    return {
+        "AliasId": ...,
+        "ConnectionAliasPermission": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectionAliasPermissionRequestRequestTypeDef(TypedDict):
+    AliasId: str,
+    ConnectionAliasPermission: ConnectionAliasPermissionTypeDef,  # (1)
+```
 
-- `AliasId`: `str`
-- `ConnectionAliasPermission`:
-  [ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)
-
-<a id="updateresulttypedef"></a>
-
+1. See [:material-code-braces: ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef) 
 ## UpdateResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UpdateResultTypeDef
+
+def get_value() -> UpdateResultTypeDef:
+    return {
+        "UpdateAvailable": ...,
+    }
 ```
 
-Optional fields:
-
-- `UpdateAvailable`: `bool`
-- `Description`: `str`
-
-<a id="updaterulesofipgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateResultTypeDef(TypedDict):
+    UpdateAvailable: NotRequired[bool],
+    Description: NotRequired[str],
+```
 
 ## UpdateRulesOfIpGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UpdateRulesOfIpGroupRequestRequestTypeDef
+
+def get_value() -> UpdateRulesOfIpGroupRequestRequestTypeDef:
+    return {
+        "GroupId": ...,
+        "UserRules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRulesOfIpGroupRequestRequestTypeDef(TypedDict):
+    GroupId: str,
+    UserRules: Sequence[IpRuleItemTypeDef],  # (1)
+```
 
-- `GroupId`: `str`
-- `UserRules`:
-  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-
-<a id="updateworkspacebundlerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
 ## UpdateWorkspaceBundleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UpdateWorkspaceBundleRequestRequestTypeDef
+
+def get_value() -> UpdateWorkspaceBundleRequestRequestTypeDef:
+    return {
+        "BundleId": ...,
+    }
 ```
 
-Optional fields:
-
-- `BundleId`: `str`
-- `ImageId`: `str`
-
-<a id="updateworkspaceimagepermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateWorkspaceBundleRequestRequestTypeDef(TypedDict):
+    BundleId: NotRequired[str],
+    ImageId: NotRequired[str],
+```
 
 ## UpdateWorkspaceImagePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UpdateWorkspaceImagePermissionRequestRequestTypeDef
+
+def get_value() -> UpdateWorkspaceImagePermissionRequestRequestTypeDef:
+    return {
+        "ImageId": ...,
+        "AllowCopyImage": ...,
+        "SharedAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `ImageId`: `str`
-- `AllowCopyImage`: `bool`
-- `SharedAccountId`: `str`
-
-<a id="userstoragetypedef"></a>
+```python title="Definition"
+class UpdateWorkspaceImagePermissionRequestRequestTypeDef(TypedDict):
+    ImageId: str,
+    AllowCopyImage: bool,
+    SharedAccountId: str,
+```
 
 ## UserStorageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import UserStorageTypeDef
+
+def get_value() -> UserStorageTypeDef:
+    return {
+        "Capacity": ...,
+    }
 ```
 
-Optional fields:
-
-- `Capacity`: `str`
-
-<a id="workspaceaccesspropertiestypedef"></a>
+```python title="Definition"
+class UserStorageTypeDef(TypedDict):
+    Capacity: NotRequired[str],
+```
 
 ## WorkspaceAccessPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceAccessPropertiesTypeDef
+
+def get_value() -> WorkspaceAccessPropertiesTypeDef:
+    return {
+        "DeviceTypeWindows": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspaceAccessPropertiesTypeDef(TypedDict):
+    DeviceTypeWindows: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeOsx: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeWeb: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeIos: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeAndroid: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeChromeOs: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeZeroClient: NotRequired[AccessPropertyValueType],  # (1)
+    DeviceTypeLinux: NotRequired[AccessPropertyValueType],  # (1)
+```
 
-- `DeviceTypeWindows`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeOsx`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeWeb`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeIos`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeAndroid`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeChromeOs`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeZeroClient`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-- `DeviceTypeLinux`:
-  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
-
-<a id="workspacebundletypedef"></a>
-
+1. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+2. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+3. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+4. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+5. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+6. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+7. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
+8. See [:material-code-brackets: AccessPropertyValueType](./literals.md#accesspropertyvaluetype) 
 ## WorkspaceBundleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceBundleTypeDef
+
+def get_value() -> WorkspaceBundleTypeDef:
+    return {
+        "BundleId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspaceBundleTypeDef(TypedDict):
+    BundleId: NotRequired[str],
+    Name: NotRequired[str],
+    Owner: NotRequired[str],
+    Description: NotRequired[str],
+    ImageId: NotRequired[str],
+    RootStorage: NotRequired[RootStorageTypeDef],  # (1)
+    UserStorage: NotRequired[UserStorageTypeDef],  # (2)
+    ComputeType: NotRequired[ComputeTypeTypeDef],  # (3)
+    LastUpdatedTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+```
 
-- `BundleId`: `str`
-- `Name`: `str`
-- `Owner`: `str`
-- `Description`: `str`
-- `ImageId`: `str`
-- `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
-- `UserStorage`: [UserStorageTypeDef](./type_defs.md#userstoragetypedef)
-- `ComputeType`: [ComputeTypeTypeDef](./type_defs.md#computetypetypedef)
-- `LastUpdatedTime`: `datetime`
-- `CreationTime`: `datetime`
-
-<a id="workspaceconnectionstatustypedef"></a>
-
+1. See [:material-code-braces: RootStorageTypeDef](./type_defs.md#rootstoragetypedef) 
+2. See [:material-code-braces: UserStorageTypeDef](./type_defs.md#userstoragetypedef) 
+3. See [:material-code-braces: ComputeTypeTypeDef](./type_defs.md#computetypetypedef) 
 ## WorkspaceConnectionStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceConnectionStatusTypeDef
+
+def get_value() -> WorkspaceConnectionStatusTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspaceConnectionStatusTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+    ConnectionState: NotRequired[ConnectionStateType],  # (1)
+    ConnectionStateCheckTimestamp: NotRequired[datetime],
+    LastKnownUserConnectionTimestamp: NotRequired[datetime],
+```
 
-- `WorkspaceId`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `ConnectionStateCheckTimestamp`: `datetime`
-- `LastKnownUserConnectionTimestamp`: `datetime`
-
-<a id="workspacecreationpropertiestypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
 ## WorkspaceCreationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceCreationPropertiesTypeDef
+
+def get_value() -> WorkspaceCreationPropertiesTypeDef:
+    return {
+        "EnableWorkDocs": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnableWorkDocs`: `bool`
-- `EnableInternetAccess`: `bool`
-- `DefaultOu`: `str`
-- `CustomSecurityGroupId`: `str`
-- `UserEnabledAsLocalAdministrator`: `bool`
-- `EnableMaintenanceMode`: `bool`
-
-<a id="workspacedirectorytypedef"></a>
+```python title="Definition"
+class WorkspaceCreationPropertiesTypeDef(TypedDict):
+    EnableWorkDocs: NotRequired[bool],
+    EnableInternetAccess: NotRequired[bool],
+    DefaultOu: NotRequired[str],
+    CustomSecurityGroupId: NotRequired[str],
+    UserEnabledAsLocalAdministrator: NotRequired[bool],
+    EnableMaintenanceMode: NotRequired[bool],
+```
 
 ## WorkspaceDirectoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceDirectoryTypeDef
+
+def get_value() -> WorkspaceDirectoryTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspaceDirectoryTypeDef(TypedDict):
+    DirectoryId: NotRequired[str],
+    Alias: NotRequired[str],
+    DirectoryName: NotRequired[str],
+    RegistrationCode: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    DnsIpAddresses: NotRequired[List[str]],
+    CustomerUserName: NotRequired[str],
+    IamRoleId: NotRequired[str],
+    DirectoryType: NotRequired[WorkspaceDirectoryTypeType],  # (1)
+    WorkspaceSecurityGroupId: NotRequired[str],
+    State: NotRequired[WorkspaceDirectoryStateType],  # (2)
+    WorkspaceCreationProperties: NotRequired[DefaultWorkspaceCreationPropertiesTypeDef],  # (3)
+    ipGroupIds: NotRequired[List[str]],
+    WorkspaceAccessProperties: NotRequired[WorkspaceAccessPropertiesTypeDef],  # (4)
+    Tenancy: NotRequired[TenancyType],  # (5)
+    SelfservicePermissions: NotRequired[SelfservicePermissionsTypeDef],  # (6)
+```
 
-- `DirectoryId`: `str`
-- `Alias`: `str`
-- `DirectoryName`: `str`
-- `RegistrationCode`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `DnsIpAddresses`: `List`\[`str`\]
-- `CustomerUserName`: `str`
-- `IamRoleId`: `str`
-- `DirectoryType`:
-  [WorkspaceDirectoryTypeType](./literals.md#workspacedirectorytypetype)
-- `WorkspaceSecurityGroupId`: `str`
-- `State`:
-  [WorkspaceDirectoryStateType](./literals.md#workspacedirectorystatetype)
-- `WorkspaceCreationProperties`:
-  [DefaultWorkspaceCreationPropertiesTypeDef](./type_defs.md#defaultworkspacecreationpropertiestypedef)
-- `ipGroupIds`: `List`\[`str`\]
-- `WorkspaceAccessProperties`:
-  [WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef)
-- `Tenancy`: [TenancyType](./literals.md#tenancytype)
-- `SelfservicePermissions`:
-  [SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef)
-
-<a id="workspaceimagetypedef"></a>
-
+1. See [:material-code-brackets: WorkspaceDirectoryTypeType](./literals.md#workspacedirectorytypetype) 
+2. See [:material-code-brackets: WorkspaceDirectoryStateType](./literals.md#workspacedirectorystatetype) 
+3. See [:material-code-braces: DefaultWorkspaceCreationPropertiesTypeDef](./type_defs.md#defaultworkspacecreationpropertiestypedef) 
+4. See [:material-code-braces: WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef) 
+5. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
+6. See [:material-code-braces: SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef) 
 ## WorkspaceImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceImageTypeDef
+
+def get_value() -> WorkspaceImageTypeDef:
+    return {
+        "ImageId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspaceImageTypeDef(TypedDict):
+    ImageId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    OperatingSystem: NotRequired[OperatingSystemTypeDef],  # (1)
+    State: NotRequired[WorkspaceImageStateType],  # (2)
+    RequiredTenancy: NotRequired[WorkspaceImageRequiredTenancyType],  # (3)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    Created: NotRequired[datetime],
+    OwnerAccountId: NotRequired[str],
+    Updates: NotRequired[UpdateResultTypeDef],  # (4)
+```
 
-- `ImageId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `OperatingSystem`:
-  [OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef)
-- `State`: [WorkspaceImageStateType](./literals.md#workspaceimagestatetype)
-- `RequiredTenancy`:
-  [WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype)
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `Created`: `datetime`
-- `OwnerAccountId`: `str`
-- `Updates`: [UpdateResultTypeDef](./type_defs.md#updateresulttypedef)
-
-<a id="workspacepropertiestypedef"></a>
-
+1. See [:material-code-braces: OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef) 
+2. See [:material-code-brackets: WorkspaceImageStateType](./literals.md#workspaceimagestatetype) 
+3. See [:material-code-brackets: WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype) 
+4. See [:material-code-braces: UpdateResultTypeDef](./type_defs.md#updateresulttypedef) 
 ## WorkspacePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspacePropertiesTypeDef
+
+def get_value() -> WorkspacePropertiesTypeDef:
+    return {
+        "RunningMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspacePropertiesTypeDef(TypedDict):
+    RunningMode: NotRequired[RunningModeType],  # (1)
+    RunningModeAutoStopTimeoutInMinutes: NotRequired[int],
+    RootVolumeSizeGib: NotRequired[int],
+    UserVolumeSizeGib: NotRequired[int],
+    ComputeTypeName: NotRequired[ComputeType],  # (2)
+```
 
-- `RunningMode`: [RunningModeType](./literals.md#runningmodetype)
-- `RunningModeAutoStopTimeoutInMinutes`: `int`
-- `RootVolumeSizeGib`: `int`
-- `UserVolumeSizeGib`: `int`
-- `ComputeTypeName`: [ComputeType](./literals.md#computetype)
-
-<a id="workspacerequesttypedef"></a>
-
+1. See [:material-code-brackets: RunningModeType](./literals.md#runningmodetype) 
+2. See [:material-code-brackets: ComputeType](./literals.md#computetype) 
 ## WorkspaceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceRequestTypeDef
+
+def get_value() -> WorkspaceRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "UserName": ...,
+        "BundleId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WorkspaceRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    UserName: str,
+    BundleId: str,
+    VolumeEncryptionKey: NotRequired[str],
+    UserVolumeEncryptionEnabled: NotRequired[bool],
+    RootVolumeEncryptionEnabled: NotRequired[bool],
+    WorkspaceProperties: NotRequired[WorkspacePropertiesTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `DirectoryId`: `str`
-- `UserName`: `str`
-- `BundleId`: `str`
-
-Optional fields:
-
-- `VolumeEncryptionKey`: `str`
-- `UserVolumeEncryptionEnabled`: `bool`
-- `RootVolumeEncryptionEnabled`: `bool`
-- `WorkspaceProperties`:
-  [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="workspacetypedef"></a>
-
+1. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## WorkspaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspaceTypeDef
+
+def get_value() -> WorkspaceTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspaceTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+    DirectoryId: NotRequired[str],
+    UserName: NotRequired[str],
+    IpAddress: NotRequired[str],
+    State: NotRequired[WorkspaceStateType],  # (1)
+    BundleId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ComputerName: NotRequired[str],
+    VolumeEncryptionKey: NotRequired[str],
+    UserVolumeEncryptionEnabled: NotRequired[bool],
+    RootVolumeEncryptionEnabled: NotRequired[bool],
+    WorkspaceProperties: NotRequired[WorkspacePropertiesTypeDef],  # (2)
+    ModificationStates: NotRequired[List[ModificationStateTypeDef]],  # (3)
+```
 
-- `WorkspaceId`: `str`
-- `DirectoryId`: `str`
-- `UserName`: `str`
-- `IpAddress`: `str`
-- `State`: [WorkspaceStateType](./literals.md#workspacestatetype)
-- `BundleId`: `str`
-- `SubnetId`: `str`
-- `ErrorMessage`: `str`
-- `ErrorCode`: `str`
-- `ComputerName`: `str`
-- `VolumeEncryptionKey`: `str`
-- `UserVolumeEncryptionEnabled`: `bool`
-- `RootVolumeEncryptionEnabled`: `bool`
-- `WorkspaceProperties`:
-  [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
-- `ModificationStates`:
-  `List`\[[ModificationStateTypeDef](./type_defs.md#modificationstatetypedef)\]
-
-<a id="workspacesipgrouptypedef"></a>
-
+1. See [:material-code-brackets: WorkspaceStateType](./literals.md#workspacestatetype) 
+2. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
+3. See [:material-code-braces: ModificationStateTypeDef](./type_defs.md#modificationstatetypedef) 
 ## WorkspacesIpGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.type_defs import WorkspacesIpGroupTypeDef
+
+def get_value() -> WorkspacesIpGroupTypeDef:
+    return {
+        "groupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkspacesIpGroupTypeDef(TypedDict):
+    groupId: NotRequired[str],
+    groupName: NotRequired[str],
+    groupDesc: NotRequired[str],
+    userRules: NotRequired[List[IpRuleItemTypeDef]],  # (1)
+```
 
-- `groupId`: `str`
-- `groupName`: `str`
-- `groupDesc`: `str`
-- `userRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 

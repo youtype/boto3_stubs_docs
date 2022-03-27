@@ -1,929 +1,1000 @@
-<a id="literals-for-boto3-directoryservice-module"></a>
-
-# Literals for boto3 DirectoryService module
+# Literals
 
 > [Index](../README.md) > [DirectoryService](./README.md) > Literals
 
-Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module
-[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
+!!! note ""
 
-- [Literals for boto3 DirectoryService module](#literals-for-boto3-directoryservice-module)
-  - [CertificateStateType](#certificatestatetype)
-  - [CertificateTypeType](#certificatetypetype)
-  - [ClientAuthenticationStatusType](#clientauthenticationstatustype)
-  - [ClientAuthenticationTypeType](#clientauthenticationtypetype)
-  - [DescribeDirectoriesPaginatorName](#describedirectoriespaginatorname)
-  - [DescribeDomainControllersPaginatorName](#describedomaincontrollerspaginatorname)
-  - [DescribeSharedDirectoriesPaginatorName](#describeshareddirectoriespaginatorname)
-  - [DescribeSnapshotsPaginatorName](#describesnapshotspaginatorname)
-  - [DescribeTrustsPaginatorName](#describetrustspaginatorname)
-  - [DirectoryEditionType](#directoryeditiontype)
-  - [DirectorySizeType](#directorysizetype)
-  - [DirectoryStageType](#directorystagetype)
-  - [DirectoryTypeType](#directorytypetype)
-  - [DomainControllerStatusType](#domaincontrollerstatustype)
-  - [IpRouteStatusMsgType](#iproutestatusmsgtype)
-  - [LDAPSStatusType](#ldapsstatustype)
-  - [LDAPSTypeType](#ldapstypetype)
-  - [ListIpRoutesPaginatorName](#listiproutespaginatorname)
-  - [ListLogSubscriptionsPaginatorName](#listlogsubscriptionspaginatorname)
-  - [ListSchemaExtensionsPaginatorName](#listschemaextensionspaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [RadiusAuthenticationProtocolType](#radiusauthenticationprotocoltype)
-  - [RadiusStatusType](#radiusstatustype)
-  - [RegionTypeType](#regiontypetype)
-  - [ReplicationScopeType](#replicationscopetype)
-  - [SchemaExtensionStatusType](#schemaextensionstatustype)
-  - [SelectiveAuthType](#selectiveauthtype)
-  - [ShareMethodType](#sharemethodtype)
-  - [ShareStatusType](#sharestatustype)
-  - [SnapshotStatusType](#snapshotstatustype)
-  - [SnapshotTypeType](#snapshottypetype)
-  - [TargetTypeType](#targettypetype)
-  - [TopicStatusType](#topicstatustype)
-  - [TrustDirectionType](#trustdirectiontype)
-  - [TrustStateType](#truststatetype)
-  - [TrustTypeType](#trusttypetype)
-  - [DirectoryServiceServiceName](#directoryserviceservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="certificatestatetype"></a>
+    Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+    type annotations stubs module [mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 ## CertificateStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import CertificateStateType
+
+def get_value() -> CertificateStateType:
+    return "DeregisterFailed"
 ```
 
-Values:
-
-- `Deregistered`
-- `DeregisterFailed`
-- `Deregistering`
-- `Registered`
-- `RegisterFailed`
-- `Registering`
-
-<a id="certificatetypetype"></a>
-
+```python title="Definition"
+CertificateStateType = Literal[
+    "Deregistered",
+    "DeregisterFailed",
+    "Deregistering",
+    "Registered",
+    "RegisterFailed",
+    "Registering",
+]
+```
 ## CertificateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import CertificateTypeType
+
+def get_value() -> CertificateTypeType:
+    return "ClientCertAuth"
 ```
 
-Values:
-
-- `ClientCertAuth`
-- `ClientLDAPS`
-
-<a id="clientauthenticationstatustype"></a>
-
+```python title="Definition"
+CertificateTypeType = Literal[
+    "ClientCertAuth",
+    "ClientLDAPS",
+]
+```
 ## ClientAuthenticationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ClientAuthenticationStatusType
+
+def get_value() -> ClientAuthenticationStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="clientauthenticationtypetype"></a>
-
+```python title="Definition"
+ClientAuthenticationStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ClientAuthenticationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ClientAuthenticationTypeType
+
+def get_value() -> ClientAuthenticationTypeType:
+    return "SmartCard"
 ```
 
-Values:
-
-- `SmartCard`
-
-<a id="describedirectoriespaginatorname"></a>
-
+```python title="Definition"
+ClientAuthenticationTypeType = Literal[
+    "SmartCard",
+]
+```
 ## DescribeDirectoriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DescribeDirectoriesPaginatorName
+
+def get_value() -> DescribeDirectoriesPaginatorName:
+    return "describe_directories"
 ```
 
-Values:
-
-- `describe_directories`
-
-<a id="describedomaincontrollerspaginatorname"></a>
-
+```python title="Definition"
+DescribeDirectoriesPaginatorName = Literal[
+    "describe_directories",
+]
+```
 ## DescribeDomainControllersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DescribeDomainControllersPaginatorName
+
+def get_value() -> DescribeDomainControllersPaginatorName:
+    return "describe_domain_controllers"
 ```
 
-Values:
-
-- `describe_domain_controllers`
-
-<a id="describeshareddirectoriespaginatorname"></a>
-
+```python title="Definition"
+DescribeDomainControllersPaginatorName = Literal[
+    "describe_domain_controllers",
+]
+```
 ## DescribeSharedDirectoriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DescribeSharedDirectoriesPaginatorName
+
+def get_value() -> DescribeSharedDirectoriesPaginatorName:
+    return "describe_shared_directories"
 ```
 
-Values:
-
-- `describe_shared_directories`
-
-<a id="describesnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeSharedDirectoriesPaginatorName = Literal[
+    "describe_shared_directories",
+]
+```
 ## DescribeSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DescribeSnapshotsPaginatorName
+
+def get_value() -> DescribeSnapshotsPaginatorName:
+    return "describe_snapshots"
 ```
 
-Values:
-
-- `describe_snapshots`
-
-<a id="describetrustspaginatorname"></a>
-
+```python title="Definition"
+DescribeSnapshotsPaginatorName = Literal[
+    "describe_snapshots",
+]
+```
 ## DescribeTrustsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DescribeTrustsPaginatorName
+
+def get_value() -> DescribeTrustsPaginatorName:
+    return "describe_trusts"
 ```
 
-Values:
-
-- `describe_trusts`
-
-<a id="directoryeditiontype"></a>
-
+```python title="Definition"
+DescribeTrustsPaginatorName = Literal[
+    "describe_trusts",
+]
+```
 ## DirectoryEditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DirectoryEditionType
+
+def get_value() -> DirectoryEditionType:
+    return "Enterprise"
 ```
 
-Values:
-
-- `Enterprise`
-- `Standard`
-
-<a id="directorysizetype"></a>
-
+```python title="Definition"
+DirectoryEditionType = Literal[
+    "Enterprise",
+    "Standard",
+]
+```
 ## DirectorySizeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DirectorySizeType
+
+def get_value() -> DirectorySizeType:
+    return "Large"
 ```
 
-Values:
-
-- `Large`
-- `Small`
-
-<a id="directorystagetype"></a>
-
+```python title="Definition"
+DirectorySizeType = Literal[
+    "Large",
+    "Small",
+]
+```
 ## DirectoryStageType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DirectoryStageType
+
+def get_value() -> DirectoryStageType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Created`
-- `Creating`
-- `Deleted`
-- `Deleting`
-- `Failed`
-- `Impaired`
-- `Inoperable`
-- `Requested`
-- `RestoreFailed`
-- `Restoring`
-
-<a id="directorytypetype"></a>
-
+```python title="Definition"
+DirectoryStageType = Literal[
+    "Active",
+    "Created",
+    "Creating",
+    "Deleted",
+    "Deleting",
+    "Failed",
+    "Impaired",
+    "Inoperable",
+    "Requested",
+    "RestoreFailed",
+    "Restoring",
+]
+```
 ## DirectoryTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DirectoryTypeType
+
+def get_value() -> DirectoryTypeType:
+    return "ADConnector"
 ```
 
-Values:
-
-- `ADConnector`
-- `MicrosoftAD`
-- `SharedMicrosoftAD`
-- `SimpleAD`
-
-<a id="domaincontrollerstatustype"></a>
-
+```python title="Definition"
+DirectoryTypeType = Literal[
+    "ADConnector",
+    "MicrosoftAD",
+    "SharedMicrosoftAD",
+    "SimpleAD",
+]
+```
 ## DomainControllerStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DomainControllerStatusType
+
+def get_value() -> DomainControllerStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Creating`
-- `Deleted`
-- `Deleting`
-- `Failed`
-- `Impaired`
-- `Restoring`
-
-<a id="iproutestatusmsgtype"></a>
-
+```python title="Definition"
+DomainControllerStatusType = Literal[
+    "Active",
+    "Creating",
+    "Deleted",
+    "Deleting",
+    "Failed",
+    "Impaired",
+    "Restoring",
+]
+```
 ## IpRouteStatusMsgType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import IpRouteStatusMsgType
+
+def get_value() -> IpRouteStatusMsgType:
+    return "AddFailed"
 ```
 
-Values:
-
-- `Added`
-- `AddFailed`
-- `Adding`
-- `Removed`
-- `RemoveFailed`
-- `Removing`
-
-<a id="ldapsstatustype"></a>
-
+```python title="Definition"
+IpRouteStatusMsgType = Literal[
+    "Added",
+    "AddFailed",
+    "Adding",
+    "Removed",
+    "RemoveFailed",
+    "Removing",
+]
+```
 ## LDAPSStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import LDAPSStatusType
+
+def get_value() -> LDAPSStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-- `EnableFailed`
-- `Enabling`
-
-<a id="ldapstypetype"></a>
-
+```python title="Definition"
+LDAPSStatusType = Literal[
+    "Disabled",
+    "Enabled",
+    "EnableFailed",
+    "Enabling",
+]
+```
 ## LDAPSTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import LDAPSTypeType
+
+def get_value() -> LDAPSTypeType:
+    return "Client"
 ```
 
-Values:
-
-- `Client`
-
-<a id="listiproutespaginatorname"></a>
-
+```python title="Definition"
+LDAPSTypeType = Literal[
+    "Client",
+]
+```
 ## ListIpRoutesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ListIpRoutesPaginatorName
+
+def get_value() -> ListIpRoutesPaginatorName:
+    return "list_ip_routes"
 ```
 
-Values:
-
-- `list_ip_routes`
-
-<a id="listlogsubscriptionspaginatorname"></a>
-
+```python title="Definition"
+ListIpRoutesPaginatorName = Literal[
+    "list_ip_routes",
+]
+```
 ## ListLogSubscriptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ListLogSubscriptionsPaginatorName
+
+def get_value() -> ListLogSubscriptionsPaginatorName:
+    return "list_log_subscriptions"
 ```
 
-Values:
-
-- `list_log_subscriptions`
-
-<a id="listschemaextensionspaginatorname"></a>
-
+```python title="Definition"
+ListLogSubscriptionsPaginatorName = Literal[
+    "list_log_subscriptions",
+]
+```
 ## ListSchemaExtensionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ListSchemaExtensionsPaginatorName
+
+def get_value() -> ListSchemaExtensionsPaginatorName:
+    return "list_schema_extensions"
 ```
 
-Values:
-
-- `list_schema_extensions`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListSchemaExtensionsPaginatorName = Literal[
+    "list_schema_extensions",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="radiusauthenticationprotocoltype"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## RadiusAuthenticationProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import RadiusAuthenticationProtocolType
+
+def get_value() -> RadiusAuthenticationProtocolType:
+    return "CHAP"
 ```
 
-Values:
-
-- `CHAP`
-- `MS-CHAPv1`
-- `MS-CHAPv2`
-- `PAP`
-
-<a id="radiusstatustype"></a>
-
+```python title="Definition"
+RadiusAuthenticationProtocolType = Literal[
+    "CHAP",
+    "MS-CHAPv1",
+    "MS-CHAPv2",
+    "PAP",
+]
+```
 ## RadiusStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import RadiusStatusType
+
+def get_value() -> RadiusStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Creating`
-- `Failed`
-
-<a id="regiontypetype"></a>
-
+```python title="Definition"
+RadiusStatusType = Literal[
+    "Completed",
+    "Creating",
+    "Failed",
+]
+```
 ## RegionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import RegionTypeType
+
+def get_value() -> RegionTypeType:
+    return "Additional"
 ```
 
-Values:
-
-- `Additional`
-- `Primary`
-
-<a id="replicationscopetype"></a>
-
+```python title="Definition"
+RegionTypeType = Literal[
+    "Additional",
+    "Primary",
+]
+```
 ## ReplicationScopeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ReplicationScopeType
+
+def get_value() -> ReplicationScopeType:
+    return "Domain"
 ```
 
-Values:
-
-- `Domain`
-
-<a id="schemaextensionstatustype"></a>
-
+```python title="Definition"
+ReplicationScopeType = Literal[
+    "Domain",
+]
+```
 ## SchemaExtensionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import SchemaExtensionStatusType
+
+def get_value() -> SchemaExtensionStatusType:
+    return "CancelInProgress"
 ```
 
-Values:
-
-- `CancelInProgress`
-- `Cancelled`
-- `Completed`
-- `CreatingSnapshot`
-- `Failed`
-- `Initializing`
-- `Replicating`
-- `RollbackInProgress`
-- `UpdatingSchema`
-
-<a id="selectiveauthtype"></a>
-
+```python title="Definition"
+SchemaExtensionStatusType = Literal[
+    "CancelInProgress",
+    "Cancelled",
+    "Completed",
+    "CreatingSnapshot",
+    "Failed",
+    "Initializing",
+    "Replicating",
+    "RollbackInProgress",
+    "UpdatingSchema",
+]
+```
 ## SelectiveAuthType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import SelectiveAuthType
+
+def get_value() -> SelectiveAuthType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="sharemethodtype"></a>
-
+```python title="Definition"
+SelectiveAuthType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ShareMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ShareMethodType
+
+def get_value() -> ShareMethodType:
+    return "HANDSHAKE"
 ```
 
-Values:
-
-- `HANDSHAKE`
-- `ORGANIZATIONS`
-
-<a id="sharestatustype"></a>
-
+```python title="Definition"
+ShareMethodType = Literal[
+    "HANDSHAKE",
+    "ORGANIZATIONS",
+]
+```
 ## ShareStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ShareStatusType
+
+def get_value() -> ShareStatusType:
+    return "Deleted"
 ```
 
-Values:
-
-- `Deleted`
-- `Deleting`
-- `PendingAcceptance`
-- `Rejected`
-- `RejectFailed`
-- `Rejecting`
-- `Shared`
-- `ShareFailed`
-- `Sharing`
-
-<a id="snapshotstatustype"></a>
-
+```python title="Definition"
+ShareStatusType = Literal[
+    "Deleted",
+    "Deleting",
+    "PendingAcceptance",
+    "Rejected",
+    "RejectFailed",
+    "Rejecting",
+    "Shared",
+    "ShareFailed",
+    "Sharing",
+]
+```
 ## SnapshotStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import SnapshotStatusType
+
+def get_value() -> SnapshotStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Creating`
-- `Failed`
-
-<a id="snapshottypetype"></a>
-
+```python title="Definition"
+SnapshotStatusType = Literal[
+    "Completed",
+    "Creating",
+    "Failed",
+]
+```
 ## SnapshotTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import SnapshotTypeType
+
+def get_value() -> SnapshotTypeType:
+    return "Auto"
 ```
 
-Values:
-
-- `Auto`
-- `Manual`
-
-<a id="targettypetype"></a>
-
+```python title="Definition"
+SnapshotTypeType = Literal[
+    "Auto",
+    "Manual",
+]
+```
 ## TargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import TargetTypeType
+
+def get_value() -> TargetTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-
-<a id="topicstatustype"></a>
-
+```python title="Definition"
+TargetTypeType = Literal[
+    "ACCOUNT",
+]
+```
 ## TopicStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import TopicStatusType
+
+def get_value() -> TopicStatusType:
+    return "Deleted"
 ```
 
-Values:
-
-- `Deleted`
-- `Failed`
-- `Registered`
-- `Topic not found`
-
-<a id="trustdirectiontype"></a>
-
+```python title="Definition"
+TopicStatusType = Literal[
+    "Deleted",
+    "Failed",
+    "Registered",
+    "Topic not found",
+]
+```
 ## TrustDirectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import TrustDirectionType
+
+def get_value() -> TrustDirectionType:
+    return "One-Way: Incoming"
 ```
 
-Values:
-
-- `One-Way: Incoming`
-- `One-Way: Outgoing`
-- `Two-Way`
-
-<a id="truststatetype"></a>
-
+```python title="Definition"
+TrustDirectionType = Literal[
+    "One-Way: Incoming",
+    "One-Way: Outgoing",
+    "Two-Way",
+]
+```
 ## TrustStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import TrustStateType
+
+def get_value() -> TrustStateType:
+    return "Created"
 ```
 
-Values:
-
-- `Created`
-- `Creating`
-- `Deleted`
-- `Deleting`
-- `Failed`
-- `Updated`
-- `UpdateFailed`
-- `Updating`
-- `Verified`
-- `VerifyFailed`
-- `Verifying`
-
-<a id="trusttypetype"></a>
-
+```python title="Definition"
+TrustStateType = Literal[
+    "Created",
+    "Creating",
+    "Deleted",
+    "Deleting",
+    "Failed",
+    "Updated",
+    "UpdateFailed",
+    "Updating",
+    "Verified",
+    "VerifyFailed",
+    "Verifying",
+]
+```
 ## TrustTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import TrustTypeType
+
+def get_value() -> TrustTypeType:
+    return "External"
 ```
 
-Values:
-
-- `External`
-- `Forest`
-
-<a id="directoryserviceservicename"></a>
-
+```python title="Definition"
+TrustTypeType = Literal[
+    "External",
+    "Forest",
+]
+```
 ## DirectoryServiceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import DirectoryServiceServiceName
+
+def get_value() -> DirectoryServiceServiceName:
+    return "ds"
 ```
 
-Values:
-
-- `ds`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+DirectoryServiceServiceName = Literal[
+    "ds",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ds.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_directories"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_directories",
+    "describe_domain_controllers",
+    "describe_shared_directories",
+    "describe_snapshots",
+    "describe_trusts",
+    "list_ip_routes",
+    "list_log_subscriptions",
+    "list_schema_extensions",
+    "list_tags_for_resource",
+]
+```
+## RegionName
 
-- `describe_directories`
-- `describe_domain_controllers`
-- `describe_shared_directories`
-- `describe_snapshots`
-- `describe_trusts`
-- `list_ip_routes`
-- `list_log_subscriptions`
-- `list_schema_extensions`
-- `list_tags_for_resource`
+```python title="Usage Example"
+from mypy_boto3_ds.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

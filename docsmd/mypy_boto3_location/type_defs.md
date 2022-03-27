@@ -1,2375 +1,3120 @@
-<a id="typed-dictionaries-for-boto3-locationservice-module"></a>
-
-# Typed dictionaries for boto3 LocationService module
+# Typed dictionaries
 
 > [Index](../README.md) > [LocationService](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
-type annotations stubs module
-[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LocationService module](#typed-dictionaries-for-boto3-locationservice-module)
-  - [AssociateTrackerConsumerRequestRequestTypeDef](#associatetrackerconsumerrequestrequesttypedef)
-  - [BatchDeleteDevicePositionHistoryErrorTypeDef](#batchdeletedevicepositionhistoryerrortypedef)
-  - [BatchDeleteDevicePositionHistoryRequestRequestTypeDef](#batchdeletedevicepositionhistoryrequestrequesttypedef)
-  - [BatchDeleteDevicePositionHistoryResponseTypeDef](#batchdeletedevicepositionhistoryresponsetypedef)
-  - [BatchDeleteGeofenceErrorTypeDef](#batchdeletegeofenceerrortypedef)
-  - [BatchDeleteGeofenceRequestRequestTypeDef](#batchdeletegeofencerequestrequesttypedef)
-  - [BatchDeleteGeofenceResponseTypeDef](#batchdeletegeofenceresponsetypedef)
-  - [BatchEvaluateGeofencesErrorTypeDef](#batchevaluategeofenceserrortypedef)
-  - [BatchEvaluateGeofencesRequestRequestTypeDef](#batchevaluategeofencesrequestrequesttypedef)
-  - [BatchEvaluateGeofencesResponseTypeDef](#batchevaluategeofencesresponsetypedef)
-  - [BatchGetDevicePositionErrorTypeDef](#batchgetdevicepositionerrortypedef)
-  - [BatchGetDevicePositionRequestRequestTypeDef](#batchgetdevicepositionrequestrequesttypedef)
-  - [BatchGetDevicePositionResponseTypeDef](#batchgetdevicepositionresponsetypedef)
-  - [BatchItemErrorTypeDef](#batchitemerrortypedef)
-  - [BatchPutGeofenceErrorTypeDef](#batchputgeofenceerrortypedef)
-  - [BatchPutGeofenceRequestEntryTypeDef](#batchputgeofencerequestentrytypedef)
-  - [BatchPutGeofenceRequestRequestTypeDef](#batchputgeofencerequestrequesttypedef)
-  - [BatchPutGeofenceResponseTypeDef](#batchputgeofenceresponsetypedef)
-  - [BatchPutGeofenceSuccessTypeDef](#batchputgeofencesuccesstypedef)
-  - [BatchUpdateDevicePositionErrorTypeDef](#batchupdatedevicepositionerrortypedef)
-  - [BatchUpdateDevicePositionRequestRequestTypeDef](#batchupdatedevicepositionrequestrequesttypedef)
-  - [BatchUpdateDevicePositionResponseTypeDef](#batchupdatedevicepositionresponsetypedef)
-  - [CalculateRouteCarModeOptionsTypeDef](#calculateroutecarmodeoptionstypedef)
-  - [CalculateRouteMatrixRequestRequestTypeDef](#calculateroutematrixrequestrequesttypedef)
-  - [CalculateRouteMatrixResponseTypeDef](#calculateroutematrixresponsetypedef)
-  - [CalculateRouteMatrixSummaryTypeDef](#calculateroutematrixsummarytypedef)
-  - [CalculateRouteRequestRequestTypeDef](#calculaterouterequestrequesttypedef)
-  - [CalculateRouteResponseTypeDef](#calculaterouteresponsetypedef)
-  - [CalculateRouteSummaryTypeDef](#calculateroutesummarytypedef)
-  - [CalculateRouteTruckModeOptionsTypeDef](#calculateroutetruckmodeoptionstypedef)
-  - [CreateGeofenceCollectionRequestRequestTypeDef](#creategeofencecollectionrequestrequesttypedef)
-  - [CreateGeofenceCollectionResponseTypeDef](#creategeofencecollectionresponsetypedef)
-  - [CreateMapRequestRequestTypeDef](#createmaprequestrequesttypedef)
-  - [CreateMapResponseTypeDef](#createmapresponsetypedef)
-  - [CreatePlaceIndexRequestRequestTypeDef](#createplaceindexrequestrequesttypedef)
-  - [CreatePlaceIndexResponseTypeDef](#createplaceindexresponsetypedef)
-  - [CreateRouteCalculatorRequestRequestTypeDef](#createroutecalculatorrequestrequesttypedef)
-  - [CreateRouteCalculatorResponseTypeDef](#createroutecalculatorresponsetypedef)
-  - [CreateTrackerRequestRequestTypeDef](#createtrackerrequestrequesttypedef)
-  - [CreateTrackerResponseTypeDef](#createtrackerresponsetypedef)
-  - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
-  - [DeleteGeofenceCollectionRequestRequestTypeDef](#deletegeofencecollectionrequestrequesttypedef)
-  - [DeleteMapRequestRequestTypeDef](#deletemaprequestrequesttypedef)
-  - [DeletePlaceIndexRequestRequestTypeDef](#deleteplaceindexrequestrequesttypedef)
-  - [DeleteRouteCalculatorRequestRequestTypeDef](#deleteroutecalculatorrequestrequesttypedef)
-  - [DeleteTrackerRequestRequestTypeDef](#deletetrackerrequestrequesttypedef)
-  - [DescribeGeofenceCollectionRequestRequestTypeDef](#describegeofencecollectionrequestrequesttypedef)
-  - [DescribeGeofenceCollectionResponseTypeDef](#describegeofencecollectionresponsetypedef)
-  - [DescribeMapRequestRequestTypeDef](#describemaprequestrequesttypedef)
-  - [DescribeMapResponseTypeDef](#describemapresponsetypedef)
-  - [DescribePlaceIndexRequestRequestTypeDef](#describeplaceindexrequestrequesttypedef)
-  - [DescribePlaceIndexResponseTypeDef](#describeplaceindexresponsetypedef)
-  - [DescribeRouteCalculatorRequestRequestTypeDef](#describeroutecalculatorrequestrequesttypedef)
-  - [DescribeRouteCalculatorResponseTypeDef](#describeroutecalculatorresponsetypedef)
-  - [DescribeTrackerRequestRequestTypeDef](#describetrackerrequestrequesttypedef)
-  - [DescribeTrackerResponseTypeDef](#describetrackerresponsetypedef)
-  - [DevicePositionTypeDef](#devicepositiontypedef)
-  - [DevicePositionUpdateTypeDef](#devicepositionupdatetypedef)
-  - [DisassociateTrackerConsumerRequestRequestTypeDef](#disassociatetrackerconsumerrequestrequesttypedef)
-  - [GeofenceGeometryTypeDef](#geofencegeometrytypedef)
-  - [GetDevicePositionHistoryRequestRequestTypeDef](#getdevicepositionhistoryrequestrequesttypedef)
-  - [GetDevicePositionHistoryResponseTypeDef](#getdevicepositionhistoryresponsetypedef)
-  - [GetDevicePositionRequestRequestTypeDef](#getdevicepositionrequestrequesttypedef)
-  - [GetDevicePositionResponseTypeDef](#getdevicepositionresponsetypedef)
-  - [GetGeofenceRequestRequestTypeDef](#getgeofencerequestrequesttypedef)
-  - [GetGeofenceResponseTypeDef](#getgeofenceresponsetypedef)
-  - [GetMapGlyphsRequestRequestTypeDef](#getmapglyphsrequestrequesttypedef)
-  - [GetMapGlyphsResponseTypeDef](#getmapglyphsresponsetypedef)
-  - [GetMapSpritesRequestRequestTypeDef](#getmapspritesrequestrequesttypedef)
-  - [GetMapSpritesResponseTypeDef](#getmapspritesresponsetypedef)
-  - [GetMapStyleDescriptorRequestRequestTypeDef](#getmapstyledescriptorrequestrequesttypedef)
-  - [GetMapStyleDescriptorResponseTypeDef](#getmapstyledescriptorresponsetypedef)
-  - [GetMapTileRequestRequestTypeDef](#getmaptilerequestrequesttypedef)
-  - [GetMapTileResponseTypeDef](#getmaptileresponsetypedef)
-  - [LegGeometryTypeDef](#leggeometrytypedef)
-  - [LegTypeDef](#legtypedef)
-  - [ListDevicePositionsRequestRequestTypeDef](#listdevicepositionsrequestrequesttypedef)
-  - [ListDevicePositionsResponseEntryTypeDef](#listdevicepositionsresponseentrytypedef)
-  - [ListDevicePositionsResponseTypeDef](#listdevicepositionsresponsetypedef)
-  - [ListGeofenceCollectionsRequestRequestTypeDef](#listgeofencecollectionsrequestrequesttypedef)
-  - [ListGeofenceCollectionsResponseEntryTypeDef](#listgeofencecollectionsresponseentrytypedef)
-  - [ListGeofenceCollectionsResponseTypeDef](#listgeofencecollectionsresponsetypedef)
-  - [ListGeofenceResponseEntryTypeDef](#listgeofenceresponseentrytypedef)
-  - [ListGeofencesRequestRequestTypeDef](#listgeofencesrequestrequesttypedef)
-  - [ListGeofencesResponseTypeDef](#listgeofencesresponsetypedef)
-  - [ListMapsRequestRequestTypeDef](#listmapsrequestrequesttypedef)
-  - [ListMapsResponseEntryTypeDef](#listmapsresponseentrytypedef)
-  - [ListMapsResponseTypeDef](#listmapsresponsetypedef)
-  - [ListPlaceIndexesRequestRequestTypeDef](#listplaceindexesrequestrequesttypedef)
-  - [ListPlaceIndexesResponseEntryTypeDef](#listplaceindexesresponseentrytypedef)
-  - [ListPlaceIndexesResponseTypeDef](#listplaceindexesresponsetypedef)
-  - [ListRouteCalculatorsRequestRequestTypeDef](#listroutecalculatorsrequestrequesttypedef)
-  - [ListRouteCalculatorsResponseEntryTypeDef](#listroutecalculatorsresponseentrytypedef)
-  - [ListRouteCalculatorsResponseTypeDef](#listroutecalculatorsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTrackerConsumersRequestRequestTypeDef](#listtrackerconsumersrequestrequesttypedef)
-  - [ListTrackerConsumersResponseTypeDef](#listtrackerconsumersresponsetypedef)
-  - [ListTrackersRequestRequestTypeDef](#listtrackersrequestrequesttypedef)
-  - [ListTrackersResponseEntryTypeDef](#listtrackersresponseentrytypedef)
-  - [ListTrackersResponseTypeDef](#listtrackersresponsetypedef)
-  - [MapConfigurationTypeDef](#mapconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlaceGeometryTypeDef](#placegeometrytypedef)
-  - [PlaceTypeDef](#placetypedef)
-  - [PositionalAccuracyTypeDef](#positionalaccuracytypedef)
-  - [PutGeofenceRequestRequestTypeDef](#putgeofencerequestrequesttypedef)
-  - [PutGeofenceResponseTypeDef](#putgeofenceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RouteMatrixEntryErrorTypeDef](#routematrixentryerrortypedef)
-  - [RouteMatrixEntryTypeDef](#routematrixentrytypedef)
-  - [SearchForPositionResultTypeDef](#searchforpositionresulttypedef)
-  - [SearchForSuggestionsResultTypeDef](#searchforsuggestionsresulttypedef)
-  - [SearchForTextResultTypeDef](#searchfortextresulttypedef)
-  - [SearchPlaceIndexForPositionRequestRequestTypeDef](#searchplaceindexforpositionrequestrequesttypedef)
-  - [SearchPlaceIndexForPositionResponseTypeDef](#searchplaceindexforpositionresponsetypedef)
-  - [SearchPlaceIndexForPositionSummaryTypeDef](#searchplaceindexforpositionsummarytypedef)
-  - [SearchPlaceIndexForSuggestionsRequestRequestTypeDef](#searchplaceindexforsuggestionsrequestrequesttypedef)
-  - [SearchPlaceIndexForSuggestionsResponseTypeDef](#searchplaceindexforsuggestionsresponsetypedef)
-  - [SearchPlaceIndexForSuggestionsSummaryTypeDef](#searchplaceindexforsuggestionssummarytypedef)
-  - [SearchPlaceIndexForTextRequestRequestTypeDef](#searchplaceindexfortextrequestrequesttypedef)
-  - [SearchPlaceIndexForTextResponseTypeDef](#searchplaceindexfortextresponsetypedef)
-  - [SearchPlaceIndexForTextSummaryTypeDef](#searchplaceindexfortextsummarytypedef)
-  - [StepTypeDef](#steptypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TimeZoneTypeDef](#timezonetypedef)
-  - [TruckDimensionsTypeDef](#truckdimensionstypedef)
-  - [TruckWeightTypeDef](#truckweighttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateGeofenceCollectionRequestRequestTypeDef](#updategeofencecollectionrequestrequesttypedef)
-  - [UpdateGeofenceCollectionResponseTypeDef](#updategeofencecollectionresponsetypedef)
-  - [UpdateMapRequestRequestTypeDef](#updatemaprequestrequesttypedef)
-  - [UpdateMapResponseTypeDef](#updatemapresponsetypedef)
-  - [UpdatePlaceIndexRequestRequestTypeDef](#updateplaceindexrequestrequesttypedef)
-  - [UpdatePlaceIndexResponseTypeDef](#updateplaceindexresponsetypedef)
-  - [UpdateRouteCalculatorRequestRequestTypeDef](#updateroutecalculatorrequestrequesttypedef)
-  - [UpdateRouteCalculatorResponseTypeDef](#updateroutecalculatorresponsetypedef)
-  - [UpdateTrackerRequestRequestTypeDef](#updatetrackerrequestrequesttypedef)
-  - [UpdateTrackerResponseTypeDef](#updatetrackerresponsetypedef)
-
-<a id="associatetrackerconsumerrequestrequesttypedef"></a>
+    Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+    type annotations stubs module [mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 ## AssociateTrackerConsumerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequestTypeDef
+
+def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
+    return {
+        "ConsumerArn": ...,
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConsumerArn`: `str`
-- `TrackerName`: `str`
-
-<a id="batchdeletedevicepositionhistoryerrortypedef"></a>
+```python title="Definition"
+class AssociateTrackerConsumerRequestRequestTypeDef(TypedDict):
+    ConsumerArn: str,
+    TrackerName: str,
+```
 
 ## BatchDeleteDevicePositionHistoryErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryErrorTypeDef
+
+def get_value() -> BatchDeleteDevicePositionHistoryErrorTypeDef:
+    return {
+        "DeviceId": ...,
+        "Error": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteDevicePositionHistoryErrorTypeDef(TypedDict):
+    DeviceId: str,
+    Error: BatchItemErrorTypeDef,  # (1)
+```
 
-- `DeviceId`: `str`
-- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
-
-<a id="batchdeletedevicepositionhistoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 ## BatchDeleteDevicePositionHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryRequestRequestTypeDef
+
+def get_value() -> BatchDeleteDevicePositionHistoryRequestRequestTypeDef:
+    return {
+        "DeviceIds": ...,
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceIds`: `Sequence`\[`str`\]
-- `TrackerName`: `str`
-
-<a id="batchdeletedevicepositionhistoryresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteDevicePositionHistoryRequestRequestTypeDef(TypedDict):
+    DeviceIds: Sequence[str],
+    TrackerName: str,
+```
 
 ## BatchDeleteDevicePositionHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryResponseTypeDef
+
+def get_value() -> BatchDeleteDevicePositionHistoryResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteDevicePositionHistoryResponseTypeDef(TypedDict):
+    Errors: List[BatchDeleteDevicePositionHistoryErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[BatchDeleteDevicePositionHistoryErrorTypeDef](./type_defs.md#batchdeletedevicepositionhistoryerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeletegeofenceerrortypedef"></a>
-
+1. See [:material-code-braces: BatchDeleteDevicePositionHistoryErrorTypeDef](./type_defs.md#batchdeletedevicepositionhistoryerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteGeofenceErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef
+
+def get_value() -> BatchDeleteGeofenceErrorTypeDef:
+    return {
+        "Error": ...,
+        "GeofenceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteGeofenceErrorTypeDef(TypedDict):
+    Error: BatchItemErrorTypeDef,  # (1)
+    GeofenceId: str,
+```
 
-- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
-- `GeofenceId`: `str`
-
-<a id="batchdeletegeofencerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 ## BatchDeleteGeofenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchDeleteGeofenceRequestRequestTypeDef
+
+def get_value() -> BatchDeleteGeofenceRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "GeofenceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionName`: `str`
-- `GeofenceIds`: `Sequence`\[`str`\]
-
-<a id="batchdeletegeofenceresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteGeofenceRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    GeofenceIds: Sequence[str],
+```
 
 ## BatchDeleteGeofenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchDeleteGeofenceResponseTypeDef
+
+def get_value() -> BatchDeleteGeofenceResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteGeofenceResponseTypeDef(TypedDict):
+    Errors: List[BatchDeleteGeofenceErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[BatchDeleteGeofenceErrorTypeDef](./type_defs.md#batchdeletegeofenceerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchevaluategeofenceserrortypedef"></a>
-
+1. See [:material-code-braces: BatchDeleteGeofenceErrorTypeDef](./type_defs.md#batchdeletegeofenceerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchEvaluateGeofencesErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchEvaluateGeofencesErrorTypeDef
+
+def get_value() -> BatchEvaluateGeofencesErrorTypeDef:
+    return {
+        "DeviceId": ...,
+        "Error": ...,
+        "SampleTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchEvaluateGeofencesErrorTypeDef(TypedDict):
+    DeviceId: str,
+    Error: BatchItemErrorTypeDef,  # (1)
+    SampleTime: datetime,
+```
 
-- `DeviceId`: `str`
-- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
-- `SampleTime`: `datetime`
-
-<a id="batchevaluategeofencesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 ## BatchEvaluateGeofencesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchEvaluateGeofencesRequestRequestTypeDef
+
+def get_value() -> BatchEvaluateGeofencesRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "DevicePositionUpdates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchEvaluateGeofencesRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    DevicePositionUpdates: Sequence[DevicePositionUpdateTypeDef],  # (1)
+```
 
-- `CollectionName`: `str`
-- `DevicePositionUpdates`:
-  `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
-
-<a id="batchevaluategeofencesresponsetypedef"></a>
-
+1. See [:material-code-braces: DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef) 
 ## BatchEvaluateGeofencesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchEvaluateGeofencesResponseTypeDef
+
+def get_value() -> BatchEvaluateGeofencesResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchEvaluateGeofencesResponseTypeDef(TypedDict):
+    Errors: List[BatchEvaluateGeofencesErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[BatchEvaluateGeofencesErrorTypeDef](./type_defs.md#batchevaluategeofenceserrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetdevicepositionerrortypedef"></a>
-
+1. See [:material-code-braces: BatchEvaluateGeofencesErrorTypeDef](./type_defs.md#batchevaluategeofenceserrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDevicePositionErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchGetDevicePositionErrorTypeDef
+
+def get_value() -> BatchGetDevicePositionErrorTypeDef:
+    return {
+        "DeviceId": ...,
+        "Error": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDevicePositionErrorTypeDef(TypedDict):
+    DeviceId: str,
+    Error: BatchItemErrorTypeDef,  # (1)
+```
 
-- `DeviceId`: `str`
-- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
-
-<a id="batchgetdevicepositionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 ## BatchGetDevicePositionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchGetDevicePositionRequestRequestTypeDef
+
+def get_value() -> BatchGetDevicePositionRequestRequestTypeDef:
+    return {
+        "DeviceIds": ...,
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceIds`: `Sequence`\[`str`\]
-- `TrackerName`: `str`
-
-<a id="batchgetdevicepositionresponsetypedef"></a>
+```python title="Definition"
+class BatchGetDevicePositionRequestRequestTypeDef(TypedDict):
+    DeviceIds: Sequence[str],
+    TrackerName: str,
+```
 
 ## BatchGetDevicePositionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchGetDevicePositionResponseTypeDef
+
+def get_value() -> BatchGetDevicePositionResponseTypeDef:
+    return {
+        "DevicePositions": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDevicePositionResponseTypeDef(TypedDict):
+    DevicePositions: List[DevicePositionTypeDef],  # (1)
+    Errors: List[BatchGetDevicePositionErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `DevicePositions`:
-  `List`\[[DevicePositionTypeDef](./type_defs.md#devicepositiontypedef)\]
-- `Errors`:
-  `List`\[[BatchGetDevicePositionErrorTypeDef](./type_defs.md#batchgetdevicepositionerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchitemerrortypedef"></a>
-
+1. See [:material-code-braces: DevicePositionTypeDef](./type_defs.md#devicepositiontypedef) 
+2. See [:material-code-braces: BatchGetDevicePositionErrorTypeDef](./type_defs.md#batchgetdevicepositionerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchItemErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchItemErrorTypeDef
+
+def get_value() -> BatchItemErrorTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchItemErrorTypeDef(TypedDict):
+    Code: NotRequired[BatchItemErrorCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`: [BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype)
-- `Message`: `str`
-
-<a id="batchputgeofenceerrortypedef"></a>
-
+1. See [:material-code-brackets: BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype) 
 ## BatchPutGeofenceErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchPutGeofenceErrorTypeDef
+
+def get_value() -> BatchPutGeofenceErrorTypeDef:
+    return {
+        "Error": ...,
+        "GeofenceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutGeofenceErrorTypeDef(TypedDict):
+    Error: BatchItemErrorTypeDef,  # (1)
+    GeofenceId: str,
+```
 
-- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
-- `GeofenceId`: `str`
-
-<a id="batchputgeofencerequestentrytypedef"></a>
-
+1. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 ## BatchPutGeofenceRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchPutGeofenceRequestEntryTypeDef
+
+def get_value() -> BatchPutGeofenceRequestEntryTypeDef:
+    return {
+        "GeofenceId": ...,
+        "Geometry": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutGeofenceRequestEntryTypeDef(TypedDict):
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+```
 
-- `GeofenceId`: `str`
-- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
-
-<a id="batchputgeofencerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
 ## BatchPutGeofenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchPutGeofenceRequestRequestTypeDef
+
+def get_value() -> BatchPutGeofenceRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutGeofenceRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    Entries: Sequence[BatchPutGeofenceRequestEntryTypeDef],  # (1)
+```
 
-- `CollectionName`: `str`
-- `Entries`:
-  `Sequence`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
-
-<a id="batchputgeofenceresponsetypedef"></a>
-
+1. See [:material-code-braces: BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef) 
 ## BatchPutGeofenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchPutGeofenceResponseTypeDef
+
+def get_value() -> BatchPutGeofenceResponseTypeDef:
+    return {
+        "Errors": ...,
+        "Successes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutGeofenceResponseTypeDef(TypedDict):
+    Errors: List[BatchPutGeofenceErrorTypeDef],  # (1)
+    Successes: List[BatchPutGeofenceSuccessTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Errors`:
-  `List`\[[BatchPutGeofenceErrorTypeDef](./type_defs.md#batchputgeofenceerrortypedef)\]
-- `Successes`:
-  `List`\[[BatchPutGeofenceSuccessTypeDef](./type_defs.md#batchputgeofencesuccesstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchputgeofencesuccesstypedef"></a>
-
+1. See [:material-code-braces: BatchPutGeofenceErrorTypeDef](./type_defs.md#batchputgeofenceerrortypedef) 
+2. See [:material-code-braces: BatchPutGeofenceSuccessTypeDef](./type_defs.md#batchputgeofencesuccesstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchPutGeofenceSuccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchPutGeofenceSuccessTypeDef
+
+def get_value() -> BatchPutGeofenceSuccessTypeDef:
+    return {
+        "CreateTime": ...,
+        "GeofenceId": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
-
-- `CreateTime`: `datetime`
-- `GeofenceId`: `str`
-- `UpdateTime`: `datetime`
-
-<a id="batchupdatedevicepositionerrortypedef"></a>
+```python title="Definition"
+class BatchPutGeofenceSuccessTypeDef(TypedDict):
+    CreateTime: datetime,
+    GeofenceId: str,
+    UpdateTime: datetime,
+```
 
 ## BatchUpdateDevicePositionErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchUpdateDevicePositionErrorTypeDef
+
+def get_value() -> BatchUpdateDevicePositionErrorTypeDef:
+    return {
+        "DeviceId": ...,
+        "Error": ...,
+        "SampleTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateDevicePositionErrorTypeDef(TypedDict):
+    DeviceId: str,
+    Error: BatchItemErrorTypeDef,  # (1)
+    SampleTime: datetime,
+```
 
-- `DeviceId`: `str`
-- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
-- `SampleTime`: `datetime`
-
-<a id="batchupdatedevicepositionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 ## BatchUpdateDevicePositionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchUpdateDevicePositionRequestRequestTypeDef
+
+def get_value() -> BatchUpdateDevicePositionRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateDevicePositionRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+    Updates: Sequence[DevicePositionUpdateTypeDef],  # (1)
+```
 
-- `TrackerName`: `str`
-- `Updates`:
-  `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
-
-<a id="batchupdatedevicepositionresponsetypedef"></a>
-
+1. See [:material-code-braces: DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef) 
 ## BatchUpdateDevicePositionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import BatchUpdateDevicePositionResponseTypeDef
+
+def get_value() -> BatchUpdateDevicePositionResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateDevicePositionResponseTypeDef(TypedDict):
+    Errors: List[BatchUpdateDevicePositionErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="calculateroutecarmodeoptionstypedef"></a>
-
+1. See [:material-code-braces: BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CalculateRouteCarModeOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteCarModeOptionsTypeDef
+
+def get_value() -> CalculateRouteCarModeOptionsTypeDef:
+    return {
+        "AvoidFerries": ...,
+    }
 ```
 
-Optional fields:
-
-- `AvoidFerries`: `bool`
-- `AvoidTolls`: `bool`
-
-<a id="calculateroutematrixrequestrequesttypedef"></a>
+```python title="Definition"
+class CalculateRouteCarModeOptionsTypeDef(TypedDict):
+    AvoidFerries: NotRequired[bool],
+    AvoidTolls: NotRequired[bool],
+```
 
 ## CalculateRouteMatrixRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteMatrixRequestRequestTypeDef
+
+def get_value() -> CalculateRouteMatrixRequestRequestTypeDef:
+    return {
+        "CalculatorName": ...,
+        "DeparturePositions": ...,
+        "DestinationPositions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculateRouteMatrixRequestRequestTypeDef(TypedDict):
+    CalculatorName: str,
+    DeparturePositions: Sequence[Sequence[float]],
+    DestinationPositions: Sequence[Sequence[float]],
+    CarModeOptions: NotRequired[CalculateRouteCarModeOptionsTypeDef],  # (1)
+    DepartNow: NotRequired[bool],
+    DepartureTime: NotRequired[Union[datetime, str]],
+    DistanceUnit: NotRequired[DistanceUnitType],  # (2)
+    TravelMode: NotRequired[TravelModeType],  # (3)
+    TruckModeOptions: NotRequired[CalculateRouteTruckModeOptionsTypeDef],  # (4)
+```
 
-- `CalculatorName`: `str`
-- `DeparturePositions`: `Sequence`\[`Sequence`\[`float`\]\]
-- `DestinationPositions`: `Sequence`\[`Sequence`\[`float`\]\]
-
-Optional fields:
-
-- `CarModeOptions`:
-  [CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef)
-- `DepartNow`: `bool`
-- `DepartureTime`: `Union`\[`datetime`, `str`\]
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TravelMode`: [TravelModeType](./literals.md#travelmodetype)
-- `TruckModeOptions`:
-  [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
-
-<a id="calculateroutematrixresponsetypedef"></a>
-
+1. See [:material-code-braces: CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef) 
+2. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+3. See [:material-code-brackets: TravelModeType](./literals.md#travelmodetype) 
+4. See [:material-code-braces: CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef) 
 ## CalculateRouteMatrixResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteMatrixResponseTypeDef
+
+def get_value() -> CalculateRouteMatrixResponseTypeDef:
+    return {
+        "RouteMatrix": ...,
+        "SnappedDeparturePositions": ...,
+        "SnappedDestinationPositions": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculateRouteMatrixResponseTypeDef(TypedDict):
+    RouteMatrix: List[List[RouteMatrixEntryTypeDef]],  # (1)
+    SnappedDeparturePositions: List[List[float]],
+    SnappedDestinationPositions: List[List[float]],
+    Summary: CalculateRouteMatrixSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `RouteMatrix`:
-  `List`\[`List`\[[RouteMatrixEntryTypeDef](./type_defs.md#routematrixentrytypedef)\]\]
-- `SnappedDeparturePositions`: `List`\[`List`\[`float`\]\]
-- `SnappedDestinationPositions`: `List`\[`List`\[`float`\]\]
-- `Summary`:
-  [CalculateRouteMatrixSummaryTypeDef](./type_defs.md#calculateroutematrixsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="calculateroutematrixsummarytypedef"></a>
-
+1. See [:material-code-braces: RouteMatrixEntryTypeDef](./type_defs.md#routematrixentrytypedef) 
+2. See [:material-code-braces: CalculateRouteMatrixSummaryTypeDef](./type_defs.md#calculateroutematrixsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CalculateRouteMatrixSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteMatrixSummaryTypeDef
+
+def get_value() -> CalculateRouteMatrixSummaryTypeDef:
+    return {
+        "DataSource": ...,
+        "DistanceUnit": ...,
+        "ErrorCount": ...,
+        "RouteCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculateRouteMatrixSummaryTypeDef(TypedDict):
+    DataSource: str,
+    DistanceUnit: DistanceUnitType,  # (1)
+    ErrorCount: int,
+    RouteCount: int,
+```
 
-- `DataSource`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `ErrorCount`: `int`
-- `RouteCount`: `int`
-
-<a id="calculaterouterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
 ## CalculateRouteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteRequestRequestTypeDef
+
+def get_value() -> CalculateRouteRequestRequestTypeDef:
+    return {
+        "CalculatorName": ...,
+        "DeparturePosition": ...,
+        "DestinationPosition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculateRouteRequestRequestTypeDef(TypedDict):
+    CalculatorName: str,
+    DeparturePosition: Sequence[float],
+    DestinationPosition: Sequence[float],
+    CarModeOptions: NotRequired[CalculateRouteCarModeOptionsTypeDef],  # (1)
+    DepartNow: NotRequired[bool],
+    DepartureTime: NotRequired[Union[datetime, str]],
+    DistanceUnit: NotRequired[DistanceUnitType],  # (2)
+    IncludeLegGeometry: NotRequired[bool],
+    TravelMode: NotRequired[TravelModeType],  # (3)
+    TruckModeOptions: NotRequired[CalculateRouteTruckModeOptionsTypeDef],  # (4)
+    WaypointPositions: NotRequired[Sequence[Sequence[float]]],
+```
 
-- `CalculatorName`: `str`
-- `DeparturePosition`: `Sequence`\[`float`\]
-- `DestinationPosition`: `Sequence`\[`float`\]
-
-Optional fields:
-
-- `CarModeOptions`:
-  [CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef)
-- `DepartNow`: `bool`
-- `DepartureTime`: `Union`\[`datetime`, `str`\]
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `IncludeLegGeometry`: `bool`
-- `TravelMode`: [TravelModeType](./literals.md#travelmodetype)
-- `TruckModeOptions`:
-  [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
-- `WaypointPositions`: `Sequence`\[`Sequence`\[`float`\]\]
-
-<a id="calculaterouteresponsetypedef"></a>
-
+1. See [:material-code-braces: CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef) 
+2. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+3. See [:material-code-brackets: TravelModeType](./literals.md#travelmodetype) 
+4. See [:material-code-braces: CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef) 
 ## CalculateRouteResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteResponseTypeDef
+
+def get_value() -> CalculateRouteResponseTypeDef:
+    return {
+        "Legs": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculateRouteResponseTypeDef(TypedDict):
+    Legs: List[LegTypeDef],  # (1)
+    Summary: CalculateRouteSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Legs`: `List`\[[LegTypeDef](./type_defs.md#legtypedef)\]
-- `Summary`:
-  [CalculateRouteSummaryTypeDef](./type_defs.md#calculateroutesummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="calculateroutesummarytypedef"></a>
-
+1. See [:material-code-braces: LegTypeDef](./type_defs.md#legtypedef) 
+2. See [:material-code-braces: CalculateRouteSummaryTypeDef](./type_defs.md#calculateroutesummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CalculateRouteSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteSummaryTypeDef
+
+def get_value() -> CalculateRouteSummaryTypeDef:
+    return {
+        "DataSource": ...,
+        "Distance": ...,
+        "DistanceUnit": ...,
+        "DurationSeconds": ...,
+        "RouteBBox": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculateRouteSummaryTypeDef(TypedDict):
+    DataSource: str,
+    Distance: float,
+    DistanceUnit: DistanceUnitType,  # (1)
+    DurationSeconds: float,
+    RouteBBox: List[float],
+```
 
-- `DataSource`: `str`
-- `Distance`: `float`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `DurationSeconds`: `float`
-- `RouteBBox`: `List`\[`float`\]
-
-<a id="calculateroutetruckmodeoptionstypedef"></a>
-
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
 ## CalculateRouteTruckModeOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CalculateRouteTruckModeOptionsTypeDef
+
+def get_value() -> CalculateRouteTruckModeOptionsTypeDef:
+    return {
+        "AvoidFerries": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CalculateRouteTruckModeOptionsTypeDef(TypedDict):
+    AvoidFerries: NotRequired[bool],
+    AvoidTolls: NotRequired[bool],
+    Dimensions: NotRequired[TruckDimensionsTypeDef],  # (1)
+    Weight: NotRequired[TruckWeightTypeDef],  # (2)
+```
 
-- `AvoidFerries`: `bool`
-- `AvoidTolls`: `bool`
-- `Dimensions`: [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
-- `Weight`: [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
-
-<a id="creategeofencecollectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef) 
+2. See [:material-code-braces: TruckWeightTypeDef](./type_defs.md#truckweighttypedef) 
 ## CreateGeofenceCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateGeofenceCollectionRequestRequestTypeDef
+
+def get_value() -> CreateGeofenceCollectionRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGeofenceCollectionRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    Description: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    PricingPlanDataSource: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `CollectionName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="creategeofencecollectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## CreateGeofenceCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateGeofenceCollectionResponseTypeDef
+
+def get_value() -> CreateGeofenceCollectionResponseTypeDef:
+    return {
+        "CollectionArn": ...,
+        "CollectionName": ...,
+        "CreateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGeofenceCollectionResponseTypeDef(TypedDict):
+    CollectionArn: str,
+    CollectionName: str,
+    CreateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CollectionArn`: `str`
-- `CollectionName`: `str`
-- `CreateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmaprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMapRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateMapRequestRequestTypeDef
+
+def get_value() -> CreateMapRequestRequestTypeDef:
+    return {
+        "Configuration": ...,
+        "MapName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMapRequestRequestTypeDef(TypedDict):
+    Configuration: MapConfigurationTypeDef,  # (1)
+    MapName: str,
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Configuration`:
-  [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef)
-- `MapName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createmapresponsetypedef"></a>
-
+1. See [:material-code-braces: MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## CreateMapResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateMapResponseTypeDef
+
+def get_value() -> CreateMapResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "MapArn": ...,
+        "MapName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMapResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    MapArn: str,
+    MapName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CreateTime`: `datetime`
-- `MapArn`: `str`
-- `MapName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createplaceindexrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePlaceIndexRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreatePlaceIndexRequestRequestTypeDef
+
+def get_value() -> CreatePlaceIndexRequestRequestTypeDef:
+    return {
+        "DataSource": ...,
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePlaceIndexRequestRequestTypeDef(TypedDict):
+    DataSource: str,
+    IndexName: str,
+    DataSourceConfiguration: NotRequired[DataSourceConfigurationTypeDef],  # (1)
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `DataSource`: `str`
-- `IndexName`: `str`
-
-Optional fields:
-
-- `DataSourceConfiguration`:
-  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createplaceindexresponsetypedef"></a>
-
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## CreatePlaceIndexResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreatePlaceIndexResponseTypeDef
+
+def get_value() -> CreatePlaceIndexResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "IndexArn": ...,
+        "IndexName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePlaceIndexResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    IndexArn: str,
+    IndexName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CreateTime`: `datetime`
-- `IndexArn`: `str`
-- `IndexName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createroutecalculatorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRouteCalculatorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateRouteCalculatorRequestRequestTypeDef
+
+def get_value() -> CreateRouteCalculatorRequestRequestTypeDef:
+    return {
+        "CalculatorName": ...,
+        "DataSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRouteCalculatorRequestRequestTypeDef(TypedDict):
+    CalculatorName: str,
+    DataSource: str,
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `CalculatorName`: `str`
-- `DataSource`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createroutecalculatorresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## CreateRouteCalculatorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateRouteCalculatorResponseTypeDef
+
+def get_value() -> CreateRouteCalculatorResponseTypeDef:
+    return {
+        "CalculatorArn": ...,
+        "CalculatorName": ...,
+        "CreateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRouteCalculatorResponseTypeDef(TypedDict):
+    CalculatorArn: str,
+    CalculatorName: str,
+    CreateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CalculatorArn`: `str`
-- `CalculatorName`: `str`
-- `CreateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtrackerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateTrackerRequestRequestTypeDef
+
+def get_value() -> CreateTrackerRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrackerRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+    Description: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    PositionFiltering: NotRequired[PositionFilteringType],  # (1)
+    PricingPlan: NotRequired[PricingPlanType],  # (2)
+    PricingPlanDataSource: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `TrackerName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `PositionFiltering`:
-  [PositionFilteringType](./literals.md#positionfilteringtype)
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createtrackerresponsetypedef"></a>
-
+1. See [:material-code-brackets: PositionFilteringType](./literals.md#positionfilteringtype) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## CreateTrackerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import CreateTrackerResponseTypeDef
+
+def get_value() -> CreateTrackerResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "TrackerArn": ...,
+        "TrackerName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrackerResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    TrackerArn: str,
+    TrackerName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CreateTime`: `datetime`
-- `TrackerArn`: `str`
-- `TrackerName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasourceconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataSourceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DataSourceConfigurationTypeDef
+
+def get_value() -> DataSourceConfigurationTypeDef:
+    return {
+        "IntendedUse": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataSourceConfigurationTypeDef(TypedDict):
+    IntendedUse: NotRequired[IntendedUseType],  # (1)
+```
 
-- `IntendedUse`: [IntendedUseType](./literals.md#intendedusetype)
-
-<a id="deletegeofencecollectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: IntendedUseType](./literals.md#intendedusetype) 
 ## DeleteGeofenceCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DeleteGeofenceCollectionRequestRequestTypeDef
+
+def get_value() -> DeleteGeofenceCollectionRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionName`: `str`
-
-<a id="deletemaprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGeofenceCollectionRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+```
 
 ## DeleteMapRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DeleteMapRequestRequestTypeDef
+
+def get_value() -> DeleteMapRequestRequestTypeDef:
+    return {
+        "MapName": ...,
+    }
 ```
 
-Required fields:
-
-- `MapName`: `str`
-
-<a id="deleteplaceindexrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteMapRequestRequestTypeDef(TypedDict):
+    MapName: str,
+```
 
 ## DeletePlaceIndexRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DeletePlaceIndexRequestRequestTypeDef
+
+def get_value() -> DeletePlaceIndexRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
-
-- `IndexName`: `str`
-
-<a id="deleteroutecalculatorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePlaceIndexRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+```
 
 ## DeleteRouteCalculatorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DeleteRouteCalculatorRequestRequestTypeDef
+
+def get_value() -> DeleteRouteCalculatorRequestRequestTypeDef:
+    return {
+        "CalculatorName": ...,
+    }
 ```
 
-Required fields:
-
-- `CalculatorName`: `str`
-
-<a id="deletetrackerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRouteCalculatorRequestRequestTypeDef(TypedDict):
+    CalculatorName: str,
+```
 
 ## DeleteTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DeleteTrackerRequestRequestTypeDef
+
+def get_value() -> DeleteTrackerRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `TrackerName`: `str`
-
-<a id="describegeofencecollectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTrackerRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+```
 
 ## DescribeGeofenceCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeGeofenceCollectionRequestRequestTypeDef
+
+def get_value() -> DescribeGeofenceCollectionRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionName`: `str`
-
-<a id="describegeofencecollectionresponsetypedef"></a>
+```python title="Definition"
+class DescribeGeofenceCollectionRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+```
 
 ## DescribeGeofenceCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeGeofenceCollectionResponseTypeDef
+
+def get_value() -> DescribeGeofenceCollectionResponseTypeDef:
+    return {
+        "CollectionArn": ...,
+        "CollectionName": ...,
+        "CreateTime": ...,
+        "Description": ...,
+        "KmsKeyId": ...,
+        "PricingPlan": ...,
+        "PricingPlanDataSource": ...,
+        "Tags": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGeofenceCollectionResponseTypeDef(TypedDict):
+    CollectionArn: str,
+    CollectionName: str,
+    CreateTime: datetime,
+    Description: str,
+    KmsKeyId: str,
+    PricingPlan: PricingPlanType,  # (1)
+    PricingPlanDataSource: str,
+    Tags: Dict[str, str],
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CollectionArn`: `str`
-- `CollectionName`: `str`
-- `CreateTime`: `datetime`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemaprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMapRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeMapRequestRequestTypeDef
+
+def get_value() -> DescribeMapRequestRequestTypeDef:
+    return {
+        "MapName": ...,
+    }
 ```
 
-Required fields:
-
-- `MapName`: `str`
-
-<a id="describemapresponsetypedef"></a>
+```python title="Definition"
+class DescribeMapRequestRequestTypeDef(TypedDict):
+    MapName: str,
+```
 
 ## DescribeMapResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeMapResponseTypeDef
+
+def get_value() -> DescribeMapResponseTypeDef:
+    return {
+        "Configuration": ...,
+        "CreateTime": ...,
+        "DataSource": ...,
+        "Description": ...,
+        "MapArn": ...,
+        "MapName": ...,
+        "PricingPlan": ...,
+        "Tags": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMapResponseTypeDef(TypedDict):
+    Configuration: MapConfigurationTypeDef,  # (1)
+    CreateTime: datetime,
+    DataSource: str,
+    Description: str,
+    MapArn: str,
+    MapName: str,
+    PricingPlan: PricingPlanType,  # (2)
+    Tags: Dict[str, str],
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Configuration`:
-  [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef)
-- `CreateTime`: `datetime`
-- `DataSource`: `str`
-- `Description`: `str`
-- `MapArn`: `str`
-- `MapName`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeplaceindexrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePlaceIndexRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribePlaceIndexRequestRequestTypeDef
+
+def get_value() -> DescribePlaceIndexRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
-
-- `IndexName`: `str`
-
-<a id="describeplaceindexresponsetypedef"></a>
+```python title="Definition"
+class DescribePlaceIndexRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+```
 
 ## DescribePlaceIndexResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribePlaceIndexResponseTypeDef
+
+def get_value() -> DescribePlaceIndexResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "DataSource": ...,
+        "DataSourceConfiguration": ...,
+        "Description": ...,
+        "IndexArn": ...,
+        "IndexName": ...,
+        "PricingPlan": ...,
+        "Tags": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePlaceIndexResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    DataSource: str,
+    DataSourceConfiguration: DataSourceConfigurationTypeDef,  # (1)
+    Description: str,
+    IndexArn: str,
+    IndexName: str,
+    PricingPlan: PricingPlanType,  # (2)
+    Tags: Dict[str, str],
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `CreateTime`: `datetime`
-- `DataSource`: `str`
-- `DataSourceConfiguration`:
-  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
-- `Description`: `str`
-- `IndexArn`: `str`
-- `IndexName`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeroutecalculatorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRouteCalculatorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeRouteCalculatorRequestRequestTypeDef
+
+def get_value() -> DescribeRouteCalculatorRequestRequestTypeDef:
+    return {
+        "CalculatorName": ...,
+    }
 ```
 
-Required fields:
-
-- `CalculatorName`: `str`
-
-<a id="describeroutecalculatorresponsetypedef"></a>
+```python title="Definition"
+class DescribeRouteCalculatorRequestRequestTypeDef(TypedDict):
+    CalculatorName: str,
+```
 
 ## DescribeRouteCalculatorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeRouteCalculatorResponseTypeDef
+
+def get_value() -> DescribeRouteCalculatorResponseTypeDef:
+    return {
+        "CalculatorArn": ...,
+        "CalculatorName": ...,
+        "CreateTime": ...,
+        "DataSource": ...,
+        "Description": ...,
+        "PricingPlan": ...,
+        "Tags": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRouteCalculatorResponseTypeDef(TypedDict):
+    CalculatorArn: str,
+    CalculatorName: str,
+    CreateTime: datetime,
+    DataSource: str,
+    Description: str,
+    PricingPlan: PricingPlanType,  # (1)
+    Tags: Dict[str, str],
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CalculatorArn`: `str`
-- `CalculatorName`: `str`
-- `CreateTime`: `datetime`
-- `DataSource`: `str`
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetrackerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeTrackerRequestRequestTypeDef
+
+def get_value() -> DescribeTrackerRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `TrackerName`: `str`
-
-<a id="describetrackerresponsetypedef"></a>
+```python title="Definition"
+class DescribeTrackerRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+```
 
 ## DescribeTrackerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DescribeTrackerResponseTypeDef
+
+def get_value() -> DescribeTrackerResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "Description": ...,
+        "KmsKeyId": ...,
+        "PositionFiltering": ...,
+        "PricingPlan": ...,
+        "PricingPlanDataSource": ...,
+        "Tags": ...,
+        "TrackerArn": ...,
+        "TrackerName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTrackerResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    Description: str,
+    KmsKeyId: str,
+    PositionFiltering: PositionFilteringType,  # (1)
+    PricingPlan: PricingPlanType,  # (2)
+    PricingPlanDataSource: str,
+    Tags: Dict[str, str],
+    TrackerArn: str,
+    TrackerName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `CreateTime`: `datetime`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `PositionFiltering`:
-  [PositionFilteringType](./literals.md#positionfilteringtype)
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TrackerArn`: `str`
-- `TrackerName`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="devicepositiontypedef"></a>
-
+1. See [:material-code-brackets: PositionFilteringType](./literals.md#positionfilteringtype) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DevicePositionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DevicePositionTypeDef
+
+def get_value() -> DevicePositionTypeDef:
+    return {
+        "Position": ...,
+        "ReceivedTime": ...,
+        "SampleTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DevicePositionTypeDef(TypedDict):
+    Position: List[float],
+    ReceivedTime: datetime,
+    SampleTime: datetime,
+    Accuracy: NotRequired[PositionalAccuracyTypeDef],  # (1)
+    DeviceId: NotRequired[str],
+    PositionProperties: NotRequired[Dict[str, str]],
+```
 
-- `Position`: `List`\[`float`\]
-- `ReceivedTime`: `datetime`
-- `SampleTime`: `datetime`
-
-Optional fields:
-
-- `Accuracy`:
-  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
-- `DeviceId`: `str`
-- `PositionProperties`: `Dict`\[`str`, `str`\]
-
-<a id="devicepositionupdatetypedef"></a>
-
+1. See [:material-code-braces: PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef) 
 ## DevicePositionUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DevicePositionUpdateTypeDef
+
+def get_value() -> DevicePositionUpdateTypeDef:
+    return {
+        "DeviceId": ...,
+        "Position": ...,
+        "SampleTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DevicePositionUpdateTypeDef(TypedDict):
+    DeviceId: str,
+    Position: Sequence[float],
+    SampleTime: Union[datetime, str],
+    Accuracy: NotRequired[PositionalAccuracyTypeDef],  # (1)
+    PositionProperties: NotRequired[Mapping[str, str]],
+```
 
-- `DeviceId`: `str`
-- `Position`: `Sequence`\[`float`\]
-- `SampleTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `Accuracy`:
-  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
-- `PositionProperties`: `Mapping`\[`str`, `str`\]
-
-<a id="disassociatetrackerconsumerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef) 
 ## DisassociateTrackerConsumerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import DisassociateTrackerConsumerRequestRequestTypeDef
+
+def get_value() -> DisassociateTrackerConsumerRequestRequestTypeDef:
+    return {
+        "ConsumerArn": ...,
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConsumerArn`: `str`
-- `TrackerName`: `str`
-
-<a id="geofencegeometrytypedef"></a>
+```python title="Definition"
+class DisassociateTrackerConsumerRequestRequestTypeDef(TypedDict):
+    ConsumerArn: str,
+    TrackerName: str,
+```
 
 ## GeofenceGeometryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GeofenceGeometryTypeDef
+
+def get_value() -> GeofenceGeometryTypeDef:
+    return {
+        "Polygon": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GeofenceGeometryTypeDef(TypedDict):
+    Polygon: NotRequired[Sequence[Sequence[Sequence[float]]]],
+```
 
-- `Polygon`: `Sequence`\[`Sequence`\[`Sequence`\[`float`\]\]\]
+## GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef
 
-<a id="getdevicepositionhistoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef
 
+def get_value() -> GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef:
+    return {
+        "DeviceId": ...,
+        "TrackerName": ...,
+    }
+```
+
+```python title="Definition"
+class GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef(TypedDict):
+    DeviceId: str,
+    TrackerName: str,
+    EndTimeExclusive: NotRequired[Union[datetime, str]],
+    StartTimeInclusive: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDevicePositionHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetDevicePositionHistoryRequestRequestTypeDef
+
+def get_value() -> GetDevicePositionHistoryRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-- `TrackerName`: `str`
-
-Optional fields:
-
-- `EndTimeExclusive`: `Union`\[`datetime`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
-
-<a id="getdevicepositionhistoryresponsetypedef"></a>
+```python title="Definition"
+class GetDevicePositionHistoryRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    TrackerName: str,
+    EndTimeExclusive: NotRequired[Union[datetime, str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    StartTimeInclusive: NotRequired[Union[datetime, str]],
+```
 
 ## GetDevicePositionHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetDevicePositionHistoryResponseTypeDef
+
+def get_value() -> GetDevicePositionHistoryResponseTypeDef:
+    return {
+        "DevicePositions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevicePositionHistoryResponseTypeDef(TypedDict):
+    DevicePositions: List[DevicePositionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DevicePositions`:
-  `List`\[[DevicePositionTypeDef](./type_defs.md#devicepositiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicepositionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevicePositionTypeDef](./type_defs.md#devicepositiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDevicePositionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetDevicePositionRequestRequestTypeDef
+
+def get_value() -> GetDevicePositionRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-- `TrackerName`: `str`
-
-<a id="getdevicepositionresponsetypedef"></a>
+```python title="Definition"
+class GetDevicePositionRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    TrackerName: str,
+```
 
 ## GetDevicePositionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetDevicePositionResponseTypeDef
+
+def get_value() -> GetDevicePositionResponseTypeDef:
+    return {
+        "Accuracy": ...,
+        "DeviceId": ...,
+        "Position": ...,
+        "PositionProperties": ...,
+        "ReceivedTime": ...,
+        "SampleTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevicePositionResponseTypeDef(TypedDict):
+    Accuracy: PositionalAccuracyTypeDef,  # (1)
+    DeviceId: str,
+    Position: List[float],
+    PositionProperties: Dict[str, str],
+    ReceivedTime: datetime,
+    SampleTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accuracy`:
-  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
-- `DeviceId`: `str`
-- `Position`: `List`\[`float`\]
-- `PositionProperties`: `Dict`\[`str`, `str`\]
-- `ReceivedTime`: `datetime`
-- `SampleTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgeofencerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGeofenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetGeofenceRequestRequestTypeDef
+
+def get_value() -> GetGeofenceRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "GeofenceId": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionName`: `str`
-- `GeofenceId`: `str`
-
-<a id="getgeofenceresponsetypedef"></a>
+```python title="Definition"
+class GetGeofenceRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    GeofenceId: str,
+```
 
 ## GetGeofenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetGeofenceResponseTypeDef
+
+def get_value() -> GetGeofenceResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "GeofenceId": ...,
+        "Geometry": ...,
+        "Status": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGeofenceResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+    Status: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CreateTime`: `datetime`
-- `GeofenceId`: `str`
-- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
-- `Status`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmapglyphsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMapGlyphsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapGlyphsRequestRequestTypeDef
+
+def get_value() -> GetMapGlyphsRequestRequestTypeDef:
+    return {
+        "FontStack": ...,
+        "FontUnicodeRange": ...,
+        "MapName": ...,
+    }
 ```
 
-Required fields:
-
-- `FontStack`: `str`
-- `FontUnicodeRange`: `str`
-- `MapName`: `str`
-
-<a id="getmapglyphsresponsetypedef"></a>
+```python title="Definition"
+class GetMapGlyphsRequestRequestTypeDef(TypedDict):
+    FontStack: str,
+    FontUnicodeRange: str,
+    MapName: str,
+```
 
 ## GetMapGlyphsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapGlyphsResponseTypeDef
+
+def get_value() -> GetMapGlyphsResponseTypeDef:
+    return {
+        "Blob": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMapGlyphsResponseTypeDef(TypedDict):
+    Blob: StreamingBody,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Blob`: `StreamingBody`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmapspritesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMapSpritesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapSpritesRequestRequestTypeDef
+
+def get_value() -> GetMapSpritesRequestRequestTypeDef:
+    return {
+        "FileName": ...,
+        "MapName": ...,
+    }
 ```
 
-Required fields:
-
-- `FileName`: `str`
-- `MapName`: `str`
-
-<a id="getmapspritesresponsetypedef"></a>
+```python title="Definition"
+class GetMapSpritesRequestRequestTypeDef(TypedDict):
+    FileName: str,
+    MapName: str,
+```
 
 ## GetMapSpritesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapSpritesResponseTypeDef
+
+def get_value() -> GetMapSpritesResponseTypeDef:
+    return {
+        "Blob": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMapSpritesResponseTypeDef(TypedDict):
+    Blob: StreamingBody,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Blob`: `StreamingBody`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmapstyledescriptorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMapStyleDescriptorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapStyleDescriptorRequestRequestTypeDef
+
+def get_value() -> GetMapStyleDescriptorRequestRequestTypeDef:
+    return {
+        "MapName": ...,
+    }
 ```
 
-Required fields:
-
-- `MapName`: `str`
-
-<a id="getmapstyledescriptorresponsetypedef"></a>
+```python title="Definition"
+class GetMapStyleDescriptorRequestRequestTypeDef(TypedDict):
+    MapName: str,
+```
 
 ## GetMapStyleDescriptorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapStyleDescriptorResponseTypeDef
+
+def get_value() -> GetMapStyleDescriptorResponseTypeDef:
+    return {
+        "Blob": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMapStyleDescriptorResponseTypeDef(TypedDict):
+    Blob: StreamingBody,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Blob`: `StreamingBody`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaptilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMapTileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapTileRequestRequestTypeDef
+
+def get_value() -> GetMapTileRequestRequestTypeDef:
+    return {
+        "MapName": ...,
+        "X": ...,
+        "Y": ...,
+        "Z": ...,
+    }
 ```
 
-Required fields:
-
-- `MapName`: `str`
-- `X`: `str`
-- `Y`: `str`
-- `Z`: `str`
-
-<a id="getmaptileresponsetypedef"></a>
+```python title="Definition"
+class GetMapTileRequestRequestTypeDef(TypedDict):
+    MapName: str,
+    X: str,
+    Y: str,
+    Z: str,
+```
 
 ## GetMapTileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import GetMapTileResponseTypeDef
+
+def get_value() -> GetMapTileResponseTypeDef:
+    return {
+        "Blob": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMapTileResponseTypeDef(TypedDict):
+    Blob: StreamingBody,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Blob`: `StreamingBody`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="leggeometrytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LegGeometryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import LegGeometryTypeDef
+
+def get_value() -> LegGeometryTypeDef:
+    return {
+        "LineString": ...,
+    }
 ```
 
-Optional fields:
-
-- `LineString`: `List`\[`List`\[`float`\]\]
-
-<a id="legtypedef"></a>
+```python title="Definition"
+class LegGeometryTypeDef(TypedDict):
+    LineString: NotRequired[List[List[float]]],
+```
 
 ## LegTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import LegTypeDef
+
+def get_value() -> LegTypeDef:
+    return {
+        "Distance": ...,
+        "DurationSeconds": ...,
+        "EndPosition": ...,
+        "StartPosition": ...,
+        "Steps": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LegTypeDef(TypedDict):
+    Distance: float,
+    DurationSeconds: float,
+    EndPosition: List[float],
+    StartPosition: List[float],
+    Steps: List[StepTypeDef],  # (2)
+    Geometry: NotRequired[LegGeometryTypeDef],  # (1)
+```
 
-- `Distance`: `float`
-- `DurationSeconds`: `float`
-- `EndPosition`: `List`\[`float`\]
-- `StartPosition`: `List`\[`float`\]
-- `Steps`: `List`\[[StepTypeDef](./type_defs.md#steptypedef)\]
+1. See [:material-code-braces: LegGeometryTypeDef](./type_defs.md#leggeometrytypedef) 
+2. See [:material-code-braces: StepTypeDef](./type_defs.md#steptypedef) 
+## ListDevicePositionsRequestListDevicePositionsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListDevicePositionsRequestListDevicePositionsPaginateTypeDef
 
-- `Geometry`: [LegGeometryTypeDef](./type_defs.md#leggeometrytypedef)
+def get_value() -> ListDevicePositionsRequestListDevicePositionsPaginateTypeDef:
+    return {
+        "TrackerName": ...,
+    }
+```
 
-<a id="listdevicepositionsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDevicePositionsRequestListDevicePositionsPaginateTypeDef(TypedDict):
+    TrackerName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDevicePositionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListDevicePositionsRequestRequestTypeDef
+
+def get_value() -> ListDevicePositionsRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `TrackerName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdevicepositionsresponseentrytypedef"></a>
+```python title="Definition"
+class ListDevicePositionsRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDevicePositionsResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListDevicePositionsResponseEntryTypeDef
+
+def get_value() -> ListDevicePositionsResponseEntryTypeDef:
+    return {
+        "DeviceId": ...,
+        "Position": ...,
+        "SampleTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicePositionsResponseEntryTypeDef(TypedDict):
+    DeviceId: str,
+    Position: List[float],
+    SampleTime: datetime,
+    Accuracy: NotRequired[PositionalAccuracyTypeDef],  # (1)
+    PositionProperties: NotRequired[Dict[str, str]],
+```
 
-- `DeviceId`: `str`
-- `Position`: `List`\[`float`\]
-- `SampleTime`: `datetime`
-
-Optional fields:
-
-- `Accuracy`:
-  [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
-- `PositionProperties`: `Dict`\[`str`, `str`\]
-
-<a id="listdevicepositionsresponsetypedef"></a>
-
+1. See [:material-code-braces: PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef) 
 ## ListDevicePositionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListDevicePositionsResponseTypeDef
+
+def get_value() -> ListDevicePositionsResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicePositionsResponseTypeDef(TypedDict):
+    Entries: List[ListDevicePositionsResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListDevicePositionsResponseEntryTypeDef](./type_defs.md#listdevicepositionsresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ListDevicePositionsResponseEntryTypeDef](./type_defs.md#listdevicepositionsresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef
 
-<a id="listgeofencecollectionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef
 
+def get_value() -> ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGeofenceCollectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListGeofenceCollectionsRequestRequestTypeDef
+
+def get_value() -> ListGeofenceCollectionsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listgeofencecollectionsresponseentrytypedef"></a>
+```python title="Definition"
+class ListGeofenceCollectionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListGeofenceCollectionsResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListGeofenceCollectionsResponseEntryTypeDef
+
+def get_value() -> ListGeofenceCollectionsResponseEntryTypeDef:
+    return {
+        "CollectionName": ...,
+        "CreateTime": ...,
+        "Description": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeofenceCollectionsResponseEntryTypeDef(TypedDict):
+    CollectionName: str,
+    CreateTime: datetime,
+    Description: str,
+    UpdateTime: datetime,
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    PricingPlanDataSource: NotRequired[str],
+```
 
-- `CollectionName`: `str`
-- `CreateTime`: `datetime`
-- `Description`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-
-<a id="listgeofencecollectionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## ListGeofenceCollectionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListGeofenceCollectionsResponseTypeDef
+
+def get_value() -> ListGeofenceCollectionsResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeofenceCollectionsResponseTypeDef(TypedDict):
+    Entries: List[ListGeofenceCollectionsResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListGeofenceCollectionsResponseEntryTypeDef](./type_defs.md#listgeofencecollectionsresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listgeofenceresponseentrytypedef"></a>
-
+1. See [:material-code-braces: ListGeofenceCollectionsResponseEntryTypeDef](./type_defs.md#listgeofencecollectionsresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListGeofenceResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListGeofenceResponseEntryTypeDef
+
+def get_value() -> ListGeofenceResponseEntryTypeDef:
+    return {
+        "CreateTime": ...,
+        "GeofenceId": ...,
+        "Geometry": ...,
+        "Status": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeofenceResponseEntryTypeDef(TypedDict):
+    CreateTime: datetime,
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+    Status: str,
+    UpdateTime: datetime,
+```
 
-- `CreateTime`: `datetime`
-- `GeofenceId`: `str`
-- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
-- `Status`: `str`
-- `UpdateTime`: `datetime`
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
+## ListGeofencesRequestListGeofencesPaginateTypeDef
 
-<a id="listgeofencesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListGeofencesRequestListGeofencesPaginateTypeDef
 
+def get_value() -> ListGeofencesRequestListGeofencesPaginateTypeDef:
+    return {
+        "CollectionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListGeofencesRequestListGeofencesPaginateTypeDef(TypedDict):
+    CollectionName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGeofencesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListGeofencesRequestRequestTypeDef
+
+def get_value() -> ListGeofencesRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listgeofencesresponsetypedef"></a>
+```python title="Definition"
+class ListGeofencesRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListGeofencesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListGeofencesResponseTypeDef
+
+def get_value() -> ListGeofencesResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeofencesResponseTypeDef(TypedDict):
+    Entries: List[ListGeofenceResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMapsRequestListMapsPaginateTypeDef
 
-<a id="listmapsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListMapsRequestListMapsPaginateTypeDef
 
+def get_value() -> ListMapsRequestListMapsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListMapsRequestListMapsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMapsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListMapsRequestRequestTypeDef
+
+def get_value() -> ListMapsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listmapsresponseentrytypedef"></a>
+```python title="Definition"
+class ListMapsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListMapsResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListMapsResponseEntryTypeDef
+
+def get_value() -> ListMapsResponseEntryTypeDef:
+    return {
+        "CreateTime": ...,
+        "DataSource": ...,
+        "Description": ...,
+        "MapName": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMapsResponseEntryTypeDef(TypedDict):
+    CreateTime: datetime,
+    DataSource: str,
+    Description: str,
+    MapName: str,
+    UpdateTime: datetime,
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+```
 
-- `CreateTime`: `datetime`
-- `DataSource`: `str`
-- `Description`: `str`
-- `MapName`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-
-<a id="listmapsresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## ListMapsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListMapsResponseTypeDef
+
+def get_value() -> ListMapsResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMapsResponseTypeDef(TypedDict):
+    Entries: List[ListMapsResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListMapsResponseEntryTypeDef](./type_defs.md#listmapsresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ListMapsResponseEntryTypeDef](./type_defs.md#listmapsresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef
 
-<a id="listplaceindexesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef
 
+def get_value() -> ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPlaceIndexesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListPlaceIndexesRequestRequestTypeDef
+
+def get_value() -> ListPlaceIndexesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listplaceindexesresponseentrytypedef"></a>
+```python title="Definition"
+class ListPlaceIndexesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListPlaceIndexesResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListPlaceIndexesResponseEntryTypeDef
+
+def get_value() -> ListPlaceIndexesResponseEntryTypeDef:
+    return {
+        "CreateTime": ...,
+        "DataSource": ...,
+        "Description": ...,
+        "IndexName": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlaceIndexesResponseEntryTypeDef(TypedDict):
+    CreateTime: datetime,
+    DataSource: str,
+    Description: str,
+    IndexName: str,
+    UpdateTime: datetime,
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+```
 
-- `CreateTime`: `datetime`
-- `DataSource`: `str`
-- `Description`: `str`
-- `IndexName`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-
-<a id="listplaceindexesresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## ListPlaceIndexesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListPlaceIndexesResponseTypeDef
+
+def get_value() -> ListPlaceIndexesResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlaceIndexesResponseTypeDef(TypedDict):
+    Entries: List[ListPlaceIndexesResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListPlaceIndexesResponseEntryTypeDef](./type_defs.md#listplaceindexesresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ListPlaceIndexesResponseEntryTypeDef](./type_defs.md#listplaceindexesresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef
 
-<a id="listroutecalculatorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef
 
+def get_value() -> ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRouteCalculatorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListRouteCalculatorsRequestRequestTypeDef
+
+def get_value() -> ListRouteCalculatorsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listroutecalculatorsresponseentrytypedef"></a>
+```python title="Definition"
+class ListRouteCalculatorsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListRouteCalculatorsResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListRouteCalculatorsResponseEntryTypeDef
+
+def get_value() -> ListRouteCalculatorsResponseEntryTypeDef:
+    return {
+        "CalculatorName": ...,
+        "CreateTime": ...,
+        "DataSource": ...,
+        "Description": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRouteCalculatorsResponseEntryTypeDef(TypedDict):
+    CalculatorName: str,
+    CreateTime: datetime,
+    DataSource: str,
+    Description: str,
+    UpdateTime: datetime,
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+```
 
-- `CalculatorName`: `str`
-- `CreateTime`: `datetime`
-- `DataSource`: `str`
-- `Description`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-
-<a id="listroutecalculatorsresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## ListRouteCalculatorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListRouteCalculatorsResponseTypeDef
+
+def get_value() -> ListRouteCalculatorsResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRouteCalculatorsResponseTypeDef(TypedDict):
+    Entries: List[ListRouteCalculatorsResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListRouteCalculatorsResponseEntryTypeDef](./type_defs.md#listroutecalculatorsresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ListRouteCalculatorsResponseEntryTypeDef](./type_defs.md#listroutecalculatorsresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef
 
-<a id="listtrackerconsumersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef
 
+def get_value() -> ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef:
+    return {
+        "TrackerName": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef(TypedDict):
+    TrackerName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTrackerConsumersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTrackerConsumersRequestRequestTypeDef
+
+def get_value() -> ListTrackerConsumersRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
-
-- `TrackerName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtrackerconsumersresponsetypedef"></a>
+```python title="Definition"
+class ListTrackerConsumersRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListTrackerConsumersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTrackerConsumersResponseTypeDef
+
+def get_value() -> ListTrackerConsumersResponseTypeDef:
+    return {
+        "ConsumerArns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrackerConsumersResponseTypeDef(TypedDict):
+    ConsumerArns: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConsumerArns`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrackersRequestListTrackersPaginateTypeDef
 
-<a id="listtrackersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListTrackersRequestListTrackersPaginateTypeDef
 
+def get_value() -> ListTrackersRequestListTrackersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrackersRequestListTrackersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTrackersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTrackersRequestRequestTypeDef
+
+def get_value() -> ListTrackersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtrackersresponseentrytypedef"></a>
+```python title="Definition"
+class ListTrackersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListTrackersResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTrackersResponseEntryTypeDef
+
+def get_value() -> ListTrackersResponseEntryTypeDef:
+    return {
+        "CreateTime": ...,
+        "Description": ...,
+        "TrackerName": ...,
+        "UpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrackersResponseEntryTypeDef(TypedDict):
+    CreateTime: datetime,
+    Description: str,
+    TrackerName: str,
+    UpdateTime: datetime,
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    PricingPlanDataSource: NotRequired[str],
+```
 
-- `CreateTime`: `datetime`
-- `Description`: `str`
-- `TrackerName`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-
-<a id="listtrackersresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## ListTrackersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ListTrackersResponseTypeDef
+
+def get_value() -> ListTrackersResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrackersResponseTypeDef(TypedDict):
+    Entries: List[ListTrackersResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entries`:
-  `List`\[[ListTrackersResponseEntryTypeDef](./type_defs.md#listtrackersresponseentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mapconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ListTrackersResponseEntryTypeDef](./type_defs.md#listtrackersresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MapConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import MapConfigurationTypeDef
+
+def get_value() -> MapConfigurationTypeDef:
+    return {
+        "Style": ...,
+    }
 ```
 
-Required fields:
-
-- `Style`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class MapConfigurationTypeDef(TypedDict):
+    Style: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="placegeometrytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlaceGeometryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import PlaceGeometryTypeDef
+
+def get_value() -> PlaceGeometryTypeDef:
+    return {
+        "Point": ...,
+    }
 ```
 
-Optional fields:
-
-- `Point`: `List`\[`float`\]
-
-<a id="placetypedef"></a>
+```python title="Definition"
+class PlaceGeometryTypeDef(TypedDict):
+    Point: NotRequired[List[float]],
+```
 
 ## PlaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import PlaceTypeDef
+
+def get_value() -> PlaceTypeDef:
+    return {
+        "Geometry": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PlaceTypeDef(TypedDict):
+    Geometry: PlaceGeometryTypeDef,  # (1)
+    AddressNumber: NotRequired[str],
+    Country: NotRequired[str],
+    Interpolated: NotRequired[bool],
+    Label: NotRequired[str],
+    Municipality: NotRequired[str],
+    Neighborhood: NotRequired[str],
+    PostalCode: NotRequired[str],
+    Region: NotRequired[str],
+    Street: NotRequired[str],
+    SubRegion: NotRequired[str],
+    TimeZone: NotRequired[TimeZoneTypeDef],  # (2)
+```
 
-- `Geometry`: [PlaceGeometryTypeDef](./type_defs.md#placegeometrytypedef)
-
-Optional fields:
-
-- `AddressNumber`: `str`
-- `Country`: `str`
-- `Interpolated`: `bool`
-- `Label`: `str`
-- `Municipality`: `str`
-- `Neighborhood`: `str`
-- `PostalCode`: `str`
-- `Region`: `str`
-- `Street`: `str`
-- `SubRegion`: `str`
-- `TimeZone`: [TimeZoneTypeDef](./type_defs.md#timezonetypedef)
-
-<a id="positionalaccuracytypedef"></a>
-
+1. See [:material-code-braces: PlaceGeometryTypeDef](./type_defs.md#placegeometrytypedef) 
+2. See [:material-code-braces: TimeZoneTypeDef](./type_defs.md#timezonetypedef) 
 ## PositionalAccuracyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import PositionalAccuracyTypeDef
+
+def get_value() -> PositionalAccuracyTypeDef:
+    return {
+        "Horizontal": ...,
+    }
 ```
 
-Required fields:
-
-- `Horizontal`: `float`
-
-<a id="putgeofencerequestrequesttypedef"></a>
+```python title="Definition"
+class PositionalAccuracyTypeDef(TypedDict):
+    Horizontal: float,
+```
 
 ## PutGeofenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import PutGeofenceRequestRequestTypeDef
+
+def get_value() -> PutGeofenceRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "GeofenceId": ...,
+        "Geometry": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutGeofenceRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+```
 
-- `CollectionName`: `str`
-- `GeofenceId`: `str`
-- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
-
-<a id="putgeofenceresponsetypedef"></a>
-
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
 ## PutGeofenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import PutGeofenceResponseTypeDef
+
+def get_value() -> PutGeofenceResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "GeofenceId": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutGeofenceResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    GeofenceId: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CreateTime`: `datetime`
-- `GeofenceId`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="routematrixentryerrortypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RouteMatrixEntryErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import RouteMatrixEntryErrorTypeDef
+
+def get_value() -> RouteMatrixEntryErrorTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RouteMatrixEntryErrorTypeDef(TypedDict):
+    Code: RouteMatrixErrorCodeType,  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`: [RouteMatrixErrorCodeType](./literals.md#routematrixerrorcodetype)
-
-Optional fields:
-
-- `Message`: `str`
-
-<a id="routematrixentrytypedef"></a>
-
+1. See [:material-code-brackets: RouteMatrixErrorCodeType](./literals.md#routematrixerrorcodetype) 
 ## RouteMatrixEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import RouteMatrixEntryTypeDef
+
+def get_value() -> RouteMatrixEntryTypeDef:
+    return {
+        "Distance": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RouteMatrixEntryTypeDef(TypedDict):
+    Distance: NotRequired[float],
+    DurationSeconds: NotRequired[float],
+    Error: NotRequired[RouteMatrixEntryErrorTypeDef],  # (1)
+```
 
-- `Distance`: `float`
-- `DurationSeconds`: `float`
-- `Error`:
-  [RouteMatrixEntryErrorTypeDef](./type_defs.md#routematrixentryerrortypedef)
-
-<a id="searchforpositionresulttypedef"></a>
-
+1. See [:material-code-braces: RouteMatrixEntryErrorTypeDef](./type_defs.md#routematrixentryerrortypedef) 
 ## SearchForPositionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchForPositionResultTypeDef
+
+def get_value() -> SearchForPositionResultTypeDef:
+    return {
+        "Distance": ...,
+        "Place": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchForPositionResultTypeDef(TypedDict):
+    Distance: float,
+    Place: PlaceTypeDef,  # (1)
+```
 
-- `Distance`: `float`
-- `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
-
-<a id="searchforsuggestionsresulttypedef"></a>
-
+1. See [:material-code-braces: PlaceTypeDef](./type_defs.md#placetypedef) 
 ## SearchForSuggestionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchForSuggestionsResultTypeDef
+
+def get_value() -> SearchForSuggestionsResultTypeDef:
+    return {
+        "Text": ...,
+    }
 ```
 
-Required fields:
-
-- `Text`: `str`
-
-<a id="searchfortextresulttypedef"></a>
+```python title="Definition"
+class SearchForSuggestionsResultTypeDef(TypedDict):
+    Text: str,
+```
 
 ## SearchForTextResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchForTextResultTypeDef
+
+def get_value() -> SearchForTextResultTypeDef:
+    return {
+        "Place": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchForTextResultTypeDef(TypedDict):
+    Place: PlaceTypeDef,  # (1)
+    Distance: NotRequired[float],
+    Relevance: NotRequired[float],
+```
 
-- `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
-
-Optional fields:
-
-- `Distance`: `float`
-- `Relevance`: `float`
-
-<a id="searchplaceindexforpositionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PlaceTypeDef](./type_defs.md#placetypedef) 
 ## SearchPlaceIndexForPositionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionRequestRequestTypeDef
+
+def get_value() -> SearchPlaceIndexForPositionRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+        "Position": ...,
+    }
 ```
 
-Required fields:
-
-- `IndexName`: `str`
-- `Position`: `Sequence`\[`float`\]
-
-Optional fields:
-
-- `Language`: `str`
-- `MaxResults`: `int`
-
-<a id="searchplaceindexforpositionresponsetypedef"></a>
+```python title="Definition"
+class SearchPlaceIndexForPositionRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+    Position: Sequence[float],
+    Language: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## SearchPlaceIndexForPositionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionResponseTypeDef
+
+def get_value() -> SearchPlaceIndexForPositionResponseTypeDef:
+    return {
+        "Results": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchPlaceIndexForPositionResponseTypeDef(TypedDict):
+    Results: List[SearchForPositionResultTypeDef],  # (1)
+    Summary: SearchPlaceIndexForPositionSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Results`:
-  `List`\[[SearchForPositionResultTypeDef](./type_defs.md#searchforpositionresulttypedef)\]
-- `Summary`:
-  [SearchPlaceIndexForPositionSummaryTypeDef](./type_defs.md#searchplaceindexforpositionsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchplaceindexforpositionsummarytypedef"></a>
-
+1. See [:material-code-braces: SearchForPositionResultTypeDef](./type_defs.md#searchforpositionresulttypedef) 
+2. See [:material-code-braces: SearchPlaceIndexForPositionSummaryTypeDef](./type_defs.md#searchplaceindexforpositionsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchPlaceIndexForPositionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionSummaryTypeDef
+
+def get_value() -> SearchPlaceIndexForPositionSummaryTypeDef:
+    return {
+        "DataSource": ...,
+        "Position": ...,
+    }
 ```
 
-Required fields:
-
-- `DataSource`: `str`
-- `Position`: `List`\[`float`\]
-
-Optional fields:
-
-- `Language`: `str`
-- `MaxResults`: `int`
-
-<a id="searchplaceindexforsuggestionsrequestrequesttypedef"></a>
+```python title="Definition"
+class SearchPlaceIndexForPositionSummaryTypeDef(TypedDict):
+    DataSource: str,
+    Position: List[float],
+    Language: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## SearchPlaceIndexForSuggestionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForSuggestionsRequestRequestTypeDef
+
+def get_value() -> SearchPlaceIndexForSuggestionsRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+        "Text": ...,
+    }
 ```
 
-Required fields:
-
-- `IndexName`: `str`
-- `Text`: `str`
-
-Optional fields:
-
-- `BiasPosition`: `Sequence`\[`float`\]
-- `FilterBBox`: `Sequence`\[`float`\]
-- `FilterCountries`: `Sequence`\[`str`\]
-- `Language`: `str`
-- `MaxResults`: `int`
-
-<a id="searchplaceindexforsuggestionsresponsetypedef"></a>
+```python title="Definition"
+class SearchPlaceIndexForSuggestionsRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+    Text: str,
+    BiasPosition: NotRequired[Sequence[float]],
+    FilterBBox: NotRequired[Sequence[float]],
+    FilterCountries: NotRequired[Sequence[str]],
+    Language: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## SearchPlaceIndexForSuggestionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForSuggestionsResponseTypeDef
+
+def get_value() -> SearchPlaceIndexForSuggestionsResponseTypeDef:
+    return {
+        "Results": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchPlaceIndexForSuggestionsResponseTypeDef(TypedDict):
+    Results: List[SearchForSuggestionsResultTypeDef],  # (1)
+    Summary: SearchPlaceIndexForSuggestionsSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Results`:
-  `List`\[[SearchForSuggestionsResultTypeDef](./type_defs.md#searchforsuggestionsresulttypedef)\]
-- `Summary`:
-  [SearchPlaceIndexForSuggestionsSummaryTypeDef](./type_defs.md#searchplaceindexforsuggestionssummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchplaceindexforsuggestionssummarytypedef"></a>
-
+1. See [:material-code-braces: SearchForSuggestionsResultTypeDef](./type_defs.md#searchforsuggestionsresulttypedef) 
+2. See [:material-code-braces: SearchPlaceIndexForSuggestionsSummaryTypeDef](./type_defs.md#searchplaceindexforsuggestionssummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchPlaceIndexForSuggestionsSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForSuggestionsSummaryTypeDef
+
+def get_value() -> SearchPlaceIndexForSuggestionsSummaryTypeDef:
+    return {
+        "DataSource": ...,
+        "Text": ...,
+    }
 ```
 
-Required fields:
-
-- `DataSource`: `str`
-- `Text`: `str`
-
-Optional fields:
-
-- `BiasPosition`: `List`\[`float`\]
-- `FilterBBox`: `List`\[`float`\]
-- `FilterCountries`: `List`\[`str`\]
-- `Language`: `str`
-- `MaxResults`: `int`
-
-<a id="searchplaceindexfortextrequestrequesttypedef"></a>
+```python title="Definition"
+class SearchPlaceIndexForSuggestionsSummaryTypeDef(TypedDict):
+    DataSource: str,
+    Text: str,
+    BiasPosition: NotRequired[List[float]],
+    FilterBBox: NotRequired[List[float]],
+    FilterCountries: NotRequired[List[str]],
+    Language: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## SearchPlaceIndexForTextRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForTextRequestRequestTypeDef
+
+def get_value() -> SearchPlaceIndexForTextRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+        "Text": ...,
+    }
 ```
 
-Required fields:
-
-- `IndexName`: `str`
-- `Text`: `str`
-
-Optional fields:
-
-- `BiasPosition`: `Sequence`\[`float`\]
-- `FilterBBox`: `Sequence`\[`float`\]
-- `FilterCountries`: `Sequence`\[`str`\]
-- `Language`: `str`
-- `MaxResults`: `int`
-
-<a id="searchplaceindexfortextresponsetypedef"></a>
+```python title="Definition"
+class SearchPlaceIndexForTextRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+    Text: str,
+    BiasPosition: NotRequired[Sequence[float]],
+    FilterBBox: NotRequired[Sequence[float]],
+    FilterCountries: NotRequired[Sequence[str]],
+    Language: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## SearchPlaceIndexForTextResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForTextResponseTypeDef
+
+def get_value() -> SearchPlaceIndexForTextResponseTypeDef:
+    return {
+        "Results": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchPlaceIndexForTextResponseTypeDef(TypedDict):
+    Results: List[SearchForTextResultTypeDef],  # (1)
+    Summary: SearchPlaceIndexForTextSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Results`:
-  `List`\[[SearchForTextResultTypeDef](./type_defs.md#searchfortextresulttypedef)\]
-- `Summary`:
-  [SearchPlaceIndexForTextSummaryTypeDef](./type_defs.md#searchplaceindexfortextsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchplaceindexfortextsummarytypedef"></a>
-
+1. See [:material-code-braces: SearchForTextResultTypeDef](./type_defs.md#searchfortextresulttypedef) 
+2. See [:material-code-braces: SearchPlaceIndexForTextSummaryTypeDef](./type_defs.md#searchplaceindexfortextsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchPlaceIndexForTextSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import SearchPlaceIndexForTextSummaryTypeDef
+
+def get_value() -> SearchPlaceIndexForTextSummaryTypeDef:
+    return {
+        "DataSource": ...,
+        "Text": ...,
+    }
 ```
 
-Required fields:
-
-- `DataSource`: `str`
-- `Text`: `str`
-
-Optional fields:
-
-- `BiasPosition`: `List`\[`float`\]
-- `FilterBBox`: `List`\[`float`\]
-- `FilterCountries`: `List`\[`str`\]
-- `Language`: `str`
-- `MaxResults`: `int`
-- `ResultBBox`: `List`\[`float`\]
-
-<a id="steptypedef"></a>
+```python title="Definition"
+class SearchPlaceIndexForTextSummaryTypeDef(TypedDict):
+    DataSource: str,
+    Text: str,
+    BiasPosition: NotRequired[List[float]],
+    FilterBBox: NotRequired[List[float]],
+    FilterCountries: NotRequired[List[str]],
+    Language: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ResultBBox: NotRequired[List[float]],
+```
 
 ## StepTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import StepTypeDef
+
+def get_value() -> StepTypeDef:
+    return {
+        "Distance": ...,
+        "DurationSeconds": ...,
+        "EndPosition": ...,
+        "StartPosition": ...,
+    }
 ```
 
-Required fields:
-
-- `Distance`: `float`
-- `DurationSeconds`: `float`
-- `EndPosition`: `List`\[`float`\]
-- `StartPosition`: `List`\[`float`\]
-
-Optional fields:
-
-- `GeometryOffset`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StepTypeDef(TypedDict):
+    Distance: float,
+    DurationSeconds: float,
+    EndPosition: List[float],
+    StartPosition: List[float],
+    GeometryOffset: NotRequired[int],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="timezonetypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TimeZoneTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import TimeZoneTypeDef
+
+def get_value() -> TimeZoneTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Offset`: `int`
-
-<a id="truckdimensionstypedef"></a>
+```python title="Definition"
+class TimeZoneTypeDef(TypedDict):
+    Name: str,
+    Offset: NotRequired[int],
+```
 
 ## TruckDimensionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import TruckDimensionsTypeDef
+
+def get_value() -> TruckDimensionsTypeDef:
+    return {
+        "Height": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TruckDimensionsTypeDef(TypedDict):
+    Height: NotRequired[float],
+    Length: NotRequired[float],
+    Unit: NotRequired[DimensionUnitType],  # (1)
+    Width: NotRequired[float],
+```
 
-- `Height`: `float`
-- `Length`: `float`
-- `Unit`: [DimensionUnitType](./literals.md#dimensionunittype)
-- `Width`: `float`
-
-<a id="truckweighttypedef"></a>
-
+1. See [:material-code-brackets: DimensionUnitType](./literals.md#dimensionunittype) 
 ## TruckWeightTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import TruckWeightTypeDef
+
+def get_value() -> TruckWeightTypeDef:
+    return {
+        "Total": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TruckWeightTypeDef(TypedDict):
+    Total: NotRequired[float],
+    Unit: NotRequired[VehicleWeightUnitType],  # (1)
+```
 
-- `Total`: `float`
-- `Unit`: [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VehicleWeightUnitType](./literals.md#vehicleweightunittype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updategeofencecollectionrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateGeofenceCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateGeofenceCollectionRequestRequestTypeDef
+
+def get_value() -> UpdateGeofenceCollectionRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGeofenceCollectionRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    PricingPlanDataSource: NotRequired[str],
+```
 
-- `CollectionName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-
-<a id="updategeofencecollectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## UpdateGeofenceCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateGeofenceCollectionResponseTypeDef
+
+def get_value() -> UpdateGeofenceCollectionResponseTypeDef:
+    return {
+        "CollectionArn": ...,
+        "CollectionName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGeofenceCollectionResponseTypeDef(TypedDict):
+    CollectionArn: str,
+    CollectionName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CollectionArn`: `str`
-- `CollectionName`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemaprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMapRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateMapRequestRequestTypeDef
+
+def get_value() -> UpdateMapRequestRequestTypeDef:
+    return {
+        "MapName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMapRequestRequestTypeDef(TypedDict):
+    MapName: str,
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+```
 
-- `MapName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-
-<a id="updatemapresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## UpdateMapResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateMapResponseTypeDef
+
+def get_value() -> UpdateMapResponseTypeDef:
+    return {
+        "MapArn": ...,
+        "MapName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMapResponseTypeDef(TypedDict):
+    MapArn: str,
+    MapName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MapArn`: `str`
-- `MapName`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateplaceindexrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePlaceIndexRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdatePlaceIndexRequestRequestTypeDef
+
+def get_value() -> UpdatePlaceIndexRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePlaceIndexRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+    DataSourceConfiguration: NotRequired[DataSourceConfigurationTypeDef],  # (1)
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (2)
+```
 
-- `IndexName`: `str`
-
-Optional fields:
-
-- `DataSourceConfiguration`:
-  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-
-<a id="updateplaceindexresponsetypedef"></a>
-
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## UpdatePlaceIndexResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdatePlaceIndexResponseTypeDef
+
+def get_value() -> UpdatePlaceIndexResponseTypeDef:
+    return {
+        "IndexArn": ...,
+        "IndexName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePlaceIndexResponseTypeDef(TypedDict):
+    IndexArn: str,
+    IndexName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IndexArn`: `str`
-- `IndexName`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateroutecalculatorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRouteCalculatorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateRouteCalculatorRequestRequestTypeDef
+
+def get_value() -> UpdateRouteCalculatorRequestRequestTypeDef:
+    return {
+        "CalculatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRouteCalculatorRequestRequestTypeDef(TypedDict):
+    CalculatorName: str,
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+```
 
-- `CalculatorName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-
-<a id="updateroutecalculatorresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## UpdateRouteCalculatorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateRouteCalculatorResponseTypeDef
+
+def get_value() -> UpdateRouteCalculatorResponseTypeDef:
+    return {
+        "CalculatorArn": ...,
+        "CalculatorName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRouteCalculatorResponseTypeDef(TypedDict):
+    CalculatorArn: str,
+    CalculatorName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CalculatorArn`: `str`
-- `CalculatorName`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetrackerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateTrackerRequestRequestTypeDef
+
+def get_value() -> UpdateTrackerRequestRequestTypeDef:
+    return {
+        "TrackerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTrackerRequestRequestTypeDef(TypedDict):
+    TrackerName: str,
+    Description: NotRequired[str],
+    PositionFiltering: NotRequired[PositionFilteringType],  # (1)
+    PricingPlan: NotRequired[PricingPlanType],  # (2)
+    PricingPlanDataSource: NotRequired[str],
+```
 
-- `TrackerName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PositionFiltering`:
-  [PositionFilteringType](./literals.md#positionfilteringtype)
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `PricingPlanDataSource`: `str`
-
-<a id="updatetrackerresponsetypedef"></a>
-
+1. See [:material-code-brackets: PositionFilteringType](./literals.md#positionfilteringtype) 
+2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 ## UpdateTrackerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_location.type_defs import UpdateTrackerResponseTypeDef
+
+def get_value() -> UpdateTrackerResponseTypeDef:
+    return {
+        "TrackerArn": ...,
+        "TrackerName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTrackerResponseTypeDef(TypedDict):
+    TrackerArn: str,
+    TrackerName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TrackerArn`: `str`
-- `TrackerName`: `str`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

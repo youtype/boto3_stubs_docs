@@ -1,33 +1,18 @@
-<a id="kinesisvideomediaclient-for-boto3-kinesisvideomedia-module"></a>
+# KinesisVideoMediaClient
 
-# KinesisVideoMediaClient for boto3 KinesisVideoMedia module
+> [Index](../README.md) > [KinesisVideoMedia](./README.md) > KinesisVideoMediaClient
 
-> [Index](../README.md) > [KinesisVideoMedia](./README.md) >
-> KinesisVideoMediaClient
+!!! note ""
 
-Auto-generated documentation for
-[KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
-type annotations stubs module
-[mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
-
-- [KinesisVideoMediaClient for boto3 KinesisVideoMedia module](#kinesisvideomediaclient-for-boto3-kinesisvideomedia-module)
-  - [KinesisVideoMediaClient](#kinesisvideomediaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_media](#get_media)
-
-<a id="kinesisvideomediaclient"></a>
+    Auto-generated documentation for [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
+    type annotations stubs module [mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 ## KinesisVideoMediaClient
 
-Type annotations for `boto3.client("kinesis-video-media")`
+Type annotations and code completion for `#!python boto3.client("kinesis-video-media")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kinesis_video_media.client import KinesisVideoMediaClient
 
@@ -35,107 +20,107 @@ def get_kinesis-video-media_client() -> KinesisVideoMediaClient:
     return Session().client("kinesis-video-media")
 ```
 
-Boto3 documentation:
-[KinesisVideoMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kinesis-video-media").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kinesis-video-media")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ClientLimitExceededException,
+    client.ConnectionLimitExceededException,
+    client.InvalidArgumentException,
+    client.InvalidEndpointException,
+    client.NotAuthorizedException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kinesis_video_media.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ClientLimitExceededException`
-- `Exceptions.ConnectionLimitExceededException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.InvalidEndpointException`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-KinesisVideoMediaClient exceptions.
-
-Type annotations for `boto3.client("kinesis-video-media").exceptions` method.
-
-Boto3 documentation:
-[KinesisVideoMedia.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("kinesis-video-media").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-media").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate)
 
-Boto3 documentation:
-[KinesisVideoMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("kinesis-video-media").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-media").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url)
 
-Boto3 documentation:
-[KinesisVideoMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_media"></a>
-
-### get_media
+### get\_media
 
 Use this API to retrieve media content from a Kinesis video stream.
 
-Type annotations for `boto3.client("kinesis-video-media").get_media` method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-media").get_media` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
 
-Boto3 documentation:
-[KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
+```python title="Method definition"
+def get_media(
+    self,
+    *,
+    StartSelector: StartSelectorTypeDef,  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> GetMediaOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetMediaInputRequestTypeDef](./type_defs.md#getmediainputrequesttypedef).
+1. See [:material-code-braces: StartSelectorTypeDef](./type_defs.md#startselectortypedef) 
+2. See [:material-code-braces: GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StartSelector`: [StartSelectorTypeDef](./type_defs.md#startselectortypedef)
-  *(required)*
-- `StreamName`: `str`
-- `StreamARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetMediaInputRequestTypeDef = {  # (1)
+    "StartSelector": ...,
+}
 
-Returns [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef).
+parent.get_media(**kwargs)
+```
+
+1. See [:material-code-braces: GetMediaInputRequestTypeDef](./type_defs.md#getmediainputrequesttypedef) 
+
+
+
+

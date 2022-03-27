@@ -1,34 +1,18 @@
-<a id="waiters-for-boto3-cloudformation-module"></a>
-
-# Waiters for boto3 CloudFormation module
+# Waiters
 
 > [Index](../README.md) > [CloudFormation](./README.md) > Waiters
 
-Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module
-[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+!!! note ""
 
-- [Waiters for boto3 CloudFormation module](#waiters-for-boto3-cloudformation-module)
-  - [ChangeSetCreateCompleteWaiter](#changesetcreatecompletewaiter)
-  - [StackCreateCompleteWaiter](#stackcreatecompletewaiter)
-  - [StackDeleteCompleteWaiter](#stackdeletecompletewaiter)
-  - [StackExistsWaiter](#stackexistswaiter)
-  - [StackImportCompleteWaiter](#stackimportcompletewaiter)
-  - [StackRollbackCompleteWaiter](#stackrollbackcompletewaiter)
-  - [StackUpdateCompleteWaiter](#stackupdatecompletewaiter)
-  - [TypeRegistrationCompleteWaiter](#typeregistrationcompletewaiter)
-
-<a id="changesetcreatecompletewaiter"></a>
+    Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+    type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ## ChangeSetCreateCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("change_set_create_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("change_set_create_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.ChangeSetCreateComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import ChangeSetCreateCompleteWaiter
@@ -37,26 +21,41 @@ def get_change_set_create_complete_waiter() -> ChangeSetCreateCompleteWaiter:
     return Session().client("cloudformation").get_waiter("change_set_create_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.change_set_create_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.ChangeSetCreateComplete)
 
-Arguments for `ChangeSetCreateCompleteWaiter.wait` method:
+### wait
 
-- `ChangeSetName`: `str` *(required)*
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ChangeSetCreateCompleteWaiter.wait` method.
 
-<a id="stackcreatecompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ChangeSetName: str,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef = {  # (1)
+    "ChangeSetName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef](./type_defs.md#describechangesetinputchangesetcreatecompletewaittypedef) 
 ## StackCreateCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("stack_create_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("stack_create_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackCreateComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackCreateCompleteWaiter
@@ -65,25 +64,40 @@ def get_stack_create_complete_waiter() -> StackCreateCompleteWaiter:
     return Session().client("cloudformation").get_waiter("stack_create_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.stack_create_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackCreateComplete)
 
-Arguments for `StackCreateCompleteWaiter.wait` method:
+### wait
 
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StackCreateCompleteWaiter.wait` method.
 
-<a id="stackdeletecompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputStackCreateCompleteWaitTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksInputStackCreateCompleteWaitTypeDef](./type_defs.md#describestacksinputstackcreatecompletewaittypedef) 
 ## StackDeleteCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("stack_delete_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("stack_delete_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackDeleteComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackDeleteCompleteWaiter
@@ -92,25 +106,40 @@ def get_stack_delete_complete_waiter() -> StackDeleteCompleteWaiter:
     return Session().client("cloudformation").get_waiter("stack_delete_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.stack_delete_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackDeleteComplete)
 
-Arguments for `StackDeleteCompleteWaiter.wait` method:
+### wait
 
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StackDeleteCompleteWaiter.wait` method.
 
-<a id="stackexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputStackDeleteCompleteWaitTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksInputStackDeleteCompleteWaitTypeDef](./type_defs.md#describestacksinputstackdeletecompletewaittypedef) 
 ## StackExistsWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("stack_exists")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("stack_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackExistsWaiter
@@ -119,25 +148,40 @@ def get_stack_exists_waiter() -> StackExistsWaiter:
     return Session().client("cloudformation").get_waiter("stack_exists")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.stack_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackExists)
 
-Arguments for `StackExistsWaiter.wait` method:
+### wait
 
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StackExistsWaiter.wait` method.
 
-<a id="stackimportcompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputStackExistsWaitTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksInputStackExistsWaitTypeDef](./type_defs.md#describestacksinputstackexistswaittypedef) 
 ## StackImportCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("stack_import_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("stack_import_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackImportComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackImportCompleteWaiter
@@ -146,25 +190,40 @@ def get_stack_import_complete_waiter() -> StackImportCompleteWaiter:
     return Session().client("cloudformation").get_waiter("stack_import_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.stack_import_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackImportComplete)
 
-Arguments for `StackImportCompleteWaiter.wait` method:
+### wait
 
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StackImportCompleteWaiter.wait` method.
 
-<a id="stackrollbackcompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputStackImportCompleteWaitTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksInputStackImportCompleteWaitTypeDef](./type_defs.md#describestacksinputstackimportcompletewaittypedef) 
 ## StackRollbackCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("stack_rollback_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("stack_rollback_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackRollbackComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackRollbackCompleteWaiter
@@ -173,25 +232,40 @@ def get_stack_rollback_complete_waiter() -> StackRollbackCompleteWaiter:
     return Session().client("cloudformation").get_waiter("stack_rollback_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.stack_rollback_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackRollbackComplete)
 
-Arguments for `StackRollbackCompleteWaiter.wait` method:
+### wait
 
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StackRollbackCompleteWaiter.wait` method.
 
-<a id="stackupdatecompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputStackRollbackCompleteWaitTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksInputStackRollbackCompleteWaitTypeDef](./type_defs.md#describestacksinputstackrollbackcompletewaittypedef) 
 ## StackUpdateCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("stack_update_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("stack_update_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackUpdateComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackUpdateCompleteWaiter
@@ -200,25 +274,40 @@ def get_stack_update_complete_waiter() -> StackUpdateCompleteWaiter:
     return Session().client("cloudformation").get_waiter("stack_update_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.stack_update_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.StackUpdateComplete)
 
-Arguments for `StackUpdateCompleteWaiter.wait` method:
+### wait
 
-- `StackName`: `str`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StackUpdateCompleteWaiter.wait` method.
 
-<a id="typeregistrationcompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputStackUpdateCompleteWaitTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksInputStackUpdateCompleteWaitTypeDef](./type_defs.md#describestacksinputstackupdatecompletewaittypedef) 
 ## TypeRegistrationCompleteWaiter
 
-Type annotations for
-`boto3.client("cloudformation").get_waiter("type_registration_complete")`.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter("type_registration_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.TypeRegistrationComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import TypeRegistrationCompleteWaiter
@@ -227,10 +316,30 @@ def get_type_registration_complete_waiter() -> TypeRegistrationCompleteWaiter:
     return Session().client("cloudformation").get_waiter("type_registration_complete")
 ```
 
-Boto3 documentation:
-[CloudFormation.Waiter.type_registration_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Waiter.TypeRegistrationComplete)
 
-Arguments for `TypeRegistrationCompleteWaiter.wait` method:
+### wait
 
-- `RegistrationToken`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python TypeRegistrationCompleteWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    RegistrationToken: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef = {  # (1)
+    "RegistrationToken": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef](./type_defs.md#describetyperegistrationinputtyperegistrationcompletewaittypedef) 

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-fms-module"></a>
-
-# Type annotations for boto3 FMS module
+#  FMS module
 
 > [Index](../README.md) > FMS
 
-Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module
-[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
+!!! note ""
 
-- [Type annotations for boto3 FMS module](#type-annotations-for-boto3-fms-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [FMSClient](#fmsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+    type annotations stubs module [mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `FMS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[fms]'
 python -m pip install mypy-boto3-fms
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,84 +42,37 @@ python -m pip install mypy-boto3-fms
 python -m pip uninstall -y mypy-boto3-fms
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="fmsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## FMSClient
 
-Type annotations for `boto3.client("fms")` as [FMSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("fms")` as [FMSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_fms.client import FMSClient
+
+def get_client() -> FMSClient:
+    return Session().cleint("fms")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_admin_account](./client.md#associate_admin_account)
-- [can_paginate](./client.md#can_paginate)
-- [delete_apps_list](./client.md#delete_apps_list)
-- [delete_notification_channel](./client.md#delete_notification_channel)
-- [delete_policy](./client.md#delete_policy)
-- [delete_protocols_list](./client.md#delete_protocols_list)
-- [disassociate_admin_account](./client.md#disassociate_admin_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_admin_account](./client.md#get_admin_account)
-- [get_apps_list](./client.md#get_apps_list)
-- [get_compliance_detail](./client.md#get_compliance_detail)
-- [get_notification_channel](./client.md#get_notification_channel)
-- [get_paginator](./client.md#get_paginator)
-- [get_policy](./client.md#get_policy)
-- [get_protection_status](./client.md#get_protection_status)
-- [get_protocols_list](./client.md#get_protocols_list)
-- [get_violation_details](./client.md#get_violation_details)
-- [list_apps_lists](./client.md#list_apps_lists)
-- [list_compliance_status](./client.md#list_compliance_status)
-- [list_member_accounts](./client.md#list_member_accounts)
-- [list_policies](./client.md#list_policies)
-- [list_protocols_lists](./client.md#list_protocols_lists)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_apps_list](./client.md#put_apps_list)
-- [put_notification_channel](./client.md#put_notification_channel)
-- [put_policy](./client.md#put_policy)
-- [put_protocols_list](./client.md#put_protocols_list)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-FMSClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalErrorException
-- InvalidInputException
-- InvalidOperationException
-- InvalidTypeException
-- LimitExceededException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("fms").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("fms").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_fms.paginator import ListAppsListsPaginator, ...
+from mypy_boto3_fms.paginator import ListAppsListsPaginator
+
+def get_list_apps_lists_paginator() -> ListAppsListsPaginator:
+    return Session().client("fms").get_paginator("list_apps_lists"))
 ```
 
 - [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
@@ -150,16 +81,23 @@ from mypy_boto3_fms.paginator import ListAppsListsPaginator, ...
 - [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
 - [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_fms.literals import AccountRoleStatusType
 
-```python
-from mypy_boto3_fms.literals import AccountRoleStatusType, ...
+def get_value() -> AccountRoleStatusType:
+    return "CREATING"
 ```
 
 - [AccountRoleStatusType](./literals.md#accountrolestatustype)
@@ -181,18 +119,22 @@ from mypy_boto3_fms.literals import AccountRoleStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_fms.type_defs import ActionTargetTypeDef
 
-```python
-from mypy_boto3_fms.type_defs import ActionTargetTypeDef, ...
+def get_value() -> ActionTargetTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
 - [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
@@ -235,14 +177,19 @@ from mypy_boto3_fms.type_defs import ActionTargetTypeDef, ...
 - [GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef)
 - [GetViolationDetailsRequestRequestTypeDef](./type_defs.md#getviolationdetailsrequestrequesttypedef)
 - [GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef)
+- [ListAppsListsRequestListAppsListsPaginateTypeDef](./type_defs.md#listappslistsrequestlistappslistspaginatetypedef)
 - [ListAppsListsRequestRequestTypeDef](./type_defs.md#listappslistsrequestrequesttypedef)
 - [ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef)
+- [ListComplianceStatusRequestListComplianceStatusPaginateTypeDef](./type_defs.md#listcompliancestatusrequestlistcompliancestatuspaginatetypedef)
 - [ListComplianceStatusRequestRequestTypeDef](./type_defs.md#listcompliancestatusrequestrequesttypedef)
 - [ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)
+- [ListMemberAccountsRequestListMemberAccountsPaginateTypeDef](./type_defs.md#listmemberaccountsrequestlistmemberaccountspaginatetypedef)
 - [ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef)
 - [ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)
+- [ListPoliciesRequestListPoliciesPaginateTypeDef](./type_defs.md#listpoliciesrequestlistpoliciespaginatetypedef)
 - [ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef)
 - [ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)
+- [ListProtocolsListsRequestListProtocolsListsPaginateTypeDef](./type_defs.md#listprotocolslistsrequestlistprotocolslistspaginatetypedef)
 - [ListProtocolsListsRequestRequestTypeDef](./type_defs.md#listprotocolslistsrequestrequesttypedef)
 - [ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -293,3 +240,4 @@ from mypy_boto3_fms.type_defs import ActionTargetTypeDef, ...
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [ViolationDetailTypeDef](./type_defs.md#violationdetailtypedef)
+

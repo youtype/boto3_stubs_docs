@@ -1,146 +1,18 @@
-<a id="paginators-for-boto3-ec2-module"></a>
-
-# Paginators for boto3 EC2 module
+# Paginators
 
 > [Index](../README.md) > [EC2](./README.md) > Paginators
 
-Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module
-[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
+!!! note ""
 
-- [Paginators for boto3 EC2 module](#paginators-for-boto3-ec2-module)
-  - [DescribeAddressesAttributePaginator](#describeaddressesattributepaginator)
-  - [DescribeByoipCidrsPaginator](#describebyoipcidrspaginator)
-  - [DescribeCapacityReservationFleetsPaginator](#describecapacityreservationfleetspaginator)
-  - [DescribeCapacityReservationsPaginator](#describecapacityreservationspaginator)
-  - [DescribeCarrierGatewaysPaginator](#describecarriergatewayspaginator)
-  - [DescribeClassicLinkInstancesPaginator](#describeclassiclinkinstancespaginator)
-  - [DescribeClientVpnAuthorizationRulesPaginator](#describeclientvpnauthorizationrulespaginator)
-  - [DescribeClientVpnConnectionsPaginator](#describeclientvpnconnectionspaginator)
-  - [DescribeClientVpnEndpointsPaginator](#describeclientvpnendpointspaginator)
-  - [DescribeClientVpnRoutesPaginator](#describeclientvpnroutespaginator)
-  - [DescribeClientVpnTargetNetworksPaginator](#describeclientvpntargetnetworkspaginator)
-  - [DescribeCoipPoolsPaginator](#describecoippoolspaginator)
-  - [DescribeDhcpOptionsPaginator](#describedhcpoptionspaginator)
-  - [DescribeEgressOnlyInternetGatewaysPaginator](#describeegressonlyinternetgatewayspaginator)
-  - [DescribeExportImageTasksPaginator](#describeexportimagetaskspaginator)
-  - [DescribeFastLaunchImagesPaginator](#describefastlaunchimagespaginator)
-  - [DescribeFastSnapshotRestoresPaginator](#describefastsnapshotrestorespaginator)
-  - [DescribeFleetsPaginator](#describefleetspaginator)
-  - [DescribeFlowLogsPaginator](#describeflowlogspaginator)
-  - [DescribeFpgaImagesPaginator](#describefpgaimagespaginator)
-  - [DescribeHostReservationOfferingsPaginator](#describehostreservationofferingspaginator)
-  - [DescribeHostReservationsPaginator](#describehostreservationspaginator)
-  - [DescribeHostsPaginator](#describehostspaginator)
-  - [DescribeIamInstanceProfileAssociationsPaginator](#describeiaminstanceprofileassociationspaginator)
-  - [DescribeImportImageTasksPaginator](#describeimportimagetaskspaginator)
-  - [DescribeImportSnapshotTasksPaginator](#describeimportsnapshottaskspaginator)
-  - [DescribeInstanceCreditSpecificationsPaginator](#describeinstancecreditspecificationspaginator)
-  - [DescribeInstanceEventWindowsPaginator](#describeinstanceeventwindowspaginator)
-  - [DescribeInstanceStatusPaginator](#describeinstancestatuspaginator)
-  - [DescribeInstanceTypeOfferingsPaginator](#describeinstancetypeofferingspaginator)
-  - [DescribeInstanceTypesPaginator](#describeinstancetypespaginator)
-  - [DescribeInstancesPaginator](#describeinstancespaginator)
-  - [DescribeInternetGatewaysPaginator](#describeinternetgatewayspaginator)
-  - [DescribeIpamPoolsPaginator](#describeipampoolspaginator)
-  - [DescribeIpamScopesPaginator](#describeipamscopespaginator)
-  - [DescribeIpamsPaginator](#describeipamspaginator)
-  - [DescribeIpv6PoolsPaginator](#describeipv6poolspaginator)
-  - [DescribeLaunchTemplateVersionsPaginator](#describelaunchtemplateversionspaginator)
-  - [DescribeLaunchTemplatesPaginator](#describelaunchtemplatespaginator)
-  - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator](#describelocalgatewayroutetablevirtualinterfacegroupassociationspaginator)
-  - [DescribeLocalGatewayRouteTableVpcAssociationsPaginator](#describelocalgatewayroutetablevpcassociationspaginator)
-  - [DescribeLocalGatewayRouteTablesPaginator](#describelocalgatewayroutetablespaginator)
-  - [DescribeLocalGatewayVirtualInterfaceGroupsPaginator](#describelocalgatewayvirtualinterfacegroupspaginator)
-  - [DescribeLocalGatewayVirtualInterfacesPaginator](#describelocalgatewayvirtualinterfacespaginator)
-  - [DescribeLocalGatewaysPaginator](#describelocalgatewayspaginator)
-  - [DescribeManagedPrefixListsPaginator](#describemanagedprefixlistspaginator)
-  - [DescribeMovingAddressesPaginator](#describemovingaddressespaginator)
-  - [DescribeNatGatewaysPaginator](#describenatgatewayspaginator)
-  - [DescribeNetworkAclsPaginator](#describenetworkaclspaginator)
-  - [DescribeNetworkInsightsAccessScopeAnalysesPaginator](#describenetworkinsightsaccessscopeanalysespaginator)
-  - [DescribeNetworkInsightsAccessScopesPaginator](#describenetworkinsightsaccessscopespaginator)
-  - [DescribeNetworkInsightsAnalysesPaginator](#describenetworkinsightsanalysespaginator)
-  - [DescribeNetworkInsightsPathsPaginator](#describenetworkinsightspathspaginator)
-  - [DescribeNetworkInterfacePermissionsPaginator](#describenetworkinterfacepermissionspaginator)
-  - [DescribeNetworkInterfacesPaginator](#describenetworkinterfacespaginator)
-  - [DescribePrefixListsPaginator](#describeprefixlistspaginator)
-  - [DescribePrincipalIdFormatPaginator](#describeprincipalidformatpaginator)
-  - [DescribePublicIpv4PoolsPaginator](#describepublicipv4poolspaginator)
-  - [DescribeReplaceRootVolumeTasksPaginator](#describereplacerootvolumetaskspaginator)
-  - [DescribeReservedInstancesModificationsPaginator](#describereservedinstancesmodificationspaginator)
-  - [DescribeReservedInstancesOfferingsPaginator](#describereservedinstancesofferingspaginator)
-  - [DescribeRouteTablesPaginator](#describeroutetablespaginator)
-  - [DescribeScheduledInstanceAvailabilityPaginator](#describescheduledinstanceavailabilitypaginator)
-  - [DescribeScheduledInstancesPaginator](#describescheduledinstancespaginator)
-  - [DescribeSecurityGroupRulesPaginator](#describesecuritygrouprulespaginator)
-  - [DescribeSecurityGroupsPaginator](#describesecuritygroupspaginator)
-  - [DescribeSnapshotTierStatusPaginator](#describesnapshottierstatuspaginator)
-  - [DescribeSnapshotsPaginator](#describesnapshotspaginator)
-  - [DescribeSpotFleetInstancesPaginator](#describespotfleetinstancespaginator)
-  - [DescribeSpotFleetRequestsPaginator](#describespotfleetrequestspaginator)
-  - [DescribeSpotInstanceRequestsPaginator](#describespotinstancerequestspaginator)
-  - [DescribeSpotPriceHistoryPaginator](#describespotpricehistorypaginator)
-  - [DescribeStaleSecurityGroupsPaginator](#describestalesecuritygroupspaginator)
-  - [DescribeStoreImageTasksPaginator](#describestoreimagetaskspaginator)
-  - [DescribeSubnetsPaginator](#describesubnetspaginator)
-  - [DescribeTagsPaginator](#describetagspaginator)
-  - [DescribeTrafficMirrorFiltersPaginator](#describetrafficmirrorfilterspaginator)
-  - [DescribeTrafficMirrorSessionsPaginator](#describetrafficmirrorsessionspaginator)
-  - [DescribeTrafficMirrorTargetsPaginator](#describetrafficmirrortargetspaginator)
-  - [DescribeTransitGatewayAttachmentsPaginator](#describetransitgatewayattachmentspaginator)
-  - [DescribeTransitGatewayConnectPeersPaginator](#describetransitgatewayconnectpeerspaginator)
-  - [DescribeTransitGatewayConnectsPaginator](#describetransitgatewayconnectspaginator)
-  - [DescribeTransitGatewayMulticastDomainsPaginator](#describetransitgatewaymulticastdomainspaginator)
-  - [DescribeTransitGatewayPeeringAttachmentsPaginator](#describetransitgatewaypeeringattachmentspaginator)
-  - [DescribeTransitGatewayRouteTablesPaginator](#describetransitgatewayroutetablespaginator)
-  - [DescribeTransitGatewayVpcAttachmentsPaginator](#describetransitgatewayvpcattachmentspaginator)
-  - [DescribeTransitGatewaysPaginator](#describetransitgatewayspaginator)
-  - [DescribeTrunkInterfaceAssociationsPaginator](#describetrunkinterfaceassociationspaginator)
-  - [DescribeVolumeStatusPaginator](#describevolumestatuspaginator)
-  - [DescribeVolumesPaginator](#describevolumespaginator)
-  - [DescribeVolumesModificationsPaginator](#describevolumesmodificationspaginator)
-  - [DescribeVpcClassicLinkDnsSupportPaginator](#describevpcclassiclinkdnssupportpaginator)
-  - [DescribeVpcEndpointConnectionNotificationsPaginator](#describevpcendpointconnectionnotificationspaginator)
-  - [DescribeVpcEndpointConnectionsPaginator](#describevpcendpointconnectionspaginator)
-  - [DescribeVpcEndpointServiceConfigurationsPaginator](#describevpcendpointserviceconfigurationspaginator)
-  - [DescribeVpcEndpointServicePermissionsPaginator](#describevpcendpointservicepermissionspaginator)
-  - [DescribeVpcEndpointServicesPaginator](#describevpcendpointservicespaginator)
-  - [DescribeVpcEndpointsPaginator](#describevpcendpointspaginator)
-  - [DescribeVpcPeeringConnectionsPaginator](#describevpcpeeringconnectionspaginator)
-  - [DescribeVpcsPaginator](#describevpcspaginator)
-  - [GetAssociatedIpv6PoolCidrsPaginator](#getassociatedipv6poolcidrspaginator)
-  - [GetGroupsForCapacityReservationPaginator](#getgroupsforcapacityreservationpaginator)
-  - [GetInstanceTypesFromInstanceRequirementsPaginator](#getinstancetypesfrominstancerequirementspaginator)
-  - [GetIpamAddressHistoryPaginator](#getipamaddresshistorypaginator)
-  - [GetIpamPoolAllocationsPaginator](#getipampoolallocationspaginator)
-  - [GetIpamPoolCidrsPaginator](#getipampoolcidrspaginator)
-  - [GetIpamResourceCidrsPaginator](#getipamresourcecidrspaginator)
-  - [GetManagedPrefixListAssociationsPaginator](#getmanagedprefixlistassociationspaginator)
-  - [GetManagedPrefixListEntriesPaginator](#getmanagedprefixlistentriespaginator)
-  - [GetSpotPlacementScoresPaginator](#getspotplacementscorespaginator)
-  - [GetTransitGatewayAttachmentPropagationsPaginator](#gettransitgatewayattachmentpropagationspaginator)
-  - [GetTransitGatewayMulticastDomainAssociationsPaginator](#gettransitgatewaymulticastdomainassociationspaginator)
-  - [GetTransitGatewayPrefixListReferencesPaginator](#gettransitgatewayprefixlistreferencespaginator)
-  - [GetTransitGatewayRouteTableAssociationsPaginator](#gettransitgatewayroutetableassociationspaginator)
-  - [GetTransitGatewayRouteTablePropagationsPaginator](#gettransitgatewayroutetablepropagationspaginator)
-  - [GetVpnConnectionDeviceTypesPaginator](#getvpnconnectiondevicetypespaginator)
-  - [ListImagesInRecycleBinPaginator](#listimagesinrecyclebinpaginator)
-  - [ListSnapshotsInRecycleBinPaginator](#listsnapshotsinrecyclebinpaginator)
-  - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
-  - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
-
-<a id="describeaddressesattributepaginator"></a>
+    Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+    type annotations stubs module [mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 ## DescribeAddressesAttributePaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_addresses_attribute")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_addresses_attribute")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressesAttribute)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator
@@ -149,31 +21,43 @@ def get_describe_addresses_attribute_paginator() -> DescribeAddressesAttributePa
     return Session().client("ec2").get_paginator("describe_addresses_attribute")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeAddressesAttribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressesAttribute)
 
-Arguments for `DescribeAddressesAttributePaginator.paginate` method:
+### paginate
 
-- `AllocationIds`: `Sequence`\[`str`\]
-- `Attribute`: `Literal['domain-name']` (see
-  [AddressAttributeNameType](./literals.md#addressattributenametype))
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAddressesAttributePaginator.paginate` method.
 
-`DescribeAddressesAttributePaginator.paginate` returns
-`_PageIterator`\[[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AllocationIds: Sequence[str] = ...,
+    Attribute: AddressAttributeNameType = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAddressesAttributeResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describebyoipcidrspaginator"></a>
+1. See [:material-code-brackets: AddressAttributeNameType](./literals.md#addressattributenametype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddressesAttributeRequestDescribeAddressesAttributePaginateTypeDef = {  # (1)
+    "AllocationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddressesAttributeRequestDescribeAddressesAttributePaginateTypeDef](./type_defs.md#describeaddressesattributerequestdescribeaddressesattributepaginatetypedef) 
 ## DescribeByoipCidrsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_byoip_cidrs")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_byoip_cidrs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeByoipCidrs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeByoipCidrsPaginator
@@ -182,28 +66,40 @@ def get_describe_byoip_cidrs_paginator() -> DescribeByoipCidrsPaginator:
     return Session().client("ec2").get_paginator("describe_byoip_cidrs")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeByoipCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeByoipCidrs)
 
-Arguments for `DescribeByoipCidrsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeByoipCidrsPaginator.paginate` method.
 
-`DescribeByoipCidrsPaginator.paginate` returns
-`_PageIterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeByoipCidrsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecapacityreservationfleetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeByoipCidrsRequestDescribeByoipCidrsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeByoipCidrsRequestDescribeByoipCidrsPaginateTypeDef](./type_defs.md#describebyoipcidrsrequestdescribebyoipcidrspaginatetypedef) 
 ## DescribeCapacityReservationFleetsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservationFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeCapacityReservationFleetsPaginator
@@ -212,30 +108,43 @@ def get_describe_capacity_reservation_fleets_paginator() -> DescribeCapacityRese
     return Session().client("ec2").get_paginator("describe_capacity_reservation_fleets")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeCapacityReservationFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservationFleets)
 
-Arguments for `DescribeCapacityReservationFleetsPaginator.paginate` method:
+### paginate
 
-- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCapacityReservationFleetsPaginator.paginate` method.
 
-`DescribeCapacityReservationFleetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CapacityReservationFleetIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeCapacityReservationFleetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describecapacityreservationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCapacityReservationFleetsRequestDescribeCapacityReservationFleetsPaginateTypeDef = {  # (1)
+    "CapacityReservationFleetIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCapacityReservationFleetsRequestDescribeCapacityReservationFleetsPaginateTypeDef](./type_defs.md#describecapacityreservationfleetsrequestdescribecapacityreservationfleetspaginatetypedef) 
 ## DescribeCapacityReservationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_capacity_reservations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_capacity_reservations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeCapacityReservationsPaginator
@@ -244,30 +153,43 @@ def get_describe_capacity_reservations_paginator() -> DescribeCapacityReservatio
     return Session().client("ec2").get_paginator("describe_capacity_reservations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeCapacityReservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservations)
 
-Arguments for `DescribeCapacityReservationsPaginator.paginate` method:
+### paginate
 
-- `CapacityReservationIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCapacityReservationsPaginator.paginate` method.
 
-`DescribeCapacityReservationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CapacityReservationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeCapacityReservationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describecarriergatewayspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCapacityReservationsRequestDescribeCapacityReservationsPaginateTypeDef = {  # (1)
+    "CapacityReservationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCapacityReservationsRequestDescribeCapacityReservationsPaginateTypeDef](./type_defs.md#describecapacityreservationsrequestdescribecapacityreservationspaginatetypedef) 
 ## DescribeCarrierGatewaysPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_carrier_gateways")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_carrier_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCarrierGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeCarrierGatewaysPaginator
@@ -276,30 +198,43 @@ def get_describe_carrier_gateways_paginator() -> DescribeCarrierGatewaysPaginato
     return Session().client("ec2").get_paginator("describe_carrier_gateways")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeCarrierGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCarrierGateways)
 
-Arguments for `DescribeCarrierGatewaysPaginator.paginate` method:
+### paginate
 
-- `CarrierGatewayIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCarrierGatewaysPaginator.paginate` method.
 
-`DescribeCarrierGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CarrierGatewayIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeCarrierGatewaysResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclassiclinkinstancespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCarrierGatewaysRequestDescribeCarrierGatewaysPaginateTypeDef = {  # (1)
+    "CarrierGatewayIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCarrierGatewaysRequestDescribeCarrierGatewaysPaginateTypeDef](./type_defs.md#describecarriergatewaysrequestdescribecarriergatewayspaginatetypedef) 
 ## DescribeClassicLinkInstancesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_classic_link_instances")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_classic_link_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClassicLinkInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeClassicLinkInstancesPaginator
@@ -308,30 +243,43 @@ def get_describe_classic_link_instances_paginator() -> DescribeClassicLinkInstan
     return Session().client("ec2").get_paginator("describe_classic_link_instances")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeClassicLinkInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClassicLinkInstances)
 
-Arguments for `DescribeClassicLinkInstancesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `InstanceIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClassicLinkInstancesPaginator.paginate` method.
 
-`DescribeClassicLinkInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    InstanceIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClassicLinkInstancesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclientvpnauthorizationrulespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClassicLinkInstancesRequestDescribeClassicLinkInstancesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClassicLinkInstancesRequestDescribeClassicLinkInstancesPaginateTypeDef](./type_defs.md#describeclassiclinkinstancesrequestdescribeclassiclinkinstancespaginatetypedef) 
 ## DescribeClientVpnAuthorizationRulesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnAuthorizationRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeClientVpnAuthorizationRulesPaginator
@@ -340,30 +288,43 @@ def get_describe_client_vpn_authorization_rules_paginator() -> DescribeClientVpn
     return Session().client("ec2").get_paginator("describe_client_vpn_authorization_rules")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeClientVpnAuthorizationRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnAuthorizationRules)
 
-Arguments for `DescribeClientVpnAuthorizationRulesPaginator.paginate` method:
+### paginate
 
-- `ClientVpnEndpointId`: `str` *(required)*
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClientVpnAuthorizationRulesPaginator.paginate` method.
 
-`DescribeClientVpnAuthorizationRulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClientVpnEndpointId: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClientVpnAuthorizationRulesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclientvpnconnectionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientVpnAuthorizationRulesRequestDescribeClientVpnAuthorizationRulesPaginateTypeDef = {  # (1)
+    "ClientVpnEndpointId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientVpnAuthorizationRulesRequestDescribeClientVpnAuthorizationRulesPaginateTypeDef](./type_defs.md#describeclientvpnauthorizationrulesrequestdescribeclientvpnauthorizationrulespaginatetypedef) 
 ## DescribeClientVpnConnectionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_client_vpn_connections")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_client_vpn_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeClientVpnConnectionsPaginator
@@ -372,30 +333,43 @@ def get_describe_client_vpn_connections_paginator() -> DescribeClientVpnConnecti
     return Session().client("ec2").get_paginator("describe_client_vpn_connections")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeClientVpnConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnConnections)
 
-Arguments for `DescribeClientVpnConnectionsPaginator.paginate` method:
+### paginate
 
-- `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClientVpnConnectionsPaginator.paginate` method.
 
-`DescribeClientVpnConnectionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClientVpnEndpointId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClientVpnConnectionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclientvpnendpointspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientVpnConnectionsRequestDescribeClientVpnConnectionsPaginateTypeDef = {  # (1)
+    "ClientVpnEndpointId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientVpnConnectionsRequestDescribeClientVpnConnectionsPaginateTypeDef](./type_defs.md#describeclientvpnconnectionsrequestdescribeclientvpnconnectionspaginatetypedef) 
 ## DescribeClientVpnEndpointsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeClientVpnEndpointsPaginator
@@ -404,30 +378,43 @@ def get_describe_client_vpn_endpoints_paginator() -> DescribeClientVpnEndpointsP
     return Session().client("ec2").get_paginator("describe_client_vpn_endpoints")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeClientVpnEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnEndpoints)
 
-Arguments for `DescribeClientVpnEndpointsPaginator.paginate` method:
+### paginate
 
-- `ClientVpnEndpointIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClientVpnEndpointsPaginator.paginate` method.
 
-`DescribeClientVpnEndpointsPaginator.paginate` returns
-`_PageIterator`\[[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClientVpnEndpointIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClientVpnEndpointsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclientvpnroutespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientVpnEndpointsRequestDescribeClientVpnEndpointsPaginateTypeDef = {  # (1)
+    "ClientVpnEndpointIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientVpnEndpointsRequestDescribeClientVpnEndpointsPaginateTypeDef](./type_defs.md#describeclientvpnendpointsrequestdescribeclientvpnendpointspaginatetypedef) 
 ## DescribeClientVpnRoutesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_client_vpn_routes")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_client_vpn_routes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnRoutes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeClientVpnRoutesPaginator
@@ -436,30 +423,43 @@ def get_describe_client_vpn_routes_paginator() -> DescribeClientVpnRoutesPaginat
     return Session().client("ec2").get_paginator("describe_client_vpn_routes")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeClientVpnRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnRoutes)
 
-Arguments for `DescribeClientVpnRoutesPaginator.paginate` method:
+### paginate
 
-- `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClientVpnRoutesPaginator.paginate` method.
 
-`DescribeClientVpnRoutesPaginator.paginate` returns
-`_PageIterator`\[[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClientVpnEndpointId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClientVpnRoutesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclientvpntargetnetworkspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientVpnRoutesRequestDescribeClientVpnRoutesPaginateTypeDef = {  # (1)
+    "ClientVpnEndpointId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientVpnRoutesRequestDescribeClientVpnRoutesPaginateTypeDef](./type_defs.md#describeclientvpnroutesrequestdescribeclientvpnroutespaginatetypedef) 
 ## DescribeClientVpnTargetNetworksPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnTargetNetworks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeClientVpnTargetNetworksPaginator
@@ -468,31 +468,44 @@ def get_describe_client_vpn_target_networks_paginator() -> DescribeClientVpnTarg
     return Session().client("ec2").get_paginator("describe_client_vpn_target_networks")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeClientVpnTargetNetworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeClientVpnTargetNetworks)
 
-Arguments for `DescribeClientVpnTargetNetworksPaginator.paginate` method:
+### paginate
 
-- `ClientVpnEndpointId`: `str` *(required)*
-- `AssociationIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClientVpnTargetNetworksPaginator.paginate` method.
 
-`DescribeClientVpnTargetNetworksPaginator.paginate` returns
-`_PageIterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClientVpnEndpointId: str,
+    AssociationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClientVpnTargetNetworksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describecoippoolspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientVpnTargetNetworksRequestDescribeClientVpnTargetNetworksPaginateTypeDef = {  # (1)
+    "ClientVpnEndpointId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientVpnTargetNetworksRequestDescribeClientVpnTargetNetworksPaginateTypeDef](./type_defs.md#describeclientvpntargetnetworksrequestdescribeclientvpntargetnetworkspaginatetypedef) 
 ## DescribeCoipPoolsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_coip_pools")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_coip_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCoipPools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeCoipPoolsPaginator
@@ -501,30 +514,43 @@ def get_describe_coip_pools_paginator() -> DescribeCoipPoolsPaginator:
     return Session().client("ec2").get_paginator("describe_coip_pools")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeCoipPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCoipPools)
 
-Arguments for `DescribeCoipPoolsPaginator.paginate` method:
+### paginate
 
-- `PoolIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCoipPoolsPaginator.paginate` method.
 
-`DescribeCoipPoolsPaginator.paginate` returns
-`_PageIterator`\[[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PoolIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeCoipPoolsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedhcpoptionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCoipPoolsRequestDescribeCoipPoolsPaginateTypeDef = {  # (1)
+    "PoolIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCoipPoolsRequestDescribeCoipPoolsPaginateTypeDef](./type_defs.md#describecoippoolsrequestdescribecoippoolspaginatetypedef) 
 ## DescribeDhcpOptionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_dhcp_options")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_dhcp_options")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeDhcpOptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeDhcpOptionsPaginator
@@ -533,30 +559,43 @@ def get_describe_dhcp_options_paginator() -> DescribeDhcpOptionsPaginator:
     return Session().client("ec2").get_paginator("describe_dhcp_options")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeDhcpOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeDhcpOptions)
 
-Arguments for `DescribeDhcpOptionsPaginator.paginate` method:
+### paginate
 
-- `DhcpOptionsIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDhcpOptionsPaginator.paginate` method.
 
-`DescribeDhcpOptionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DhcpOptionsIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeDhcpOptionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeegressonlyinternetgatewayspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDhcpOptionsRequestDescribeDhcpOptionsPaginateTypeDef = {  # (1)
+    "DhcpOptionsIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDhcpOptionsRequestDescribeDhcpOptionsPaginateTypeDef](./type_defs.md#describedhcpoptionsrequestdescribedhcpoptionspaginatetypedef) 
 ## DescribeEgressOnlyInternetGatewaysPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeEgressOnlyInternetGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeEgressOnlyInternetGatewaysPaginator
@@ -565,30 +604,43 @@ def get_describe_egress_only_internet_gateways_paginator() -> DescribeEgressOnly
     return Session().client("ec2").get_paginator("describe_egress_only_internet_gateways")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeEgressOnlyInternetGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeEgressOnlyInternetGateways)
 
-Arguments for `DescribeEgressOnlyInternetGatewaysPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `EgressOnlyInternetGatewayIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEgressOnlyInternetGatewaysPaginator.paginate` method.
 
-`DescribeEgressOnlyInternetGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    EgressOnlyInternetGatewayIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEgressOnlyInternetGatewaysResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeexportimagetaskspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEgressOnlyInternetGatewaysRequestDescribeEgressOnlyInternetGatewaysPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEgressOnlyInternetGatewaysRequestDescribeEgressOnlyInternetGatewaysPaginateTypeDef](./type_defs.md#describeegressonlyinternetgatewaysrequestdescribeegressonlyinternetgatewayspaginatetypedef) 
 ## DescribeExportImageTasksPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_export_image_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_export_image_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeExportImageTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeExportImageTasksPaginator
@@ -597,30 +649,43 @@ def get_describe_export_image_tasks_paginator() -> DescribeExportImageTasksPagin
     return Session().client("ec2").get_paginator("describe_export_image_tasks")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeExportImageTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeExportImageTasks)
 
-Arguments for `DescribeExportImageTasksPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ExportImageTaskIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeExportImageTasksPaginator.paginate` method.
 
-`DescribeExportImageTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ExportImageTaskIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeExportImageTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describefastlaunchimagespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeExportImageTasksRequestDescribeExportImageTasksPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeExportImageTasksRequestDescribeExportImageTasksPaginateTypeDef](./type_defs.md#describeexportimagetasksrequestdescribeexportimagetaskspaginatetypedef) 
 ## DescribeFastLaunchImagesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_fast_launch_images")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_fast_launch_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastLaunchImages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeFastLaunchImagesPaginator
@@ -629,30 +694,43 @@ def get_describe_fast_launch_images_paginator() -> DescribeFastLaunchImagesPagin
     return Session().client("ec2").get_paginator("describe_fast_launch_images")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeFastLaunchImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastLaunchImages)
 
-Arguments for `DescribeFastLaunchImagesPaginator.paginate` method:
+### paginate
 
-- `ImageIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFastLaunchImagesPaginator.paginate` method.
 
-`DescribeFastLaunchImagesPaginator.paginate` returns
-`_PageIterator`\[[DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ImageIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeFastLaunchImagesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describefastsnapshotrestorespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFastLaunchImagesRequestDescribeFastLaunchImagesPaginateTypeDef = {  # (1)
+    "ImageIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFastLaunchImagesRequestDescribeFastLaunchImagesPaginateTypeDef](./type_defs.md#describefastlaunchimagesrequestdescribefastlaunchimagespaginatetypedef) 
 ## DescribeFastSnapshotRestoresPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastSnapshotRestores)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeFastSnapshotRestoresPaginator
@@ -661,28 +739,42 @@ def get_describe_fast_snapshot_restores_paginator() -> DescribeFastSnapshotResto
     return Session().client("ec2").get_paginator("describe_fast_snapshot_restores")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeFastSnapshotRestores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastSnapshotRestores)
 
-Arguments for `DescribeFastSnapshotRestoresPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFastSnapshotRestoresPaginator.paginate` method.
 
-`DescribeFastSnapshotRestoresPaginator.paginate` returns
-`_PageIterator`\[[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeFastSnapshotRestoresResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describefleetspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFastSnapshotRestoresRequestDescribeFastSnapshotRestoresPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFastSnapshotRestoresRequestDescribeFastSnapshotRestoresPaginateTypeDef](./type_defs.md#describefastsnapshotrestoresrequestdescribefastsnapshotrestorespaginatetypedef) 
 ## DescribeFleetsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_fleets")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeFleetsPaginator
@@ -691,29 +783,43 @@ def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return Session().client("ec2").get_paginator("describe_fleets")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFleets)
 
-Arguments for `DescribeFleetsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `FleetIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFleetsPaginator.paginate` method.
 
-`DescribeFleetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    FleetIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeFleetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeflowlogspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetsRequestDescribeFleetsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFleetsRequestDescribeFleetsPaginateTypeDef](./type_defs.md#describefleetsrequestdescribefleetspaginatetypedef) 
 ## DescribeFlowLogsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_flow_logs")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_flow_logs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFlowLogs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeFlowLogsPaginator
@@ -722,30 +828,43 @@ def get_describe_flow_logs_paginator() -> DescribeFlowLogsPaginator:
     return Session().client("ec2").get_paginator("describe_flow_logs")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeFlowLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFlowLogs)
 
-Arguments for `DescribeFlowLogsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `FlowLogIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFlowLogsPaginator.paginate` method.
 
-`DescribeFlowLogsPaginator.paginate` returns
-`_PageIterator`\[[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    FlowLogIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeFlowLogsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describefpgaimagespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFlowLogsRequestDescribeFlowLogsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFlowLogsRequestDescribeFlowLogsPaginateTypeDef](./type_defs.md#describeflowlogsrequestdescribeflowlogspaginatetypedef) 
 ## DescribeFpgaImagesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_fpga_images")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_fpga_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFpgaImages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeFpgaImagesPaginator
@@ -754,31 +873,44 @@ def get_describe_fpga_images_paginator() -> DescribeFpgaImagesPaginator:
     return Session().client("ec2").get_paginator("describe_fpga_images")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeFpgaImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFpgaImages)
 
-Arguments for `DescribeFpgaImagesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `FpgaImageIds`: `Sequence`\[`str`\]
-- `Owners`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFpgaImagesPaginator.paginate` method.
 
-`DescribeFpgaImagesPaginator.paginate` returns
-`_PageIterator`\[[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    FpgaImageIds: Sequence[str] = ...,
+    Owners: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeFpgaImagesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describehostreservationofferingspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFpgaImagesRequestDescribeFpgaImagesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFpgaImagesRequestDescribeFpgaImagesPaginateTypeDef](./type_defs.md#describefpgaimagesrequestdescribefpgaimagespaginatetypedef) 
 ## DescribeHostReservationOfferingsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_host_reservation_offerings")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_host_reservation_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservationOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeHostReservationOfferingsPaginator
@@ -787,31 +919,44 @@ def get_describe_host_reservation_offerings_paginator() -> DescribeHostReservati
     return Session().client("ec2").get_paginator("describe_host_reservation_offerings")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeHostReservationOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservationOfferings)
 
-Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxDuration`: `int`
-- `MinDuration`: `int`
-- `OfferingId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeHostReservationOfferingsPaginator.paginate` method.
 
-`DescribeHostReservationOfferingsPaginator.paginate` returns
-`_PageIterator`\[[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxDuration: int = ...,
+    MinDuration: int = ...,
+    OfferingId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeHostReservationOfferingsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describehostreservationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHostReservationOfferingsRequestDescribeHostReservationOfferingsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHostReservationOfferingsRequestDescribeHostReservationOfferingsPaginateTypeDef](./type_defs.md#describehostreservationofferingsrequestdescribehostreservationofferingspaginatetypedef) 
 ## DescribeHostReservationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_host_reservations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_host_reservations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeHostReservationsPaginator
@@ -820,28 +965,42 @@ def get_describe_host_reservations_paginator() -> DescribeHostReservationsPagina
     return Session().client("ec2").get_paginator("describe_host_reservations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeHostReservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHostReservations)
 
-Arguments for `DescribeHostReservationsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostReservationIdSet`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeHostReservationsPaginator.paginate` method.
 
-`DescribeHostReservationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    HostReservationIdSet: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeHostReservationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describehostspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHostReservationsRequestDescribeHostReservationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHostReservationsRequestDescribeHostReservationsPaginateTypeDef](./type_defs.md#describehostreservationsrequestdescribehostreservationspaginatetypedef) 
 ## DescribeHostsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_hosts")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_hosts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHosts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeHostsPaginator
@@ -850,29 +1009,42 @@ def get_describe_hosts_paginator() -> DescribeHostsPaginator:
     return Session().client("ec2").get_paginator("describe_hosts")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeHosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeHosts)
 
-Arguments for `DescribeHostsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeHostsPaginator.paginate` method.
 
-`DescribeHostsPaginator.paginate` returns
-`_PageIterator`\[[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    HostIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeHostsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeiaminstanceprofileassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHostsRequestDescribeHostsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHostsRequestDescribeHostsPaginateTypeDef](./type_defs.md#describehostsrequestdescribehostspaginatetypedef) 
 ## DescribeIamInstanceProfileAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIamInstanceProfileAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeIamInstanceProfileAssociationsPaginator
@@ -881,30 +1053,42 @@ def get_describe_iam_instance_profile_associations_paginator() -> DescribeIamIns
     return Session().client("ec2").get_paginator("describe_iam_instance_profile_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeIamInstanceProfileAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIamInstanceProfileAssociations)
 
-Arguments for `DescribeIamInstanceProfileAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `AssociationIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeIamInstanceProfileAssociationsPaginator.paginate` method.
 
-`DescribeIamInstanceProfileAssociationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AssociationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIamInstanceProfileAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeimportimagetaskspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIamInstanceProfileAssociationsRequestDescribeIamInstanceProfileAssociationsPaginateTypeDef = {  # (1)
+    "AssociationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIamInstanceProfileAssociationsRequestDescribeIamInstanceProfileAssociationsPaginateTypeDef](./type_defs.md#describeiaminstanceprofileassociationsrequestdescribeiaminstanceprofileassociationspaginatetypedef) 
 ## DescribeImportImageTasksPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_import_image_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_import_image_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportImageTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeImportImageTasksPaginator
@@ -913,30 +1097,43 @@ def get_describe_import_image_tasks_paginator() -> DescribeImportImageTasksPagin
     return Session().client("ec2").get_paginator("describe_import_image_tasks")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeImportImageTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportImageTasks)
 
-Arguments for `DescribeImportImageTasksPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeImportImageTasksPaginator.paginate` method.
 
-`DescribeImportImageTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ImportTaskIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeImportImageTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeimportsnapshottaskspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImportImageTasksRequestDescribeImportImageTasksPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImportImageTasksRequestDescribeImportImageTasksPaginateTypeDef](./type_defs.md#describeimportimagetasksrequestdescribeimportimagetaskspaginatetypedef) 
 ## DescribeImportSnapshotTasksPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportSnapshotTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeImportSnapshotTasksPaginator
@@ -945,30 +1142,43 @@ def get_describe_import_snapshot_tasks_paginator() -> DescribeImportSnapshotTask
     return Session().client("ec2").get_paginator("describe_import_snapshot_tasks")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeImportSnapshotTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImportSnapshotTasks)
 
-Arguments for `DescribeImportSnapshotTasksPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeImportSnapshotTasksPaginator.paginate` method.
 
-`DescribeImportSnapshotTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ImportTaskIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeImportSnapshotTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinstancecreditspecificationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImportSnapshotTasksRequestDescribeImportSnapshotTasksPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImportSnapshotTasksRequestDescribeImportSnapshotTasksPaginateTypeDef](./type_defs.md#describeimportsnapshottasksrequestdescribeimportsnapshottaskspaginatetypedef) 
 ## DescribeInstanceCreditSpecificationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_instance_credit_specifications")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_instance_credit_specifications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceCreditSpecifications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInstanceCreditSpecificationsPaginator
@@ -977,30 +1187,43 @@ def get_describe_instance_credit_specifications_paginator() -> DescribeInstanceC
     return Session().client("ec2").get_paginator("describe_instance_credit_specifications")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInstanceCreditSpecifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceCreditSpecifications)
 
-Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceCreditSpecificationsPaginator.paginate` method.
 
-`DescribeInstanceCreditSpecificationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInstanceCreditSpecificationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinstanceeventwindowspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceCreditSpecificationsRequestDescribeInstanceCreditSpecificationsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceCreditSpecificationsRequestDescribeInstanceCreditSpecificationsPaginateTypeDef](./type_defs.md#describeinstancecreditspecificationsrequestdescribeinstancecreditspecificationspaginatetypedef) 
 ## DescribeInstanceEventWindowsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_instance_event_windows")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_instance_event_windows")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceEventWindows)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInstanceEventWindowsPaginator
@@ -1009,30 +1232,43 @@ def get_describe_instance_event_windows_paginator() -> DescribeInstanceEventWind
     return Session().client("ec2").get_paginator("describe_instance_event_windows")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInstanceEventWindows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceEventWindows)
 
-Arguments for `DescribeInstanceEventWindowsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `InstanceEventWindowIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceEventWindowsPaginator.paginate` method.
 
-`DescribeInstanceEventWindowsPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    InstanceEventWindowIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInstanceEventWindowsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinstancestatuspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceEventWindowsRequestDescribeInstanceEventWindowsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceEventWindowsRequestDescribeInstanceEventWindowsPaginateTypeDef](./type_defs.md#describeinstanceeventwindowsrequestdescribeinstanceeventwindowspaginatetypedef) 
 ## DescribeInstanceStatusPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_instance_status")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_instance_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInstanceStatusPaginator
@@ -1041,31 +1277,44 @@ def get_describe_instance_status_paginator() -> DescribeInstanceStatusPaginator:
     return Session().client("ec2").get_paginator("describe_instance_status")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInstanceStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceStatus)
 
-Arguments for `DescribeInstanceStatusPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `IncludeAllInstances`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceStatusPaginator.paginate` method.
 
-`DescribeInstanceStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    IncludeAllInstances: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInstanceStatusResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinstancetypeofferingspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceStatusRequestDescribeInstanceStatusPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceStatusRequestDescribeInstanceStatusPaginateTypeDef](./type_defs.md#describeinstancestatusrequestdescribeinstancestatuspaginatetypedef) 
 ## DescribeInstanceTypeOfferingsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_instance_type_offerings")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_instance_type_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypeOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInstanceTypeOfferingsPaginator
@@ -1074,30 +1323,44 @@ def get_describe_instance_type_offerings_paginator() -> DescribeInstanceTypeOffe
     return Session().client("ec2").get_paginator("describe_instance_type_offerings")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInstanceTypeOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypeOfferings)
 
-Arguments for `DescribeInstanceTypeOfferingsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceTypeOfferingsPaginator.paginate` method.
 
-`DescribeInstanceTypeOfferingsPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    LocationType: LocationTypeType = ...,  # (1)
+    Filters: Sequence[FilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeInstanceTypeOfferingsResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeinstancetypespaginator"></a>
+1. See [:material-code-brackets: LocationTypeType](./literals.md#locationtypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceTypeOfferingsRequestDescribeInstanceTypeOfferingsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceTypeOfferingsRequestDescribeInstanceTypeOfferingsPaginateTypeDef](./type_defs.md#describeinstancetypeofferingsrequestdescribeinstancetypeofferingspaginatetypedef) 
 ## DescribeInstanceTypesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_instance_types")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_instance_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInstanceTypesPaginator
@@ -1106,30 +1369,44 @@ def get_describe_instance_types_paginator() -> DescribeInstanceTypesPaginator:
     return Session().client("ec2").get_paginator("describe_instance_types")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInstanceTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceTypes)
 
-Arguments for `DescribeInstanceTypesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `InstanceTypes`:
-  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceTypesPaginator.paginate` method.
 
-`DescribeInstanceTypesPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    InstanceTypes: Sequence[InstanceTypeType] = ...,  # (1)
+    Filters: Sequence[FilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeInstanceTypesResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeinstancespaginator"></a>
+1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceTypesRequestDescribeInstanceTypesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceTypesRequestDescribeInstanceTypesPaginateTypeDef](./type_defs.md#describeinstancetypesrequestdescribeinstancetypespaginatetypedef) 
 ## DescribeInstancesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_instances")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInstancesPaginator
@@ -1138,30 +1415,43 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return Session().client("ec2").get_paginator("describe_instances")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstances)
 
-Arguments for `DescribeInstancesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstancesPaginator.paginate` method.
 
-`DescribeInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInstancesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinternetgatewayspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesRequestDescribeInstancesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancesRequestDescribeInstancesPaginateTypeDef](./type_defs.md#describeinstancesrequestdescribeinstancespaginatetypedef) 
 ## DescribeInternetGatewaysPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_internet_gateways")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_internet_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInternetGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeInternetGatewaysPaginator
@@ -1170,30 +1460,43 @@ def get_describe_internet_gateways_paginator() -> DescribeInternetGatewaysPagina
     return Session().client("ec2").get_paginator("describe_internet_gateways")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeInternetGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInternetGateways)
 
-Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `InternetGatewayIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInternetGatewaysPaginator.paginate` method.
 
-`DescribeInternetGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    InternetGatewayIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInternetGatewaysResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeipampoolspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInternetGatewaysRequestDescribeInternetGatewaysPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInternetGatewaysRequestDescribeInternetGatewaysPaginateTypeDef](./type_defs.md#describeinternetgatewaysrequestdescribeinternetgatewayspaginatetypedef) 
 ## DescribeIpamPoolsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_ipam_pools")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipam_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamPools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeIpamPoolsPaginator
@@ -1202,30 +1505,43 @@ def get_describe_ipam_pools_paginator() -> DescribeIpamPoolsPaginator:
     return Session().client("ec2").get_paginator("describe_ipam_pools")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeIpamPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamPools)
 
-Arguments for `DescribeIpamPoolsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `IpamPoolIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeIpamPoolsPaginator.paginate` method.
 
-`DescribeIpamPoolsPaginator.paginate` returns
-`_PageIterator`\[[DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    IpamPoolIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIpamPoolsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeipamscopespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamPoolsRequestDescribeIpamPoolsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamPoolsRequestDescribeIpamPoolsPaginateTypeDef](./type_defs.md#describeipampoolsrequestdescribeipampoolspaginatetypedef) 
 ## DescribeIpamScopesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_ipam_scopes")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipam_scopes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamScopes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeIpamScopesPaginator
@@ -1234,29 +1550,43 @@ def get_describe_ipam_scopes_paginator() -> DescribeIpamScopesPaginator:
     return Session().client("ec2").get_paginator("describe_ipam_scopes")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeIpamScopes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamScopes)
 
-Arguments for `DescribeIpamScopesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `IpamScopeIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeIpamScopesPaginator.paginate` method.
 
-`DescribeIpamScopesPaginator.paginate` returns
-`_PageIterator`\[[DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    IpamScopeIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIpamScopesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeipamspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamScopesRequestDescribeIpamScopesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamScopesRequestDescribeIpamScopesPaginateTypeDef](./type_defs.md#describeipamscopesrequestdescribeipamscopespaginatetypedef) 
 ## DescribeIpamsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_ipams")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipams")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpams)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeIpamsPaginator
@@ -1265,30 +1595,43 @@ def get_describe_ipams_paginator() -> DescribeIpamsPaginator:
     return Session().client("ec2").get_paginator("describe_ipams")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeIpams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpams)
 
-Arguments for `DescribeIpamsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `IpamIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeIpamsPaginator.paginate` method.
 
-`DescribeIpamsPaginator.paginate` returns
-`_PageIterator`\[[DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    IpamIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIpamsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeipv6poolspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamsRequestDescribeIpamsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamsRequestDescribeIpamsPaginateTypeDef](./type_defs.md#describeipamsrequestdescribeipamspaginatetypedef) 
 ## DescribeIpv6PoolsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_ipv6_pools")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipv6_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpv6Pools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeIpv6PoolsPaginator
@@ -1297,30 +1640,43 @@ def get_describe_ipv6_pools_paginator() -> DescribeIpv6PoolsPaginator:
     return Session().client("ec2").get_paginator("describe_ipv6_pools")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeIpv6Pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpv6Pools)
 
-Arguments for `DescribeIpv6PoolsPaginator.paginate` method:
+### paginate
 
-- `PoolIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeIpv6PoolsPaginator.paginate` method.
 
-`DescribeIpv6PoolsPaginator.paginate` returns
-`_PageIterator`\[[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PoolIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIpv6PoolsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelaunchtemplateversionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpv6PoolsRequestDescribeIpv6PoolsPaginateTypeDef = {  # (1)
+    "PoolIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpv6PoolsRequestDescribeIpv6PoolsPaginateTypeDef](./type_defs.md#describeipv6poolsrequestdescribeipv6poolspaginatetypedef) 
 ## DescribeLaunchTemplateVersionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_launch_template_versions")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_launch_template_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplateVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLaunchTemplateVersionsPaginator
@@ -1329,34 +1685,47 @@ def get_describe_launch_template_versions_paginator() -> DescribeLaunchTemplateV
     return Session().client("ec2").get_paginator("describe_launch_template_versions")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLaunchTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplateVersions)
 
-Arguments for `DescribeLaunchTemplateVersionsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `LaunchTemplateId`: `str`
-- `LaunchTemplateName`: `str`
-- `Versions`: `Sequence`\[`str`\]
-- `MinVersion`: `str`
-- `MaxVersion`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLaunchTemplateVersionsPaginator.paginate` method.
 
-`DescribeLaunchTemplateVersionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    LaunchTemplateId: str = ...,
+    LaunchTemplateName: str = ...,
+    Versions: Sequence[str] = ...,
+    MinVersion: str = ...,
+    MaxVersion: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLaunchTemplateVersionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelaunchtemplatespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLaunchTemplateVersionsRequestDescribeLaunchTemplateVersionsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLaunchTemplateVersionsRequestDescribeLaunchTemplateVersionsPaginateTypeDef](./type_defs.md#describelaunchtemplateversionsrequestdescribelaunchtemplateversionspaginatetypedef) 
 ## DescribeLaunchTemplatesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_launch_templates")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_launch_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLaunchTemplatesPaginator
@@ -1365,31 +1734,44 @@ def get_describe_launch_templates_paginator() -> DescribeLaunchTemplatesPaginato
     return Session().client("ec2").get_paginator("describe_launch_templates")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLaunchTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLaunchTemplates)
 
-Arguments for `DescribeLaunchTemplatesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `LaunchTemplateIds`: `Sequence`\[`str`\]
-- `LaunchTemplateNames`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLaunchTemplatesPaginator.paginate` method.
 
-`DescribeLaunchTemplatesPaginator.paginate` returns
-`_PageIterator`\[[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    LaunchTemplateIds: Sequence[str] = ...,
+    LaunchTemplateNames: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLaunchTemplatesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelocalgatewayroutetablevirtualinterfacegroupassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLaunchTemplatesRequestDescribeLaunchTemplatesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLaunchTemplatesRequestDescribeLaunchTemplatesPaginateTypeDef](./type_defs.md#describelaunchtemplatesrequestdescribelaunchtemplatespaginatetypedef) 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
@@ -1398,34 +1780,43 @@ def get_describe_local_gateway_route_table_virtual_interface_group_associations_
     return Session().client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociations)
 
-Arguments for
-`DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`:
-  `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate` method.
 
-`DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
-returns
-`_PageIterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelocalgatewayroutetablevpcassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestDescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginateTypeDef = {  # (1)
+    "LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestDescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginateTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsrequestdescribelocalgatewayroutetablevirtualinterfacegroupassociationspaginatetypedef) 
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVpcAssociationsPaginator
@@ -1434,31 +1825,43 @@ def get_describe_local_gateway_route_table_vpc_associations_paginator() -> Descr
     return Session().client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTableVpcAssociations)
 
-Arguments for `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `LocalGatewayRouteTableVpcAssociationIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` method.
 
-`DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayRouteTableVpcAssociationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelocalgatewayroutetablespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocalGatewayRouteTableVpcAssociationsRequestDescribeLocalGatewayRouteTableVpcAssociationsPaginateTypeDef = {  # (1)
+    "LocalGatewayRouteTableVpcAssociationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocalGatewayRouteTableVpcAssociationsRequestDescribeLocalGatewayRouteTableVpcAssociationsPaginateTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsrequestdescribelocalgatewayroutetablevpcassociationspaginatetypedef) 
 ## DescribeLocalGatewayRouteTablesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTablesPaginator
@@ -1467,30 +1870,43 @@ def get_describe_local_gateway_route_tables_paginator() -> DescribeLocalGatewayR
     return Session().client("ec2").get_paginator("describe_local_gateway_route_tables")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLocalGatewayRouteTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayRouteTables)
 
-Arguments for `DescribeLocalGatewayRouteTablesPaginator.paginate` method:
+### paginate
 
-- `LocalGatewayRouteTableIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLocalGatewayRouteTablesPaginator.paginate` method.
 
-`DescribeLocalGatewayRouteTablesPaginator.paginate` returns
-`_PageIterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayRouteTableIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLocalGatewayRouteTablesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelocalgatewayvirtualinterfacegroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocalGatewayRouteTablesRequestDescribeLocalGatewayRouteTablesPaginateTypeDef = {  # (1)
+    "LocalGatewayRouteTableIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocalGatewayRouteTablesRequestDescribeLocalGatewayRouteTablesPaginateTypeDef](./type_defs.md#describelocalgatewayroutetablesrequestdescribelocalgatewayroutetablespaginatetypedef) 
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfaceGroupsPaginator
@@ -1499,31 +1915,43 @@ def get_describe_local_gateway_virtual_interface_groups_paginator() -> DescribeL
     return Session().client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaceGroups)
 
-Arguments for `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate`
-method:
+### paginate
 
-- `LocalGatewayVirtualInterfaceGroupIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` method.
 
-`DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayVirtualInterfaceGroupIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelocalgatewayvirtualinterfacespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocalGatewayVirtualInterfaceGroupsRequestDescribeLocalGatewayVirtualInterfaceGroupsPaginateTypeDef = {  # (1)
+    "LocalGatewayVirtualInterfaceGroupIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocalGatewayVirtualInterfaceGroupsRequestDescribeLocalGatewayVirtualInterfaceGroupsPaginateTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsrequestdescribelocalgatewayvirtualinterfacegroupspaginatetypedef) 
 ## DescribeLocalGatewayVirtualInterfacesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfacesPaginator
@@ -1532,30 +1960,43 @@ def get_describe_local_gateway_virtual_interfaces_paginator() -> DescribeLocalGa
     return Session().client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLocalGatewayVirtualInterfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGatewayVirtualInterfaces)
 
-Arguments for `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method:
+### paginate
 
-- `LocalGatewayVirtualInterfaceIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method.
 
-`DescribeLocalGatewayVirtualInterfacesPaginator.paginate` returns
-`_PageIterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayVirtualInterfaceIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLocalGatewayVirtualInterfacesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describelocalgatewayspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocalGatewayVirtualInterfacesRequestDescribeLocalGatewayVirtualInterfacesPaginateTypeDef = {  # (1)
+    "LocalGatewayVirtualInterfaceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocalGatewayVirtualInterfacesRequestDescribeLocalGatewayVirtualInterfacesPaginateTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesrequestdescribelocalgatewayvirtualinterfacespaginatetypedef) 
 ## DescribeLocalGatewaysPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_local_gateways")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_local_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeLocalGatewaysPaginator
@@ -1564,30 +2005,43 @@ def get_describe_local_gateways_paginator() -> DescribeLocalGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_local_gateways")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeLocalGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeLocalGateways)
 
-Arguments for `DescribeLocalGatewaysPaginator.paginate` method:
+### paginate
 
-- `LocalGatewayIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLocalGatewaysPaginator.paginate` method.
 
-`DescribeLocalGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLocalGatewaysResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemanagedprefixlistspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocalGatewaysRequestDescribeLocalGatewaysPaginateTypeDef = {  # (1)
+    "LocalGatewayIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocalGatewaysRequestDescribeLocalGatewaysPaginateTypeDef](./type_defs.md#describelocalgatewaysrequestdescribelocalgatewayspaginatetypedef) 
 ## DescribeManagedPrefixListsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_managed_prefix_lists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_managed_prefix_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeManagedPrefixLists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeManagedPrefixListsPaginator
@@ -1596,30 +2050,43 @@ def get_describe_managed_prefix_lists_paginator() -> DescribeManagedPrefixListsP
     return Session().client("ec2").get_paginator("describe_managed_prefix_lists")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeManagedPrefixLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeManagedPrefixLists)
 
-Arguments for `DescribeManagedPrefixListsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PrefixListIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeManagedPrefixListsPaginator.paginate` method.
 
-`DescribeManagedPrefixListsPaginator.paginate` returns
-`_PageIterator`\[[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PrefixListIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeManagedPrefixListsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemovingaddressespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeManagedPrefixListsRequestDescribeManagedPrefixListsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeManagedPrefixListsRequestDescribeManagedPrefixListsPaginateTypeDef](./type_defs.md#describemanagedprefixlistsrequestdescribemanagedprefixlistspaginatetypedef) 
 ## DescribeMovingAddressesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_moving_addresses")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_moving_addresses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeMovingAddresses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeMovingAddressesPaginator
@@ -1628,30 +2095,43 @@ def get_describe_moving_addresses_paginator() -> DescribeMovingAddressesPaginato
     return Session().client("ec2").get_paginator("describe_moving_addresses")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeMovingAddresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeMovingAddresses)
 
-Arguments for `DescribeMovingAddressesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PublicIps`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMovingAddressesPaginator.paginate` method.
 
-`DescribeMovingAddressesPaginator.paginate` returns
-`_PageIterator`\[[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PublicIps: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMovingAddressesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenatgatewayspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMovingAddressesRequestDescribeMovingAddressesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMovingAddressesRequestDescribeMovingAddressesPaginateTypeDef](./type_defs.md#describemovingaddressesrequestdescribemovingaddressespaginatetypedef) 
 ## DescribeNatGatewaysPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_nat_gateways")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_nat_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNatGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNatGatewaysPaginator
@@ -1660,30 +2140,43 @@ def get_describe_nat_gateways_paginator() -> DescribeNatGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_nat_gateways")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNatGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNatGateways)
 
-Arguments for `DescribeNatGatewaysPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NatGatewayIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNatGatewaysPaginator.paginate` method.
 
-`DescribeNatGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NatGatewayIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNatGatewaysResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkaclspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNatGatewaysRequestDescribeNatGatewaysPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNatGatewaysRequestDescribeNatGatewaysPaginateTypeDef](./type_defs.md#describenatgatewaysrequestdescribenatgatewayspaginatetypedef) 
 ## DescribeNetworkAclsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_acls")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_acls")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkAcls)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkAclsPaginator
@@ -1692,30 +2185,43 @@ def get_describe_network_acls_paginator() -> DescribeNetworkAclsPaginator:
     return Session().client("ec2").get_paginator("describe_network_acls")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkAcls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkAcls)
 
-Arguments for `DescribeNetworkAclsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `NetworkAclIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkAclsPaginator.paginate` method.
 
-`DescribeNetworkAclsPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    NetworkAclIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkAclsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkinsightsaccessscopeanalysespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkAclsRequestDescribeNetworkAclsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkAclsRequestDescribeNetworkAclsPaginateTypeDef](./type_defs.md#describenetworkaclsrequestdescribenetworkaclspaginatetypedef) 
 ## DescribeNetworkInsightsAccessScopeAnalysesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_insights_access_scope_analyses")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_insights_access_scope_analyses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAccessScopeAnalyses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopeAnalysesPaginator
@@ -1724,34 +2230,46 @@ def get_describe_network_insights_access_scope_analyses_paginator() -> DescribeN
     return Session().client("ec2").get_paginator("describe_network_insights_access_scope_analyses")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkInsightsAccessScopeAnalyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAccessScopeAnalyses)
 
-Arguments for `DescribeNetworkInsightsAccessScopeAnalysesPaginator.paginate`
-method:
+### paginate
 
-- `NetworkInsightsAccessScopeAnalysisIds`: `Sequence`\[`str`\]
-- `NetworkInsightsAccessScopeId`: `str`
-- `AnalysisStartTimeBegin`: `Union`\[`datetime`, `str`\]
-- `AnalysisStartTimeEnd`: `Union`\[`datetime`, `str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkInsightsAccessScopeAnalysesPaginator.paginate` method.
 
-`DescribeNetworkInsightsAccessScopeAnalysesPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NetworkInsightsAccessScopeAnalysisIds: Sequence[str] = ...,
+    NetworkInsightsAccessScopeId: str = ...,
+    AnalysisStartTimeBegin: Union[datetime, str] = ...,
+    AnalysisStartTimeEnd: Union[datetime, str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkinsightsaccessscopespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInsightsAccessScopeAnalysesRequestDescribeNetworkInsightsAccessScopeAnalysesPaginateTypeDef = {  # (1)
+    "NetworkInsightsAccessScopeAnalysisIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInsightsAccessScopeAnalysesRequestDescribeNetworkInsightsAccessScopeAnalysesPaginateTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesrequestdescribenetworkinsightsaccessscopeanalysespaginatetypedef) 
 ## DescribeNetworkInsightsAccessScopesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_insights_access_scopes")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_insights_access_scopes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAccessScopes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopesPaginator
@@ -1760,30 +2278,43 @@ def get_describe_network_insights_access_scopes_paginator() -> DescribeNetworkIn
     return Session().client("ec2").get_paginator("describe_network_insights_access_scopes")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkInsightsAccessScopes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAccessScopes)
 
-Arguments for `DescribeNetworkInsightsAccessScopesPaginator.paginate` method:
+### paginate
 
-- `NetworkInsightsAccessScopeIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkInsightsAccessScopesPaginator.paginate` method.
 
-`DescribeNetworkInsightsAccessScopesPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NetworkInsightsAccessScopeIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkInsightsAccessScopesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkinsightsanalysespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInsightsAccessScopesRequestDescribeNetworkInsightsAccessScopesPaginateTypeDef = {  # (1)
+    "NetworkInsightsAccessScopeIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInsightsAccessScopesRequestDescribeNetworkInsightsAccessScopesPaginateTypeDef](./type_defs.md#describenetworkinsightsaccessscopesrequestdescribenetworkinsightsaccessscopespaginatetypedef) 
 ## DescribeNetworkInsightsAnalysesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_insights_analyses")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_insights_analyses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAnalyses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAnalysesPaginator
@@ -1792,33 +2323,46 @@ def get_describe_network_insights_analyses_paginator() -> DescribeNetworkInsight
     return Session().client("ec2").get_paginator("describe_network_insights_analyses")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkInsightsAnalyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsAnalyses)
 
-Arguments for `DescribeNetworkInsightsAnalysesPaginator.paginate` method:
+### paginate
 
-- `NetworkInsightsAnalysisIds`: `Sequence`\[`str`\]
-- `NetworkInsightsPathId`: `str`
-- `AnalysisStartTime`: `Union`\[`datetime`, `str`\]
-- `AnalysisEndTime`: `Union`\[`datetime`, `str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkInsightsAnalysesPaginator.paginate` method.
 
-`DescribeNetworkInsightsAnalysesPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NetworkInsightsAnalysisIds: Sequence[str] = ...,
+    NetworkInsightsPathId: str = ...,
+    AnalysisStartTime: Union[datetime, str] = ...,
+    AnalysisEndTime: Union[datetime, str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkInsightsAnalysesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkinsightspathspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInsightsAnalysesRequestDescribeNetworkInsightsAnalysesPaginateTypeDef = {  # (1)
+    "NetworkInsightsAnalysisIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInsightsAnalysesRequestDescribeNetworkInsightsAnalysesPaginateTypeDef](./type_defs.md#describenetworkinsightsanalysesrequestdescribenetworkinsightsanalysespaginatetypedef) 
 ## DescribeNetworkInsightsPathsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_insights_paths")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_insights_paths")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsPaths)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsPathsPaginator
@@ -1827,30 +2371,43 @@ def get_describe_network_insights_paths_paginator() -> DescribeNetworkInsightsPa
     return Session().client("ec2").get_paginator("describe_network_insights_paths")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkInsightsPaths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInsightsPaths)
 
-Arguments for `DescribeNetworkInsightsPathsPaginator.paginate` method:
+### paginate
 
-- `NetworkInsightsPathIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkInsightsPathsPaginator.paginate` method.
 
-`DescribeNetworkInsightsPathsPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NetworkInsightsPathIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkInsightsPathsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkinterfacepermissionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInsightsPathsRequestDescribeNetworkInsightsPathsPaginateTypeDef = {  # (1)
+    "NetworkInsightsPathIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInsightsPathsRequestDescribeNetworkInsightsPathsPaginateTypeDef](./type_defs.md#describenetworkinsightspathsrequestdescribenetworkinsightspathspaginatetypedef) 
 ## DescribeNetworkInterfacePermissionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_interface_permissions")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_interface_permissions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfacePermissions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkInterfacePermissionsPaginator
@@ -1859,29 +2416,42 @@ def get_describe_network_interface_permissions_paginator() -> DescribeNetworkInt
     return Session().client("ec2").get_paginator("describe_network_interface_permissions")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkInterfacePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfacePermissions)
 
-Arguments for `DescribeNetworkInterfacePermissionsPaginator.paginate` method:
+### paginate
 
-- `NetworkInterfacePermissionIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkInterfacePermissionsPaginator.paginate` method.
 
-`DescribeNetworkInterfacePermissionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NetworkInterfacePermissionIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkInterfacePermissionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describenetworkinterfacespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInterfacePermissionsRequestDescribeNetworkInterfacePermissionsPaginateTypeDef = {  # (1)
+    "NetworkInterfacePermissionIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInterfacePermissionsRequestDescribeNetworkInterfacePermissionsPaginateTypeDef](./type_defs.md#describenetworkinterfacepermissionsrequestdescribenetworkinterfacepermissionspaginatetypedef) 
 ## DescribeNetworkInterfacesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_network_interfaces")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_network_interfaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfaces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeNetworkInterfacesPaginator
@@ -1890,30 +2460,43 @@ def get_describe_network_interfaces_paginator() -> DescribeNetworkInterfacesPagi
     return Session().client("ec2").get_paginator("describe_network_interfaces")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeNetworkInterfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeNetworkInterfaces)
 
-Arguments for `DescribeNetworkInterfacesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `NetworkInterfaceIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNetworkInterfacesPaginator.paginate` method.
 
-`DescribeNetworkInterfacesPaginator.paginate` returns
-`_PageIterator`\[[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    NetworkInterfaceIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeNetworkInterfacesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeprefixlistspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInterfacesRequestDescribeNetworkInterfacesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInterfacesRequestDescribeNetworkInterfacesPaginateTypeDef](./type_defs.md#describenetworkinterfacesrequestdescribenetworkinterfacespaginatetypedef) 
 ## DescribePrefixListsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_prefix_lists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_prefix_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrefixLists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribePrefixListsPaginator
@@ -1922,30 +2505,43 @@ def get_describe_prefix_lists_paginator() -> DescribePrefixListsPaginator:
     return Session().client("ec2").get_paginator("describe_prefix_lists")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribePrefixLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrefixLists)
 
-Arguments for `DescribePrefixListsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PrefixListIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePrefixListsPaginator.paginate` method.
 
-`DescribePrefixListsPaginator.paginate` returns
-`_PageIterator`\[[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PrefixListIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribePrefixListsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeprincipalidformatpaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePrefixListsRequestDescribePrefixListsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePrefixListsRequestDescribePrefixListsPaginateTypeDef](./type_defs.md#describeprefixlistsrequestdescribeprefixlistspaginatetypedef) 
 ## DescribePrincipalIdFormatPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_principal_id_format")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_principal_id_format")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrincipalIdFormat)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribePrincipalIdFormatPaginator
@@ -1954,29 +2550,41 @@ def get_describe_principal_id_format_paginator() -> DescribePrincipalIdFormatPag
     return Session().client("ec2").get_paginator("describe_principal_id_format")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribePrincipalIdFormat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePrincipalIdFormat)
 
-Arguments for `DescribePrincipalIdFormatPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Resources`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePrincipalIdFormatPaginator.paginate` method.
 
-`DescribePrincipalIdFormatPaginator.paginate` returns
-`_PageIterator`\[[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Resources: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribePrincipalIdFormatResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describepublicipv4poolspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePrincipalIdFormatRequestDescribePrincipalIdFormatPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePrincipalIdFormatRequestDescribePrincipalIdFormatPaginateTypeDef](./type_defs.md#describeprincipalidformatrequestdescribeprincipalidformatpaginatetypedef) 
 ## DescribePublicIpv4PoolsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_public_ipv4_pools")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_public_ipv4_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePublicIpv4Pools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribePublicIpv4PoolsPaginator
@@ -1985,29 +2593,42 @@ def get_describe_public_ipv4_pools_paginator() -> DescribePublicIpv4PoolsPaginat
     return Session().client("ec2").get_paginator("describe_public_ipv4_pools")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribePublicIpv4Pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribePublicIpv4Pools)
 
-Arguments for `DescribePublicIpv4PoolsPaginator.paginate` method:
+### paginate
 
-- `PoolIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePublicIpv4PoolsPaginator.paginate` method.
 
-`DescribePublicIpv4PoolsPaginator.paginate` returns
-`_PageIterator`\[[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PoolIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribePublicIpv4PoolsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describereplacerootvolumetaskspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePublicIpv4PoolsRequestDescribePublicIpv4PoolsPaginateTypeDef = {  # (1)
+    "PoolIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePublicIpv4PoolsRequestDescribePublicIpv4PoolsPaginateTypeDef](./type_defs.md#describepublicipv4poolsrequestdescribepublicipv4poolspaginatetypedef) 
 ## DescribeReplaceRootVolumeTasksPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReplaceRootVolumeTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeReplaceRootVolumeTasksPaginator
@@ -2016,30 +2637,43 @@ def get_describe_replace_root_volume_tasks_paginator() -> DescribeReplaceRootVol
     return Session().client("ec2").get_paginator("describe_replace_root_volume_tasks")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeReplaceRootVolumeTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReplaceRootVolumeTasks)
 
-Arguments for `DescribeReplaceRootVolumeTasksPaginator.paginate` method:
+### paginate
 
-- `ReplaceRootVolumeTaskIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReplaceRootVolumeTasksPaginator.paginate` method.
 
-`DescribeReplaceRootVolumeTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReplaceRootVolumeTaskIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeReplaceRootVolumeTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describereservedinstancesmodificationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplaceRootVolumeTasksRequestDescribeReplaceRootVolumeTasksPaginateTypeDef = {  # (1)
+    "ReplaceRootVolumeTaskIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplaceRootVolumeTasksRequestDescribeReplaceRootVolumeTasksPaginateTypeDef](./type_defs.md#describereplacerootvolumetasksrequestdescribereplacerootvolumetaskspaginatetypedef) 
 ## DescribeReservedInstancesModificationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesModifications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeReservedInstancesModificationsPaginator
@@ -2048,30 +2682,42 @@ def get_describe_reserved_instances_modifications_paginator() -> DescribeReserve
     return Session().client("ec2").get_paginator("describe_reserved_instances_modifications")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeReservedInstancesModifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesModifications)
 
-Arguments for `DescribeReservedInstancesModificationsPaginator.paginate`
-method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ReservedInstancesModificationIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedInstancesModificationsPaginator.paginate` method.
 
-`DescribeReservedInstancesModificationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ReservedInstancesModificationIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeReservedInstancesModificationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describereservedinstancesofferingspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedInstancesModificationsRequestDescribeReservedInstancesModificationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedInstancesModificationsRequestDescribeReservedInstancesModificationsPaginateTypeDef](./type_defs.md#describereservedinstancesmodificationsrequestdescribereservedinstancesmodificationspaginatetypedef) 
 ## DescribeReservedInstancesOfferingsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeReservedInstancesOfferingsPaginator
@@ -2080,42 +2726,58 @@ def get_describe_reserved_instances_offerings_paginator() -> DescribeReservedIns
     return Session().client("ec2").get_paginator("describe_reserved_instances_offerings")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeReservedInstancesOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeReservedInstancesOfferings)
 
-Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
+### paginate
 
-- `AvailabilityZone`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `IncludeMarketplace`: `bool`
-- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
-- `MaxDuration`: `int`
-- `MaxInstanceCount`: `int`
-- `MinDuration`: `int`
-- `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
-- `ProductDescription`:
-  [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
-- `ReservedInstancesOfferingIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
-- `OfferingType`:
-  [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedInstancesOfferingsPaginator.paginate` method.
 
-`DescribeReservedInstancesOfferingsPaginator.paginate` returns
-`_PageIterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AvailabilityZone: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    IncludeMarketplace: bool = ...,
+    InstanceType: InstanceTypeType = ...,  # (2)
+    MaxDuration: int = ...,
+    MaxInstanceCount: int = ...,
+    MinDuration: int = ...,
+    OfferingClass: OfferingClassTypeType = ...,  # (3)
+    ProductDescription: RIProductDescriptionType = ...,  # (4)
+    ReservedInstancesOfferingIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    InstanceTenancy: TenancyType = ...,  # (5)
+    OfferingType: OfferingTypeValuesType = ...,  # (6)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (7)
+) -> _PageIterator[DescribeReservedInstancesOfferingsResultTypeDef]:  # (8)
+    ...
+```
 
-<a id="describeroutetablespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+3. See [:material-code-brackets: OfferingClassTypeType](./literals.md#offeringclasstypetype) 
+4. See [:material-code-brackets: RIProductDescriptionType](./literals.md#riproductdescriptiontype) 
+5. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
+6. See [:material-code-brackets: OfferingTypeValuesType](./literals.md#offeringtypevaluestype) 
+7. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+8. See [:material-code-braces: DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedInstancesOfferingsRequestDescribeReservedInstancesOfferingsPaginateTypeDef = {  # (1)
+    "AvailabilityZone": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedInstancesOfferingsRequestDescribeReservedInstancesOfferingsPaginateTypeDef](./type_defs.md#describereservedinstancesofferingsrequestdescribereservedinstancesofferingspaginatetypedef) 
 ## DescribeRouteTablesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_route_tables")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_route_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeRouteTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeRouteTablesPaginator
@@ -2124,30 +2786,43 @@ def get_describe_route_tables_paginator() -> DescribeRouteTablesPaginator:
     return Session().client("ec2").get_paginator("describe_route_tables")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeRouteTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeRouteTables)
 
-Arguments for `DescribeRouteTablesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `RouteTableIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeRouteTablesPaginator.paginate` method.
 
-`DescribeRouteTablesPaginator.paginate` returns
-`_PageIterator`\[[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    RouteTableIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeRouteTablesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describescheduledinstanceavailabilitypaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRouteTablesRequestDescribeRouteTablesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRouteTablesRequestDescribeRouteTablesPaginateTypeDef](./type_defs.md#describeroutetablesrequestdescriberoutetablespaginatetypedef) 
 ## DescribeScheduledInstanceAvailabilityPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstanceAvailability)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeScheduledInstanceAvailabilityPaginator
@@ -2156,37 +2831,49 @@ def get_describe_scheduled_instance_availability_paginator() -> DescribeSchedule
     return Session().client("ec2").get_paginator("describe_scheduled_instance_availability")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeScheduledInstanceAvailability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstanceAvailability)
 
-Arguments for `DescribeScheduledInstanceAvailabilityPaginator.paginate` method:
+### paginate
 
-- `FirstSlotStartTimeRange`:
-  [SlotDateTimeRangeRequestTypeDef](./type_defs.md#slotdatetimerangerequesttypedef)
-  *(required)*
-- `Recurrence`:
-  [ScheduledInstanceRecurrenceRequestTypeDef](./type_defs.md#scheduledinstancerecurrencerequesttypedef)
-  *(required)*
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxSlotDurationInHours`: `int`
-- `MinSlotDurationInHours`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScheduledInstanceAvailabilityPaginator.paginate` method.
 
-`DescribeScheduledInstanceAvailabilityPaginator.paginate` returns
-`_PageIterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FirstSlotStartTimeRange: SlotDateTimeRangeRequestTypeDef,  # (1)
+    Recurrence: ScheduledInstanceRecurrenceRequestTypeDef,  # (2)
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (3)
+    MaxSlotDurationInHours: int = ...,
+    MinSlotDurationInHours: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[DescribeScheduledInstanceAvailabilityResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="describescheduledinstancespaginator"></a>
+1. See [:material-code-braces: SlotDateTimeRangeRequestTypeDef](./type_defs.md#slotdatetimerangerequesttypedef) 
+2. See [:material-code-braces: ScheduledInstanceRecurrenceRequestTypeDef](./type_defs.md#scheduledinstancerecurrencerequesttypedef) 
+3. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledInstanceAvailabilityRequestDescribeScheduledInstanceAvailabilityPaginateTypeDef = {  # (1)
+    "FirstSlotStartTimeRange": ...,
+    "Recurrence": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScheduledInstanceAvailabilityRequestDescribeScheduledInstanceAvailabilityPaginateTypeDef](./type_defs.md#describescheduledinstanceavailabilityrequestdescribescheduledinstanceavailabilitypaginatetypedef) 
 ## DescribeScheduledInstancesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_scheduled_instances")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_scheduled_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeScheduledInstancesPaginator
@@ -2195,32 +2882,45 @@ def get_describe_scheduled_instances_paginator() -> DescribeScheduledInstancesPa
     return Session().client("ec2").get_paginator("describe_scheduled_instances")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeScheduledInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeScheduledInstances)
 
-Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ScheduledInstanceIds`: `Sequence`\[`str`\]
-- `SlotStartTimeRange`:
-  [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScheduledInstancesPaginator.paginate` method.
 
-`DescribeScheduledInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ScheduledInstanceIds: Sequence[str] = ...,
+    SlotStartTimeRange: SlotStartTimeRangeRequestTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeScheduledInstancesResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describesecuritygrouprulespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledInstancesRequestDescribeScheduledInstancesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScheduledInstancesRequestDescribeScheduledInstancesPaginateTypeDef](./type_defs.md#describescheduledinstancesrequestdescribescheduledinstancespaginatetypedef) 
 ## DescribeSecurityGroupRulesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_security_group_rules")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_security_group_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroupRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSecurityGroupRulesPaginator
@@ -2229,30 +2929,43 @@ def get_describe_security_group_rules_paginator() -> DescribeSecurityGroupRulesP
     return Session().client("ec2").get_paginator("describe_security_group_rules")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSecurityGroupRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroupRules)
 
-Arguments for `DescribeSecurityGroupRulesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSecurityGroupRulesPaginator.paginate` method.
 
-`DescribeSecurityGroupRulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SecurityGroupRuleIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSecurityGroupRulesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describesecuritygroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityGroupRulesRequestDescribeSecurityGroupRulesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSecurityGroupRulesRequestDescribeSecurityGroupRulesPaginateTypeDef](./type_defs.md#describesecuritygrouprulesrequestdescribesecuritygrouprulespaginatetypedef) 
 ## DescribeSecurityGroupsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_security_groups")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_security_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSecurityGroupsPaginator
@@ -2261,31 +2974,44 @@ def get_describe_security_groups_paginator() -> DescribeSecurityGroupsPaginator:
     return Session().client("ec2").get_paginator("describe_security_groups")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroups)
 
-Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `GroupIds`: `Sequence`\[`str`\]
-- `GroupNames`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSecurityGroupsPaginator.paginate` method.
 
-`DescribeSecurityGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    GroupIds: Sequence[str] = ...,
+    GroupNames: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSecurityGroupsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describesnapshottierstatuspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityGroupsRequestDescribeSecurityGroupsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSecurityGroupsRequestDescribeSecurityGroupsPaginateTypeDef](./type_defs.md#describesecuritygroupsrequestdescribesecuritygroupspaginatetypedef) 
 ## DescribeSnapshotTierStatusPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_snapshot_tier_status")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_snapshot_tier_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshotTierStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSnapshotTierStatusPaginator
@@ -2294,28 +3020,42 @@ def get_describe_snapshot_tier_status_paginator() -> DescribeSnapshotTierStatusP
     return Session().client("ec2").get_paginator("describe_snapshot_tier_status")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSnapshotTierStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshotTierStatus)
 
-Arguments for `DescribeSnapshotTierStatusPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSnapshotTierStatusPaginator.paginate` method.
 
-`DescribeSnapshotTierStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSnapshotTierStatusResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describesnapshotspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotTierStatusRequestDescribeSnapshotTierStatusPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSnapshotTierStatusRequestDescribeSnapshotTierStatusPaginateTypeDef](./type_defs.md#describesnapshottierstatusrequestdescribesnapshottierstatuspaginatetypedef) 
 ## DescribeSnapshotsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSnapshotsPaginator
@@ -2324,32 +3064,45 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return Session().client("ec2").get_paginator("describe_snapshots")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSnapshots)
 
-Arguments for `DescribeSnapshotsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `OwnerIds`: `Sequence`\[`str`\]
-- `RestorableByUserIds`: `Sequence`\[`str`\]
-- `SnapshotIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSnapshotsPaginator.paginate` method.
 
-`DescribeSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    OwnerIds: Sequence[str] = ...,
+    RestorableByUserIds: Sequence[str] = ...,
+    SnapshotIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSnapshotsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describespotfleetinstancespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef](./type_defs.md#describesnapshotsrequestdescribesnapshotspaginatetypedef) 
 ## DescribeSpotFleetInstancesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_spot_fleet_instances")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_spot_fleet_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSpotFleetInstancesPaginator
@@ -2358,29 +3111,41 @@ def get_describe_spot_fleet_instances_paginator() -> DescribeSpotFleetInstancesP
     return Session().client("ec2").get_paginator("describe_spot_fleet_instances")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSpotFleetInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetInstances)
 
-Arguments for `DescribeSpotFleetInstancesPaginator.paginate` method:
+### paginate
 
-- `SpotFleetRequestId`: `str` *(required)*
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSpotFleetInstancesPaginator.paginate` method.
 
-`DescribeSpotFleetInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SpotFleetRequestId: str,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSpotFleetInstancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describespotfleetrequestspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSpotFleetInstancesRequestDescribeSpotFleetInstancesPaginateTypeDef = {  # (1)
+    "SpotFleetRequestId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSpotFleetInstancesRequestDescribeSpotFleetInstancesPaginateTypeDef](./type_defs.md#describespotfleetinstancesrequestdescribespotfleetinstancespaginatetypedef) 
 ## DescribeSpotFleetRequestsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_spot_fleet_requests")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_spot_fleet_requests")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetRequests)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSpotFleetRequestsPaginator
@@ -2389,29 +3154,41 @@ def get_describe_spot_fleet_requests_paginator() -> DescribeSpotFleetRequestsPag
     return Session().client("ec2").get_paginator("describe_spot_fleet_requests")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSpotFleetRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotFleetRequests)
 
-Arguments for `DescribeSpotFleetRequestsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `SpotFleetRequestIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSpotFleetRequestsPaginator.paginate` method.
 
-`DescribeSpotFleetRequestsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    SpotFleetRequestIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSpotFleetRequestsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describespotinstancerequestspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSpotFleetRequestsRequestDescribeSpotFleetRequestsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSpotFleetRequestsRequestDescribeSpotFleetRequestsPaginateTypeDef](./type_defs.md#describespotfleetrequestsrequestdescribespotfleetrequestspaginatetypedef) 
 ## DescribeSpotInstanceRequestsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_spot_instance_requests")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_spot_instance_requests")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotInstanceRequests)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSpotInstanceRequestsPaginator
@@ -2420,30 +3197,43 @@ def get_describe_spot_instance_requests_paginator() -> DescribeSpotInstanceReque
     return Session().client("ec2").get_paginator("describe_spot_instance_requests")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSpotInstanceRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotInstanceRequests)
 
-Arguments for `DescribeSpotInstanceRequestsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSpotInstanceRequestsPaginator.paginate` method.
 
-`DescribeSpotInstanceRequestsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    SpotInstanceRequestIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSpotInstanceRequestsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describespotpricehistorypaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSpotInstanceRequestsRequestDescribeSpotInstanceRequestsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSpotInstanceRequestsRequestDescribeSpotInstanceRequestsPaginateTypeDef](./type_defs.md#describespotinstancerequestsrequestdescribespotinstancerequestspaginatetypedef) 
 ## DescribeSpotPriceHistoryPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_spot_price_history")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_spot_price_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotPriceHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSpotPriceHistoryPaginator
@@ -2452,35 +3242,48 @@ def get_describe_spot_price_history_paginator() -> DescribeSpotPriceHistoryPagin
     return Session().client("ec2").get_paginator("describe_spot_price_history")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSpotPriceHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSpotPriceHistory)
 
-Arguments for `DescribeSpotPriceHistoryPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `AvailabilityZone`: `str`
-- `DryRun`: `bool`
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `InstanceTypes`:
-  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-- `ProductDescriptions`: `Sequence`\[`str`\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSpotPriceHistoryPaginator.paginate` method.
 
-`DescribeSpotPriceHistoryPaginator.paginate` returns
-`_PageIterator`\[[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    AvailabilityZone: str = ...,
+    DryRun: bool = ...,
+    EndTime: Union[datetime, str] = ...,
+    InstanceTypes: Sequence[InstanceTypeType] = ...,  # (2)
+    ProductDescriptions: Sequence[str] = ...,
+    StartTime: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeSpotPriceHistoryResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describestalesecuritygroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSpotPriceHistoryRequestDescribeSpotPriceHistoryPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSpotPriceHistoryRequestDescribeSpotPriceHistoryPaginateTypeDef](./type_defs.md#describespotpricehistoryrequestdescribespotpricehistorypaginatetypedef) 
 ## DescribeStaleSecurityGroupsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_stale_security_groups")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_stale_security_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStaleSecurityGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeStaleSecurityGroupsPaginator
@@ -2489,29 +3292,41 @@ def get_describe_stale_security_groups_paginator() -> DescribeStaleSecurityGroup
     return Session().client("ec2").get_paginator("describe_stale_security_groups")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeStaleSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStaleSecurityGroups)
 
-Arguments for `DescribeStaleSecurityGroupsPaginator.paginate` method:
+### paginate
 
-- `VpcId`: `str` *(required)*
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeStaleSecurityGroupsPaginator.paginate` method.
 
-`DescribeStaleSecurityGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VpcId: str,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeStaleSecurityGroupsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describestoreimagetaskspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStaleSecurityGroupsRequestDescribeStaleSecurityGroupsPaginateTypeDef = {  # (1)
+    "VpcId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStaleSecurityGroupsRequestDescribeStaleSecurityGroupsPaginateTypeDef](./type_defs.md#describestalesecuritygroupsrequestdescribestalesecuritygroupspaginatetypedef) 
 ## DescribeStoreImageTasksPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_store_image_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_store_image_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStoreImageTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeStoreImageTasksPaginator
@@ -2520,29 +3335,43 @@ def get_describe_store_image_tasks_paginator() -> DescribeStoreImageTasksPaginat
     return Session().client("ec2").get_paginator("describe_store_image_tasks")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeStoreImageTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeStoreImageTasks)
 
-Arguments for `DescribeStoreImageTasksPaginator.paginate` method:
+### paginate
 
-- `ImageIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeStoreImageTasksPaginator.paginate` method.
 
-`DescribeStoreImageTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ImageIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeStoreImageTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describesubnetspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStoreImageTasksRequestDescribeStoreImageTasksPaginateTypeDef = {  # (1)
+    "ImageIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStoreImageTasksRequestDescribeStoreImageTasksPaginateTypeDef](./type_defs.md#describestoreimagetasksrequestdescribestoreimagetaskspaginatetypedef) 
 ## DescribeSubnetsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_subnets")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_subnets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSubnets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeSubnetsPaginator
@@ -2551,29 +3380,43 @@ def get_describe_subnets_paginator() -> DescribeSubnetsPaginator:
     return Session().client("ec2").get_paginator("describe_subnets")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeSubnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSubnets)
 
-Arguments for `DescribeSubnetsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SubnetIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSubnetsPaginator.paginate` method.
 
-`DescribeSubnetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SubnetIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSubnetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetagspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSubnetsRequestDescribeSubnetsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSubnetsRequestDescribeSubnetsPaginateTypeDef](./type_defs.md#describesubnetsrequestdescribesubnetspaginatetypedef) 
 ## DescribeTagsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_tags")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_tags")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTags)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTagsPaginator
@@ -2582,29 +3425,42 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return Session().client("ec2").get_paginator("describe_tags")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTags)
 
-Arguments for `DescribeTagsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTagsPaginator.paginate` method.
 
-`DescribeTagsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTagsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetrafficmirrorfilterspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsRequestDescribeTagsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTagsRequestDescribeTagsPaginateTypeDef](./type_defs.md#describetagsrequestdescribetagspaginatetypedef) 
 ## DescribeTrafficMirrorFiltersPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorFilters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTrafficMirrorFiltersPaginator
@@ -2613,30 +3469,43 @@ def get_describe_traffic_mirror_filters_paginator() -> DescribeTrafficMirrorFilt
     return Session().client("ec2").get_paginator("describe_traffic_mirror_filters")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTrafficMirrorFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorFilters)
 
-Arguments for `DescribeTrafficMirrorFiltersPaginator.paginate` method:
+### paginate
 
-- `TrafficMirrorFilterIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTrafficMirrorFiltersPaginator.paginate` method.
 
-`DescribeTrafficMirrorFiltersPaginator.paginate` returns
-`_PageIterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TrafficMirrorFilterIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTrafficMirrorFiltersResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetrafficmirrorsessionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrafficMirrorFiltersRequestDescribeTrafficMirrorFiltersPaginateTypeDef = {  # (1)
+    "TrafficMirrorFilterIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrafficMirrorFiltersRequestDescribeTrafficMirrorFiltersPaginateTypeDef](./type_defs.md#describetrafficmirrorfiltersrequestdescribetrafficmirrorfilterspaginatetypedef) 
 ## DescribeTrafficMirrorSessionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTrafficMirrorSessionsPaginator
@@ -2645,30 +3514,43 @@ def get_describe_traffic_mirror_sessions_paginator() -> DescribeTrafficMirrorSes
     return Session().client("ec2").get_paginator("describe_traffic_mirror_sessions")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTrafficMirrorSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorSessions)
 
-Arguments for `DescribeTrafficMirrorSessionsPaginator.paginate` method:
+### paginate
 
-- `TrafficMirrorSessionIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTrafficMirrorSessionsPaginator.paginate` method.
 
-`DescribeTrafficMirrorSessionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TrafficMirrorSessionIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTrafficMirrorSessionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetrafficmirrortargetspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrafficMirrorSessionsRequestDescribeTrafficMirrorSessionsPaginateTypeDef = {  # (1)
+    "TrafficMirrorSessionIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrafficMirrorSessionsRequestDescribeTrafficMirrorSessionsPaginateTypeDef](./type_defs.md#describetrafficmirrorsessionsrequestdescribetrafficmirrorsessionspaginatetypedef) 
 ## DescribeTrafficMirrorTargetsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorTargets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTrafficMirrorTargetsPaginator
@@ -2677,30 +3559,43 @@ def get_describe_traffic_mirror_targets_paginator() -> DescribeTrafficMirrorTarg
     return Session().client("ec2").get_paginator("describe_traffic_mirror_targets")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTrafficMirrorTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrafficMirrorTargets)
 
-Arguments for `DescribeTrafficMirrorTargetsPaginator.paginate` method:
+### paginate
 
-- `TrafficMirrorTargetIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTrafficMirrorTargetsPaginator.paginate` method.
 
-`DescribeTrafficMirrorTargetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TrafficMirrorTargetIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTrafficMirrorTargetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewayattachmentspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrafficMirrorTargetsRequestDescribeTrafficMirrorTargetsPaginateTypeDef = {  # (1)
+    "TrafficMirrorTargetIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrafficMirrorTargetsRequestDescribeTrafficMirrorTargetsPaginateTypeDef](./type_defs.md#describetrafficmirrortargetsrequestdescribetrafficmirrortargetspaginatetypedef) 
 ## DescribeTransitGatewayAttachmentsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayAttachments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayAttachmentsPaginator
@@ -2709,30 +3604,43 @@ def get_describe_transit_gateway_attachments_paginator() -> DescribeTransitGatew
     return Session().client("ec2").get_paginator("describe_transit_gateway_attachments")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayAttachments)
 
-Arguments for `DescribeTransitGatewayAttachmentsPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayAttachmentsPaginator.paginate` method.
 
-`DescribeTransitGatewayAttachmentsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayAttachmentIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayAttachmentsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewayconnectpeerspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayAttachmentsRequestDescribeTransitGatewayAttachmentsPaginateTypeDef = {  # (1)
+    "TransitGatewayAttachmentIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayAttachmentsRequestDescribeTransitGatewayAttachmentsPaginateTypeDef](./type_defs.md#describetransitgatewayattachmentsrequestdescribetransitgatewayattachmentspaginatetypedef) 
 ## DescribeTransitGatewayConnectPeersPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnectPeers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectPeersPaginator
@@ -2741,30 +3649,43 @@ def get_describe_transit_gateway_connect_peers_paginator() -> DescribeTransitGat
     return Session().client("ec2").get_paginator("describe_transit_gateway_connect_peers")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayConnectPeers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnectPeers)
 
-Arguments for `DescribeTransitGatewayConnectPeersPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayConnectPeerIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayConnectPeersPaginator.paginate` method.
 
-`DescribeTransitGatewayConnectPeersPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayConnectPeerIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayConnectPeersResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewayconnectspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayConnectPeersRequestDescribeTransitGatewayConnectPeersPaginateTypeDef = {  # (1)
+    "TransitGatewayConnectPeerIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayConnectPeersRequestDescribeTransitGatewayConnectPeersPaginateTypeDef](./type_defs.md#describetransitgatewayconnectpeersrequestdescribetransitgatewayconnectpeerspaginatetypedef) 
 ## DescribeTransitGatewayConnectsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_connects")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_connects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectsPaginator
@@ -2773,30 +3694,43 @@ def get_describe_transit_gateway_connects_paginator() -> DescribeTransitGatewayC
     return Session().client("ec2").get_paginator("describe_transit_gateway_connects")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayConnects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayConnects)
 
-Arguments for `DescribeTransitGatewayConnectsPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayConnectsPaginator.paginate` method.
 
-`DescribeTransitGatewayConnectsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayAttachmentIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayConnectsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewaymulticastdomainspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayConnectsRequestDescribeTransitGatewayConnectsPaginateTypeDef = {  # (1)
+    "TransitGatewayAttachmentIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayConnectsRequestDescribeTransitGatewayConnectsPaginateTypeDef](./type_defs.md#describetransitgatewayconnectsrequestdescribetransitgatewayconnectspaginatetypedef) 
 ## DescribeTransitGatewayMulticastDomainsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayMulticastDomains)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayMulticastDomainsPaginator
@@ -2805,31 +3739,43 @@ def get_describe_transit_gateway_multicast_domains_paginator() -> DescribeTransi
     return Session().client("ec2").get_paginator("describe_transit_gateway_multicast_domains")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayMulticastDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayMulticastDomains)
 
-Arguments for `DescribeTransitGatewayMulticastDomainsPaginator.paginate`
-method:
+### paginate
 
-- `TransitGatewayMulticastDomainIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayMulticastDomainsPaginator.paginate` method.
 
-`DescribeTransitGatewayMulticastDomainsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayMulticastDomainIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayMulticastDomainsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewaypeeringattachmentspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayMulticastDomainsRequestDescribeTransitGatewayMulticastDomainsPaginateTypeDef = {  # (1)
+    "TransitGatewayMulticastDomainIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayMulticastDomainsRequestDescribeTransitGatewayMulticastDomainsPaginateTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsrequestdescribetransitgatewaymulticastdomainspaginatetypedef) 
 ## DescribeTransitGatewayPeeringAttachmentsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayPeeringAttachments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayPeeringAttachmentsPaginator
@@ -2838,31 +3784,43 @@ def get_describe_transit_gateway_peering_attachments_paginator() -> DescribeTran
     return Session().client("ec2").get_paginator("describe_transit_gateway_peering_attachments")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayPeeringAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayPeeringAttachments)
 
-Arguments for `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate`
-method:
+### paginate
 
-- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` method.
 
-`DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayAttachmentIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayPeeringAttachmentsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewayroutetablespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayPeeringAttachmentsRequestDescribeTransitGatewayPeeringAttachmentsPaginateTypeDef = {  # (1)
+    "TransitGatewayAttachmentIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayPeeringAttachmentsRequestDescribeTransitGatewayPeeringAttachmentsPaginateTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsrequestdescribetransitgatewaypeeringattachmentspaginatetypedef) 
 ## DescribeTransitGatewayRouteTablesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayRouteTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayRouteTablesPaginator
@@ -2871,30 +3829,43 @@ def get_describe_transit_gateway_route_tables_paginator() -> DescribeTransitGate
     return Session().client("ec2").get_paginator("describe_transit_gateway_route_tables")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayRouteTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayRouteTables)
 
-Arguments for `DescribeTransitGatewayRouteTablesPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayRouteTableIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayRouteTablesPaginator.paginate` method.
 
-`DescribeTransitGatewayRouteTablesPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayRouteTableIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayRouteTablesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewayvpcattachmentspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayRouteTablesRequestDescribeTransitGatewayRouteTablesPaginateTypeDef = {  # (1)
+    "TransitGatewayRouteTableIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayRouteTablesRequestDescribeTransitGatewayRouteTablesPaginateTypeDef](./type_defs.md#describetransitgatewayroutetablesrequestdescribetransitgatewayroutetablespaginatetypedef) 
 ## DescribeTransitGatewayVpcAttachmentsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayVpcAttachments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayVpcAttachmentsPaginator
@@ -2903,30 +3874,43 @@ def get_describe_transit_gateway_vpc_attachments_paginator() -> DescribeTransitG
     return Session().client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGatewayVpcAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGatewayVpcAttachments)
 
-Arguments for `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method.
 
-`DescribeTransitGatewayVpcAttachmentsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayAttachmentIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewayVpcAttachmentsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetransitgatewayspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewayVpcAttachmentsRequestDescribeTransitGatewayVpcAttachmentsPaginateTypeDef = {  # (1)
+    "TransitGatewayAttachmentIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewayVpcAttachmentsRequestDescribeTransitGatewayVpcAttachmentsPaginateTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsrequestdescribetransitgatewayvpcattachmentspaginatetypedef) 
 ## DescribeTransitGatewaysPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_transit_gateways")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_transit_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTransitGatewaysPaginator
@@ -2935,30 +3919,43 @@ def get_describe_transit_gateways_paginator() -> DescribeTransitGatewaysPaginato
     return Session().client("ec2").get_paginator("describe_transit_gateways")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTransitGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTransitGateways)
 
-Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTransitGatewaysPaginator.paginate` method.
 
-`DescribeTransitGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTransitGatewaysResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetrunkinterfaceassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransitGatewaysRequestDescribeTransitGatewaysPaginateTypeDef = {  # (1)
+    "TransitGatewayIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransitGatewaysRequestDescribeTransitGatewaysPaginateTypeDef](./type_defs.md#describetransitgatewaysrequestdescribetransitgatewayspaginatetypedef) 
 ## DescribeTrunkInterfaceAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_trunk_interface_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_trunk_interface_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrunkInterfaceAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeTrunkInterfaceAssociationsPaginator
@@ -2967,30 +3964,43 @@ def get_describe_trunk_interface_associations_paginator() -> DescribeTrunkInterf
     return Session().client("ec2").get_paginator("describe_trunk_interface_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeTrunkInterfaceAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrunkInterfaceAssociations)
 
-Arguments for `DescribeTrunkInterfaceAssociationsPaginator.paginate` method:
+### paginate
 
-- `AssociationIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTrunkInterfaceAssociationsPaginator.paginate` method.
 
-`DescribeTrunkInterfaceAssociationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AssociationIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTrunkInterfaceAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevolumestatuspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrunkInterfaceAssociationsRequestDescribeTrunkInterfaceAssociationsPaginateTypeDef = {  # (1)
+    "AssociationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrunkInterfaceAssociationsRequestDescribeTrunkInterfaceAssociationsPaginateTypeDef](./type_defs.md#describetrunkinterfaceassociationsrequestdescribetrunkinterfaceassociationspaginatetypedef) 
 ## DescribeVolumeStatusPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_volume_status")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_volume_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumeStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVolumeStatusPaginator
@@ -2999,29 +4009,43 @@ def get_describe_volume_status_paginator() -> DescribeVolumeStatusPaginator:
     return Session().client("ec2").get_paginator("describe_volume_status")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVolumeStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumeStatus)
 
-Arguments for `DescribeVolumeStatusPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVolumeStatusPaginator.paginate` method.
 
-`DescribeVolumeStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VolumeIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVolumeStatusResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevolumespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumeStatusRequestDescribeVolumeStatusPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVolumeStatusRequestDescribeVolumeStatusPaginateTypeDef](./type_defs.md#describevolumestatusrequestdescribevolumestatuspaginatetypedef) 
 ## DescribeVolumesPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_volumes")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_volumes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVolumesPaginator
@@ -3030,30 +4054,43 @@ def get_describe_volumes_paginator() -> DescribeVolumesPaginator:
     return Session().client("ec2").get_paginator("describe_volumes")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVolumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumes)
 
-Arguments for `DescribeVolumesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVolumesPaginator.paginate` method.
 
-`DescribeVolumesPaginator.paginate` returns
-`_PageIterator`\[[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VolumeIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVolumesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevolumesmodificationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumesRequestDescribeVolumesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVolumesRequestDescribeVolumesPaginateTypeDef](./type_defs.md#describevolumesrequestdescribevolumespaginatetypedef) 
 ## DescribeVolumesModificationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_volumes_modifications")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_volumes_modifications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumesModifications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVolumesModificationsPaginator
@@ -3062,30 +4099,43 @@ def get_describe_volumes_modifications_paginator() -> DescribeVolumesModificatio
     return Session().client("ec2").get_paginator("describe_volumes_modifications")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVolumesModifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVolumesModifications)
 
-Arguments for `DescribeVolumesModificationsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `VolumeIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVolumesModificationsPaginator.paginate` method.
 
-`DescribeVolumesModificationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    VolumeIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVolumesModificationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcclassiclinkdnssupportpaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumesModificationsRequestDescribeVolumesModificationsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVolumesModificationsRequestDescribeVolumesModificationsPaginateTypeDef](./type_defs.md#describevolumesmodificationsrequestdescribevolumesmodificationspaginatetypedef) 
 ## DescribeVpcClassicLinkDnsSupportPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcClassicLinkDnsSupport)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcClassicLinkDnsSupportPaginator
@@ -3094,28 +4144,40 @@ def get_describe_vpc_classic_link_dns_support_paginator() -> DescribeVpcClassicL
     return Session().client("ec2").get_paginator("describe_vpc_classic_link_dns_support")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcClassicLinkDnsSupport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcClassicLinkDnsSupport)
 
-Arguments for `DescribeVpcClassicLinkDnsSupportPaginator.paginate` method:
+### paginate
 
-- `VpcIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcClassicLinkDnsSupportPaginator.paginate` method.
 
-`DescribeVpcClassicLinkDnsSupportPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VpcIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeVpcClassicLinkDnsSupportResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describevpcendpointconnectionnotificationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcClassicLinkDnsSupportRequestDescribeVpcClassicLinkDnsSupportPaginateTypeDef = {  # (1)
+    "VpcIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcClassicLinkDnsSupportRequestDescribeVpcClassicLinkDnsSupportPaginateTypeDef](./type_defs.md#describevpcclassiclinkdnssupportrequestdescribevpcclassiclinkdnssupportpaginatetypedef) 
 ## DescribeVpcEndpointConnectionNotificationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnectionNotifications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionNotificationsPaginator
@@ -3124,31 +4186,43 @@ def get_describe_vpc_endpoint_connection_notifications_paginator() -> DescribeVp
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcEndpointConnectionNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnectionNotifications)
 
-Arguments for `DescribeVpcEndpointConnectionNotificationsPaginator.paginate`
-method:
+### paginate
 
-- `DryRun`: `bool`
-- `ConnectionNotificationId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcEndpointConnectionNotificationsPaginator.paginate` method.
 
-`DescribeVpcEndpointConnectionNotificationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    ConnectionNotificationId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcEndpointConnectionNotificationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcendpointconnectionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointConnectionNotificationsRequestDescribeVpcEndpointConnectionNotificationsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointConnectionNotificationsRequestDescribeVpcEndpointConnectionNotificationsPaginateTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsrequestdescribevpcendpointconnectionnotificationspaginatetypedef) 
 ## DescribeVpcEndpointConnectionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionsPaginator
@@ -3157,29 +4231,42 @@ def get_describe_vpc_endpoint_connections_paginator() -> DescribeVpcEndpointConn
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_connections")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcEndpointConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointConnections)
 
-Arguments for `DescribeVpcEndpointConnectionsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcEndpointConnectionsPaginator.paginate` method.
 
-`DescribeVpcEndpointConnectionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcEndpointConnectionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcendpointserviceconfigurationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointConnectionsRequestDescribeVpcEndpointConnectionsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointConnectionsRequestDescribeVpcEndpointConnectionsPaginateTypeDef](./type_defs.md#describevpcendpointconnectionsrequestdescribevpcendpointconnectionspaginatetypedef) 
 ## DescribeVpcEndpointServiceConfigurationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServiceConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointServiceConfigurationsPaginator
@@ -3188,31 +4275,43 @@ def get_describe_vpc_endpoint_service_configurations_paginator() -> DescribeVpcE
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcEndpointServiceConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServiceConfigurations)
 
-Arguments for `DescribeVpcEndpointServiceConfigurationsPaginator.paginate`
-method:
+### paginate
 
-- `DryRun`: `bool`
-- `ServiceIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcEndpointServiceConfigurationsPaginator.paginate` method.
 
-`DescribeVpcEndpointServiceConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    ServiceIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcEndpointServiceConfigurationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcendpointservicepermissionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointServiceConfigurationsRequestDescribeVpcEndpointServiceConfigurationsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointServiceConfigurationsRequestDescribeVpcEndpointServiceConfigurationsPaginateTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsrequestdescribevpcendpointserviceconfigurationspaginatetypedef) 
 ## DescribeVpcEndpointServicePermissionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServicePermissions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicePermissionsPaginator
@@ -3221,30 +4320,43 @@ def get_describe_vpc_endpoint_service_permissions_paginator() -> DescribeVpcEndp
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcEndpointServicePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServicePermissions)
 
-Arguments for `DescribeVpcEndpointServicePermissionsPaginator.paginate` method:
+### paginate
 
-- `ServiceId`: `str` *(required)*
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcEndpointServicePermissionsPaginator.paginate` method.
 
-`DescribeVpcEndpointServicePermissionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceId: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcEndpointServicePermissionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcendpointservicespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointServicePermissionsRequestDescribeVpcEndpointServicePermissionsPaginateTypeDef = {  # (1)
+    "ServiceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointServicePermissionsRequestDescribeVpcEndpointServicePermissionsPaginateTypeDef](./type_defs.md#describevpcendpointservicepermissionsrequestdescribevpcendpointservicepermissionspaginatetypedef) 
 ## DescribeVpcEndpointServicesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicesPaginator
@@ -3253,30 +4365,43 @@ def get_describe_vpc_endpoint_services_paginator() -> DescribeVpcEndpointService
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_services")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcEndpointServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpointServices)
 
-Arguments for `DescribeVpcEndpointServicesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `ServiceNames`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcEndpointServicesPaginator.paginate` method.
 
-`DescribeVpcEndpointServicesPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    ServiceNames: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcEndpointServicesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcendpointspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointServicesRequestDescribeVpcEndpointServicesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointServicesRequestDescribeVpcEndpointServicesPaginateTypeDef](./type_defs.md#describevpcendpointservicesrequestdescribevpcendpointservicespaginatetypedef) 
 ## DescribeVpcEndpointsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointsPaginator
@@ -3285,30 +4410,43 @@ def get_describe_vpc_endpoints_paginator() -> DescribeVpcEndpointsPaginator:
     return Session().client("ec2").get_paginator("describe_vpc_endpoints")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcEndpoints)
 
-Arguments for `DescribeVpcEndpointsPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `VpcEndpointIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcEndpointsPaginator.paginate` method.
 
-`DescribeVpcEndpointsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    VpcEndpointIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcEndpointsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcpeeringconnectionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointsRequestDescribeVpcEndpointsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointsRequestDescribeVpcEndpointsPaginateTypeDef](./type_defs.md#describevpcendpointsrequestdescribevpcendpointspaginatetypedef) 
 ## DescribeVpcPeeringConnectionsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_vpc_peering_connections")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpc_peering_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcPeeringConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcPeeringConnectionsPaginator
@@ -3317,29 +4455,43 @@ def get_describe_vpc_peering_connections_paginator() -> DescribeVpcPeeringConnec
     return Session().client("ec2").get_paginator("describe_vpc_peering_connections")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcPeeringConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcPeeringConnections)
 
-Arguments for `DescribeVpcPeeringConnectionsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcPeeringConnectionsPaginator.paginate` method.
 
-`DescribeVpcPeeringConnectionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    VpcPeeringConnectionIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcPeeringConnectionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describevpcspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcPeeringConnectionsRequestDescribeVpcPeeringConnectionsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcPeeringConnectionsRequestDescribeVpcPeeringConnectionsPaginateTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestdescribevpcpeeringconnectionspaginatetypedef) 
 ## DescribeVpcsPaginator
 
-Type annotations for `boto3.client("ec2").get_paginator("describe_vpcs")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_vpcs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import DescribeVpcsPaginator
@@ -3348,30 +4500,43 @@ def get_describe_vpcs_paginator() -> DescribeVpcsPaginator:
     return Session().client("ec2").get_paginator("describe_vpcs")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.DescribeVpcs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVpcs)
 
-Arguments for `DescribeVpcsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVpcsPaginator.paginate` method.
 
-`DescribeVpcsPaginator.paginate` returns
-`_PageIterator`\[[DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VpcIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVpcsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="getassociatedipv6poolcidrspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcsRequestDescribeVpcsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcsRequestDescribeVpcsPaginateTypeDef](./type_defs.md#describevpcsrequestdescribevpcspaginatetypedef) 
 ## GetAssociatedIpv6PoolCidrsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAssociatedIpv6PoolCidrs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetAssociatedIpv6PoolCidrsPaginator
@@ -3380,29 +4545,41 @@ def get_get_associated_ipv6_pool_cidrs_paginator() -> GetAssociatedIpv6PoolCidrs
     return Session().client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetAssociatedIpv6PoolCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAssociatedIpv6PoolCidrs)
 
-Arguments for `GetAssociatedIpv6PoolCidrsPaginator.paginate` method:
+### paginate
 
-- `PoolId`: `str` *(required)*
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetAssociatedIpv6PoolCidrsPaginator.paginate` method.
 
-`GetAssociatedIpv6PoolCidrsPaginator.paginate` returns
-`_PageIterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PoolId: str,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetAssociatedIpv6PoolCidrsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getgroupsforcapacityreservationpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetAssociatedIpv6PoolCidrsRequestGetAssociatedIpv6PoolCidrsPaginateTypeDef = {  # (1)
+    "PoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetAssociatedIpv6PoolCidrsRequestGetAssociatedIpv6PoolCidrsPaginateTypeDef](./type_defs.md#getassociatedipv6poolcidrsrequestgetassociatedipv6poolcidrspaginatetypedef) 
 ## GetGroupsForCapacityReservationPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetGroupsForCapacityReservation)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetGroupsForCapacityReservationPaginator
@@ -3411,29 +4588,41 @@ def get_get_groups_for_capacity_reservation_paginator() -> GetGroupsForCapacityR
     return Session().client("ec2").get_paginator("get_groups_for_capacity_reservation")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetGroupsForCapacityReservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetGroupsForCapacityReservation)
 
-Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
+### paginate
 
-- `CapacityReservationId`: `str` *(required)*
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetGroupsForCapacityReservationPaginator.paginate` method.
 
-`GetGroupsForCapacityReservationPaginator.paginate` returns
-`_PageIterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CapacityReservationId: str,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetGroupsForCapacityReservationResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getinstancetypesfrominstancerequirementspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetGroupsForCapacityReservationRequestGetGroupsForCapacityReservationPaginateTypeDef = {  # (1)
+    "CapacityReservationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetGroupsForCapacityReservationRequestGetGroupsForCapacityReservationPaginateTypeDef](./type_defs.md#getgroupsforcapacityreservationrequestgetgroupsforcapacityreservationpaginatetypedef) 
 ## GetInstanceTypesFromInstanceRequirementsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_instance_types_from_instance_requirements")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_instance_types_from_instance_requirements")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetInstanceTypesFromInstanceRequirements)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetInstanceTypesFromInstanceRequirementsPaginator
@@ -3442,38 +4631,48 @@ def get_get_instance_types_from_instance_requirements_paginator() -> GetInstance
     return Session().client("ec2").get_paginator("get_instance_types_from_instance_requirements")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetInstanceTypesFromInstanceRequirements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetInstanceTypesFromInstanceRequirements)
 
-Arguments for `GetInstanceTypesFromInstanceRequirementsPaginator.paginate`
-method:
+### paginate
 
-- `ArchitectureTypes`:
-  `Sequence`\[[ArchitectureTypeType](./literals.md#architecturetypetype)\]
-  *(required)*
-- `VirtualizationTypes`:
-  `Sequence`\[[VirtualizationTypeType](./literals.md#virtualizationtypetype)\]
-  *(required)*
-- `InstanceRequirements`:
-  [InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef)
-  *(required)*
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetInstanceTypesFromInstanceRequirementsPaginator.paginate` method.
 
-`GetInstanceTypesFromInstanceRequirementsPaginator.paginate` returns
-`_PageIterator`\[[GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ArchitectureTypes: Sequence[ArchitectureTypeType],  # (1)
+    VirtualizationTypes: Sequence[VirtualizationTypeType],  # (2)
+    InstanceRequirements: InstanceRequirementsRequestTypeDef,  # (3)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetInstanceTypesFromInstanceRequirementsResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="getipamaddresshistorypaginator"></a>
+1. See [:material-code-brackets: ArchitectureTypeType](./literals.md#architecturetypetype) 
+2. See [:material-code-brackets: VirtualizationTypeType](./literals.md#virtualizationtypetype) 
+3. See [:material-code-braces: InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetInstanceTypesFromInstanceRequirementsRequestGetInstanceTypesFromInstanceRequirementsPaginateTypeDef = {  # (1)
+    "ArchitectureTypes": ...,
+    "VirtualizationTypes": ...,
+    "InstanceRequirements": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetInstanceTypesFromInstanceRequirementsRequestGetInstanceTypesFromInstanceRequirementsPaginateTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsrequestgetinstancetypesfrominstancerequirementspaginatetypedef) 
 ## GetIpamAddressHistoryPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_ipam_address_history")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_address_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamAddressHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetIpamAddressHistoryPaginator
@@ -3482,33 +4681,46 @@ def get_get_ipam_address_history_paginator() -> GetIpamAddressHistoryPaginator:
     return Session().client("ec2").get_paginator("get_ipam_address_history")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetIpamAddressHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamAddressHistory)
 
-Arguments for `GetIpamAddressHistoryPaginator.paginate` method:
+### paginate
 
-- `Cidr`: `str` *(required)*
-- `IpamScopeId`: `str` *(required)*
-- `DryRun`: `bool`
-- `VpcId`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIpamAddressHistoryPaginator.paginate` method.
 
-`GetIpamAddressHistoryPaginator.paginate` returns
-`_PageIterator`\[[GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Cidr: str,
+    IpamScopeId: str,
+    DryRun: bool = ...,
+    VpcId: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetIpamAddressHistoryResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getipampoolallocationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamAddressHistoryRequestGetIpamAddressHistoryPaginateTypeDef = {  # (1)
+    "Cidr": ...,
+    "IpamScopeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamAddressHistoryRequestGetIpamAddressHistoryPaginateTypeDef](./type_defs.md#getipamaddresshistoryrequestgetipamaddresshistorypaginatetypedef) 
 ## GetIpamPoolAllocationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_ipam_pool_allocations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_pool_allocations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamPoolAllocations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetIpamPoolAllocationsPaginator
@@ -3517,31 +4729,44 @@ def get_get_ipam_pool_allocations_paginator() -> GetIpamPoolAllocationsPaginator
     return Session().client("ec2").get_paginator("get_ipam_pool_allocations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetIpamPoolAllocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamPoolAllocations)
 
-Arguments for `GetIpamPoolAllocationsPaginator.paginate` method:
+### paginate
 
-- `IpamPoolId`: `str` *(required)*
-- `DryRun`: `bool`
-- `IpamPoolAllocationId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIpamPoolAllocationsPaginator.paginate` method.
 
-`GetIpamPoolAllocationsPaginator.paginate` returns
-`_PageIterator`\[[GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    IpamPoolId: str,
+    DryRun: bool = ...,
+    IpamPoolAllocationId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetIpamPoolAllocationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="getipampoolcidrspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamPoolAllocationsRequestGetIpamPoolAllocationsPaginateTypeDef = {  # (1)
+    "IpamPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamPoolAllocationsRequestGetIpamPoolAllocationsPaginateTypeDef](./type_defs.md#getipampoolallocationsrequestgetipampoolallocationspaginatetypedef) 
 ## GetIpamPoolCidrsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_ipam_pool_cidrs")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_pool_cidrs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamPoolCidrs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetIpamPoolCidrsPaginator
@@ -3550,30 +4775,43 @@ def get_get_ipam_pool_cidrs_paginator() -> GetIpamPoolCidrsPaginator:
     return Session().client("ec2").get_paginator("get_ipam_pool_cidrs")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetIpamPoolCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamPoolCidrs)
 
-Arguments for `GetIpamPoolCidrsPaginator.paginate` method:
+### paginate
 
-- `IpamPoolId`: `str` *(required)*
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIpamPoolCidrsPaginator.paginate` method.
 
-`GetIpamPoolCidrsPaginator.paginate` returns
-`_PageIterator`\[[GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    IpamPoolId: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetIpamPoolCidrsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="getipamresourcecidrspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamPoolCidrsRequestGetIpamPoolCidrsPaginateTypeDef = {  # (1)
+    "IpamPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamPoolCidrsRequestGetIpamPoolCidrsPaginateTypeDef](./type_defs.md#getipampoolcidrsrequestgetipampoolcidrspaginatetypedef) 
 ## GetIpamResourceCidrsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_ipam_resource_cidrs")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_resource_cidrs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamResourceCidrs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetIpamResourceCidrsPaginator
@@ -3582,36 +4820,50 @@ def get_get_ipam_resource_cidrs_paginator() -> GetIpamResourceCidrsPaginator:
     return Session().client("ec2").get_paginator("get_ipam_resource_cidrs")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetIpamResourceCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamResourceCidrs)
 
-Arguments for `GetIpamResourceCidrsPaginator.paginate` method:
+### paginate
 
-- `IpamScopeId`: `str` *(required)*
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `IpamPoolId`: `str`
-- `ResourceId`: `str`
-- `ResourceType`: [IpamResourceTypeType](./literals.md#ipamresourcetypetype)
-- `ResourceTag`:
-  [RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef)
-- `ResourceOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIpamResourceCidrsPaginator.paginate` method.
 
-`GetIpamResourceCidrsPaginator.paginate` returns
-`_PageIterator`\[[GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    IpamScopeId: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    IpamPoolId: str = ...,
+    ResourceId: str = ...,
+    ResourceType: IpamResourceTypeType = ...,  # (2)
+    ResourceTag: RequestIpamResourceTagTypeDef = ...,  # (3)
+    ResourceOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetIpamResourceCidrsResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="getmanagedprefixlistassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: IpamResourceTypeType](./literals.md#ipamresourcetypetype) 
+3. See [:material-code-braces: RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamResourceCidrsRequestGetIpamResourceCidrsPaginateTypeDef = {  # (1)
+    "IpamScopeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamResourceCidrsRequestGetIpamResourceCidrsPaginateTypeDef](./type_defs.md#getipamresourcecidrsrequestgetipamresourcecidrspaginatetypedef) 
 ## GetManagedPrefixListAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetManagedPrefixListAssociationsPaginator
@@ -3620,29 +4872,41 @@ def get_get_managed_prefix_list_associations_paginator() -> GetManagedPrefixList
     return Session().client("ec2").get_paginator("get_managed_prefix_list_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetManagedPrefixListAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListAssociations)
 
-Arguments for `GetManagedPrefixListAssociationsPaginator.paginate` method:
+### paginate
 
-- `PrefixListId`: `str` *(required)*
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetManagedPrefixListAssociationsPaginator.paginate` method.
 
-`GetManagedPrefixListAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PrefixListId: str,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetManagedPrefixListAssociationsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getmanagedprefixlistentriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetManagedPrefixListAssociationsRequestGetManagedPrefixListAssociationsPaginateTypeDef = {  # (1)
+    "PrefixListId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetManagedPrefixListAssociationsRequestGetManagedPrefixListAssociationsPaginateTypeDef](./type_defs.md#getmanagedprefixlistassociationsrequestgetmanagedprefixlistassociationspaginatetypedef) 
 ## GetManagedPrefixListEntriesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListEntries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetManagedPrefixListEntriesPaginator
@@ -3651,30 +4915,42 @@ def get_get_managed_prefix_list_entries_paginator() -> GetManagedPrefixListEntri
     return Session().client("ec2").get_paginator("get_managed_prefix_list_entries")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetManagedPrefixListEntries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetManagedPrefixListEntries)
 
-Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
+### paginate
 
-- `PrefixListId`: `str` *(required)*
-- `DryRun`: `bool`
-- `TargetVersion`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetManagedPrefixListEntriesPaginator.paginate` method.
 
-`GetManagedPrefixListEntriesPaginator.paginate` returns
-`_PageIterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PrefixListId: str,
+    DryRun: bool = ...,
+    TargetVersion: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetManagedPrefixListEntriesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getspotplacementscorespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetManagedPrefixListEntriesRequestGetManagedPrefixListEntriesPaginateTypeDef = {  # (1)
+    "PrefixListId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetManagedPrefixListEntriesRequestGetManagedPrefixListEntriesPaginateTypeDef](./type_defs.md#getmanagedprefixlistentriesrequestgetmanagedprefixlistentriespaginatetypedef) 
 ## GetSpotPlacementScoresPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_spot_placement_scores")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_spot_placement_scores")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetSpotPlacementScores)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetSpotPlacementScoresPaginator
@@ -3683,36 +4959,48 @@ def get_get_spot_placement_scores_paginator() -> GetSpotPlacementScoresPaginator
     return Session().client("ec2").get_paginator("get_spot_placement_scores")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetSpotPlacementScores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetSpotPlacementScores)
 
-Arguments for `GetSpotPlacementScoresPaginator.paginate` method:
+### paginate
 
-- `TargetCapacity`: `int` *(required)*
-- `InstanceTypes`: `Sequence`\[`str`\]
-- `TargetCapacityUnitType`:
-  [TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype)
-- `SingleAvailabilityZone`: `bool`
-- `RegionNames`: `Sequence`\[`str`\]
-- `InstanceRequirementsWithMetadata`:
-  [InstanceRequirementsWithMetadataRequestTypeDef](./type_defs.md#instancerequirementswithmetadatarequesttypedef)
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSpotPlacementScoresPaginator.paginate` method.
 
-`GetSpotPlacementScoresPaginator.paginate` returns
-`_PageIterator`\[[GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TargetCapacity: int,
+    InstanceTypes: Sequence[str] = ...,
+    TargetCapacityUnitType: TargetCapacityUnitTypeType = ...,  # (1)
+    SingleAvailabilityZone: bool = ...,
+    RegionNames: Sequence[str] = ...,
+    InstanceRequirementsWithMetadata: InstanceRequirementsWithMetadataRequestTypeDef = ...,  # (2)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[GetSpotPlacementScoresResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="gettransitgatewayattachmentpropagationspaginator"></a>
+1. See [:material-code-brackets: TargetCapacityUnitTypeType](./literals.md#targetcapacityunittypetype) 
+2. See [:material-code-braces: InstanceRequirementsWithMetadataRequestTypeDef](./type_defs.md#instancerequirementswithmetadatarequesttypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSpotPlacementScoresRequestGetSpotPlacementScoresPaginateTypeDef = {  # (1)
+    "TargetCapacity": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSpotPlacementScoresRequestGetSpotPlacementScoresPaginateTypeDef](./type_defs.md#getspotplacementscoresrequestgetspotplacementscorespaginatetypedef) 
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayAttachmentPropagations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetTransitGatewayAttachmentPropagationsPaginator
@@ -3721,31 +5009,43 @@ def get_get_transit_gateway_attachment_propagations_paginator() -> GetTransitGat
     return Session().client("ec2").get_paginator("get_transit_gateway_attachment_propagations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetTransitGatewayAttachmentPropagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayAttachmentPropagations)
 
-Arguments for `GetTransitGatewayAttachmentPropagationsPaginator.paginate`
-method:
+### paginate
 
-- `TransitGatewayAttachmentId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayAttachmentPropagationsPaginator.paginate` method.
 
-`GetTransitGatewayAttachmentPropagationsPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayAttachmentId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetTransitGatewayAttachmentPropagationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="gettransitgatewaymulticastdomainassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayAttachmentPropagationsRequestGetTransitGatewayAttachmentPropagationsPaginateTypeDef = {  # (1)
+    "TransitGatewayAttachmentId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayAttachmentPropagationsRequestGetTransitGatewayAttachmentPropagationsPaginateTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsrequestgettransitgatewayattachmentpropagationspaginatetypedef) 
 ## GetTransitGatewayMulticastDomainAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayMulticastDomainAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetTransitGatewayMulticastDomainAssociationsPaginator
@@ -3754,31 +5054,43 @@ def get_get_transit_gateway_multicast_domain_associations_paginator() -> GetTran
     return Session().client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetTransitGatewayMulticastDomainAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayMulticastDomainAssociations)
 
-Arguments for `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` method.
 
-`GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayMulticastDomainId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetTransitGatewayMulticastDomainAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="gettransitgatewayprefixlistreferencespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayMulticastDomainAssociationsRequestGetTransitGatewayMulticastDomainAssociationsPaginateTypeDef = {  # (1)
+    "TransitGatewayMulticastDomainId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayMulticastDomainAssociationsRequestGetTransitGatewayMulticastDomainAssociationsPaginateTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsrequestgettransitgatewaymulticastdomainassociationspaginatetypedef) 
 ## GetTransitGatewayPrefixListReferencesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayPrefixListReferences)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetTransitGatewayPrefixListReferencesPaginator
@@ -3787,30 +5099,43 @@ def get_get_transit_gateway_prefix_list_references_paginator() -> GetTransitGate
     return Session().client("ec2").get_paginator("get_transit_gateway_prefix_list_references")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetTransitGatewayPrefixListReferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayPrefixListReferences)
 
-Arguments for `GetTransitGatewayPrefixListReferencesPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayPrefixListReferencesPaginator.paginate` method.
 
-`GetTransitGatewayPrefixListReferencesPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayRouteTableId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetTransitGatewayPrefixListReferencesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="gettransitgatewayroutetableassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayPrefixListReferencesRequestGetTransitGatewayPrefixListReferencesPaginateTypeDef = {  # (1)
+    "TransitGatewayRouteTableId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayPrefixListReferencesRequestGetTransitGatewayPrefixListReferencesPaginateTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesrequestgettransitgatewayprefixlistreferencespaginatetypedef) 
 ## GetTransitGatewayRouteTableAssociationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTableAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTableAssociationsPaginator
@@ -3819,31 +5144,43 @@ def get_get_transit_gateway_route_table_associations_paginator() -> GetTransitGa
     return Session().client("ec2").get_paginator("get_transit_gateway_route_table_associations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetTransitGatewayRouteTableAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTableAssociations)
 
-Arguments for `GetTransitGatewayRouteTableAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayRouteTableAssociationsPaginator.paginate` method.
 
-`GetTransitGatewayRouteTableAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayRouteTableId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetTransitGatewayRouteTableAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="gettransitgatewayroutetablepropagationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayRouteTableAssociationsRequestGetTransitGatewayRouteTableAssociationsPaginateTypeDef = {  # (1)
+    "TransitGatewayRouteTableId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayRouteTableAssociationsRequestGetTransitGatewayRouteTableAssociationsPaginateTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsrequestgettransitgatewayroutetableassociationspaginatetypedef) 
 ## GetTransitGatewayRouteTablePropagationsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTablePropagations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTablePropagationsPaginator
@@ -3852,31 +5189,43 @@ def get_get_transit_gateway_route_table_propagations_paginator() -> GetTransitGa
     return Session().client("ec2").get_paginator("get_transit_gateway_route_table_propagations")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetTransitGatewayRouteTablePropagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetTransitGatewayRouteTablePropagations)
 
-Arguments for `GetTransitGatewayRouteTablePropagationsPaginator.paginate`
-method:
+### paginate
 
-- `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayRouteTablePropagationsPaginator.paginate` method.
 
-`GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayRouteTableId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetTransitGatewayRouteTablePropagationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="getvpnconnectiondevicetypespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayRouteTablePropagationsRequestGetTransitGatewayRouteTablePropagationsPaginateTypeDef = {  # (1)
+    "TransitGatewayRouteTableId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayRouteTablePropagationsRequestGetTransitGatewayRouteTablePropagationsPaginateTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsrequestgettransitgatewayroutetablepropagationspaginatetypedef) 
 ## GetVpnConnectionDeviceTypesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("get_vpn_connection_device_types")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_vpn_connection_device_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetVpnConnectionDeviceTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import GetVpnConnectionDeviceTypesPaginator
@@ -3885,28 +5234,40 @@ def get_get_vpn_connection_device_types_paginator() -> GetVpnConnectionDeviceTyp
     return Session().client("ec2").get_paginator("get_vpn_connection_device_types")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.GetVpnConnectionDeviceTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetVpnConnectionDeviceTypes)
 
-Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
+### paginate
 
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetVpnConnectionDeviceTypesPaginator.paginate` method.
 
-`GetVpnConnectionDeviceTypesPaginator.paginate` returns
-`_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetVpnConnectionDeviceTypesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listimagesinrecyclebinpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetVpnConnectionDeviceTypesRequestGetVpnConnectionDeviceTypesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetVpnConnectionDeviceTypesRequestGetVpnConnectionDeviceTypesPaginateTypeDef](./type_defs.md#getvpnconnectiondevicetypesrequestgetvpnconnectiondevicetypespaginatetypedef) 
 ## ListImagesInRecycleBinPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("list_images_in_recycle_bin")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("list_images_in_recycle_bin")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListImagesInRecycleBin)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import ListImagesInRecycleBinPaginator
@@ -3915,29 +5276,41 @@ def get_list_images_in_recycle_bin_paginator() -> ListImagesInRecycleBinPaginato
     return Session().client("ec2").get_paginator("list_images_in_recycle_bin")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.ListImagesInRecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListImagesInRecycleBin)
 
-Arguments for `ListImagesInRecycleBinPaginator.paginate` method:
+### paginate
 
-- `ImageIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListImagesInRecycleBinPaginator.paginate` method.
 
-`ListImagesInRecycleBinPaginator.paginate` returns
-`_PageIterator`\[[ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ImageIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListImagesInRecycleBinResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsnapshotsinrecyclebinpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListImagesInRecycleBinRequestListImagesInRecycleBinPaginateTypeDef = {  # (1)
+    "ImageIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListImagesInRecycleBinRequestListImagesInRecycleBinPaginateTypeDef](./type_defs.md#listimagesinrecyclebinrequestlistimagesinrecyclebinpaginatetypedef) 
 ## ListSnapshotsInRecycleBinPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("list_snapshots_in_recycle_bin")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("list_snapshots_in_recycle_bin")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListSnapshotsInRecycleBin)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import ListSnapshotsInRecycleBinPaginator
@@ -3946,29 +5319,41 @@ def get_list_snapshots_in_recycle_bin_paginator() -> ListSnapshotsInRecycleBinPa
     return Session().client("ec2").get_paginator("list_snapshots_in_recycle_bin")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.ListSnapshotsInRecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListSnapshotsInRecycleBin)
 
-Arguments for `ListSnapshotsInRecycleBinPaginator.paginate` method:
+### paginate
 
-- `SnapshotIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSnapshotsInRecycleBinPaginator.paginate` method.
 
-`ListSnapshotsInRecycleBinPaginator.paginate` returns
-`_PageIterator`\[[ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SnapshotIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSnapshotsInRecycleBinResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchlocalgatewayroutespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSnapshotsInRecycleBinRequestListSnapshotsInRecycleBinPaginateTypeDef = {  # (1)
+    "SnapshotIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSnapshotsInRecycleBinRequestListSnapshotsInRecycleBinPaginateTypeDef](./type_defs.md#listsnapshotsinrecyclebinrequestlistsnapshotsinrecyclebinpaginatetypedef) 
 ## SearchLocalGatewayRoutesPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("search_local_gateway_routes")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("search_local_gateway_routes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchLocalGatewayRoutes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import SearchLocalGatewayRoutesPaginator
@@ -3977,30 +5362,43 @@ def get_search_local_gateway_routes_paginator() -> SearchLocalGatewayRoutesPagin
     return Session().client("ec2").get_paginator("search_local_gateway_routes")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.SearchLocalGatewayRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchLocalGatewayRoutes)
 
-Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
+### paginate
 
-- `LocalGatewayRouteTableId`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchLocalGatewayRoutesPaginator.paginate` method.
 
-`SearchLocalGatewayRoutesPaginator.paginate` returns
-`_PageIterator`\[[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LocalGatewayRouteTableId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchLocalGatewayRoutesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchtransitgatewaymulticastgroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchLocalGatewayRoutesRequestSearchLocalGatewayRoutesPaginateTypeDef = {  # (1)
+    "LocalGatewayRouteTableId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchLocalGatewayRoutesRequestSearchLocalGatewayRoutesPaginateTypeDef](./type_defs.md#searchlocalgatewayroutesrequestsearchlocalgatewayroutespaginatetypedef) 
 ## SearchTransitGatewayMulticastGroupsPaginator
 
-Type annotations for
-`boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchTransitGatewayMulticastGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.paginator import SearchTransitGatewayMulticastGroupsPaginator
@@ -4009,16 +5407,34 @@ def get_search_transit_gateway_multicast_groups_paginator() -> SearchTransitGate
     return Session().client("ec2").get_paginator("search_transit_gateway_multicast_groups")
 ```
 
-Boto3 documentation:
-[EC2.Paginator.SearchTransitGatewayMulticastGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.SearchTransitGatewayMulticastGroups)
 
-Arguments for `SearchTransitGatewayMulticastGroupsPaginator.paginate` method:
+### paginate
 
-- `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchTransitGatewayMulticastGroupsPaginator.paginate` method.
 
-`SearchTransitGatewayMulticastGroupsPaginator.paginate` returns
-`_PageIterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransitGatewayMulticastDomainId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchTransitGatewayMulticastGroupsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchTransitGatewayMulticastGroupsRequestSearchTransitGatewayMulticastGroupsPaginateTypeDef = {  # (1)
+    "TransitGatewayMulticastDomainId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchTransitGatewayMulticastGroupsRequestSearchTransitGatewayMulticastGroupsPaginateTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsrequestsearchtransitgatewaymulticastgroupspaginatetypedef) 

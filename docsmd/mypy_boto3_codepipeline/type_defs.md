@@ -1,2242 +1,2844 @@
-<a id="typed-dictionaries-for-boto3-codepipeline-module"></a>
-
-# Typed dictionaries for boto3 CodePipeline module
+# Typed dictionaries
 
 > [Index](../README.md) > [CodePipeline](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
-type annotations stubs module
-[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CodePipeline module](#typed-dictionaries-for-boto3-codepipeline-module)
-  - [AWSSessionCredentialsTypeDef](#awssessioncredentialstypedef)
-  - [AcknowledgeJobInputRequestTypeDef](#acknowledgejobinputrequesttypedef)
-  - [AcknowledgeJobOutputTypeDef](#acknowledgejoboutputtypedef)
-  - [AcknowledgeThirdPartyJobInputRequestTypeDef](#acknowledgethirdpartyjobinputrequesttypedef)
-  - [AcknowledgeThirdPartyJobOutputTypeDef](#acknowledgethirdpartyjoboutputtypedef)
-  - [ActionConfigurationPropertyTypeDef](#actionconfigurationpropertytypedef)
-  - [ActionConfigurationTypeDef](#actionconfigurationtypedef)
-  - [ActionContextTypeDef](#actioncontexttypedef)
-  - [ActionDeclarationTypeDef](#actiondeclarationtypedef)
-  - [ActionExecutionDetailTypeDef](#actionexecutiondetailtypedef)
-  - [ActionExecutionFilterTypeDef](#actionexecutionfiltertypedef)
-  - [ActionExecutionInputTypeDef](#actionexecutioninputtypedef)
-  - [ActionExecutionOutputTypeDef](#actionexecutionoutputtypedef)
-  - [ActionExecutionResultTypeDef](#actionexecutionresulttypedef)
-  - [ActionExecutionTypeDef](#actionexecutiontypedef)
-  - [ActionRevisionTypeDef](#actionrevisiontypedef)
-  - [ActionStateTypeDef](#actionstatetypedef)
-  - [ActionTypeArtifactDetailsTypeDef](#actiontypeartifactdetailstypedef)
-  - [ActionTypeDeclarationTypeDef](#actiontypedeclarationtypedef)
-  - [ActionTypeExecutorTypeDef](#actiontypeexecutortypedef)
-  - [ActionTypeIdTypeDef](#actiontypeidtypedef)
-  - [ActionTypeIdentifierTypeDef](#actiontypeidentifiertypedef)
-  - [ActionTypePermissionsTypeDef](#actiontypepermissionstypedef)
-  - [ActionTypePropertyTypeDef](#actiontypepropertytypedef)
-  - [ActionTypeSettingsTypeDef](#actiontypesettingstypedef)
-  - [ActionTypeTypeDef](#actiontypetypedef)
-  - [ActionTypeUrlsTypeDef](#actiontypeurlstypedef)
-  - [ApprovalResultTypeDef](#approvalresulttypedef)
-  - [ArtifactDetailTypeDef](#artifactdetailtypedef)
-  - [ArtifactDetailsTypeDef](#artifactdetailstypedef)
-  - [ArtifactLocationTypeDef](#artifactlocationtypedef)
-  - [ArtifactRevisionTypeDef](#artifactrevisiontypedef)
-  - [ArtifactStoreTypeDef](#artifactstoretypedef)
-  - [ArtifactTypeDef](#artifacttypedef)
-  - [BlockerDeclarationTypeDef](#blockerdeclarationtypedef)
-  - [CreateCustomActionTypeInputRequestTypeDef](#createcustomactiontypeinputrequesttypedef)
-  - [CreateCustomActionTypeOutputTypeDef](#createcustomactiontypeoutputtypedef)
-  - [CreatePipelineInputRequestTypeDef](#createpipelineinputrequesttypedef)
-  - [CreatePipelineOutputTypeDef](#createpipelineoutputtypedef)
-  - [CurrentRevisionTypeDef](#currentrevisiontypedef)
-  - [DeleteCustomActionTypeInputRequestTypeDef](#deletecustomactiontypeinputrequesttypedef)
-  - [DeletePipelineInputRequestTypeDef](#deletepipelineinputrequesttypedef)
-  - [DeleteWebhookInputRequestTypeDef](#deletewebhookinputrequesttypedef)
-  - [DeregisterWebhookWithThirdPartyInputRequestTypeDef](#deregisterwebhookwiththirdpartyinputrequesttypedef)
-  - [DisableStageTransitionInputRequestTypeDef](#disablestagetransitioninputrequesttypedef)
-  - [EnableStageTransitionInputRequestTypeDef](#enablestagetransitioninputrequesttypedef)
-  - [EncryptionKeyTypeDef](#encryptionkeytypedef)
-  - [ErrorDetailsTypeDef](#errordetailstypedef)
-  - [ExecutionDetailsTypeDef](#executiondetailstypedef)
-  - [ExecutionTriggerTypeDef](#executiontriggertypedef)
-  - [ExecutorConfigurationTypeDef](#executorconfigurationtypedef)
-  - [FailureDetailsTypeDef](#failuredetailstypedef)
-  - [GetActionTypeInputRequestTypeDef](#getactiontypeinputrequesttypedef)
-  - [GetActionTypeOutputTypeDef](#getactiontypeoutputtypedef)
-  - [GetJobDetailsInputRequestTypeDef](#getjobdetailsinputrequesttypedef)
-  - [GetJobDetailsOutputTypeDef](#getjobdetailsoutputtypedef)
-  - [GetPipelineExecutionInputRequestTypeDef](#getpipelineexecutioninputrequesttypedef)
-  - [GetPipelineExecutionOutputTypeDef](#getpipelineexecutionoutputtypedef)
-  - [GetPipelineInputRequestTypeDef](#getpipelineinputrequesttypedef)
-  - [GetPipelineOutputTypeDef](#getpipelineoutputtypedef)
-  - [GetPipelineStateInputRequestTypeDef](#getpipelinestateinputrequesttypedef)
-  - [GetPipelineStateOutputTypeDef](#getpipelinestateoutputtypedef)
-  - [GetThirdPartyJobDetailsInputRequestTypeDef](#getthirdpartyjobdetailsinputrequesttypedef)
-  - [GetThirdPartyJobDetailsOutputTypeDef](#getthirdpartyjobdetailsoutputtypedef)
-  - [InputArtifactTypeDef](#inputartifacttypedef)
-  - [JobDataTypeDef](#jobdatatypedef)
-  - [JobDetailsTypeDef](#jobdetailstypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [JobWorkerExecutorConfigurationTypeDef](#jobworkerexecutorconfigurationtypedef)
-  - [LambdaExecutorConfigurationTypeDef](#lambdaexecutorconfigurationtypedef)
-  - [ListActionExecutionsInputRequestTypeDef](#listactionexecutionsinputrequesttypedef)
-  - [ListActionExecutionsOutputTypeDef](#listactionexecutionsoutputtypedef)
-  - [ListActionTypesInputRequestTypeDef](#listactiontypesinputrequesttypedef)
-  - [ListActionTypesOutputTypeDef](#listactiontypesoutputtypedef)
-  - [ListPipelineExecutionsInputRequestTypeDef](#listpipelineexecutionsinputrequesttypedef)
-  - [ListPipelineExecutionsOutputTypeDef](#listpipelineexecutionsoutputtypedef)
-  - [ListPipelinesInputRequestTypeDef](#listpipelinesinputrequesttypedef)
-  - [ListPipelinesOutputTypeDef](#listpipelinesoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ListWebhookItemTypeDef](#listwebhookitemtypedef)
-  - [ListWebhooksInputRequestTypeDef](#listwebhooksinputrequesttypedef)
-  - [ListWebhooksOutputTypeDef](#listwebhooksoutputtypedef)
-  - [OutputArtifactTypeDef](#outputartifacttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PipelineContextTypeDef](#pipelinecontexttypedef)
-  - [PipelineDeclarationTypeDef](#pipelinedeclarationtypedef)
-  - [PipelineExecutionSummaryTypeDef](#pipelineexecutionsummarytypedef)
-  - [PipelineExecutionTypeDef](#pipelineexecutiontypedef)
-  - [PipelineMetadataTypeDef](#pipelinemetadatatypedef)
-  - [PipelineSummaryTypeDef](#pipelinesummarytypedef)
-  - [PollForJobsInputRequestTypeDef](#pollforjobsinputrequesttypedef)
-  - [PollForJobsOutputTypeDef](#pollforjobsoutputtypedef)
-  - [PollForThirdPartyJobsInputRequestTypeDef](#pollforthirdpartyjobsinputrequesttypedef)
-  - [PollForThirdPartyJobsOutputTypeDef](#pollforthirdpartyjobsoutputtypedef)
-  - [PutActionRevisionInputRequestTypeDef](#putactionrevisioninputrequesttypedef)
-  - [PutActionRevisionOutputTypeDef](#putactionrevisionoutputtypedef)
-  - [PutApprovalResultInputRequestTypeDef](#putapprovalresultinputrequesttypedef)
-  - [PutApprovalResultOutputTypeDef](#putapprovalresultoutputtypedef)
-  - [PutJobFailureResultInputRequestTypeDef](#putjobfailureresultinputrequesttypedef)
-  - [PutJobSuccessResultInputRequestTypeDef](#putjobsuccessresultinputrequesttypedef)
-  - [PutThirdPartyJobFailureResultInputRequestTypeDef](#putthirdpartyjobfailureresultinputrequesttypedef)
-  - [PutThirdPartyJobSuccessResultInputRequestTypeDef](#putthirdpartyjobsuccessresultinputrequesttypedef)
-  - [PutWebhookInputRequestTypeDef](#putwebhookinputrequesttypedef)
-  - [PutWebhookOutputTypeDef](#putwebhookoutputtypedef)
-  - [RegisterWebhookWithThirdPartyInputRequestTypeDef](#registerwebhookwiththirdpartyinputrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryStageExecutionInputRequestTypeDef](#retrystageexecutioninputrequesttypedef)
-  - [RetryStageExecutionOutputTypeDef](#retrystageexecutionoutputtypedef)
-  - [S3ArtifactLocationTypeDef](#s3artifactlocationtypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SourceRevisionTypeDef](#sourcerevisiontypedef)
-  - [StageContextTypeDef](#stagecontexttypedef)
-  - [StageDeclarationTypeDef](#stagedeclarationtypedef)
-  - [StageExecutionTypeDef](#stageexecutiontypedef)
-  - [StageStateTypeDef](#stagestatetypedef)
-  - [StartPipelineExecutionInputRequestTypeDef](#startpipelineexecutioninputrequesttypedef)
-  - [StartPipelineExecutionOutputTypeDef](#startpipelineexecutionoutputtypedef)
-  - [StopExecutionTriggerTypeDef](#stopexecutiontriggertypedef)
-  - [StopPipelineExecutionInputRequestTypeDef](#stoppipelineexecutioninputrequesttypedef)
-  - [StopPipelineExecutionOutputTypeDef](#stoppipelineexecutionoutputtypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [ThirdPartyJobDataTypeDef](#thirdpartyjobdatatypedef)
-  - [ThirdPartyJobDetailsTypeDef](#thirdpartyjobdetailstypedef)
-  - [ThirdPartyJobTypeDef](#thirdpartyjobtypedef)
-  - [TransitionStateTypeDef](#transitionstatetypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateActionTypeInputRequestTypeDef](#updateactiontypeinputrequesttypedef)
-  - [UpdatePipelineInputRequestTypeDef](#updatepipelineinputrequesttypedef)
-  - [UpdatePipelineOutputTypeDef](#updatepipelineoutputtypedef)
-  - [WebhookAuthConfigurationTypeDef](#webhookauthconfigurationtypedef)
-  - [WebhookDefinitionTypeDef](#webhookdefinitiontypedef)
-  - [WebhookFilterRuleTypeDef](#webhookfilterruletypedef)
-
-<a id="awssessioncredentialstypedef"></a>
+    Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+    type annotations stubs module [mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 ## AWSSessionCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef
+
+def get_value() -> AWSSessionCredentialsTypeDef:
+    return {
+        "accessKeyId": ...,
+        "secretAccessKey": ...,
+        "sessionToken": ...,
+    }
 ```
 
-Required fields:
-
-- `accessKeyId`: `str`
-- `secretAccessKey`: `str`
-- `sessionToken`: `str`
-
-<a id="acknowledgejobinputrequesttypedef"></a>
+```python title="Definition"
+class AWSSessionCredentialsTypeDef(TypedDict):
+    accessKeyId: str,
+    secretAccessKey: str,
+    sessionToken: str,
+```
 
 ## AcknowledgeJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import AcknowledgeJobInputRequestTypeDef
+
+def get_value() -> AcknowledgeJobInputRequestTypeDef:
+    return {
+        "jobId": ...,
+        "nonce": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-- `nonce`: `str`
-
-<a id="acknowledgejoboutputtypedef"></a>
+```python title="Definition"
+class AcknowledgeJobInputRequestTypeDef(TypedDict):
+    jobId: str,
+    nonce: str,
+```
 
 ## AcknowledgeJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import AcknowledgeJobOutputTypeDef
+
+def get_value() -> AcknowledgeJobOutputTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcknowledgeJobOutputTypeDef(TypedDict):
+    status: JobStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="acknowledgethirdpartyjobinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AcknowledgeThirdPartyJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import AcknowledgeThirdPartyJobInputRequestTypeDef
+
+def get_value() -> AcknowledgeThirdPartyJobInputRequestTypeDef:
+    return {
+        "jobId": ...,
+        "nonce": ...,
+        "clientToken": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-- `nonce`: `str`
-- `clientToken`: `str`
-
-<a id="acknowledgethirdpartyjoboutputtypedef"></a>
+```python title="Definition"
+class AcknowledgeThirdPartyJobInputRequestTypeDef(TypedDict):
+    jobId: str,
+    nonce: str,
+    clientToken: str,
+```
 
 ## AcknowledgeThirdPartyJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import AcknowledgeThirdPartyJobOutputTypeDef
+
+def get_value() -> AcknowledgeThirdPartyJobOutputTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcknowledgeThirdPartyJobOutputTypeDef(TypedDict):
+    status: JobStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="actionconfigurationpropertytypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ActionConfigurationPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionConfigurationPropertyTypeDef
+
+def get_value() -> ActionConfigurationPropertyTypeDef:
+    return {
+        "name": ...,
+        "required": ...,
+        "key": ...,
+        "secret": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionConfigurationPropertyTypeDef(TypedDict):
+    name: str,
+    required: bool,
+    key: bool,
+    secret: bool,
+    queryable: NotRequired[bool],
+    description: NotRequired[str],
+    type: NotRequired[ActionConfigurationPropertyTypeType],  # (1)
+```
 
-- `name`: `str`
-- `required`: `bool`
-- `key`: `bool`
-- `secret`: `bool`
-
-Optional fields:
-
-- `queryable`: `bool`
-- `description`: `str`
-- `type`:
-  [ActionConfigurationPropertyTypeType](./literals.md#actionconfigurationpropertytypetype)
-
-<a id="actionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ActionConfigurationPropertyTypeType](./literals.md#actionconfigurationpropertytypetype) 
 ## ActionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionConfigurationTypeDef
+
+def get_value() -> ActionConfigurationTypeDef:
+    return {
+        "configuration": ...,
+    }
 ```
 
-Optional fields:
-
-- `configuration`: `Dict`\[`str`, `str`\]
-
-<a id="actioncontexttypedef"></a>
+```python title="Definition"
+class ActionConfigurationTypeDef(TypedDict):
+    configuration: NotRequired[Dict[str, str]],
+```
 
 ## ActionContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionContextTypeDef
+
+def get_value() -> ActionContextTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `actionExecutionId`: `str`
-
-<a id="actiondeclarationtypedef"></a>
+```python title="Definition"
+class ActionContextTypeDef(TypedDict):
+    name: NotRequired[str],
+    actionExecutionId: NotRequired[str],
+```
 
 ## ActionDeclarationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionDeclarationTypeDef
+
+def get_value() -> ActionDeclarationTypeDef:
+    return {
+        "name": ...,
+        "actionTypeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionDeclarationTypeDef(TypedDict):
+    name: str,
+    actionTypeId: ActionTypeIdTypeDef,  # (1)
+    runOrder: NotRequired[int],
+    configuration: NotRequired[Mapping[str, str]],
+    outputArtifacts: NotRequired[Sequence[OutputArtifactTypeDef]],  # (2)
+    inputArtifacts: NotRequired[Sequence[InputArtifactTypeDef]],  # (3)
+    roleArn: NotRequired[str],
+    region: NotRequired[str],
+    namespace: NotRequired[str],
+```
 
-- `name`: `str`
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-
-Optional fields:
-
-- `runOrder`: `int`
-- `configuration`: `Mapping`\[`str`, `str`\]
-- `outputArtifacts`:
-  `Sequence`\[[OutputArtifactTypeDef](./type_defs.md#outputartifacttypedef)\]
-- `inputArtifacts`:
-  `Sequence`\[[InputArtifactTypeDef](./type_defs.md#inputartifacttypedef)\]
-- `roleArn`: `str`
-- `region`: `str`
-- `namespace`: `str`
-
-<a id="actionexecutiondetailtypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: OutputArtifactTypeDef](./type_defs.md#outputartifacttypedef) 
+3. See [:material-code-braces: InputArtifactTypeDef](./type_defs.md#inputartifacttypedef) 
 ## ActionExecutionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionExecutionDetailTypeDef
+
+def get_value() -> ActionExecutionDetailTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionExecutionDetailTypeDef(TypedDict):
+    pipelineExecutionId: NotRequired[str],
+    actionExecutionId: NotRequired[str],
+    pipelineVersion: NotRequired[int],
+    stageName: NotRequired[str],
+    actionName: NotRequired[str],
+    startTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    status: NotRequired[ActionExecutionStatusType],  # (1)
+    input: NotRequired[ActionExecutionInputTypeDef],  # (2)
+    output: NotRequired[ActionExecutionOutputTypeDef],  # (3)
+```
 
-- `pipelineExecutionId`: `str`
-- `actionExecutionId`: `str`
-- `pipelineVersion`: `int`
-- `stageName`: `str`
-- `actionName`: `str`
-- `startTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [ActionExecutionStatusType](./literals.md#actionexecutionstatustype)
-- `input`:
-  [ActionExecutionInputTypeDef](./type_defs.md#actionexecutioninputtypedef)
-- `output`:
-  [ActionExecutionOutputTypeDef](./type_defs.md#actionexecutionoutputtypedef)
-
-<a id="actionexecutionfiltertypedef"></a>
-
+1. See [:material-code-brackets: ActionExecutionStatusType](./literals.md#actionexecutionstatustype) 
+2. See [:material-code-braces: ActionExecutionInputTypeDef](./type_defs.md#actionexecutioninputtypedef) 
+3. See [:material-code-braces: ActionExecutionOutputTypeDef](./type_defs.md#actionexecutionoutputtypedef) 
 ## ActionExecutionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionExecutionFilterTypeDef
+
+def get_value() -> ActionExecutionFilterTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `pipelineExecutionId`: `str`
-
-<a id="actionexecutioninputtypedef"></a>
+```python title="Definition"
+class ActionExecutionFilterTypeDef(TypedDict):
+    pipelineExecutionId: NotRequired[str],
+```
 
 ## ActionExecutionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionExecutionInputTypeDef
+
+def get_value() -> ActionExecutionInputTypeDef:
+    return {
+        "actionTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionExecutionInputTypeDef(TypedDict):
+    actionTypeId: NotRequired[ActionTypeIdTypeDef],  # (1)
+    configuration: NotRequired[Dict[str, str]],
+    resolvedConfiguration: NotRequired[Dict[str, str]],
+    roleArn: NotRequired[str],
+    region: NotRequired[str],
+    inputArtifacts: NotRequired[List[ArtifactDetailTypeDef]],  # (2)
+    namespace: NotRequired[str],
+```
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-- `configuration`: `Dict`\[`str`, `str`\]
-- `resolvedConfiguration`: `Dict`\[`str`, `str`\]
-- `roleArn`: `str`
-- `region`: `str`
-- `inputArtifacts`:
-  `List`\[[ArtifactDetailTypeDef](./type_defs.md#artifactdetailtypedef)\]
-- `namespace`: `str`
-
-<a id="actionexecutionoutputtypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: ArtifactDetailTypeDef](./type_defs.md#artifactdetailtypedef) 
 ## ActionExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionExecutionOutputTypeDef
+
+def get_value() -> ActionExecutionOutputTypeDef:
+    return {
+        "outputArtifacts": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionExecutionOutputTypeDef(TypedDict):
+    outputArtifacts: NotRequired[List[ArtifactDetailTypeDef]],  # (1)
+    executionResult: NotRequired[ActionExecutionResultTypeDef],  # (2)
+    outputVariables: NotRequired[Dict[str, str]],
+```
 
-- `outputArtifacts`:
-  `List`\[[ArtifactDetailTypeDef](./type_defs.md#artifactdetailtypedef)\]
-- `executionResult`:
-  [ActionExecutionResultTypeDef](./type_defs.md#actionexecutionresulttypedef)
-- `outputVariables`: `Dict`\[`str`, `str`\]
-
-<a id="actionexecutionresulttypedef"></a>
-
+1. See [:material-code-braces: ArtifactDetailTypeDef](./type_defs.md#artifactdetailtypedef) 
+2. See [:material-code-braces: ActionExecutionResultTypeDef](./type_defs.md#actionexecutionresulttypedef) 
 ## ActionExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionExecutionResultTypeDef
+
+def get_value() -> ActionExecutionResultTypeDef:
+    return {
+        "externalExecutionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `externalExecutionId`: `str`
-- `externalExecutionSummary`: `str`
-- `externalExecutionUrl`: `str`
-
-<a id="actionexecutiontypedef"></a>
+```python title="Definition"
+class ActionExecutionResultTypeDef(TypedDict):
+    externalExecutionId: NotRequired[str],
+    externalExecutionSummary: NotRequired[str],
+    externalExecutionUrl: NotRequired[str],
+```
 
 ## ActionExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionExecutionTypeDef
+
+def get_value() -> ActionExecutionTypeDef:
+    return {
+        "actionExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionExecutionTypeDef(TypedDict):
+    actionExecutionId: NotRequired[str],
+    status: NotRequired[ActionExecutionStatusType],  # (1)
+    summary: NotRequired[str],
+    lastStatusChange: NotRequired[datetime],
+    token: NotRequired[str],
+    lastUpdatedBy: NotRequired[str],
+    externalExecutionId: NotRequired[str],
+    externalExecutionUrl: NotRequired[str],
+    percentComplete: NotRequired[int],
+    errorDetails: NotRequired[ErrorDetailsTypeDef],  # (2)
+```
 
-- `actionExecutionId`: `str`
-- `status`:
-  [ActionExecutionStatusType](./literals.md#actionexecutionstatustype)
-- `summary`: `str`
-- `lastStatusChange`: `datetime`
-- `token`: `str`
-- `lastUpdatedBy`: `str`
-- `externalExecutionId`: `str`
-- `externalExecutionUrl`: `str`
-- `percentComplete`: `int`
-- `errorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-
-<a id="actionrevisiontypedef"></a>
-
+1. See [:material-code-brackets: ActionExecutionStatusType](./literals.md#actionexecutionstatustype) 
+2. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
 ## ActionRevisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionRevisionTypeDef
+
+def get_value() -> ActionRevisionTypeDef:
+    return {
+        "revisionId": ...,
+        "revisionChangeId": ...,
+        "created": ...,
+    }
 ```
 
-Required fields:
-
-- `revisionId`: `str`
-- `revisionChangeId`: `str`
-- `created`: `datetime`
-
-<a id="actionstatetypedef"></a>
+```python title="Definition"
+class ActionRevisionTypeDef(TypedDict):
+    revisionId: str,
+    revisionChangeId: str,
+    created: datetime,
+```
 
 ## ActionStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionStateTypeDef
+
+def get_value() -> ActionStateTypeDef:
+    return {
+        "actionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionStateTypeDef(TypedDict):
+    actionName: NotRequired[str],
+    currentRevision: NotRequired[ActionRevisionTypeDef],  # (1)
+    latestExecution: NotRequired[ActionExecutionTypeDef],  # (2)
+    entityUrl: NotRequired[str],
+    revisionUrl: NotRequired[str],
+```
 
-- `actionName`: `str`
-- `currentRevision`:
-  [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef)
-- `latestExecution`:
-  [ActionExecutionTypeDef](./type_defs.md#actionexecutiontypedef)
-- `entityUrl`: `str`
-- `revisionUrl`: `str`
-
-<a id="actiontypeartifactdetailstypedef"></a>
-
+1. See [:material-code-braces: ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef) 
+2. See [:material-code-braces: ActionExecutionTypeDef](./type_defs.md#actionexecutiontypedef) 
 ## ActionTypeArtifactDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeArtifactDetailsTypeDef
+
+def get_value() -> ActionTypeArtifactDetailsTypeDef:
+    return {
+        "minimumCount": ...,
+        "maximumCount": ...,
+    }
 ```
 
-Required fields:
-
-- `minimumCount`: `int`
-- `maximumCount`: `int`
-
-<a id="actiontypedeclarationtypedef"></a>
+```python title="Definition"
+class ActionTypeArtifactDetailsTypeDef(TypedDict):
+    minimumCount: int,
+    maximumCount: int,
+```
 
 ## ActionTypeDeclarationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeDeclarationTypeDef
+
+def get_value() -> ActionTypeDeclarationTypeDef:
+    return {
+        "executor": ...,
+        "id": ...,
+        "inputArtifactDetails": ...,
+        "outputArtifactDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeDeclarationTypeDef(TypedDict):
+    executor: ActionTypeExecutorTypeDef,  # (1)
+    id: ActionTypeIdentifierTypeDef,  # (2)
+    inputArtifactDetails: ActionTypeArtifactDetailsTypeDef,  # (3)
+    outputArtifactDetails: ActionTypeArtifactDetailsTypeDef,  # (3)
+    description: NotRequired[str],
+    permissions: NotRequired[ActionTypePermissionsTypeDef],  # (5)
+    properties: NotRequired[List[ActionTypePropertyTypeDef]],  # (6)
+    urls: NotRequired[ActionTypeUrlsTypeDef],  # (7)
+```
 
-- `executor`:
-  [ActionTypeExecutorTypeDef](./type_defs.md#actiontypeexecutortypedef)
-- `id`:
-  [ActionTypeIdentifierTypeDef](./type_defs.md#actiontypeidentifiertypedef)
-- `inputArtifactDetails`:
-  [ActionTypeArtifactDetailsTypeDef](./type_defs.md#actiontypeartifactdetailstypedef)
-- `outputArtifactDetails`:
-  [ActionTypeArtifactDetailsTypeDef](./type_defs.md#actiontypeartifactdetailstypedef)
-
-Optional fields:
-
-- `description`: `str`
-- `permissions`:
-  [ActionTypePermissionsTypeDef](./type_defs.md#actiontypepermissionstypedef)
-- `properties`:
-  `List`\[[ActionTypePropertyTypeDef](./type_defs.md#actiontypepropertytypedef)\]
-- `urls`: [ActionTypeUrlsTypeDef](./type_defs.md#actiontypeurlstypedef)
-
-<a id="actiontypeexecutortypedef"></a>
-
+1. See [:material-code-braces: ActionTypeExecutorTypeDef](./type_defs.md#actiontypeexecutortypedef) 
+2. See [:material-code-braces: ActionTypeIdentifierTypeDef](./type_defs.md#actiontypeidentifiertypedef) 
+3. See [:material-code-braces: ActionTypeArtifactDetailsTypeDef](./type_defs.md#actiontypeartifactdetailstypedef) 
+4. See [:material-code-braces: ActionTypeArtifactDetailsTypeDef](./type_defs.md#actiontypeartifactdetailstypedef) 
+5. See [:material-code-braces: ActionTypePermissionsTypeDef](./type_defs.md#actiontypepermissionstypedef) 
+6. See [:material-code-braces: ActionTypePropertyTypeDef](./type_defs.md#actiontypepropertytypedef) 
+7. See [:material-code-braces: ActionTypeUrlsTypeDef](./type_defs.md#actiontypeurlstypedef) 
 ## ActionTypeExecutorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeExecutorTypeDef
+
+def get_value() -> ActionTypeExecutorTypeDef:
+    return {
+        "configuration": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeExecutorTypeDef(TypedDict):
+    configuration: ExecutorConfigurationTypeDef,  # (1)
+    type: ExecutorTypeType,  # (2)
+    policyStatementsTemplate: NotRequired[str],
+    jobTimeout: NotRequired[int],
+```
 
-- `configuration`:
-  [ExecutorConfigurationTypeDef](./type_defs.md#executorconfigurationtypedef)
-- `type`: [ExecutorTypeType](./literals.md#executortypetype)
-
-Optional fields:
-
-- `policyStatementsTemplate`: `str`
-- `jobTimeout`: `int`
-
-<a id="actiontypeidtypedef"></a>
-
+1. See [:material-code-braces: ExecutorConfigurationTypeDef](./type_defs.md#executorconfigurationtypedef) 
+2. See [:material-code-brackets: ExecutorTypeType](./literals.md#executortypetype) 
 ## ActionTypeIdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeIdTypeDef
+
+def get_value() -> ActionTypeIdTypeDef:
+    return {
+        "category": ...,
+        "owner": ...,
+        "provider": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeIdTypeDef(TypedDict):
+    category: ActionCategoryType,  # (1)
+    owner: ActionOwnerType,  # (2)
+    provider: str,
+    version: str,
+```
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-- `owner`: [ActionOwnerType](./literals.md#actionownertype)
-- `provider`: `str`
-- `version`: `str`
-
-<a id="actiontypeidentifiertypedef"></a>
-
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
+2. See [:material-code-brackets: ActionOwnerType](./literals.md#actionownertype) 
 ## ActionTypeIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeIdentifierTypeDef
+
+def get_value() -> ActionTypeIdentifierTypeDef:
+    return {
+        "category": ...,
+        "owner": ...,
+        "provider": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeIdentifierTypeDef(TypedDict):
+    category: ActionCategoryType,  # (1)
+    owner: str,
+    provider: str,
+    version: str,
+```
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-- `owner`: `str`
-- `provider`: `str`
-- `version`: `str`
-
-<a id="actiontypepermissionstypedef"></a>
-
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
 ## ActionTypePermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypePermissionsTypeDef
+
+def get_value() -> ActionTypePermissionsTypeDef:
+    return {
+        "allowedAccounts": ...,
+    }
 ```
 
-Required fields:
-
-- `allowedAccounts`: `List`\[`str`\]
-
-<a id="actiontypepropertytypedef"></a>
+```python title="Definition"
+class ActionTypePermissionsTypeDef(TypedDict):
+    allowedAccounts: List[str],
+```
 
 ## ActionTypePropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypePropertyTypeDef
+
+def get_value() -> ActionTypePropertyTypeDef:
+    return {
+        "name": ...,
+        "optional": ...,
+        "key": ...,
+        "noEcho": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `optional`: `bool`
-- `key`: `bool`
-- `noEcho`: `bool`
-
-Optional fields:
-
-- `queryable`: `bool`
-- `description`: `str`
-
-<a id="actiontypesettingstypedef"></a>
+```python title="Definition"
+class ActionTypePropertyTypeDef(TypedDict):
+    name: str,
+    optional: bool,
+    key: bool,
+    noEcho: bool,
+    queryable: NotRequired[bool],
+    description: NotRequired[str],
+```
 
 ## ActionTypeSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeSettingsTypeDef
+
+def get_value() -> ActionTypeSettingsTypeDef:
+    return {
+        "thirdPartyConfigurationUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `thirdPartyConfigurationUrl`: `str`
-- `entityUrlTemplate`: `str`
-- `executionUrlTemplate`: `str`
-- `revisionUrlTemplate`: `str`
-
-<a id="actiontypetypedef"></a>
+```python title="Definition"
+class ActionTypeSettingsTypeDef(TypedDict):
+    thirdPartyConfigurationUrl: NotRequired[str],
+    entityUrlTemplate: NotRequired[str],
+    executionUrlTemplate: NotRequired[str],
+    revisionUrlTemplate: NotRequired[str],
+```
 
 ## ActionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeTypeDef
+
+def get_value() -> ActionTypeTypeDef:
+    return {
+        "id": ...,
+        "inputArtifactDetails": ...,
+        "outputArtifactDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeTypeDef(TypedDict):
+    id: ActionTypeIdTypeDef,  # (1)
+    inputArtifactDetails: ArtifactDetailsTypeDef,  # (4)
+    outputArtifactDetails: ArtifactDetailsTypeDef,  # (4)
+    settings: NotRequired[ActionTypeSettingsTypeDef],  # (2)
+    actionConfigurationProperties: NotRequired[List[ActionConfigurationPropertyTypeDef]],  # (3)
+```
 
-- `id`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-- `inputArtifactDetails`:
-  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef)
-- `outputArtifactDetails`:
-  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef)
-
-Optional fields:
-
-- `settings`:
-  [ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef)
-- `actionConfigurationProperties`:
-  `List`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
-
-<a id="actiontypeurlstypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef) 
+3. See [:material-code-braces: ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef) 
+4. See [:material-code-braces: ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) 
+5. See [:material-code-braces: ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) 
 ## ActionTypeUrlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ActionTypeUrlsTypeDef
+
+def get_value() -> ActionTypeUrlsTypeDef:
+    return {
+        "configurationUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `configurationUrl`: `str`
-- `entityUrlTemplate`: `str`
-- `executionUrlTemplate`: `str`
-- `revisionUrlTemplate`: `str`
-
-<a id="approvalresulttypedef"></a>
+```python title="Definition"
+class ActionTypeUrlsTypeDef(TypedDict):
+    configurationUrl: NotRequired[str],
+    entityUrlTemplate: NotRequired[str],
+    executionUrlTemplate: NotRequired[str],
+    revisionUrlTemplate: NotRequired[str],
+```
 
 ## ApprovalResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ApprovalResultTypeDef
+
+def get_value() -> ApprovalResultTypeDef:
+    return {
+        "summary": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApprovalResultTypeDef(TypedDict):
+    summary: str,
+    status: ApprovalStatusType,  # (1)
+```
 
-- `summary`: `str`
-- `status`: [ApprovalStatusType](./literals.md#approvalstatustype)
-
-<a id="artifactdetailtypedef"></a>
-
+1. See [:material-code-brackets: ApprovalStatusType](./literals.md#approvalstatustype) 
 ## ArtifactDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ArtifactDetailTypeDef
+
+def get_value() -> ArtifactDetailTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ArtifactDetailTypeDef(TypedDict):
+    name: NotRequired[str],
+    s3location: NotRequired[S3LocationTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `s3location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="artifactdetailstypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## ArtifactDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ArtifactDetailsTypeDef
+
+def get_value() -> ArtifactDetailsTypeDef:
+    return {
+        "minimumCount": ...,
+        "maximumCount": ...,
+    }
 ```
 
-Required fields:
-
-- `minimumCount`: `int`
-- `maximumCount`: `int`
-
-<a id="artifactlocationtypedef"></a>
+```python title="Definition"
+class ArtifactDetailsTypeDef(TypedDict):
+    minimumCount: int,
+    maximumCount: int,
+```
 
 ## ArtifactLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ArtifactLocationTypeDef
+
+def get_value() -> ArtifactLocationTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ArtifactLocationTypeDef(TypedDict):
+    type: NotRequired[ArtifactLocationTypeType],  # (1)
+    s3Location: NotRequired[S3ArtifactLocationTypeDef],  # (2)
+```
 
-- `type`: `Literal['S3']` (see
-  [ArtifactLocationTypeType](./literals.md#artifactlocationtypetype))
-- `s3Location`:
-  [S3ArtifactLocationTypeDef](./type_defs.md#s3artifactlocationtypedef)
-
-<a id="artifactrevisiontypedef"></a>
-
+1. See [:material-code-brackets: ArtifactLocationTypeType](./literals.md#artifactlocationtypetype) 
+2. See [:material-code-braces: S3ArtifactLocationTypeDef](./type_defs.md#s3artifactlocationtypedef) 
 ## ArtifactRevisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ArtifactRevisionTypeDef
+
+def get_value() -> ArtifactRevisionTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `revisionId`: `str`
-- `revisionChangeIdentifier`: `str`
-- `revisionSummary`: `str`
-- `created`: `datetime`
-- `revisionUrl`: `str`
-
-<a id="artifactstoretypedef"></a>
+```python title="Definition"
+class ArtifactRevisionTypeDef(TypedDict):
+    name: NotRequired[str],
+    revisionId: NotRequired[str],
+    revisionChangeIdentifier: NotRequired[str],
+    revisionSummary: NotRequired[str],
+    created: NotRequired[datetime],
+    revisionUrl: NotRequired[str],
+```
 
 ## ArtifactStoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ArtifactStoreTypeDef
+
+def get_value() -> ArtifactStoreTypeDef:
+    return {
+        "type": ...,
+        "location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ArtifactStoreTypeDef(TypedDict):
+    type: ArtifactStoreTypeType,  # (1)
+    location: str,
+    encryptionKey: NotRequired[EncryptionKeyTypeDef],  # (2)
+```
 
-- `type`: `Literal['S3']` (see
-  [ArtifactStoreTypeType](./literals.md#artifactstoretypetype))
-- `location`: `str`
-
-Optional fields:
-
-- `encryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
-
-<a id="artifacttypedef"></a>
-
+1. See [:material-code-brackets: ArtifactStoreTypeType](./literals.md#artifactstoretypetype) 
+2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 ## ArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ArtifactTypeDef
+
+def get_value() -> ArtifactTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ArtifactTypeDef(TypedDict):
+    name: NotRequired[str],
+    revision: NotRequired[str],
+    location: NotRequired[ArtifactLocationTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `revision`: `str`
-- `location`: [ArtifactLocationTypeDef](./type_defs.md#artifactlocationtypedef)
-
-<a id="blockerdeclarationtypedef"></a>
-
+1. See [:material-code-braces: ArtifactLocationTypeDef](./type_defs.md#artifactlocationtypedef) 
 ## BlockerDeclarationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import BlockerDeclarationTypeDef
+
+def get_value() -> BlockerDeclarationTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BlockerDeclarationTypeDef(TypedDict):
+    name: str,
+    type: BlockerTypeType,  # (1)
+```
 
-- `name`: `str`
-- `type`: `Literal['Schedule']` (see
-  [BlockerTypeType](./literals.md#blockertypetype))
-
-<a id="createcustomactiontypeinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: BlockerTypeType](./literals.md#blockertypetype) 
 ## CreateCustomActionTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import CreateCustomActionTypeInputRequestTypeDef
+
+def get_value() -> CreateCustomActionTypeInputRequestTypeDef:
+    return {
+        "category": ...,
+        "provider": ...,
+        "version": ...,
+        "inputArtifactDetails": ...,
+        "outputArtifactDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomActionTypeInputRequestTypeDef(TypedDict):
+    category: ActionCategoryType,  # (1)
+    provider: str,
+    version: str,
+    inputArtifactDetails: ArtifactDetailsTypeDef,  # (2)
+    outputArtifactDetails: ArtifactDetailsTypeDef,  # (2)
+    settings: NotRequired[ActionTypeSettingsTypeDef],  # (4)
+    configurationProperties: NotRequired[Sequence[ActionConfigurationPropertyTypeDef]],  # (5)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+```
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-- `provider`: `str`
-- `version`: `str`
-- `inputArtifactDetails`:
-  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef)
-- `outputArtifactDetails`:
-  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef)
-
-Optional fields:
-
-- `settings`:
-  [ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef)
-- `configurationProperties`:
-  `Sequence`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcustomactiontypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
+2. See [:material-code-braces: ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) 
+3. See [:material-code-braces: ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) 
+4. See [:material-code-braces: ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef) 
+5. See [:material-code-braces: ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCustomActionTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import CreateCustomActionTypeOutputTypeDef
+
+def get_value() -> CreateCustomActionTypeOutputTypeDef:
+    return {
+        "actionType": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomActionTypeOutputTypeDef(TypedDict):
+    actionType: ActionTypeTypeDef,  # (1)
+    tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `actionType`: [ActionTypeTypeDef](./type_defs.md#actiontypetypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpipelineinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeTypeDef](./type_defs.md#actiontypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePipelineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import CreatePipelineInputRequestTypeDef
+
+def get_value() -> CreatePipelineInputRequestTypeDef:
+    return {
+        "pipeline": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePipelineInputRequestTypeDef(TypedDict):
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-
-Optional fields:
-
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createpipelineoutputtypedef"></a>
-
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePipelineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import CreatePipelineOutputTypeDef
+
+def get_value() -> CreatePipelineOutputTypeDef:
+    return {
+        "pipeline": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePipelineOutputTypeDef(TypedDict):
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+    tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="currentrevisiontypedef"></a>
-
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CurrentRevisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import CurrentRevisionTypeDef
+
+def get_value() -> CurrentRevisionTypeDef:
+    return {
+        "revision": ...,
+        "changeIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `revision`: `str`
-- `changeIdentifier`: `str`
-
-Optional fields:
-
-- `created`: `Union`\[`datetime`, `str`\]
-- `revisionSummary`: `str`
-
-<a id="deletecustomactiontypeinputrequesttypedef"></a>
+```python title="Definition"
+class CurrentRevisionTypeDef(TypedDict):
+    revision: str,
+    changeIdentifier: str,
+    created: NotRequired[Union[datetime, str]],
+    revisionSummary: NotRequired[str],
+```
 
 ## DeleteCustomActionTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import DeleteCustomActionTypeInputRequestTypeDef
+
+def get_value() -> DeleteCustomActionTypeInputRequestTypeDef:
+    return {
+        "category": ...,
+        "provider": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteCustomActionTypeInputRequestTypeDef(TypedDict):
+    category: ActionCategoryType,  # (1)
+    provider: str,
+    version: str,
+```
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-- `provider`: `str`
-- `version`: `str`
-
-<a id="deletepipelineinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
 ## DeletePipelineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import DeletePipelineInputRequestTypeDef
+
+def get_value() -> DeletePipelineInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deletewebhookinputrequesttypedef"></a>
+```python title="Definition"
+class DeletePipelineInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteWebhookInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import DeleteWebhookInputRequestTypeDef
+
+def get_value() -> DeleteWebhookInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deregisterwebhookwiththirdpartyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteWebhookInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeregisterWebhookWithThirdPartyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import DeregisterWebhookWithThirdPartyInputRequestTypeDef
+
+def get_value() -> DeregisterWebhookWithThirdPartyInputRequestTypeDef:
+    return {
+        "webhookName": ...,
+    }
 ```
 
-Optional fields:
-
-- `webhookName`: `str`
-
-<a id="disablestagetransitioninputrequesttypedef"></a>
+```python title="Definition"
+class DeregisterWebhookWithThirdPartyInputRequestTypeDef(TypedDict):
+    webhookName: NotRequired[str],
+```
 
 ## DisableStageTransitionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import DisableStageTransitionInputRequestTypeDef
+
+def get_value() -> DisableStageTransitionInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "stageName": ...,
+        "transitionType": ...,
+        "reason": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableStageTransitionInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    stageName: str,
+    transitionType: StageTransitionTypeType,  # (1)
+    reason: str,
+```
 
-- `pipelineName`: `str`
-- `stageName`: `str`
-- `transitionType`:
-  [StageTransitionTypeType](./literals.md#stagetransitiontypetype)
-- `reason`: `str`
-
-<a id="enablestagetransitioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: StageTransitionTypeType](./literals.md#stagetransitiontypetype) 
 ## EnableStageTransitionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import EnableStageTransitionInputRequestTypeDef
+
+def get_value() -> EnableStageTransitionInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "stageName": ...,
+        "transitionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableStageTransitionInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    stageName: str,
+    transitionType: StageTransitionTypeType,  # (1)
+```
 
-- `pipelineName`: `str`
-- `stageName`: `str`
-- `transitionType`:
-  [StageTransitionTypeType](./literals.md#stagetransitiontypetype)
-
-<a id="encryptionkeytypedef"></a>
-
+1. See [:material-code-brackets: StageTransitionTypeType](./literals.md#stagetransitiontypetype) 
 ## EncryptionKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import EncryptionKeyTypeDef
+
+def get_value() -> EncryptionKeyTypeDef:
+    return {
+        "id": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionKeyTypeDef(TypedDict):
+    id: str,
+    type: EncryptionKeyTypeType,  # (1)
+```
 
-- `id`: `str`
-- `type`: `Literal['KMS']` (see
-  [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype))
-
-<a id="errordetailstypedef"></a>
-
+1. See [:material-code-brackets: EncryptionKeyTypeType](./literals.md#encryptionkeytypetype) 
 ## ErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ErrorDetailsTypeDef
+
+def get_value() -> ErrorDetailsTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
-
-- `code`: `str`
-- `message`: `str`
-
-<a id="executiondetailstypedef"></a>
+```python title="Definition"
+class ErrorDetailsTypeDef(TypedDict):
+    code: NotRequired[str],
+    message: NotRequired[str],
+```
 
 ## ExecutionDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ExecutionDetailsTypeDef
+
+def get_value() -> ExecutionDetailsTypeDef:
+    return {
+        "summary": ...,
+    }
 ```
 
-Optional fields:
-
-- `summary`: `str`
-- `externalExecutionId`: `str`
-- `percentComplete`: `int`
-
-<a id="executiontriggertypedef"></a>
+```python title="Definition"
+class ExecutionDetailsTypeDef(TypedDict):
+    summary: NotRequired[str],
+    externalExecutionId: NotRequired[str],
+    percentComplete: NotRequired[int],
+```
 
 ## ExecutionTriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ExecutionTriggerTypeDef
+
+def get_value() -> ExecutionTriggerTypeDef:
+    return {
+        "triggerType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionTriggerTypeDef(TypedDict):
+    triggerType: NotRequired[TriggerTypeType],  # (1)
+    triggerDetail: NotRequired[str],
+```
 
-- `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
-- `triggerDetail`: `str`
-
-<a id="executorconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
 ## ExecutorConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ExecutorConfigurationTypeDef
+
+def get_value() -> ExecutorConfigurationTypeDef:
+    return {
+        "lambdaExecutorConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutorConfigurationTypeDef(TypedDict):
+    lambdaExecutorConfiguration: NotRequired[LambdaExecutorConfigurationTypeDef],  # (1)
+    jobWorkerExecutorConfiguration: NotRequired[JobWorkerExecutorConfigurationTypeDef],  # (2)
+```
 
-- `lambdaExecutorConfiguration`:
-  [LambdaExecutorConfigurationTypeDef](./type_defs.md#lambdaexecutorconfigurationtypedef)
-- `jobWorkerExecutorConfiguration`:
-  [JobWorkerExecutorConfigurationTypeDef](./type_defs.md#jobworkerexecutorconfigurationtypedef)
-
-<a id="failuredetailstypedef"></a>
-
+1. See [:material-code-braces: LambdaExecutorConfigurationTypeDef](./type_defs.md#lambdaexecutorconfigurationtypedef) 
+2. See [:material-code-braces: JobWorkerExecutorConfigurationTypeDef](./type_defs.md#jobworkerexecutorconfigurationtypedef) 
 ## FailureDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import FailureDetailsTypeDef
+
+def get_value() -> FailureDetailsTypeDef:
+    return {
+        "type": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FailureDetailsTypeDef(TypedDict):
+    type: FailureTypeType,  # (1)
+    message: str,
+    externalExecutionId: NotRequired[str],
+```
 
-- `type`: [FailureTypeType](./literals.md#failuretypetype)
-- `message`: `str`
-
-Optional fields:
-
-- `externalExecutionId`: `str`
-
-<a id="getactiontypeinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: FailureTypeType](./literals.md#failuretypetype) 
 ## GetActionTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetActionTypeInputRequestTypeDef
+
+def get_value() -> GetActionTypeInputRequestTypeDef:
+    return {
+        "category": ...,
+        "owner": ...,
+        "provider": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetActionTypeInputRequestTypeDef(TypedDict):
+    category: ActionCategoryType,  # (1)
+    owner: str,
+    provider: str,
+    version: str,
+```
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-- `owner`: `str`
-- `provider`: `str`
-- `version`: `str`
-
-<a id="getactiontypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
 ## GetActionTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetActionTypeOutputTypeDef
+
+def get_value() -> GetActionTypeOutputTypeDef:
+    return {
+        "actionType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetActionTypeOutputTypeDef(TypedDict):
+    actionType: ActionTypeDeclarationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `actionType`:
-  [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobdetailsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobDetailsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetJobDetailsInputRequestTypeDef
+
+def get_value() -> GetJobDetailsInputRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-
-<a id="getjobdetailsoutputtypedef"></a>
+```python title="Definition"
+class GetJobDetailsInputRequestTypeDef(TypedDict):
+    jobId: str,
+```
 
 ## GetJobDetailsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetJobDetailsOutputTypeDef
+
+def get_value() -> GetJobDetailsOutputTypeDef:
+    return {
+        "jobDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobDetailsOutputTypeDef(TypedDict):
+    jobDetails: JobDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpipelineexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPipelineExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetPipelineExecutionInputRequestTypeDef
+
+def get_value() -> GetPipelineExecutionInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "pipelineExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `pipelineName`: `str`
-- `pipelineExecutionId`: `str`
-
-<a id="getpipelineexecutionoutputtypedef"></a>
+```python title="Definition"
+class GetPipelineExecutionInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    pipelineExecutionId: str,
+```
 
 ## GetPipelineExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetPipelineExecutionOutputTypeDef
+
+def get_value() -> GetPipelineExecutionOutputTypeDef:
+    return {
+        "pipelineExecution": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPipelineExecutionOutputTypeDef(TypedDict):
+    pipelineExecution: PipelineExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipelineExecution`:
-  [PipelineExecutionTypeDef](./type_defs.md#pipelineexecutiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpipelineinputrequesttypedef"></a>
-
+1. See [:material-code-braces: PipelineExecutionTypeDef](./type_defs.md#pipelineexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPipelineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetPipelineInputRequestTypeDef
+
+def get_value() -> GetPipelineInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `version`: `int`
-
-<a id="getpipelineoutputtypedef"></a>
+```python title="Definition"
+class GetPipelineInputRequestTypeDef(TypedDict):
+    name: str,
+    version: NotRequired[int],
+```
 
 ## GetPipelineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetPipelineOutputTypeDef
+
+def get_value() -> GetPipelineOutputTypeDef:
+    return {
+        "pipeline": ...,
+        "metadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPipelineOutputTypeDef(TypedDict):
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+    metadata: PipelineMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-- `metadata`: [PipelineMetadataTypeDef](./type_defs.md#pipelinemetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpipelinestateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
+2. See [:material-code-braces: PipelineMetadataTypeDef](./type_defs.md#pipelinemetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPipelineStateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetPipelineStateInputRequestTypeDef
+
+def get_value() -> GetPipelineStateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="getpipelinestateoutputtypedef"></a>
+```python title="Definition"
+class GetPipelineStateInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## GetPipelineStateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetPipelineStateOutputTypeDef
+
+def get_value() -> GetPipelineStateOutputTypeDef:
+    return {
+        "pipelineName": ...,
+        "pipelineVersion": ...,
+        "stageStates": ...,
+        "created": ...,
+        "updated": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPipelineStateOutputTypeDef(TypedDict):
+    pipelineName: str,
+    pipelineVersion: int,
+    stageStates: List[StageStateTypeDef],  # (1)
+    created: datetime,
+    updated: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipelineName`: `str`
-- `pipelineVersion`: `int`
-- `stageStates`:
-  `List`\[[StageStateTypeDef](./type_defs.md#stagestatetypedef)\]
-- `created`: `datetime`
-- `updated`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getthirdpartyjobdetailsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StageStateTypeDef](./type_defs.md#stagestatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetThirdPartyJobDetailsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetThirdPartyJobDetailsInputRequestTypeDef
+
+def get_value() -> GetThirdPartyJobDetailsInputRequestTypeDef:
+    return {
+        "jobId": ...,
+        "clientToken": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-- `clientToken`: `str`
-
-<a id="getthirdpartyjobdetailsoutputtypedef"></a>
+```python title="Definition"
+class GetThirdPartyJobDetailsInputRequestTypeDef(TypedDict):
+    jobId: str,
+    clientToken: str,
+```
 
 ## GetThirdPartyJobDetailsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import GetThirdPartyJobDetailsOutputTypeDef
+
+def get_value() -> GetThirdPartyJobDetailsOutputTypeDef:
+    return {
+        "jobDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetThirdPartyJobDetailsOutputTypeDef(TypedDict):
+    jobDetails: ThirdPartyJobDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobDetails`:
-  [ThirdPartyJobDetailsTypeDef](./type_defs.md#thirdpartyjobdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="inputartifacttypedef"></a>
-
+1. See [:material-code-braces: ThirdPartyJobDetailsTypeDef](./type_defs.md#thirdpartyjobdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InputArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import InputArtifactTypeDef
+
+def get_value() -> InputArtifactTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="jobdatatypedef"></a>
+```python title="Definition"
+class InputArtifactTypeDef(TypedDict):
+    name: str,
+```
 
 ## JobDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import JobDataTypeDef
+
+def get_value() -> JobDataTypeDef:
+    return {
+        "actionTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobDataTypeDef(TypedDict):
+    actionTypeId: NotRequired[ActionTypeIdTypeDef],  # (1)
+    actionConfiguration: NotRequired[ActionConfigurationTypeDef],  # (2)
+    pipelineContext: NotRequired[PipelineContextTypeDef],  # (3)
+    inputArtifacts: NotRequired[List[ArtifactTypeDef]],  # (4)
+    outputArtifacts: NotRequired[List[ArtifactTypeDef]],  # (4)
+    artifactCredentials: NotRequired[AWSSessionCredentialsTypeDef],  # (6)
+    continuationToken: NotRequired[str],
+    encryptionKey: NotRequired[EncryptionKeyTypeDef],  # (7)
+```
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-- `actionConfiguration`:
-  [ActionConfigurationTypeDef](./type_defs.md#actionconfigurationtypedef)
-- `pipelineContext`:
-  [PipelineContextTypeDef](./type_defs.md#pipelinecontexttypedef)
-- `inputArtifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `outputArtifacts`:
-  `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `artifactCredentials`:
-  [AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef)
-- `continuationToken`: `str`
-- `encryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
-
-<a id="jobdetailstypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: ActionConfigurationTypeDef](./type_defs.md#actionconfigurationtypedef) 
+3. See [:material-code-braces: PipelineContextTypeDef](./type_defs.md#pipelinecontexttypedef) 
+4. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+5. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+6. See [:material-code-braces: AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef) 
+7. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 ## JobDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import JobDetailsTypeDef
+
+def get_value() -> JobDetailsTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobDetailsTypeDef(TypedDict):
+    id: NotRequired[str],
+    data: NotRequired[JobDataTypeDef],  # (1)
+    accountId: NotRequired[str],
+```
 
-- `id`: `str`
-- `data`: [JobDataTypeDef](./type_defs.md#jobdatatypedef)
-- `accountId`: `str`
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-braces: JobDataTypeDef](./type_defs.md#jobdatatypedef) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    id: NotRequired[str],
+    data: NotRequired[JobDataTypeDef],  # (1)
+    nonce: NotRequired[str],
+    accountId: NotRequired[str],
+```
 
-- `id`: `str`
-- `data`: [JobDataTypeDef](./type_defs.md#jobdatatypedef)
-- `nonce`: `str`
-- `accountId`: `str`
-
-<a id="jobworkerexecutorconfigurationtypedef"></a>
-
+1. See [:material-code-braces: JobDataTypeDef](./type_defs.md#jobdatatypedef) 
 ## JobWorkerExecutorConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import JobWorkerExecutorConfigurationTypeDef
+
+def get_value() -> JobWorkerExecutorConfigurationTypeDef:
+    return {
+        "pollingAccounts": ...,
+    }
 ```
 
-Optional fields:
-
-- `pollingAccounts`: `List`\[`str`\]
-- `pollingServicePrincipals`: `List`\[`str`\]
-
-<a id="lambdaexecutorconfigurationtypedef"></a>
+```python title="Definition"
+class JobWorkerExecutorConfigurationTypeDef(TypedDict):
+    pollingAccounts: NotRequired[List[str]],
+    pollingServicePrincipals: NotRequired[List[str]],
+```
 
 ## LambdaExecutorConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import LambdaExecutorConfigurationTypeDef
+
+def get_value() -> LambdaExecutorConfigurationTypeDef:
+    return {
+        "lambdaFunctionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaExecutorConfigurationTypeDef(TypedDict):
+    lambdaFunctionArn: str,
+```
 
-- `lambdaFunctionArn`: `str`
+## ListActionExecutionsInputListActionExecutionsPaginateTypeDef
 
-<a id="listactionexecutionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codepipeline.type_defs import ListActionExecutionsInputListActionExecutionsPaginateTypeDef
 
+def get_value() -> ListActionExecutionsInputListActionExecutionsPaginateTypeDef:
+    return {
+        "pipelineName": ...,
+    }
+```
+
+```python title="Definition"
+class ListActionExecutionsInputListActionExecutionsPaginateTypeDef(TypedDict):
+    pipelineName: str,
+    filter: NotRequired[ActionExecutionFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListActionExecutionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListActionExecutionsInputRequestTypeDef
+
+def get_value() -> ListActionExecutionsInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListActionExecutionsInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    filter: NotRequired[ActionExecutionFilterTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `pipelineName`: `str`
-
-Optional fields:
-
-- `filter`:
-  [ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listactionexecutionsoutputtypedef"></a>
-
+1. See [:material-code-braces: ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef) 
 ## ListActionExecutionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListActionExecutionsOutputTypeDef
+
+def get_value() -> ListActionExecutionsOutputTypeDef:
+    return {
+        "actionExecutionDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListActionExecutionsOutputTypeDef(TypedDict):
+    actionExecutionDetails: List[ActionExecutionDetailTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `actionExecutionDetails`:
-  `List`\[[ActionExecutionDetailTypeDef](./type_defs.md#actionexecutiondetailtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActionExecutionDetailTypeDef](./type_defs.md#actionexecutiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListActionTypesInputListActionTypesPaginateTypeDef
 
-<a id="listactiontypesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codepipeline.type_defs import ListActionTypesInputListActionTypesPaginateTypeDef
 
+def get_value() -> ListActionTypesInputListActionTypesPaginateTypeDef:
+    return {
+        "actionOwnerFilter": ...,
+    }
+```
+
+```python title="Definition"
+class ListActionTypesInputListActionTypesPaginateTypeDef(TypedDict):
+    actionOwnerFilter: NotRequired[ActionOwnerType],  # (1)
+    regionFilter: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ActionOwnerType](./literals.md#actionownertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListActionTypesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListActionTypesInputRequestTypeDef
+
+def get_value() -> ListActionTypesInputRequestTypeDef:
+    return {
+        "actionOwnerFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListActionTypesInputRequestTypeDef(TypedDict):
+    actionOwnerFilter: NotRequired[ActionOwnerType],  # (1)
+    nextToken: NotRequired[str],
+    regionFilter: NotRequired[str],
+```
 
-- `actionOwnerFilter`: [ActionOwnerType](./literals.md#actionownertype)
-- `nextToken`: `str`
-- `regionFilter`: `str`
-
-<a id="listactiontypesoutputtypedef"></a>
-
+1. See [:material-code-brackets: ActionOwnerType](./literals.md#actionownertype) 
 ## ListActionTypesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListActionTypesOutputTypeDef
+
+def get_value() -> ListActionTypesOutputTypeDef:
+    return {
+        "actionTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListActionTypesOutputTypeDef(TypedDict):
+    actionTypes: List[ActionTypeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `actionTypes`:
-  `List`\[[ActionTypeTypeDef](./type_defs.md#actiontypetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActionTypeTypeDef](./type_defs.md#actiontypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPipelineExecutionsInputListPipelineExecutionsPaginateTypeDef
 
-<a id="listpipelineexecutionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codepipeline.type_defs import ListPipelineExecutionsInputListPipelineExecutionsPaginateTypeDef
 
+def get_value() -> ListPipelineExecutionsInputListPipelineExecutionsPaginateTypeDef:
+    return {
+        "pipelineName": ...,
+    }
+```
+
+```python title="Definition"
+class ListPipelineExecutionsInputListPipelineExecutionsPaginateTypeDef(TypedDict):
+    pipelineName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPipelineExecutionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListPipelineExecutionsInputRequestTypeDef
+
+def get_value() -> ListPipelineExecutionsInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+    }
 ```
 
-Required fields:
-
-- `pipelineName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listpipelineexecutionsoutputtypedef"></a>
+```python title="Definition"
+class ListPipelineExecutionsInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListPipelineExecutionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListPipelineExecutionsOutputTypeDef
+
+def get_value() -> ListPipelineExecutionsOutputTypeDef:
+    return {
+        "pipelineExecutionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPipelineExecutionsOutputTypeDef(TypedDict):
+    pipelineExecutionSummaries: List[PipelineExecutionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipelineExecutionSummaries`:
-  `List`\[[PipelineExecutionSummaryTypeDef](./type_defs.md#pipelineexecutionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PipelineExecutionSummaryTypeDef](./type_defs.md#pipelineexecutionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPipelinesInputListPipelinesPaginateTypeDef
 
-<a id="listpipelinesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codepipeline.type_defs import ListPipelinesInputListPipelinesPaginateTypeDef
 
+def get_value() -> ListPipelinesInputListPipelinesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPipelinesInputListPipelinesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPipelinesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListPipelinesInputRequestTypeDef
+
+def get_value() -> ListPipelinesInputRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listpipelinesoutputtypedef"></a>
+```python title="Definition"
+class ListPipelinesInputRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListPipelinesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListPipelinesOutputTypeDef
+
+def get_value() -> ListPipelinesOutputTypeDef:
+    return {
+        "pipelines": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPipelinesOutputTypeDef(TypedDict):
+    pipelines: List[PipelineSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipelines`:
-  `List`\[[PipelineSummaryTypeDef](./type_defs.md#pipelinesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PipelineSummaryTypeDef](./type_defs.md#pipelinesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourceinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codepipeline.type_defs import ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceInputListTagsForResourcePaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputListTagsForResourcePaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "tags": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listwebhookitemtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWebhookItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListWebhookItemTypeDef
+
+def get_value() -> ListWebhookItemTypeDef:
+    return {
+        "definition": ...,
+        "url": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWebhookItemTypeDef(TypedDict):
+    definition: WebhookDefinitionTypeDef,  # (1)
+    url: str,
+    errorMessage: NotRequired[str],
+    errorCode: NotRequired[str],
+    lastTriggered: NotRequired[datetime],
+    arn: NotRequired[str],
+    tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `definition`:
-  [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
-- `url`: `str`
+1. See [:material-code-braces: WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListWebhooksInputListWebhooksPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_codepipeline.type_defs import ListWebhooksInputListWebhooksPaginateTypeDef
 
-- `errorMessage`: `str`
-- `errorCode`: `str`
-- `lastTriggered`: `datetime`
-- `arn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+def get_value() -> ListWebhooksInputListWebhooksPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
 
-<a id="listwebhooksinputrequesttypedef"></a>
+```python title="Definition"
+class ListWebhooksInputListWebhooksPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWebhooksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListWebhooksInputRequestTypeDef
+
+def get_value() -> ListWebhooksInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listwebhooksoutputtypedef"></a>
+```python title="Definition"
+class ListWebhooksInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListWebhooksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ListWebhooksOutputTypeDef
+
+def get_value() -> ListWebhooksOutputTypeDef:
+    return {
+        "webhooks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWebhooksOutputTypeDef(TypedDict):
+    webhooks: List[ListWebhookItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhooks`:
-  `List`\[[ListWebhookItemTypeDef](./type_defs.md#listwebhookitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="outputartifacttypedef"></a>
-
+1. See [:material-code-braces: ListWebhookItemTypeDef](./type_defs.md#listwebhookitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OutputArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import OutputArtifactTypeDef
+
+def get_value() -> OutputArtifactTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputArtifactTypeDef(TypedDict):
+    name: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="pipelinecontexttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PipelineContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PipelineContextTypeDef
+
+def get_value() -> PipelineContextTypeDef:
+    return {
+        "pipelineName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PipelineContextTypeDef(TypedDict):
+    pipelineName: NotRequired[str],
+    stage: NotRequired[StageContextTypeDef],  # (1)
+    action: NotRequired[ActionContextTypeDef],  # (2)
+    pipelineArn: NotRequired[str],
+    pipelineExecutionId: NotRequired[str],
+```
 
-- `pipelineName`: `str`
-- `stage`: [StageContextTypeDef](./type_defs.md#stagecontexttypedef)
-- `action`: [ActionContextTypeDef](./type_defs.md#actioncontexttypedef)
-- `pipelineArn`: `str`
-- `pipelineExecutionId`: `str`
-
-<a id="pipelinedeclarationtypedef"></a>
-
+1. See [:material-code-braces: StageContextTypeDef](./type_defs.md#stagecontexttypedef) 
+2. See [:material-code-braces: ActionContextTypeDef](./type_defs.md#actioncontexttypedef) 
 ## PipelineDeclarationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PipelineDeclarationTypeDef
+
+def get_value() -> PipelineDeclarationTypeDef:
+    return {
+        "name": ...,
+        "roleArn": ...,
+        "stages": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PipelineDeclarationTypeDef(TypedDict):
+    name: str,
+    roleArn: str,
+    stages: Sequence[StageDeclarationTypeDef],  # (3)
+    artifactStore: NotRequired[ArtifactStoreTypeDef],  # (1)
+    artifactStores: NotRequired[Mapping[str, ArtifactStoreTypeDef]],  # (2)
+    version: NotRequired[int],
+```
 
-- `name`: `str`
-- `roleArn`: `str`
-- `stages`:
-  `Sequence`\[[StageDeclarationTypeDef](./type_defs.md#stagedeclarationtypedef)\]
-
-Optional fields:
-
-- `artifactStore`: [ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef)
-- `artifactStores`: `Mapping`\[`str`,
-  [ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef)\]
-- `version`: `int`
-
-<a id="pipelineexecutionsummarytypedef"></a>
-
+1. See [:material-code-braces: ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef) 
+2. See [:material-code-braces: ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef) 
+3. See [:material-code-braces: StageDeclarationTypeDef](./type_defs.md#stagedeclarationtypedef) 
 ## PipelineExecutionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PipelineExecutionSummaryTypeDef
+
+def get_value() -> PipelineExecutionSummaryTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PipelineExecutionSummaryTypeDef(TypedDict):
+    pipelineExecutionId: NotRequired[str],
+    status: NotRequired[PipelineExecutionStatusType],  # (1)
+    startTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    sourceRevisions: NotRequired[List[SourceRevisionTypeDef]],  # (2)
+    trigger: NotRequired[ExecutionTriggerTypeDef],  # (3)
+    stopTrigger: NotRequired[StopExecutionTriggerTypeDef],  # (4)
+```
 
-- `pipelineExecutionId`: `str`
-- `status`:
-  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
-- `startTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `sourceRevisions`:
-  `List`\[[SourceRevisionTypeDef](./type_defs.md#sourcerevisiontypedef)\]
-- `trigger`: [ExecutionTriggerTypeDef](./type_defs.md#executiontriggertypedef)
-- `stopTrigger`:
-  [StopExecutionTriggerTypeDef](./type_defs.md#stopexecutiontriggertypedef)
-
-<a id="pipelineexecutiontypedef"></a>
-
+1. See [:material-code-brackets: PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype) 
+2. See [:material-code-braces: SourceRevisionTypeDef](./type_defs.md#sourcerevisiontypedef) 
+3. See [:material-code-braces: ExecutionTriggerTypeDef](./type_defs.md#executiontriggertypedef) 
+4. See [:material-code-braces: StopExecutionTriggerTypeDef](./type_defs.md#stopexecutiontriggertypedef) 
 ## PipelineExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PipelineExecutionTypeDef
+
+def get_value() -> PipelineExecutionTypeDef:
+    return {
+        "pipelineName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PipelineExecutionTypeDef(TypedDict):
+    pipelineName: NotRequired[str],
+    pipelineVersion: NotRequired[int],
+    pipelineExecutionId: NotRequired[str],
+    status: NotRequired[PipelineExecutionStatusType],  # (1)
+    statusSummary: NotRequired[str],
+    artifactRevisions: NotRequired[List[ArtifactRevisionTypeDef]],  # (2)
+```
 
-- `pipelineName`: `str`
-- `pipelineVersion`: `int`
-- `pipelineExecutionId`: `str`
-- `status`:
-  [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
-- `statusSummary`: `str`
-- `artifactRevisions`:
-  `List`\[[ArtifactRevisionTypeDef](./type_defs.md#artifactrevisiontypedef)\]
-
-<a id="pipelinemetadatatypedef"></a>
-
+1. See [:material-code-brackets: PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype) 
+2. See [:material-code-braces: ArtifactRevisionTypeDef](./type_defs.md#artifactrevisiontypedef) 
 ## PipelineMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PipelineMetadataTypeDef
+
+def get_value() -> PipelineMetadataTypeDef:
+    return {
+        "pipelineArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `pipelineArn`: `str`
-- `created`: `datetime`
-- `updated`: `datetime`
-
-<a id="pipelinesummarytypedef"></a>
+```python title="Definition"
+class PipelineMetadataTypeDef(TypedDict):
+    pipelineArn: NotRequired[str],
+    created: NotRequired[datetime],
+    updated: NotRequired[datetime],
+```
 
 ## PipelineSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PipelineSummaryTypeDef
+
+def get_value() -> PipelineSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `version`: `int`
-- `created`: `datetime`
-- `updated`: `datetime`
-
-<a id="pollforjobsinputrequesttypedef"></a>
+```python title="Definition"
+class PipelineSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    version: NotRequired[int],
+    created: NotRequired[datetime],
+    updated: NotRequired[datetime],
+```
 
 ## PollForJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PollForJobsInputRequestTypeDef
+
+def get_value() -> PollForJobsInputRequestTypeDef:
+    return {
+        "actionTypeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PollForJobsInputRequestTypeDef(TypedDict):
+    actionTypeId: ActionTypeIdTypeDef,  # (1)
+    maxBatchSize: NotRequired[int],
+    queryParam: NotRequired[Mapping[str, str]],
+```
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-
-Optional fields:
-
-- `maxBatchSize`: `int`
-- `queryParam`: `Mapping`\[`str`, `str`\]
-
-<a id="pollforjobsoutputtypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
 ## PollForJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PollForJobsOutputTypeDef
+
+def get_value() -> PollForJobsOutputTypeDef:
+    return {
+        "jobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PollForJobsOutputTypeDef(TypedDict):
+    jobs: List[JobTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="pollforthirdpartyjobsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PollForThirdPartyJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PollForThirdPartyJobsInputRequestTypeDef
+
+def get_value() -> PollForThirdPartyJobsInputRequestTypeDef:
+    return {
+        "actionTypeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PollForThirdPartyJobsInputRequestTypeDef(TypedDict):
+    actionTypeId: ActionTypeIdTypeDef,  # (1)
+    maxBatchSize: NotRequired[int],
+```
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-
-Optional fields:
-
-- `maxBatchSize`: `int`
-
-<a id="pollforthirdpartyjobsoutputtypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
 ## PollForThirdPartyJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PollForThirdPartyJobsOutputTypeDef
+
+def get_value() -> PollForThirdPartyJobsOutputTypeDef:
+    return {
+        "jobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PollForThirdPartyJobsOutputTypeDef(TypedDict):
+    jobs: List[ThirdPartyJobTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobs`: `List`\[[ThirdPartyJobTypeDef](./type_defs.md#thirdpartyjobtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putactionrevisioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ThirdPartyJobTypeDef](./type_defs.md#thirdpartyjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutActionRevisionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutActionRevisionInputRequestTypeDef
+
+def get_value() -> PutActionRevisionInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "stageName": ...,
+        "actionName": ...,
+        "actionRevision": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutActionRevisionInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    stageName: str,
+    actionName: str,
+    actionRevision: ActionRevisionTypeDef,  # (1)
+```
 
-- `pipelineName`: `str`
-- `stageName`: `str`
-- `actionName`: `str`
-- `actionRevision`:
-  [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef)
-
-<a id="putactionrevisionoutputtypedef"></a>
-
+1. See [:material-code-braces: ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef) 
 ## PutActionRevisionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutActionRevisionOutputTypeDef
+
+def get_value() -> PutActionRevisionOutputTypeDef:
+    return {
+        "newRevision": ...,
+        "pipelineExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutActionRevisionOutputTypeDef(TypedDict):
+    newRevision: bool,
+    pipelineExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `newRevision`: `bool`
-- `pipelineExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putapprovalresultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutApprovalResultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutApprovalResultInputRequestTypeDef
+
+def get_value() -> PutApprovalResultInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "stageName": ...,
+        "actionName": ...,
+        "result": ...,
+        "token": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutApprovalResultInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    stageName: str,
+    actionName: str,
+    result: ApprovalResultTypeDef,  # (1)
+    token: str,
+```
 
-- `pipelineName`: `str`
-- `stageName`: `str`
-- `actionName`: `str`
-- `result`: [ApprovalResultTypeDef](./type_defs.md#approvalresulttypedef)
-- `token`: `str`
-
-<a id="putapprovalresultoutputtypedef"></a>
-
+1. See [:material-code-braces: ApprovalResultTypeDef](./type_defs.md#approvalresulttypedef) 
 ## PutApprovalResultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutApprovalResultOutputTypeDef
+
+def get_value() -> PutApprovalResultOutputTypeDef:
+    return {
+        "approvedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutApprovalResultOutputTypeDef(TypedDict):
+    approvedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `approvedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putjobfailureresultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutJobFailureResultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutJobFailureResultInputRequestTypeDef
+
+def get_value() -> PutJobFailureResultInputRequestTypeDef:
+    return {
+        "jobId": ...,
+        "failureDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutJobFailureResultInputRequestTypeDef(TypedDict):
+    jobId: str,
+    failureDetails: FailureDetailsTypeDef,  # (1)
+```
 
-- `jobId`: `str`
-- `failureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-
-<a id="putjobsuccessresultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
 ## PutJobSuccessResultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutJobSuccessResultInputRequestTypeDef
+
+def get_value() -> PutJobSuccessResultInputRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutJobSuccessResultInputRequestTypeDef(TypedDict):
+    jobId: str,
+    currentRevision: NotRequired[CurrentRevisionTypeDef],  # (1)
+    continuationToken: NotRequired[str],
+    executionDetails: NotRequired[ExecutionDetailsTypeDef],  # (2)
+    outputVariables: NotRequired[Mapping[str, str]],
+```
 
-- `jobId`: `str`
-
-Optional fields:
-
-- `currentRevision`:
-  [CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef)
-- `continuationToken`: `str`
-- `executionDetails`:
-  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-- `outputVariables`: `Mapping`\[`str`, `str`\]
-
-<a id="putthirdpartyjobfailureresultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef) 
+2. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
 ## PutThirdPartyJobFailureResultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutThirdPartyJobFailureResultInputRequestTypeDef
+
+def get_value() -> PutThirdPartyJobFailureResultInputRequestTypeDef:
+    return {
+        "jobId": ...,
+        "clientToken": ...,
+        "failureDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutThirdPartyJobFailureResultInputRequestTypeDef(TypedDict):
+    jobId: str,
+    clientToken: str,
+    failureDetails: FailureDetailsTypeDef,  # (1)
+```
 
-- `jobId`: `str`
-- `clientToken`: `str`
-- `failureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-
-<a id="putthirdpartyjobsuccessresultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
 ## PutThirdPartyJobSuccessResultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutThirdPartyJobSuccessResultInputRequestTypeDef
+
+def get_value() -> PutThirdPartyJobSuccessResultInputRequestTypeDef:
+    return {
+        "jobId": ...,
+        "clientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutThirdPartyJobSuccessResultInputRequestTypeDef(TypedDict):
+    jobId: str,
+    clientToken: str,
+    currentRevision: NotRequired[CurrentRevisionTypeDef],  # (1)
+    continuationToken: NotRequired[str],
+    executionDetails: NotRequired[ExecutionDetailsTypeDef],  # (2)
+```
 
-- `jobId`: `str`
-- `clientToken`: `str`
-
-Optional fields:
-
-- `currentRevision`:
-  [CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef)
-- `continuationToken`: `str`
-- `executionDetails`:
-  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-
-<a id="putwebhookinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef) 
+2. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
 ## PutWebhookInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutWebhookInputRequestTypeDef
+
+def get_value() -> PutWebhookInputRequestTypeDef:
+    return {
+        "webhook": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutWebhookInputRequestTypeDef(TypedDict):
+    webhook: WebhookDefinitionTypeDef,  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `webhook`:
-  [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
-
-Optional fields:
-
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putwebhookoutputtypedef"></a>
-
+1. See [:material-code-braces: WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutWebhookOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import PutWebhookOutputTypeDef
+
+def get_value() -> PutWebhookOutputTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutWebhookOutputTypeDef(TypedDict):
+    webhook: ListWebhookItemTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [ListWebhookItemTypeDef](./type_defs.md#listwebhookitemtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerwebhookwiththirdpartyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ListWebhookItemTypeDef](./type_defs.md#listwebhookitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterWebhookWithThirdPartyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import RegisterWebhookWithThirdPartyInputRequestTypeDef
+
+def get_value() -> RegisterWebhookWithThirdPartyInputRequestTypeDef:
+    return {
+        "webhookName": ...,
+    }
 ```
 
-Optional fields:
-
-- `webhookName`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RegisterWebhookWithThirdPartyInputRequestTypeDef(TypedDict):
+    webhookName: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retrystageexecutioninputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetryStageExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import RetryStageExecutionInputRequestTypeDef
+
+def get_value() -> RetryStageExecutionInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "stageName": ...,
+        "pipelineExecutionId": ...,
+        "retryMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetryStageExecutionInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    stageName: str,
+    pipelineExecutionId: str,
+    retryMode: StageRetryModeType,  # (1)
+```
 
-- `pipelineName`: `str`
-- `stageName`: `str`
-- `pipelineExecutionId`: `str`
-- `retryMode`: `Literal['FAILED_ACTIONS']` (see
-  [StageRetryModeType](./literals.md#stageretrymodetype))
-
-<a id="retrystageexecutionoutputtypedef"></a>
-
+1. See [:material-code-brackets: StageRetryModeType](./literals.md#stageretrymodetype) 
 ## RetryStageExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import RetryStageExecutionOutputTypeDef
+
+def get_value() -> RetryStageExecutionOutputTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetryStageExecutionOutputTypeDef(TypedDict):
+    pipelineExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `pipelineExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="s3artifactlocationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## S3ArtifactLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import S3ArtifactLocationTypeDef
+
+def get_value() -> S3ArtifactLocationTypeDef:
+    return {
+        "bucketName": ...,
+        "objectKey": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketName`: `str`
-- `objectKey`: `str`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class S3ArtifactLocationTypeDef(TypedDict):
+    bucketName: str,
+    objectKey: str,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucket`: `str`
-- `key`: `str`
-
-<a id="sourcerevisiontypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    key: NotRequired[str],
+```
 
 ## SourceRevisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import SourceRevisionTypeDef
+
+def get_value() -> SourceRevisionTypeDef:
+    return {
+        "actionName": ...,
+    }
 ```
 
-Required fields:
-
-- `actionName`: `str`
-
-Optional fields:
-
-- `revisionId`: `str`
-- `revisionSummary`: `str`
-- `revisionUrl`: `str`
-
-<a id="stagecontexttypedef"></a>
+```python title="Definition"
+class SourceRevisionTypeDef(TypedDict):
+    actionName: str,
+    revisionId: NotRequired[str],
+    revisionSummary: NotRequired[str],
+    revisionUrl: NotRequired[str],
+```
 
 ## StageContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StageContextTypeDef
+
+def get_value() -> StageContextTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-
-<a id="stagedeclarationtypedef"></a>
+```python title="Definition"
+class StageContextTypeDef(TypedDict):
+    name: NotRequired[str],
+```
 
 ## StageDeclarationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StageDeclarationTypeDef
+
+def get_value() -> StageDeclarationTypeDef:
+    return {
+        "name": ...,
+        "actions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StageDeclarationTypeDef(TypedDict):
+    name: str,
+    actions: Sequence[ActionDeclarationTypeDef],  # (2)
+    blockers: NotRequired[Sequence[BlockerDeclarationTypeDef]],  # (1)
+```
 
-- `name`: `str`
-- `actions`:
-  `Sequence`\[[ActionDeclarationTypeDef](./type_defs.md#actiondeclarationtypedef)\]
-
-Optional fields:
-
-- `blockers`:
-  `Sequence`\[[BlockerDeclarationTypeDef](./type_defs.md#blockerdeclarationtypedef)\]
-
-<a id="stageexecutiontypedef"></a>
-
+1. See [:material-code-braces: BlockerDeclarationTypeDef](./type_defs.md#blockerdeclarationtypedef) 
+2. See [:material-code-braces: ActionDeclarationTypeDef](./type_defs.md#actiondeclarationtypedef) 
 ## StageExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StageExecutionTypeDef
+
+def get_value() -> StageExecutionTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StageExecutionTypeDef(TypedDict):
+    pipelineExecutionId: str,
+    status: StageExecutionStatusType,  # (1)
+```
 
-- `pipelineExecutionId`: `str`
-- `status`: [StageExecutionStatusType](./literals.md#stageexecutionstatustype)
-
-<a id="stagestatetypedef"></a>
-
+1. See [:material-code-brackets: StageExecutionStatusType](./literals.md#stageexecutionstatustype) 
 ## StageStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StageStateTypeDef
+
+def get_value() -> StageStateTypeDef:
+    return {
+        "stageName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StageStateTypeDef(TypedDict):
+    stageName: NotRequired[str],
+    inboundExecution: NotRequired[StageExecutionTypeDef],  # (1)
+    inboundTransitionState: NotRequired[TransitionStateTypeDef],  # (2)
+    actionStates: NotRequired[List[ActionStateTypeDef]],  # (3)
+    latestExecution: NotRequired[StageExecutionTypeDef],  # (1)
+```
 
-- `stageName`: `str`
-- `inboundExecution`:
-  [StageExecutionTypeDef](./type_defs.md#stageexecutiontypedef)
-- `inboundTransitionState`:
-  [TransitionStateTypeDef](./type_defs.md#transitionstatetypedef)
-- `actionStates`:
-  `List`\[[ActionStateTypeDef](./type_defs.md#actionstatetypedef)\]
-- `latestExecution`:
-  [StageExecutionTypeDef](./type_defs.md#stageexecutiontypedef)
-
-<a id="startpipelineexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: StageExecutionTypeDef](./type_defs.md#stageexecutiontypedef) 
+2. See [:material-code-braces: TransitionStateTypeDef](./type_defs.md#transitionstatetypedef) 
+3. See [:material-code-braces: ActionStateTypeDef](./type_defs.md#actionstatetypedef) 
+4. See [:material-code-braces: StageExecutionTypeDef](./type_defs.md#stageexecutiontypedef) 
 ## StartPipelineExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StartPipelineExecutionInputRequestTypeDef
+
+def get_value() -> StartPipelineExecutionInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="startpipelineexecutionoutputtypedef"></a>
+```python title="Definition"
+class StartPipelineExecutionInputRequestTypeDef(TypedDict):
+    name: str,
+    clientRequestToken: NotRequired[str],
+```
 
 ## StartPipelineExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StartPipelineExecutionOutputTypeDef
+
+def get_value() -> StartPipelineExecutionOutputTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartPipelineExecutionOutputTypeDef(TypedDict):
+    pipelineExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `pipelineExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopexecutiontriggertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopExecutionTriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StopExecutionTriggerTypeDef
+
+def get_value() -> StopExecutionTriggerTypeDef:
+    return {
+        "reason": ...,
+    }
 ```
 
-Optional fields:
-
-- `reason`: `str`
-
-<a id="stoppipelineexecutioninputrequesttypedef"></a>
+```python title="Definition"
+class StopExecutionTriggerTypeDef(TypedDict):
+    reason: NotRequired[str],
+```
 
 ## StopPipelineExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StopPipelineExecutionInputRequestTypeDef
+
+def get_value() -> StopPipelineExecutionInputRequestTypeDef:
+    return {
+        "pipelineName": ...,
+        "pipelineExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `pipelineName`: `str`
-- `pipelineExecutionId`: `str`
-
-Optional fields:
-
-- `abandon`: `bool`
-- `reason`: `str`
-
-<a id="stoppipelineexecutionoutputtypedef"></a>
+```python title="Definition"
+class StopPipelineExecutionInputRequestTypeDef(TypedDict):
+    pipelineName: str,
+    pipelineExecutionId: str,
+    abandon: NotRequired[bool],
+    reason: NotRequired[str],
+```
 
 ## StopPipelineExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import StopPipelineExecutionOutputTypeDef
+
+def get_value() -> StopPipelineExecutionOutputTypeDef:
+    return {
+        "pipelineExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopPipelineExecutionOutputTypeDef(TypedDict):
+    pipelineExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `pipelineExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="thirdpartyjobdatatypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## ThirdPartyJobDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ThirdPartyJobDataTypeDef
+
+def get_value() -> ThirdPartyJobDataTypeDef:
+    return {
+        "actionTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ThirdPartyJobDataTypeDef(TypedDict):
+    actionTypeId: NotRequired[ActionTypeIdTypeDef],  # (1)
+    actionConfiguration: NotRequired[ActionConfigurationTypeDef],  # (2)
+    pipelineContext: NotRequired[PipelineContextTypeDef],  # (3)
+    inputArtifacts: NotRequired[List[ArtifactTypeDef]],  # (4)
+    outputArtifacts: NotRequired[List[ArtifactTypeDef]],  # (4)
+    artifactCredentials: NotRequired[AWSSessionCredentialsTypeDef],  # (6)
+    continuationToken: NotRequired[str],
+    encryptionKey: NotRequired[EncryptionKeyTypeDef],  # (7)
+```
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-- `actionConfiguration`:
-  [ActionConfigurationTypeDef](./type_defs.md#actionconfigurationtypedef)
-- `pipelineContext`:
-  [PipelineContextTypeDef](./type_defs.md#pipelinecontexttypedef)
-- `inputArtifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `outputArtifacts`:
-  `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `artifactCredentials`:
-  [AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef)
-- `continuationToken`: `str`
-- `encryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
-
-<a id="thirdpartyjobdetailstypedef"></a>
-
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: ActionConfigurationTypeDef](./type_defs.md#actionconfigurationtypedef) 
+3. See [:material-code-braces: PipelineContextTypeDef](./type_defs.md#pipelinecontexttypedef) 
+4. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+5. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+6. See [:material-code-braces: AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef) 
+7. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 ## ThirdPartyJobDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ThirdPartyJobDetailsTypeDef
+
+def get_value() -> ThirdPartyJobDetailsTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ThirdPartyJobDetailsTypeDef(TypedDict):
+    id: NotRequired[str],
+    data: NotRequired[ThirdPartyJobDataTypeDef],  # (1)
+    nonce: NotRequired[str],
+```
 
-- `id`: `str`
-- `data`: [ThirdPartyJobDataTypeDef](./type_defs.md#thirdpartyjobdatatypedef)
-- `nonce`: `str`
-
-<a id="thirdpartyjobtypedef"></a>
-
+1. See [:material-code-braces: ThirdPartyJobDataTypeDef](./type_defs.md#thirdpartyjobdatatypedef) 
 ## ThirdPartyJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import ThirdPartyJobTypeDef
+
+def get_value() -> ThirdPartyJobTypeDef:
+    return {
+        "clientId": ...,
+    }
 ```
 
-Optional fields:
-
-- `clientId`: `str`
-- `jobId`: `str`
-
-<a id="transitionstatetypedef"></a>
+```python title="Definition"
+class ThirdPartyJobTypeDef(TypedDict):
+    clientId: NotRequired[str],
+    jobId: NotRequired[str],
+```
 
 ## TransitionStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import TransitionStateTypeDef
+
+def get_value() -> TransitionStateTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `enabled`: `bool`
-- `lastChangedBy`: `str`
-- `lastChangedAt`: `datetime`
-- `disabledReason`: `str`
-
-<a id="untagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TransitionStateTypeDef(TypedDict):
+    enabled: NotRequired[bool],
+    lastChangedBy: NotRequired[str],
+    lastChangedAt: NotRequired[datetime],
+    disabledReason: NotRequired[str],
+```
 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateactiontypeinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateActionTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import UpdateActionTypeInputRequestTypeDef
+
+def get_value() -> UpdateActionTypeInputRequestTypeDef:
+    return {
+        "actionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateActionTypeInputRequestTypeDef(TypedDict):
+    actionType: ActionTypeDeclarationTypeDef,  # (1)
+```
 
-- `actionType`:
-  [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
-
-<a id="updatepipelineinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef) 
 ## UpdatePipelineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import UpdatePipelineInputRequestTypeDef
+
+def get_value() -> UpdatePipelineInputRequestTypeDef:
+    return {
+        "pipeline": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineInputRequestTypeDef(TypedDict):
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+```
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-
-<a id="updatepipelineoutputtypedef"></a>
-
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
 ## UpdatePipelineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import UpdatePipelineOutputTypeDef
+
+def get_value() -> UpdatePipelineOutputTypeDef:
+    return {
+        "pipeline": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineOutputTypeDef(TypedDict):
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="webhookauthconfigurationtypedef"></a>
-
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WebhookAuthConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import WebhookAuthConfigurationTypeDef
+
+def get_value() -> WebhookAuthConfigurationTypeDef:
+    return {
+        "AllowedIPRange": ...,
+    }
 ```
 
-Optional fields:
-
-- `AllowedIPRange`: `str`
-- `SecretToken`: `str`
-
-<a id="webhookdefinitiontypedef"></a>
+```python title="Definition"
+class WebhookAuthConfigurationTypeDef(TypedDict):
+    AllowedIPRange: NotRequired[str],
+    SecretToken: NotRequired[str],
+```
 
 ## WebhookDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import WebhookDefinitionTypeDef
+
+def get_value() -> WebhookDefinitionTypeDef:
+    return {
+        "name": ...,
+        "targetPipeline": ...,
+        "targetAction": ...,
+        "filters": ...,
+        "authentication": ...,
+        "authenticationConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WebhookDefinitionTypeDef(TypedDict):
+    name: str,
+    targetPipeline: str,
+    targetAction: str,
+    filters: List[WebhookFilterRuleTypeDef],  # (1)
+    authentication: WebhookAuthenticationTypeType,  # (2)
+    authenticationConfiguration: WebhookAuthConfigurationTypeDef,  # (3)
+```
 
-- `name`: `str`
-- `targetPipeline`: `str`
-- `targetAction`: `str`
-- `filters`:
-  `List`\[[WebhookFilterRuleTypeDef](./type_defs.md#webhookfilterruletypedef)\]
-- `authentication`:
-  [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
-- `authenticationConfiguration`:
-  [WebhookAuthConfigurationTypeDef](./type_defs.md#webhookauthconfigurationtypedef)
-
-<a id="webhookfilterruletypedef"></a>
-
+1. See [:material-code-braces: WebhookFilterRuleTypeDef](./type_defs.md#webhookfilterruletypedef) 
+2. See [:material-code-brackets: WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype) 
+3. See [:material-code-braces: WebhookAuthConfigurationTypeDef](./type_defs.md#webhookauthconfigurationtypedef) 
 ## WebhookFilterRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codepipeline.type_defs import WebhookFilterRuleTypeDef
+
+def get_value() -> WebhookFilterRuleTypeDef:
+    return {
+        "jsonPath": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WebhookFilterRuleTypeDef(TypedDict):
+    jsonPath: str,
+    matchEquals: NotRequired[str],
+```
 
-- `jsonPath`: `str`
-
-Optional fields:
-
-- `matchEquals`: `str`

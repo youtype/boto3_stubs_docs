@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-glacier-module"></a>
-
-# Paginators for boto3 Glacier module
+# Paginators
 
 > [Index](../README.md) > [Glacier](./README.md) > Paginators
 
-Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module
-[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
+!!! note ""
 
-- [Paginators for boto3 Glacier module](#paginators-for-boto3-glacier-module)
-  - [ListJobsPaginator](#listjobspaginator)
-  - [ListMultipartUploadsPaginator](#listmultipartuploadspaginator)
-  - [ListPartsPaginator](#listpartspaginator)
-  - [ListVaultsPaginator](#listvaultspaginator)
-
-<a id="listjobspaginator"></a>
+    Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+    type annotations stubs module [mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ## ListJobsPaginator
 
-Type annotations for `boto3.client("glacier").get_paginator("list_jobs")`.
+Type annotations and code completion for `#!python boto3.client("glacier").get_paginator("list_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glacier.paginator import ListJobsPaginator
@@ -32,31 +21,44 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("glacier").get_paginator("list_jobs")
 ```
 
-Boto3 documentation:
-[Glacier.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListJobs)
 
-Arguments for `ListJobsPaginator.paginate` method:
+### paginate
 
-- `accountId`: `str` *(required)*
-- `vaultName`: `str` *(required)*
-- `statuscode`: `str`
-- `completed`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsPaginator.paginate` method.
 
-`ListJobsPaginator.paginate` returns
-`_PageIterator`\[[ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    accountId: str,
+    vaultName: str,
+    statuscode: str = ...,
+    completed: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmultipartuploadspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsInputListJobsPaginateTypeDef = {  # (1)
+    "accountId": ...,
+    "vaultName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsInputListJobsPaginateTypeDef](./type_defs.md#listjobsinputlistjobspaginatetypedef) 
 ## ListMultipartUploadsPaginator
 
-Type annotations for
-`boto3.client("glacier").get_paginator("list_multipart_uploads")`.
+Type annotations and code completion for `#!python boto3.client("glacier").get_paginator("list_multipart_uploads")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glacier.paginator import ListMultipartUploadsPaginator
@@ -65,28 +67,42 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return Session().client("glacier").get_paginator("list_multipart_uploads")
 ```
 
-Boto3 documentation:
-[Glacier.Paginator.ListMultipartUploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListMultipartUploads)
 
-Arguments for `ListMultipartUploadsPaginator.paginate` method:
+### paginate
 
-- `accountId`: `str` *(required)*
-- `vaultName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMultipartUploadsPaginator.paginate` method.
 
-`ListMultipartUploadsPaginator.paginate` returns
-`_PageIterator`\[[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    accountId: str,
+    vaultName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMultipartUploadsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpartspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef = {  # (1)
+    "accountId": ...,
+    "vaultName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef](./type_defs.md#listmultipartuploadsinputlistmultipartuploadspaginatetypedef) 
 ## ListPartsPaginator
 
-Type annotations for `boto3.client("glacier").get_paginator("list_parts")`.
+Type annotations and code completion for `#!python boto3.client("glacier").get_paginator("list_parts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListParts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glacier.paginator import ListPartsPaginator
@@ -95,29 +111,44 @@ def get_list_parts_paginator() -> ListPartsPaginator:
     return Session().client("glacier").get_paginator("list_parts")
 ```
 
-Boto3 documentation:
-[Glacier.Paginator.ListParts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListParts)
 
-Arguments for `ListPartsPaginator.paginate` method:
+### paginate
 
-- `accountId`: `str` *(required)*
-- `vaultName`: `str` *(required)*
-- `uploadId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPartsPaginator.paginate` method.
 
-`ListPartsPaginator.paginate` returns
-`_PageIterator`\[[ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    accountId: str,
+    vaultName: str,
+    uploadId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPartsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvaultspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPartsInputListPartsPaginateTypeDef = {  # (1)
+    "accountId": ...,
+    "vaultName": ...,
+    "uploadId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPartsInputListPartsPaginateTypeDef](./type_defs.md#listpartsinputlistpartspaginatetypedef) 
 ## ListVaultsPaginator
 
-Type annotations for `boto3.client("glacier").get_paginator("list_vaults")`.
+Type annotations and code completion for `#!python boto3.client("glacier").get_paginator("list_vaults")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListVaults)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glacier.paginator import ListVaultsPaginator
@@ -126,14 +157,31 @@ def get_list_vaults_paginator() -> ListVaultsPaginator:
     return Session().client("glacier").get_paginator("list_vaults")
 ```
 
-Boto3 documentation:
-[Glacier.Paginator.ListVaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Paginator.ListVaults)
 
-Arguments for `ListVaultsPaginator.paginate` method:
+### paginate
 
-- `accountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVaultsPaginator.paginate` method.
 
-`ListVaultsPaginator.paginate` returns
-`_PageIterator`\[[ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    accountId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVaultsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVaultsInputListVaultsPaginateTypeDef = {  # (1)
+    "accountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVaultsInputListVaultsPaginateTypeDef](./type_defs.md#listvaultsinputlistvaultspaginatetypedef) 

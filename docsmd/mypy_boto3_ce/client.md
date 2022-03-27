@@ -1,64 +1,18 @@
-<a id="costexplorerclient-for-boto3-costexplorer-module"></a>
-
-# CostExplorerClient for boto3 CostExplorer module
+# CostExplorerClient
 
 > [Index](../README.md) > [CostExplorer](./README.md) > CostExplorerClient
 
-Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module
-[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
+!!! note ""
 
-- [CostExplorerClient for boto3 CostExplorer module](#costexplorerclient-for-boto3-costexplorer-module)
-  - [CostExplorerClient](#costexplorerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_anomaly_monitor](#create_anomaly_monitor)
-    - [create_anomaly_subscription](#create_anomaly_subscription)
-    - [create_cost_category_definition](#create_cost_category_definition)
-    - [delete_anomaly_monitor](#delete_anomaly_monitor)
-    - [delete_anomaly_subscription](#delete_anomaly_subscription)
-    - [delete_cost_category_definition](#delete_cost_category_definition)
-    - [describe_cost_category_definition](#describe_cost_category_definition)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_anomalies](#get_anomalies)
-    - [get_anomaly_monitors](#get_anomaly_monitors)
-    - [get_anomaly_subscriptions](#get_anomaly_subscriptions)
-    - [get_cost_and_usage](#get_cost_and_usage)
-    - [get_cost_and_usage_with_resources](#get_cost_and_usage_with_resources)
-    - [get_cost_categories](#get_cost_categories)
-    - [get_cost_forecast](#get_cost_forecast)
-    - [get_dimension_values](#get_dimension_values)
-    - [get_reservation_coverage](#get_reservation_coverage)
-    - [get_reservation_purchase_recommendation](#get_reservation_purchase_recommendation)
-    - [get_reservation_utilization](#get_reservation_utilization)
-    - [get_rightsizing_recommendation](#get_rightsizing_recommendation)
-    - [get_savings_plans_coverage](#get_savings_plans_coverage)
-    - [get_savings_plans_purchase_recommendation](#get_savings_plans_purchase_recommendation)
-    - [get_savings_plans_utilization](#get_savings_plans_utilization)
-    - [get_savings_plans_utilization_details](#get_savings_plans_utilization_details)
-    - [get_tags](#get_tags)
-    - [get_usage_forecast](#get_usage_forecast)
-    - [list_cost_category_definitions](#list_cost_category_definitions)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [provide_anomaly_feedback](#provide_anomaly_feedback)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_anomaly_monitor](#update_anomaly_monitor)
-    - [update_anomaly_subscription](#update_anomaly_subscription)
-    - [update_cost_category_definition](#update_cost_category_definition)
-
-<a id="costexplorerclient"></a>
+    Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+    type annotations stubs module [mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 ## CostExplorerClient
 
-Type annotations for `boto3.client("ce")`
+Type annotations and code completion for `#!python boto3.client("ce")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_ce.client import CostExplorerClient
 
@@ -66,967 +20,1262 @@ def get_ce_client() -> CostExplorerClient:
     return Session().client("ce")
 ```
 
-Boto3 documentation:
-[CostExplorer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("ce").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("ce")
+
+try:
+    do_something(client)
+except (
+    client.BillExpirationException,
+    client.ClientError,
+    client.DataUnavailableException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.RequestChangedException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.TooManyTagsException,
+    client.UnknownMonitorException,
+    client.UnknownSubscriptionException,
+    client.UnresolvableUsageUnitException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_ce.client import Exceptions
 
 def handle_error(exc: Exceptions.BillExpirationException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BillExpirationException`
-- `Exceptions.ClientError`
-- `Exceptions.DataUnavailableException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.RequestChangedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.UnknownMonitorException`
-- `Exceptions.UnknownSubscriptionException`
-- `Exceptions.UnresolvableUsageUnitException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CostExplorerClient exceptions.
-
-Type annotations for `boto3.client("ce").exceptions` method.
-
-Boto3 documentation:
-[CostExplorer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("ce").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("ce").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.can_paginate)
 
-Boto3 documentation:
-[CostExplorer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_anomaly\_monitor"></a>
-
-### create_anomaly_monitor
-
-.
-
-Type annotations for `boto3.client("ce").create_anomaly_monitor` method.
-
-Boto3 documentation:
-[CostExplorer.Client.create_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
-
-Arguments mapping described in
-[CreateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#createanomalymonitorrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AnomalyMonitor`:
-  [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) *(required)*
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-Returns
-[CreateAnomalyMonitorResponseTypeDef](./type_defs.md#createanomalymonitorresponsetypedef).
-
-<a id="create\_anomaly\_subscription"></a>
-
-### create_anomaly_subscription
+### create\_anomaly\_monitor
 
 .
 
-Type annotations for `boto3.client("ce").create_anomaly_subscription` method.
+Type annotations and code completion for `#!python boto3.client("ce").create_anomaly_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
 
-Boto3 documentation:
-[CostExplorer.Client.create_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
+```python title="Method definition"
+def create_anomaly_monitor(
+    self,
+    *,
+    AnomalyMonitor: AnomalyMonitorTypeDef,  # (1)
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (2)
+) -> CreateAnomalyMonitorResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#createanomalysubscriptionrequestrequesttypedef).
+1. See [:material-code-braces: AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-braces: CreateAnomalyMonitorResponseTypeDef](./type_defs.md#createanomalymonitorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalySubscription`:
-  [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
-  *(required)*
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAnomalyMonitorRequestRequestTypeDef = {  # (1)
+    "AnomalyMonitor": ...,
+}
 
-Returns
-[CreateAnomalySubscriptionResponseTypeDef](./type_defs.md#createanomalysubscriptionresponsetypedef).
+parent.create_anomaly_monitor(**kwargs)
+```
 
-<a id="create\_cost\_category\_definition"></a>
+1. See [:material-code-braces: CreateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#createanomalymonitorrequestrequesttypedef) 
 
-### create_cost_category_definition
+### create\_anomaly\_subscription
 
 .
 
-Type annotations for `boto3.client("ce").create_cost_category_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").create_anomaly_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
 
-Boto3 documentation:
-[CostExplorer.Client.create_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition)
+```python title="Method definition"
+def create_anomaly_subscription(
+    self,
+    *,
+    AnomalySubscription: AnomalySubscriptionTypeDef,  # (1)
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (2)
+) -> CreateAnomalySubscriptionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#createcostcategorydefinitionrequestrequesttypedef).
+1. See [:material-code-braces: AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-braces: CreateAnomalySubscriptionResponseTypeDef](./type_defs.md#createanomalysubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
-  [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
-  *(required)*
-- `Rules`:
-  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
-  *(required)*
-- `DefaultValue`: `str`
-- `SplitChargeRules`:
-  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAnomalySubscriptionRequestRequestTypeDef = {  # (1)
+    "AnomalySubscription": ...,
+}
 
-Returns
-[CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
+parent.create_anomaly_subscription(**kwargs)
+```
 
-<a id="delete\_anomaly\_monitor"></a>
+1. See [:material-code-braces: CreateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#createanomalysubscriptionrequestrequesttypedef) 
 
-### delete_anomaly_monitor
+### create\_cost\_category\_definition
+
+.
+
+Type annotations and code completion for `#!python boto3.client("ce").create_cost_category_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition)
+
+```python title="Method definition"
+def create_cost_category_definition(
+    self,
+    *,
+    Name: str,
+    RuleVersion: CostCategoryRuleVersionType,  # (1)
+    Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    DefaultValue: str = ...,
+    SplitChargeRules: Sequence[CostCategorySplitChargeRuleTypeDef] = ...,  # (3)
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (4)
+) -> CreateCostCategoryDefinitionResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype) 
+2. See [:material-code-braces: CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef) 
+3. See [:material-code-braces: CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+5. See [:material-code-braces: CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateCostCategoryDefinitionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RuleVersion": ...,
+    "Rules": ...,
+}
+
+parent.create_cost_category_definition(**kwargs)
+```
+
+1. See [:material-code-braces: CreateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#createcostcategorydefinitionrequestrequesttypedef) 
+
+### delete\_anomaly\_monitor
 
 Deletes a cost anomaly monitor.
 
-Type annotations for `boto3.client("ce").delete_anomaly_monitor` method.
+Type annotations and code completion for `#!python boto3.client("ce").delete_anomaly_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor)
 
-Boto3 documentation:
-[CostExplorer.Client.delete_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor)
+```python title="Method definition"
+def delete_anomaly_monitor(
+    self,
+    *,
+    MonitorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAnomalyMonitorRequestRequestTypeDef](./type_defs.md#deleteanomalymonitorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MonitorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAnomalyMonitorRequestRequestTypeDef = {  # (1)
+    "MonitorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_anomaly_monitor(**kwargs)
+```
 
-<a id="delete\_anomaly\_subscription"></a>
+1. See [:material-code-braces: DeleteAnomalyMonitorRequestRequestTypeDef](./type_defs.md#deleteanomalymonitorrequestrequesttypedef) 
 
-### delete_anomaly_subscription
+### delete\_anomaly\_subscription
 
 Deletes a cost anomaly subscription.
 
-Type annotations for `boto3.client("ce").delete_anomaly_subscription` method.
+Type annotations and code completion for `#!python boto3.client("ce").delete_anomaly_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription)
 
-Boto3 documentation:
-[CostExplorer.Client.delete_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription)
+```python title="Method definition"
+def delete_anomaly_subscription(
+    self,
+    *,
+    SubscriptionArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#deleteanomalysubscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SubscriptionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAnomalySubscriptionRequestRequestTypeDef = {  # (1)
+    "SubscriptionArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_anomaly_subscription(**kwargs)
+```
 
-<a id="delete\_cost\_category\_definition"></a>
+1. See [:material-code-braces: DeleteAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#deleteanomalysubscriptionrequestrequesttypedef) 
 
-### delete_cost_category_definition
+### delete\_cost\_category\_definition
 
 Deletes a Cost Category.
 
-Type annotations for `boto3.client("ce").delete_cost_category_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").delete_cost_category_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition)
 
-Boto3 documentation:
-[CostExplorer.Client.delete_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition)
+```python title="Method definition"
+def delete_cost_category_definition(
+    self,
+    *,
+    CostCategoryArn: str,
+) -> DeleteCostCategoryDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#deletecostcategorydefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCostCategoryDefinitionResponseTypeDef](./type_defs.md#deletecostcategorydefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CostCategoryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCostCategoryDefinitionRequestRequestTypeDef = {  # (1)
+    "CostCategoryArn": ...,
+}
 
-Returns
-[DeleteCostCategoryDefinitionResponseTypeDef](./type_defs.md#deletecostcategorydefinitionresponsetypedef).
+parent.delete_cost_category_definition(**kwargs)
+```
 
-<a id="describe\_cost\_category\_definition"></a>
+1. See [:material-code-braces: DeleteCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#deletecostcategorydefinitionrequestrequesttypedef) 
 
-### describe_cost_category_definition
+### describe\_cost\_category\_definition
 
-Returns the name, ARN, rules, definition, and effective dates of a Cost
-Category that's defined in the account.
+Returns the name, ARN, rules, definition, and effective dates of a Cost Category
+that's defined in the account.
 
-Type annotations for `boto3.client("ce").describe_cost_category_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").describe_cost_category_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
 
-Boto3 documentation:
-[CostExplorer.Client.describe_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
+```python title="Method definition"
+def describe_cost_category_definition(
+    self,
+    *,
+    CostCategoryArn: str,
+    EffectiveOn: str = ...,
+) -> DescribeCostCategoryDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#describecostcategorydefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCostCategoryDefinitionResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CostCategoryArn`: `str` *(required)*
-- `EffectiveOn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCostCategoryDefinitionRequestRequestTypeDef = {  # (1)
+    "CostCategoryArn": ...,
+}
 
-Returns
-[DescribeCostCategoryDefinitionResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponsetypedef).
+parent.describe_cost_category_definition(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#describecostcategorydefinitionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("ce").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("ce").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CostExplorer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_anomalies"></a>
-
-### get_anomalies
+### get\_anomalies
 
 Retrieves all of the cost anomalies detected on your account during the time
 period that's specified by the `DateInterval` object.
 
-Type annotations for `boto3.client("ce").get_anomalies` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_anomalies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomalies)
 
-Boto3 documentation:
-[CostExplorer.Client.get_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomalies)
+```python title="Method definition"
+def get_anomalies(
+    self,
+    *,
+    DateInterval: AnomalyDateIntervalTypeDef,  # (1)
+    MonitorArn: str = ...,
+    Feedback: AnomalyFeedbackTypeType = ...,  # (2)
+    TotalImpact: TotalImpactFilterTypeDef = ...,  # (3)
+    NextPageToken: str = ...,
+    MaxResults: int = ...,
+) -> GetAnomaliesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetAnomaliesRequestRequestTypeDef](./type_defs.md#getanomaliesrequestrequesttypedef).
+1. See [:material-code-braces: AnomalyDateIntervalTypeDef](./type_defs.md#anomalydateintervaltypedef) 
+2. See [:material-code-brackets: AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype) 
+3. See [:material-code-braces: TotalImpactFilterTypeDef](./type_defs.md#totalimpactfiltertypedef) 
+4. See [:material-code-braces: GetAnomaliesResponseTypeDef](./type_defs.md#getanomaliesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DateInterval`:
-  [AnomalyDateIntervalTypeDef](./type_defs.md#anomalydateintervaltypedef)
-  *(required)*
-- `MonitorArn`: `str`
-- `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
-- `TotalImpact`:
-  [TotalImpactFilterTypeDef](./type_defs.md#totalimpactfiltertypedef)
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAnomaliesRequestRequestTypeDef = {  # (1)
+    "DateInterval": ...,
+}
 
-Returns
-[GetAnomaliesResponseTypeDef](./type_defs.md#getanomaliesresponsetypedef).
+parent.get_anomalies(**kwargs)
+```
 
-<a id="get\_anomaly\_monitors"></a>
+1. See [:material-code-braces: GetAnomaliesRequestRequestTypeDef](./type_defs.md#getanomaliesrequestrequesttypedef) 
 
-### get_anomaly_monitors
+### get\_anomaly\_monitors
 
 Retrieves the cost anomaly monitor definitions for your account.
 
-Type annotations for `boto3.client("ce").get_anomaly_monitors` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_anomaly_monitors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors)
 
-Boto3 documentation:
-[CostExplorer.Client.get_anomaly_monitors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors)
+```python title="Method definition"
+def get_anomaly_monitors(
+    self,
+    *,
+    MonitorArnList: Sequence[str] = ...,
+    NextPageToken: str = ...,
+    MaxResults: int = ...,
+) -> GetAnomalyMonitorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAnomalyMonitorsRequestRequestTypeDef](./type_defs.md#getanomalymonitorsrequestrequesttypedef).
+1. See [:material-code-braces: GetAnomalyMonitorsResponseTypeDef](./type_defs.md#getanomalymonitorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MonitorArnList`: `Sequence`\[`str`\]
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAnomalyMonitorsRequestRequestTypeDef = {  # (1)
+    "MonitorArnList": ...,
+}
 
-Returns
-[GetAnomalyMonitorsResponseTypeDef](./type_defs.md#getanomalymonitorsresponsetypedef).
+parent.get_anomaly_monitors(**kwargs)
+```
 
-<a id="get\_anomaly\_subscriptions"></a>
+1. See [:material-code-braces: GetAnomalyMonitorsRequestRequestTypeDef](./type_defs.md#getanomalymonitorsrequestrequesttypedef) 
 
-### get_anomaly_subscriptions
+### get\_anomaly\_subscriptions
 
 Retrieves the cost anomaly subscription objects for your account.
 
-Type annotations for `boto3.client("ce").get_anomaly_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_anomaly_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions)
 
-Boto3 documentation:
-[CostExplorer.Client.get_anomaly_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions)
+```python title="Method definition"
+def get_anomaly_subscriptions(
+    self,
+    *,
+    SubscriptionArnList: Sequence[str] = ...,
+    MonitorArn: str = ...,
+    NextPageToken: str = ...,
+    MaxResults: int = ...,
+) -> GetAnomalySubscriptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAnomalySubscriptionsRequestRequestTypeDef](./type_defs.md#getanomalysubscriptionsrequestrequesttypedef).
+1. See [:material-code-braces: GetAnomalySubscriptionsResponseTypeDef](./type_defs.md#getanomalysubscriptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionArnList`: `Sequence`\[`str`\]
-- `MonitorArn`: `str`
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAnomalySubscriptionsRequestRequestTypeDef = {  # (1)
+    "SubscriptionArnList": ...,
+}
 
-Returns
-[GetAnomalySubscriptionsResponseTypeDef](./type_defs.md#getanomalysubscriptionsresponsetypedef).
+parent.get_anomaly_subscriptions(**kwargs)
+```
 
-<a id="get\_cost\_and\_usage"></a>
+1. See [:material-code-braces: GetAnomalySubscriptionsRequestRequestTypeDef](./type_defs.md#getanomalysubscriptionsrequestrequesttypedef) 
 
-### get_cost_and_usage
+### get\_cost\_and\_usage
 
 Retrieves cost and usage metrics for your account.
 
-Type annotations for `boto3.client("ce").get_cost_and_usage` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_cost_and_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage)
 
-Boto3 documentation:
-[CostExplorer.Client.get_cost_and_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage)
+```python title="Method definition"
+def get_cost_and_usage(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Granularity: GranularityType,  # (2)
+    Metrics: Sequence[str],
+    Filter: ExpressionTypeDef = ...,  # (3)
+    GroupBy: Sequence[GroupDefinitionTypeDef] = ...,  # (4)
+    NextPageToken: str = ...,
+) -> GetCostAndUsageResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetCostAndUsageRequestRequestTypeDef](./type_defs.md#getcostandusagerequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+5. See [:material-code-braces: GetCostAndUsageResponseTypeDef](./type_defs.md#getcostandusageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Granularity`: [GranularityType](./literals.md#granularitytype) *(required)*
-- `Metrics`: `Sequence`\[`str`\] *(required)*
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCostAndUsageRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+    "Granularity": ...,
+    "Metrics": ...,
+}
 
-Returns
-[GetCostAndUsageResponseTypeDef](./type_defs.md#getcostandusageresponsetypedef).
+parent.get_cost_and_usage(**kwargs)
+```
 
-<a id="get\_cost\_and\_usage\_with\_resources"></a>
+1. See [:material-code-braces: GetCostAndUsageRequestRequestTypeDef](./type_defs.md#getcostandusagerequestrequesttypedef) 
 
-### get_cost_and_usage_with_resources
+### get\_cost\_and\_usage\_with\_resources
 
 Retrieves cost and usage metrics with resources for your account.
 
-Type annotations for `boto3.client("ce").get_cost_and_usage_with_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").get_cost_and_usage_with_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources)
 
-Boto3 documentation:
-[CostExplorer.Client.get_cost_and_usage_with_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources)
+```python title="Method definition"
+def get_cost_and_usage_with_resources(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Granularity: GranularityType,  # (2)
+    Filter: ExpressionTypeDef,  # (3)
+    Metrics: Sequence[str] = ...,
+    GroupBy: Sequence[GroupDefinitionTypeDef] = ...,  # (4)
+    NextPageToken: str = ...,
+) -> GetCostAndUsageWithResourcesResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetCostAndUsageWithResourcesRequestRequestTypeDef](./type_defs.md#getcostandusagewithresourcesrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+5. See [:material-code-braces: GetCostAndUsageWithResourcesResponseTypeDef](./type_defs.md#getcostandusagewithresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Granularity`: [GranularityType](./literals.md#granularitytype) *(required)*
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef) *(required)*
-- `Metrics`: `Sequence`\[`str`\]
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCostAndUsageWithResourcesRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+    "Granularity": ...,
+    "Filter": ...,
+}
 
-Returns
-[GetCostAndUsageWithResourcesResponseTypeDef](./type_defs.md#getcostandusagewithresourcesresponsetypedef).
+parent.get_cost_and_usage_with_resources(**kwargs)
+```
 
-<a id="get\_cost\_categories"></a>
+1. See [:material-code-braces: GetCostAndUsageWithResourcesRequestRequestTypeDef](./type_defs.md#getcostandusagewithresourcesrequestrequesttypedef) 
 
-### get_cost_categories
+### get\_cost\_categories
 
 Retrieves an array of Cost Category names and values incurred cost.
 
-Type annotations for `boto3.client("ce").get_cost_categories` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_cost_categories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_categories)
 
-Boto3 documentation:
-[CostExplorer.Client.get_cost_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_categories)
+```python title="Method definition"
+def get_cost_categories(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    SearchString: str = ...,
+    CostCategoryName: str = ...,
+    Filter: ExpressionTypeDef = ...,  # (2)
+    SortBy: Sequence[SortDefinitionTypeDef] = ...,  # (3)
+    MaxResults: int = ...,
+    NextPageToken: str = ...,
+) -> GetCostCategoriesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetCostCategoriesRequestRequestTypeDef](./type_defs.md#getcostcategoriesrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+4. See [:material-code-braces: GetCostCategoriesResponseTypeDef](./type_defs.md#getcostcategoriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `SearchString`: `str`
-- `CostCategoryName`: `str`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`:
-  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
-- `MaxResults`: `int`
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCostCategoriesRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns
-[GetCostCategoriesResponseTypeDef](./type_defs.md#getcostcategoriesresponsetypedef).
+parent.get_cost_categories(**kwargs)
+```
 
-<a id="get\_cost\_forecast"></a>
+1. See [:material-code-braces: GetCostCategoriesRequestRequestTypeDef](./type_defs.md#getcostcategoriesrequestrequesttypedef) 
 
-### get_cost_forecast
+### get\_cost\_forecast
 
 Retrieves a forecast for how much Amazon Web Services predicts that you will
 spend over the forecast time period that you select, based on your past costs.
 
-Type annotations for `boto3.client("ce").get_cost_forecast` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_cost_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_forecast)
 
-Boto3 documentation:
-[CostExplorer.Client.get_cost_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_forecast)
+```python title="Method definition"
+def get_cost_forecast(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Metric: MetricType,  # (2)
+    Granularity: GranularityType,  # (3)
+    Filter: ExpressionTypeDef = ...,  # (4)
+    PredictionIntervalLevel: int = ...,
+) -> GetCostForecastResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetCostForecastRequestRequestTypeDef](./type_defs.md#getcostforecastrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: MetricType](./literals.md#metrictype) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: GetCostForecastResponseTypeDef](./type_defs.md#getcostforecastresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Metric`: [MetricType](./literals.md#metrictype) *(required)*
-- `Granularity`: [GranularityType](./literals.md#granularitytype) *(required)*
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `PredictionIntervalLevel`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetCostForecastRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+    "Metric": ...,
+    "Granularity": ...,
+}
 
-Returns
-[GetCostForecastResponseTypeDef](./type_defs.md#getcostforecastresponsetypedef).
+parent.get_cost_forecast(**kwargs)
+```
 
-<a id="get\_dimension\_values"></a>
+1. See [:material-code-braces: GetCostForecastRequestRequestTypeDef](./type_defs.md#getcostforecastrequestrequesttypedef) 
 
-### get_dimension_values
+### get\_dimension\_values
 
 Retrieves all available filter values for a specified filter over a period of
 time.
 
-Type annotations for `boto3.client("ce").get_dimension_values` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_dimension_values` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_dimension_values)
 
-Boto3 documentation:
-[CostExplorer.Client.get_dimension_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_dimension_values)
+```python title="Method definition"
+def get_dimension_values(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Dimension: DimensionType,  # (2)
+    SearchString: str = ...,
+    Context: ContextType = ...,  # (3)
+    Filter: ExpressionTypeDef = ...,  # (4)
+    SortBy: Sequence[SortDefinitionTypeDef] = ...,  # (5)
+    MaxResults: int = ...,
+    NextPageToken: str = ...,
+) -> GetDimensionValuesResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[GetDimensionValuesRequestRequestTypeDef](./type_defs.md#getdimensionvaluesrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: DimensionType](./literals.md#dimensiontype) 
+3. See [:material-code-brackets: ContextType](./literals.md#contexttype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+6. See [:material-code-braces: GetDimensionValuesResponseTypeDef](./type_defs.md#getdimensionvaluesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Dimension`: [DimensionType](./literals.md#dimensiontype) *(required)*
-- `SearchString`: `str`
-- `Context`: [ContextType](./literals.md#contexttype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`:
-  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
-- `MaxResults`: `int`
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDimensionValuesRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+    "Dimension": ...,
+}
 
-Returns
-[GetDimensionValuesResponseTypeDef](./type_defs.md#getdimensionvaluesresponsetypedef).
+parent.get_dimension_values(**kwargs)
+```
 
-<a id="get\_reservation\_coverage"></a>
+1. See [:material-code-braces: GetDimensionValuesRequestRequestTypeDef](./type_defs.md#getdimensionvaluesrequestrequesttypedef) 
 
-### get_reservation_coverage
+### get\_reservation\_coverage
 
 Retrieves the reservation coverage for your account.
 
-Type annotations for `boto3.client("ce").get_reservation_coverage` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_reservation_coverage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage)
 
-Boto3 documentation:
-[CostExplorer.Client.get_reservation_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage)
+```python title="Method definition"
+def get_reservation_coverage(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    GroupBy: Sequence[GroupDefinitionTypeDef] = ...,  # (2)
+    Granularity: GranularityType = ...,  # (3)
+    Filter: ExpressionTypeDef = ...,  # (4)
+    Metrics: Sequence[str] = ...,
+    NextPageToken: str = ...,
+    SortBy: SortDefinitionTypeDef = ...,  # (5)
+    MaxResults: int = ...,
+) -> GetReservationCoverageResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[GetReservationCoverageRequestRequestTypeDef](./type_defs.md#getreservationcoveragerequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+6. See [:material-code-braces: GetReservationCoverageResponseTypeDef](./type_defs.md#getreservationcoverageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `Sequence`\[`str`\]
-- `NextPageToken`: `str`
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetReservationCoverageRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns
-[GetReservationCoverageResponseTypeDef](./type_defs.md#getreservationcoverageresponsetypedef).
+parent.get_reservation_coverage(**kwargs)
+```
 
-<a id="get\_reservation\_purchase\_recommendation"></a>
+1. See [:material-code-braces: GetReservationCoverageRequestRequestTypeDef](./type_defs.md#getreservationcoveragerequestrequesttypedef) 
 
-### get_reservation_purchase_recommendation
+### get\_reservation\_purchase\_recommendation
 
 Gets recommendations for which reservations to purchase.
 
-Type annotations for
-`boto3.client("ce").get_reservation_purchase_recommendation` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_reservation_purchase_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation)
 
-Boto3 documentation:
-[CostExplorer.Client.get_reservation_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation)
+```python title="Method definition"
+def get_reservation_purchase_recommendation(
+    self,
+    *,
+    Service: str,
+    AccountId: str = ...,
+    Filter: ExpressionTypeDef = ...,  # (1)
+    AccountScope: AccountScopeType = ...,  # (2)
+    LookbackPeriodInDays: LookbackPeriodInDaysType = ...,  # (3)
+    TermInYears: TermInYearsType = ...,  # (4)
+    PaymentOption: PaymentOptionType = ...,  # (5)
+    ServiceSpecification: ServiceSpecificationTypeDef = ...,  # (6)
+    PageSize: int = ...,
+    NextPageToken: str = ...,
+) -> GetReservationPurchaseRecommendationResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[GetReservationPurchaseRecommendationRequestRequestTypeDef](./type_defs.md#getreservationpurchaserecommendationrequestrequesttypedef).
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-brackets: AccountScopeType](./literals.md#accountscopetype) 
+3. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
+4. See [:material-code-brackets: TermInYearsType](./literals.md#terminyearstype) 
+5. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+6. See [:material-code-braces: ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef) 
+7. See [:material-code-braces: GetReservationPurchaseRecommendationResponseTypeDef](./type_defs.md#getreservationpurchaserecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Service`: `str` *(required)*
-- `AccountId`: `str`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-- `ServiceSpecification`:
-  [ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef)
-- `PageSize`: `int`
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetReservationPurchaseRecommendationRequestRequestTypeDef = {  # (1)
+    "Service": ...,
+}
 
-Returns
-[GetReservationPurchaseRecommendationResponseTypeDef](./type_defs.md#getreservationpurchaserecommendationresponsetypedef).
+parent.get_reservation_purchase_recommendation(**kwargs)
+```
 
-<a id="get\_reservation\_utilization"></a>
+1. See [:material-code-braces: GetReservationPurchaseRecommendationRequestRequestTypeDef](./type_defs.md#getreservationpurchaserecommendationrequestrequesttypedef) 
 
-### get_reservation_utilization
+### get\_reservation\_utilization
 
 Retrieves the reservation utilization for your account.
 
-Type annotations for `boto3.client("ce").get_reservation_utilization` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_reservation_utilization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization)
 
-Boto3 documentation:
-[CostExplorer.Client.get_reservation_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization)
+```python title="Method definition"
+def get_reservation_utilization(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    GroupBy: Sequence[GroupDefinitionTypeDef] = ...,  # (2)
+    Granularity: GranularityType = ...,  # (3)
+    Filter: ExpressionTypeDef = ...,  # (4)
+    SortBy: SortDefinitionTypeDef = ...,  # (5)
+    NextPageToken: str = ...,
+    MaxResults: int = ...,
+) -> GetReservationUtilizationResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[GetReservationUtilizationRequestRequestTypeDef](./type_defs.md#getreservationutilizationrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+6. See [:material-code-braces: GetReservationUtilizationResponseTypeDef](./type_defs.md#getreservationutilizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetReservationUtilizationRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns
-[GetReservationUtilizationResponseTypeDef](./type_defs.md#getreservationutilizationresponsetypedef).
+parent.get_reservation_utilization(**kwargs)
+```
 
-<a id="get\_rightsizing\_recommendation"></a>
+1. See [:material-code-braces: GetReservationUtilizationRequestRequestTypeDef](./type_defs.md#getreservationutilizationrequestrequesttypedef) 
 
-### get_rightsizing_recommendation
+### get\_rightsizing\_recommendation
 
 Creates recommendations that help you save cost by identifying idle and
 underutilized Amazon EC2 instances.
 
-Type annotations for `boto3.client("ce").get_rightsizing_recommendation`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").get_rightsizing_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation)
 
-Boto3 documentation:
-[CostExplorer.Client.get_rightsizing_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation)
+```python title="Method definition"
+def get_rightsizing_recommendation(
+    self,
+    *,
+    Service: str,
+    Filter: ExpressionTypeDef = ...,  # (1)
+    Configuration: RightsizingRecommendationConfigurationTypeDef = ...,  # (2)
+    PageSize: int = ...,
+    NextPageToken: str = ...,
+) -> GetRightsizingRecommendationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetRightsizingRecommendationRequestRequestTypeDef](./type_defs.md#getrightsizingrecommendationrequestrequesttypedef).
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-braces: RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef) 
+3. See [:material-code-braces: GetRightsizingRecommendationResponseTypeDef](./type_defs.md#getrightsizingrecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Service`: `str` *(required)*
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Configuration`:
-  [RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef)
-- `PageSize`: `int`
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRightsizingRecommendationRequestRequestTypeDef = {  # (1)
+    "Service": ...,
+}
 
-Returns
-[GetRightsizingRecommendationResponseTypeDef](./type_defs.md#getrightsizingrecommendationresponsetypedef).
+parent.get_rightsizing_recommendation(**kwargs)
+```
 
-<a id="get\_savings\_plans\_coverage"></a>
+1. See [:material-code-braces: GetRightsizingRecommendationRequestRequestTypeDef](./type_defs.md#getrightsizingrecommendationrequestrequesttypedef) 
 
-### get_savings_plans_coverage
+### get\_savings\_plans\_coverage
 
 Retrieves the Savings Plans covered for your account.
 
-Type annotations for `boto3.client("ce").get_savings_plans_coverage` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_savings_plans_coverage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage)
 
-Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage)
+```python title="Method definition"
+def get_savings_plans_coverage(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    GroupBy: Sequence[GroupDefinitionTypeDef] = ...,  # (2)
+    Granularity: GranularityType = ...,  # (3)
+    Filter: ExpressionTypeDef = ...,  # (4)
+    Metrics: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SortBy: SortDefinitionTypeDef = ...,  # (5)
+) -> GetSavingsPlansCoverageResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[GetSavingsPlansCoverageRequestRequestTypeDef](./type_defs.md#getsavingsplanscoveragerequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+6. See [:material-code-braces: GetSavingsPlansCoverageResponseTypeDef](./type_defs.md#getsavingsplanscoverageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSavingsPlansCoverageRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns
-[GetSavingsPlansCoverageResponseTypeDef](./type_defs.md#getsavingsplanscoverageresponsetypedef).
+parent.get_savings_plans_coverage(**kwargs)
+```
 
-<a id="get\_savings\_plans\_purchase\_recommendation"></a>
+1. See [:material-code-braces: GetSavingsPlansCoverageRequestRequestTypeDef](./type_defs.md#getsavingsplanscoveragerequestrequesttypedef) 
 
-### get_savings_plans_purchase_recommendation
+### get\_savings\_plans\_purchase\_recommendation
 
 Retrieves your request parameters, Savings Plan Recommendations Summary and
 Details.
 
-Type annotations for
-`boto3.client("ce").get_savings_plans_purchase_recommendation` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_savings_plans_purchase_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation)
 
-Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation)
+```python title="Method definition"
+def get_savings_plans_purchase_recommendation(
+    self,
+    *,
+    SavingsPlansType: SupportedSavingsPlansTypeType,  # (1)
+    TermInYears: TermInYearsType,  # (2)
+    PaymentOption: PaymentOptionType,  # (3)
+    LookbackPeriodInDays: LookbackPeriodInDaysType,  # (4)
+    AccountScope: AccountScopeType = ...,  # (5)
+    NextPageToken: str = ...,
+    PageSize: int = ...,
+    Filter: ExpressionTypeDef = ...,  # (6)
+) -> GetSavingsPlansPurchaseRecommendationResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationrequestrequesttypedef).
+1. See [:material-code-brackets: SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype) 
+2. See [:material-code-brackets: TermInYearsType](./literals.md#terminyearstype) 
+3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+4. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
+5. See [:material-code-brackets: AccountScopeType](./literals.md#accountscopetype) 
+6. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+7. See [:material-code-braces: GetSavingsPlansPurchaseRecommendationResponseTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SavingsPlansType`:
-  [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
-  *(required)*
-- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype) *(required)*
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-  *(required)*
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-  *(required)*
-- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
-- `NextPageToken`: `str`
-- `PageSize`: `int`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef = {  # (1)
+    "SavingsPlansType": ...,
+    "TermInYears": ...,
+    "PaymentOption": ...,
+    "LookbackPeriodInDays": ...,
+}
 
-Returns
-[GetSavingsPlansPurchaseRecommendationResponseTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationresponsetypedef).
+parent.get_savings_plans_purchase_recommendation(**kwargs)
+```
 
-<a id="get\_savings\_plans\_utilization"></a>
+1. See [:material-code-braces: GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationrequestrequesttypedef) 
 
-### get_savings_plans_utilization
+### get\_savings\_plans\_utilization
 
-Retrieves the Savings Plans utilization for your account across date ranges
-with daily or monthly granularity.
+Retrieves the Savings Plans utilization for your account across date ranges with
+daily or monthly granularity.
 
-Type annotations for `boto3.client("ce").get_savings_plans_utilization` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_savings_plans_utilization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization)
 
-Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization)
+```python title="Method definition"
+def get_savings_plans_utilization(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Granularity: GranularityType = ...,  # (2)
+    Filter: ExpressionTypeDef = ...,  # (3)
+    SortBy: SortDefinitionTypeDef = ...,  # (4)
+) -> GetSavingsPlansUtilizationResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetSavingsPlansUtilizationRequestRequestTypeDef](./type_defs.md#getsavingsplansutilizationrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+5. See [:material-code-braces: GetSavingsPlansUtilizationResponseTypeDef](./type_defs.md#getsavingsplansutilizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSavingsPlansUtilizationRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns
-[GetSavingsPlansUtilizationResponseTypeDef](./type_defs.md#getsavingsplansutilizationresponsetypedef).
+parent.get_savings_plans_utilization(**kwargs)
+```
 
-<a id="get\_savings\_plans\_utilization\_details"></a>
+1. See [:material-code-braces: GetSavingsPlansUtilizationRequestRequestTypeDef](./type_defs.md#getsavingsplansutilizationrequestrequesttypedef) 
 
-### get_savings_plans_utilization_details
+### get\_savings\_plans\_utilization\_details
 
-Retrieves attribute data along with aggregate utilization and savings data for
-a given time period.
+Retrieves attribute data along with aggregate utilization and savings data for a
+given time period.
 
-Type annotations for `boto3.client("ce").get_savings_plans_utilization_details`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").get_savings_plans_utilization_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details)
 
-Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_utilization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details)
+```python title="Method definition"
+def get_savings_plans_utilization_details(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Filter: ExpressionTypeDef = ...,  # (2)
+    DataType: Sequence[SavingsPlansDataTypeType] = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SortBy: SortDefinitionTypeDef = ...,  # (4)
+) -> GetSavingsPlansUtilizationDetailsResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetSavingsPlansUtilizationDetailsRequestRequestTypeDef](./type_defs.md#getsavingsplansutilizationdetailsrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-brackets: SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype) 
+4. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+5. See [:material-code-braces: GetSavingsPlansUtilizationDetailsResponseTypeDef](./type_defs.md#getsavingsplansutilizationdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `DataType`:
-  `Sequence`\[[SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSavingsPlansUtilizationDetailsRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns
-[GetSavingsPlansUtilizationDetailsResponseTypeDef](./type_defs.md#getsavingsplansutilizationdetailsresponsetypedef).
+parent.get_savings_plans_utilization_details(**kwargs)
+```
 
-<a id="get\_tags"></a>
+1. See [:material-code-braces: GetSavingsPlansUtilizationDetailsRequestRequestTypeDef](./type_defs.md#getsavingsplansutilizationdetailsrequestrequesttypedef) 
 
-### get_tags
+### get\_tags
 
 Queries for available tag keys and tag values for a specified period.
 
-Type annotations for `boto3.client("ce").get_tags` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_tags)
 
-Boto3 documentation:
-[CostExplorer.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_tags)
+```python title="Method definition"
+def get_tags(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    SearchString: str = ...,
+    TagKey: str = ...,
+    Filter: ExpressionTypeDef = ...,  # (2)
+    SortBy: Sequence[SortDefinitionTypeDef] = ...,  # (3)
+    MaxResults: int = ...,
+    NextPageToken: str = ...,
+) -> GetTagsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
+4. See [:material-code-braces: GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `SearchString`: `str`
-- `TagKey`: `str`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`:
-  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
-- `MaxResults`: `int`
-- `NextPageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTagsRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+}
 
-Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
+parent.get_tags(**kwargs)
+```
 
-<a id="get\_usage\_forecast"></a>
+1. See [:material-code-braces: GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef) 
 
-### get_usage_forecast
+### get\_usage\_forecast
 
-Retrieves a forecast for how much Amazon Web Services predicts that you will
-use over the forecast time period that you select, based on your past usage.
+Retrieves a forecast for how much Amazon Web Services predicts that you will use
+over the forecast time period that you select, based on your past usage.
 
-Type annotations for `boto3.client("ce").get_usage_forecast` method.
+Type annotations and code completion for `#!python boto3.client("ce").get_usage_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_usage_forecast)
 
-Boto3 documentation:
-[CostExplorer.Client.get_usage_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_usage_forecast)
+```python title="Method definition"
+def get_usage_forecast(
+    self,
+    *,
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Metric: MetricType,  # (2)
+    Granularity: GranularityType,  # (3)
+    Filter: ExpressionTypeDef = ...,  # (4)
+    PredictionIntervalLevel: int = ...,
+) -> GetUsageForecastResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetUsageForecastRequestRequestTypeDef](./type_defs.md#getusageforecastrequestrequesttypedef).
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: MetricType](./literals.md#metrictype) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: GetUsageForecastResponseTypeDef](./type_defs.md#getusageforecastresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-  *(required)*
-- `Metric`: [MetricType](./literals.md#metrictype) *(required)*
-- `Granularity`: [GranularityType](./literals.md#granularitytype) *(required)*
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `PredictionIntervalLevel`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetUsageForecastRequestRequestTypeDef = {  # (1)
+    "TimePeriod": ...,
+    "Metric": ...,
+    "Granularity": ...,
+}
 
-Returns
-[GetUsageForecastResponseTypeDef](./type_defs.md#getusageforecastresponsetypedef).
+parent.get_usage_forecast(**kwargs)
+```
 
-<a id="list\_cost\_category\_definitions"></a>
+1. See [:material-code-braces: GetUsageForecastRequestRequestTypeDef](./type_defs.md#getusageforecastrequestrequesttypedef) 
 
-### list_cost_category_definitions
+### list\_cost\_category\_definitions
 
 Returns the name, ARN, `NumberOfRules` and effective dates of all Cost
 Categories defined in the account.
 
-Type annotations for `boto3.client("ce").list_cost_category_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").list_cost_category_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions)
 
-Boto3 documentation:
-[CostExplorer.Client.list_cost_category_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions)
+```python title="Method definition"
+def list_cost_category_definitions(
+    self,
+    *,
+    EffectiveOn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCostCategoryDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCostCategoryDefinitionsRequestRequestTypeDef](./type_defs.md#listcostcategorydefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EffectiveOn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCostCategoryDefinitionsRequestRequestTypeDef = {  # (1)
+    "EffectiveOn": ...,
+}
 
-Returns
-[ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef).
+parent.list_cost_category_definitions(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListCostCategoryDefinitionsRequestRequestTypeDef](./type_defs.md#listcostcategorydefinitionsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 .
 
-Type annotations for `boto3.client("ce").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("ce").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CostExplorer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="provide\_anomaly\_feedback"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### provide_anomaly_feedback
+### provide\_anomaly\_feedback
 
 Modifies the feedback property of a given cost anomaly.
 
-Type annotations for `boto3.client("ce").provide_anomaly_feedback` method.
+Type annotations and code completion for `#!python boto3.client("ce").provide_anomaly_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback)
 
-Boto3 documentation:
-[CostExplorer.Client.provide_anomaly_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback)
+```python title="Method definition"
+def provide_anomaly_feedback(
+    self,
+    *,
+    AnomalyId: str,
+    Feedback: AnomalyFeedbackTypeType,  # (1)
+) -> ProvideAnomalyFeedbackResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ProvideAnomalyFeedbackRequestRequestTypeDef](./type_defs.md#provideanomalyfeedbackrequestrequesttypedef).
+1. See [:material-code-brackets: AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype) 
+2. See [:material-code-braces: ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyId`: `str` *(required)*
-- `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ProvideAnomalyFeedbackRequestRequestTypeDef = {  # (1)
+    "AnomalyId": ...,
+    "Feedback": ...,
+}
 
-Returns
-[ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef).
+parent.provide_anomaly_feedback(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ProvideAnomalyFeedbackRequestRequestTypeDef](./type_defs.md#provideanomalyfeedbackrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 .
 
-Type annotations for `boto3.client("ce").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ce").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.tag_resource)
 
-Boto3 documentation:
-[CostExplorer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    ResourceTags: Sequence[ResourceTagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "ResourceTags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a resource.
 
-Type annotations for `boto3.client("ce").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ce").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.untag_resource)
 
-Boto3 documentation:
-[CostExplorer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    ResourceTagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `ResourceTagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "ResourceTagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_anomaly\_monitor"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_anomaly_monitor
+### update\_anomaly\_monitor
 
 Updates an existing cost anomaly monitor.
 
-Type annotations for `boto3.client("ce").update_anomaly_monitor` method.
+Type annotations and code completion for `#!python boto3.client("ce").update_anomaly_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor)
 
-Boto3 documentation:
-[CostExplorer.Client.update_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor)
+```python title="Method definition"
+def update_anomaly_monitor(
+    self,
+    *,
+    MonitorArn: str,
+    MonitorName: str = ...,
+) -> UpdateAnomalyMonitorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#updateanomalymonitorrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAnomalyMonitorResponseTypeDef](./type_defs.md#updateanomalymonitorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MonitorArn`: `str` *(required)*
-- `MonitorName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAnomalyMonitorRequestRequestTypeDef = {  # (1)
+    "MonitorArn": ...,
+}
 
-Returns
-[UpdateAnomalyMonitorResponseTypeDef](./type_defs.md#updateanomalymonitorresponsetypedef).
+parent.update_anomaly_monitor(**kwargs)
+```
 
-<a id="update\_anomaly\_subscription"></a>
+1. See [:material-code-braces: UpdateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#updateanomalymonitorrequestrequesttypedef) 
 
-### update_anomaly_subscription
+### update\_anomaly\_subscription
 
 Updates an existing cost anomaly monitor subscription.
 
-Type annotations for `boto3.client("ce").update_anomaly_subscription` method.
+Type annotations and code completion for `#!python boto3.client("ce").update_anomaly_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription)
 
-Boto3 documentation:
-[CostExplorer.Client.update_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription)
+```python title="Method definition"
+def update_anomaly_subscription(
+    self,
+    *,
+    SubscriptionArn: str,
+    Threshold: float = ...,
+    Frequency: AnomalySubscriptionFrequencyType = ...,  # (1)
+    MonitorArnList: Sequence[str] = ...,
+    Subscribers: Sequence[SubscriberTypeDef] = ...,  # (2)
+    SubscriptionName: str = ...,
+) -> UpdateAnomalySubscriptionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#updateanomalysubscriptionrequestrequesttypedef).
+1. See [:material-code-brackets: AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+3. See [:material-code-braces: UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionArn`: `str` *(required)*
-- `Threshold`: `float`
-- `Frequency`:
-  [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
-- `MonitorArnList`: `Sequence`\[`str`\]
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-- `SubscriptionName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAnomalySubscriptionRequestRequestTypeDef = {  # (1)
+    "SubscriptionArn": ...,
+}
 
-Returns
-[UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef).
+parent.update_anomaly_subscription(**kwargs)
+```
 
-<a id="update\_cost\_category\_definition"></a>
+1. See [:material-code-braces: UpdateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#updateanomalysubscriptionrequestrequesttypedef) 
 
-### update_cost_category_definition
+### update\_cost\_category\_definition
 
 Updates an existing Cost Category.
 
-Type annotations for `boto3.client("ce").update_cost_category_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("ce").update_cost_category_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition)
 
-Boto3 documentation:
-[CostExplorer.Client.update_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition)
+```python title="Method definition"
+def update_cost_category_definition(
+    self,
+    *,
+    CostCategoryArn: str,
+    RuleVersion: CostCategoryRuleVersionType,  # (1)
+    Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    DefaultValue: str = ...,
+    SplitChargeRules: Sequence[CostCategorySplitChargeRuleTypeDef] = ...,  # (3)
+) -> UpdateCostCategoryDefinitionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#updatecostcategorydefinitionrequestrequesttypedef).
+1. See [:material-code-brackets: CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype) 
+2. See [:material-code-braces: CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef) 
+3. See [:material-code-braces: CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef) 
+4. See [:material-code-braces: UpdateCostCategoryDefinitionResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CostCategoryArn`: `str` *(required)*
-- `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
-  [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
-  *(required)*
-- `Rules`:
-  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
-  *(required)*
-- `DefaultValue`: `str`
-- `SplitChargeRules`:
-  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateCostCategoryDefinitionRequestRequestTypeDef = {  # (1)
+    "CostCategoryArn": ...,
+    "RuleVersion": ...,
+    "Rules": ...,
+}
 
-Returns
-[UpdateCostCategoryDefinitionResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponsetypedef).
+parent.update_cost_category_definition(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#updatecostcategorydefinitionrequestrequesttypedef) 
+
+
+
+

@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-health-module"></a>
-
-# Paginators for boto3 Health module
+# Paginators
 
 > [Index](../README.md) > [Health](./README.md) > Paginators
 
-Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module
-[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
+!!! note ""
 
-- [Paginators for boto3 Health module](#paginators-for-boto3-health-module)
-  - [DescribeAffectedAccountsForOrganizationPaginator](#describeaffectedaccountsfororganizationpaginator)
-  - [DescribeAffectedEntitiesPaginator](#describeaffectedentitiespaginator)
-  - [DescribeAffectedEntitiesForOrganizationPaginator](#describeaffectedentitiesfororganizationpaginator)
-  - [DescribeEventAggregatesPaginator](#describeeventaggregatespaginator)
-  - [DescribeEventTypesPaginator](#describeeventtypespaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeEventsForOrganizationPaginator](#describeeventsfororganizationpaginator)
-
-<a id="describeaffectedaccountsfororganizationpaginator"></a>
+    Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+    type annotations stubs module [mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 ## DescribeAffectedAccountsForOrganizationPaginator
 
-Type annotations for
-`boto3.client("health").get_paginator("describe_affected_accounts_for_organization")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_affected_accounts_for_organization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
@@ -36,29 +21,40 @@ def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffec
     return Session().client("health").get_paginator("describe_affected_accounts_for_organization")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeAffectedAccountsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedAccountsForOrganization)
 
-Arguments for `DescribeAffectedAccountsForOrganizationPaginator.paginate`
-method:
+### paginate
 
-- `eventArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAffectedAccountsForOrganizationPaginator.paginate` method.
 
-`DescribeAffectedAccountsForOrganizationPaginator.paginate` returns
-`_PageIterator`\[[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    eventArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAffectedAccountsForOrganizationResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeaffectedentitiespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef = {  # (1)
+    "eventArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequestdescribeaffectedaccountsfororganizationpaginatetypedef) 
 ## DescribeAffectedEntitiesPaginator
 
-Type annotations for
-`boto3.client("health").get_paginator("describe_affected_entities")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_affected_entities")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeAffectedEntitiesPaginator
@@ -67,30 +63,42 @@ def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPagina
     return Session().client("health").get_paginator("describe_affected_entities")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeAffectedEntities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntities)
 
-Arguments for `DescribeAffectedEntitiesPaginator.paginate` method:
+### paginate
 
-- `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
-  *(required)*
-- `locale`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAffectedEntitiesPaginator.paginate` method.
 
-`DescribeAffectedEntitiesPaginator.paginate` returns
-`_PageIterator`\[[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filter: EntityFilterTypeDef,  # (1)
+    locale: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAffectedEntitiesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeaffectedentitiesfororganizationpaginator"></a>
+1. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef = {  # (1)
+    "filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef](./type_defs.md#describeaffectedentitiesrequestdescribeaffectedentitiespaginatetypedef) 
 ## DescribeAffectedEntitiesForOrganizationPaginator
 
-Type annotations for
-`boto3.client("health").get_paginator("describe_affected_entities_for_organization")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_affected_entities_for_organization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeAffectedEntitiesForOrganizationPaginator
@@ -99,32 +107,42 @@ def get_describe_affected_entities_for_organization_paginator() -> DescribeAffec
     return Session().client("health").get_paginator("describe_affected_entities_for_organization")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeAffectedEntitiesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeAffectedEntitiesForOrganization)
 
-Arguments for `DescribeAffectedEntitiesForOrganizationPaginator.paginate`
-method:
+### paginate
 
-- `organizationEntityFilters`:
-  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
-  *(required)*
-- `locale`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAffectedEntitiesForOrganizationPaginator.paginate` method.
 
-`DescribeAffectedEntitiesForOrganizationPaginator.paginate` returns
-`_PageIterator`\[[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    organizationEntityFilters: Sequence[EventAccountFilterTypeDef],  # (1)
+    locale: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAffectedEntitiesForOrganizationResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventaggregatespaginator"></a>
+1. See [:material-code-braces: EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef = {  # (1)
+    "organizationEntityFilters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequestdescribeaffectedentitiesfororganizationpaginatetypedef) 
 ## DescribeEventAggregatesPaginator
 
-Type annotations for
-`boto3.client("health").get_paginator("describe_event_aggregates")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_event_aggregates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeEventAggregatesPaginator
@@ -133,31 +151,43 @@ def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginato
     return Session().client("health").get_paginator("describe_event_aggregates")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeEventAggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventAggregates)
 
-Arguments for `DescribeEventAggregatesPaginator.paginate` method:
+### paginate
 
-- `aggregateField`: `Literal['eventTypeCategory']` (see
-  [eventAggregateFieldType](./literals.md#eventaggregatefieldtype))
-  *(required)*
-- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventAggregatesPaginator.paginate` method.
 
-`DescribeEventAggregatesPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    aggregateField: eventAggregateFieldType,  # (1)
+    filter: EventFilterTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeEventAggregatesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeeventtypespaginator"></a>
+1. See [:material-code-brackets: eventAggregateFieldType](./literals.md#eventaggregatefieldtype) 
+2. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef = {  # (1)
+    "aggregateField": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef](./type_defs.md#describeeventaggregatesrequestdescribeeventaggregatespaginatetypedef) 
 ## DescribeEventTypesPaginator
 
-Type annotations for
-`boto3.client("health").get_paginator("describe_event_types")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_event_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeEventTypesPaginator
@@ -166,28 +196,42 @@ def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
     return Session().client("health").get_paginator("describe_event_types")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeEventTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventTypes)
 
-Arguments for `DescribeEventTypesPaginator.paginate` method:
+### paginate
 
-- `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
-- `locale`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventTypesPaginator.paginate` method.
 
-`DescribeEventTypesPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filter: EventTypeFilterTypeDef = ...,  # (1)
+    locale: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEventTypesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef = {  # (1)
+    "filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef](./type_defs.md#describeeventtypesrequestdescribeeventtypespaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for `boto3.client("health").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeEventsPaginator
@@ -196,29 +240,42 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("health").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `locale`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filter: EventFilterTypeDef = ...,  # (1)
+    locale: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEventsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventsfororganizationpaginator"></a>
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsRequestDescribeEventsPaginateTypeDef = {  # (1)
+    "filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef) 
 ## DescribeEventsForOrganizationPaginator
 
-Type annotations for
-`boto3.client("health").get_paginator("describe_events_for_organization")`.
+Type annotations and code completion for `#!python boto3.client("health").get_paginator("describe_events_for_organization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_health.paginator import DescribeEventsForOrganizationPaginator
@@ -227,16 +284,33 @@ def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganiz
     return Session().client("health").get_paginator("describe_events_for_organization")
 ```
 
-Boto3 documentation:
-[Health.Paginator.DescribeEventsForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Paginator.DescribeEventsForOrganization)
 
-Arguments for `DescribeEventsForOrganizationPaginator.paginate` method:
+### paginate
 
-- `filter`:
-  [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)
-- `locale`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsForOrganizationPaginator.paginate` method.
 
-`DescribeEventsForOrganizationPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filter: OrganizationEventFilterTypeDef = ...,  # (1)
+    locale: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEventsForOrganizationResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef = {  # (1)
+    "filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef](./type_defs.md#describeeventsfororganizationrequestdescribeeventsfororganizationpaginatetypedef) 

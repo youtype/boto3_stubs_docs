@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-rekognition-module"></a>
-
-# Type annotations for boto3 Rekognition module
+#  Rekognition module
 
 > [Index](../README.md) > Rekognition
 
-Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
-type annotations stubs module
-[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+!!! note ""
 
-- [Type annotations for boto3 Rekognition module](#type-annotations-for-boto3-rekognition-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [RekognitionClient](#rekognitionclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+    type annotations stubs module [mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Rekognition`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[rekognition]'
 python -m pip install mypy-boto3-rekognition
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,130 +42,37 @@ python -m pip install mypy-boto3-rekognition
 python -m pip uninstall -y mypy-boto3-rekognition
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="rekognitionclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## RekognitionClient
 
-Type annotations for `boto3.client("rekognition")` as
-[RekognitionClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("rekognition")` as [RekognitionClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_rekognition.client import RekognitionClient
+
+def get_client() -> RekognitionClient:
+    return Session().cleint("rekognition")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [compare_faces](./client.md#compare_faces)
-- [create_collection](./client.md#create_collection)
-- [create_dataset](./client.md#create_dataset)
-- [create_project](./client.md#create_project)
-- [create_project_version](./client.md#create_project_version)
-- [create_stream_processor](./client.md#create_stream_processor)
-- [delete_collection](./client.md#delete_collection)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_faces](./client.md#delete_faces)
-- [delete_project](./client.md#delete_project)
-- [delete_project_version](./client.md#delete_project_version)
-- [delete_stream_processor](./client.md#delete_stream_processor)
-- [describe_collection](./client.md#describe_collection)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_project_versions](./client.md#describe_project_versions)
-- [describe_projects](./client.md#describe_projects)
-- [describe_stream_processor](./client.md#describe_stream_processor)
-- [detect_custom_labels](./client.md#detect_custom_labels)
-- [detect_faces](./client.md#detect_faces)
-- [detect_labels](./client.md#detect_labels)
-- [detect_moderation_labels](./client.md#detect_moderation_labels)
-- [detect_protective_equipment](./client.md#detect_protective_equipment)
-- [detect_text](./client.md#detect_text)
-- [distribute_dataset_entries](./client.md#distribute_dataset_entries)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_celebrity_info](./client.md#get_celebrity_info)
-- [get_celebrity_recognition](./client.md#get_celebrity_recognition)
-- [get_content_moderation](./client.md#get_content_moderation)
-- [get_face_detection](./client.md#get_face_detection)
-- [get_face_search](./client.md#get_face_search)
-- [get_label_detection](./client.md#get_label_detection)
-- [get_paginator](./client.md#get_paginator)
-- [get_person_tracking](./client.md#get_person_tracking)
-- [get_segment_detection](./client.md#get_segment_detection)
-- [get_text_detection](./client.md#get_text_detection)
-- [get_waiter](./client.md#get_waiter)
-- [index_faces](./client.md#index_faces)
-- [list_collections](./client.md#list_collections)
-- [list_dataset_entries](./client.md#list_dataset_entries)
-- [list_dataset_labels](./client.md#list_dataset_labels)
-- [list_faces](./client.md#list_faces)
-- [list_stream_processors](./client.md#list_stream_processors)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [recognize_celebrities](./client.md#recognize_celebrities)
-- [search_faces](./client.md#search_faces)
-- [search_faces_by_image](./client.md#search_faces_by_image)
-- [start_celebrity_recognition](./client.md#start_celebrity_recognition)
-- [start_content_moderation](./client.md#start_content_moderation)
-- [start_face_detection](./client.md#start_face_detection)
-- [start_face_search](./client.md#start_face_search)
-- [start_label_detection](./client.md#start_label_detection)
-- [start_person_tracking](./client.md#start_person_tracking)
-- [start_project_version](./client.md#start_project_version)
-- [start_segment_detection](./client.md#start_segment_detection)
-- [start_stream_processor](./client.md#start_stream_processor)
-- [start_text_detection](./client.md#start_text_detection)
-- [stop_project_version](./client.md#stop_project_version)
-- [stop_stream_processor](./client.md#stop_stream_processor)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_dataset_entries](./client.md#update_dataset_entries)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-RekognitionClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- HumanLoopQuotaExceededException
-- IdempotentParameterMismatchException
-- ImageTooLargeException
-- InternalServerError
-- InvalidImageFormatException
-- InvalidPaginationTokenException
-- InvalidParameterException
-- InvalidS3ObjectException
-- LimitExceededException
-- ProvisionedThroughputExceededException
-- ResourceAlreadyExistsException
-- ResourceInUseException
-- ResourceNotFoundException
-- ResourceNotReadyException
-- ServiceQuotaExceededException
-- ThrottlingException
-- VideoTooLargeException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("rekognition").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("rekognition").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator, ...
+from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator
+
+def get_describe_project_versions_paginator() -> DescribeProjectVersionsPaginator:
+    return Session().client("rekognition").get_paginator("describe_project_versions"))
 ```
 
 - [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
@@ -199,32 +83,41 @@ from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator, .
 - [ListFacesPaginator](./paginators.md#listfacespaginator)
 - [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("rekognition").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("rekognition").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_rekognition.waiter import ProjectVersionRunningWaiter, ...
+from mypy_boto3_rekognition.waiter import ProjectVersionRunningWaiter
+
+def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
+    return Session().client("rekognition").get_waiter("project_version_running")
 ```
 
 - [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
 - [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_rekognition.literals import AttributeType
 
-```python
-from mypy_boto3_rekognition.literals import AttributeType, ...
+def get_value() -> AttributeType:
+    return "ALL"
 ```
 
 - [AttributeType](./literals.md#attributetype)
@@ -269,18 +162,22 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef
 
-```python
-from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
+def get_value() -> AgeRangeTypeDef:
+    return {
+        "Low": ...,
+    }
 ```
 
 - [AgeRangeTypeDef](./type_defs.md#agerangetypedef)
@@ -331,8 +228,12 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef)
 - [DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef)
 - [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef)
+- [DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef](./type_defs.md#describeprojectversionsrequestdescribeprojectversionspaginatetypedef)
+- [DescribeProjectVersionsRequestProjectVersionRunningWaitTypeDef](./type_defs.md#describeprojectversionsrequestprojectversionrunningwaittypedef)
+- [DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef](./type_defs.md#describeprojectversionsrequestprojectversiontrainingcompletedwaittypedef)
 - [DescribeProjectVersionsRequestRequestTypeDef](./type_defs.md#describeprojectversionsrequestrequesttypedef)
 - [DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef)
+- [DescribeProjectsRequestDescribeProjectsPaginateTypeDef](./type_defs.md#describeprojectsrequestdescribeprojectspaginatetypedef)
 - [DescribeProjectsRequestRequestTypeDef](./type_defs.md#describeprojectsrequestrequesttypedef)
 - [DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef)
 - [DescribeStreamProcessorRequestRequestTypeDef](./type_defs.md#describestreamprocessorrequestrequesttypedef)
@@ -399,14 +300,19 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [LabelDetectionTypeDef](./type_defs.md#labeldetectiontypedef)
 - [LabelTypeDef](./type_defs.md#labeltypedef)
 - [LandmarkTypeDef](./type_defs.md#landmarktypedef)
+- [ListCollectionsRequestListCollectionsPaginateTypeDef](./type_defs.md#listcollectionsrequestlistcollectionspaginatetypedef)
 - [ListCollectionsRequestRequestTypeDef](./type_defs.md#listcollectionsrequestrequesttypedef)
 - [ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)
+- [ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef](./type_defs.md#listdatasetentriesrequestlistdatasetentriespaginatetypedef)
 - [ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef)
 - [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)
+- [ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef](./type_defs.md#listdatasetlabelsrequestlistdatasetlabelspaginatetypedef)
 - [ListDatasetLabelsRequestRequestTypeDef](./type_defs.md#listdatasetlabelsrequestrequesttypedef)
 - [ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef)
+- [ListFacesRequestListFacesPaginateTypeDef](./type_defs.md#listfacesrequestlistfacespaginatetypedef)
 - [ListFacesRequestRequestTypeDef](./type_defs.md#listfacesrequestrequesttypedef)
 - [ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef)
+- [ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef](./type_defs.md#liststreamprocessorsrequestliststreamprocessorspaginatetypedef)
 - [ListStreamProcessorsRequestRequestTypeDef](./type_defs.md#liststreamprocessorsrequestrequesttypedef)
 - [ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -489,3 +395,4 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - [VideoTypeDef](./type_defs.md#videotypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

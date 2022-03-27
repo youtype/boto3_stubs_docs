@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-servicediscovery-module"></a>
-
-# Paginators for boto3 ServiceDiscovery module
+# Paginators
 
 > [Index](../README.md) > [ServiceDiscovery](./README.md) > Paginators
 
-Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
-type annotations stubs module
-[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+!!! note ""
 
-- [Paginators for boto3 ServiceDiscovery module](#paginators-for-boto3-servicediscovery-module)
-  - [ListInstancesPaginator](#listinstancespaginator)
-  - [ListNamespacesPaginator](#listnamespacespaginator)
-  - [ListOperationsPaginator](#listoperationspaginator)
-  - [ListServicesPaginator](#listservicespaginator)
-
-<a id="listinstancespaginator"></a>
+    Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+    type annotations stubs module [mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 ## ListInstancesPaginator
 
-Type annotations for
-`boto3.client("servicediscovery").get_paginator("list_instances")`.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_paginator("list_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator
@@ -33,28 +21,40 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("servicediscovery").get_paginator("list_instances")
 ```
 
-Boto3 documentation:
-[ServiceDiscovery.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListInstances)
 
-Arguments for `ListInstancesPaginator.paginate` method:
+### paginate
 
-- `ServiceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstancesPaginator.paginate` method.
 
-`ListInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listnamespacespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstancesRequestListInstancesPaginateTypeDef = {  # (1)
+    "ServiceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstancesRequestListInstancesPaginateTypeDef](./type_defs.md#listinstancesrequestlistinstancespaginatetypedef) 
 ## ListNamespacesPaginator
 
-Type annotations for
-`boto3.client("servicediscovery").get_paginator("list_namespaces")`.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_paginator("list_namespaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListNamespaces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicediscovery.paginator import ListNamespacesPaginator
@@ -63,29 +63,41 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return Session().client("servicediscovery").get_paginator("list_namespaces")
 ```
 
-Boto3 documentation:
-[ServiceDiscovery.Paginator.ListNamespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListNamespaces)
 
-Arguments for `ListNamespacesPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListNamespacesPaginator.paginate` method.
 
-`ListNamespacesPaginator.paginate` returns
-`_PageIterator`\[[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[NamespaceFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListNamespacesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listoperationspaginator"></a>
+1. See [:material-code-braces: NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListNamespacesRequestListNamespacesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListNamespacesRequestListNamespacesPaginateTypeDef](./type_defs.md#listnamespacesrequestlistnamespacespaginatetypedef) 
 ## ListOperationsPaginator
 
-Type annotations for
-`boto3.client("servicediscovery").get_paginator("list_operations")`.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_paginator("list_operations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListOperations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicediscovery.paginator import ListOperationsPaginator
@@ -94,29 +106,41 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
     return Session().client("servicediscovery").get_paginator("list_operations")
 ```
 
-Boto3 documentation:
-[ServiceDiscovery.Paginator.ListOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListOperations)
 
-Arguments for `ListOperationsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOperationsPaginator.paginate` method.
 
-`ListOperationsPaginator.paginate` returns
-`_PageIterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[OperationFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListOperationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listservicespaginator"></a>
+1. See [:material-code-braces: OperationFilterTypeDef](./type_defs.md#operationfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOperationsRequestListOperationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOperationsRequestListOperationsPaginateTypeDef](./type_defs.md#listoperationsrequestlistoperationspaginatetypedef) 
 ## ListServicesPaginator
 
-Type annotations for
-`boto3.client("servicediscovery").get_paginator("list_services")`.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_paginator("list_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicediscovery.paginator import ListServicesPaginator
@@ -125,15 +149,32 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("servicediscovery").get_paginator("list_services")
 ```
 
-Boto3 documentation:
-[ServiceDiscovery.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Paginator.ListServices)
 
-Arguments for `ListServicesPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicesPaginator.paginate` method.
 
-`ListServicesPaginator.paginate` returns
-`_PageIterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[ServiceFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListServicesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestListServicesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef) 

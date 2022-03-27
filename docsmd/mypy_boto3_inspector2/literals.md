@@ -1,1251 +1,1340 @@
-<a id="literals-for-boto3-inspector2-module"></a>
-
-# Literals for boto3 Inspector2 module
+# Literals
 
 > [Index](../README.md) > [Inspector2](./README.md) > Literals
 
-Auto-generated documentation for
-[Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
-type annotations stubs module
-[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+!!! note ""
 
-- [Literals for boto3 Inspector2 module](#literals-for-boto3-inspector2-module)
-  - [AccountSortByType](#accountsortbytype)
-  - [AggregationFindingTypeType](#aggregationfindingtypetype)
-  - [AggregationResourceTypeType](#aggregationresourcetypetype)
-  - [AggregationTypeType](#aggregationtypetype)
-  - [AmiSortByType](#amisortbytype)
-  - [AwsEcrContainerSortByType](#awsecrcontainersortbytype)
-  - [CoverageMapComparisonType](#coveragemapcomparisontype)
-  - [CoverageResourceTypeType](#coverageresourcetypetype)
-  - [CoverageStringComparisonType](#coveragestringcomparisontype)
-  - [CurrencyType](#currencytype)
-  - [DelegatedAdminStatusType](#delegatedadminstatustype)
-  - [Ec2InstanceSortByType](#ec2instancesortbytype)
-  - [Ec2PlatformType](#ec2platformtype)
-  - [EcrScanFrequencyType](#ecrscanfrequencytype)
-  - [ErrorCodeType](#errorcodetype)
-  - [ExternalReportStatusType](#externalreportstatustype)
-  - [FilterActionType](#filteractiontype)
-  - [FindingStatusType](#findingstatustype)
-  - [FindingTypeSortByType](#findingtypesortbytype)
-  - [FindingTypeType](#findingtypetype)
-  - [FreeTrialInfoErrorCodeType](#freetrialinfoerrorcodetype)
-  - [FreeTrialStatusType](#freetrialstatustype)
-  - [FreeTrialTypeType](#freetrialtypetype)
-  - [GroupKeyType](#groupkeytype)
-  - [ImageLayerSortByType](#imagelayersortbytype)
-  - [ListAccountPermissionsPaginatorName](#listaccountpermissionspaginatorname)
-  - [ListCoveragePaginatorName](#listcoveragepaginatorname)
-  - [ListCoverageStatisticsPaginatorName](#listcoveragestatisticspaginatorname)
-  - [ListDelegatedAdminAccountsPaginatorName](#listdelegatedadminaccountspaginatorname)
-  - [ListFiltersPaginatorName](#listfilterspaginatorname)
-  - [ListFindingAggregationsPaginatorName](#listfindingaggregationspaginatorname)
-  - [ListFindingsPaginatorName](#listfindingspaginatorname)
-  - [ListMembersPaginatorName](#listmemberspaginatorname)
-  - [ListUsageTotalsPaginatorName](#listusagetotalspaginatorname)
-  - [MapComparisonType](#mapcomparisontype)
-  - [NetworkProtocolType](#networkprotocoltype)
-  - [OperationType](#operationtype)
-  - [PackageManagerType](#packagemanagertype)
-  - [PackageSortByType](#packagesortbytype)
-  - [RelationshipStatusType](#relationshipstatustype)
-  - [ReportFormatType](#reportformattype)
-  - [ReportingErrorCodeType](#reportingerrorcodetype)
-  - [RepositorySortByType](#repositorysortbytype)
-  - [ResourceScanTypeType](#resourcescantypetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [ScanStatusCodeType](#scanstatuscodetype)
-  - [ScanStatusReasonType](#scanstatusreasontype)
-  - [ScanTypeType](#scantypetype)
-  - [ServiceType](#servicetype)
-  - [SeverityType](#severitytype)
-  - [SortFieldType](#sortfieldtype)
-  - [SortOrderType](#sortordertype)
-  - [StatusType](#statustype)
-  - [StringComparisonType](#stringcomparisontype)
-  - [TitleSortByType](#titlesortbytype)
-  - [UsageTypeType](#usagetypetype)
-  - [Inspector2ServiceName](#inspector2servicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accountsortbytype"></a>
+    Auto-generated documentation for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
+    type annotations stubs module [mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ## AccountSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import AccountSortByType
+
+def get_value() -> AccountSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="aggregationfindingtypetype"></a>
-
+```python title="Definition"
+AccountSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## AggregationFindingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import AggregationFindingTypeType
+
+def get_value() -> AggregationFindingTypeType:
+    return "NETWORK_REACHABILITY"
 ```
 
-Values:
-
-- `NETWORK_REACHABILITY`
-- `PACKAGE_VULNERABILITY`
-
-<a id="aggregationresourcetypetype"></a>
-
+```python title="Definition"
+AggregationFindingTypeType = Literal[
+    "NETWORK_REACHABILITY",
+    "PACKAGE_VULNERABILITY",
+]
+```
 ## AggregationResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import AggregationResourceTypeType
+
+def get_value() -> AggregationResourceTypeType:
+    return "AWS_EC2_INSTANCE"
 ```
 
-Values:
-
-- `AWS_EC2_INSTANCE`
-- `AWS_ECR_CONTAINER_IMAGE`
-
-<a id="aggregationtypetype"></a>
-
+```python title="Definition"
+AggregationResourceTypeType = Literal[
+    "AWS_EC2_INSTANCE",
+    "AWS_ECR_CONTAINER_IMAGE",
+]
+```
 ## AggregationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import AggregationTypeType
+
+def get_value() -> AggregationTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `AMI`
-- `AWS_EC2_INSTANCE`
-- `AWS_ECR_CONTAINER`
-- `FINDING_TYPE`
-- `IMAGE_LAYER`
-- `PACKAGE`
-- `REPOSITORY`
-- `TITLE`
-
-<a id="amisortbytype"></a>
-
+```python title="Definition"
+AggregationTypeType = Literal[
+    "ACCOUNT",
+    "AMI",
+    "AWS_EC2_INSTANCE",
+    "AWS_ECR_CONTAINER",
+    "FINDING_TYPE",
+    "IMAGE_LAYER",
+    "PACKAGE",
+    "REPOSITORY",
+    "TITLE",
+]
+```
 ## AmiSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import AmiSortByType
+
+def get_value() -> AmiSortByType:
+    return "AFFECTED_INSTANCES"
 ```
 
-Values:
-
-- `AFFECTED_INSTANCES`
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="awsecrcontainersortbytype"></a>
-
+```python title="Definition"
+AmiSortByType = Literal[
+    "AFFECTED_INSTANCES",
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## AwsEcrContainerSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import AwsEcrContainerSortByType
+
+def get_value() -> AwsEcrContainerSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="coveragemapcomparisontype"></a>
-
+```python title="Definition"
+AwsEcrContainerSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## CoverageMapComparisonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import CoverageMapComparisonType
+
+def get_value() -> CoverageMapComparisonType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-
-<a id="coverageresourcetypetype"></a>
-
+```python title="Definition"
+CoverageMapComparisonType = Literal[
+    "EQUALS",
+]
+```
 ## CoverageResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import CoverageResourceTypeType
+
+def get_value() -> CoverageResourceTypeType:
+    return "AWS_EC2_INSTANCE"
 ```
 
-Values:
-
-- `AWS_EC2_INSTANCE`
-- `AWS_ECR_CONTAINER_IMAGE`
-- `AWS_ECR_REPOSITORY`
-
-<a id="coveragestringcomparisontype"></a>
-
+```python title="Definition"
+CoverageResourceTypeType = Literal[
+    "AWS_EC2_INSTANCE",
+    "AWS_ECR_CONTAINER_IMAGE",
+    "AWS_ECR_REPOSITORY",
+]
+```
 ## CoverageStringComparisonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import CoverageStringComparisonType
+
+def get_value() -> CoverageStringComparisonType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-- `NOT_EQUALS`
-
-<a id="currencytype"></a>
-
+```python title="Definition"
+CoverageStringComparisonType = Literal[
+    "EQUALS",
+    "NOT_EQUALS",
+]
+```
 ## CurrencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import CurrencyType
+
+def get_value() -> CurrencyType:
+    return "USD"
 ```
 
-Values:
-
-- `USD`
-
-<a id="delegatedadminstatustype"></a>
-
+```python title="Definition"
+CurrencyType = Literal[
+    "USD",
+]
+```
 ## DelegatedAdminStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import DelegatedAdminStatusType
+
+def get_value() -> DelegatedAdminStatusType:
+    return "DISABLE_IN_PROGRESS"
 ```
 
-Values:
-
-- `DISABLE_IN_PROGRESS`
-- `ENABLED`
-
-<a id="ec2instancesortbytype"></a>
-
+```python title="Definition"
+DelegatedAdminStatusType = Literal[
+    "DISABLE_IN_PROGRESS",
+    "ENABLED",
+]
+```
 ## Ec2InstanceSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import Ec2InstanceSortByType
+
+def get_value() -> Ec2InstanceSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-- `NETWORK_FINDINGS`
-
-<a id="ec2platformtype"></a>
-
+```python title="Definition"
+Ec2InstanceSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+    "NETWORK_FINDINGS",
+]
+```
 ## Ec2PlatformType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import Ec2PlatformType
+
+def get_value() -> Ec2PlatformType:
+    return "LINUX"
 ```
 
-Values:
-
-- `LINUX`
-- `UNKNOWN`
-- `WINDOWS`
-
-<a id="ecrscanfrequencytype"></a>
-
+```python title="Definition"
+Ec2PlatformType = Literal[
+    "LINUX",
+    "UNKNOWN",
+    "WINDOWS",
+]
+```
 ## EcrScanFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import EcrScanFrequencyType
+
+def get_value() -> EcrScanFrequencyType:
+    return "CONTINUOUS_SCAN"
 ```
 
-Values:
-
-- `CONTINUOUS_SCAN`
-- `MANUAL`
-- `SCAN_ON_PUSH`
-
-<a id="errorcodetype"></a>
-
+```python title="Definition"
+EcrScanFrequencyType = Literal[
+    "CONTINUOUS_SCAN",
+    "MANUAL",
+    "SCAN_ON_PUSH",
+]
+```
 ## ErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ErrorCodeType
+
+def get_value() -> ErrorCodeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `ALREADY_ENABLED`
-- `DISABLE_IN_PROGRESS`
-- `DISASSOCIATE_ALL_MEMBERS`
-- `ENABLE_IN_PROGRESS`
-- `EVENTBRIDGE_THROTTLED`
-- `EVENTBRIDGE_UNAVAILABLE`
-- `INTERNAL_ERROR`
-- `RESOURCE_NOT_FOUND`
-- `RESOURCE_SCAN_NOT_DISABLED`
-- `SSM_THROTTLED`
-- `SSM_UNAVAILABLE`
-- `SUSPEND_IN_PROGRESS`
-
-<a id="externalreportstatustype"></a>
-
+```python title="Definition"
+ErrorCodeType = Literal[
+    "ACCESS_DENIED",
+    "ALREADY_ENABLED",
+    "DISABLE_IN_PROGRESS",
+    "DISASSOCIATE_ALL_MEMBERS",
+    "ENABLE_IN_PROGRESS",
+    "EVENTBRIDGE_THROTTLED",
+    "EVENTBRIDGE_UNAVAILABLE",
+    "INTERNAL_ERROR",
+    "RESOURCE_NOT_FOUND",
+    "RESOURCE_SCAN_NOT_DISABLED",
+    "SSM_THROTTLED",
+    "SSM_UNAVAILABLE",
+    "SUSPEND_IN_PROGRESS",
+]
+```
 ## ExternalReportStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ExternalReportStatusType
+
+def get_value() -> ExternalReportStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `IN_PROGRESS`
-- `SUCCEEDED`
-
-<a id="filteractiontype"></a>
-
+```python title="Definition"
+ExternalReportStatusType = Literal[
+    "CANCELLED",
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
+]
+```
 ## FilterActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FilterActionType
+
+def get_value() -> FilterActionType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `SUPPRESS`
-
-<a id="findingstatustype"></a>
-
+```python title="Definition"
+FilterActionType = Literal[
+    "NONE",
+    "SUPPRESS",
+]
+```
 ## FindingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FindingStatusType
+
+def get_value() -> FindingStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CLOSED`
-- `SUPPRESSED`
-
-<a id="findingtypesortbytype"></a>
-
+```python title="Definition"
+FindingStatusType = Literal[
+    "ACTIVE",
+    "CLOSED",
+    "SUPPRESSED",
+]
+```
 ## FindingTypeSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FindingTypeSortByType
+
+def get_value() -> FindingTypeSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="findingtypetype"></a>
-
+```python title="Definition"
+FindingTypeSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## FindingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FindingTypeType
+
+def get_value() -> FindingTypeType:
+    return "NETWORK_REACHABILITY"
 ```
 
-Values:
-
-- `NETWORK_REACHABILITY`
-- `PACKAGE_VULNERABILITY`
-
-<a id="freetrialinfoerrorcodetype"></a>
-
+```python title="Definition"
+FindingTypeType = Literal[
+    "NETWORK_REACHABILITY",
+    "PACKAGE_VULNERABILITY",
+]
+```
 ## FreeTrialInfoErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FreeTrialInfoErrorCodeType
+
+def get_value() -> FreeTrialInfoErrorCodeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `INTERNAL_ERROR`
-
-<a id="freetrialstatustype"></a>
-
+```python title="Definition"
+FreeTrialInfoErrorCodeType = Literal[
+    "ACCESS_DENIED",
+    "INTERNAL_ERROR",
+]
+```
 ## FreeTrialStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FreeTrialStatusType
+
+def get_value() -> FreeTrialStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `INACTIVE`
-
-<a id="freetrialtypetype"></a>
-
+```python title="Definition"
+FreeTrialStatusType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## FreeTrialTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import FreeTrialTypeType
+
+def get_value() -> FreeTrialTypeType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `ECR`
-
-<a id="groupkeytype"></a>
-
+```python title="Definition"
+FreeTrialTypeType = Literal[
+    "EC2",
+    "ECR",
+]
+```
 ## GroupKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import GroupKeyType
+
+def get_value() -> GroupKeyType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `ECR_REPOSITORY_NAME`
-- `RESOURCE_TYPE`
-- `SCAN_STATUS_CODE`
-- `SCAN_STATUS_REASON`
-
-<a id="imagelayersortbytype"></a>
-
+```python title="Definition"
+GroupKeyType = Literal[
+    "ACCOUNT_ID",
+    "ECR_REPOSITORY_NAME",
+    "RESOURCE_TYPE",
+    "SCAN_STATUS_CODE",
+    "SCAN_STATUS_REASON",
+]
+```
 ## ImageLayerSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ImageLayerSortByType
+
+def get_value() -> ImageLayerSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="listaccountpermissionspaginatorname"></a>
-
+```python title="Definition"
+ImageLayerSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## ListAccountPermissionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListAccountPermissionsPaginatorName
+
+def get_value() -> ListAccountPermissionsPaginatorName:
+    return "list_account_permissions"
 ```
 
-Values:
-
-- `list_account_permissions`
-
-<a id="listcoveragepaginatorname"></a>
-
+```python title="Definition"
+ListAccountPermissionsPaginatorName = Literal[
+    "list_account_permissions",
+]
+```
 ## ListCoveragePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListCoveragePaginatorName
+
+def get_value() -> ListCoveragePaginatorName:
+    return "list_coverage"
 ```
 
-Values:
-
-- `list_coverage`
-
-<a id="listcoveragestatisticspaginatorname"></a>
-
+```python title="Definition"
+ListCoveragePaginatorName = Literal[
+    "list_coverage",
+]
+```
 ## ListCoverageStatisticsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListCoverageStatisticsPaginatorName
+
+def get_value() -> ListCoverageStatisticsPaginatorName:
+    return "list_coverage_statistics"
 ```
 
-Values:
-
-- `list_coverage_statistics`
-
-<a id="listdelegatedadminaccountspaginatorname"></a>
-
+```python title="Definition"
+ListCoverageStatisticsPaginatorName = Literal[
+    "list_coverage_statistics",
+]
+```
 ## ListDelegatedAdminAccountsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListDelegatedAdminAccountsPaginatorName
+
+def get_value() -> ListDelegatedAdminAccountsPaginatorName:
+    return "list_delegated_admin_accounts"
 ```
 
-Values:
-
-- `list_delegated_admin_accounts`
-
-<a id="listfilterspaginatorname"></a>
-
+```python title="Definition"
+ListDelegatedAdminAccountsPaginatorName = Literal[
+    "list_delegated_admin_accounts",
+]
+```
 ## ListFiltersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListFiltersPaginatorName
+
+def get_value() -> ListFiltersPaginatorName:
+    return "list_filters"
 ```
 
-Values:
-
-- `list_filters`
-
-<a id="listfindingaggregationspaginatorname"></a>
-
+```python title="Definition"
+ListFiltersPaginatorName = Literal[
+    "list_filters",
+]
+```
 ## ListFindingAggregationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListFindingAggregationsPaginatorName
+
+def get_value() -> ListFindingAggregationsPaginatorName:
+    return "list_finding_aggregations"
 ```
 
-Values:
-
-- `list_finding_aggregations`
-
-<a id="listfindingspaginatorname"></a>
-
+```python title="Definition"
+ListFindingAggregationsPaginatorName = Literal[
+    "list_finding_aggregations",
+]
+```
 ## ListFindingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListFindingsPaginatorName
+
+def get_value() -> ListFindingsPaginatorName:
+    return "list_findings"
 ```
 
-Values:
-
-- `list_findings`
-
-<a id="listmemberspaginatorname"></a>
-
+```python title="Definition"
+ListFindingsPaginatorName = Literal[
+    "list_findings",
+]
+```
 ## ListMembersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListMembersPaginatorName
+
+def get_value() -> ListMembersPaginatorName:
+    return "list_members"
 ```
 
-Values:
-
-- `list_members`
-
-<a id="listusagetotalspaginatorname"></a>
-
+```python title="Definition"
+ListMembersPaginatorName = Literal[
+    "list_members",
+]
+```
 ## ListUsageTotalsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ListUsageTotalsPaginatorName
+
+def get_value() -> ListUsageTotalsPaginatorName:
+    return "list_usage_totals"
 ```
 
-Values:
-
-- `list_usage_totals`
-
-<a id="mapcomparisontype"></a>
-
+```python title="Definition"
+ListUsageTotalsPaginatorName = Literal[
+    "list_usage_totals",
+]
+```
 ## MapComparisonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import MapComparisonType
+
+def get_value() -> MapComparisonType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-
-<a id="networkprotocoltype"></a>
-
+```python title="Definition"
+MapComparisonType = Literal[
+    "EQUALS",
+]
+```
 ## NetworkProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import NetworkProtocolType
+
+def get_value() -> NetworkProtocolType:
+    return "TCP"
 ```
 
-Values:
-
-- `TCP`
-- `UDP`
-
-<a id="operationtype"></a>
-
+```python title="Definition"
+NetworkProtocolType = Literal[
+    "TCP",
+    "UDP",
+]
+```
 ## OperationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import OperationType
+
+def get_value() -> OperationType:
+    return "DISABLE_REPOSITORY"
 ```
 
-Values:
-
-- `DISABLE_REPOSITORY`
-- `DISABLE_SCANNING`
-- `ENABLE_REPOSITORY`
-- `ENABLE_SCANNING`
-
-<a id="packagemanagertype"></a>
-
+```python title="Definition"
+OperationType = Literal[
+    "DISABLE_REPOSITORY",
+    "DISABLE_SCANNING",
+    "ENABLE_REPOSITORY",
+    "ENABLE_SCANNING",
+]
+```
 ## PackageManagerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import PackageManagerType
+
+def get_value() -> PackageManagerType:
+    return "BUNDLER"
 ```
 
-Values:
-
-- `BUNDLER`
-- `CARGO`
-- `COMPOSER`
-- `GOBINARY`
-- `GOMOD`
-- `JAR`
-- `NPM`
-- `NUGET`
-- `OS`
-- `PIPENV`
-- `POETRY`
-- `YARN`
-
-<a id="packagesortbytype"></a>
-
+```python title="Definition"
+PackageManagerType = Literal[
+    "BUNDLER",
+    "CARGO",
+    "COMPOSER",
+    "GOBINARY",
+    "GOMOD",
+    "JAR",
+    "NPM",
+    "NUGET",
+    "OS",
+    "PIPENV",
+    "POETRY",
+    "YARN",
+]
+```
 ## PackageSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import PackageSortByType
+
+def get_value() -> PackageSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="relationshipstatustype"></a>
-
+```python title="Definition"
+PackageSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## RelationshipStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import RelationshipStatusType
+
+def get_value() -> RelationshipStatusType:
+    return "ACCOUNT_SUSPENDED"
 ```
 
-Values:
-
-- `ACCOUNT_SUSPENDED`
-- `CANNOT_CREATE_DETECTOR_IN_ORG_MASTER`
-- `CREATED`
-- `DELETED`
-- `DISABLED`
-- `EMAIL_VERIFICATION_FAILED`
-- `EMAIL_VERIFICATION_IN_PROGRESS`
-- `ENABLED`
-- `INVITED`
-- `REGION_DISABLED`
-- `REMOVED`
-- `RESIGNED`
-
-<a id="reportformattype"></a>
-
+```python title="Definition"
+RelationshipStatusType = Literal[
+    "ACCOUNT_SUSPENDED",
+    "CANNOT_CREATE_DETECTOR_IN_ORG_MASTER",
+    "CREATED",
+    "DELETED",
+    "DISABLED",
+    "EMAIL_VERIFICATION_FAILED",
+    "EMAIL_VERIFICATION_IN_PROGRESS",
+    "ENABLED",
+    "INVITED",
+    "REGION_DISABLED",
+    "REMOVED",
+    "RESIGNED",
+]
+```
 ## ReportFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ReportFormatType
+
+def get_value() -> ReportFormatType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-- `JSON`
-
-<a id="reportingerrorcodetype"></a>
-
+```python title="Definition"
+ReportFormatType = Literal[
+    "CSV",
+    "JSON",
+]
+```
 ## ReportingErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ReportingErrorCodeType
+
+def get_value() -> ReportingErrorCodeType:
+    return "INTERNAL_ERROR"
 ```
 
-Values:
-
-- `INTERNAL_ERROR`
-- `INVALID_PERMISSIONS`
-
-<a id="repositorysortbytype"></a>
-
+```python title="Definition"
+ReportingErrorCodeType = Literal[
+    "INTERNAL_ERROR",
+    "INVALID_PERMISSIONS",
+]
+```
 ## RepositorySortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import RepositorySortByType
+
+def get_value() -> RepositorySortByType:
+    return "AFFECTED_IMAGES"
 ```
 
-Values:
-
-- `AFFECTED_IMAGES`
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="resourcescantypetype"></a>
-
+```python title="Definition"
+RepositorySortByType = Literal[
+    "AFFECTED_IMAGES",
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## ResourceScanTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ResourceScanTypeType
+
+def get_value() -> ResourceScanTypeType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `ECR`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ResourceScanTypeType = Literal[
+    "EC2",
+    "ECR",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "AWS_EC2_INSTANCE"
 ```
 
-Values:
-
-- `AWS_EC2_INSTANCE`
-- `AWS_ECR_CONTAINER_IMAGE`
-- `AWS_ECR_REPOSITORY`
-
-<a id="scanstatuscodetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "AWS_EC2_INSTANCE",
+    "AWS_ECR_CONTAINER_IMAGE",
+    "AWS_ECR_REPOSITORY",
+]
+```
 ## ScanStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ScanStatusCodeType
+
+def get_value() -> ScanStatusCodeType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `INACTIVE`
-
-<a id="scanstatusreasontype"></a>
-
+```python title="Definition"
+ScanStatusCodeType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## ScanStatusReasonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ScanStatusReasonType
+
+def get_value() -> ScanStatusReasonType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `EC2_INSTANCE_STOPPED`
-- `IMAGE_SIZE_EXCEEDED`
-- `INTERNAL_ERROR`
-- `NO_RESOURCES_FOUND`
-- `PENDING_INITIAL_SCAN`
-- `RESOURCE_TERMINATED`
-- `SCAN_ELIGIBILITY_EXPIRED`
-- `SCAN_FREQUENCY_MANUAL`
-- `SCAN_FREQUENCY_SCAN_ON_PUSH`
-- `SUCCESSFUL`
-- `UNMANAGED_EC2_INSTANCE`
-- `UNSUPPORTED_OS`
-
-<a id="scantypetype"></a>
-
+```python title="Definition"
+ScanStatusReasonType = Literal[
+    "ACCESS_DENIED",
+    "EC2_INSTANCE_STOPPED",
+    "IMAGE_SIZE_EXCEEDED",
+    "INTERNAL_ERROR",
+    "NO_RESOURCES_FOUND",
+    "PENDING_INITIAL_SCAN",
+    "RESOURCE_TERMINATED",
+    "SCAN_ELIGIBILITY_EXPIRED",
+    "SCAN_FREQUENCY_MANUAL",
+    "SCAN_FREQUENCY_SCAN_ON_PUSH",
+    "SUCCESSFUL",
+    "UNMANAGED_EC2_INSTANCE",
+    "UNSUPPORTED_OS",
+]
+```
 ## ScanTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ScanTypeType
+
+def get_value() -> ScanTypeType:
+    return "NETWORK"
 ```
 
-Values:
-
-- `NETWORK`
-- `PACKAGE`
-
-<a id="servicetype"></a>
-
+```python title="Definition"
+ScanTypeType = Literal[
+    "NETWORK",
+    "PACKAGE",
+]
+```
 ## ServiceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ServiceType
+
+def get_value() -> ServiceType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `ECR`
-
-<a id="severitytype"></a>
-
+```python title="Definition"
+ServiceType = Literal[
+    "EC2",
+    "ECR",
+]
+```
 ## SeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import SeverityType
+
+def get_value() -> SeverityType:
+    return "CRITICAL"
 ```
 
-Values:
-
-- `CRITICAL`
-- `HIGH`
-- `INFORMATIONAL`
-- `LOW`
-- `MEDIUM`
-- `UNTRIAGED`
-
-<a id="sortfieldtype"></a>
-
+```python title="Definition"
+SeverityType = Literal[
+    "CRITICAL",
+    "HIGH",
+    "INFORMATIONAL",
+    "LOW",
+    "MEDIUM",
+    "UNTRIAGED",
+]
+```
 ## SortFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import SortFieldType
+
+def get_value() -> SortFieldType:
+    return "AWS_ACCOUNT_ID"
 ```
 
-Values:
-
-- `AWS_ACCOUNT_ID`
-- `COMPONENT_TYPE`
-- `ECR_IMAGE_PUSHED_AT`
-- `ECR_IMAGE_REGISTRY`
-- `ECR_IMAGE_REPOSITORY_NAME`
-- `FINDING_STATUS`
-- `FINDING_TYPE`
-- `FIRST_OBSERVED_AT`
-- `INSPECTOR_SCORE`
-- `LAST_OBSERVED_AT`
-- `NETWORK_PROTOCOL`
-- `RESOURCE_TYPE`
-- `SEVERITY`
-- `VENDOR_SEVERITY`
-- `VULNERABILITY_ID`
-- `VULNERABILITY_SOURCE`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SortFieldType = Literal[
+    "AWS_ACCOUNT_ID",
+    "COMPONENT_TYPE",
+    "ECR_IMAGE_PUSHED_AT",
+    "ECR_IMAGE_REGISTRY",
+    "ECR_IMAGE_REPOSITORY_NAME",
+    "FINDING_STATUS",
+    "FINDING_TYPE",
+    "FIRST_OBSERVED_AT",
+    "INSPECTOR_SCORE",
+    "LAST_OBSERVED_AT",
+    "NETWORK_PROTOCOL",
+    "RESOURCE_TYPE",
+    "SEVERITY",
+    "VENDOR_SEVERITY",
+    "VULNERABILITY_ID",
+    "VULNERABILITY_SOURCE",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASC"
 ```
 
-Values:
-
-- `ASC`
-- `DESC`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASC",
+    "DESC",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import StatusType
+
+def get_value() -> StatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `DISABLING`
-- `ENABLED`
-- `ENABLING`
-- `SUSPENDED`
-- `SUSPENDING`
-
-<a id="stringcomparisontype"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "DISABLED",
+    "DISABLING",
+    "ENABLED",
+    "ENABLING",
+    "SUSPENDED",
+    "SUSPENDING",
+]
+```
 ## StringComparisonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import StringComparisonType
+
+def get_value() -> StringComparisonType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-- `NOT_EQUALS`
-- `PREFIX`
-
-<a id="titlesortbytype"></a>
-
+```python title="Definition"
+StringComparisonType = Literal[
+    "EQUALS",
+    "NOT_EQUALS",
+    "PREFIX",
+]
+```
 ## TitleSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import TitleSortByType
+
+def get_value() -> TitleSortByType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CRITICAL`
-- `HIGH`
-
-<a id="usagetypetype"></a>
-
+```python title="Definition"
+TitleSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
 ## UsageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import UsageTypeType
+
+def get_value() -> UsageTypeType:
+    return "EC2_INSTANCE_HOURS"
 ```
 
-Values:
-
-- `EC2_INSTANCE_HOURS`
-- `ECR_INITIAL_SCAN`
-- `ECR_RESCAN`
-
-<a id="inspector2servicename"></a>
-
+```python title="Definition"
+UsageTypeType = Literal[
+    "EC2_INSTANCE_HOURS",
+    "ECR_INITIAL_SCAN",
+    "ECR_RESCAN",
+]
+```
 ## Inspector2ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import Inspector2ServiceName
+
+def get_value() -> Inspector2ServiceName:
+    return "inspector2"
 ```
 
-Values:
-
-- `inspector2`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+Inspector2ServiceName = Literal[
+    "inspector2",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_account_permissions"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_account_permissions",
+    "list_coverage",
+    "list_coverage_statistics",
+    "list_delegated_admin_accounts",
+    "list_filters",
+    "list_finding_aggregations",
+    "list_findings",
+    "list_members",
+    "list_usage_totals",
+]
+```
+## RegionName
 
-- `list_account_permissions`
-- `list_coverage`
-- `list_coverage_statistics`
-- `list_delegated_admin_accounts`
-- `list_filters`
-- `list_finding_aggregations`
-- `list_findings`
-- `list_members`
-- `list_usage_totals`
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-east-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

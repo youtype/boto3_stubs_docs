@@ -1,53 +1,18 @@
-<a id="migrationhubstrategyrecommendationsclient-for-boto3-migrationhubstrategyrecommendations-module"></a>
+# MigrationHubStrategyRecommendationsClient
 
-# MigrationHubStrategyRecommendationsClient for boto3 MigrationHubStrategyRecommendations module
+> [Index](../README.md) > [MigrationHubStrategyRecommendations](./README.md) > MigrationHubStrategyRecommendationsClient
 
-> [Index](../README.md) > [MigrationHubStrategyRecommendations](./README.md) >
-> MigrationHubStrategyRecommendationsClient
+!!! note ""
 
-Auto-generated documentation for
-[MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
-type annotations stubs module
-[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
-
-- [MigrationHubStrategyRecommendationsClient for boto3 MigrationHubStrategyRecommendations module](#migrationhubstrategyrecommendationsclient-for-boto3-migrationhubstrategyrecommendations-module)
-  - [MigrationHubStrategyRecommendationsClient](#migrationhubstrategyrecommendationsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_application_component_details](#get_application_component_details)
-    - [get_application_component_strategies](#get_application_component_strategies)
-    - [get_assessment](#get_assessment)
-    - [get_import_file_task](#get_import_file_task)
-    - [get_portfolio_preferences](#get_portfolio_preferences)
-    - [get_portfolio_summary](#get_portfolio_summary)
-    - [get_recommendation_report_details](#get_recommendation_report_details)
-    - [get_server_details](#get_server_details)
-    - [get_server_strategies](#get_server_strategies)
-    - [list_application_components](#list_application_components)
-    - [list_collectors](#list_collectors)
-    - [list_import_file_task](#list_import_file_task)
-    - [list_servers](#list_servers)
-    - [put_portfolio_preferences](#put_portfolio_preferences)
-    - [start_assessment](#start_assessment)
-    - [start_import_file_task](#start_import_file_task)
-    - [start_recommendation_report_generation](#start_recommendation_report_generation)
-    - [stop_assessment](#stop_assessment)
-    - [update_application_component_config](#update_application_component_config)
-    - [update_server_config](#update_server_config)
-    - [get_paginator](#get_paginator)
-
-<a id="migrationhubstrategyrecommendationsclient"></a>
+    Auto-generated documentation for [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
+    type annotations stubs module [mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 ## MigrationHubStrategyRecommendationsClient
 
-Type annotations for `boto3.client("migrationhubstrategy")`
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_migrationhubstrategy.client import MigrationHubStrategyRecommendationsClient
 
@@ -55,569 +20,687 @@ def get_migrationhubstrategy_client() -> MigrationHubStrategyRecommendationsClie
     return Session().client("migrationhubstrategy")
 ```
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("migrationhubstrategy").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("migrationhubstrategy")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceLinkedRoleLockClientException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_migrationhubstrategy.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceLinkedRoleLockClientException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MigrationHubStrategyRecommendationsClient exceptions.
-
-Type annotations for `boto3.client("migrationhubstrategy").exceptions` method.
-
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("migrationhubstrategy").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.can_paginate)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_application\_component\_details"></a>
-
-### get_application_component_details
+### get\_application\_component\_details
 
 Retrieves details about an application component.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_application_component_details`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_application_component_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_application_component_details)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_application_component_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_application_component_details)
+```python title="Method definition"
+def get_application_component_details(
+    self,
+    *,
+    applicationComponentId: str,
+) -> GetApplicationComponentDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationComponentDetailsRequestRequestTypeDef](./type_defs.md#getapplicationcomponentdetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetApplicationComponentDetailsResponseTypeDef](./type_defs.md#getapplicationcomponentdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `applicationComponentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApplicationComponentDetailsRequestRequestTypeDef = {  # (1)
+    "applicationComponentId": ...,
+}
 
-Returns
-[GetApplicationComponentDetailsResponseTypeDef](./type_defs.md#getapplicationcomponentdetailsresponsetypedef).
+parent.get_application_component_details(**kwargs)
+```
 
-<a id="get\_application\_component\_strategies"></a>
+1. See [:material-code-braces: GetApplicationComponentDetailsRequestRequestTypeDef](./type_defs.md#getapplicationcomponentdetailsrequestrequesttypedef) 
 
-### get_application_component_strategies
+### get\_application\_component\_strategies
 
 Retrieves a list of all the recommended strategies and tools for an application
 component running on a server.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_application_component_strategies`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_application_component_strategies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_application_component_strategies)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_application_component_strategies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_application_component_strategies)
+```python title="Method definition"
+def get_application_component_strategies(
+    self,
+    *,
+    applicationComponentId: str,
+) -> GetApplicationComponentStrategiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationComponentStrategiesRequestRequestTypeDef](./type_defs.md#getapplicationcomponentstrategiesrequestrequesttypedef).
+1. See [:material-code-braces: GetApplicationComponentStrategiesResponseTypeDef](./type_defs.md#getapplicationcomponentstrategiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `applicationComponentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApplicationComponentStrategiesRequestRequestTypeDef = {  # (1)
+    "applicationComponentId": ...,
+}
 
-Returns
-[GetApplicationComponentStrategiesResponseTypeDef](./type_defs.md#getapplicationcomponentstrategiesresponsetypedef).
+parent.get_application_component_strategies(**kwargs)
+```
 
-<a id="get\_assessment"></a>
+1. See [:material-code-braces: GetApplicationComponentStrategiesRequestRequestTypeDef](./type_defs.md#getapplicationcomponentstrategiesrequestrequesttypedef) 
 
-### get_assessment
+### get\_assessment
 
 Retrieves the status of an on-going assessment.
 
-Type annotations for `boto3.client("migrationhubstrategy").get_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_assessment)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_assessment)
+```python title="Method definition"
+def get_assessment(
+    self,
+    *,
+    id: str,
+) -> GetAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssessmentRequestRequestTypeDef](./type_defs.md#getassessmentrequestrequesttypedef).
+1. See [:material-code-braces: GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssessmentRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
+parent.get_assessment(**kwargs)
+```
 
-<a id="get\_import\_file\_task"></a>
+1. See [:material-code-braces: GetAssessmentRequestRequestTypeDef](./type_defs.md#getassessmentrequestrequesttypedef) 
 
-### get_import_file_task
+### get\_import\_file\_task
 
 Retrieves the details about a specific import task.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_import_file_task` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_import_file_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_import_file_task)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_import_file_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_import_file_task)
+```python title="Method definition"
+def get_import_file_task(
+    self,
+    *,
+    id: str,
+) -> GetImportFileTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImportFileTaskRequestRequestTypeDef](./type_defs.md#getimportfiletaskrequestrequesttypedef).
+1. See [:material-code-braces: GetImportFileTaskResponseTypeDef](./type_defs.md#getimportfiletaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImportFileTaskRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetImportFileTaskResponseTypeDef](./type_defs.md#getimportfiletaskresponsetypedef).
+parent.get_import_file_task(**kwargs)
+```
 
-<a id="get\_portfolio\_preferences"></a>
+1. See [:material-code-braces: GetImportFileTaskRequestRequestTypeDef](./type_defs.md#getimportfiletaskrequestrequesttypedef) 
 
-### get_portfolio_preferences
+### get\_portfolio\_preferences
 
 Retrieves your migration and modernization preferences.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_portfolio_preferences` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_portfolio_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_portfolio_preferences)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_portfolio_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_portfolio_preferences)
+```python title="Method definition"
+def get_portfolio_preferences(
+    self,
+) -> GetPortfolioPreferencesResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetPortfolioPreferencesResponseTypeDef](./type_defs.md#getportfoliopreferencesresponsetypedef).
+1. See [:material-code-braces: GetPortfolioPreferencesResponseTypeDef](./type_defs.md#getportfoliopreferencesresponsetypedef) 
 
-<a id="get\_portfolio\_summary"></a>
-
-### get_portfolio_summary
+### get\_portfolio\_summary
 
 Retrieves overall summary including the number of servers to rehost and the
 overall number of anti-patterns.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_portfolio_summary` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_portfolio_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_portfolio_summary)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_portfolio_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_portfolio_summary)
+```python title="Method definition"
+def get_portfolio_summary(
+    self,
+) -> GetPortfolioSummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetPortfolioSummaryResponseTypeDef](./type_defs.md#getportfoliosummaryresponsetypedef).
+1. See [:material-code-braces: GetPortfolioSummaryResponseTypeDef](./type_defs.md#getportfoliosummaryresponsetypedef) 
 
-<a id="get\_recommendation\_report\_details"></a>
-
-### get_recommendation_report_details
+### get\_recommendation\_report\_details
 
 Retrieves detailed information about the specified recommendation report.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_recommendation_report_details`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_recommendation_report_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_recommendation_report_details)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_recommendation_report_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_recommendation_report_details)
+```python title="Method definition"
+def get_recommendation_report_details(
+    self,
+    *,
+    id: str,
+) -> GetRecommendationReportDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecommendationReportDetailsRequestRequestTypeDef](./type_defs.md#getrecommendationreportdetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetRecommendationReportDetailsResponseTypeDef](./type_defs.md#getrecommendationreportdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRecommendationReportDetailsRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetRecommendationReportDetailsResponseTypeDef](./type_defs.md#getrecommendationreportdetailsresponsetypedef).
+parent.get_recommendation_report_details(**kwargs)
+```
 
-<a id="get\_server\_details"></a>
+1. See [:material-code-braces: GetRecommendationReportDetailsRequestRequestTypeDef](./type_defs.md#getrecommendationreportdetailsrequestrequesttypedef) 
 
-### get_server_details
+### get\_server\_details
 
 Retrieves detailed information about a specified server.
 
-Type annotations for `boto3.client("migrationhubstrategy").get_server_details`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_server_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_server_details)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_server_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_server_details)
+```python title="Method definition"
+def get_server_details(
+    self,
+    *,
+    serverId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> GetServerDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServerDetailsRequestRequestTypeDef](./type_defs.md#getserverdetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `serverId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetServerDetailsRequestRequestTypeDef = {  # (1)
+    "serverId": ...,
+}
 
-Returns
-[GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef).
+parent.get_server_details(**kwargs)
+```
 
-<a id="get\_server\_strategies"></a>
+1. See [:material-code-braces: GetServerDetailsRequestRequestTypeDef](./type_defs.md#getserverdetailsrequestrequesttypedef) 
 
-### get_server_strategies
+### get\_server\_strategies
 
 Retrieves recommended strategies and tools for the specified server.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_server_strategies` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_server_strategies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_server_strategies)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.get_server_strategies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_server_strategies)
+```python title="Method definition"
+def get_server_strategies(
+    self,
+    *,
+    serverId: str,
+) -> GetServerStrategiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServerStrategiesRequestRequestTypeDef](./type_defs.md#getserverstrategiesrequestrequesttypedef).
+1. See [:material-code-braces: GetServerStrategiesResponseTypeDef](./type_defs.md#getserverstrategiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `serverId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServerStrategiesRequestRequestTypeDef = {  # (1)
+    "serverId": ...,
+}
 
-Returns
-[GetServerStrategiesResponseTypeDef](./type_defs.md#getserverstrategiesresponsetypedef).
+parent.get_server_strategies(**kwargs)
+```
 
-<a id="list\_application\_components"></a>
+1. See [:material-code-braces: GetServerStrategiesRequestRequestTypeDef](./type_defs.md#getserverstrategiesrequestrequesttypedef) 
 
-### list_application_components
+### list\_application\_components
 
 Retrieves a list of all the application components (processes).
 
-Type annotations for
-`boto3.client("migrationhubstrategy").list_application_components` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").list_application_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_application_components)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.list_application_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_application_components)
+```python title="Method definition"
+def list_application_components(
+    self,
+    *,
+    applicationComponentCriteria: ApplicationComponentCriteriaType = ...,  # (1)
+    filterValue: str = ...,
+    groupIdFilter: Sequence[GroupTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sort: SortOrderType = ...,  # (3)
+) -> ListApplicationComponentsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationComponentsRequestRequestTypeDef](./type_defs.md#listapplicationcomponentsrequestrequesttypedef).
+1. See [:material-code-brackets: ApplicationComponentCriteriaType](./literals.md#applicationcomponentcriteriatype) 
+2. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `applicationComponentCriteria`:
-  [ApplicationComponentCriteriaType](./literals.md#applicationcomponentcriteriatype)
-- `filterValue`: `str`
-- `groupIdFilter`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sort`: [SortOrderType](./literals.md#sortordertype)
+```python title="Usage example with kwargs"
+kwargs: ListApplicationComponentsRequestRequestTypeDef = {  # (1)
+    "applicationComponentCriteria": ...,
+}
 
-Returns
-[ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef).
+parent.list_application_components(**kwargs)
+```
 
-<a id="list\_collectors"></a>
+1. See [:material-code-braces: ListApplicationComponentsRequestRequestTypeDef](./type_defs.md#listapplicationcomponentsrequestrequesttypedef) 
 
-### list_collectors
+### list\_collectors
 
 Retrieves a list of all the installed collectors.
 
-Type annotations for `boto3.client("migrationhubstrategy").list_collectors`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").list_collectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_collectors)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.list_collectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_collectors)
+```python title="Method definition"
+def list_collectors(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListCollectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCollectorsRequestRequestTypeDef](./type_defs.md#listcollectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCollectorsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef).
+parent.list_collectors(**kwargs)
+```
 
-<a id="list\_import\_file\_task"></a>
+1. See [:material-code-braces: ListCollectorsRequestRequestTypeDef](./type_defs.md#listcollectorsrequestrequesttypedef) 
 
-### list_import_file_task
+### list\_import\_file\_task
 
 Retrieves a list of all the imports performed.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").list_import_file_task` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").list_import_file_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_import_file_task)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.list_import_file_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_import_file_task)
+```python title="Method definition"
+def list_import_file_task(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListImportFileTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListImportFileTaskRequestRequestTypeDef](./type_defs.md#listimportfiletaskrequestrequesttypedef).
+1. See [:material-code-braces: ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImportFileTaskRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef).
+parent.list_import_file_task(**kwargs)
+```
 
-<a id="list\_servers"></a>
+1. See [:material-code-braces: ListImportFileTaskRequestRequestTypeDef](./type_defs.md#listimportfiletaskrequestrequesttypedef) 
 
-### list_servers
+### list\_servers
 
 Returns a list of all the servers.
 
-Type annotations for `boto3.client("migrationhubstrategy").list_servers`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").list_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_servers)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.list_servers)
+```python title="Method definition"
+def list_servers(
+    self,
+    *,
+    filterValue: str = ...,
+    groupIdFilter: Sequence[GroupTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    serverCriteria: ServerCriteriaType = ...,  # (2)
+    sort: SortOrderType = ...,  # (3)
+) -> ListServersResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListServersRequestRequestTypeDef](./type_defs.md#listserversrequestrequesttypedef).
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-brackets: ServerCriteriaType](./literals.md#servercriteriatype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterValue`: `str`
-- `groupIdFilter`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `serverCriteria`: [ServerCriteriaType](./literals.md#servercriteriatype)
-- `sort`: [SortOrderType](./literals.md#sortordertype)
+```python title="Usage example with kwargs"
+kwargs: ListServersRequestRequestTypeDef = {  # (1)
+    "filterValue": ...,
+}
 
-Returns
-[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
+parent.list_servers(**kwargs)
+```
 
-<a id="put\_portfolio\_preferences"></a>
+1. See [:material-code-braces: ListServersRequestRequestTypeDef](./type_defs.md#listserversrequestrequesttypedef) 
 
-### put_portfolio_preferences
+### put\_portfolio\_preferences
 
 Saves the specified migration and modernization preferences.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").put_portfolio_preferences` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").put_portfolio_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.put_portfolio_preferences)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.put_portfolio_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.put_portfolio_preferences)
+```python title="Method definition"
+def put_portfolio_preferences(
+    self,
+    *,
+    applicationPreferences: ApplicationPreferencesTypeDef = ...,  # (1)
+    databasePreferences: DatabasePreferencesTypeDef = ...,  # (2)
+    prioritizeBusinessGoals: PrioritizeBusinessGoalsTypeDef = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutPortfolioPreferencesRequestRequestTypeDef](./type_defs.md#putportfoliopreferencesrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
+2. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
+3. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
 
-Keyword-only arguments:
 
-- `applicationPreferences`:
-  [ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef)
-- `databasePreferences`:
-  [DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef)
-- `prioritizeBusinessGoals`:
-  [PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef)
+```python title="Usage example with kwargs"
+kwargs: PutPortfolioPreferencesRequestRequestTypeDef = {  # (1)
+    "applicationPreferences": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_portfolio_preferences(**kwargs)
+```
 
-<a id="start\_assessment"></a>
+1. See [:material-code-braces: PutPortfolioPreferencesRequestRequestTypeDef](./type_defs.md#putportfoliopreferencesrequestrequesttypedef) 
 
-### start_assessment
+### start\_assessment
 
 Starts the assessment of an on-premises environment.
 
-Type annotations for `boto3.client("migrationhubstrategy").start_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").start_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.start_assessment)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.start_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.start_assessment)
+```python title="Method definition"
+def start_assessment(
+    self,
+    *,
+    s3bucketForAnalysisData: str = ...,
+    s3bucketForReportData: str = ...,
+) -> StartAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartAssessmentRequestRequestTypeDef](./type_defs.md#startassessmentrequestrequesttypedef).
+1. See [:material-code-braces: StartAssessmentResponseTypeDef](./type_defs.md#startassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `s3bucketForAnalysisData`: `str`
-- `s3bucketForReportData`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartAssessmentRequestRequestTypeDef = {  # (1)
+    "s3bucketForAnalysisData": ...,
+}
 
-Returns
-[StartAssessmentResponseTypeDef](./type_defs.md#startassessmentresponsetypedef).
+parent.start_assessment(**kwargs)
+```
 
-<a id="start\_import\_file\_task"></a>
+1. See [:material-code-braces: StartAssessmentRequestRequestTypeDef](./type_defs.md#startassessmentrequestrequesttypedef) 
 
-### start_import_file_task
+### start\_import\_file\_task
 
 Starts a file import.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").start_import_file_task` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").start_import_file_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.start_import_file_task)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.start_import_file_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.start_import_file_task)
+```python title="Method definition"
+def start_import_file_task(
+    self,
+    *,
+    S3Bucket: str,
+    name: str,
+    s3key: str,
+    dataSourceType: DataSourceTypeType = ...,  # (1)
+    groupId: Sequence[GroupTypeDef] = ...,  # (2)
+    s3bucketForReportData: str = ...,
+) -> StartImportFileTaskResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartImportFileTaskRequestRequestTypeDef](./type_defs.md#startimportfiletaskrequestrequesttypedef).
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+3. See [:material-code-braces: StartImportFileTaskResponseTypeDef](./type_defs.md#startimportfiletaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `S3Bucket`: `str` *(required)*
-- `name`: `str` *(required)*
-- `s3key`: `str` *(required)*
-- `dataSourceType`: [DataSourceTypeType](./literals.md#datasourcetypetype)
-- `groupId`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `s3bucketForReportData`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartImportFileTaskRequestRequestTypeDef = {  # (1)
+    "S3Bucket": ...,
+    "name": ...,
+    "s3key": ...,
+}
 
-Returns
-[StartImportFileTaskResponseTypeDef](./type_defs.md#startimportfiletaskresponsetypedef).
+parent.start_import_file_task(**kwargs)
+```
 
-<a id="start\_recommendation\_report\_generation"></a>
+1. See [:material-code-braces: StartImportFileTaskRequestRequestTypeDef](./type_defs.md#startimportfiletaskrequestrequesttypedef) 
 
-### start_recommendation_report_generation
+### start\_recommendation\_report\_generation
 
 Starts generating a recommendation report.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").start_recommendation_report_generation`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").start_recommendation_report_generation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.start_recommendation_report_generation)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.start_recommendation_report_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.start_recommendation_report_generation)
+```python title="Method definition"
+def start_recommendation_report_generation(
+    self,
+    *,
+    groupIdFilter: Sequence[GroupTypeDef] = ...,  # (1)
+    outputFormat: OutputFormatType = ...,  # (2)
+) -> StartRecommendationReportGenerationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartRecommendationReportGenerationRequestRequestTypeDef](./type_defs.md#startrecommendationreportgenerationrequestrequesttypedef).
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+3. See [:material-code-braces: StartRecommendationReportGenerationResponseTypeDef](./type_defs.md#startrecommendationreportgenerationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `groupIdFilter`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `outputFormat`: [OutputFormatType](./literals.md#outputformattype)
+```python title="Usage example with kwargs"
+kwargs: StartRecommendationReportGenerationRequestRequestTypeDef = {  # (1)
+    "groupIdFilter": ...,
+}
 
-Returns
-[StartRecommendationReportGenerationResponseTypeDef](./type_defs.md#startrecommendationreportgenerationresponsetypedef).
+parent.start_recommendation_report_generation(**kwargs)
+```
 
-<a id="stop\_assessment"></a>
+1. See [:material-code-braces: StartRecommendationReportGenerationRequestRequestTypeDef](./type_defs.md#startrecommendationreportgenerationrequestrequesttypedef) 
 
-### stop_assessment
+### stop\_assessment
 
 Stops the assessment of an on-premises environment.
 
-Type annotations for `boto3.client("migrationhubstrategy").stop_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").stop_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.stop_assessment)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.stop_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.stop_assessment)
+```python title="Method definition"
+def stop_assessment(
+    self,
+    *,
+    assessmentId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopAssessmentRequestRequestTypeDef](./type_defs.md#stopassessmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_assessment(**kwargs)
+```
 
-<a id="update\_application\_component\_config"></a>
+1. See [:material-code-braces: StopAssessmentRequestRequestTypeDef](./type_defs.md#stopassessmentrequestrequesttypedef) 
 
-### update_application_component_config
+### update\_application\_component\_config
 
 Updates the configuration of an application component.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").update_application_component_config`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").update_application_component_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.update_application_component_config)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.update_application_component_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.update_application_component_config)
+```python title="Method definition"
+def update_application_component_config(
+    self,
+    *,
+    applicationComponentId: str,
+    inclusionStatus: InclusionStatusType = ...,  # (1)
+    secretsManagerKey: str = ...,
+    sourceCodeList: Sequence[SourceCodeTypeDef] = ...,  # (2)
+    strategyOption: StrategyOptionTypeDef = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationComponentConfigRequestRequestTypeDef](./type_defs.md#updateapplicationcomponentconfigrequestrequesttypedef).
+1. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
+2. See [:material-code-braces: SourceCodeTypeDef](./type_defs.md#sourcecodetypedef) 
+3. See [:material-code-braces: StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef) 
 
-Keyword-only arguments:
 
-- `applicationComponentId`: `str` *(required)*
-- `inclusionStatus`: [InclusionStatusType](./literals.md#inclusionstatustype)
-- `secretsManagerKey`: `str`
-- `sourceCodeList`:
-  `Sequence`\[[SourceCodeTypeDef](./type_defs.md#sourcecodetypedef)\]
-- `strategyOption`:
-  [StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationComponentConfigRequestRequestTypeDef = {  # (1)
+    "applicationComponentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_application_component_config(**kwargs)
+```
 
-<a id="update\_server\_config"></a>
+1. See [:material-code-braces: UpdateApplicationComponentConfigRequestRequestTypeDef](./type_defs.md#updateapplicationcomponentconfigrequestrequesttypedef) 
 
-### update_server_config
+### update\_server\_config
 
 Updates the configuration of the specified server.
 
-Type annotations for
-`boto3.client("migrationhubstrategy").update_server_config` method.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").update_server_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.update_server_config)
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Client.update_server_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.update_server_config)
+```python title="Method definition"
+def update_server_config(
+    self,
+    *,
+    serverId: str,
+    strategyOption: StrategyOptionTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateServerConfigRequestRequestTypeDef](./type_defs.md#updateserverconfigrequestrequesttypedef).
+1. See [:material-code-braces: StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef) 
 
-Keyword-only arguments:
 
-- `serverId`: `str` *(required)*
-- `strategyOption`:
-  [StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateServerConfigRequestRequestTypeDef = {  # (1)
+    "serverId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_server_config(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateServerConfigRequestRequestTypeDef](./type_defs.md#updateserverconfigrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("migrationhubstrategy").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_paginator` method with overloads.
 
-- `client.get_paginator("get_server_details")` ->
-  [GetServerDetailsPaginator](./paginators.md#getserverdetailspaginator)
-- `client.get_paginator("list_application_components")` ->
-  [ListApplicationComponentsPaginator](./paginators.md#listapplicationcomponentspaginator)
-- `client.get_paginator("list_collectors")` ->
-  [ListCollectorsPaginator](./paginators.md#listcollectorspaginator)
-- `client.get_paginator("list_import_file_task")` ->
-  [ListImportFileTaskPaginator](./paginators.md#listimportfiletaskpaginator)
-- `client.get_paginator("list_servers")` ->
-  [ListServersPaginator](./paginators.md#listserverspaginator)
+- `client.get_paginator("get_server_details")` -> [GetServerDetailsPaginator](./paginators.md#getserverdetailspaginator)
+- `client.get_paginator("list_application_components")` -> [ListApplicationComponentsPaginator](./paginators.md#listapplicationcomponentspaginator)
+- `client.get_paginator("list_collectors")` -> [ListCollectorsPaginator](./paginators.md#listcollectorspaginator)
+- `client.get_paginator("list_import_file_task")` -> [ListImportFileTaskPaginator](./paginators.md#listimportfiletaskpaginator)
+- `client.get_paginator("list_servers")` -> [ListServersPaginator](./paginators.md#listserverspaginator)
+
+
+

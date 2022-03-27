@@ -1,302 +1,371 @@
-<a id="typed-dictionaries-for-boto3-qldbsession-module"></a>
-
-# Typed dictionaries for boto3 QLDBSession module
+# Typed dictionaries
 
 > [Index](../README.md) > [QLDBSession](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
-type annotations stubs module
-[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
+!!! note ""
 
-- [Typed dictionaries for boto3 QLDBSession module](#typed-dictionaries-for-boto3-qldbsession-module)
-  - [AbortTransactionResultTypeDef](#aborttransactionresulttypedef)
-  - [CommitTransactionRequestTypeDef](#committransactionrequesttypedef)
-  - [CommitTransactionResultTypeDef](#committransactionresulttypedef)
-  - [EndSessionResultTypeDef](#endsessionresulttypedef)
-  - [ExecuteStatementRequestTypeDef](#executestatementrequesttypedef)
-  - [ExecuteStatementResultTypeDef](#executestatementresulttypedef)
-  - [FetchPageRequestTypeDef](#fetchpagerequesttypedef)
-  - [FetchPageResultTypeDef](#fetchpageresulttypedef)
-  - [IOUsageTypeDef](#iousagetypedef)
-  - [PageTypeDef](#pagetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendCommandRequestRequestTypeDef](#sendcommandrequestrequesttypedef)
-  - [SendCommandResultTypeDef](#sendcommandresulttypedef)
-  - [StartSessionRequestTypeDef](#startsessionrequesttypedef)
-  - [StartSessionResultTypeDef](#startsessionresulttypedef)
-  - [StartTransactionResultTypeDef](#starttransactionresulttypedef)
-  - [TimingInformationTypeDef](#timinginformationtypedef)
-  - [ValueHolderTypeDef](#valueholdertypedef)
-
-<a id="aborttransactionresulttypedef"></a>
+    Auto-generated documentation for [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+    type annotations stubs module [mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 ## AbortTransactionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef
+
+def get_value() -> AbortTransactionResultTypeDef:
+    return {
+        "TimingInformation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AbortTransactionResultTypeDef(TypedDict):
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (1)
+```
 
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-
-<a id="committransactionrequesttypedef"></a>
-
+1. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
 ## CommitTransactionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import CommitTransactionRequestTypeDef
+
+def get_value() -> CommitTransactionRequestTypeDef:
+    return {
+        "TransactionId": ...,
+        "CommitDigest": ...,
+    }
 ```
 
-Required fields:
-
-- `TransactionId`: `str`
-- `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="committransactionresulttypedef"></a>
+```python title="Definition"
+class CommitTransactionRequestTypeDef(TypedDict):
+    TransactionId: str,
+    CommitDigest: Union[bytes, IO[bytes], StreamingBody],
+```
 
 ## CommitTransactionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import CommitTransactionResultTypeDef
+
+def get_value() -> CommitTransactionResultTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CommitTransactionResultTypeDef(TypedDict):
+    TransactionId: NotRequired[str],
+    CommitDigest: NotRequired[bytes],
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (1)
+    ConsumedIOs: NotRequired[IOUsageTypeDef],  # (2)
+```
 
-- `TransactionId`: `str`
-- `CommitDigest`: `bytes`
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-- `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
-
-<a id="endsessionresulttypedef"></a>
-
+1. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
+2. See [:material-code-braces: IOUsageTypeDef](./type_defs.md#iousagetypedef) 
 ## EndSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import EndSessionResultTypeDef
+
+def get_value() -> EndSessionResultTypeDef:
+    return {
+        "TimingInformation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndSessionResultTypeDef(TypedDict):
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (1)
+```
 
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-
-<a id="executestatementrequesttypedef"></a>
-
+1. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
 ## ExecuteStatementRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import ExecuteStatementRequestTypeDef
+
+def get_value() -> ExecuteStatementRequestTypeDef:
+    return {
+        "TransactionId": ...,
+        "Statement": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteStatementRequestTypeDef(TypedDict):
+    TransactionId: str,
+    Statement: str,
+    Parameters: NotRequired[Sequence[ValueHolderTypeDef]],  # (1)
+```
 
-- `TransactionId`: `str`
-- `Statement`: `str`
-
-Optional fields:
-
-- `Parameters`:
-  `Sequence`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
-
-<a id="executestatementresulttypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
 ## ExecuteStatementResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import ExecuteStatementResultTypeDef
+
+def get_value() -> ExecuteStatementResultTypeDef:
+    return {
+        "FirstPage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecuteStatementResultTypeDef(TypedDict):
+    FirstPage: NotRequired[PageTypeDef],  # (1)
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (2)
+    ConsumedIOs: NotRequired[IOUsageTypeDef],  # (3)
+```
 
-- `FirstPage`: [PageTypeDef](./type_defs.md#pagetypedef)
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-- `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
-
-<a id="fetchpagerequesttypedef"></a>
-
+1. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
+2. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
+3. See [:material-code-braces: IOUsageTypeDef](./type_defs.md#iousagetypedef) 
 ## FetchPageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import FetchPageRequestTypeDef
+
+def get_value() -> FetchPageRequestTypeDef:
+    return {
+        "TransactionId": ...,
+        "NextPageToken": ...,
+    }
 ```
 
-Required fields:
-
-- `TransactionId`: `str`
-- `NextPageToken`: `str`
-
-<a id="fetchpageresulttypedef"></a>
+```python title="Definition"
+class FetchPageRequestTypeDef(TypedDict):
+    TransactionId: str,
+    NextPageToken: str,
+```
 
 ## FetchPageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import FetchPageResultTypeDef
+
+def get_value() -> FetchPageResultTypeDef:
+    return {
+        "Page": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FetchPageResultTypeDef(TypedDict):
+    Page: NotRequired[PageTypeDef],  # (1)
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (2)
+    ConsumedIOs: NotRequired[IOUsageTypeDef],  # (3)
+```
 
-- `Page`: [PageTypeDef](./type_defs.md#pagetypedef)
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-- `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
-
-<a id="iousagetypedef"></a>
-
+1. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
+2. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
+3. See [:material-code-braces: IOUsageTypeDef](./type_defs.md#iousagetypedef) 
 ## IOUsageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import IOUsageTypeDef
+
+def get_value() -> IOUsageTypeDef:
+    return {
+        "ReadIOs": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReadIOs`: `int`
-- `WriteIOs`: `int`
-
-<a id="pagetypedef"></a>
+```python title="Definition"
+class IOUsageTypeDef(TypedDict):
+    ReadIOs: NotRequired[int],
+    WriteIOs: NotRequired[int],
+```
 
 ## PageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import PageTypeDef
+
+def get_value() -> PageTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PageTypeDef(TypedDict):
+    Values: NotRequired[List[ValueHolderTypeDef]],  # (1)
+    NextPageToken: NotRequired[str],
+```
 
-- `Values`: `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
-- `NextPageToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendcommandrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendCommandRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import SendCommandRequestRequestTypeDef
+
+def get_value() -> SendCommandRequestRequestTypeDef:
+    return {
+        "SessionToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SendCommandRequestRequestTypeDef(TypedDict):
+    SessionToken: NotRequired[str],
+    StartSession: NotRequired[StartSessionRequestTypeDef],  # (1)
+    StartTransaction: NotRequired[Mapping[str, Any]],
+    EndSession: NotRequired[Mapping[str, Any]],
+    CommitTransaction: NotRequired[CommitTransactionRequestTypeDef],  # (2)
+    AbortTransaction: NotRequired[Mapping[str, Any]],
+    ExecuteStatement: NotRequired[ExecuteStatementRequestTypeDef],  # (3)
+    FetchPage: NotRequired[FetchPageRequestTypeDef],  # (4)
+```
 
-- `SessionToken`: `str`
-- `StartSession`:
-  [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
-- `StartTransaction`: `Mapping`\[`str`, `Any`\]
-- `EndSession`: `Mapping`\[`str`, `Any`\]
-- `CommitTransaction`:
-  [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
-- `AbortTransaction`: `Mapping`\[`str`, `Any`\]
-- `ExecuteStatement`:
-  [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
-- `FetchPage`:
-  [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
-
-<a id="sendcommandresulttypedef"></a>
-
+1. See [:material-code-braces: StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef) 
+2. See [:material-code-braces: CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef) 
+3. See [:material-code-braces: ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef) 
+4. See [:material-code-braces: FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef) 
 ## SendCommandResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import SendCommandResultTypeDef
+
+def get_value() -> SendCommandResultTypeDef:
+    return {
+        "StartSession": ...,
+        "StartTransaction": ...,
+        "EndSession": ...,
+        "CommitTransaction": ...,
+        "AbortTransaction": ...,
+        "ExecuteStatement": ...,
+        "FetchPage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendCommandResultTypeDef(TypedDict):
+    StartSession: StartSessionResultTypeDef,  # (1)
+    StartTransaction: StartTransactionResultTypeDef,  # (2)
+    EndSession: EndSessionResultTypeDef,  # (3)
+    CommitTransaction: CommitTransactionResultTypeDef,  # (4)
+    AbortTransaction: AbortTransactionResultTypeDef,  # (5)
+    ExecuteStatement: ExecuteStatementResultTypeDef,  # (6)
+    FetchPage: FetchPageResultTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
 
-- `StartSession`:
-  [StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef)
-- `StartTransaction`:
-  [StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef)
-- `EndSession`:
-  [EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef)
-- `CommitTransaction`:
-  [CommitTransactionResultTypeDef](./type_defs.md#committransactionresulttypedef)
-- `AbortTransaction`:
-  [AbortTransactionResultTypeDef](./type_defs.md#aborttransactionresulttypedef)
-- `ExecuteStatement`:
-  [ExecuteStatementResultTypeDef](./type_defs.md#executestatementresulttypedef)
-- `FetchPage`: [FetchPageResultTypeDef](./type_defs.md#fetchpageresulttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startsessionrequesttypedef"></a>
-
+1. See [:material-code-braces: StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef) 
+2. See [:material-code-braces: StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef) 
+3. See [:material-code-braces: EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef) 
+4. See [:material-code-braces: CommitTransactionResultTypeDef](./type_defs.md#committransactionresulttypedef) 
+5. See [:material-code-braces: AbortTransactionResultTypeDef](./type_defs.md#aborttransactionresulttypedef) 
+6. See [:material-code-braces: ExecuteStatementResultTypeDef](./type_defs.md#executestatementresulttypedef) 
+7. See [:material-code-braces: FetchPageResultTypeDef](./type_defs.md#fetchpageresulttypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartSessionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import StartSessionRequestTypeDef
+
+def get_value() -> StartSessionRequestTypeDef:
+    return {
+        "LedgerName": ...,
+    }
 ```
 
-Required fields:
-
-- `LedgerName`: `str`
-
-<a id="startsessionresulttypedef"></a>
+```python title="Definition"
+class StartSessionRequestTypeDef(TypedDict):
+    LedgerName: str,
+```
 
 ## StartSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import StartSessionResultTypeDef
+
+def get_value() -> StartSessionResultTypeDef:
+    return {
+        "SessionToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartSessionResultTypeDef(TypedDict):
+    SessionToken: NotRequired[str],
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (1)
+```
 
-- `SessionToken`: `str`
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-
-<a id="starttransactionresulttypedef"></a>
-
+1. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
 ## StartTransactionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import StartTransactionResultTypeDef
+
+def get_value() -> StartTransactionResultTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartTransactionResultTypeDef(TypedDict):
+    TransactionId: NotRequired[str],
+    TimingInformation: NotRequired[TimingInformationTypeDef],  # (1)
+```
 
-- `TransactionId`: `str`
-- `TimingInformation`:
-  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
-
-<a id="timinginformationtypedef"></a>
-
+1. See [:material-code-braces: TimingInformationTypeDef](./type_defs.md#timinginformationtypedef) 
 ## TimingInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import TimingInformationTypeDef
+
+def get_value() -> TimingInformationTypeDef:
+    return {
+        "ProcessingTimeMilliseconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProcessingTimeMilliseconds`: `int`
-
-<a id="valueholdertypedef"></a>
+```python title="Definition"
+class TimingInformationTypeDef(TypedDict):
+    ProcessingTimeMilliseconds: NotRequired[int],
+```
 
 ## ValueHolderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb_session.type_defs import ValueHolderTypeDef
+
+def get_value() -> ValueHolderTypeDef:
+    return {
+        "IonBinary": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValueHolderTypeDef(TypedDict):
+    IonBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    IonText: NotRequired[str],
+```
 
-- `IonBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `IonText`: `str`

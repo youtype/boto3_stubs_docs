@@ -1,597 +1,632 @@
-<a id="literals-for-boto3-pinpointemail-module"></a>
-
-# Literals for boto3 PinpointEmail module
+# Literals
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Literals
 
-Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module
-[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+!!! note ""
 
-- [Literals for boto3 PinpointEmail module](#literals-for-boto3-pinpointemail-module)
-  - [BehaviorOnMxFailureType](#behavioronmxfailuretype)
-  - [DeliverabilityDashboardAccountStatusType](#deliverabilitydashboardaccountstatustype)
-  - [DeliverabilityTestStatusType](#deliverabilityteststatustype)
-  - [DimensionValueSourceType](#dimensionvaluesourcetype)
-  - [DkimStatusType](#dkimstatustype)
-  - [EventTypeType](#eventtypetype)
-  - [GetDedicatedIpsPaginatorName](#getdedicatedipspaginatorname)
-  - [IdentityTypeType](#identitytypetype)
-  - [ListConfigurationSetsPaginatorName](#listconfigurationsetspaginatorname)
-  - [ListDedicatedIpPoolsPaginatorName](#listdedicatedippoolspaginatorname)
-  - [ListDeliverabilityTestReportsPaginatorName](#listdeliverabilitytestreportspaginatorname)
-  - [ListEmailIdentitiesPaginatorName](#listemailidentitiespaginatorname)
-  - [MailFromDomainStatusType](#mailfromdomainstatustype)
-  - [TlsPolicyType](#tlspolicytype)
-  - [WarmupStatusType](#warmupstatustype)
-  - [PinpointEmailServiceName](#pinpointemailservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="behavioronmxfailuretype"></a>
+    Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+    type annotations stubs module [mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 ## BehaviorOnMxFailureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType
+
+def get_value() -> BehaviorOnMxFailureType:
+    return "REJECT_MESSAGE"
 ```
 
-Values:
-
-- `REJECT_MESSAGE`
-- `USE_DEFAULT_VALUE`
-
-<a id="deliverabilitydashboardaccountstatustype"></a>
-
+```python title="Definition"
+BehaviorOnMxFailureType = Literal[
+    "REJECT_MESSAGE",
+    "USE_DEFAULT_VALUE",
+]
+```
 ## DeliverabilityDashboardAccountStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import DeliverabilityDashboardAccountStatusType
+
+def get_value() -> DeliverabilityDashboardAccountStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DISABLED`
-- `PENDING_EXPIRATION`
-
-<a id="deliverabilityteststatustype"></a>
-
+```python title="Definition"
+DeliverabilityDashboardAccountStatusType = Literal[
+    "ACTIVE",
+    "DISABLED",
+    "PENDING_EXPIRATION",
+]
+```
 ## DeliverabilityTestStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import DeliverabilityTestStatusType
+
+def get_value() -> DeliverabilityTestStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `IN_PROGRESS`
-
-<a id="dimensionvaluesourcetype"></a>
-
+```python title="Definition"
+DeliverabilityTestStatusType = Literal[
+    "COMPLETED",
+    "IN_PROGRESS",
+]
+```
 ## DimensionValueSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import DimensionValueSourceType
+
+def get_value() -> DimensionValueSourceType:
+    return "EMAIL_HEADER"
 ```
 
-Values:
-
-- `EMAIL_HEADER`
-- `LINK_TAG`
-- `MESSAGE_TAG`
-
-<a id="dkimstatustype"></a>
-
+```python title="Definition"
+DimensionValueSourceType = Literal[
+    "EMAIL_HEADER",
+    "LINK_TAG",
+    "MESSAGE_TAG",
+]
+```
 ## DkimStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import DkimStatusType
+
+def get_value() -> DkimStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `NOT_STARTED`
-- `PENDING`
-- `SUCCESS`
-- `TEMPORARY_FAILURE`
-
-<a id="eventtypetype"></a>
-
+```python title="Definition"
+DkimStatusType = Literal[
+    "FAILED",
+    "NOT_STARTED",
+    "PENDING",
+    "SUCCESS",
+    "TEMPORARY_FAILURE",
+]
+```
 ## EventTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import EventTypeType
+
+def get_value() -> EventTypeType:
+    return "BOUNCE"
 ```
 
-Values:
-
-- `BOUNCE`
-- `CLICK`
-- `COMPLAINT`
-- `DELIVERY`
-- `OPEN`
-- `REJECT`
-- `RENDERING_FAILURE`
-- `SEND`
-
-<a id="getdedicatedipspaginatorname"></a>
-
+```python title="Definition"
+EventTypeType = Literal[
+    "BOUNCE",
+    "CLICK",
+    "COMPLAINT",
+    "DELIVERY",
+    "OPEN",
+    "REJECT",
+    "RENDERING_FAILURE",
+    "SEND",
+]
+```
 ## GetDedicatedIpsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import GetDedicatedIpsPaginatorName
+
+def get_value() -> GetDedicatedIpsPaginatorName:
+    return "get_dedicated_ips"
 ```
 
-Values:
-
-- `get_dedicated_ips`
-
-<a id="identitytypetype"></a>
-
+```python title="Definition"
+GetDedicatedIpsPaginatorName = Literal[
+    "get_dedicated_ips",
+]
+```
 ## IdentityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import IdentityTypeType
+
+def get_value() -> IdentityTypeType:
+    return "DOMAIN"
 ```
 
-Values:
-
-- `DOMAIN`
-- `EMAIL_ADDRESS`
-- `MANAGED_DOMAIN`
-
-<a id="listconfigurationsetspaginatorname"></a>
-
+```python title="Definition"
+IdentityTypeType = Literal[
+    "DOMAIN",
+    "EMAIL_ADDRESS",
+    "MANAGED_DOMAIN",
+]
+```
 ## ListConfigurationSetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import ListConfigurationSetsPaginatorName
+
+def get_value() -> ListConfigurationSetsPaginatorName:
+    return "list_configuration_sets"
 ```
 
-Values:
-
-- `list_configuration_sets`
-
-<a id="listdedicatedippoolspaginatorname"></a>
-
+```python title="Definition"
+ListConfigurationSetsPaginatorName = Literal[
+    "list_configuration_sets",
+]
+```
 ## ListDedicatedIpPoolsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import ListDedicatedIpPoolsPaginatorName
+
+def get_value() -> ListDedicatedIpPoolsPaginatorName:
+    return "list_dedicated_ip_pools"
 ```
 
-Values:
-
-- `list_dedicated_ip_pools`
-
-<a id="listdeliverabilitytestreportspaginatorname"></a>
-
+```python title="Definition"
+ListDedicatedIpPoolsPaginatorName = Literal[
+    "list_dedicated_ip_pools",
+]
+```
 ## ListDeliverabilityTestReportsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import ListDeliverabilityTestReportsPaginatorName
+
+def get_value() -> ListDeliverabilityTestReportsPaginatorName:
+    return "list_deliverability_test_reports"
 ```
 
-Values:
-
-- `list_deliverability_test_reports`
-
-<a id="listemailidentitiespaginatorname"></a>
-
+```python title="Definition"
+ListDeliverabilityTestReportsPaginatorName = Literal[
+    "list_deliverability_test_reports",
+]
+```
 ## ListEmailIdentitiesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import ListEmailIdentitiesPaginatorName
+
+def get_value() -> ListEmailIdentitiesPaginatorName:
+    return "list_email_identities"
 ```
 
-Values:
-
-- `list_email_identities`
-
-<a id="mailfromdomainstatustype"></a>
-
+```python title="Definition"
+ListEmailIdentitiesPaginatorName = Literal[
+    "list_email_identities",
+]
+```
 ## MailFromDomainStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import MailFromDomainStatusType
+
+def get_value() -> MailFromDomainStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PENDING`
-- `SUCCESS`
-- `TEMPORARY_FAILURE`
-
-<a id="tlspolicytype"></a>
-
+```python title="Definition"
+MailFromDomainStatusType = Literal[
+    "FAILED",
+    "PENDING",
+    "SUCCESS",
+    "TEMPORARY_FAILURE",
+]
+```
 ## TlsPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import TlsPolicyType
+
+def get_value() -> TlsPolicyType:
+    return "OPTIONAL"
 ```
 
-Values:
-
-- `OPTIONAL`
-- `REQUIRE`
-
-<a id="warmupstatustype"></a>
-
+```python title="Definition"
+TlsPolicyType = Literal[
+    "OPTIONAL",
+    "REQUIRE",
+]
+```
 ## WarmupStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import WarmupStatusType
+
+def get_value() -> WarmupStatusType:
+    return "DONE"
 ```
 
-Values:
-
-- `DONE`
-- `IN_PROGRESS`
-
-<a id="pinpointemailservicename"></a>
-
+```python title="Definition"
+WarmupStatusType = Literal[
+    "DONE",
+    "IN_PROGRESS",
+]
+```
 ## PinpointEmailServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import PinpointEmailServiceName
+
+def get_value() -> PinpointEmailServiceName:
+    return "pinpoint-email"
 ```
 
-Values:
-
-- `pinpoint-email`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+PinpointEmailServiceName = Literal[
+    "pinpoint-email",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_dedicated_ips"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "get_dedicated_ips",
+    "list_configuration_sets",
+    "list_dedicated_ip_pools",
+    "list_deliverability_test_reports",
+    "list_email_identities",
+]
+```
+## RegionName
 
-- `get_dedicated_ips`
-- `list_configuration_sets`
-- `list_dedicated_ip_pools`
-- `list_deliverability_test_reports`
-- `list_email_identities`
+```python title="Usage Example"
+from mypy_boto3_pinpoint_email.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-south-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2",
+]
+```

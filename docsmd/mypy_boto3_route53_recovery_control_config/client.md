@@ -1,56 +1,18 @@
-<a id="route53recoverycontrolconfigclient-for-boto3-route53recoverycontrolconfig-module"></a>
+# Route53RecoveryControlConfigClient
 
-# Route53RecoveryControlConfigClient for boto3 Route53RecoveryControlConfig module
+> [Index](../README.md) > [Route53RecoveryControlConfig](./README.md) > Route53RecoveryControlConfigClient
 
-> [Index](../README.md) > [Route53RecoveryControlConfig](./README.md) >
-> Route53RecoveryControlConfigClient
+!!! note ""
 
-Auto-generated documentation for
-[Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
-type annotations stubs module
-[mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
-
-- [Route53RecoveryControlConfigClient for boto3 Route53RecoveryControlConfig module](#route53recoverycontrolconfigclient-for-boto3-route53recoverycontrolconfig-module)
-  - [Route53RecoveryControlConfigClient](#route53recoverycontrolconfigclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_cluster](#create_cluster)
-    - [create_control_panel](#create_control_panel)
-    - [create_routing_control](#create_routing_control)
-    - [create_safety_rule](#create_safety_rule)
-    - [delete_cluster](#delete_cluster)
-    - [delete_control_panel](#delete_control_panel)
-    - [delete_routing_control](#delete_routing_control)
-    - [delete_safety_rule](#delete_safety_rule)
-    - [describe_cluster](#describe_cluster)
-    - [describe_control_panel](#describe_control_panel)
-    - [describe_routing_control](#describe_routing_control)
-    - [describe_safety_rule](#describe_safety_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_associated_route53_health_checks](#list_associated_route53_health_checks)
-    - [list_clusters](#list_clusters)
-    - [list_control_panels](#list_control_panels)
-    - [list_routing_controls](#list_routing_controls)
-    - [list_safety_rules](#list_safety_rules)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_control_panel](#update_control_panel)
-    - [update_routing_control](#update_routing_control)
-    - [update_safety_rule](#update_safety_rule)
-    - [get_waiter](#get_waiter)
-
-<a id="route53recoverycontrolconfigclient"></a>
+    Auto-generated documentation for [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
+    type annotations stubs module [mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
 
 ## Route53RecoveryControlConfigClient
 
-Type annotations for `boto3.client("route53-recovery-control-config")`
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_route53_recovery_control_config.client import Route53RecoveryControlConfigClient
 
@@ -58,646 +20,786 @@ def get_route53-recovery-control-config_client() -> Route53RecoveryControlConfig
     return Session().client("route53-recovery-control-config")
 ```
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("route53-recovery-control-config").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("route53-recovery-control-config")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_route53_recovery_control_config.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Route53RecoveryControlConfigClient exceptions.
-
-Type annotations for
-`boto3.client("route53-recovery-control-config").exceptions` method.
-
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.can_paginate)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_cluster"></a>
-
-### create_cluster
+### create\_cluster
 
 Create a new cluster.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").create_cluster` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").create_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_cluster)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_cluster)
+```python title="Method definition"
+def create_cluster(
+    self,
+    *,
+    ClusterName: str,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
+1. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+parent.create_cluster(**kwargs)
+```
 
-<a id="create\_control\_panel"></a>
+1. See [:material-code-braces: CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef) 
 
-### create_control_panel
+### create\_control\_panel
 
 Creates a new control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").create_control_panel` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").create_control_panel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_control_panel)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.create_control_panel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_control_panel)
+```python title="Method definition"
+def create_control_panel(
+    self,
+    *,
+    ClusterArn: str,
+    ControlPanelName: str,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateControlPanelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateControlPanelRequestRequestTypeDef](./type_defs.md#createcontrolpanelrequestrequesttypedef).
+1. See [:material-code-braces: CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterArn`: `str` *(required)*
-- `ControlPanelName`: `str` *(required)*
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateControlPanelRequestRequestTypeDef = {  # (1)
+    "ClusterArn": ...,
+    "ControlPanelName": ...,
+}
 
-Returns
-[CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef).
+parent.create_control_panel(**kwargs)
+```
 
-<a id="create\_routing\_control"></a>
+1. See [:material-code-braces: CreateControlPanelRequestRequestTypeDef](./type_defs.md#createcontrolpanelrequestrequesttypedef) 
 
-### create_routing_control
+### create\_routing\_control
 
 Creates a new routing control.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").create_routing_control`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").create_routing_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_routing_control)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.create_routing_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_routing_control)
+```python title="Method definition"
+def create_routing_control(
+    self,
+    *,
+    ClusterArn: str,
+    RoutingControlName: str,
+    ClientToken: str = ...,
+    ControlPanelArn: str = ...,
+) -> CreateRoutingControlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoutingControlRequestRequestTypeDef](./type_defs.md#createroutingcontrolrequestrequesttypedef).
+1. See [:material-code-braces: CreateRoutingControlResponseTypeDef](./type_defs.md#createroutingcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterArn`: `str` *(required)*
-- `RoutingControlName`: `str` *(required)*
-- `ClientToken`: `str`
-- `ControlPanelArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateRoutingControlRequestRequestTypeDef = {  # (1)
+    "ClusterArn": ...,
+    "RoutingControlName": ...,
+}
 
-Returns
-[CreateRoutingControlResponseTypeDef](./type_defs.md#createroutingcontrolresponsetypedef).
+parent.create_routing_control(**kwargs)
+```
 
-<a id="create\_safety\_rule"></a>
+1. See [:material-code-braces: CreateRoutingControlRequestRequestTypeDef](./type_defs.md#createroutingcontrolrequestrequesttypedef) 
 
-### create_safety_rule
+### create\_safety\_rule
 
 Creates a safety rule in a control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").create_safety_rule` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").create_safety_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_safety_rule)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.create_safety_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.create_safety_rule)
+```python title="Method definition"
+def create_safety_rule(
+    self,
+    *,
+    AssertionRule: NewAssertionRuleTypeDef = ...,  # (1)
+    ClientToken: str = ...,
+    GatingRule: NewGatingRuleTypeDef = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateSafetyRuleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateSafetyRuleRequestRequestTypeDef](./type_defs.md#createsafetyrulerequestrequesttypedef).
+1. See [:material-code-braces: NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef) 
+2. See [:material-code-braces: NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef) 
+3. See [:material-code-braces: CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssertionRule`:
-  [NewAssertionRuleTypeDef](./type_defs.md#newassertionruletypedef)
-- `ClientToken`: `str`
-- `GatingRule`: [NewGatingRuleTypeDef](./type_defs.md#newgatingruletypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSafetyRuleRequestRequestTypeDef = {  # (1)
+    "AssertionRule": ...,
+}
 
-Returns
-[CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef).
+parent.create_safety_rule(**kwargs)
+```
 
-<a id="delete\_cluster"></a>
+1. See [:material-code-braces: CreateSafetyRuleRequestRequestTypeDef](./type_defs.md#createsafetyrulerequestrequesttypedef) 
 
-### delete_cluster
+### delete\_cluster
 
 Delete a cluster.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").delete_cluster` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").delete_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_cluster)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_cluster)
+```python title="Method definition"
+def delete_cluster(
+    self,
+    *,
+    ClusterArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ClusterArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteClusterRequestRequestTypeDef = {  # (1)
+    "ClusterArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_cluster(**kwargs)
+```
 
-<a id="delete\_control\_panel"></a>
+1. See [:material-code-braces: DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef) 
 
-### delete_control_panel
+### delete\_control\_panel
 
 Deletes a control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").delete_control_panel` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").delete_control_panel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_control_panel)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.delete_control_panel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_control_panel)
+```python title="Method definition"
+def delete_control_panel(
+    self,
+    *,
+    ControlPanelArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteControlPanelRequestRequestTypeDef](./type_defs.md#deletecontrolpanelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ControlPanelArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteControlPanelRequestRequestTypeDef = {  # (1)
+    "ControlPanelArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_control_panel(**kwargs)
+```
 
-<a id="delete\_routing\_control"></a>
+1. See [:material-code-braces: DeleteControlPanelRequestRequestTypeDef](./type_defs.md#deletecontrolpanelrequestrequesttypedef) 
 
-### delete_routing_control
+### delete\_routing\_control
 
 Deletes a routing control.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").delete_routing_control`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").delete_routing_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_routing_control)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.delete_routing_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_routing_control)
+```python title="Method definition"
+def delete_routing_control(
+    self,
+    *,
+    RoutingControlArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoutingControlRequestRequestTypeDef](./type_defs.md#deleteroutingcontrolrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoutingControlArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRoutingControlRequestRequestTypeDef = {  # (1)
+    "RoutingControlArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_routing_control(**kwargs)
+```
 
-<a id="delete\_safety\_rule"></a>
+1. See [:material-code-braces: DeleteRoutingControlRequestRequestTypeDef](./type_defs.md#deleteroutingcontrolrequestrequesttypedef) 
 
-### delete_safety_rule
+### delete\_safety\_rule
 
 Deletes a safety rule.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").delete_safety_rule` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").delete_safety_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_safety_rule)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.delete_safety_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.delete_safety_rule)
+```python title="Method definition"
+def delete_safety_rule(
+    self,
+    *,
+    SafetyRuleArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSafetyRuleRequestRequestTypeDef](./type_defs.md#deletesafetyrulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SafetyRuleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSafetyRuleRequestRequestTypeDef = {  # (1)
+    "SafetyRuleArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_safety_rule(**kwargs)
+```
 
-<a id="describe\_cluster"></a>
+1. See [:material-code-braces: DeleteSafetyRuleRequestRequestTypeDef](./type_defs.md#deletesafetyrulerequestrequesttypedef) 
 
-### describe_cluster
+### describe\_cluster
 
 Display the details about a cluster.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").describe_cluster` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").describe_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_cluster)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_cluster)
+```python title="Method definition"
+def describe_cluster(
+    self,
+    *,
+    ClusterArn: str,
+) -> DescribeClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef).
+1. See [:material-code-braces: DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterRequestRequestTypeDef = {  # (1)
+    "ClusterArn": ...,
+}
 
-Returns
-[DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
+parent.describe_cluster(**kwargs)
+```
 
-<a id="describe\_control\_panel"></a>
+1. See [:material-code-braces: DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef) 
 
-### describe_control_panel
+### describe\_control\_panel
 
 Displays details about a control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").describe_control_panel`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").describe_control_panel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_control_panel)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.describe_control_panel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_control_panel)
+```python title="Method definition"
+def describe_control_panel(
+    self,
+    *,
+    ControlPanelArn: str,
+) -> DescribeControlPanelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeControlPanelRequestRequestTypeDef](./type_defs.md#describecontrolpanelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeControlPanelResponseTypeDef](./type_defs.md#describecontrolpanelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ControlPanelArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeControlPanelRequestRequestTypeDef = {  # (1)
+    "ControlPanelArn": ...,
+}
 
-Returns
-[DescribeControlPanelResponseTypeDef](./type_defs.md#describecontrolpanelresponsetypedef).
+parent.describe_control_panel(**kwargs)
+```
 
-<a id="describe\_routing\_control"></a>
+1. See [:material-code-braces: DescribeControlPanelRequestRequestTypeDef](./type_defs.md#describecontrolpanelrequestrequesttypedef) 
 
-### describe_routing_control
+### describe\_routing\_control
 
 Displays details about a routing control.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").describe_routing_control`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").describe_routing_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_routing_control)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.describe_routing_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_routing_control)
+```python title="Method definition"
+def describe_routing_control(
+    self,
+    *,
+    RoutingControlArn: str,
+) -> DescribeRoutingControlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRoutingControlRequestRequestTypeDef](./type_defs.md#describeroutingcontrolrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRoutingControlResponseTypeDef](./type_defs.md#describeroutingcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoutingControlArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRoutingControlRequestRequestTypeDef = {  # (1)
+    "RoutingControlArn": ...,
+}
 
-Returns
-[DescribeRoutingControlResponseTypeDef](./type_defs.md#describeroutingcontrolresponsetypedef).
+parent.describe_routing_control(**kwargs)
+```
 
-<a id="describe\_safety\_rule"></a>
+1. See [:material-code-braces: DescribeRoutingControlRequestRequestTypeDef](./type_defs.md#describeroutingcontrolrequestrequesttypedef) 
 
-### describe_safety_rule
+### describe\_safety\_rule
 
 Returns information about a safety rule.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").describe_safety_rule` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").describe_safety_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_safety_rule)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.describe_safety_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.describe_safety_rule)
+```python title="Method definition"
+def describe_safety_rule(
+    self,
+    *,
+    SafetyRuleArn: str,
+) -> DescribeSafetyRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSafetyRuleRequestRequestTypeDef](./type_defs.md#describesafetyrulerequestrequesttypedef).
+1. See [:material-code-braces: DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SafetyRuleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSafetyRuleRequestRequestTypeDef = {  # (1)
+    "SafetyRuleArn": ...,
+}
 
-Returns
-[DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef).
+parent.describe_safety_rule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSafetyRuleRequestRequestTypeDef](./type_defs.md#describesafetyrulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### list\_associated\_route53\_health\_checks
 
-Returns `str`.
+Returns an array of all Amazon Route 53 health checks associated with a specific
+routing control.
 
-<a id="list\_associated\_route53\_health\_checks"></a>
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").list_associated_route53_health_checks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_associated_route53_health_checks)
 
-### list_associated_route53_health_checks
+```python title="Method definition"
+def list_associated_route53_health_checks(
+    self,
+    *,
+    RoutingControlArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAssociatedRoute53HealthChecksResponseTypeDef:  # (1)
+    ...
+```
 
-Returns an array of all Amazon Route 53 health checks associated with a
-specific routing control.
+1. See [:material-code-braces: ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef) 
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").list_associated_route53_health_checks`
-method.
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.list_associated_route53_health_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_associated_route53_health_checks)
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedRoute53HealthChecksRequestRequestTypeDef = {  # (1)
+    "RoutingControlArn": ...,
+}
 
-Arguments mapping described in
-[ListAssociatedRoute53HealthChecksRequestRequestTypeDef](./type_defs.md#listassociatedroute53healthchecksrequestrequesttypedef).
+parent.list_associated_route53_health_checks(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ListAssociatedRoute53HealthChecksRequestRequestTypeDef](./type_defs.md#listassociatedroute53healthchecksrequestrequesttypedef) 
 
-- `RoutingControlArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-Returns
-[ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef).
-
-<a id="list\_clusters"></a>
-
-### list_clusters
+### list\_clusters
 
 Returns an array of all the clusters in an account.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").list_clusters` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").list_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_clusters)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_clusters)
+```python title="Method definition"
+def list_clusters(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListClustersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
+1. See [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListClustersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+parent.list_clusters(**kwargs)
+```
 
-<a id="list\_control\_panels"></a>
+1. See [:material-code-braces: ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef) 
 
-### list_control_panels
+### list\_control\_panels
 
 Returns an array of control panels in an account or in a cluster.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").list_control_panels` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").list_control_panels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_control_panels)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.list_control_panels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_control_panels)
+```python title="Method definition"
+def list_control_panels(
+    self,
+    *,
+    ClusterArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListControlPanelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListControlPanelsRequestRequestTypeDef](./type_defs.md#listcontrolpanelsrequestrequesttypedef).
+1. See [:material-code-braces: ListControlPanelsResponseTypeDef](./type_defs.md#listcontrolpanelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListControlPanelsRequestRequestTypeDef = {  # (1)
+    "ClusterArn": ...,
+}
 
-Returns
-[ListControlPanelsResponseTypeDef](./type_defs.md#listcontrolpanelsresponsetypedef).
+parent.list_control_panels(**kwargs)
+```
 
-<a id="list\_routing\_controls"></a>
+1. See [:material-code-braces: ListControlPanelsRequestRequestTypeDef](./type_defs.md#listcontrolpanelsrequestrequesttypedef) 
 
-### list_routing_controls
+### list\_routing\_controls
 
 Returns an array of routing controls for a control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").list_routing_controls` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").list_routing_controls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_routing_controls)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.list_routing_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_routing_controls)
+```python title="Method definition"
+def list_routing_controls(
+    self,
+    *,
+    ControlPanelArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRoutingControlsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoutingControlsRequestRequestTypeDef](./type_defs.md#listroutingcontrolsrequestrequesttypedef).
+1. See [:material-code-braces: ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ControlPanelArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRoutingControlsRequestRequestTypeDef = {  # (1)
+    "ControlPanelArn": ...,
+}
 
-Returns
-[ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef).
+parent.list_routing_controls(**kwargs)
+```
 
-<a id="list\_safety\_rules"></a>
+1. See [:material-code-braces: ListRoutingControlsRequestRequestTypeDef](./type_defs.md#listroutingcontrolsrequestrequesttypedef) 
 
-### list_safety_rules
+### list\_safety\_rules
 
-List the safety rules (the assertion rules and gating rules) that you've
-defined for the routing controls in a control panel.
+List the safety rules (the assertion rules and gating rules) that you've defined
+for the routing controls in a control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").list_safety_rules` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").list_safety_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_safety_rules)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.list_safety_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_safety_rules)
+```python title="Method definition"
+def list_safety_rules(
+    self,
+    *,
+    ControlPanelArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSafetyRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSafetyRulesRequestRequestTypeDef](./type_defs.md#listsafetyrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ControlPanelArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSafetyRulesRequestRequestTypeDef = {  # (1)
+    "ControlPanelArn": ...,
+}
 
-Returns
-[ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef).
+parent.list_safety_rules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSafetyRulesRequestRequestTypeDef](./type_defs.md#listsafetyrulesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for a resource.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds a tag to a resource.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.tag_resource)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from a resource.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.untag_resource)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_control\_panel"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_control_panel
+### update\_control\_panel
 
 Updates a control panel.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").update_control_panel` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").update_control_panel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.update_control_panel)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.update_control_panel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.update_control_panel)
+```python title="Method definition"
+def update_control_panel(
+    self,
+    *,
+    ControlPanelArn: str,
+    ControlPanelName: str,
+) -> UpdateControlPanelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateControlPanelRequestRequestTypeDef](./type_defs.md#updatecontrolpanelrequestrequesttypedef).
+1. See [:material-code-braces: UpdateControlPanelResponseTypeDef](./type_defs.md#updatecontrolpanelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ControlPanelArn`: `str` *(required)*
-- `ControlPanelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateControlPanelRequestRequestTypeDef = {  # (1)
+    "ControlPanelArn": ...,
+    "ControlPanelName": ...,
+}
 
-Returns
-[UpdateControlPanelResponseTypeDef](./type_defs.md#updatecontrolpanelresponsetypedef).
+parent.update_control_panel(**kwargs)
+```
 
-<a id="update\_routing\_control"></a>
+1. See [:material-code-braces: UpdateControlPanelRequestRequestTypeDef](./type_defs.md#updatecontrolpanelrequestrequesttypedef) 
 
-### update_routing_control
+### update\_routing\_control
 
 Updates a routing control.
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").update_routing_control`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").update_routing_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.update_routing_control)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.update_routing_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.update_routing_control)
+```python title="Method definition"
+def update_routing_control(
+    self,
+    *,
+    RoutingControlArn: str,
+    RoutingControlName: str,
+) -> UpdateRoutingControlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingControlRequestRequestTypeDef](./type_defs.md#updateroutingcontrolrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRoutingControlResponseTypeDef](./type_defs.md#updateroutingcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoutingControlArn`: `str` *(required)*
-- `RoutingControlName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingControlRequestRequestTypeDef = {  # (1)
+    "RoutingControlArn": ...,
+    "RoutingControlName": ...,
+}
 
-Returns
-[UpdateRoutingControlResponseTypeDef](./type_defs.md#updateroutingcontrolresponsetypedef).
+parent.update_routing_control(**kwargs)
+```
 
-<a id="update\_safety\_rule"></a>
+1. See [:material-code-braces: UpdateRoutingControlRequestRequestTypeDef](./type_defs.md#updateroutingcontrolrequestrequesttypedef) 
 
-### update_safety_rule
+### update\_safety\_rule
 
 Update a safety rule (an assertion rule or gating rule).
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").update_safety_rule` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").update_safety_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.update_safety_rule)
 
-Boto3 documentation:
-[Route53RecoveryControlConfig.Client.update_safety_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig.Client.update_safety_rule)
+```python title="Method definition"
+def update_safety_rule(
+    self,
+    *,
+    AssertionRuleUpdate: AssertionRuleUpdateTypeDef = ...,  # (1)
+    GatingRuleUpdate: GatingRuleUpdateTypeDef = ...,  # (2)
+) -> UpdateSafetyRuleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSafetyRuleRequestRequestTypeDef](./type_defs.md#updatesafetyrulerequestrequesttypedef).
+1. See [:material-code-braces: AssertionRuleUpdateTypeDef](./type_defs.md#assertionruleupdatetypedef) 
+2. See [:material-code-braces: GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef) 
+3. See [:material-code-braces: UpdateSafetyRuleResponseTypeDef](./type_defs.md#updatesafetyruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssertionRuleUpdate`:
-  [AssertionRuleUpdateTypeDef](./type_defs.md#assertionruleupdatetypedef)
-- `GatingRuleUpdate`:
-  [GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSafetyRuleRequestRequestTypeDef = {  # (1)
+    "AssertionRuleUpdate": ...,
+}
 
-Returns
-[UpdateSafetyRuleResponseTypeDef](./type_defs.md#updatesafetyruleresponsetypedef).
+parent.update_safety_rule(**kwargs)
+```
 
-<a id="get_waiter"></a>
+1. See [:material-code-braces: UpdateSafetyRuleRequestRequestTypeDef](./type_defs.md#updatesafetyrulerequestrequesttypedef) 
+
+
+
+
 
 ### get_waiter
 
-Type annotations for
-`boto3.client("route53-recovery-control-config").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").get_waiter` method with overloads.
 
-- `client.get_waiter("cluster_created")` ->
-  [ClusterCreatedWaiter](./waiters.md#clustercreatedwaiter)
-- `client.get_waiter("cluster_deleted")` ->
-  [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
-- `client.get_waiter("control_panel_created")` ->
-  [ControlPanelCreatedWaiter](./waiters.md#controlpanelcreatedwaiter)
-- `client.get_waiter("control_panel_deleted")` ->
-  [ControlPanelDeletedWaiter](./waiters.md#controlpaneldeletedwaiter)
-- `client.get_waiter("routing_control_created")` ->
-  [RoutingControlCreatedWaiter](./waiters.md#routingcontrolcreatedwaiter)
-- `client.get_waiter("routing_control_deleted")` ->
-  [RoutingControlDeletedWaiter](./waiters.md#routingcontroldeletedwaiter)
+- `client.get_waiter("cluster_created")` -> [ClusterCreatedWaiter](./waiters.md#clustercreatedwaiter)
+- `client.get_waiter("cluster_deleted")` -> [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
+- `client.get_waiter("control_panel_created")` -> [ControlPanelCreatedWaiter](./waiters.md#controlpanelcreatedwaiter)
+- `client.get_waiter("control_panel_deleted")` -> [ControlPanelDeletedWaiter](./waiters.md#controlpaneldeletedwaiter)
+- `client.get_waiter("routing_control_created")` -> [RoutingControlCreatedWaiter](./waiters.md#routingcontrolcreatedwaiter)
+- `client.get_waiter("routing_control_deleted")` -> [RoutingControlDeletedWaiter](./waiters.md#routingcontroldeletedwaiter)
+

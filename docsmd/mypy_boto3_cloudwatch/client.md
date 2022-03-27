@@ -1,69 +1,18 @@
-<a id="cloudwatchclient-for-boto3-cloudwatch-module"></a>
-
-# CloudWatchClient for boto3 CloudWatch module
+# CloudWatchClient
 
 > [Index](../README.md) > [CloudWatch](./README.md) > CloudWatchClient
 
-Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
-type annotations stubs module
-[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+!!! note ""
 
-- [CloudWatchClient for boto3 CloudWatch module](#cloudwatchclient-for-boto3-cloudwatch-module)
-  - [CloudWatchClient](#cloudwatchclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_alarms](#delete_alarms)
-    - [delete_anomaly_detector](#delete_anomaly_detector)
-    - [delete_dashboards](#delete_dashboards)
-    - [delete_insight_rules](#delete_insight_rules)
-    - [delete_metric_stream](#delete_metric_stream)
-    - [describe_alarm_history](#describe_alarm_history)
-    - [describe_alarms](#describe_alarms)
-    - [describe_alarms_for_metric](#describe_alarms_for_metric)
-    - [describe_anomaly_detectors](#describe_anomaly_detectors)
-    - [describe_insight_rules](#describe_insight_rules)
-    - [disable_alarm_actions](#disable_alarm_actions)
-    - [disable_insight_rules](#disable_insight_rules)
-    - [enable_alarm_actions](#enable_alarm_actions)
-    - [enable_insight_rules](#enable_insight_rules)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_dashboard](#get_dashboard)
-    - [get_insight_rule_report](#get_insight_rule_report)
-    - [get_metric_data](#get_metric_data)
-    - [get_metric_statistics](#get_metric_statistics)
-    - [get_metric_stream](#get_metric_stream)
-    - [get_metric_widget_image](#get_metric_widget_image)
-    - [list_dashboards](#list_dashboards)
-    - [list_metric_streams](#list_metric_streams)
-    - [list_metrics](#list_metrics)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_anomaly_detector](#put_anomaly_detector)
-    - [put_composite_alarm](#put_composite_alarm)
-    - [put_dashboard](#put_dashboard)
-    - [put_insight_rule](#put_insight_rule)
-    - [put_metric_alarm](#put_metric_alarm)
-    - [put_metric_data](#put_metric_data)
-    - [put_metric_stream](#put_metric_stream)
-    - [set_alarm_state](#set_alarm_state)
-    - [start_metric_streams](#start_metric_streams)
-    - [stop_metric_streams](#stop_metric_streams)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="cloudwatchclient"></a>
+    Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+    type annotations stubs module [mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ## CloudWatchClient
 
-Type annotations for `boto3.client("cloudwatch")`
+Type annotations and code completion for `#!python boto3.client("cloudwatch")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudwatch.client import CloudWatchClient
 
@@ -71,991 +20,1306 @@ def get_cloudwatch_client() -> CloudWatchClient:
     return Session().client("cloudwatch")
 ```
 
-Boto3 documentation:
-[CloudWatch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudwatch").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudwatch")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.DashboardInvalidInputError,
+    client.DashboardNotFoundError,
+    client.InternalServiceFault,
+    client.InvalidFormatFault,
+    client.InvalidNextToken,
+    client.InvalidParameterCombinationException,
+    client.InvalidParameterValueException,
+    client.LimitExceededException,
+    client.LimitExceededFault,
+    client.MissingRequiredParameterException,
+    client.ResourceNotFound,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudwatch.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.DashboardInvalidInputError`
-- `Exceptions.DashboardNotFoundError`
-- `Exceptions.InternalServiceFault`
-- `Exceptions.InvalidFormatFault`
-- `Exceptions.InvalidNextToken`
-- `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.LimitExceededFault`
-- `Exceptions.MissingRequiredParameterException`
-- `Exceptions.ResourceNotFound`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudWatchClient exceptions.
-
-Type annotations for `boto3.client("cloudwatch").exceptions` method.
-
-Boto3 documentation:
-[CloudWatch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudwatch").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.can_paginate)
 
-Boto3 documentation:
-[CloudWatch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_alarms"></a>
-
-### delete_alarms
+### delete\_alarms
 
 Deletes the specified alarms.
 
-Type annotations for `boto3.client("cloudwatch").delete_alarms` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").delete_alarms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_alarms)
 
-Boto3 documentation:
-[CloudWatch.Client.delete_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_alarms)
+```python title="Method definition"
+def delete_alarms(
+    self,
+    *,
+    AlarmNames: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAlarmsInputRequestTypeDef](./type_defs.md#deletealarmsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `AlarmNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAlarmsInputRequestTypeDef = {  # (1)
+    "AlarmNames": ...,
+}
 
-<a id="delete\_anomaly\_detector"></a>
+parent.delete_alarms(**kwargs)
+```
 
-### delete_anomaly_detector
+1. See [:material-code-braces: DeleteAlarmsInputRequestTypeDef](./type_defs.md#deletealarmsinputrequesttypedef) 
+
+### delete\_anomaly\_detector
 
 Deletes the specified anomaly detection model from your account.
 
-Type annotations for `boto3.client("cloudwatch").delete_anomaly_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").delete_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_anomaly_detector)
 
-Boto3 documentation:
-[CloudWatch.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_anomaly_detector)
+```python title="Method definition"
+def delete_anomaly_detector(
+    self,
+    *,
+    Namespace: str = ...,
+    MetricName: str = ...,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (1)
+    Stat: str = ...,
+    SingleMetricAnomalyDetector: SingleMetricAnomalyDetectorTypeDef = ...,  # (2)
+    MetricMathAnomalyDetector: MetricMathAnomalyDetectorTypeDef = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAnomalyDetectorInputRequestTypeDef](./type_defs.md#deleteanomalydetectorinputrequesttypedef).
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
+3. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
 
-Keyword-only arguments:
 
-- `Namespace`: `str`
-- `MetricName`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Stat`: `str`
-- `SingleMetricAnomalyDetector`:
-  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
-- `MetricMathAnomalyDetector`:
-  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteAnomalyDetectorInputRequestTypeDef = {  # (1)
+    "Namespace": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_anomaly_detector(**kwargs)
+```
 
-<a id="delete\_dashboards"></a>
+1. See [:material-code-braces: DeleteAnomalyDetectorInputRequestTypeDef](./type_defs.md#deleteanomalydetectorinputrequesttypedef) 
 
-### delete_dashboards
+### delete\_dashboards
 
 Deletes all dashboards that you specify.
 
-Type annotations for `boto3.client("cloudwatch").delete_dashboards` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").delete_dashboards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_dashboards)
 
-Boto3 documentation:
-[CloudWatch.Client.delete_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_dashboards)
+```python title="Method definition"
+def delete_dashboards(
+    self,
+    *,
+    DashboardNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDashboardsInputRequestTypeDef](./type_defs.md#deletedashboardsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `DashboardNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDashboardsInputRequestTypeDef = {  # (1)
+    "DashboardNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dashboards(**kwargs)
+```
 
-<a id="delete\_insight\_rules"></a>
+1. See [:material-code-braces: DeleteDashboardsInputRequestTypeDef](./type_defs.md#deletedashboardsinputrequesttypedef) 
 
-### delete_insight_rules
+### delete\_insight\_rules
 
 Permanently deletes the specified Contributor Insights rules.
 
-Type annotations for `boto3.client("cloudwatch").delete_insight_rules` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").delete_insight_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_insight_rules)
 
-Boto3 documentation:
-[CloudWatch.Client.delete_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_insight_rules)
+```python title="Method definition"
+def delete_insight_rules(
+    self,
+    *,
+    RuleNames: Sequence[str],
+) -> DeleteInsightRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInsightRulesInputRequestTypeDef](./type_defs.md#deleteinsightrulesinputrequesttypedef).
+1. See [:material-code-braces: DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RuleNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInsightRulesInputRequestTypeDef = {  # (1)
+    "RuleNames": ...,
+}
 
-Returns
-[DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef).
+parent.delete_insight_rules(**kwargs)
+```
 
-<a id="delete\_metric\_stream"></a>
+1. See [:material-code-braces: DeleteInsightRulesInputRequestTypeDef](./type_defs.md#deleteinsightrulesinputrequesttypedef) 
 
-### delete_metric_stream
+### delete\_metric\_stream
 
 Permanently deletes the metric stream that you specify.
 
-Type annotations for `boto3.client("cloudwatch").delete_metric_stream` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").delete_metric_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_metric_stream)
 
-Boto3 documentation:
-[CloudWatch.Client.delete_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_metric_stream)
+```python title="Method definition"
+def delete_metric_stream(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMetricStreamInputRequestTypeDef](./type_defs.md#deletemetricstreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMetricStreamInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_metric_stream(**kwargs)
+```
 
-<a id="describe\_alarm\_history"></a>
+1. See [:material-code-braces: DeleteMetricStreamInputRequestTypeDef](./type_defs.md#deletemetricstreaminputrequesttypedef) 
 
-### describe_alarm_history
+### describe\_alarm\_history
 
 Retrieves the history for the specified alarm.
 
-Type annotations for `boto3.client("cloudwatch").describe_alarm_history`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").describe_alarm_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarm_history)
 
-Boto3 documentation:
-[CloudWatch.Client.describe_alarm_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarm_history)
+```python title="Method definition"
+def describe_alarm_history(
+    self,
+    *,
+    AlarmName: str = ...,
+    AlarmTypes: Sequence[AlarmTypeType] = ...,  # (1)
+    HistoryItemType: HistoryItemTypeType = ...,  # (2)
+    StartDate: Union[datetime, str] = ...,
+    EndDate: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+    ScanBy: ScanByType = ...,  # (3)
+) -> DescribeAlarmHistoryOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlarmHistoryInputRequestTypeDef](./type_defs.md#describealarmhistoryinputrequesttypedef).
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
+3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+4. See [:material-code-braces: DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AlarmName`: `str`
-- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
-- `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
-- `StartDate`: `Union`\[`datetime`, `str`\]
-- `EndDate`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-- `ScanBy`: [ScanByType](./literals.md#scanbytype)
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmHistoryInputRequestTypeDef = {  # (1)
+    "AlarmName": ...,
+}
 
-Returns
-[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
+parent.describe_alarm_history(**kwargs)
+```
 
-<a id="describe\_alarms"></a>
+1. See [:material-code-braces: DescribeAlarmHistoryInputRequestTypeDef](./type_defs.md#describealarmhistoryinputrequesttypedef) 
 
-### describe_alarms
+### describe\_alarms
 
 Retrieves the specified alarms.
 
-Type annotations for `boto3.client("cloudwatch").describe_alarms` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").describe_alarms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms)
 
-Boto3 documentation:
-[CloudWatch.Client.describe_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms)
+```python title="Method definition"
+def describe_alarms(
+    self,
+    *,
+    AlarmNames: Sequence[str] = ...,
+    AlarmNamePrefix: str = ...,
+    AlarmTypes: Sequence[AlarmTypeType] = ...,  # (1)
+    ChildrenOfAlarmName: str = ...,
+    ParentsOfAlarmName: str = ...,
+    StateValue: StateValueType = ...,  # (2)
+    ActionPrefix: str = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> DescribeAlarmsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlarmsInputRequestTypeDef](./type_defs.md#describealarmsinputrequesttypedef).
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+3. See [:material-code-braces: DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AlarmNames`: `Sequence`\[`str`\]
-- `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
-- `ChildrenOfAlarmName`: `str`
-- `ParentsOfAlarmName`: `str`
-- `StateValue`: [StateValueType](./literals.md#statevaluetype)
-- `ActionPrefix`: `str`
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmsInputRequestTypeDef = {  # (1)
+    "AlarmNames": ...,
+}
 
-Returns
-[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef).
+parent.describe_alarms(**kwargs)
+```
 
-<a id="describe\_alarms\_for\_metric"></a>
+1. See [:material-code-braces: DescribeAlarmsInputRequestTypeDef](./type_defs.md#describealarmsinputrequesttypedef) 
 
-### describe_alarms_for_metric
+### describe\_alarms\_for\_metric
 
 Retrieves the alarms for the specified metric.
 
-Type annotations for `boto3.client("cloudwatch").describe_alarms_for_metric`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").describe_alarms_for_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms_for_metric)
 
-Boto3 documentation:
-[CloudWatch.Client.describe_alarms_for_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms_for_metric)
+```python title="Method definition"
+def describe_alarms_for_metric(
+    self,
+    *,
+    MetricName: str,
+    Namespace: str,
+    Statistic: StatisticType = ...,  # (1)
+    ExtendedStatistic: str = ...,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (2)
+    Period: int = ...,
+    Unit: StandardUnitType = ...,  # (3)
+) -> DescribeAlarmsForMetricOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlarmsForMetricInputRequestTypeDef](./type_defs.md#describealarmsformetricinputrequesttypedef).
+1. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+2. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+4. See [:material-code-braces: DescribeAlarmsForMetricOutputTypeDef](./type_defs.md#describealarmsformetricoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MetricName`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `Statistic`: [StatisticType](./literals.md#statistictype)
-- `ExtendedStatistic`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Period`: `int`
-- `Unit`: [StandardUnitType](./literals.md#standardunittype)
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmsForMetricInputRequestTypeDef = {  # (1)
+    "MetricName": ...,
+    "Namespace": ...,
+}
 
-Returns
-[DescribeAlarmsForMetricOutputTypeDef](./type_defs.md#describealarmsformetricoutputtypedef).
+parent.describe_alarms_for_metric(**kwargs)
+```
 
-<a id="describe\_anomaly\_detectors"></a>
+1. See [:material-code-braces: DescribeAlarmsForMetricInputRequestTypeDef](./type_defs.md#describealarmsformetricinputrequesttypedef) 
 
-### describe_anomaly_detectors
+### describe\_anomaly\_detectors
 
 Lists the anomaly detection models that you have created in your account.
 
-Type annotations for `boto3.client("cloudwatch").describe_anomaly_detectors`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").describe_anomaly_detectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_anomaly_detectors)
 
-Boto3 documentation:
-[CloudWatch.Client.describe_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_anomaly_detectors)
+```python title="Method definition"
+def describe_anomaly_detectors(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Namespace: str = ...,
+    MetricName: str = ...,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (1)
+    AnomalyDetectorTypes: Sequence[AnomalyDetectorTypeType] = ...,  # (2)
+) -> DescribeAnomalyDetectorsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAnomalyDetectorsInputRequestTypeDef](./type_defs.md#describeanomalydetectorsinputrequesttypedef).
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-brackets: AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype) 
+3. See [:material-code-braces: DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Namespace`: `str`
-- `MetricName`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `AnomalyDetectorTypes`:
-  `Sequence`\[[AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeAnomalyDetectorsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef).
+parent.describe_anomaly_detectors(**kwargs)
+```
 
-<a id="describe\_insight\_rules"></a>
+1. See [:material-code-braces: DescribeAnomalyDetectorsInputRequestTypeDef](./type_defs.md#describeanomalydetectorsinputrequesttypedef) 
 
-### describe_insight_rules
+### describe\_insight\_rules
 
 Returns a list of all the Contributor Insights rules in your account.
 
-Type annotations for `boto3.client("cloudwatch").describe_insight_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").describe_insight_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_insight_rules)
 
-Boto3 documentation:
-[CloudWatch.Client.describe_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_insight_rules)
+```python title="Method definition"
+def describe_insight_rules(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeInsightRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInsightRulesInputRequestTypeDef](./type_defs.md#describeinsightrulesinputrequesttypedef).
+1. See [:material-code-braces: DescribeInsightRulesOutputTypeDef](./type_defs.md#describeinsightrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeInsightRulesInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeInsightRulesOutputTypeDef](./type_defs.md#describeinsightrulesoutputtypedef).
+parent.describe_insight_rules(**kwargs)
+```
 
-<a id="disable\_alarm\_actions"></a>
+1. See [:material-code-braces: DescribeInsightRulesInputRequestTypeDef](./type_defs.md#describeinsightrulesinputrequesttypedef) 
 
-### disable_alarm_actions
+### disable\_alarm\_actions
 
 Disables the actions for the specified alarms.
 
-Type annotations for `boto3.client("cloudwatch").disable_alarm_actions` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").disable_alarm_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_alarm_actions)
 
-Boto3 documentation:
-[CloudWatch.Client.disable_alarm_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_alarm_actions)
+```python title="Method definition"
+def disable_alarm_actions(
+    self,
+    *,
+    AlarmNames: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisableAlarmActionsInputRequestTypeDef](./type_defs.md#disablealarmactionsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `AlarmNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableAlarmActionsInputRequestTypeDef = {  # (1)
+    "AlarmNames": ...,
+}
 
-<a id="disable\_insight\_rules"></a>
+parent.disable_alarm_actions(**kwargs)
+```
 
-### disable_insight_rules
+1. See [:material-code-braces: DisableAlarmActionsInputRequestTypeDef](./type_defs.md#disablealarmactionsinputrequesttypedef) 
+
+### disable\_insight\_rules
 
 Disables the specified Contributor Insights rules.
 
-Type annotations for `boto3.client("cloudwatch").disable_insight_rules` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").disable_insight_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_insight_rules)
 
-Boto3 documentation:
-[CloudWatch.Client.disable_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_insight_rules)
+```python title="Method definition"
+def disable_insight_rules(
+    self,
+    *,
+    RuleNames: Sequence[str],
+) -> DisableInsightRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisableInsightRulesInputRequestTypeDef](./type_defs.md#disableinsightrulesinputrequesttypedef).
+1. See [:material-code-braces: DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RuleNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableInsightRulesInputRequestTypeDef = {  # (1)
+    "RuleNames": ...,
+}
 
-Returns
-[DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef).
+parent.disable_insight_rules(**kwargs)
+```
 
-<a id="enable\_alarm\_actions"></a>
+1. See [:material-code-braces: DisableInsightRulesInputRequestTypeDef](./type_defs.md#disableinsightrulesinputrequesttypedef) 
 
-### enable_alarm_actions
+### enable\_alarm\_actions
 
 Enables the actions for the specified alarms.
 
-Type annotations for `boto3.client("cloudwatch").enable_alarm_actions` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").enable_alarm_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_alarm_actions)
 
-Boto3 documentation:
-[CloudWatch.Client.enable_alarm_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_alarm_actions)
+```python title="Method definition"
+def enable_alarm_actions(
+    self,
+    *,
+    AlarmNames: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableAlarmActionsInputRequestTypeDef](./type_defs.md#enablealarmactionsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `AlarmNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableAlarmActionsInputRequestTypeDef = {  # (1)
+    "AlarmNames": ...,
+}
 
-<a id="enable\_insight\_rules"></a>
+parent.enable_alarm_actions(**kwargs)
+```
 
-### enable_insight_rules
+1. See [:material-code-braces: EnableAlarmActionsInputRequestTypeDef](./type_defs.md#enablealarmactionsinputrequesttypedef) 
+
+### enable\_insight\_rules
 
 Enables the specified Contributor Insights rules.
 
-Type annotations for `boto3.client("cloudwatch").enable_insight_rules` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").enable_insight_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_insight_rules)
 
-Boto3 documentation:
-[CloudWatch.Client.enable_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_insight_rules)
+```python title="Method definition"
+def enable_insight_rules(
+    self,
+    *,
+    RuleNames: Sequence[str],
+) -> EnableInsightRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnableInsightRulesInputRequestTypeDef](./type_defs.md#enableinsightrulesinputrequesttypedef).
+1. See [:material-code-braces: EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RuleNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableInsightRulesInputRequestTypeDef = {  # (1)
+    "RuleNames": ...,
+}
 
-Returns
-[EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef).
+parent.enable_insight_rules(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableInsightRulesInputRequestTypeDef](./type_defs.md#enableinsightrulesinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudwatch").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudWatch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_dashboard"></a>
-
-### get_dashboard
+### get\_dashboard
 
 Displays the details of the dashboard that you specify.
 
-Type annotations for `boto3.client("cloudwatch").get_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_dashboard)
 
-Boto3 documentation:
-[CloudWatch.Client.get_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_dashboard)
+```python title="Method definition"
+def get_dashboard(
+    self,
+    *,
+    DashboardName: str,
+) -> GetDashboardOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDashboardInputRequestTypeDef](./type_defs.md#getdashboardinputrequesttypedef).
+1. See [:material-code-braces: GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DashboardName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDashboardInputRequestTypeDef = {  # (1)
+    "DashboardName": ...,
+}
 
-Returns [GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef).
+parent.get_dashboard(**kwargs)
+```
 
-<a id="get\_insight\_rule\_report"></a>
+1. See [:material-code-braces: GetDashboardInputRequestTypeDef](./type_defs.md#getdashboardinputrequesttypedef) 
 
-### get_insight_rule_report
+### get\_insight\_rule\_report
 
 This operation returns the time series data collected by a Contributor Insights
 rule.
 
-Type annotations for `boto3.client("cloudwatch").get_insight_rule_report`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_insight_rule_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_insight_rule_report)
 
-Boto3 documentation:
-[CloudWatch.Client.get_insight_rule_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_insight_rule_report)
+```python title="Method definition"
+def get_insight_rule_report(
+    self,
+    *,
+    RuleName: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Period: int,
+    MaxContributorCount: int = ...,
+    Metrics: Sequence[str] = ...,
+    OrderBy: str = ...,
+) -> GetInsightRuleReportOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightRuleReportInputRequestTypeDef](./type_defs.md#getinsightrulereportinputrequesttypedef).
+1. See [:material-code-braces: GetInsightRuleReportOutputTypeDef](./type_defs.md#getinsightrulereportoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RuleName`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Period`: `int` *(required)*
-- `MaxContributorCount`: `int`
-- `Metrics`: `Sequence`\[`str`\]
-- `OrderBy`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetInsightRuleReportInputRequestTypeDef = {  # (1)
+    "RuleName": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Period": ...,
+}
 
-Returns
-[GetInsightRuleReportOutputTypeDef](./type_defs.md#getinsightrulereportoutputtypedef).
+parent.get_insight_rule_report(**kwargs)
+```
 
-<a id="get\_metric\_data"></a>
+1. See [:material-code-braces: GetInsightRuleReportInputRequestTypeDef](./type_defs.md#getinsightrulereportinputrequesttypedef) 
 
-### get_metric_data
+### get\_metric\_data
 
-You can use the `GetMetricData` API to retrieve as many as 500 different
-metrics in a single request, with a total of as many as 100,800 data points.
+You can use the `GetMetricData` API to retrieve as many as 500 different metrics
+in a single request, with a total of as many as 100,800 data points.
 
-Type annotations for `boto3.client("cloudwatch").get_metric_data` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_metric_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_data)
 
-Boto3 documentation:
-[CloudWatch.Client.get_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_data)
+```python title="Method definition"
+def get_metric_data(
+    self,
+    *,
+    MetricDataQueries: Sequence[MetricDataQueryTypeDef],  # (1)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    NextToken: str = ...,
+    ScanBy: ScanByType = ...,  # (2)
+    MaxDatapoints: int = ...,
+    LabelOptions: LabelOptionsTypeDef = ...,  # (3)
+) -> GetMetricDataOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetMetricDataInputRequestTypeDef](./type_defs.md#getmetricdatainputrequesttypedef).
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+2. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+4. See [:material-code-braces: GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MetricDataQueries`:
-  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-  *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `NextToken`: `str`
-- `ScanBy`: [ScanByType](./literals.md#scanbytype)
-- `MaxDatapoints`: `int`
-- `LabelOptions`: [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: GetMetricDataInputRequestTypeDef = {  # (1)
+    "MetricDataQueries": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef).
+parent.get_metric_data(**kwargs)
+```
 
-<a id="get\_metric\_statistics"></a>
+1. See [:material-code-braces: GetMetricDataInputRequestTypeDef](./type_defs.md#getmetricdatainputrequesttypedef) 
 
-### get_metric_statistics
+### get\_metric\_statistics
 
 Gets statistics for the specified metric.
 
-Type annotations for `boto3.client("cloudwatch").get_metric_statistics` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_metric_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_statistics)
 
-Boto3 documentation:
-[CloudWatch.Client.get_metric_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_statistics)
+```python title="Method definition"
+def get_metric_statistics(
+    self,
+    *,
+    Namespace: str,
+    MetricName: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Period: int,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (1)
+    Statistics: Sequence[StatisticType] = ...,  # (2)
+    ExtendedStatistics: Sequence[str] = ...,
+    Unit: StandardUnitType = ...,  # (3)
+) -> GetMetricStatisticsOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetMetricStatisticsInputRequestTypeDef](./type_defs.md#getmetricstatisticsinputrequesttypedef).
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+4. See [:material-code-braces: GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Namespace`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Period`: `int` *(required)*
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
-- `ExtendedStatistics`: `Sequence`\[`str`\]
-- `Unit`: [StandardUnitType](./literals.md#standardunittype)
+```python title="Usage example with kwargs"
+kwargs: GetMetricStatisticsInputRequestTypeDef = {  # (1)
+    "Namespace": ...,
+    "MetricName": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Period": ...,
+}
 
-Returns
-[GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
+parent.get_metric_statistics(**kwargs)
+```
 
-<a id="get\_metric\_stream"></a>
+1. See [:material-code-braces: GetMetricStatisticsInputRequestTypeDef](./type_defs.md#getmetricstatisticsinputrequesttypedef) 
 
-### get_metric_stream
+### get\_metric\_stream
 
 Returns information about the metric stream that you specify.
 
-Type annotations for `boto3.client("cloudwatch").get_metric_stream` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_metric_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_stream)
 
-Boto3 documentation:
-[CloudWatch.Client.get_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_stream)
+```python title="Method definition"
+def get_metric_stream(
+    self,
+    *,
+    Name: str,
+) -> GetMetricStreamOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMetricStreamInputRequestTypeDef](./type_defs.md#getmetricstreaminputrequesttypedef).
+1. See [:material-code-braces: GetMetricStreamOutputTypeDef](./type_defs.md#getmetricstreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMetricStreamInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetMetricStreamOutputTypeDef](./type_defs.md#getmetricstreamoutputtypedef).
+parent.get_metric_stream(**kwargs)
+```
 
-<a id="get\_metric\_widget\_image"></a>
+1. See [:material-code-braces: GetMetricStreamInputRequestTypeDef](./type_defs.md#getmetricstreaminputrequesttypedef) 
 
-### get_metric_widget_image
+### get\_metric\_widget\_image
 
 You can use the `GetMetricWidgetImage` API to retrieve a snapshot graph of one
 or more Amazon CloudWatch metrics as a bitmap image.
 
-Type annotations for `boto3.client("cloudwatch").get_metric_widget_image`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_metric_widget_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_widget_image)
 
-Boto3 documentation:
-[CloudWatch.Client.get_metric_widget_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_widget_image)
+```python title="Method definition"
+def get_metric_widget_image(
+    self,
+    *,
+    MetricWidget: str,
+    OutputFormat: str = ...,
+) -> GetMetricWidgetImageOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMetricWidgetImageInputRequestTypeDef](./type_defs.md#getmetricwidgetimageinputrequesttypedef).
+1. See [:material-code-braces: GetMetricWidgetImageOutputTypeDef](./type_defs.md#getmetricwidgetimageoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MetricWidget`: `str` *(required)*
-- `OutputFormat`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetMetricWidgetImageInputRequestTypeDef = {  # (1)
+    "MetricWidget": ...,
+}
 
-Returns
-[GetMetricWidgetImageOutputTypeDef](./type_defs.md#getmetricwidgetimageoutputtypedef).
+parent.get_metric_widget_image(**kwargs)
+```
 
-<a id="list\_dashboards"></a>
+1. See [:material-code-braces: GetMetricWidgetImageInputRequestTypeDef](./type_defs.md#getmetricwidgetimageinputrequesttypedef) 
 
-### list_dashboards
+### list\_dashboards
 
 Returns a list of the dashboards for your account.
 
-Type annotations for `boto3.client("cloudwatch").list_dashboards` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").list_dashboards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_dashboards)
 
-Boto3 documentation:
-[CloudWatch.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_dashboards)
+```python title="Method definition"
+def list_dashboards(
+    self,
+    *,
+    DashboardNamePrefix: str = ...,
+    NextToken: str = ...,
+) -> ListDashboardsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDashboardsInputRequestTypeDef](./type_defs.md#listdashboardsinputrequesttypedef).
+1. See [:material-code-braces: ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DashboardNamePrefix`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDashboardsInputRequestTypeDef = {  # (1)
+    "DashboardNamePrefix": ...,
+}
 
-Returns
-[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef).
+parent.list_dashboards(**kwargs)
+```
 
-<a id="list\_metric\_streams"></a>
+1. See [:material-code-braces: ListDashboardsInputRequestTypeDef](./type_defs.md#listdashboardsinputrequesttypedef) 
 
-### list_metric_streams
+### list\_metric\_streams
 
 Returns a list of metric streams in this account.
 
-Type annotations for `boto3.client("cloudwatch").list_metric_streams` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").list_metric_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metric_streams)
 
-Boto3 documentation:
-[CloudWatch.Client.list_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metric_streams)
+```python title="Method definition"
+def list_metric_streams(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMetricStreamsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMetricStreamsInputRequestTypeDef](./type_defs.md#listmetricstreamsinputrequesttypedef).
+1. See [:material-code-braces: ListMetricStreamsOutputTypeDef](./type_defs.md#listmetricstreamsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMetricStreamsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMetricStreamsOutputTypeDef](./type_defs.md#listmetricstreamsoutputtypedef).
+parent.list_metric_streams(**kwargs)
+```
 
-<a id="list\_metrics"></a>
+1. See [:material-code-braces: ListMetricStreamsInputRequestTypeDef](./type_defs.md#listmetricstreamsinputrequesttypedef) 
 
-### list_metrics
+### list\_metrics
 
 List the specified metrics.
 
-Type annotations for `boto3.client("cloudwatch").list_metrics` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").list_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metrics)
 
-Boto3 documentation:
-[CloudWatch.Client.list_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metrics)
+```python title="Method definition"
+def list_metrics(
+    self,
+    *,
+    Namespace: str = ...,
+    MetricName: str = ...,
+    Dimensions: Sequence[DimensionFilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    RecentlyActive: RecentlyActiveType = ...,  # (2)
+) -> ListMetricsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListMetricsInputRequestTypeDef](./type_defs.md#listmetricsinputrequesttypedef).
+1. See [:material-code-braces: DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef) 
+2. See [:material-code-brackets: RecentlyActiveType](./literals.md#recentlyactivetype) 
+3. See [:material-code-braces: ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Namespace`: `str`
-- `MetricName`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
-- `NextToken`: `str`
-- `RecentlyActive`: `Literal['PT3H']` (see
-  [RecentlyActiveType](./literals.md#recentlyactivetype))
+```python title="Usage example with kwargs"
+kwargs: ListMetricsInputRequestTypeDef = {  # (1)
+    "Namespace": ...,
+}
 
-Returns [ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef).
+parent.list_metrics(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListMetricsInputRequestTypeDef](./type_defs.md#listmetricsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Displays the tags associated with a CloudWatch resource.
 
-Type annotations for `boto3.client("cloudwatch").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CloudWatch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_anomaly\_detector"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### put_anomaly_detector
+### put\_anomaly\_detector
 
 Creates an anomaly detection model for a CloudWatch metric.
 
-Type annotations for `boto3.client("cloudwatch").put_anomaly_detector` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_anomaly_detector)
 
-Boto3 documentation:
-[CloudWatch.Client.put_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_anomaly_detector)
+```python title="Method definition"
+def put_anomaly_detector(
+    self,
+    *,
+    Namespace: str = ...,
+    MetricName: str = ...,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (1)
+    Stat: str = ...,
+    Configuration: AnomalyDetectorConfigurationTypeDef = ...,  # (2)
+    SingleMetricAnomalyDetector: SingleMetricAnomalyDetectorTypeDef = ...,  # (3)
+    MetricMathAnomalyDetector: MetricMathAnomalyDetectorTypeDef = ...,  # (4)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAnomalyDetectorInputRequestTypeDef](./type_defs.md#putanomalydetectorinputrequesttypedef).
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-braces: AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef) 
+3. See [:material-code-braces: SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef) 
+4. See [:material-code-braces: MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef) 
 
-Keyword-only arguments:
 
-- `Namespace`: `str`
-- `MetricName`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Stat`: `str`
-- `Configuration`:
-  [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
-- `SingleMetricAnomalyDetector`:
-  [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
-- `MetricMathAnomalyDetector`:
-  [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
+```python title="Usage example with kwargs"
+kwargs: PutAnomalyDetectorInputRequestTypeDef = {  # (1)
+    "Namespace": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_anomaly_detector(**kwargs)
+```
 
-<a id="put\_composite\_alarm"></a>
+1. See [:material-code-braces: PutAnomalyDetectorInputRequestTypeDef](./type_defs.md#putanomalydetectorinputrequesttypedef) 
 
-### put_composite_alarm
+### put\_composite\_alarm
 
 Creates or updates a *composite alarm*.
 
-Type annotations for `boto3.client("cloudwatch").put_composite_alarm` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_composite_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_composite_alarm)
 
-Boto3 documentation:
-[CloudWatch.Client.put_composite_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_composite_alarm)
+```python title="Method definition"
+def put_composite_alarm(
+    self,
+    *,
+    AlarmName: str,
+    AlarmRule: str,
+    ActionsEnabled: bool = ...,
+    AlarmActions: Sequence[str] = ...,
+    AlarmDescription: str = ...,
+    InsufficientDataActions: Sequence[str] = ...,
+    OKActions: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutCompositeAlarmInputRequestTypeDef](./type_defs.md#putcompositealarminputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `AlarmName`: `str` *(required)*
-- `AlarmRule`: `str` *(required)*
-- `ActionsEnabled`: `bool`
-- `AlarmActions`: `Sequence`\[`str`\]
-- `AlarmDescription`: `str`
-- `InsufficientDataActions`: `Sequence`\[`str`\]
-- `OKActions`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutCompositeAlarmInputRequestTypeDef = {  # (1)
+    "AlarmName": ...,
+    "AlarmRule": ...,
+}
 
-<a id="put\_dashboard"></a>
+parent.put_composite_alarm(**kwargs)
+```
 
-### put_dashboard
+1. See [:material-code-braces: PutCompositeAlarmInputRequestTypeDef](./type_defs.md#putcompositealarminputrequesttypedef) 
+
+### put\_dashboard
 
 Creates a dashboard if it does not already exist, or updates an existing
 dashboard.
 
-Type annotations for `boto3.client("cloudwatch").put_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_dashboard)
 
-Boto3 documentation:
-[CloudWatch.Client.put_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_dashboard)
+```python title="Method definition"
+def put_dashboard(
+    self,
+    *,
+    DashboardName: str,
+    DashboardBody: str,
+) -> PutDashboardOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutDashboardInputRequestTypeDef](./type_defs.md#putdashboardinputrequesttypedef).
+1. See [:material-code-braces: PutDashboardOutputTypeDef](./type_defs.md#putdashboardoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DashboardName`: `str` *(required)*
-- `DashboardBody`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutDashboardInputRequestTypeDef = {  # (1)
+    "DashboardName": ...,
+    "DashboardBody": ...,
+}
 
-Returns [PutDashboardOutputTypeDef](./type_defs.md#putdashboardoutputtypedef).
+parent.put_dashboard(**kwargs)
+```
 
-<a id="put\_insight\_rule"></a>
+1. See [:material-code-braces: PutDashboardInputRequestTypeDef](./type_defs.md#putdashboardinputrequesttypedef) 
 
-### put_insight_rule
+### put\_insight\_rule
 
 Creates a Contributor Insights rule.
 
-Type annotations for `boto3.client("cloudwatch").put_insight_rule` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_insight_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_insight_rule)
 
-Boto3 documentation:
-[CloudWatch.Client.put_insight_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_insight_rule)
+```python title="Method definition"
+def put_insight_rule(
+    self,
+    *,
+    RuleName: str,
+    RuleDefinition: str,
+    RuleState: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutInsightRuleInputRequestTypeDef](./type_defs.md#putinsightruleinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `RuleName`: `str` *(required)*
-- `RuleDefinition`: `str` *(required)*
-- `RuleState`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutInsightRuleInputRequestTypeDef = {  # (1)
+    "RuleName": ...,
+    "RuleDefinition": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_insight_rule(**kwargs)
+```
 
-<a id="put\_metric\_alarm"></a>
+1. See [:material-code-braces: PutInsightRuleInputRequestTypeDef](./type_defs.md#putinsightruleinputrequesttypedef) 
 
-### put_metric_alarm
+### put\_metric\_alarm
 
 Creates or updates an alarm and associates it with the specified metric, metric
 math expression, or anomaly detection model.
 
-Type annotations for `boto3.client("cloudwatch").put_metric_alarm` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_metric_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm)
 
-Boto3 documentation:
-[CloudWatch.Client.put_metric_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm)
+```python title="Method definition"
+def put_metric_alarm(
+    self,
+    *,
+    AlarmName: str,
+    EvaluationPeriods: int,
+    ComparisonOperator: ComparisonOperatorType,  # (1)
+    AlarmDescription: str = ...,
+    ActionsEnabled: bool = ...,
+    OKActions: Sequence[str] = ...,
+    AlarmActions: Sequence[str] = ...,
+    InsufficientDataActions: Sequence[str] = ...,
+    MetricName: str = ...,
+    Namespace: str = ...,
+    Statistic: StatisticType = ...,  # (2)
+    ExtendedStatistic: str = ...,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (3)
+    Period: int = ...,
+    Unit: StandardUnitType = ...,  # (4)
+    DatapointsToAlarm: int = ...,
+    Threshold: float = ...,
+    TreatMissingData: str = ...,
+    EvaluateLowSampleCountPercentile: str = ...,
+    Metrics: Sequence[MetricDataQueryTypeDef] = ...,  # (5)
+    Tags: Sequence[TagTypeDef] = ...,  # (6)
+    ThresholdMetricId: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutMetricAlarmInputRequestTypeDef](./type_defs.md#putmetricalarminputrequesttypedef).
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+3. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+4. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+5. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `AlarmName`: `str` *(required)*
-- `EvaluationPeriods`: `int` *(required)*
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype) *(required)*
-- `AlarmDescription`: `str`
-- `ActionsEnabled`: `bool`
-- `OKActions`: `Sequence`\[`str`\]
-- `AlarmActions`: `Sequence`\[`str`\]
-- `InsufficientDataActions`: `Sequence`\[`str`\]
-- `MetricName`: `str`
-- `Namespace`: `str`
-- `Statistic`: [StatisticType](./literals.md#statistictype)
-- `ExtendedStatistic`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Period`: `int`
-- `Unit`: [StandardUnitType](./literals.md#standardunittype)
-- `DatapointsToAlarm`: `int`
-- `Threshold`: `float`
-- `TreatMissingData`: `str`
-- `EvaluateLowSampleCountPercentile`: `str`
-- `Metrics`:
-  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ThresholdMetricId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutMetricAlarmInputRequestTypeDef = {  # (1)
+    "AlarmName": ...,
+    "EvaluationPeriods": ...,
+    "ComparisonOperator": ...,
+}
 
-<a id="put\_metric\_data"></a>
+parent.put_metric_alarm(**kwargs)
+```
 
-### put_metric_data
+1. See [:material-code-braces: PutMetricAlarmInputRequestTypeDef](./type_defs.md#putmetricalarminputrequesttypedef) 
+
+### put\_metric\_data
 
 Publishes metric data points to Amazon CloudWatch.
 
-Type annotations for `boto3.client("cloudwatch").put_metric_data` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_metric_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_data)
 
-Boto3 documentation:
-[CloudWatch.Client.put_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_data)
+```python title="Method definition"
+def put_metric_data(
+    self,
+    *,
+    Namespace: str,
+    MetricData: Sequence[MetricDatumTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutMetricDataInputRequestTypeDef](./type_defs.md#putmetricdatainputrequesttypedef).
+1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
 
-Keyword-only arguments:
 
-- `Namespace`: `str` *(required)*
-- `MetricData`:
-  `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutMetricDataInputRequestTypeDef = {  # (1)
+    "Namespace": ...,
+    "MetricData": ...,
+}
 
-<a id="put\_metric\_stream"></a>
+parent.put_metric_data(**kwargs)
+```
 
-### put_metric_stream
+1. See [:material-code-braces: PutMetricDataInputRequestTypeDef](./type_defs.md#putmetricdatainputrequesttypedef) 
+
+### put\_metric\_stream
 
 Creates or updates a metric stream.
 
-Type annotations for `boto3.client("cloudwatch").put_metric_stream` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").put_metric_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_stream)
 
-Boto3 documentation:
-[CloudWatch.Client.put_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_stream)
+```python title="Method definition"
+def put_metric_stream(
+    self,
+    *,
+    Name: str,
+    FirehoseArn: str,
+    RoleArn: str,
+    OutputFormat: MetricStreamOutputFormatType,  # (1)
+    IncludeFilters: Sequence[MetricStreamFilterTypeDef] = ...,  # (2)
+    ExcludeFilters: Sequence[MetricStreamFilterTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> PutMetricStreamOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[PutMetricStreamInputRequestTypeDef](./type_defs.md#putmetricstreaminputrequesttypedef).
+1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
+2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
+3. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `FirehoseArn`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `OutputFormat`:
-  [MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype)
-  *(required)*
-- `IncludeFilters`:
-  `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
-- `ExcludeFilters`:
-  `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutMetricStreamInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "FirehoseArn": ...,
+    "RoleArn": ...,
+    "OutputFormat": ...,
+}
 
-Returns
-[PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef).
+parent.put_metric_stream(**kwargs)
+```
 
-<a id="set\_alarm\_state"></a>
+1. See [:material-code-braces: PutMetricStreamInputRequestTypeDef](./type_defs.md#putmetricstreaminputrequesttypedef) 
 
-### set_alarm_state
+### set\_alarm\_state
 
 Temporarily sets the state of an alarm for testing purposes.
 
-Type annotations for `boto3.client("cloudwatch").set_alarm_state` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").set_alarm_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.set_alarm_state)
 
-Boto3 documentation:
-[CloudWatch.Client.set_alarm_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.set_alarm_state)
+```python title="Method definition"
+def set_alarm_state(
+    self,
+    *,
+    AlarmName: str,
+    StateValue: StateValueType,  # (1)
+    StateReason: str,
+    StateReasonData: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetAlarmStateInputRequestTypeDef](./type_defs.md#setalarmstateinputrequesttypedef).
+1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
 
-Keyword-only arguments:
 
-- `AlarmName`: `str` *(required)*
-- `StateValue`: [StateValueType](./literals.md#statevaluetype) *(required)*
-- `StateReason`: `str` *(required)*
-- `StateReasonData`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetAlarmStateInputRequestTypeDef = {  # (1)
+    "AlarmName": ...,
+    "StateValue": ...,
+    "StateReason": ...,
+}
 
-<a id="start\_metric\_streams"></a>
+parent.set_alarm_state(**kwargs)
+```
 
-### start_metric_streams
+1. See [:material-code-braces: SetAlarmStateInputRequestTypeDef](./type_defs.md#setalarmstateinputrequesttypedef) 
+
+### start\_metric\_streams
 
 Starts the streaming of metrics for one or more of your metric streams.
 
-Type annotations for `boto3.client("cloudwatch").start_metric_streams` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").start_metric_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.start_metric_streams)
 
-Boto3 documentation:
-[CloudWatch.Client.start_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.start_metric_streams)
+```python title="Method definition"
+def start_metric_streams(
+    self,
+    *,
+    Names: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartMetricStreamsInputRequestTypeDef](./type_defs.md#startmetricstreamsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMetricStreamsInputRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_metric_streams(**kwargs)
+```
 
-<a id="stop\_metric\_streams"></a>
+1. See [:material-code-braces: StartMetricStreamsInputRequestTypeDef](./type_defs.md#startmetricstreamsinputrequesttypedef) 
 
-### stop_metric_streams
+### stop\_metric\_streams
 
 Stops the streaming of metrics for one or more of your metric streams.
 
-Type annotations for `boto3.client("cloudwatch").stop_metric_streams` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").stop_metric_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.stop_metric_streams)
 
-Boto3 documentation:
-[CloudWatch.Client.stop_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.stop_metric_streams)
+```python title="Method definition"
+def stop_metric_streams(
+    self,
+    *,
+    Names: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopMetricStreamsInputRequestTypeDef](./type_defs.md#stopmetricstreamsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopMetricStreamsInputRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_metric_streams(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopMetricStreamsInputRequestTypeDef](./type_defs.md#stopmetricstreamsinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
-Assigns one or more tags (key-value pairs) to the specified CloudWatch
-resource.
+Assigns one or more tags (key-value pairs) to the specified CloudWatch resource.
 
-Type annotations for `boto3.client("cloudwatch").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.tag_resource)
 
-Boto3 documentation:
-[CloudWatch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified resource.
 
-Type annotations for `boto3.client("cloudwatch").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.untag_resource)
 
-Boto3 documentation:
-[CloudWatch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudwatch").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_alarm_history")` ->
-  [DescribeAlarmHistoryPaginator](./paginators.md#describealarmhistorypaginator)
-- `client.get_paginator("describe_alarms")` ->
-  [DescribeAlarmsPaginator](./paginators.md#describealarmspaginator)
-- `client.get_paginator("get_metric_data")` ->
-  [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
-- `client.get_paginator("list_dashboards")` ->
-  [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
-- `client.get_paginator("list_metrics")` ->
-  [ListMetricsPaginator](./paginators.md#listmetricspaginator)
+- `client.get_paginator("describe_alarm_history")` -> [DescribeAlarmHistoryPaginator](./paginators.md#describealarmhistorypaginator)
+- `client.get_paginator("describe_alarms")` -> [DescribeAlarmsPaginator](./paginators.md#describealarmspaginator)
+- `client.get_paginator("get_metric_data")` -> [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+- `client.get_paginator("list_dashboards")` -> [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
+- `client.get_paginator("list_metrics")` -> [ListMetricsPaginator](./paginators.md#listmetricspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("cloudwatch").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_waiter` method with overloads.
 
-- `client.get_waiter("alarm_exists")` ->
-  [AlarmExistsWaiter](./waiters.md#alarmexistswaiter)
-- `client.get_waiter("composite_alarm_exists")` ->
-  [CompositeAlarmExistsWaiter](./waiters.md#compositealarmexistswaiter)
+- `client.get_waiter("alarm_exists")` -> [AlarmExistsWaiter](./waiters.md#alarmexistswaiter)
+- `client.get_waiter("composite_alarm_exists")` -> [CompositeAlarmExistsWaiter](./waiters.md#compositealarmexistswaiter)
+

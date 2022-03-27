@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-translate-module"></a>
-
-# Examples for boto3 Translate module
+# Examples
 
 > [Index](../README.md) > [Translate](./README.md) > Examples
 
-- [Examples for boto3 Translate module](#examples-for-boto3-translate-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+    type annotations stubs module [mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[translate]` package installed.
 
-Write your `Translate` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Translate` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type TranslateClient
-# and provides type checking and code completion
-client = session.client("translate")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListTerminologiesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_terminologies")
-for item in paginator.paginate(...):
-    # item has type ListTerminologiesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("translate")  # (1)
+    result = client.create_parallel_data()  # (2)
+    ```
+
+    1. client: [TranslateClient](./client.md)
+    2. result: [:material-code-braces: CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("translate")  # (1)
+
+    paginator = client.get_paginator("list_terminologies")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [TranslateClient](./client.md)
+    2. paginator: [ListTerminologiesPaginator](./paginators.md#listterminologiespaginator)
+    3. item: [:material-code-braces: ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[translate]` or a standalone `mypy_boto3_translate`
-package, you have to explicitly specify `client: TranslateClient` type
-annotation.
+With `boto3-stubs-lite[translate]`
+or a standalone `mypy_boto3_translate` package, you have to explicitly specify `client: TranslateClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_translate.client import TranslateClient
-from mypy_boto3_translate.paginator import ListTerminologiesPaginator
-
-from mypy_boto3_translate.literals import PaginatorName
-
-from mypy_boto3_translate.type_defs import bool
-from mypy_boto3_translate.type_defs import ListTerminologiesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: TranslateClient = session.client("translate")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_translate.client import TranslateClient
+    from mypy_boto3_translate.type_defs import CreateParallelDataResponseTypeDef
+    from mypy_boto3_translate.type_defs import CreateParallelDataRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_terminologies"
-paginator: ListTerminologiesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListTerminologiesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: TranslateClient = session.client("translate")
+
+    kwargs: CreateParallelDataRequestRequestTypeDef = {...}
+    result: CreateParallelDataResponseTypeDef = client.create_parallel_data(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_translate.client import TranslateClient
+    from mypy_boto3_translate.paginator import ListTerminologiesPaginator
+    from mypy_boto3_translate.type_defs import ListTerminologiesResponseTypeDef
+
+
+    session = Session()
+    client: TranslateClient = session.client("translate")
+
+    paginator: ListTerminologiesPaginator = client.get_paginator("list_terminologies")
+    for item in paginator.paginate(...):
+        item: ListTerminologiesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

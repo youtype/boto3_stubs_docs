@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-mturk-module"></a>
-
-# Examples for boto3 MTurk module
+# Examples
 
 > [Index](../README.md) > [MTurk](./README.md) > Examples
 
-- [Examples for boto3 MTurk module](#examples-for-boto3-mturk-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+    type annotations stubs module [mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mturk]` package installed.
 
-Write your `MTurk` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `MTurk` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MTurkClient
-# and provides type checking and code completion
-client = session.client("mturk")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_qualification_request()
 
-# paginator has type ListAssignmentsForHITPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_assignments_for_hit")
-for item in paginator.paginate(...):
-    # item has type ListAssignmentsForHITResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mturk")  # (1)
+    result = client.create_hit()  # (2)
+    ```
+
+    1. client: [MTurkClient](./client.md)
+    2. result: [:material-code-braces: CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mturk")  # (1)
+
+    paginator = client.get_paginator("list_assignments_for_hit")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MTurkClient](./client.md)
+    2. paginator: [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
+    3. item: [:material-code-braces: ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mturk]` or a standalone `mypy_boto3_mturk` package, you
-have to explicitly specify `client: MTurkClient` type annotation.
+With `boto3-stubs-lite[mturk]`
+or a standalone `mypy_boto3_mturk` package, you have to explicitly specify `client: MTurkClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mturk.client import MTurkClient
-from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator
-
-from mypy_boto3_mturk.literals import PaginatorName
-
-from mypy_boto3_mturk.type_defs import Dict[str, Any]
-from mypy_boto3_mturk.type_defs import ListAssignmentsForHITResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MTurkClient = session.client("mturk")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.accept_qualification_request()
+    from mypy_boto3_mturk.client import MTurkClient
+    from mypy_boto3_mturk.type_defs import CreateHITResponseTypeDef
+    from mypy_boto3_mturk.type_defs import CreateHITRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_assignments_for_hit"
-paginator: ListAssignmentsForHITPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAssignmentsForHITResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: MTurkClient = session.client("mturk")
+
+    kwargs: CreateHITRequestRequestTypeDef = {...}
+    result: CreateHITResponseTypeDef = client.create_hit(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mturk.client import MTurkClient
+    from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator
+    from mypy_boto3_mturk.type_defs import ListAssignmentsForHITResponseTypeDef
+
+
+    session = Session()
+    client: MTurkClient = session.client("mturk")
+
+    paginator: ListAssignmentsForHITPaginator = client.get_paginator("list_assignments_for_hit")
+    for item in paginator.paginate(...):
+        item: ListAssignmentsForHITResponseTypeDef
+        print(item)
+    ```
+
+
+
+
