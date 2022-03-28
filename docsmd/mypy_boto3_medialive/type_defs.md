@@ -1092,12 +1092,13 @@ class ChannelSummaryTypeDef(TypedDict):
     InputAttachments: NotRequired[List[InputAttachmentTypeDef]],  # (5)
     InputSpecification: NotRequired[InputSpecificationTypeDef],  # (6)
     LogLevel: NotRequired[LogLevelType],  # (7)
+    Maintenance: NotRequired[MaintenanceStatusTypeDef],  # (8)
     Name: NotRequired[str],
     PipelinesRunningCount: NotRequired[int],
     RoleArn: NotRequired[str],
-    State: NotRequired[ChannelStateType],  # (8)
+    State: NotRequired[ChannelStateType],  # (9)
     Tags: NotRequired[Dict[str, str]],
-    Vpc: NotRequired[VpcOutputSettingsDescriptionTypeDef],  # (9)
+    Vpc: NotRequired[VpcOutputSettingsDescriptionTypeDef],  # (10)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -1107,8 +1108,9 @@ class ChannelSummaryTypeDef(TypedDict):
 5. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 6. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 7. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-8. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
-9. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
+8. See [:material-code-braces: MaintenanceStatusTypeDef](./type_defs.md#maintenancestatustypedef) 
+9. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+10. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
 ## ChannelTypeDef
 
 ```python title="Usage Example"
@@ -1132,13 +1134,14 @@ class ChannelTypeDef(TypedDict):
     InputAttachments: NotRequired[List[InputAttachmentTypeDef]],  # (6)
     InputSpecification: NotRequired[InputSpecificationTypeDef],  # (7)
     LogLevel: NotRequired[LogLevelType],  # (8)
+    Maintenance: NotRequired[MaintenanceStatusTypeDef],  # (9)
     Name: NotRequired[str],
-    PipelineDetails: NotRequired[List[PipelineDetailTypeDef]],  # (9)
+    PipelineDetails: NotRequired[List[PipelineDetailTypeDef]],  # (10)
     PipelinesRunningCount: NotRequired[int],
     RoleArn: NotRequired[str],
-    State: NotRequired[ChannelStateType],  # (10)
+    State: NotRequired[ChannelStateType],  # (11)
     Tags: NotRequired[Dict[str, str]],
-    Vpc: NotRequired[VpcOutputSettingsDescriptionTypeDef],  # (11)
+    Vpc: NotRequired[VpcOutputSettingsDescriptionTypeDef],  # (12)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -1149,9 +1152,10 @@ class ChannelTypeDef(TypedDict):
 6. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 7. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 8. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-9. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
-10. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
-11. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
+9. See [:material-code-braces: MaintenanceStatusTypeDef](./type_defs.md#maintenancestatustypedef) 
+10. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
+11. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+12. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
 ## ClaimDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1188,12 +1192,13 @@ class CreateChannelRequestRequestTypeDef(TypedDict):
     InputAttachments: NotRequired[Sequence[InputAttachmentTypeDef]],  # (5)
     InputSpecification: NotRequired[InputSpecificationTypeDef],  # (6)
     LogLevel: NotRequired[LogLevelType],  # (7)
+    Maintenance: NotRequired[MaintenanceCreateSettingsTypeDef],  # (8)
     Name: NotRequired[str],
     RequestId: NotRequired[str],
     Reserved: NotRequired[str],
     RoleArn: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],
-    Vpc: NotRequired[VpcOutputSettingsTypeDef],  # (8)
+    Vpc: NotRequired[VpcOutputSettingsTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -1203,7 +1208,8 @@ class CreateChannelRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 6. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 7. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-8. See [:material-code-braces: VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef) 
+8. See [:material-code-braces: MaintenanceCreateSettingsTypeDef](./type_defs.md#maintenancecreatesettingstypedef) 
+9. See [:material-code-braces: VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef) 
 ## CreateChannelResponseTypeDef
 
 ```python title="Usage Example"
@@ -1489,6 +1495,7 @@ def get_value() -> DeleteChannelResponseTypeDef:
         "InputAttachments": ...,
         "InputSpecification": ...,
         "LogLevel": ...,
+        "Maintenance": ...,
         "Name": ...,
         "PipelineDetails": ...,
         "PipelinesRunningCount": ...,
@@ -1512,14 +1519,15 @@ class DeleteChannelResponseTypeDef(TypedDict):
     InputAttachments: List[InputAttachmentTypeDef],  # (6)
     InputSpecification: InputSpecificationTypeDef,  # (7)
     LogLevel: LogLevelType,  # (8)
+    Maintenance: MaintenanceStatusTypeDef,  # (9)
     Name: str,
-    PipelineDetails: List[PipelineDetailTypeDef],  # (9)
+    PipelineDetails: List[PipelineDetailTypeDef],  # (10)
     PipelinesRunningCount: int,
     RoleArn: str,
-    State: ChannelStateType,  # (10)
+    State: ChannelStateType,  # (11)
     Tags: Dict[str, str],
-    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (11)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
+    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (12)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (13)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -1530,10 +1538,11 @@ class DeleteChannelResponseTypeDef(TypedDict):
 6. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 7. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 8. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-9. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
-10. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
-11. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
-12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+9. See [:material-code-braces: MaintenanceStatusTypeDef](./type_defs.md#maintenancestatustypedef) 
+10. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
+11. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+12. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
+13. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteInputRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1882,6 +1891,7 @@ def get_value() -> DescribeChannelResponseTypeDef:
         "InputAttachments": ...,
         "InputSpecification": ...,
         "LogLevel": ...,
+        "Maintenance": ...,
         "Name": ...,
         "PipelineDetails": ...,
         "PipelinesRunningCount": ...,
@@ -1905,14 +1915,15 @@ class DescribeChannelResponseTypeDef(TypedDict):
     InputAttachments: List[InputAttachmentTypeDef],  # (6)
     InputSpecification: InputSpecificationTypeDef,  # (7)
     LogLevel: LogLevelType,  # (8)
+    Maintenance: MaintenanceStatusTypeDef,  # (9)
     Name: str,
-    PipelineDetails: List[PipelineDetailTypeDef],  # (9)
+    PipelineDetails: List[PipelineDetailTypeDef],  # (10)
     PipelinesRunningCount: int,
     RoleArn: str,
-    State: ChannelStateType,  # (10)
+    State: ChannelStateType,  # (11)
     Tags: Dict[str, str],
-    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (11)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
+    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (12)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (13)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -1923,10 +1934,11 @@ class DescribeChannelResponseTypeDef(TypedDict):
 6. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 7. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 8. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-9. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
-10. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
-11. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
-12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+9. See [:material-code-braces: MaintenanceStatusTypeDef](./type_defs.md#maintenancestatustypedef) 
+10. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
+11. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+12. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
+13. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInputDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4889,6 +4901,63 @@ class M3u8SettingsTypeDef(TypedDict):
 2. See [:material-code-brackets: M3u8PcrControlType](./literals.md#m3u8pcrcontroltype) 
 3. See [:material-code-brackets: M3u8Scte35BehaviorType](./literals.md#m3u8scte35behaviortype) 
 4. See [:material-code-brackets: M3u8TimedMetadataBehaviorType](./literals.md#m3u8timedmetadatabehaviortype) 
+## MaintenanceCreateSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import MaintenanceCreateSettingsTypeDef
+
+def get_value() -> MaintenanceCreateSettingsTypeDef:
+    return {
+        "MaintenanceDay": ...,
+    }
+```
+
+```python title="Definition"
+class MaintenanceCreateSettingsTypeDef(TypedDict):
+    MaintenanceDay: NotRequired[MaintenanceDayType],  # (1)
+    MaintenanceStartTime: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MaintenanceDayType](./literals.md#maintenancedaytype) 
+## MaintenanceStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import MaintenanceStatusTypeDef
+
+def get_value() -> MaintenanceStatusTypeDef:
+    return {
+        "MaintenanceDay": ...,
+    }
+```
+
+```python title="Definition"
+class MaintenanceStatusTypeDef(TypedDict):
+    MaintenanceDay: NotRequired[MaintenanceDayType],  # (1)
+    MaintenanceDeadline: NotRequired[str],
+    MaintenanceScheduledDate: NotRequired[str],
+    MaintenanceStartTime: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MaintenanceDayType](./literals.md#maintenancedaytype) 
+## MaintenanceUpdateSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import MaintenanceUpdateSettingsTypeDef
+
+def get_value() -> MaintenanceUpdateSettingsTypeDef:
+    return {
+        "MaintenanceDay": ...,
+    }
+```
+
+```python title="Definition"
+class MaintenanceUpdateSettingsTypeDef(TypedDict):
+    MaintenanceDay: NotRequired[MaintenanceDayType],  # (1)
+    MaintenanceScheduledDate: NotRequired[str],
+    MaintenanceStartTime: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MaintenanceDayType](./literals.md#maintenancedaytype) 
 ## MediaConnectFlowRequestTypeDef
 
 ```python title="Usage Example"
@@ -6387,6 +6456,7 @@ def get_value() -> StartChannelResponseTypeDef:
         "InputAttachments": ...,
         "InputSpecification": ...,
         "LogLevel": ...,
+        "Maintenance": ...,
         "Name": ...,
         "PipelineDetails": ...,
         "PipelinesRunningCount": ...,
@@ -6410,14 +6480,15 @@ class StartChannelResponseTypeDef(TypedDict):
     InputAttachments: List[InputAttachmentTypeDef],  # (6)
     InputSpecification: InputSpecificationTypeDef,  # (7)
     LogLevel: LogLevelType,  # (8)
+    Maintenance: MaintenanceStatusTypeDef,  # (9)
     Name: str,
-    PipelineDetails: List[PipelineDetailTypeDef],  # (9)
+    PipelineDetails: List[PipelineDetailTypeDef],  # (10)
     PipelinesRunningCount: int,
     RoleArn: str,
-    State: ChannelStateType,  # (10)
+    State: ChannelStateType,  # (11)
     Tags: Dict[str, str],
-    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (11)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
+    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (12)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (13)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -6428,10 +6499,11 @@ class StartChannelResponseTypeDef(TypedDict):
 6. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 7. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 8. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-9. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
-10. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
-11. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
-12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+9. See [:material-code-braces: MaintenanceStatusTypeDef](./type_defs.md#maintenancestatustypedef) 
+10. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
+11. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+12. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
+13. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartMultiplexRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6598,6 +6670,7 @@ def get_value() -> StopChannelResponseTypeDef:
         "InputAttachments": ...,
         "InputSpecification": ...,
         "LogLevel": ...,
+        "Maintenance": ...,
         "Name": ...,
         "PipelineDetails": ...,
         "PipelinesRunningCount": ...,
@@ -6621,14 +6694,15 @@ class StopChannelResponseTypeDef(TypedDict):
     InputAttachments: List[InputAttachmentTypeDef],  # (6)
     InputSpecification: InputSpecificationTypeDef,  # (7)
     LogLevel: LogLevelType,  # (8)
+    Maintenance: MaintenanceStatusTypeDef,  # (9)
     Name: str,
-    PipelineDetails: List[PipelineDetailTypeDef],  # (9)
+    PipelineDetails: List[PipelineDetailTypeDef],  # (10)
     PipelinesRunningCount: int,
     RoleArn: str,
-    State: ChannelStateType,  # (10)
+    State: ChannelStateType,  # (11)
     Tags: Dict[str, str],
-    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (11)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
+    Vpc: VpcOutputSettingsDescriptionTypeDef,  # (12)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (13)
 ```
 
 1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
@@ -6639,10 +6713,11 @@ class StopChannelResponseTypeDef(TypedDict):
 6. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 7. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 8. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-9. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
-10. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
-11. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
-12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+9. See [:material-code-braces: MaintenanceStatusTypeDef](./type_defs.md#maintenancestatustypedef) 
+10. See [:material-code-braces: PipelineDetailTypeDef](./type_defs.md#pipelinedetailtypedef) 
+11. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+12. See [:material-code-braces: VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef) 
+13. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopMultiplexRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6949,6 +7024,7 @@ class UpdateChannelRequestRequestTypeDef(TypedDict):
     InputAttachments: NotRequired[Sequence[InputAttachmentTypeDef]],  # (4)
     InputSpecification: NotRequired[InputSpecificationTypeDef],  # (5)
     LogLevel: NotRequired[LogLevelType],  # (6)
+    Maintenance: NotRequired[MaintenanceUpdateSettingsTypeDef],  # (7)
     Name: NotRequired[str],
     RoleArn: NotRequired[str],
 ```
@@ -6959,6 +7035,7 @@ class UpdateChannelRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 5. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 6. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+7. See [:material-code-braces: MaintenanceUpdateSettingsTypeDef](./type_defs.md#maintenanceupdatesettingstypedef) 
 ## UpdateChannelResponseTypeDef
 
 ```python title="Usage Example"

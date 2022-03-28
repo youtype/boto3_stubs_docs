@@ -305,13 +305,14 @@ def create_channel(
     InputAttachments: Sequence[InputAttachmentTypeDef] = ...,  # (5)
     InputSpecification: InputSpecificationTypeDef = ...,  # (6)
     LogLevel: LogLevelType = ...,  # (7)
+    Maintenance: MaintenanceCreateSettingsTypeDef = ...,  # (8)
     Name: str = ...,
     RequestId: str = ...,
     Reserved: str = ...,
     RoleArn: str = ...,
     Tags: Mapping[str, str] = ...,
-    Vpc: VpcOutputSettingsTypeDef = ...,  # (8)
-) -> CreateChannelResponseTypeDef:  # (9)
+    Vpc: VpcOutputSettingsTypeDef = ...,  # (9)
+) -> CreateChannelResponseTypeDef:  # (10)
     ...
 ```
 
@@ -322,8 +323,9 @@ def create_channel(
 5. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 6. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 7. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-8. See [:material-code-braces: VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef) 
-9. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
+8. See [:material-code-braces: MaintenanceCreateSettingsTypeDef](./type_defs.md#maintenancecreatesettingstypedef) 
+9. See [:material-code-braces: VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef) 
+10. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1659,9 +1661,10 @@ def update_channel(
     InputAttachments: Sequence[InputAttachmentTypeDef] = ...,  # (4)
     InputSpecification: InputSpecificationTypeDef = ...,  # (5)
     LogLevel: LogLevelType = ...,  # (6)
+    Maintenance: MaintenanceUpdateSettingsTypeDef = ...,  # (7)
     Name: str = ...,
     RoleArn: str = ...,
-) -> UpdateChannelResponseTypeDef:  # (7)
+) -> UpdateChannelResponseTypeDef:  # (8)
     ...
 ```
 
@@ -1671,7 +1674,8 @@ def update_channel(
 4. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
 5. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
 6. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-7. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
+7. See [:material-code-braces: MaintenanceUpdateSettingsTypeDef](./type_defs.md#maintenanceupdatesettingstypedef) 
+8. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

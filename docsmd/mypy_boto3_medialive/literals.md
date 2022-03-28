@@ -3234,6 +3234,26 @@ M3u8TimedMetadataBehaviorType = Literal[
     "PASSTHROUGH",
 ]
 ```
+## MaintenanceDayType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import MaintenanceDayType
+
+def get_value() -> MaintenanceDayType:
+    return "FRIDAY"
+```
+
+```python title="Definition"
+MaintenanceDayType = Literal[
+    "FRIDAY",
+    "MONDAY",
+    "SATURDAY",
+    "SUNDAY",
+    "THURSDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+]
+```
 ## MotionGraphicsInsertionType
 
 ```python title="Usage Example"

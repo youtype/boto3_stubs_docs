@@ -778,12 +778,14 @@ ResourceServiceName = Literal[
 from mypy_boto3_customer_profiles.literals import RegionName
 
 def get_value() -> RegionName:
-    return "ap-northeast-1"
+    return "af-south-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "af-south-1",
     "ap-northeast-1",
+    "ap-northeast-2",
     "ap-southeast-1",
     "ap-southeast-2",
     "ca-central-1",
