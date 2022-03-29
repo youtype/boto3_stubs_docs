@@ -35,6 +35,7 @@ except (
     client.AWSOrganizationsNotInUseException,
     client.AccessDeniedException,
     client.AccessDeniedForDependencyException,
+    client.AccountAlreadyClosedException,
     client.AccountAlreadyRegisteredException,
     client.AccountNotFoundException,
     client.AccountNotRegisteredException,
@@ -43,6 +44,7 @@ except (
     client.ChildNotFoundException,
     client.ClientError,
     client.ConcurrentModificationException,
+    client.ConflictException,
     client.ConstraintViolationException,
     client.CreateAccountStatusNotFoundException,
     client.DestinationParentNotFoundException,
@@ -198,10 +200,39 @@ parent.cancel_handshake(**kwargs)
 
 1. See [:material-code-braces: CancelHandshakeRequestRequestTypeDef](./type_defs.md#cancelhandshakerequestrequesttypedef) 
 
+### close\_account
+
+Closes an Amazon Web Services account that is now a part of an Organizations,
+either created within the organization, or invited to join the organization.
+
+Type annotations and code completion for `#!python boto3.client("organizations").close_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.close_account)
+
+```python title="Method definition"
+def close_account(
+    self,
+    *,
+    AccountId: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: CloseAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.close_account(**kwargs)
+```
+
+1. See [:material-code-braces: CloseAccountRequestRequestTypeDef](./type_defs.md#closeaccountrequestrequesttypedef) 
+
 ### create\_account
 
-Creates an AWS account that is automatically a member of the organization whose
-credentials made the request.
+Creates an Amazon Web Services account that is automatically a member of the
+organization whose credentials made the request.
 
 Type annotations and code completion for `#!python boto3.client("organizations").create_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
@@ -238,7 +269,7 @@ parent.create_account(**kwargs)
 ### create\_gov\_cloud\_account
 
 This action is available if all of the following are true * You're authorized to
-create accounts in the AWS GovCloud (US) Region.
+create accounts in the Amazon Web Services GovCloud (US) Region.
 
 Type annotations and code completion for `#!python boto3.client("organizations").create_gov_cloud_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
@@ -274,7 +305,7 @@ parent.create_gov_cloud_account(**kwargs)
 
 ### create\_organization
 
-Creates an AWS organization.
+Creates an Amazon Web Services organization.
 
 Type annotations and code completion for `#!python boto3.client("organizations").create_organization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
@@ -338,7 +369,7 @@ parent.create_organizational_unit(**kwargs)
 ### create\_policy
 
 Creates a policy of a specified type that you can attach to a root, an
-organizational unit (OU), or an individual AWS account.
+organizational unit (OU), or an individual Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("organizations").create_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
@@ -476,8 +507,8 @@ parent.delete_policy(**kwargs)
 
 ### deregister\_delegated\_administrator
 
-Removes the specified member AWS account as a delegated administrator for the
-specified AWS service.
+Removes the specified member Amazon Web Services account as a delegated
+administrator for the specified Amazon Web Services service.
 
 Type annotations and code completion for `#!python boto3.client("organizations").deregister_delegated_administrator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
@@ -507,7 +538,7 @@ parent.deregister_delegated_administrator(**kwargs)
 
 ### describe\_account
 
-Retrieves AWS Organizations-related information about the specified account.
+Retrieves Organizations-related information about the specified account.
 
 Type annotations and code completion for `#!python boto3.client("organizations").describe_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
@@ -730,8 +761,8 @@ parent.detach_policy(**kwargs)
 
 ### disable\_aws\_service\_access
 
-Disables the integration of an AWS service (the service that is specified by
-`ServicePrincipal` ) with AWS Organizations.
+Disables the integration of an Amazon Web Services service (the service that is
+specified by `ServicePrincipal` ) with Organizations.
 
 Type annotations and code completion for `#!python boto3.client("organizations").disable_aws_service_access` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
@@ -807,8 +838,8 @@ def enable_all_features(
 
 ### enable\_aws\_service\_access
 
-Enables the integration of an AWS service (the service that is specified by
-`ServicePrincipal` ) with AWS Organizations.
+Enables the integration of an Amazon Web Services service (the service that is
+specified by `ServicePrincipal` ) with Organizations.
 
 Type annotations and code completion for `#!python boto3.client("organizations").enable_aws_service_access` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
@@ -998,8 +1029,8 @@ parent.list_accounts_for_parent(**kwargs)
 
 ### list\_aws\_service\_access\_for\_organization
 
-Returns a list of the AWS services that you enabled to integrate with your
-organization.
+Returns a list of the Amazon Web Services services that you enabled to integrate
+with your organization.
 
 Type annotations and code completion for `#!python boto3.client("organizations").list_aws_service_access_for_organization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
@@ -1097,8 +1128,8 @@ parent.list_create_account_status(**kwargs)
 
 ### list\_delegated\_administrators
 
-Lists the AWS accounts that are designated as delegated administrators in this
-organization.
+Lists the Amazon Web Services accounts that are designated as delegated
+administrators in this organization.
 
 Type annotations and code completion for `#!python boto3.client("organizations").list_delegated_administrators` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
@@ -1129,8 +1160,8 @@ parent.list_delegated_administrators(**kwargs)
 
 ### list\_delegated\_services\_for\_account
 
-List the AWS services for which the specified account is a delegated
-administrator.
+List the Amazon Web Services services for which the specified account is a
+delegated administrator.
 
 Type annotations and code completion for `#!python boto3.client("organizations").list_delegated_services_for_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
@@ -1483,7 +1514,7 @@ parent.move_account(**kwargs)
 ### register\_delegated\_administrator
 
 Enables the specified member account to administer the Organizations features of
-the specified AWS service.
+the specified Amazon Web Services service.
 
 Type annotations and code completion for `#!python boto3.client("organizations").register_delegated_administrator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)

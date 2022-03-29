@@ -34,6 +34,7 @@ def get_value() -> AccountStatusType:
 ```python title="Definition"
 AccountStatusType = Literal[
     "ACTIVE",
+    "PENDING_CLOSURE",
     "SUSPENDED",
 ]
 ```
