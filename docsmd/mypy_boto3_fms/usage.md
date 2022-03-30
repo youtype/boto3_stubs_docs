@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("fms")  # (1)
-    result = client.get_apps_list()  # (2)
+    result = client.associate_third_party_firewall()  # (2)
     ```
 
     1. client: [FMSClient](./client.md)
-    2. result: [:material-code-braces: GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef) 
+    2. result: [:material-code-braces: AssociateThirdPartyFirewallResponseTypeDef](./type_defs.md#associatethirdpartyfirewallresponsetypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_fms.client import FMSClient
-    from mypy_boto3_fms.type_defs import GetAppsListResponseTypeDef
-    from mypy_boto3_fms.type_defs import GetAppsListRequestRequestTypeDef
+    from mypy_boto3_fms.type_defs import AssociateThirdPartyFirewallResponseTypeDef
+    from mypy_boto3_fms.type_defs import AssociateThirdPartyFirewallRequestRequestTypeDef
 
 
     session = Session()
 
     client: FMSClient = session.client("fms")
 
-    kwargs: GetAppsListRequestRequestTypeDef = {...}
-    result: GetAppsListResponseTypeDef = client.get_apps_list(**kwargs)
+    kwargs: AssociateThirdPartyFirewallRequestRequestTypeDef = {...}
+    result: AssociateThirdPartyFirewallResponseTypeDef = client.associate_third_party_firewall(**kwargs)
     ```
 
 

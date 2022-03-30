@@ -3555,6 +3555,21 @@ InstanceAttributeNameType = Literal[
     "userData",
 ]
 ```
+## InstanceAutoRecoveryStateType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import InstanceAutoRecoveryStateType
+
+def get_value() -> InstanceAutoRecoveryStateType:
+    return "default"
+```
+
+```python title="Definition"
+InstanceAutoRecoveryStateType = Literal[
+    "default",
+    "disabled",
+]
+```
 ## InstanceEventWindowStateType
 
 ```python title="Usage Example"
@@ -4658,6 +4673,21 @@ def get_value() -> KeyTypeType:
 KeyTypeType = Literal[
     "ed25519",
     "rsa",
+]
+```
+## LaunchTemplateAutoRecoveryStateType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import LaunchTemplateAutoRecoveryStateType
+
+def get_value() -> LaunchTemplateAutoRecoveryStateType:
+    return "default"
+```
+
+```python title="Definition"
+LaunchTemplateAutoRecoveryStateType = Literal[
+    "default",
+    "disabled",
 ]
 ```
 ## LaunchTemplateErrorCodeType

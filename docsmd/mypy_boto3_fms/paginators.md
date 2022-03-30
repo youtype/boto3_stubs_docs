@@ -215,3 +215,46 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListProtocolsListsRequestListProtocolsListsPaginateTypeDef](./type_defs.md#listprotocolslistsrequestlistprotocolslistspaginatetypedef) 
+## ListThirdPartyFirewallFirewallPoliciesPaginator
+
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator("list_third_party_firewall_firewall_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListThirdPartyFirewallFirewallPolicies)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListThirdPartyFirewallFirewallPoliciesPaginator
+
+def get_list_third_party_firewall_firewall_policies_paginator() -> ListThirdPartyFirewallFirewallPoliciesPaginator:
+    return Session().client("fms").get_paginator("list_third_party_firewall_firewall_policies")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListThirdPartyFirewallFirewallPoliciesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ThirdPartyFirewall: ThirdPartyFirewallType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListThirdPartyFirewallFirewallPoliciesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ThirdPartyFirewallType](./literals.md#thirdpartyfirewalltype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListThirdPartyFirewallFirewallPoliciesResponseTypeDef](./type_defs.md#listthirdpartyfirewallfirewallpoliciesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListThirdPartyFirewallFirewallPoliciesRequestListThirdPartyFirewallFirewallPoliciesPaginateTypeDef = {  # (1)
+    "ThirdPartyFirewall": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListThirdPartyFirewallFirewallPoliciesRequestListThirdPartyFirewallFirewallPoliciesPaginateTypeDef](./type_defs.md#listthirdpartyfirewallfirewallpoliciesrequestlistthirdpartyfirewallfirewallpoliciespaginatetypedef) 

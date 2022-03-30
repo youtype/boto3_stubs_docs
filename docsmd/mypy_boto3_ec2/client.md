@@ -14267,6 +14267,39 @@ parent.modify_instance_event_window(**kwargs)
 
 1. See [:material-code-braces: ModifyInstanceEventWindowRequestRequestTypeDef](./type_defs.md#modifyinstanceeventwindowrequestrequesttypedef) 
 
+### modify\_instance\_maintenance\_options
+
+Modifies the recovery behavior of your instance to disable simplified automatic
+recovery or set the recovery behavior to default.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_instance_maintenance_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_maintenance_options)
+
+```python title="Method definition"
+def modify_instance_maintenance_options(
+    self,
+    *,
+    InstanceId: str,
+    AutoRecovery: InstanceAutoRecoveryStateType = ...,  # (1)
+    DryRun: bool = ...,
+) -> ModifyInstanceMaintenanceOptionsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype) 
+2. See [:material-code-braces: ModifyInstanceMaintenanceOptionsResultTypeDef](./type_defs.md#modifyinstancemaintenanceoptionsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyInstanceMaintenanceOptionsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.modify_instance_maintenance_options(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyInstanceMaintenanceOptionsRequestRequestTypeDef](./type_defs.md#modifyinstancemaintenanceoptionsrequestrequesttypedef) 
+
 ### modify\_instance\_metadata\_options
 
 Modify the instance metadata parameters on a running or stopped instance.
@@ -17149,7 +17182,8 @@ def run_instances(
     MetadataOptions: InstanceMetadataOptionsRequestTypeDef = ...,  # (19)
     EnclaveOptions: EnclaveOptionsRequestTypeDef = ...,  # (20)
     PrivateDnsNameOptions: PrivateDnsNameOptionsRequestTypeDef = ...,  # (21)
-) -> ReservationResponseMetadataTypeDef:  # (22)
+    MaintenanceOptions: InstanceMaintenanceOptionsRequestTypeDef = ...,  # (22)
+) -> ReservationResponseMetadataTypeDef:  # (23)
     ...
 ```
 
@@ -17174,7 +17208,8 @@ def run_instances(
 19. See [:material-code-braces: InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef) 
 20. See [:material-code-braces: EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef) 
 21. See [:material-code-braces: PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef) 
-22. See [:material-code-braces: ReservationResponseMetadataTypeDef](./type_defs.md#reservationresponsemetadatatypedef) 
+22. See [:material-code-braces: InstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#instancemaintenanceoptionsrequesttypedef) 
+23. See [:material-code-braces: ReservationResponseMetadataTypeDef](./type_defs.md#reservationresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

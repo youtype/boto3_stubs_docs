@@ -978,6 +978,7 @@ def create_instances(
     MetadataOptions: InstanceMetadataOptionsRequestTypeDef = ...,  # (19)
     EnclaveOptions: EnclaveOptionsRequestTypeDef = ...,  # (20)
     PrivateDnsNameOptions: PrivateDnsNameOptionsRequestTypeDef = ...,  # (21)
+    MaintenanceOptions: InstanceMaintenanceOptionsRequestTypeDef = ...,  # (22)
 ) -> List[Instance]:
     ...
 ```
@@ -1003,6 +1004,7 @@ def create_instances(
 19. See [:material-code-braces: InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef) 
 20. See [:material-code-braces: EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef) 
 21. See [:material-code-braces: PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef) 
+22. See [:material-code-braces: InstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#instancemaintenanceoptionsrequesttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2305,6 +2307,7 @@ def get_resource() -> Instance:
 - `usage_operation_update_time`: `datetime`
 - `private_dns_name_options`: [PrivateDnsNameOptionsResponseResponseMetadataTypeDef](./type_defs.md#privatednsnameoptionsresponseresponsemetadatatypedef)
 - `ipv6_address`: `str`
+- `maintenance_options`: [InstanceMaintenanceOptionsResponseMetadataTypeDef](./type_defs.md#instancemaintenanceoptionsresponsemetadatatypedef)
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
 - `image`: [Image](#image)
@@ -5670,6 +5673,7 @@ def create_instances(
     MetadataOptions: InstanceMetadataOptionsRequestTypeDef = ...,  # (19)
     EnclaveOptions: EnclaveOptionsRequestTypeDef = ...,  # (20)
     PrivateDnsNameOptions: PrivateDnsNameOptionsRequestTypeDef = ...,  # (21)
+    MaintenanceOptions: InstanceMaintenanceOptionsRequestTypeDef = ...,  # (22)
 ) -> List[Instance]:
     ...
 ```
@@ -5695,6 +5699,7 @@ def create_instances(
 19. See [:material-code-braces: InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef) 
 20. See [:material-code-braces: EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef) 
 21. See [:material-code-braces: PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef) 
+22. See [:material-code-braces: InstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#instancemaintenanceoptionsrequesttypedef) 
 
 
 ```python title="Usage example with kwargs"

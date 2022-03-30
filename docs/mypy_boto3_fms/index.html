@@ -35695,6 +35695,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listmemberaccountspaginator">ListMemberAccountsPaginator</a></li>
 <li><a href="paginators/#listpoliciespaginator">ListPoliciesPaginator</a></li>
 <li><a href="paginators/#listprotocolslistspaginator">ListProtocolsListsPaginator</a></li>
+<li><a href="paginators/#listthirdpartyfirewallfirewallpoliciespaginator">ListThirdPartyFirewallFirewallPoliciesPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
@@ -35714,10 +35715,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listmemberaccountspaginatorname">ListMemberAccountsPaginatorName</a></li>
 <li><a href="literals/#listpoliciespaginatorname">ListPoliciesPaginatorName</a></li>
 <li><a href="literals/#listprotocolslistspaginatorname">ListProtocolsListsPaginatorName</a></li>
+<li><a href="literals/#listthirdpartyfirewallfirewallpoliciespaginatorname">ListThirdPartyFirewallFirewallPoliciesPaginatorName</a></li>
+<li><a href="literals/#marketplacesubscriptiononboardingstatustype">MarketplaceSubscriptionOnboardingStatusType</a></li>
 <li><a href="literals/#policycompliancestatustypetype">PolicyComplianceStatusTypeType</a></li>
 <li><a href="literals/#remediationactiontypetype">RemediationActionTypeType</a></li>
 <li><a href="literals/#securityservicetypetype">SecurityServiceTypeType</a></li>
 <li><a href="literals/#targettypetype">TargetTypeType</a></li>
+<li><a href="literals/#thirdpartyfirewallassociationstatustype">ThirdPartyFirewallAssociationStatusType</a></li>
+<li><a href="literals/#thirdpartyfirewalltype">ThirdPartyFirewallType</a></li>
 <li><a href="literals/#violationreasontype">ViolationReasonType</a></li>
 <li><a href="literals/#fmsservicename">FMSServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -35740,6 +35745,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#appslistdatasummarytypedef">AppsListDataSummaryTypeDef</a></li>
 <li><a href="type_defs/#appslistdatatypedef">AppsListDataTypeDef</a></li>
 <li><a href="type_defs/#associateadminaccountrequestrequesttypedef">AssociateAdminAccountRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associatethirdpartyfirewallrequestrequesttypedef">AssociateThirdPartyFirewallRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associatethirdpartyfirewallresponsetypedef">AssociateThirdPartyFirewallResponseTypeDef</a></li>
 <li><a href="type_defs/#awsec2instanceviolationtypedef">AwsEc2InstanceViolationTypeDef</a></li>
 <li><a href="type_defs/#awsec2networkinterfaceviolationtypedef">AwsEc2NetworkInterfaceViolationTypeDef</a></li>
 <li><a href="type_defs/#awsvpcsecuritygroupviolationtypedef">AwsVPCSecurityGroupViolationTypeDef</a></li>
@@ -35747,6 +35754,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteappslistrequestrequesttypedef">DeleteAppsListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepolicyrequestrequesttypedef">DeletePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteprotocolslistrequestrequesttypedef">DeleteProtocolsListRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociatethirdpartyfirewallrequestrequesttypedef">DisassociateThirdPartyFirewallRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociatethirdpartyfirewallresponsetypedef">DisassociateThirdPartyFirewallResponseTypeDef</a></li>
 <li><a href="type_defs/#dnsduplicaterulegroupviolationtypedef">DnsDuplicateRuleGroupViolationTypeDef</a></li>
 <li><a href="type_defs/#dnsrulegrouplimitexceededviolationtypedef">DnsRuleGroupLimitExceededViolationTypeDef</a></li>
 <li><a href="type_defs/#dnsrulegrouppriorityconflictviolationtypedef">DnsRuleGroupPriorityConflictViolationTypeDef</a></li>
@@ -35761,6 +35770,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#expectedroutetypedef">ExpectedRouteTypeDef</a></li>
 <li><a href="type_defs/#fmspolicyupdatefirewallcreationconfigactiontypedef">FMSPolicyUpdateFirewallCreationConfigActionTypeDef</a></li>
 <li><a href="type_defs/#firewallsubnetisoutofscopeviolationtypedef">FirewallSubnetIsOutOfScopeViolationTypeDef</a></li>
+<li><a href="type_defs/#firewallsubnetmissingvpcendpointviolationtypedef">FirewallSubnetMissingVPCEndpointViolationTypeDef</a></li>
 <li><a href="type_defs/#getadminaccountresponsetypedef">GetAdminAccountResponseTypeDef</a></li>
 <li><a href="type_defs/#getappslistrequestrequesttypedef">GetAppsListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getappslistresponsetypedef">GetAppsListResponseTypeDef</a></li>
@@ -35773,6 +35783,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getprotectionstatusresponsetypedef">GetProtectionStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#getprotocolslistrequestrequesttypedef">GetProtocolsListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getprotocolslistresponsetypedef">GetProtocolsListResponseTypeDef</a></li>
+<li><a href="type_defs/#getthirdpartyfirewallassociationstatusrequestrequesttypedef">GetThirdPartyFirewallAssociationStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getthirdpartyfirewallassociationstatusresponsetypedef">GetThirdPartyFirewallAssociationStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#getviolationdetailsrequestrequesttypedef">GetViolationDetailsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getviolationdetailsresponsetypedef">GetViolationDetailsResponseTypeDef</a></li>
 <li><a href="type_defs/#listappslistsrequestlistappslistspaginatetypedef">ListAppsListsRequestListAppsListsPaginateTypeDef</a></li>
@@ -35792,6 +35804,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listprotocolslistsresponsetypedef">ListProtocolsListsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#listthirdpartyfirewallfirewallpoliciesrequestlistthirdpartyfirewallfirewallpoliciespaginatetypedef">ListThirdPartyFirewallFirewallPoliciesRequestListThirdPartyFirewallFirewallPoliciesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listthirdpartyfirewallfirewallpoliciesrequestrequesttypedef">ListThirdPartyFirewallFirewallPoliciesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listthirdpartyfirewallfirewallpoliciesresponsetypedef">ListThirdPartyFirewallFirewallPoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#networkfirewallblackholeroutedetectedviolationtypedef">NetworkFirewallBlackHoleRouteDetectedViolationTypeDef</a></li>
 <li><a href="type_defs/#networkfirewallinternettrafficnotinspectedviolationtypedef">NetworkFirewallInternetTrafficNotInspectedViolationTypeDef</a></li>
 <li><a href="type_defs/#networkfirewallinvalidrouteconfigurationviolationtypedef">NetworkFirewallInvalidRouteConfigurationViolationTypeDef</a></li>
@@ -35836,6 +35851,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#statelessrulegrouptypedef">StatelessRuleGroupTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#thirdpartyfirewallfirewallpolicytypedef">ThirdPartyFirewallFirewallPolicyTypeDef</a></li>
+<li><a href="type_defs/#thirdpartyfirewallmissingexpectedroutetableviolationtypedef">ThirdPartyFirewallMissingExpectedRouteTableViolationTypeDef</a></li>
+<li><a href="type_defs/#thirdpartyfirewallmissingfirewallviolationtypedef">ThirdPartyFirewallMissingFirewallViolationTypeDef</a></li>
+<li><a href="type_defs/#thirdpartyfirewallmissingsubnetviolationtypedef">ThirdPartyFirewallMissingSubnetViolationTypeDef</a></li>
+<li><a href="type_defs/#thirdpartyfirewallpolicytypedef">ThirdPartyFirewallPolicyTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#violationdetailtypedef">ViolationDetailTypeDef</a></li>
 </ul>

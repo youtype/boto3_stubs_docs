@@ -35575,11 +35575,11 @@ type checking and code completion should work out of the box.</p>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;fms&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_apps_list</span><span class="p">()</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">associate_third_party_firewall</span><span class="p">()</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>client: <a href="../client/">FMSClient</a></li>
-<li>result: <a href="../type_defs/#getappslistresponsetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2z"/></svg></span> GetAppsListResponseTypeDef</a> </li>
+<li>result: <a href="../type_defs/#associatethirdpartyfirewallresponsetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2z"/></svg></span> AssociateThirdPartyFirewallResponseTypeDef</a> </li>
 </ol>
 </div>
 <div class="tabbed-block">
@@ -35612,16 +35612,16 @@ However, these type annotations can be helpful in your functions and methods.</p
 <div class="highlight"><span class="filename">Client usage example</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.client</span> <span class="kn">import</span> <span class="n">FMSClient</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.type_defs</span> <span class="kn">import</span> <span class="n">GetAppsListResponseTypeDef</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.type_defs</span> <span class="kn">import</span> <span class="n">GetAppsListRequestRequestTypeDef</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.type_defs</span> <span class="kn">import</span> <span class="n">AssociateThirdPartyFirewallResponseTypeDef</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.type_defs</span> <span class="kn">import</span> <span class="n">AssociateThirdPartyFirewallRequestRequestTypeDef</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
 <a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">client</span><span class="p">:</span> <span class="n">FMSClient</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;fms&quot;</span><span class="p">)</span>
 <a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">GetAppsListRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">result</span><span class="p">:</span> <span class="n">GetAppsListResponseTypeDef</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_apps_list</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">AssociateThirdPartyFirewallRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">result</span><span class="p">:</span> <span class="n">AssociateThirdPartyFirewallResponseTypeDef</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">associate_third_party_firewall</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">

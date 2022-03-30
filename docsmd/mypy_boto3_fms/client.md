@@ -82,6 +82,37 @@ parent.associate_admin_account(**kwargs)
 
 1. See [:material-code-braces: AssociateAdminAccountRequestRequestTypeDef](./type_defs.md#associateadminaccountrequestrequesttypedef) 
 
+### associate\_third\_party\_firewall
+
+Sets the Firewall Manager policy administrator as a tenant administrator of a
+third-party firewall service.
+
+Type annotations and code completion for `#!python boto3.client("fms").associate_third_party_firewall` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_third_party_firewall)
+
+```python title="Method definition"
+def associate_third_party_firewall(
+    self,
+    *,
+    ThirdPartyFirewall: ThirdPartyFirewallType,  # (1)
+) -> AssociateThirdPartyFirewallResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ThirdPartyFirewallType](./literals.md#thirdpartyfirewalltype) 
+2. See [:material-code-braces: AssociateThirdPartyFirewallResponseTypeDef](./type_defs.md#associatethirdpartyfirewallresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateThirdPartyFirewallRequestRequestTypeDef = {  # (1)
+    "ThirdPartyFirewall": ...,
+}
+
+parent.associate_third_party_firewall(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateThirdPartyFirewallRequestRequestTypeDef](./type_defs.md#associatethirdpartyfirewallrequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -215,6 +246,37 @@ def disassociate_admin_account(
     ...
 ```
 
+
+### disassociate\_third\_party\_firewall
+
+Disassociates a Firewall Manager policy administrator from a third-party
+firewall tenant.
+
+Type annotations and code completion for `#!python boto3.client("fms").disassociate_third_party_firewall` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_third_party_firewall)
+
+```python title="Method definition"
+def disassociate_third_party_firewall(
+    self,
+    *,
+    ThirdPartyFirewall: ThirdPartyFirewallType,  # (1)
+) -> DisassociateThirdPartyFirewallResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ThirdPartyFirewallType](./literals.md#thirdpartyfirewalltype) 
+2. See [:material-code-braces: DisassociateThirdPartyFirewallResponseTypeDef](./type_defs.md#disassociatethirdpartyfirewallresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateThirdPartyFirewallRequestRequestTypeDef = {  # (1)
+    "ThirdPartyFirewall": ...,
+}
+
+parent.disassociate_third_party_firewall(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateThirdPartyFirewallRequestRequestTypeDef](./type_defs.md#disassociatethirdpartyfirewallrequestrequesttypedef) 
 
 ### generate\_presigned\_url
 
@@ -423,6 +485,37 @@ parent.get_protocols_list(**kwargs)
 ```
 
 1. See [:material-code-braces: GetProtocolsListRequestRequestTypeDef](./type_defs.md#getprotocolslistrequestrequesttypedef) 
+
+### get\_third\_party\_firewall\_association\_status
+
+The onboarding status of a Firewall Manager admin account to third-party
+firewall vendor tenant.
+
+Type annotations and code completion for `#!python boto3.client("fms").get_third_party_firewall_association_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_third_party_firewall_association_status)
+
+```python title="Method definition"
+def get_third_party_firewall_association_status(
+    self,
+    *,
+    ThirdPartyFirewall: ThirdPartyFirewallType,  # (1)
+) -> GetThirdPartyFirewallAssociationStatusResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ThirdPartyFirewallType](./literals.md#thirdpartyfirewalltype) 
+2. See [:material-code-braces: GetThirdPartyFirewallAssociationStatusResponseTypeDef](./type_defs.md#getthirdpartyfirewallassociationstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetThirdPartyFirewallAssociationStatusRequestRequestTypeDef = {  # (1)
+    "ThirdPartyFirewall": ...,
+}
+
+parent.get_third_party_firewall_association_status(**kwargs)
+```
+
+1. See [:material-code-braces: GetThirdPartyFirewallAssociationStatusRequestRequestTypeDef](./type_defs.md#getthirdpartyfirewallassociationstatusrequestrequesttypedef) 
 
 ### get\_violation\_details
 
@@ -643,6 +736,40 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### list\_third\_party\_firewall\_firewall\_policies
+
+Retrieves a list of all of the third-party firewall policies that are associated
+with the third-party firewall administrator's account.
+
+Type annotations and code completion for `#!python boto3.client("fms").list_third_party_firewall_firewall_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_third_party_firewall_firewall_policies)
+
+```python title="Method definition"
+def list_third_party_firewall_firewall_policies(
+    self,
+    *,
+    ThirdPartyFirewall: ThirdPartyFirewallType,  # (1)
+    MaxResults: int,
+    NextToken: str = ...,
+) -> ListThirdPartyFirewallFirewallPoliciesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ThirdPartyFirewallType](./literals.md#thirdpartyfirewalltype) 
+2. See [:material-code-braces: ListThirdPartyFirewallFirewallPoliciesResponseTypeDef](./type_defs.md#listthirdpartyfirewallfirewallpoliciesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListThirdPartyFirewallFirewallPoliciesRequestRequestTypeDef = {  # (1)
+    "ThirdPartyFirewall": ...,
+    "MaxResults": ...,
+}
+
+parent.list_third_party_firewall_firewall_policies(**kwargs)
+```
+
+1. See [:material-code-braces: ListThirdPartyFirewallFirewallPoliciesRequestRequestTypeDef](./type_defs.md#listthirdpartyfirewallfirewallpoliciesrequestrequesttypedef) 
+
 ### put\_apps\_list
 
 Creates an Firewall Manager applications list.
@@ -842,6 +969,7 @@ Type annotations and code completion for `#!python boto3.client("fms").get_pagin
 - `client.get_paginator("list_member_accounts")` -> [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
 - `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
 - `client.get_paginator("list_protocols_lists")` -> [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
+- `client.get_paginator("list_third_party_firewall_firewall_policies")` -> [ListThirdPartyFirewallFirewallPoliciesPaginator](./paginators.md#listthirdpartyfirewallfirewallpoliciespaginator)
 
 
 

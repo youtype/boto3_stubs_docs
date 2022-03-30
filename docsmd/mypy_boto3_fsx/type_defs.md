@@ -2945,6 +2945,7 @@ class UpdateFileSystemOntapConfigurationTypeDef(TypedDict):
     FsxAdminPassword: NotRequired[str],
     WeeklyMaintenanceStartTime: NotRequired[str],
     DiskIopsConfiguration: NotRequired[DiskIopsConfigurationTypeDef],  # (1)
+    ThroughputCapacity: NotRequired[int],
 ```
 
 1. See [:material-code-braces: DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef) 

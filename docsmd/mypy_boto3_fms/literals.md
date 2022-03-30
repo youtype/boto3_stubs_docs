@@ -85,6 +85,7 @@ def get_value() -> FirewallDeploymentModelType:
 ```python title="Definition"
 FirewallDeploymentModelType = Literal[
     "CENTRALIZED",
+    "DISTRIBUTED",
 ]
 ```
 ## ListAppsListsPaginatorName
@@ -157,6 +158,36 @@ ListProtocolsListsPaginatorName = Literal[
     "list_protocols_lists",
 ]
 ```
+## ListThirdPartyFirewallFirewallPoliciesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import ListThirdPartyFirewallFirewallPoliciesPaginatorName
+
+def get_value() -> ListThirdPartyFirewallFirewallPoliciesPaginatorName:
+    return "list_third_party_firewall_firewall_policies"
+```
+
+```python title="Definition"
+ListThirdPartyFirewallFirewallPoliciesPaginatorName = Literal[
+    "list_third_party_firewall_firewall_policies",
+]
+```
+## MarketplaceSubscriptionOnboardingStatusType
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import MarketplaceSubscriptionOnboardingStatusType
+
+def get_value() -> MarketplaceSubscriptionOnboardingStatusType:
+    return "COMPLETE"
+```
+
+```python title="Definition"
+MarketplaceSubscriptionOnboardingStatusType = Literal[
+    "COMPLETE",
+    "NO_SUBSCRIPTION",
+    "NOT_COMPLETE",
+]
+```
 ## PolicyComplianceStatusTypeType
 
 ```python title="Usage Example"
@@ -204,6 +235,7 @@ SecurityServiceTypeType = Literal[
     "SECURITY_GROUPS_CONTENT_AUDIT",
     "SECURITY_GROUPS_USAGE_AUDIT",
     "SHIELD_ADVANCED",
+    "THIRD_PARTY_FIREWALL",
     "WAF",
     "WAFV2",
 ]
@@ -231,6 +263,38 @@ TargetTypeType = Literal[
     "VPC_PEERING_CONNECTION",
 ]
 ```
+## ThirdPartyFirewallAssociationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import ThirdPartyFirewallAssociationStatusType
+
+def get_value() -> ThirdPartyFirewallAssociationStatusType:
+    return "NOT_EXIST"
+```
+
+```python title="Definition"
+ThirdPartyFirewallAssociationStatusType = Literal[
+    "NOT_EXIST",
+    "OFFBOARD_COMPLETE",
+    "OFFBOARDING",
+    "ONBOARD_COMPLETE",
+    "ONBOARDING",
+]
+```
+## ThirdPartyFirewallType
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import ThirdPartyFirewallType
+
+def get_value() -> ThirdPartyFirewallType:
+    return "PALO_ALTO_NETWORKS_CLOUD_NGFW"
+```
+
+```python title="Definition"
+ThirdPartyFirewallType = Literal[
+    "PALO_ALTO_NETWORKS_CLOUD_NGFW",
+]
+```
 ## ViolationReasonType
 
 ```python title="Usage Example"
@@ -246,6 +310,7 @@ ViolationReasonType = Literal[
     "BLACK_HOLE_ROUTE_DETECTED_IN_FIREWALL_SUBNET",
     "FIREWALL_SUBNET_IS_OUT_OF_SCOPE",
     "FIREWALL_SUBNET_MISSING_EXPECTED_ROUTE",
+    "FIREWALL_SUBNET_MISSING_VPCE_ENDPOINT",
     "FMS_CREATED_SECURITY_GROUP_EDITED",
     "INTERNET_GATEWAY_MISSING_EXPECTED_ROUTE",
     "INTERNET_TRAFFIC_NOT_INSPECTED",
@@ -639,6 +704,7 @@ PaginatorName = Literal[
     "list_member_accounts",
     "list_policies",
     "list_protocols_lists",
+    "list_third_party_firewall_firewall_policies",
 ]
 ```
 ## RegionName

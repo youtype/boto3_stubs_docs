@@ -25980,6 +25980,60 @@ class InstanceIpv6PrefixTypeDef(TypedDict):
     Ipv6Prefix: NotRequired[str],
 ```
 
+## InstanceMaintenanceOptionsRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import InstanceMaintenanceOptionsRequestTypeDef
+
+def get_value() -> InstanceMaintenanceOptionsRequestTypeDef:
+    return {
+        "AutoRecovery": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceMaintenanceOptionsRequestTypeDef(TypedDict):
+    AutoRecovery: NotRequired[InstanceAutoRecoveryStateType],  # (1)
+```
+
+1. See [:material-code-brackets: InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype) 
+## InstanceMaintenanceOptionsResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import InstanceMaintenanceOptionsResponseMetadataTypeDef
+
+def get_value() -> InstanceMaintenanceOptionsResponseMetadataTypeDef:
+    return {
+        "AutoRecovery": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceMaintenanceOptionsResponseMetadataTypeDef(TypedDict):
+    AutoRecovery: InstanceAutoRecoveryStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InstanceMaintenanceOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import InstanceMaintenanceOptionsTypeDef
+
+def get_value() -> InstanceMaintenanceOptionsTypeDef:
+    return {
+        "AutoRecovery": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceMaintenanceOptionsTypeDef(TypedDict):
+    AutoRecovery: NotRequired[InstanceAutoRecoveryStateType],  # (1)
+```
+
+1. See [:material-code-brackets: InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype) 
 ## InstanceMarketOptionsRequestTypeDef
 
 ```python title="Usage Example"
@@ -26640,6 +26694,7 @@ class InstanceTypeDef(TypedDict):
     UsageOperationUpdateTime: NotRequired[datetime],
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsResponseTypeDef],  # (27)
     Ipv6Address: NotRequired[str],
+    MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsTypeDef],  # (28)
 ```
 
 1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
@@ -26669,6 +26724,7 @@ class InstanceTypeDef(TypedDict):
 25. See [:material-code-braces: EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef) 
 26. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 27. See [:material-code-braces: PrivateDnsNameOptionsResponseTypeDef](./type_defs.md#privatednsnameoptionsresponsetypedef) 
+28. See [:material-code-braces: InstanceMaintenanceOptionsTypeDef](./type_defs.md#instancemaintenanceoptionstypedef) 
 ## InstanceTypeInfoFromInstanceRequirementsTypeDef
 
 ```python title="Usage Example"
@@ -27792,6 +27848,40 @@ class LaunchTemplateIamInstanceProfileSpecificationTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
+## LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef
+
+def get_value() -> LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef:
+    return {
+        "AutoRecovery": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef(TypedDict):
+    AutoRecovery: NotRequired[LaunchTemplateAutoRecoveryStateType],  # (1)
+```
+
+1. See [:material-code-brackets: LaunchTemplateAutoRecoveryStateType](./literals.md#launchtemplateautorecoverystatetype) 
+## LaunchTemplateInstanceMaintenanceOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMaintenanceOptionsTypeDef
+
+def get_value() -> LaunchTemplateInstanceMaintenanceOptionsTypeDef:
+    return {
+        "AutoRecovery": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchTemplateInstanceMaintenanceOptionsTypeDef(TypedDict):
+    AutoRecovery: NotRequired[LaunchTemplateAutoRecoveryStateType],  # (1)
+```
+
+1. See [:material-code-brackets: LaunchTemplateAutoRecoveryStateType](./literals.md#launchtemplateautorecoverystatetype) 
 ## LaunchTemplateInstanceMarketOptionsRequestTypeDef
 
 ```python title="Usage Example"
@@ -29542,6 +29632,47 @@ class ModifyInstanceEventWindowResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyInstanceMaintenanceOptionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyInstanceMaintenanceOptionsRequestRequestTypeDef
+
+def get_value() -> ModifyInstanceMaintenanceOptionsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyInstanceMaintenanceOptionsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AutoRecovery: NotRequired[InstanceAutoRecoveryStateType],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype) 
+## ModifyInstanceMaintenanceOptionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyInstanceMaintenanceOptionsResultTypeDef
+
+def get_value() -> ModifyInstanceMaintenanceOptionsResultTypeDef:
+    return {
+        "InstanceId": ...,
+        "AutoRecovery": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyInstanceMaintenanceOptionsResultTypeDef(TypedDict):
+    InstanceId: str,
+    AutoRecovery: InstanceAutoRecoveryStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyInstanceMetadataOptionsRequestRequestTypeDef
 
@@ -34418,6 +34549,7 @@ class RequestLaunchTemplateDataTypeDef(TypedDict):
     EnclaveOptions: NotRequired[LaunchTemplateEnclaveOptionsRequestTypeDef],  # (18)
     InstanceRequirements: NotRequired[InstanceRequirementsRequestTypeDef],  # (19)
     PrivateDnsNameOptions: NotRequired[LaunchTemplatePrivateDnsNameOptionsRequestTypeDef],  # (20)
+    MaintenanceOptions: NotRequired[LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef],  # (21)
 ```
 
 1. See [:material-code-braces: LaunchTemplateIamInstanceProfileSpecificationRequestTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationrequesttypedef) 
@@ -34440,6 +34572,7 @@ class RequestLaunchTemplateDataTypeDef(TypedDict):
 18. See [:material-code-braces: LaunchTemplateEnclaveOptionsRequestTypeDef](./type_defs.md#launchtemplateenclaveoptionsrequesttypedef) 
 19. See [:material-code-braces: InstanceRequirementsRequestTypeDef](./type_defs.md#instancerequirementsrequesttypedef) 
 20. See [:material-code-braces: LaunchTemplatePrivateDnsNameOptionsRequestTypeDef](./type_defs.md#launchtemplateprivatednsnameoptionsrequesttypedef) 
+21. See [:material-code-braces: LaunchTemplateInstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#launchtemplateinstancemaintenanceoptionsrequesttypedef) 
 ## RequestSpotFleetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -35298,6 +35431,7 @@ class ResponseLaunchTemplateDataTypeDef(TypedDict):
     EnclaveOptions: NotRequired[LaunchTemplateEnclaveOptionsTypeDef],  # (18)
     InstanceRequirements: NotRequired[InstanceRequirementsTypeDef],  # (19)
     PrivateDnsNameOptions: NotRequired[LaunchTemplatePrivateDnsNameOptionsTypeDef],  # (20)
+    MaintenanceOptions: NotRequired[LaunchTemplateInstanceMaintenanceOptionsTypeDef],  # (21)
 ```
 
 1. See [:material-code-braces: LaunchTemplateIamInstanceProfileSpecificationTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationtypedef) 
@@ -35320,6 +35454,7 @@ class ResponseLaunchTemplateDataTypeDef(TypedDict):
 18. See [:material-code-braces: LaunchTemplateEnclaveOptionsTypeDef](./type_defs.md#launchtemplateenclaveoptionstypedef) 
 19. See [:material-code-braces: InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef) 
 20. See [:material-code-braces: LaunchTemplatePrivateDnsNameOptionsTypeDef](./type_defs.md#launchtemplateprivatednsnameoptionstypedef) 
+21. See [:material-code-braces: LaunchTemplateInstanceMaintenanceOptionsTypeDef](./type_defs.md#launchtemplateinstancemaintenanceoptionstypedef) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -35937,6 +36072,7 @@ class RunInstancesRequestRequestTypeDef(TypedDict):
     MetadataOptions: NotRequired[InstanceMetadataOptionsRequestTypeDef],  # (19)
     EnclaveOptions: NotRequired[EnclaveOptionsRequestTypeDef],  # (20)
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsRequestTypeDef],  # (21)
+    MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsRequestTypeDef],  # (22)
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -35960,6 +36096,7 @@ class RunInstancesRequestRequestTypeDef(TypedDict):
 19. See [:material-code-braces: InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef) 
 20. See [:material-code-braces: EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef) 
 21. See [:material-code-braces: PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef) 
+22. See [:material-code-braces: InstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#instancemaintenanceoptionsrequesttypedef) 
 ## RunInstancesRequestServiceResourceCreateInstancesTypeDef
 
 ```python title="Usage Example"
@@ -36012,6 +36149,7 @@ class RunInstancesRequestServiceResourceCreateInstancesTypeDef(TypedDict):
     MetadataOptions: NotRequired[InstanceMetadataOptionsRequestTypeDef],  # (19)
     EnclaveOptions: NotRequired[EnclaveOptionsRequestTypeDef],  # (20)
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsRequestTypeDef],  # (21)
+    MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsRequestTypeDef],  # (22)
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -36035,6 +36173,7 @@ class RunInstancesRequestServiceResourceCreateInstancesTypeDef(TypedDict):
 19. See [:material-code-braces: InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef) 
 20. See [:material-code-braces: EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef) 
 21. See [:material-code-braces: PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef) 
+22. See [:material-code-braces: InstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#instancemaintenanceoptionsrequesttypedef) 
 ## RunInstancesRequestSubnetCreateInstancesTypeDef
 
 ```python title="Usage Example"
@@ -36086,6 +36225,7 @@ class RunInstancesRequestSubnetCreateInstancesTypeDef(TypedDict):
     MetadataOptions: NotRequired[InstanceMetadataOptionsRequestTypeDef],  # (19)
     EnclaveOptions: NotRequired[EnclaveOptionsRequestTypeDef],  # (20)
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsRequestTypeDef],  # (21)
+    MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsRequestTypeDef],  # (22)
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -36109,6 +36249,7 @@ class RunInstancesRequestSubnetCreateInstancesTypeDef(TypedDict):
 19. See [:material-code-braces: InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef) 
 20. See [:material-code-braces: EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef) 
 21. See [:material-code-braces: PrivateDnsNameOptionsRequestTypeDef](./type_defs.md#privatednsnameoptionsrequesttypedef) 
+22. See [:material-code-braces: InstanceMaintenanceOptionsRequestTypeDef](./type_defs.md#instancemaintenanceoptionsrequesttypedef) 
 ## RunScheduledInstancesRequestRequestTypeDef
 
 ```python title="Usage Example"
