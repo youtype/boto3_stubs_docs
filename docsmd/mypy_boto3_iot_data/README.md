@@ -101,6 +101,7 @@ def get_value() -> ListRetainedMessagesPaginatorName:
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
 
 

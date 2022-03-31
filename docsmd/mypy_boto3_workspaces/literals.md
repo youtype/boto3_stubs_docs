@@ -55,6 +55,25 @@ AssociationStatusType = Literal[
     "PENDING_DISASSOCIATION",
 ]
 ```
+## ClientDeviceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import ClientDeviceTypeType
+
+def get_value() -> ClientDeviceTypeType:
+    return "DeviceTypeAndroid"
+```
+
+```python title="Definition"
+ClientDeviceTypeType = Literal[
+    "DeviceTypeAndroid",
+    "DeviceTypeIos",
+    "DeviceTypeLinux",
+    "DeviceTypeOsx",
+    "DeviceTypeWeb",
+    "DeviceTypeWindows",
+]
+```
 ## ComputeType
 
 ```python title="Usage Example"
@@ -740,6 +759,7 @@ ServiceName = Literal[
     "pinpoint",
     "pinpoint-email",
     "pinpoint-sms-voice",
+    "pinpoint-sms-voice-v2",
     "polly",
     "pricing",
     "proton",

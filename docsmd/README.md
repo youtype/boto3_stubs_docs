@@ -507,6 +507,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-pinpoint-sms-voice](./mypy_boto3_pinpoint_sms_voice/README.md) for [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice) service
 
+- [mypy-boto3-pinpoint-sms-voice-v2](./mypy_boto3_pinpoint_sms_voice_v2/README.md) for [PinpointSMSVoiceV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice-v2.html#PinpointSMSVoiceV2) service
+
 - [mypy-boto3-polly](./mypy_boto3_polly/README.md) for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly) service
 
 - [mypy-boto3-pricing](./mypy_boto3_pricing/README.md) for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing) service

@@ -49,8 +49,10 @@ def get_value() -> DataSourceTypeType:
 ```python title="Definition"
 DataSourceTypeType = Literal[
     "AMAZON_OPENSEARCH_SERVICE",
+    "ATHENA",
     "CLOUDWATCH",
     "PROMETHEUS",
+    "REDSHIFT",
     "SITEWISE",
     "TIMESTREAM",
     "XRAY",
@@ -456,6 +458,7 @@ ServiceName = Literal[
     "pinpoint",
     "pinpoint-email",
     "pinpoint-sms-voice",
+    "pinpoint-sms-voice-v2",
     "polly",
     "pricing",
     "proton",

@@ -543,6 +543,46 @@ class CreateWorkspacesResultTypeDef(TypedDict):
 1. See [:material-code-braces: FailedCreateWorkspaceRequestTypeDef](./type_defs.md#failedcreateworkspacerequesttypedef) 
 2. See [:material-code-braces: WorkspaceTypeDef](./type_defs.md#workspacetypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DefaultClientBrandingAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DefaultClientBrandingAttributesTypeDef
+
+def get_value() -> DefaultClientBrandingAttributesTypeDef:
+    return {
+        "LogoUrl": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultClientBrandingAttributesTypeDef(TypedDict):
+    LogoUrl: NotRequired[str],
+    SupportEmail: NotRequired[str],
+    SupportLink: NotRequired[str],
+    ForgotPasswordLink: NotRequired[str],
+    LoginMessage: NotRequired[Dict[str, str]],
+```
+
+## DefaultImportClientBrandingAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DefaultImportClientBrandingAttributesTypeDef
+
+def get_value() -> DefaultImportClientBrandingAttributesTypeDef:
+    return {
+        "Logo": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultImportClientBrandingAttributesTypeDef(TypedDict):
+    Logo: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SupportEmail: NotRequired[str],
+    SupportLink: NotRequired[str],
+    ForgotPasswordLink: NotRequired[str],
+    LoginMessage: NotRequired[Mapping[str, str]],
+```
+
 ## DefaultWorkspaceCreationPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -564,6 +604,25 @@ class DefaultWorkspaceCreationPropertiesTypeDef(TypedDict):
     EnableMaintenanceMode: NotRequired[bool],
 ```
 
+## DeleteClientBrandingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DeleteClientBrandingRequestRequestTypeDef
+
+def get_value() -> DeleteClientBrandingRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Platforms": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteClientBrandingRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Platforms: Sequence[ClientDeviceTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ClientDeviceTypeType](./literals.md#clientdevicetypetype) 
 ## DeleteConnectClientAddInRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -757,6 +816,57 @@ class DescribeAccountResultTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClientBrandingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeClientBrandingRequestRequestTypeDef
+
+def get_value() -> DescribeClientBrandingRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClientBrandingRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+```
+
+## DescribeClientBrandingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import DescribeClientBrandingResultTypeDef
+
+def get_value() -> DescribeClientBrandingResultTypeDef:
+    return {
+        "DeviceTypeWindows": ...,
+        "DeviceTypeOsx": ...,
+        "DeviceTypeAndroid": ...,
+        "DeviceTypeIos": ...,
+        "DeviceTypeLinux": ...,
+        "DeviceTypeWeb": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClientBrandingResultTypeDef(TypedDict):
+    DeviceTypeWindows: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeOsx: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeAndroid: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeIos: IosClientBrandingAttributesTypeDef,  # (4)
+    DeviceTypeLinux: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeWeb: DefaultClientBrandingAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+2. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+3. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+4. See [:material-code-braces: IosClientBrandingAttributesTypeDef](./type_defs.md#iosclientbrandingattributestypedef) 
+5. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+6. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClientPropertiesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1479,6 +1589,69 @@ class ImagePermissionTypeDef(TypedDict):
     SharedAccountId: NotRequired[str],
 ```
 
+## ImportClientBrandingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import ImportClientBrandingRequestRequestTypeDef
+
+def get_value() -> ImportClientBrandingRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ImportClientBrandingRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    DeviceTypeWindows: NotRequired[DefaultImportClientBrandingAttributesTypeDef],  # (1)
+    DeviceTypeOsx: NotRequired[DefaultImportClientBrandingAttributesTypeDef],  # (1)
+    DeviceTypeAndroid: NotRequired[DefaultImportClientBrandingAttributesTypeDef],  # (1)
+    DeviceTypeIos: NotRequired[IosImportClientBrandingAttributesTypeDef],  # (4)
+    DeviceTypeLinux: NotRequired[DefaultImportClientBrandingAttributesTypeDef],  # (1)
+    DeviceTypeWeb: NotRequired[DefaultImportClientBrandingAttributesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+2. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+3. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+4. See [:material-code-braces: IosImportClientBrandingAttributesTypeDef](./type_defs.md#iosimportclientbrandingattributestypedef) 
+5. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+6. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+## ImportClientBrandingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import ImportClientBrandingResultTypeDef
+
+def get_value() -> ImportClientBrandingResultTypeDef:
+    return {
+        "DeviceTypeWindows": ...,
+        "DeviceTypeOsx": ...,
+        "DeviceTypeAndroid": ...,
+        "DeviceTypeIos": ...,
+        "DeviceTypeLinux": ...,
+        "DeviceTypeWeb": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportClientBrandingResultTypeDef(TypedDict):
+    DeviceTypeWindows: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeOsx: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeAndroid: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeIos: IosClientBrandingAttributesTypeDef,  # (4)
+    DeviceTypeLinux: DefaultClientBrandingAttributesTypeDef,  # (1)
+    DeviceTypeWeb: DefaultClientBrandingAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+2. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+3. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+4. See [:material-code-braces: IosClientBrandingAttributesTypeDef](./type_defs.md#iosclientbrandingattributestypedef) 
+5. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+6. See [:material-code-braces: DefaultClientBrandingAttributesTypeDef](./type_defs.md#defaultclientbrandingattributestypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportWorkspaceImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1525,6 +1698,50 @@ class ImportWorkspaceImageResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IosClientBrandingAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import IosClientBrandingAttributesTypeDef
+
+def get_value() -> IosClientBrandingAttributesTypeDef:
+    return {
+        "LogoUrl": ...,
+    }
+```
+
+```python title="Definition"
+class IosClientBrandingAttributesTypeDef(TypedDict):
+    LogoUrl: NotRequired[str],
+    Logo2xUrl: NotRequired[str],
+    Logo3xUrl: NotRequired[str],
+    SupportEmail: NotRequired[str],
+    SupportLink: NotRequired[str],
+    ForgotPasswordLink: NotRequired[str],
+    LoginMessage: NotRequired[Dict[str, str]],
+```
+
+## IosImportClientBrandingAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import IosImportClientBrandingAttributesTypeDef
+
+def get_value() -> IosImportClientBrandingAttributesTypeDef:
+    return {
+        "Logo": ...,
+    }
+```
+
+```python title="Definition"
+class IosImportClientBrandingAttributesTypeDef(TypedDict):
+    Logo: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Logo2x: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Logo3x: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SupportEmail: NotRequired[str],
+    SupportLink: NotRequired[str],
+    ForgotPasswordLink: NotRequired[str],
+    LoginMessage: NotRequired[Mapping[str, str]],
+```
+
 ## IpRuleItemTypeDef
 
 ```python title="Usage Example"

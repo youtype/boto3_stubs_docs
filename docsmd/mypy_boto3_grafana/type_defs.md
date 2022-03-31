@@ -144,6 +144,7 @@ class CreateWorkspaceRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
     organizationRoleName: NotRequired[str],
     stackSetName: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
     workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (4)
     workspaceDescription: NotRequired[str],
     workspaceName: NotRequired[str],
@@ -407,6 +408,41 @@ class ListPermissionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PermissionEntryTypeDef](./type_defs.md#permissionentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkspacesRequestListWorkspacesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -584,6 +620,42 @@ class SamlConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: AssertionAttributesTypeDef](./type_defs.md#assertionattributestypedef) 
 2. See [:material-code-braces: IdpMetadataTypeDef](./type_defs.md#idpmetadatatypedef) 
 3. See [:material-code-braces: RoleValuesTypeDef](./type_defs.md#rolevaluestypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
+
 ## UpdateErrorTypeDef
 
 ```python title="Usage Example"
@@ -817,6 +889,7 @@ class WorkspaceDescriptionTypeDef(TypedDict):
     organizationalUnits: NotRequired[List[str]],
     permissionType: NotRequired[PermissionTypeType],  # (6)
     stackSetName: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
     workspaceRoleArn: NotRequired[str],
 ```
 
@@ -856,6 +929,7 @@ class WorkspaceSummaryTypeDef(TypedDict):
     description: NotRequired[str],
     name: NotRequired[str],
     notificationDestinations: NotRequired[List[NotificationDestinationTypeType]],  # (2)
+    tags: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-braces: AuthenticationSummaryTypeDef](./type_defs.md#authenticationsummarytypedef) 

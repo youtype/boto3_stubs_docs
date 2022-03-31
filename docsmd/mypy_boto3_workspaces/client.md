@@ -444,6 +444,37 @@ parent.create_workspaces(**kwargs)
 
 1. See [:material-code-braces: CreateWorkspacesRequestRequestTypeDef](./type_defs.md#createworkspacesrequestrequesttypedef) 
 
+### delete\_client\_branding
+
+Deletes customized client branding.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_client_branding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_client_branding)
+
+```python title="Method definition"
+def delete_client_branding(
+    self,
+    *,
+    ResourceId: str,
+    Platforms: Sequence[ClientDeviceTypeType],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: ClientDeviceTypeType](./literals.md#clientdevicetypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteClientBrandingRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Platforms": ...,
+}
+
+parent.delete_client_branding(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteClientBrandingRequestRequestTypeDef](./type_defs.md#deleteclientbrandingrequestrequesttypedef) 
+
 ### delete\_connect\_client\_add\_in
 
 Deletes a client-add-in for Amazon Connect that is configured within a
@@ -691,6 +722,35 @@ parent.describe_account_modifications(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeAccountModificationsRequestRequestTypeDef](./type_defs.md#describeaccountmodificationsrequestrequesttypedef) 
+
+### describe\_client\_branding
+
+Describes the specified client branding.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_client_branding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_branding)
+
+```python title="Method definition"
+def describe_client_branding(
+    self,
+    *,
+    ResourceId: str,
+) -> DescribeClientBrandingResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeClientBrandingResultTypeDef](./type_defs.md#describeclientbrandingresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientBrandingRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
+
+parent.describe_client_branding(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientBrandingRequestRequestTypeDef](./type_defs.md#describeclientbrandingrequestrequesttypedef) 
 
 ### describe\_client\_properties
 
@@ -1175,6 +1235,47 @@ def generate_presigned_url(
     ...
 ```
 
+
+### import\_client\_branding
+
+Imports client branding.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").import_client_branding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_client_branding)
+
+```python title="Method definition"
+def import_client_branding(
+    self,
+    *,
+    ResourceId: str,
+    DeviceTypeWindows: DefaultImportClientBrandingAttributesTypeDef = ...,  # (1)
+    DeviceTypeOsx: DefaultImportClientBrandingAttributesTypeDef = ...,  # (1)
+    DeviceTypeAndroid: DefaultImportClientBrandingAttributesTypeDef = ...,  # (1)
+    DeviceTypeIos: IosImportClientBrandingAttributesTypeDef = ...,  # (4)
+    DeviceTypeLinux: DefaultImportClientBrandingAttributesTypeDef = ...,  # (1)
+    DeviceTypeWeb: DefaultImportClientBrandingAttributesTypeDef = ...,  # (1)
+) -> ImportClientBrandingResultTypeDef:  # (7)
+    ...
+```
+
+1. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+2. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+3. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+4. See [:material-code-braces: IosImportClientBrandingAttributesTypeDef](./type_defs.md#iosimportclientbrandingattributestypedef) 
+5. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+6. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+7. See [:material-code-braces: ImportClientBrandingResultTypeDef](./type_defs.md#importclientbrandingresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ImportClientBrandingRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
+
+parent.import_client_branding(**kwargs)
+```
+
+1. See [:material-code-braces: ImportClientBrandingRequestRequestTypeDef](./type_defs.md#importclientbrandingrequestrequesttypedef) 
 
 ### import\_workspace\_image
 

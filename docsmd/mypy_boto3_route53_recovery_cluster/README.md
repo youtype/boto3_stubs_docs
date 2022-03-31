@@ -61,6 +61,23 @@ def get_client() -> Route53RecoveryClusterClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("route53-recovery-cluster").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_cluster.paginator import ListRoutingControlsPaginator
+
+def get_list_routing_controls_paginator() -> ListRoutingControlsPaginator:
+    return Session().client("route53-recovery-cluster").get_paginator("list_routing_controls"))
+```
+
+- [ListRoutingControlsPaginator](./paginators.md#listroutingcontrolspaginator)
+
+
 
 
 
@@ -73,16 +90,18 @@ def get_client() -> Route53RecoveryClusterClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_route53_recovery_cluster.literals import RoutingControlStateType
+from mypy_boto3_route53_recovery_cluster.literals import ListRoutingControlsPaginatorName
 
-def get_value() -> RoutingControlStateType:
-    return "Off"
+def get_value() -> ListRoutingControlsPaginatorName:
+    return "list_routing_controls"
 ```
 
+- [ListRoutingControlsPaginatorName](./literals.md#listroutingcontrolspaginatorname)
 - [RoutingControlStateType](./literals.md#routingcontrolstatetype)
 - [Route53RecoveryClusterServiceName](./literals.md#route53recoveryclusterservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 
 
@@ -102,7 +121,12 @@ def get_value() -> GetRoutingControlStateRequestRequestTypeDef:
 
 - [GetRoutingControlStateRequestRequestTypeDef](./type_defs.md#getroutingcontrolstaterequestrequesttypedef)
 - [GetRoutingControlStateResponseTypeDef](./type_defs.md#getroutingcontrolstateresponsetypedef)
+- [ListRoutingControlsRequestListRoutingControlsPaginateTypeDef](./type_defs.md#listroutingcontrolsrequestlistroutingcontrolspaginatetypedef)
+- [ListRoutingControlsRequestRequestTypeDef](./type_defs.md#listroutingcontrolsrequestrequesttypedef)
+- [ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RoutingControlTypeDef](./type_defs.md#routingcontroltypedef)
 - [UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)
 - [UpdateRoutingControlStateRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstaterequestrequesttypedef)
 - [UpdateRoutingControlStatesRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstatesrequestrequesttypedef)

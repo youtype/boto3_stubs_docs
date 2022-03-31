@@ -575,8 +575,8 @@ def deregister_account(
 
 ### deregister\_organization\_admin\_account
 
-Removes the specified member Amazon Web Services account as a delegated
-administrator for Audit Manager.
+Removes the specified Amazon Web Services account as a delegated administrator
+for Audit Manager.
 
 Type annotations and code completion for `#!python boto3.client("auditmanager").deregister_organization_admin_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
