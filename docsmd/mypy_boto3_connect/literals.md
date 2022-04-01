@@ -313,6 +313,7 @@ InstanceAttributeTypeType = Literal[
     "CONTACTFLOW_LOGS",
     "EARLY_MEDIA",
     "INBOUND_CALLS",
+    "MULTI_PARTY_CONFERENCE",
     "OUTBOUND_CALLS",
     "USE_CUSTOM_TTS_VOICES",
 ]
