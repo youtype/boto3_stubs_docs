@@ -1404,6 +1404,7 @@ def get_value() -> DescribeProvisioningParametersOutputTypeDef:
         "TagOptions": ...,
         "ProvisioningArtifactPreferences": ...,
         "ProvisioningArtifactOutputs": ...,
+        "ProvisioningArtifactOutputKeys": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1416,7 +1417,8 @@ class DescribeProvisioningParametersOutputTypeDef(TypedDict):
     TagOptions: List[TagOptionSummaryTypeDef],  # (4)
     ProvisioningArtifactPreferences: ProvisioningArtifactPreferencesTypeDef,  # (5)
     ProvisioningArtifactOutputs: List[ProvisioningArtifactOutputTypeDef],  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    ProvisioningArtifactOutputKeys: List[ProvisioningArtifactOutputTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
 1. See [:material-code-braces: ProvisioningArtifactParameterTypeDef](./type_defs.md#provisioningartifactparametertypedef) 
@@ -1425,7 +1427,8 @@ class DescribeProvisioningParametersOutputTypeDef(TypedDict):
 4. See [:material-code-braces: TagOptionSummaryTypeDef](./type_defs.md#tagoptionsummarytypedef) 
 5. See [:material-code-braces: ProvisioningArtifactPreferencesTypeDef](./type_defs.md#provisioningartifactpreferencestypedef) 
 6. See [:material-code-braces: ProvisioningArtifactOutputTypeDef](./type_defs.md#provisioningartifactoutputtypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+7. See [:material-code-braces: ProvisioningArtifactOutputTypeDef](./type_defs.md#provisioningartifactoutputtypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRecordInputRequestTypeDef
 
 ```python title="Usage Example"

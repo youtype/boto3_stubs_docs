@@ -348,8 +348,8 @@ parent.create_environment_template_version(**kwargs)
 
 ### create\_repository
 
-Create and register a link to a repository that can be used with pull request
-provisioning or template sync configurations.
+Create and register a link to a repository that can be used with self-managed
+provisioning (infrastructure or pipelines) or for template sync configurations.
 
 Type annotations and code completion for `#!python boto3.client("proton").create_repository` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_repository)
@@ -362,12 +362,14 @@ def create_repository(
     name: str,
     provider: RepositoryProviderType,  # (1)
     encryptionKey: str = ...,
-) -> CreateRepositoryOutputTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateRepositoryOutputTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
-2. See [:material-code-braces: CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -502,7 +504,7 @@ parent.create_service_template_version(**kwargs)
 
 ### create\_template\_sync\_config
 
-Set up a template for automated template version creation.
+Set up a template to create new template versions automatically.
 
 Type annotations and code completion for `#!python boto3.client("proton").create_template_sync_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_template_sync_config)
@@ -1009,7 +1011,7 @@ parent.get_repository(**kwargs)
 
 ### get\_repository\_sync\_status
 
-Get the repository sync status.
+Get the sync status of a repository used for Proton template sync.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_repository_sync_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository_sync_status)
@@ -1767,8 +1769,8 @@ parent.list_tags_for_resource(**kwargs)
 
 ### notify\_resource\_deployment\_status\_change
 
-Notify Proton of status changes to a provisioned resource when you use pull
-request provisioning.
+Notify Proton of status changes to a provisioned resource when you use self-
+managed provisioning.
 
 Type annotations and code completion for `#!python boto3.client("proton").notify_resource_deployment_status_change` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.notify_resource_deployment_status_change)
@@ -1864,7 +1866,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-Remove a tag from a resource.
+Remove a customer tag from a resource.
 
 Type annotations and code completion for `#!python boto3.client("proton").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.untag_resource)

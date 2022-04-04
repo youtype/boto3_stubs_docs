@@ -1097,6 +1097,20 @@ ListJobsPaginatorName = Literal[
     "list_jobs",
 ]
 ```
+## ListMetricValuesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_iot.literals import ListMetricValuesPaginatorName
+
+def get_value() -> ListMetricValuesPaginatorName:
+    return "list_metric_values"
+```
+
+```python title="Definition"
+ListMetricValuesPaginatorName = Literal[
+    "list_metric_values",
+]
+```
 ## ListMitigationActionsPaginatorName
 
 ```python title="Usage Example"
@@ -2265,6 +2279,7 @@ PaginatorName = Literal[
     "list_job_executions_for_thing",
     "list_job_templates",
     "list_jobs",
+    "list_metric_values",
     "list_mitigation_actions",
     "list_ota_updates",
     "list_outgoing_certificates",
