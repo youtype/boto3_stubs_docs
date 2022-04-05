@@ -603,7 +603,7 @@ def create_script(
     Name: str = ...,
     Version: str = ...,
     StorageLocation: S3LocationTypeDef = ...,  # (1)
-    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    ZipFile: Union[str, bytes, IO[Any], StreamingBody] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
 ) -> CreateScriptOutputTypeDef:  # (3)
     ...
@@ -3197,7 +3197,7 @@ def update_script(
     Name: str = ...,
     Version: str = ...,
     StorageLocation: S3LocationTypeDef = ...,  # (1)
-    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    ZipFile: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> UpdateScriptOutputTypeDef:  # (2)
     ...
 ```

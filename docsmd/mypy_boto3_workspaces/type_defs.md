@@ -576,7 +576,7 @@ def get_value() -> DefaultImportClientBrandingAttributesTypeDef:
 
 ```python title="Definition"
 class DefaultImportClientBrandingAttributesTypeDef(TypedDict):
-    Logo: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Logo: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     SupportEmail: NotRequired[str],
     SupportLink: NotRequired[str],
     ForgotPasswordLink: NotRequired[str],
@@ -1733,9 +1733,9 @@ def get_value() -> IosImportClientBrandingAttributesTypeDef:
 
 ```python title="Definition"
 class IosImportClientBrandingAttributesTypeDef(TypedDict):
-    Logo: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
-    Logo2x: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
-    Logo3x: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Logo: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    Logo2x: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    Logo3x: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     SupportEmail: NotRequired[str],
     SupportLink: NotRequired[str],
     ForgotPasswordLink: NotRequired[str],

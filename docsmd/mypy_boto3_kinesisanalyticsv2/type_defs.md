@@ -830,7 +830,7 @@ def get_value() -> CodeContentTypeDef:
 ```python title="Definition"
 class CodeContentTypeDef(TypedDict):
     TextContent: NotRequired[str],
-    ZipFileContent: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFileContent: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3ContentLocation: NotRequired[S3ContentLocationTypeDef],  # (1)
 ```
 
@@ -849,7 +849,7 @@ def get_value() -> CodeContentUpdateTypeDef:
 ```python title="Definition"
 class CodeContentUpdateTypeDef(TypedDict):
     TextContentUpdate: NotRequired[str],
-    ZipFileContentUpdate: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFileContentUpdate: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3ContentLocationUpdate: NotRequired[S3ContentLocationUpdateTypeDef],  # (1)
 ```
 

@@ -863,7 +863,7 @@ def run_pipeline_activity(
     self,
     *,
     pipelineActivity: PipelineActivityTypeDef,  # (1)
-    payloads: Sequence[Union[bytes, IO[bytes], StreamingBody]],
+    payloads: Sequence[Union[str, bytes, IO[Any], StreamingBody]],
 ) -> RunPipelineActivityResponseTypeDef:  # (2)
     ...
 ```

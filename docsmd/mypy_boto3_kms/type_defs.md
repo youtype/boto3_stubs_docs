@@ -271,7 +271,7 @@ def get_value() -> DecryptRequestRequestTypeDef:
 
 ```python title="Definition"
 class DecryptRequestRequestTypeDef(TypedDict):
-    CiphertextBlob: Union[bytes, IO[bytes], StreamingBody],
+    CiphertextBlob: Union[str, bytes, IO[Any], StreamingBody],
     EncryptionContext: NotRequired[Mapping[str, str]],
     GrantTokens: NotRequired[Sequence[str]],
     KeyId: NotRequired[str],
@@ -526,7 +526,7 @@ def get_value() -> EncryptRequestRequestTypeDef:
 ```python title="Definition"
 class EncryptRequestRequestTypeDef(TypedDict):
     KeyId: str,
-    Plaintext: Union[bytes, IO[bytes], StreamingBody],
+    Plaintext: Union[str, bytes, IO[Any], StreamingBody],
     EncryptionContext: NotRequired[Mapping[str, str]],
     GrantTokens: NotRequired[Sequence[str]],
     EncryptionAlgorithm: NotRequired[EncryptionAlgorithmSpecType],  # (1)
@@ -1006,8 +1006,8 @@ def get_value() -> ImportKeyMaterialRequestRequestTypeDef:
 ```python title="Definition"
 class ImportKeyMaterialRequestRequestTypeDef(TypedDict):
     KeyId: str,
-    ImportToken: Union[bytes, IO[bytes], StreamingBody],
-    EncryptedKeyMaterial: Union[bytes, IO[bytes], StreamingBody],
+    ImportToken: Union[str, bytes, IO[Any], StreamingBody],
+    EncryptedKeyMaterial: Union[str, bytes, IO[Any], StreamingBody],
     ValidTo: NotRequired[Union[datetime, str]],
     ExpirationModel: NotRequired[ExpirationModelTypeType],  # (1)
 ```
@@ -1469,7 +1469,7 @@ def get_value() -> ReEncryptRequestRequestTypeDef:
 
 ```python title="Definition"
 class ReEncryptRequestRequestTypeDef(TypedDict):
-    CiphertextBlob: Union[bytes, IO[bytes], StreamingBody],
+    CiphertextBlob: Union[str, bytes, IO[Any], StreamingBody],
     DestinationKeyId: str,
     SourceEncryptionContext: NotRequired[Mapping[str, str]],
     SourceKeyId: NotRequired[str],
@@ -1677,7 +1677,7 @@ def get_value() -> SignRequestRequestTypeDef:
 ```python title="Definition"
 class SignRequestRequestTypeDef(TypedDict):
     KeyId: str,
-    Message: Union[bytes, IO[bytes], StreamingBody],
+    Message: Union[str, bytes, IO[Any], StreamingBody],
     SigningAlgorithm: SigningAlgorithmSpecType,  # (1)
     MessageType: NotRequired[MessageTypeType],  # (2)
     GrantTokens: NotRequired[Sequence[str]],
@@ -1854,8 +1854,8 @@ def get_value() -> VerifyRequestRequestTypeDef:
 ```python title="Definition"
 class VerifyRequestRequestTypeDef(TypedDict):
     KeyId: str,
-    Message: Union[bytes, IO[bytes], StreamingBody],
-    Signature: Union[bytes, IO[bytes], StreamingBody],
+    Message: Union[str, bytes, IO[Any], StreamingBody],
+    Signature: Union[str, bytes, IO[Any], StreamingBody],
     SigningAlgorithm: SigningAlgorithmSpecType,  # (1)
     MessageType: NotRequired[MessageTypeType],  # (2)
     GrantTokens: NotRequired[Sequence[str]],

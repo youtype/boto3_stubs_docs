@@ -1084,7 +1084,7 @@ def invoke(
     InvocationType: InvocationTypeType = ...,  # (1)
     LogType: LogTypeType = ...,  # (2)
     ClientContext: str = ...,
-    Payload: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Payload: Union[str, bytes, IO[Any], StreamingBody] = ...,
     Qualifier: str = ...,
 ) -> InvocationResponseTypeDef:  # (3)
     ...
@@ -1117,7 +1117,7 @@ def invoke_async(
     self,
     *,
     FunctionName: str,
-    InvokeArgs: Union[bytes, IO[bytes], StreamingBody],
+    InvokeArgs: Union[str, bytes, IO[Any], StreamingBody],
 ) -> InvokeAsyncResponseTypeDef:  # (1)
     ...
 ```
@@ -1958,7 +1958,7 @@ def update_function_code(
     self,
     *,
     FunctionName: str,
-    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    ZipFile: Union[str, bytes, IO[Any], StreamingBody] = ...,
     S3Bucket: str = ...,
     S3Key: str = ...,
     S3ObjectVersion: str = ...,

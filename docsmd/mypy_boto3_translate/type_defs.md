@@ -764,7 +764,7 @@ def get_value() -> TerminologyDataTypeDef:
 
 ```python title="Definition"
 class TerminologyDataTypeDef(TypedDict):
-    File: Union[bytes, IO[bytes], StreamingBody],
+    File: Union[str, bytes, IO[Any], StreamingBody],
     Format: TerminologyDataFormatType,  # (1)
     Directionality: NotRequired[DirectionalityType],  # (2)
 ```

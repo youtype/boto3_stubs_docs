@@ -283,7 +283,7 @@ def get_value() -> CreateHostedConfigurationVersionRequestRequestTypeDef:
 class CreateHostedConfigurationVersionRequestRequestTypeDef(TypedDict):
     ApplicationId: str,
     ConfigurationProfileId: str,
-    Content: Union[bytes, IO[bytes], StreamingBody],
+    Content: Union[str, bytes, IO[Any], StreamingBody],
     ContentType: str,
     Description: NotRequired[str],
     LatestVersionNumber: NotRequired[int],

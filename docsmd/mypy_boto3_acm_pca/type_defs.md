@@ -779,8 +779,8 @@ def get_value() -> ImportCertificateAuthorityCertificateRequestRequestTypeDef:
 ```python title="Definition"
 class ImportCertificateAuthorityCertificateRequestRequestTypeDef(TypedDict):
     CertificateAuthorityArn: str,
-    Certificate: Union[bytes, IO[bytes], StreamingBody],
-    CertificateChain: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Certificate: Union[str, bytes, IO[Any], StreamingBody],
+    CertificateChain: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## IssueCertificateRequestRequestTypeDef
@@ -800,7 +800,7 @@ def get_value() -> IssueCertificateRequestRequestTypeDef:
 ```python title="Definition"
 class IssueCertificateRequestRequestTypeDef(TypedDict):
     CertificateAuthorityArn: str,
-    Csr: Union[bytes, IO[bytes], StreamingBody],
+    Csr: Union[str, bytes, IO[Any], StreamingBody],
     SigningAlgorithm: SigningAlgorithmType,  # (1)
     Validity: ValidityTypeDef,  # (2)
     ApiPassthrough: NotRequired[ApiPassthroughTypeDef],  # (3)

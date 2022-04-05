@@ -442,7 +442,7 @@ def get_value() -> CreateComponentVersionRequestRequestTypeDef:
 
 ```python title="Definition"
 class CreateComponentVersionRequestRequestTypeDef(TypedDict):
-    inlineRecipe: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    inlineRecipe: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     lambdaFunction: NotRequired[LambdaFunctionRecipeSourceTypeDef],  # (1)
     tags: NotRequired[Mapping[str, str]],
     clientToken: NotRequired[str],

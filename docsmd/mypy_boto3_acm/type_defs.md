@@ -255,7 +255,7 @@ def get_value() -> ExportCertificateRequestRequestTypeDef:
 ```python title="Definition"
 class ExportCertificateRequestRequestTypeDef(TypedDict):
     CertificateArn: str,
-    Passphrase: Union[bytes, IO[bytes], StreamingBody],
+    Passphrase: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## ExportCertificateResponseTypeDef
@@ -391,10 +391,10 @@ def get_value() -> ImportCertificateRequestRequestTypeDef:
 
 ```python title="Definition"
 class ImportCertificateRequestRequestTypeDef(TypedDict):
-    Certificate: Union[bytes, IO[bytes], StreamingBody],
-    PrivateKey: Union[bytes, IO[bytes], StreamingBody],
+    Certificate: Union[str, bytes, IO[Any], StreamingBody],
+    PrivateKey: Union[str, bytes, IO[Any], StreamingBody],
     CertificateArn: NotRequired[str],
-    CertificateChain: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    CertificateChain: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
 

@@ -819,7 +819,7 @@ def get_value() -> CreateFunctionRequestRequestTypeDef:
 class CreateFunctionRequestRequestTypeDef(TypedDict):
     Name: str,
     FunctionConfig: FunctionConfigTypeDef,  # (1)
-    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+    FunctionCode: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 
@@ -5772,7 +5772,7 @@ def get_value() -> TestFunctionRequestRequestTypeDef:
 class TestFunctionRequestRequestTypeDef(TypedDict):
     Name: str,
     IfMatch: str,
-    EventObject: Union[bytes, IO[bytes], StreamingBody],
+    EventObject: Union[str, bytes, IO[Any], StreamingBody],
     Stage: NotRequired[FunctionStageType],  # (1)
 ```
 
@@ -6104,7 +6104,7 @@ class UpdateFunctionRequestRequestTypeDef(TypedDict):
     Name: str,
     IfMatch: str,
     FunctionConfig: FunctionConfigTypeDef,  # (1)
-    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+    FunctionCode: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 

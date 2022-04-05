@@ -904,7 +904,7 @@ def get_value() -> FunctionCodeTypeDef:
 
 ```python title="Definition"
 class FunctionCodeTypeDef(TypedDict):
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Bucket: NotRequired[str],
     S3Key: NotRequired[str],
     S3ObjectVersion: NotRequired[str],
@@ -1728,7 +1728,7 @@ class InvocationRequestRequestTypeDef(TypedDict):
     InvocationType: NotRequired[InvocationTypeType],  # (1)
     LogType: NotRequired[LogTypeType],  # (2)
     ClientContext: NotRequired[str],
-    Payload: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Payload: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     Qualifier: NotRequired[str],
 ```
 
@@ -1769,7 +1769,7 @@ def get_value() -> InvokeAsyncRequestRequestTypeDef:
 ```python title="Definition"
 class InvokeAsyncRequestRequestTypeDef(TypedDict):
     FunctionName: str,
-    InvokeArgs: Union[bytes, IO[bytes], StreamingBody],
+    InvokeArgs: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## InvokeAsyncResponseTypeDef
@@ -1826,7 +1826,7 @@ class LayerVersionContentInputTypeDef(TypedDict):
     S3Bucket: NotRequired[str],
     S3Key: NotRequired[str],
     S3ObjectVersion: NotRequired[str],
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## LayerVersionContentOutputTypeDef
@@ -3090,7 +3090,7 @@ def get_value() -> UpdateFunctionCodeRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateFunctionCodeRequestRequestTypeDef(TypedDict):
     FunctionName: str,
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Bucket: NotRequired[str],
     S3Key: NotRequired[str],
     S3ObjectVersion: NotRequired[str],

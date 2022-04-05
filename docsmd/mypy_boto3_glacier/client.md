@@ -1085,7 +1085,7 @@ def upload_archive(
     accountId: str = '-',
     archiveDescription: str = ...,
     checksum: str = ...,
-    body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    body: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> ArchiveCreationOutputTypeDef:  # (1)
     ...
 ```
@@ -1119,7 +1119,7 @@ def upload_multipart_part(
     accountId: str = '-',
     checksum: str = ...,
     range: str = ...,
-    body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    body: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> UploadMultipartPartOutputTypeDef:  # (1)
     ...
 ```

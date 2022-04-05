@@ -121,7 +121,7 @@ def create_secret(
     ClientRequestToken: str = ...,
     Description: str = ...,
     KmsKeyId: str = ...,
-    SecretBinary: Union[bytes, IO[bytes], StreamingBody] = ...,
+    SecretBinary: Union[str, bytes, IO[Any], StreamingBody] = ...,
     SecretString: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
     AddReplicaRegions: Sequence[ReplicaRegionTypeTypeDef] = ...,  # (2)
@@ -463,7 +463,7 @@ def put_secret_value(
     *,
     SecretId: str,
     ClientRequestToken: str = ...,
-    SecretBinary: Union[bytes, IO[bytes], StreamingBody] = ...,
+    SecretBinary: Union[str, bytes, IO[Any], StreamingBody] = ...,
     SecretString: str = ...,
     VersionStages: Sequence[str] = ...,
 ) -> PutSecretValueResponseTypeDef:  # (1)
@@ -718,7 +718,7 @@ def update_secret(
     ClientRequestToken: str = ...,
     Description: str = ...,
     KmsKeyId: str = ...,
-    SecretBinary: Union[bytes, IO[bytes], StreamingBody] = ...,
+    SecretBinary: Union[str, bytes, IO[Any], StreamingBody] = ...,
     SecretString: str = ...,
 ) -> UpdateSecretResponseTypeDef:  # (1)
     ...

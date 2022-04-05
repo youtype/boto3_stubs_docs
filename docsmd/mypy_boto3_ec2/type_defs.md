@@ -2362,7 +2362,7 @@ def get_value() -> BlobAttributeValueTypeDef:
 
 ```python title="Definition"
 class BlobAttributeValueTypeDef(TypedDict):
-    Value: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Value: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## BlockDeviceMappingTypeDef
@@ -25318,7 +25318,7 @@ def get_value() -> ImportKeyPairRequestRequestTypeDef:
 ```python title="Definition"
 class ImportKeyPairRequestRequestTypeDef(TypedDict):
     KeyName: str,
-    PublicKeyMaterial: Union[bytes, IO[bytes], StreamingBody],
+    PublicKeyMaterial: Union[str, bytes, IO[Any], StreamingBody],
     DryRun: NotRequired[bool],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
 ```
@@ -25339,7 +25339,7 @@ def get_value() -> ImportKeyPairRequestServiceResourceImportKeyPairTypeDef:
 ```python title="Definition"
 class ImportKeyPairRequestServiceResourceImportKeyPairTypeDef(TypedDict):
     KeyName: str,
-    PublicKeyMaterial: Union[bytes, IO[bytes], StreamingBody],
+    PublicKeyMaterial: Union[str, bytes, IO[Any], StreamingBody],
     DryRun: NotRequired[bool],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
 ```
@@ -36324,7 +36324,7 @@ class S3StorageTypeDef(TypedDict):
     AWSAccessKeyId: NotRequired[str],
     Bucket: NotRequired[str],
     Prefix: NotRequired[str],
-    UploadPolicy: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    UploadPolicy: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     UploadPolicySignature: NotRequired[str],
 ```
 

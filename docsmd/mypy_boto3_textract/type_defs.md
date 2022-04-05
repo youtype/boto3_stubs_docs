@@ -300,7 +300,7 @@ def get_value() -> DocumentTypeDef:
 
 ```python title="Definition"
 class DocumentTypeDef(TypedDict):
-    Bytes: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Bytes: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Object: NotRequired[S3ObjectTypeDef],  # (1)
 ```
 

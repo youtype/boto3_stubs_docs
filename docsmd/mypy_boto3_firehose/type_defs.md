@@ -1394,7 +1394,7 @@ def get_value() -> RecordTypeDef:
 
 ```python title="Definition"
 class RecordTypeDef(TypedDict):
-    Data: Union[bytes, IO[bytes], StreamingBody],
+    Data: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## RedshiftDestinationConfigurationTypeDef

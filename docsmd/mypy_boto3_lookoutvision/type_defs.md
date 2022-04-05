@@ -487,7 +487,7 @@ def get_value() -> DetectAnomaliesRequestRequestTypeDef:
 class DetectAnomaliesRequestRequestTypeDef(TypedDict):
     ProjectName: str,
     ModelVersion: str,
-    Body: Union[bytes, IO[bytes], StreamingBody],
+    Body: Union[str, bytes, IO[Any], StreamingBody],
     ContentType: str,
 ```
 
@@ -1402,7 +1402,7 @@ def get_value() -> UpdateDatasetEntriesRequestRequestTypeDef:
 class UpdateDatasetEntriesRequestRequestTypeDef(TypedDict):
     ProjectName: str,
     DatasetType: str,
-    Changes: Union[bytes, IO[bytes], StreamingBody],
+    Changes: Union[str, bytes, IO[Any], StreamingBody],
     ClientToken: NotRequired[str],
 ```
 

@@ -3531,7 +3531,7 @@ def get_value() -> PutFileEntryTypeDef:
 class PutFileEntryTypeDef(TypedDict):
     filePath: str,
     fileMode: NotRequired[FileModeTypeEnumType],  # (1)
-    fileContent: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    fileContent: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     sourceFile: NotRequired[SourceFileSpecifierTypeDef],  # (2)
 ```
 
@@ -3555,7 +3555,7 @@ def get_value() -> PutFileInputRequestTypeDef:
 class PutFileInputRequestTypeDef(TypedDict):
     repositoryName: str,
     branchName: str,
-    fileContent: Union[bytes, IO[bytes], StreamingBody],
+    fileContent: Union[str, bytes, IO[Any], StreamingBody],
     filePath: str,
     fileMode: NotRequired[FileModeTypeEnumType],  # (1)
     parentCommitId: NotRequired[str],
@@ -3679,7 +3679,7 @@ def get_value() -> ReplaceContentEntryTypeDef:
 class ReplaceContentEntryTypeDef(TypedDict):
     filePath: str,
     replacementType: ReplacementTypeEnumType,  # (1)
-    content: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    content: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     fileMode: NotRequired[FileModeTypeEnumType],  # (2)
 ```
 

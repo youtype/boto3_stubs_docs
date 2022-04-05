@@ -115,7 +115,7 @@ def get_value() -> AttachmentTypeDef:
 ```python title="Definition"
 class AttachmentTypeDef(TypedDict):
     fileName: NotRequired[str],
-    data: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    data: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## CaseDetailsTypeDef

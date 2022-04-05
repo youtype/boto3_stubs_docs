@@ -1351,7 +1351,7 @@ def get_value() -> CodeSigningSignatureTypeDef:
 
 ```python title="Definition"
 class CodeSigningSignatureTypeDef(TypedDict):
-    inlineDocument: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    inlineDocument: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## CodeSigningTypeDef
@@ -9899,7 +9899,7 @@ def get_value() -> MqttContextTypeDef:
 ```python title="Definition"
 class MqttContextTypeDef(TypedDict):
     username: NotRequired[str],
-    password: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    password: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     clientId: NotRequired[str],
 ```
 

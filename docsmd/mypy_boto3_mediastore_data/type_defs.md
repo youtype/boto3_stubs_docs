@@ -228,7 +228,7 @@ def get_value() -> PutObjectRequestRequestTypeDef:
 
 ```python title="Definition"
 class PutObjectRequestRequestTypeDef(TypedDict):
-    Body: Union[bytes, IO[bytes], StreamingBody],
+    Body: Union[str, bytes, IO[Any], StreamingBody],
     Path: str,
     ContentType: NotRequired[str],
     CacheControl: NotRequired[str],

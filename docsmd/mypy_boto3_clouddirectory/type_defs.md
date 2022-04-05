@@ -4246,7 +4246,7 @@ def get_value() -> TypedAttributeValueTypeDef:
 ```python title="Definition"
 class TypedAttributeValueTypeDef(TypedDict):
     StringValue: NotRequired[str],
-    BinaryValue: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    BinaryValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     BooleanValue: NotRequired[bool],
     NumberValue: NotRequired[str],
     DatetimeValue: NotRequired[Union[datetime, str]],

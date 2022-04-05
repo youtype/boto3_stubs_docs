@@ -198,6 +198,43 @@ parent.create_location_fsx_lustre(**kwargs)
 
 1. See [:material-code-braces: CreateLocationFsxLustreRequestRequestTypeDef](./type_defs.md#createlocationfsxlustrerequestrequesttypedef) 
 
+### create\_location\_fsx\_open\_zfs
+
+Creates an endpoint for an Amazon FSx for OpenZFS file system.
+
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_fsx_open_zfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_open_zfs)
+
+```python title="Method definition"
+def create_location_fsx_open_zfs(
+    self,
+    *,
+    FsxFilesystemArn: str,
+    Protocol: FsxProtocolTypeDef,  # (1)
+    SecurityGroupArns: Sequence[str],
+    Subdirectory: str = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (2)
+) -> CreateLocationFsxOpenZfsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FsxProtocolTypeDef](./type_defs.md#fsxprotocoltypedef) 
+2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+3. See [:material-code-braces: CreateLocationFsxOpenZfsResponseTypeDef](./type_defs.md#createlocationfsxopenzfsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLocationFsxOpenZfsRequestRequestTypeDef = {  # (1)
+    "FsxFilesystemArn": ...,
+    "Protocol": ...,
+    "SecurityGroupArns": ...,
+}
+
+parent.create_location_fsx_open_zfs(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLocationFsxOpenZfsRequestRequestTypeDef](./type_defs.md#createlocationfsxopenzfsrequestrequesttypedef) 
+
 ### create\_location\_fsx\_windows
 
 Creates an endpoint for an Amazon FSx for Windows File Server file system.
@@ -258,8 +295,8 @@ def create_location_hdfs(
     QopConfiguration: QopConfigurationTypeDef = ...,  # (3)
     SimpleUser: str = ...,
     KerberosPrincipal: str = ...,
-    KerberosKeytab: Union[bytes, IO[bytes], StreamingBody] = ...,
-    KerberosKrb5Conf: Union[bytes, IO[bytes], StreamingBody] = ...,
+    KerberosKeytab: Union[str, bytes, IO[Any], StreamingBody] = ...,
+    KerberosKrb5Conf: Union[str, bytes, IO[Any], StreamingBody] = ...,
     Tags: Sequence[TagListEntryTypeDef] = ...,  # (4)
 ) -> CreateLocationHdfsResponseTypeDef:  # (5)
     ...
@@ -633,8 +670,8 @@ parent.describe_location_efs(**kwargs)
 
 ### describe\_location\_fsx\_lustre
 
-Returns metadata, such as the path information about an Amazon FSx for Lustre
-location.
+Returns metadata about an Amazon FSx for Lustre location, such as information
+about its path.
 
 Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_lustre` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_lustre)
@@ -661,10 +698,40 @@ parent.describe_location_fsx_lustre(**kwargs)
 
 1. See [:material-code-braces: DescribeLocationFsxLustreRequestRequestTypeDef](./type_defs.md#describelocationfsxlustrerequestrequesttypedef) 
 
+### describe\_location\_fsx\_open\_zfs
+
+Returns metadata about an Amazon FSx for OpenZFS location, such as information
+about its path.
+
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_open_zfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_open_zfs)
+
+```python title="Method definition"
+def describe_location_fsx_open_zfs(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationFsxOpenZfsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeLocationFsxOpenZfsResponseTypeDef](./type_defs.md#describelocationfsxopenzfsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationFsxOpenZfsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
+
+parent.describe_location_fsx_open_zfs(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLocationFsxOpenZfsRequestRequestTypeDef](./type_defs.md#describelocationfsxopenzfsrequestrequesttypedef) 
+
 ### describe\_location\_fsx\_windows
 
-Returns metadata, such as the path information about an Amazon FSx for Windows
-File Server location.
+Returns metadata about an Amazon FSx for Windows File Server location, such as
+information about its path.
 
 Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_windows` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
@@ -1218,8 +1285,8 @@ def update_location_hdfs(
     AuthenticationType: HdfsAuthenticationTypeType = ...,  # (3)
     SimpleUser: str = ...,
     KerberosPrincipal: str = ...,
-    KerberosKeytab: Union[bytes, IO[bytes], StreamingBody] = ...,
-    KerberosKrb5Conf: Union[bytes, IO[bytes], StreamingBody] = ...,
+    KerberosKeytab: Union[str, bytes, IO[Any], StreamingBody] = ...,
+    KerberosKrb5Conf: Union[str, bytes, IO[Any], StreamingBody] = ...,
     AgentArns: Sequence[str] = ...,
 ) -> Dict[str, Any]:
     ...

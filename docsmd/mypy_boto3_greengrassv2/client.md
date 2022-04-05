@@ -204,7 +204,7 @@ Type annotations and code completion for `#!python boto3.client("greengrassv2").
 def create_component_version(
     self,
     *,
-    inlineRecipe: Union[bytes, IO[bytes], StreamingBody] = ...,
+    inlineRecipe: Union[str, bytes, IO[Any], StreamingBody] = ...,
     lambdaFunction: LambdaFunctionRecipeSourceTypeDef = ...,  # (1)
     tags: Mapping[str, str] = ...,
     clientToken: str = ...,

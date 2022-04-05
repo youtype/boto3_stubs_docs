@@ -329,7 +329,7 @@ def get_value() -> UploadDocumentsRequestRequestTypeDef:
 
 ```python title="Definition"
 class UploadDocumentsRequestRequestTypeDef(TypedDict):
-    documents: Union[bytes, IO[bytes], StreamingBody],
+    documents: Union[str, bytes, IO[Any], StreamingBody],
     contentType: ContentTypeType,  # (1)
 ```
 

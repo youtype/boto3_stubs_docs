@@ -588,7 +588,7 @@ Type annotations and code completion for `#!python boto3.client("codeguruprofile
 def post_agent_profile(
     self,
     *,
-    agentProfile: Union[bytes, IO[bytes], StreamingBody],
+    agentProfile: Union[str, bytes, IO[Any], StreamingBody],
     contentType: str,
     profilingGroupName: str,
     profileToken: str = ...,

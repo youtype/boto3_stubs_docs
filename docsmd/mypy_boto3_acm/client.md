@@ -181,7 +181,7 @@ def export_certificate(
     self,
     *,
     CertificateArn: str,
-    Passphrase: Union[bytes, IO[bytes], StreamingBody],
+    Passphrase: Union[str, bytes, IO[Any], StreamingBody],
 ) -> ExportCertificateResponseTypeDef:  # (1)
     ...
 ```
@@ -277,10 +277,10 @@ Type annotations and code completion for `#!python boto3.client("acm").import_ce
 def import_certificate(
     self,
     *,
-    Certificate: Union[bytes, IO[bytes], StreamingBody],
-    PrivateKey: Union[bytes, IO[bytes], StreamingBody],
+    Certificate: Union[str, bytes, IO[Any], StreamingBody],
+    PrivateKey: Union[str, bytes, IO[Any], StreamingBody],
     CertificateArn: str = ...,
-    CertificateChain: Union[bytes, IO[bytes], StreamingBody] = ...,
+    CertificateChain: Union[str, bytes, IO[Any], StreamingBody] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> ImportCertificateResponseTypeDef:  # (2)
     ...

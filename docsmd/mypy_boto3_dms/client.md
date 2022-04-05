@@ -1398,7 +1398,7 @@ def import_certificate(
     *,
     CertificateIdentifier: str,
     CertificatePem: str = ...,
-    CertificateWallet: Union[bytes, IO[bytes], StreamingBody] = ...,
+    CertificateWallet: Union[str, bytes, IO[Any], StreamingBody] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> ImportCertificateResponseTypeDef:  # (2)
     ...

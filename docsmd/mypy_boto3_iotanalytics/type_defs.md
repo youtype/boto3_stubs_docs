@@ -1941,7 +1941,7 @@ def get_value() -> MessageTypeDef:
 ```python title="Definition"
 class MessageTypeDef(TypedDict):
     messageId: str,
-    payload: Union[bytes, IO[bytes], StreamingBody],
+    payload: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## OutputFileUriValueTypeDef
@@ -2236,7 +2236,7 @@ def get_value() -> RunPipelineActivityRequestRequestTypeDef:
 ```python title="Definition"
 class RunPipelineActivityRequestRequestTypeDef(TypedDict):
     pipelineActivity: PipelineActivityTypeDef,  # (1)
-    payloads: Sequence[Union[bytes, IO[bytes], StreamingBody]],
+    payloads: Sequence[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 1. See [:material-code-braces: PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) 

@@ -415,7 +415,7 @@ def create_function(
     *,
     Name: str,
     FunctionConfig: FunctionConfigTypeDef,  # (1)
-    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+    FunctionCode: Union[str, bytes, IO[Any], StreamingBody],
 ) -> CreateFunctionResultTypeDef:  # (2)
     ...
 ```
@@ -2590,7 +2590,7 @@ def test_function(
     *,
     Name: str,
     IfMatch: str,
-    EventObject: Union[bytes, IO[bytes], StreamingBody],
+    EventObject: Union[str, bytes, IO[Any], StreamingBody],
     Stage: FunctionStageType = ...,  # (1)
 ) -> TestFunctionResultTypeDef:  # (2)
     ...
@@ -2822,7 +2822,7 @@ def update_function(
     Name: str,
     IfMatch: str,
     FunctionConfig: FunctionConfigTypeDef,  # (1)
-    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+    FunctionCode: Union[str, bytes, IO[Any], StreamingBody],
 ) -> UpdateFunctionResultTypeDef:  # (2)
     ...
 ```

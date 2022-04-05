@@ -713,7 +713,7 @@ class CreateScriptInputRequestTypeDef(TypedDict):
     Name: NotRequired[str],
     Version: NotRequired[str],
     StorageLocation: NotRequired[S3LocationTypeDef],  # (1)
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
@@ -5073,7 +5073,7 @@ class UpdateScriptInputRequestTypeDef(TypedDict):
     Name: NotRequired[str],
     Version: NotRequired[str],
     StorageLocation: NotRequired[S3LocationTypeDef],  # (1)
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 

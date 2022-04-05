@@ -522,10 +522,31 @@ class AwsAutoScalingAutoScalingGroupDetailsTypeDef(TypedDict):
     CreatedTime: NotRequired[str],
     MixedInstancesPolicy: NotRequired[AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef],  # (1)
     AvailabilityZones: NotRequired[Sequence[AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef]],  # (2)
+    LaunchTemplate: NotRequired[AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef],  # (3)
+    CapacityRebalance: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicydetailstypedef) 
 2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupavailabilityzoneslistdetailstypedef) 
+3. See [:material-code-braces: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggrouplaunchtemplatelaunchtemplatespecificationtypedef) 
+## AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef
+
+def get_value() -> AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef:
+    return {
+        "LaunchTemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef(TypedDict):
+    LaunchTemplateId: NotRequired[str],
+    LaunchTemplateName: NotRequired[str],
+    Version: NotRequired[str],
+```
+
 ## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1203,6 +1224,7 @@ class AwsCodeBuildProjectDetailsTypeDef(TypedDict):
     ServiceRole: NotRequired[str],
     LogsConfig: NotRequired[AwsCodeBuildProjectLogsConfigDetailsTypeDef],  # (4)
     VpcConfig: NotRequired[AwsCodeBuildProjectVpcConfigTypeDef],  # (5)
+    SecondaryArtifacts: NotRequired[Sequence[AwsCodeBuildProjectArtifactsDetailsTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef) 
@@ -1210,6 +1232,7 @@ class AwsCodeBuildProjectDetailsTypeDef(TypedDict):
 3. See [:material-code-braces: AwsCodeBuildProjectSourceTypeDef](./type_defs.md#awscodebuildprojectsourcetypedef) 
 4. See [:material-code-braces: AwsCodeBuildProjectLogsConfigDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigdetailstypedef) 
 5. See [:material-code-braces: AwsCodeBuildProjectVpcConfigTypeDef](./type_defs.md#awscodebuildprojectvpcconfigtypedef) 
+6. See [:material-code-braces: AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef) 
 ## AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3734,6 +3757,23 @@ class AwsElbLoadBalancerAccessLogTypeDef(TypedDict):
     S3BucketPrefix: NotRequired[str],
 ```
 
+## AwsElbLoadBalancerAdditionalAttributeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerAdditionalAttributeTypeDef
+
+def get_value() -> AwsElbLoadBalancerAdditionalAttributeTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class AwsElbLoadBalancerAdditionalAttributeTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## AwsElbLoadBalancerAttributesTypeDef
 
 ```python title="Usage Example"
@@ -3751,12 +3791,14 @@ class AwsElbLoadBalancerAttributesTypeDef(TypedDict):
     ConnectionDraining: NotRequired[AwsElbLoadBalancerConnectionDrainingTypeDef],  # (2)
     ConnectionSettings: NotRequired[AwsElbLoadBalancerConnectionSettingsTypeDef],  # (3)
     CrossZoneLoadBalancing: NotRequired[AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef],  # (4)
+    AdditionalAttributes: NotRequired[Sequence[AwsElbLoadBalancerAdditionalAttributeTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: AwsElbLoadBalancerAccessLogTypeDef](./type_defs.md#awselbloadbalanceraccesslogtypedef) 
 2. See [:material-code-braces: AwsElbLoadBalancerConnectionDrainingTypeDef](./type_defs.md#awselbloadbalancerconnectiondrainingtypedef) 
 3. See [:material-code-braces: AwsElbLoadBalancerConnectionSettingsTypeDef](./type_defs.md#awselbloadbalancerconnectionsettingstypedef) 
 4. See [:material-code-braces: AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef](./type_defs.md#awselbloadbalancercrosszoneloadbalancingtypedef) 
+5. See [:material-code-braces: AwsElbLoadBalancerAdditionalAttributeTypeDef](./type_defs.md#awselbloadbalanceradditionalattributetypedef) 
 ## AwsElbLoadBalancerBackendServerDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -5226,6 +5268,66 @@ class AwsRdsDbProcessorFeatureTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
+## AwsRdsDbSecurityGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSecurityGroupDetailsTypeDef
+
+def get_value() -> AwsRdsDbSecurityGroupDetailsTypeDef:
+    return {
+        "DbSecurityGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSecurityGroupDetailsTypeDef(TypedDict):
+    DbSecurityGroupArn: NotRequired[str],
+    DbSecurityGroupDescription: NotRequired[str],
+    DbSecurityGroupName: NotRequired[str],
+    Ec2SecurityGroups: NotRequired[Sequence[AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef]],  # (1)
+    IpRanges: NotRequired[Sequence[AwsRdsDbSecurityGroupIpRangeTypeDef]],  # (2)
+    OwnerId: NotRequired[str],
+    VpcId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef](./type_defs.md#awsrdsdbsecuritygroupec2securitygrouptypedef) 
+2. See [:material-code-braces: AwsRdsDbSecurityGroupIpRangeTypeDef](./type_defs.md#awsrdsdbsecuritygroupiprangetypedef) 
+## AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef
+
+def get_value() -> AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef:
+    return {
+        "Ec2SecurityGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSecurityGroupEc2SecurityGroupTypeDef(TypedDict):
+    Ec2SecurityGroupId: NotRequired[str],
+    Ec2SecurityGroupName: NotRequired[str],
+    Ec2SecurityGroupOwnerId: NotRequired[str],
+    Status: NotRequired[str],
+```
+
+## AwsRdsDbSecurityGroupIpRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRdsDbSecurityGroupIpRangeTypeDef
+
+def get_value() -> AwsRdsDbSecurityGroupIpRangeTypeDef:
+    return {
+        "CidrIp": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRdsDbSecurityGroupIpRangeTypeDef(TypedDict):
+    CidrIp: NotRequired[str],
+    Status: NotRequired[str],
+```
+
 ## AwsRdsDbSnapshotDetailsTypeDef
 
 ```python title="Usage Example"
@@ -5552,6 +5654,7 @@ class AwsRedshiftClusterDetailsTypeDef(TypedDict):
     SnapshotScheduleState: NotRequired[str],
     VpcId: NotRequired[str],
     VpcSecurityGroups: NotRequired[Sequence[AwsRedshiftClusterVpcSecurityGroupTypeDef]],  # (13)
+    LoggingStatus: NotRequired[AwsRedshiftClusterLoggingStatusTypeDef],  # (14)
 ```
 
 1. See [:material-code-braces: AwsRedshiftClusterClusterNodeTypeDef](./type_defs.md#awsredshiftclusterclusternodetypedef) 
@@ -5567,6 +5670,7 @@ class AwsRedshiftClusterDetailsTypeDef(TypedDict):
 11. See [:material-code-braces: AwsRedshiftClusterResizeInfoTypeDef](./type_defs.md#awsredshiftclusterresizeinfotypedef) 
 12. See [:material-code-braces: AwsRedshiftClusterRestoreStatusTypeDef](./type_defs.md#awsredshiftclusterrestorestatustypedef) 
 13. See [:material-code-braces: AwsRedshiftClusterVpcSecurityGroupTypeDef](./type_defs.md#awsredshiftclustervpcsecuritygrouptypedef) 
+14. See [:material-code-braces: AwsRedshiftClusterLoggingStatusTypeDef](./type_defs.md#awsredshiftclusterloggingstatustypedef) 
 ## AwsRedshiftClusterElasticIpStatusTypeDef
 
 ```python title="Usage Example"
@@ -5634,6 +5738,27 @@ def get_value() -> AwsRedshiftClusterIamRoleTypeDef:
 class AwsRedshiftClusterIamRoleTypeDef(TypedDict):
     ApplyStatus: NotRequired[str],
     IamRoleArn: NotRequired[str],
+```
+
+## AwsRedshiftClusterLoggingStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterLoggingStatusTypeDef
+
+def get_value() -> AwsRedshiftClusterLoggingStatusTypeDef:
+    return {
+        "BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsRedshiftClusterLoggingStatusTypeDef(TypedDict):
+    BucketName: NotRequired[str],
+    LastFailureMessage: NotRequired[str],
+    LastFailureTime: NotRequired[str],
+    LastSuccessfulDeliveryTime: NotRequired[str],
+    LoggingEnabled: NotRequired[bool],
+    S3KeyPrefix: NotRequired[str],
 ```
 
 ## AwsRedshiftClusterPendingModifiedValuesTypeDef
@@ -9762,6 +9887,7 @@ class ResourceDetailsTypeDef(TypedDict):
     AwsNetworkFirewallFirewallPolicy: NotRequired[AwsNetworkFirewallFirewallPolicyDetailsTypeDef],  # (59)
     AwsNetworkFirewallFirewall: NotRequired[AwsNetworkFirewallFirewallDetailsTypeDef],  # (60)
     AwsNetworkFirewallRuleGroup: NotRequired[AwsNetworkFirewallRuleGroupDetailsTypeDef],  # (61)
+    AwsRdsDbSecurityGroup: NotRequired[AwsRdsDbSecurityGroupDetailsTypeDef],  # (62)
 ```
 
 1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupdetailstypedef) 
@@ -9825,6 +9951,7 @@ class ResourceDetailsTypeDef(TypedDict):
 59. See [:material-code-braces: AwsNetworkFirewallFirewallPolicyDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewallpolicydetailstypedef) 
 60. See [:material-code-braces: AwsNetworkFirewallFirewallDetailsTypeDef](./type_defs.md#awsnetworkfirewallfirewalldetailstypedef) 
 61. See [:material-code-braces: AwsNetworkFirewallRuleGroupDetailsTypeDef](./type_defs.md#awsnetworkfirewallrulegroupdetailstypedef) 
+62. See [:material-code-braces: AwsRdsDbSecurityGroupDetailsTypeDef](./type_defs.md#awsrdsdbsecuritygroupdetailstypedef) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"

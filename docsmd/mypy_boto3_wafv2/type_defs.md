@@ -109,7 +109,7 @@ def get_value() -> ByteMatchStatementTypeDef:
 
 ```python title="Definition"
 class ByteMatchStatementTypeDef(TypedDict):
-    SearchString: Union[bytes, IO[bytes], StreamingBody],
+    SearchString: Union[str, bytes, IO[Any], StreamingBody],
     FieldToMatch: FieldToMatchTypeDef,  # (1)
     TextTransformations: Sequence[TextTransformationTypeDef],  # (2)
     PositionalConstraint: PositionalConstraintType,  # (3)

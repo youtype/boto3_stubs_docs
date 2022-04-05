@@ -171,7 +171,7 @@ Type annotations and code completion for `#!python boto3.client("cloudsearchdoma
 def upload_documents(
     self,
     *,
-    documents: Union[bytes, IO[bytes], StreamingBody],
+    documents: Union[str, bytes, IO[Any], StreamingBody],
     contentType: ContentTypeType,  # (1)
 ) -> UploadDocumentsResponseTypeDef:  # (2)
     ...

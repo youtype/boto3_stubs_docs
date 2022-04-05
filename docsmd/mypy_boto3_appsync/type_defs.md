@@ -2053,7 +2053,7 @@ def get_value() -> StartSchemaCreationRequestRequestTypeDef:
 ```python title="Definition"
 class StartSchemaCreationRequestRequestTypeDef(TypedDict):
     apiId: str,
-    definition: Union[bytes, IO[bytes], StreamingBody],
+    definition: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## StartSchemaCreationResponseTypeDef

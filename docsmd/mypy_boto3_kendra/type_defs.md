@@ -2111,7 +2111,7 @@ def get_value() -> DocumentTypeDef:
 class DocumentTypeDef(TypedDict):
     Id: str,
     Title: NotRequired[str],
-    Blob: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Blob: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Path: NotRequired[S3PathTypeDef],  # (1)
     Attributes: NotRequired[Sequence[DocumentAttributeTypeDef]],  # (2)
     AccessControlList: NotRequired[Sequence[PrincipalTypeDef]],  # (3)

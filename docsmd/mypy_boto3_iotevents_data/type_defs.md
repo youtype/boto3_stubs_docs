@@ -802,7 +802,7 @@ def get_value() -> MessageTypeDef:
 class MessageTypeDef(TypedDict):
     messageId: str,
     inputName: str,
-    payload: Union[bytes, IO[bytes], StreamingBody],
+    payload: Union[str, bytes, IO[Any], StreamingBody],
     timestamp: NotRequired[TimestampValueTypeDef],  # (1)
 ```
 

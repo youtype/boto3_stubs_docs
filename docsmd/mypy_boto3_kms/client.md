@@ -323,7 +323,7 @@ Type annotations and code completion for `#!python boto3.client("kms").decrypt` 
 def decrypt(
     self,
     *,
-    CiphertextBlob: Union[bytes, IO[bytes], StreamingBody],
+    CiphertextBlob: Union[str, bytes, IO[Any], StreamingBody],
     EncryptionContext: Mapping[str, str] = ...,
     GrantTokens: Sequence[str] = ...,
     KeyId: str = ...,
@@ -654,7 +654,7 @@ def encrypt(
     self,
     *,
     KeyId: str,
-    Plaintext: Union[bytes, IO[bytes], StreamingBody],
+    Plaintext: Union[str, bytes, IO[Any], StreamingBody],
     EncryptionContext: Mapping[str, str] = ...,
     GrantTokens: Sequence[str] = ...,
     EncryptionAlgorithm: EncryptionAlgorithmSpecType = ...,  # (1)
@@ -1003,8 +1003,8 @@ def import_key_material(
     self,
     *,
     KeyId: str,
-    ImportToken: Union[bytes, IO[bytes], StreamingBody],
-    EncryptedKeyMaterial: Union[bytes, IO[bytes], StreamingBody],
+    ImportToken: Union[str, bytes, IO[Any], StreamingBody],
+    EncryptedKeyMaterial: Union[str, bytes, IO[Any], StreamingBody],
     ValidTo: Union[datetime, str] = ...,
     ExpirationModel: ExpirationModelTypeType = ...,  # (1)
 ) -> Dict[str, Any]:
@@ -1259,7 +1259,7 @@ Type annotations and code completion for `#!python boto3.client("kms").re_encryp
 def re_encrypt(
     self,
     *,
-    CiphertextBlob: Union[bytes, IO[bytes], StreamingBody],
+    CiphertextBlob: Union[str, bytes, IO[Any], StreamingBody],
     DestinationKeyId: str,
     SourceEncryptionContext: Mapping[str, str] = ...,
     SourceKeyId: str = ...,
@@ -1427,7 +1427,7 @@ def sign(
     self,
     *,
     KeyId: str,
-    Message: Union[bytes, IO[bytes], StreamingBody],
+    Message: Union[str, bytes, IO[Any], StreamingBody],
     SigningAlgorithm: SigningAlgorithmSpecType,  # (1)
     MessageType: MessageTypeType = ...,  # (2)
     GrantTokens: Sequence[str] = ...,
@@ -1650,8 +1650,8 @@ def verify(
     self,
     *,
     KeyId: str,
-    Message: Union[bytes, IO[bytes], StreamingBody],
-    Signature: Union[bytes, IO[bytes], StreamingBody],
+    Message: Union[str, bytes, IO[Any], StreamingBody],
+    Signature: Union[str, bytes, IO[Any], StreamingBody],
     SigningAlgorithm: SigningAlgorithmSpecType,  # (1)
     MessageType: MessageTypeType = ...,  # (2)
     GrantTokens: Sequence[str] = ...,

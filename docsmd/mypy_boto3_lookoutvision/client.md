@@ -400,7 +400,7 @@ def detect_anomalies(
     *,
     ProjectName: str,
     ModelVersion: str,
-    Body: Union[bytes, IO[bytes], StreamingBody],
+    Body: Union[str, bytes, IO[Any], StreamingBody],
     ContentType: str,
 ) -> DetectAnomaliesResponseTypeDef:  # (1)
     ...
@@ -778,7 +778,7 @@ def update_dataset_entries(
     *,
     ProjectName: str,
     DatasetType: str,
-    Changes: Union[bytes, IO[bytes], StreamingBody],
+    Changes: Union[str, bytes, IO[Any], StreamingBody],
     ClientToken: str = ...,
 ) -> UpdateDatasetEntriesResponseTypeDef:  # (1)
     ...

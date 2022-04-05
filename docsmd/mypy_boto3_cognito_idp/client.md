@@ -2818,7 +2818,7 @@ def set_ui_customization(
     UserPoolId: str,
     ClientId: str = ...,
     CSS: str = ...,
-    ImageFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    ImageFile: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> SetUICustomizationResponseTypeDef:  # (1)
     ...
 ```

@@ -420,7 +420,7 @@ class RecognizeUtteranceRequestRequestTypeDef(TypedDict):
     sessionState: NotRequired[str],
     requestAttributes: NotRequired[str],
     responseContentType: NotRequired[str],
-    inputStream: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    inputStream: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## RecognizeUtteranceResponseTypeDef

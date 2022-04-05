@@ -164,6 +164,49 @@ class CreateLocationFsxLustreResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLocationFsxOpenZfsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import CreateLocationFsxOpenZfsRequestRequestTypeDef
+
+def get_value() -> CreateLocationFsxOpenZfsRequestRequestTypeDef:
+    return {
+        "FsxFilesystemArn": ...,
+        "Protocol": ...,
+        "SecurityGroupArns": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocationFsxOpenZfsRequestRequestTypeDef(TypedDict):
+    FsxFilesystemArn: str,
+    Protocol: FsxProtocolTypeDef,  # (1)
+    SecurityGroupArns: Sequence[str],
+    Subdirectory: NotRequired[str],
+    Tags: NotRequired[Sequence[TagListEntryTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: FsxProtocolTypeDef](./type_defs.md#fsxprotocoltypedef) 
+2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+## CreateLocationFsxOpenZfsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import CreateLocationFsxOpenZfsResponseTypeDef
+
+def get_value() -> CreateLocationFsxOpenZfsResponseTypeDef:
+    return {
+        "LocationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocationFsxOpenZfsResponseTypeDef(TypedDict):
+    LocationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLocationFsxWindowsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -234,8 +277,8 @@ class CreateLocationHdfsRequestRequestTypeDef(TypedDict):
     QopConfiguration: NotRequired[QopConfigurationTypeDef],  # (3)
     SimpleUser: NotRequired[str],
     KerberosPrincipal: NotRequired[str],
-    KerberosKeytab: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
-    KerberosKrb5Conf: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    KerberosKeytab: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    KerberosKrb5Conf: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     Tags: NotRequired[Sequence[TagListEntryTypeDef]],  # (4)
 ```
 
@@ -675,6 +718,50 @@ class DescribeLocationFsxLustreResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLocationFsxOpenZfsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxOpenZfsRequestRequestTypeDef
+
+def get_value() -> DescribeLocationFsxOpenZfsRequestRequestTypeDef:
+    return {
+        "LocationArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLocationFsxOpenZfsRequestRequestTypeDef(TypedDict):
+    LocationArn: str,
+```
+
+## DescribeLocationFsxOpenZfsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxOpenZfsResponseTypeDef
+
+def get_value() -> DescribeLocationFsxOpenZfsResponseTypeDef:
+    return {
+        "LocationArn": ...,
+        "LocationUri": ...,
+        "SecurityGroupArns": ...,
+        "Protocol": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLocationFsxOpenZfsResponseTypeDef(TypedDict):
+    LocationArn: str,
+    LocationUri: str,
+    SecurityGroupArns: List[str],
+    Protocol: FsxProtocolTypeDef,  # (1)
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FsxProtocolTypeDef](./type_defs.md#fsxprotocoltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLocationFsxWindowsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1136,6 +1223,40 @@ class FilterRuleTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FilterTypeType](./literals.md#filtertypetype) 
+## FsxProtocolNfsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import FsxProtocolNfsTypeDef
+
+def get_value() -> FsxProtocolNfsTypeDef:
+    return {
+        "MountOptions": ...,
+    }
+```
+
+```python title="Definition"
+class FsxProtocolNfsTypeDef(TypedDict):
+    MountOptions: NotRequired[NfsMountOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef) 
+## FsxProtocolTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_datasync.type_defs import FsxProtocolTypeDef
+
+def get_value() -> FsxProtocolTypeDef:
+    return {
+        "NFS": ...,
+    }
+```
+
+```python title="Definition"
+class FsxProtocolTypeDef(TypedDict):
+    NFS: NotRequired[FsxProtocolNfsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FsxProtocolNfsTypeDef](./type_defs.md#fsxprotocolnfstypedef) 
 ## HdfsNameNodeTypeDef
 
 ```python title="Usage Example"
@@ -1910,8 +2031,8 @@ class UpdateLocationHdfsRequestRequestTypeDef(TypedDict):
     AuthenticationType: NotRequired[HdfsAuthenticationTypeType],  # (3)
     SimpleUser: NotRequired[str],
     KerberosPrincipal: NotRequired[str],
-    KerberosKeytab: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
-    KerberosKrb5Conf: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    KerberosKeytab: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    KerberosKrb5Conf: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     AgentArns: NotRequired[Sequence[str]],
 ```
 

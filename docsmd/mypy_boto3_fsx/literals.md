@@ -300,6 +300,7 @@ FileSystemLifecycleType = Literal[
     "DELETING",
     "FAILED",
     "MISCONFIGURED",
+    "MISCONFIGURED_UNAVAILABLE",
     "UPDATING",
 ]
 ```

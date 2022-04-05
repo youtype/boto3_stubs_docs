@@ -1538,7 +1538,7 @@ def import_key_pair(
     self,
     *,
     KeyName: str,
-    PublicKeyMaterial: Union[bytes, IO[bytes], StreamingBody],
+    PublicKeyMaterial: Union[str, bytes, IO[Any], StreamingBody],
     DryRun: bool = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
 ) -> KeyPairInfo:

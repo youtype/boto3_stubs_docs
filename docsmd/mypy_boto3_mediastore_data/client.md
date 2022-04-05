@@ -217,7 +217,7 @@ Type annotations and code completion for `#!python boto3.client("mediastore-data
 def put_object(
     self,
     *,
-    Body: Union[bytes, IO[bytes], StreamingBody],
+    Body: Union[str, bytes, IO[Any], StreamingBody],
     Path: str,
     ContentType: str = ...,
     CacheControl: str = ...,

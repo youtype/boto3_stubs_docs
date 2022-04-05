@@ -1122,7 +1122,7 @@ def get_value() -> MessageAttributeValueTypeDef:
 class MessageAttributeValueTypeDef(TypedDict):
     DataType: str,
     StringValue: NotRequired[str],
-    BinaryValue: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    BinaryValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## OptInPhoneNumberInputRequestTypeDef

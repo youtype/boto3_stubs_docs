@@ -1941,7 +1941,7 @@ class UploadArchiveInputRequestTypeDef(TypedDict):
     accountId: NotRequired[str],
     archiveDescription: NotRequired[str],
     checksum: NotRequired[str],
-    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## UploadArchiveInputVaultUploadArchiveTypeDef
@@ -1959,7 +1959,7 @@ def get_value() -> UploadArchiveInputVaultUploadArchiveTypeDef:
 class UploadArchiveInputVaultUploadArchiveTypeDef(TypedDict):
     archiveDescription: NotRequired[str],
     checksum: NotRequired[str],
-    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## UploadListElementTypeDef
@@ -1997,7 +1997,7 @@ def get_value() -> UploadMultipartPartInputMultipartUploadUploadPartTypeDef:
 class UploadMultipartPartInputMultipartUploadUploadPartTypeDef(TypedDict):
     checksum: NotRequired[str],
     range: NotRequired[str],
-    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## UploadMultipartPartInputRequestTypeDef
@@ -2019,7 +2019,7 @@ class UploadMultipartPartInputRequestTypeDef(TypedDict):
     accountId: NotRequired[str],
     checksum: NotRequired[str],
     range: NotRequired[str],
-    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## UploadMultipartPartOutputTypeDef

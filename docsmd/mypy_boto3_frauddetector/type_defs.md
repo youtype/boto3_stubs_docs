@@ -2266,7 +2266,7 @@ def get_value() -> ModelEndpointDataBlobTypeDef:
 
 ```python title="Definition"
 class ModelEndpointDataBlobTypeDef(TypedDict):
-    byteBuffer: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    byteBuffer: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     contentType: NotRequired[str],
 ```
 

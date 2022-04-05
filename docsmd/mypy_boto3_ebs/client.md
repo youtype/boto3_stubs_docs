@@ -240,7 +240,7 @@ def put_snapshot_block(
     *,
     SnapshotId: str,
     BlockIndex: int,
-    BlockData: Union[bytes, IO[bytes], StreamingBody],
+    BlockData: Union[str, bytes, IO[Any], StreamingBody],
     DataLength: int,
     Checksum: str,
     ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)

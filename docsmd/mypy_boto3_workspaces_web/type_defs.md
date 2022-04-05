@@ -418,7 +418,7 @@ def get_value() -> CreateTrustStoreRequestRequestTypeDef:
 
 ```python title="Definition"
 class CreateTrustStoreRequestRequestTypeDef(TypedDict):
-    certificateList: Sequence[Union[bytes, IO[bytes], StreamingBody]],
+    certificateList: Sequence[Union[str, bytes, IO[Any], StreamingBody]],
     clientToken: NotRequired[str],
     tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
@@ -1678,7 +1678,7 @@ def get_value() -> UpdateTrustStoreRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateTrustStoreRequestRequestTypeDef(TypedDict):
     trustStoreArn: str,
-    certificatesToAdd: NotRequired[Sequence[Union[bytes, IO[bytes], StreamingBody]]],
+    certificatesToAdd: NotRequired[Sequence[Union[str, bytes, IO[Any], StreamingBody]]],
     certificatesToDelete: NotRequired[Sequence[str]],
     clientToken: NotRequired[str],
 ```

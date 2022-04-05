@@ -2820,7 +2820,7 @@ Type annotations and code completion for `#!python boto3.client("apigateway").im
 def import_api_keys(
     self,
     *,
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     format: ApiKeysFormatType,  # (1)
     failOnWarnings: bool = ...,
 ) -> ApiKeyIdsTypeDef:  # (2)
@@ -2855,7 +2855,7 @@ def import_documentation_parts(
     self,
     *,
     restApiId: str,
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     mode: PutModeType = ...,  # (1)
     failOnWarnings: bool = ...,
 ) -> DocumentationPartIdsTypeDef:  # (2)
@@ -2889,7 +2889,7 @@ Type annotations and code completion for `#!python boto3.client("apigateway").im
 def import_rest_api(
     self,
     *,
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     failOnWarnings: bool = ...,
     parameters: Mapping[str, str] = ...,
 ) -> RestApiResponseMetadataTypeDef:  # (1)
@@ -3129,7 +3129,7 @@ def put_rest_api(
     self,
     *,
     restApiId: str,
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     mode: PutModeType = ...,  # (1)
     failOnWarnings: bool = ...,
     parameters: Mapping[str, str] = ...,

@@ -251,7 +251,7 @@ class PublishRequestRequestTypeDef(TypedDict):
     topic: str,
     qos: NotRequired[int],
     retain: NotRequired[bool],
-    payload: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    payload: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## ResponseMetadataTypeDef
@@ -312,7 +312,7 @@ def get_value() -> UpdateThingShadowRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateThingShadowRequestRequestTypeDef(TypedDict):
     thingName: str,
-    payload: Union[bytes, IO[bytes], StreamingBody],
+    payload: Union[str, bytes, IO[Any], StreamingBody],
     shadowName: NotRequired[str],
 ```
 

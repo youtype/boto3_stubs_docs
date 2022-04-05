@@ -779,7 +779,7 @@ def upload_part(
     *,
     checksum: str = ...,
     range: str = ...,
-    body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    body: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> UploadMultipartPartOutputTypeDef:  # (1)
     ...
 ```
@@ -1333,7 +1333,7 @@ def upload_archive(
     *,
     archiveDescription: str = ...,
     checksum: str = ...,
-    body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    body: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> Archive:
     ...
 ```

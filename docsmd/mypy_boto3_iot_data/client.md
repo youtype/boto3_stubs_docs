@@ -257,7 +257,7 @@ def publish(
     topic: str,
     qos: int = ...,
     retain: bool = ...,
-    payload: Union[bytes, IO[bytes], StreamingBody] = ...,
+    payload: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> None:
     ...
 ```
@@ -286,7 +286,7 @@ def update_thing_shadow(
     self,
     *,
     thingName: str,
-    payload: Union[bytes, IO[bytes], StreamingBody],
+    payload: Union[str, bytes, IO[Any], StreamingBody],
     shadowName: str = ...,
 ) -> UpdateThingShadowResponseTypeDef:  # (1)
     ...

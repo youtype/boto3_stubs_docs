@@ -2675,7 +2675,7 @@ class UploadLayerPartRequestRequestTypeDef(TypedDict):
     uploadId: str,
     partFirstByte: int,
     partLastByte: int,
-    layerPartBlob: Union[bytes, IO[bytes], StreamingBody],
+    layerPartBlob: Union[str, bytes, IO[Any], StreamingBody],
     registryId: NotRequired[str],
 ```
 

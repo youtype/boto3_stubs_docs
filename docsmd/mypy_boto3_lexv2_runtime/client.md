@@ -262,7 +262,7 @@ def recognize_utterance(
     sessionState: str = ...,
     requestAttributes: str = ...,
     responseContentType: str = ...,
-    inputStream: Union[bytes, IO[bytes], StreamingBody] = ...,
+    inputStream: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> RecognizeUtteranceResponseTypeDef:  # (1)
     ...
 ```

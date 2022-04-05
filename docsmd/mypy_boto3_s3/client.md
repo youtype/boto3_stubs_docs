@@ -3148,7 +3148,7 @@ def put_object(
     Bucket: str,
     Key: str,
     ACL: ObjectCannedACLType = ...,  # (1)
-    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Body: Union[str, bytes, IO[Any], StreamingBody] = ...,
     CacheControl: str = ...,
     ContentDisposition: str = ...,
     ContentEncoding: str = ...,
@@ -3624,7 +3624,7 @@ def upload_part(
     Key: str,
     PartNumber: int,
     UploadId: str,
-    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Body: Union[str, bytes, IO[Any], StreamingBody] = ...,
     ContentLength: int = ...,
     ContentMD5: str = ...,
     ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
@@ -3726,7 +3726,7 @@ def write_get_object_response(
     *,
     RequestRoute: str,
     RequestToken: str,
-    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Body: Union[str, bytes, IO[Any], StreamingBody] = ...,
     StatusCode: int = ...,
     ErrorCode: str = ...,
     ErrorMessage: str = ...,
