@@ -172,6 +172,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [BatchPutDocumentRequestRequestTypeDef](./type_defs.md#batchputdocumentrequestrequesttypedef)
 - [BatchPutDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchputdocumentresponsefaileddocumenttypedef)
 - [BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef)
+- [BoxConfigurationTypeDef](./type_defs.md#boxconfigurationtypedef)
 - [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - [ClearQuerySuggestionsRequestRequestTypeDef](./type_defs.md#clearquerysuggestionsrequestrequesttypedef)
 - [ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)

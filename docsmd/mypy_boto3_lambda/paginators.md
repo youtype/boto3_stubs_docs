@@ -176,6 +176,48 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListFunctionEventInvokeConfigsRequestListFunctionEventInvokeConfigsPaginateTypeDef](./type_defs.md#listfunctioneventinvokeconfigsrequestlistfunctioneventinvokeconfigspaginatetypedef) 
+## ListFunctionUrlConfigsPaginator
+
+Type annotations and code completion for `#!python boto3.client("lambda").get_paginator("list_function_url_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Paginator.ListFunctionUrlConfigs)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListFunctionUrlConfigsPaginator
+
+def get_list_function_url_configs_paginator() -> ListFunctionUrlConfigsPaginator:
+    return Session().client("lambda").get_paginator("list_function_url_configs")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListFunctionUrlConfigsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FunctionName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFunctionUrlConfigsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFunctionUrlConfigsResponseTypeDef](./type_defs.md#listfunctionurlconfigsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef](./type_defs.md#listfunctionurlconfigsrequestlistfunctionurlconfigspaginatetypedef) 
 ## ListFunctionsPaginator
 
 Type annotations and code completion for `#!python boto3.client("lambda").get_paginator("list_functions")`.

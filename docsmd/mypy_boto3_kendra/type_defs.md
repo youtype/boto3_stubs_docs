@@ -413,6 +413,40 @@ class BatchPutDocumentResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BatchPutDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchputdocumentresponsefaileddocumenttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BoxConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import BoxConfigurationTypeDef
+
+def get_value() -> BoxConfigurationTypeDef:
+    return {
+        "EnterpriseId": ...,
+        "SecretArn": ...,
+    }
+```
+
+```python title="Definition"
+class BoxConfigurationTypeDef(TypedDict):
+    EnterpriseId: str,
+    SecretArn: str,
+    UseChangeLog: NotRequired[bool],
+    CrawlComments: NotRequired[bool],
+    CrawlTasks: NotRequired[bool],
+    CrawlWebLinks: NotRequired[bool],
+    FileFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    TaskFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    CommentFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    WebLinkFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    InclusionPatterns: NotRequired[Sequence[str]],
+    ExclusionPatterns: NotRequired[Sequence[str]],
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+2. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+3. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+4. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+5. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
 ## CapacityUnitsConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1063,6 +1097,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
     WorkDocsConfiguration: NotRequired[WorkDocsConfigurationTypeDef],  # (10)
     FsxConfiguration: NotRequired[FsxConfigurationTypeDef],  # (11)
     SlackConfiguration: NotRequired[SlackConfigurationTypeDef],  # (12)
+    BoxConfiguration: NotRequired[BoxConfigurationTypeDef],  # (13)
 ```
 
 1. See [:material-code-braces: S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef) 
@@ -1077,6 +1112,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
 10. See [:material-code-braces: WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef) 
 11. See [:material-code-braces: FsxConfigurationTypeDef](./type_defs.md#fsxconfigurationtypedef) 
 12. See [:material-code-braces: SlackConfigurationTypeDef](./type_defs.md#slackconfigurationtypedef) 
+13. See [:material-code-braces: BoxConfigurationTypeDef](./type_defs.md#boxconfigurationtypedef) 
 ## DataSourceGroupTypeDef
 
 ```python title="Usage Example"

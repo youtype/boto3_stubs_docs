@@ -35868,6 +35868,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listcodesigningconfigspaginator">ListCodeSigningConfigsPaginator</a></li>
 <li><a href="paginators/#listeventsourcemappingspaginator">ListEventSourceMappingsPaginator</a></li>
 <li><a href="paginators/#listfunctioneventinvokeconfigspaginator">ListFunctionEventInvokeConfigsPaginator</a></li>
+<li><a href="paginators/#listfunctionurlconfigspaginator">ListFunctionUrlConfigsPaginator</a></li>
 <li><a href="paginators/#listfunctionspaginator">ListFunctionsPaginator</a></li>
 <li><a href="paginators/#listfunctionsbycodesigningconfigpaginator">ListFunctionsByCodeSigningConfigPaginator</a></li>
 <li><a href="paginators/#listlayerversionspaginator">ListLayerVersionsPaginator</a></li>
@@ -35910,6 +35911,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#functionresponsetypetype">FunctionResponseTypeType</a></li>
 <li><a href="literals/#functionupdatedv2waitername">FunctionUpdatedV2WaiterName</a></li>
 <li><a href="literals/#functionupdatedwaitername">FunctionUpdatedWaiterName</a></li>
+<li><a href="literals/#functionurlauthtypetype">FunctionUrlAuthTypeType</a></li>
 <li><a href="literals/#functionversiontype">FunctionVersionType</a></li>
 <li><a href="literals/#invocationtypetype">InvocationTypeType</a></li>
 <li><a href="literals/#lastupdatestatusreasoncodetype">LastUpdateStatusReasonCodeType</a></li>
@@ -35918,6 +35920,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listcodesigningconfigspaginatorname">ListCodeSigningConfigsPaginatorName</a></li>
 <li><a href="literals/#listeventsourcemappingspaginatorname">ListEventSourceMappingsPaginatorName</a></li>
 <li><a href="literals/#listfunctioneventinvokeconfigspaginatorname">ListFunctionEventInvokeConfigsPaginatorName</a></li>
+<li><a href="literals/#listfunctionurlconfigspaginatorname">ListFunctionUrlConfigsPaginatorName</a></li>
 <li><a href="literals/#listfunctionsbycodesigningconfigpaginatorname">ListFunctionsByCodeSigningConfigPaginatorName</a></li>
 <li><a href="literals/#listfunctionspaginatorname">ListFunctionsPaginatorName</a></li>
 <li><a href="literals/#listlayerversionspaginatorname">ListLayerVersionsPaginatorName</a></li>
@@ -35963,11 +35966,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#codesigningpoliciestypedef">CodeSigningPoliciesTypeDef</a></li>
 <li><a href="type_defs/#concurrencyresponsemetadatatypedef">ConcurrencyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#concurrencytypedef">ConcurrencyTypeDef</a></li>
+<li><a href="type_defs/#corstypedef">CorsTypeDef</a></li>
 <li><a href="type_defs/#createaliasrequestrequesttypedef">CreateAliasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createcodesigningconfigrequestrequesttypedef">CreateCodeSigningConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createcodesigningconfigresponsetypedef">CreateCodeSigningConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#createeventsourcemappingrequestrequesttypedef">CreateEventSourceMappingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createfunctionrequestrequesttypedef">CreateFunctionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createfunctionurlconfigrequestrequesttypedef">CreateFunctionUrlConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createfunctionurlconfigresponsetypedef">CreateFunctionUrlConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#deadletterconfigtypedef">DeadLetterConfigTypeDef</a></li>
 <li><a href="type_defs/#deletealiasrequestrequesttypedef">DeleteAliasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletecodesigningconfigrequestrequesttypedef">DeleteCodeSigningConfigRequestRequestTypeDef</a></li>
@@ -35976,6 +35982,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletefunctionconcurrencyrequestrequesttypedef">DeleteFunctionConcurrencyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefunctioneventinvokeconfigrequestrequesttypedef">DeleteFunctionEventInvokeConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefunctionrequestrequesttypedef">DeleteFunctionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletefunctionurlconfigrequestrequesttypedef">DeleteFunctionUrlConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelayerversionrequestrequesttypedef">DeleteLayerVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteprovisionedconcurrencyconfigrequestrequesttypedef">DeleteProvisionedConcurrencyConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#destinationconfigtypedef">DestinationConfigTypeDef</a></li>
@@ -35994,6 +36001,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#functionconfigurationtypedef">FunctionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#functioneventinvokeconfigresponsemetadatatypedef">FunctionEventInvokeConfigResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#functioneventinvokeconfigtypedef">FunctionEventInvokeConfigTypeDef</a></li>
+<li><a href="type_defs/#functionurlconfigtypedef">FunctionUrlConfigTypeDef</a></li>
 <li><a href="type_defs/#getaccountsettingsresponsetypedef">GetAccountSettingsResponseTypeDef</a></li>
 <li><a href="type_defs/#getaliasrequestrequesttypedef">GetAliasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcodesigningconfigrequestrequesttypedef">GetCodeSigningConfigRequestRequestTypeDef</a></li>
@@ -36012,6 +36020,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getfunctionrequestfunctionupdatedv2waittypedef">GetFunctionRequestFunctionUpdatedV2WaitTypeDef</a></li>
 <li><a href="type_defs/#getfunctionrequestrequesttypedef">GetFunctionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getfunctionresponsetypedef">GetFunctionResponseTypeDef</a></li>
+<li><a href="type_defs/#getfunctionurlconfigrequestrequesttypedef">GetFunctionUrlConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getfunctionurlconfigresponsetypedef">GetFunctionUrlConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#getlayerversionbyarnrequestrequesttypedef">GetLayerVersionByArnRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getlayerversionpolicyrequestrequesttypedef">GetLayerVersionPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getlayerversionpolicyresponsetypedef">GetLayerVersionPolicyResponseTypeDef</a></li>
@@ -36045,6 +36055,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listfunctioneventinvokeconfigsrequestlistfunctioneventinvokeconfigspaginatetypedef">ListFunctionEventInvokeConfigsRequestListFunctionEventInvokeConfigsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfunctioneventinvokeconfigsrequestrequesttypedef">ListFunctionEventInvokeConfigsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfunctioneventinvokeconfigsresponsetypedef">ListFunctionEventInvokeConfigsResponseTypeDef</a></li>
+<li><a href="type_defs/#listfunctionurlconfigsrequestlistfunctionurlconfigspaginatetypedef">ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfunctionurlconfigsrequestrequesttypedef">ListFunctionUrlConfigsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listfunctionurlconfigsresponsetypedef">ListFunctionUrlConfigsResponseTypeDef</a></li>
 <li><a href="type_defs/#listfunctionsbycodesigningconfigrequestlistfunctionsbycodesigningconfigpaginatetypedef">ListFunctionsByCodeSigningConfigRequestListFunctionsByCodeSigningConfigPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfunctionsbycodesigningconfigrequestrequesttypedef">ListFunctionsByCodeSigningConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfunctionsbycodesigningconfigresponsetypedef">ListFunctionsByCodeSigningConfigResponseTypeDef</a></li>
@@ -36094,6 +36107,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatefunctioncoderequestrequesttypedef">UpdateFunctionCodeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefunctionconfigurationrequestrequesttypedef">UpdateFunctionConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefunctioneventinvokeconfigrequestrequesttypedef">UpdateFunctionEventInvokeConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatefunctionurlconfigrequestrequesttypedef">UpdateFunctionUrlConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatefunctionurlconfigresponsetypedef">UpdateFunctionUrlConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#vpcconfigresponsetypedef">VpcConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#vpcconfigtypedef">VpcConfigTypeDef</a></li>
 <li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>

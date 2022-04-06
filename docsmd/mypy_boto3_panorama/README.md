@@ -82,6 +82,7 @@ def get_value() -> ApplicationInstanceHealthStatusType:
 - [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
 - [ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype)
 - [ConnectionTypeType](./literals.md#connectiontypetype)
+- [DeviceBrandType](./literals.md#devicebrandtype)
 - [DeviceConnectionStatusType](./literals.md#deviceconnectionstatustype)
 - [DeviceStatusType](./literals.md#devicestatustype)
 - [DeviceTypeType](./literals.md#devicetypetype)

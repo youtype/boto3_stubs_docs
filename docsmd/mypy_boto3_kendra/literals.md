@@ -210,11 +210,12 @@ DataSourceSyncJobStatusType = Literal[
 from mypy_boto3_kendra.literals import DataSourceTypeType
 
 def get_value() -> DataSourceTypeType:
-    return "CONFLUENCE"
+    return "BOX"
 ```
 
 ```python title="Definition"
 DataSourceTypeType = Literal[
+    "BOX",
     "CONFLUENCE",
     "CUSTOM",
     "DATABASE",

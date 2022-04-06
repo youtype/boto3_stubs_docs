@@ -151,6 +151,21 @@ FunctionUpdatedWaiterName = Literal[
     "function_updated",
 ]
 ```
+## FunctionUrlAuthTypeType
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import FunctionUrlAuthTypeType
+
+def get_value() -> FunctionUrlAuthTypeType:
+    return "AWS_IAM"
+```
+
+```python title="Definition"
+FunctionUrlAuthTypeType = Literal[
+    "AWS_IAM",
+    "NONE",
+]
+```
 ## FunctionVersionType
 
 ```python title="Usage Example"
@@ -274,6 +289,20 @@ def get_value() -> ListFunctionEventInvokeConfigsPaginatorName:
 ```python title="Definition"
 ListFunctionEventInvokeConfigsPaginatorName = Literal[
     "list_function_event_invoke_configs",
+]
+```
+## ListFunctionUrlConfigsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import ListFunctionUrlConfigsPaginatorName
+
+def get_value() -> ListFunctionUrlConfigsPaginatorName:
+    return "list_function_url_configs"
+```
+
+```python title="Definition"
+ListFunctionUrlConfigsPaginatorName = Literal[
+    "list_function_url_configs",
 ]
 ```
 ## ListFunctionsByCodeSigningConfigPaginatorName
@@ -892,6 +921,7 @@ PaginatorName = Literal[
     "list_code_signing_configs",
     "list_event_source_mappings",
     "list_function_event_invoke_configs",
+    "list_function_url_configs",
     "list_functions",
     "list_functions_by_code_signing_config",
     "list_layer_versions",
