@@ -39,6 +39,8 @@ except (
     client.ResourceAlreadyExistsException,
     client.ResourceInUseException,
     client.ResourceNotFoundException,
+    client.TooManyTagKeysException,
+    client.TooManyTagsException,
 ) as e:
     print(e)
 ```
@@ -89,14 +91,16 @@ def create_batch_inference_job(
     filterArn: str = ...,
     numResults: int = ...,
     batchInferenceJobConfig: BatchInferenceJobConfigTypeDef = ...,  # (3)
-) -> CreateBatchInferenceJobResponseTypeDef:  # (4)
+    tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateBatchInferenceJobResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef) 
 2. See [:material-code-braces: BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef) 
 3. See [:material-code-braces: BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef) 
-4. See [:material-code-braces: CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -131,13 +135,15 @@ def create_batch_segment_job(
     roleArn: str,
     filterArn: str = ...,
     numResults: int = ...,
-) -> CreateBatchSegmentJobResponseTypeDef:  # (3)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateBatchSegmentJobResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef) 
 2. See [:material-code-braces: BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef) 
-3. See [:material-code-braces: CreateBatchSegmentJobResponseTypeDef](./type_defs.md#createbatchsegmentjobresponsetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateBatchSegmentJobResponseTypeDef](./type_defs.md#createbatchsegmentjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -169,12 +175,14 @@ def create_campaign(
     solutionVersionArn: str,
     minProvisionedTPS: int = ...,
     campaignConfig: CampaignConfigTypeDef = ...,  # (1)
-) -> CreateCampaignResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateCampaignResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
-2. See [:material-code-braces: CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -203,11 +211,13 @@ def create_dataset(
     schemaArn: str,
     datasetGroupArn: str,
     datasetType: str,
-) -> CreateDatasetResponseTypeDef:  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDatasetResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -239,13 +249,15 @@ def create_dataset_export_job(
     roleArn: str,
     jobOutput: DatasetExportJobOutputTypeDef,  # (1)
     ingestionMode: IngestionModeType = ...,  # (2)
-) -> CreateDatasetExportJobResponseTypeDef:  # (3)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDatasetExportJobResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef) 
 2. See [:material-code-brackets: IngestionModeType](./literals.md#ingestionmodetype) 
-3. See [:material-code-braces: CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -276,12 +288,14 @@ def create_dataset_group(
     roleArn: str = ...,
     kmsKeyArn: str = ...,
     domain: DomainType = ...,  # (1)
-) -> CreateDatasetGroupResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDatasetGroupResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
-2. See [:material-code-braces: CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -310,12 +324,14 @@ def create_dataset_import_job(
     datasetArn: str,
     dataSource: DataSourceTypeDef,  # (1)
     roleArn: str,
-) -> CreateDatasetImportJobResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDatasetImportJobResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
-2. See [:material-code-braces: CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -347,11 +363,13 @@ def create_event_tracker(
     *,
     name: str,
     datasetGroupArn: str,
-) -> CreateEventTrackerResponseTypeDef:  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateEventTrackerResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -379,11 +397,13 @@ def create_filter(
     name: str,
     datasetGroupArn: str,
     filterExpression: str,
-) -> CreateFilterResponseTypeDef:  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateFilterResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -414,12 +434,14 @@ def create_recommender(
     datasetGroupArn: str,
     recipeArn: str,
     recommenderConfig: RecommenderConfigTypeDef = ...,  # (1)
-) -> CreateRecommenderResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateRecommenderResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
-2. See [:material-code-braces: CreateRecommenderResponseTypeDef](./type_defs.md#createrecommenderresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateRecommenderResponseTypeDef](./type_defs.md#createrecommenderresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -485,12 +507,14 @@ def create_solution(
     recipeArn: str = ...,
     eventType: str = ...,
     solutionConfig: SolutionConfigTypeDef = ...,  # (1)
-) -> CreateSolutionResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateSolutionResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef) 
-2. See [:material-code-braces: CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -517,12 +541,14 @@ def create_solution_version(
     *,
     solutionArn: str,
     trainingMode: TrainingModeType = ...,  # (1)
-) -> CreateSolutionVersionResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateSolutionVersionResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: TrainingModeType](./literals.md#trainingmodetype) 
-2. See [:material-code-braces: CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -910,8 +936,9 @@ parent.describe_dataset(**kwargs)
 
 ### describe\_dataset\_export\_job
 
-Describes the dataset export job created by  CreateDatasetExportJob , including
-the export job status.
+Describes the dataset export job created by
+[CreateDatasetExportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetExportJob.html)_
+, including the export job status.
 
 Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_export_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
@@ -969,8 +996,9 @@ parent.describe_dataset_group(**kwargs)
 
 ### describe\_dataset\_import\_job
 
-Describes the dataset import job created by  CreateDatasetImportJob , including
-the import job status.
+Describes the dataset import job created by
+[CreateDatasetImportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetImportJob.html)_
+, including the import job status.
 
 Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_import_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
@@ -1714,6 +1742,36 @@ parent.list_solutions(**kwargs)
 
 1. See [:material-code-braces: ListSolutionsRequestRequestTypeDef](./type_defs.md#listsolutionsrequestrequesttypedef) 
 
+### list\_tags\_for\_resource
+
+Get a list of [tags](https://docs.aws.amazon.com/personalize/latest/dev/tagging-
+resources.html)_ attached to a resource.
+
+Type annotations and code completion for `#!python boto3.client("personalize").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
 ### stop\_solution\_version\_creation
 
 Stops creating a solution version that is in a state of CREATE_PENDING or CREATE
@@ -1742,6 +1800,68 @@ parent.stop_solution_version_creation(**kwargs)
 ```
 
 1. See [:material-code-braces: StopSolutionVersionCreationRequestRequestTypeDef](./type_defs.md#stopsolutionversioncreationrequestrequesttypedef) 
+
+### tag\_resource
+
+Add a list of tags to a resource.
+
+Type annotations and code completion for `#!python boto3.client("personalize").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
+
+Remove [tags](https://docs.aws.amazon.com/personalize/latest/dev/tagging-
+resources.html)_ that are attached to a resource.
+
+Type annotations and code completion for `#!python boto3.client("personalize").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
 ### update\_campaign
 

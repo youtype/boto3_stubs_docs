@@ -206,7 +206,7 @@ parent.get_resource_metadata(**kwargs)
 
 ### get\_resource\_metrics
 
-Retrieve Performance Insights metrics for a set of data sources, over a time
+Retrieve Performance Insights metrics for a set of data sources over a time
 period.
 
 Type annotations and code completion for `#!python boto3.client("pi").get_resource_metrics` method.

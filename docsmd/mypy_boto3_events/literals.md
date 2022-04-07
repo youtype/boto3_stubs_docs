@@ -128,6 +128,26 @@ ConnectionStateType = Literal[
     "UPDATING",
 ]
 ```
+## EndpointStateType
+
+```python title="Usage Example"
+from mypy_boto3_events.literals import EndpointStateType
+
+def get_value() -> EndpointStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+EndpointStateType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+    "UPDATE_FAILED",
+    "UPDATING",
+]
+```
 ## EventSourceStateType
 
 ```python title="Usage Example"
@@ -264,6 +284,21 @@ ReplayStateType = Literal[
     "FAILED",
     "RUNNING",
     "STARTING",
+]
+```
+## ReplicationStateType
+
+```python title="Usage Example"
+from mypy_boto3_events.literals import ReplicationStateType
+
+def get_value() -> ReplicationStateType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+ReplicationStateType = Literal[
+    "DISABLED",
+    "ENABLED",
 ]
 ```
 ## RuleStateType

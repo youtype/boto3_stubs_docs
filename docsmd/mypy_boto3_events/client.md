@@ -241,6 +241,45 @@ parent.create_connection(**kwargs)
 
 1. See [:material-code-braces: CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef) 
 
+### create\_endpoint
+
+Creates a global endpoint.
+
+Type annotations and code completion for `#!python boto3.client("events").create_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_endpoint)
+
+```python title="Method definition"
+def create_endpoint(
+    self,
+    *,
+    Name: str,
+    RoutingConfig: RoutingConfigTypeDef,  # (1)
+    EventBuses: Sequence[EndpointEventBusTypeDef],  # (2)
+    Description: str = ...,
+    ReplicationConfig: ReplicationConfigTypeDef = ...,  # (3)
+    RoleArn: str = ...,
+) -> CreateEndpointResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: RoutingConfigTypeDef](./type_defs.md#routingconfigtypedef) 
+2. See [:material-code-braces: EndpointEventBusTypeDef](./type_defs.md#endpointeventbustypedef) 
+3. See [:material-code-braces: ReplicationConfigTypeDef](./type_defs.md#replicationconfigtypedef) 
+4. See [:material-code-braces: CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateEndpointRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RoutingConfig": ...,
+    "EventBuses": ...,
+}
+
+parent.create_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef) 
+
 ### create\_event\_bus
 
 Creates a new event bus within your account.
@@ -447,6 +486,34 @@ parent.delete_connection(**kwargs)
 
 1. See [:material-code-braces: DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef) 
 
+### delete\_endpoint
+
+Delete an existing global endpoint.
+
+Type annotations and code completion for `#!python boto3.client("events").delete_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_endpoint)
+
+```python title="Method definition"
+def delete_endpoint(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteEndpointRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.delete_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef) 
+
 ### delete\_event\_bus
 
 Deletes the specified custom event bus or partner event bus.
@@ -621,6 +688,36 @@ parent.describe_connection(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeConnectionRequestRequestTypeDef](./type_defs.md#describeconnectionrequestrequesttypedef) 
+
+### describe\_endpoint
+
+Get the information about an existing global endpoint.
+
+Type annotations and code completion for `#!python boto3.client("events").describe_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_endpoint)
+
+```python title="Method definition"
+def describe_endpoint(
+    self,
+    *,
+    Name: str,
+    HomeRegion: str = ...,
+) -> DescribeEndpointResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.describe_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointRequestRequestTypeDef](./type_defs.md#describeendpointrequestrequesttypedef) 
 
 ### describe\_event\_bus
 
@@ -946,6 +1043,38 @@ parent.list_connections(**kwargs)
 
 1. See [:material-code-braces: ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef) 
 
+### list\_endpoints
+
+List the global endpoints associated with this account.
+
+Type annotations and code completion for `#!python boto3.client("events").list_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_endpoints)
+
+```python title="Method definition"
+def list_endpoints(
+    self,
+    *,
+    NamePrefix: str = ...,
+    HomeRegion: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEndpointsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEndpointsRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
+
+parent.list_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef) 
+
 ### list\_event\_buses
 
 Lists all the event buses in your account, including the default event bus,
@@ -1245,6 +1374,7 @@ def put_events(
     self,
     *,
     Entries: Sequence[PutEventsRequestEntryTypeDef],  # (1)
+    EndpointId: str = ...,
 ) -> PutEventsResponseTypeDef:  # (2)
     ...
 ```
@@ -1696,6 +1826,43 @@ parent.update_connection(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef) 
+
+### update\_endpoint
+
+Update an existing endpoint.
+
+Type annotations and code completion for `#!python boto3.client("events").update_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_endpoint)
+
+```python title="Method definition"
+def update_endpoint(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    RoutingConfig: RoutingConfigTypeDef = ...,  # (1)
+    ReplicationConfig: ReplicationConfigTypeDef = ...,  # (2)
+    EventBuses: Sequence[EndpointEventBusTypeDef] = ...,  # (3)
+    RoleArn: str = ...,
+) -> UpdateEndpointResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: RoutingConfigTypeDef](./type_defs.md#routingconfigtypedef) 
+2. See [:material-code-braces: ReplicationConfigTypeDef](./type_defs.md#replicationconfigtypedef) 
+3. See [:material-code-braces: EndpointEventBusTypeDef](./type_defs.md#endpointeventbustypedef) 
+4. See [:material-code-braces: UpdateEndpointResponseTypeDef](./type_defs.md#updateendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateEndpointRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.update_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateEndpointRequestRequestTypeDef](./type_defs.md#updateendpointrequestrequesttypedef) 
 
 
 

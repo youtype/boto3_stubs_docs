@@ -428,6 +428,8 @@ def create_db_instance(
     AutoMinorVersionUpgrade: bool = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
     PromotionTier: int = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
 ) -> CreateDBInstanceResultTypeDef:  # (2)
     ...
 ```
@@ -524,7 +526,7 @@ parent.create_event_subscription(**kwargs)
 ### create\_global\_cluster
 
 Creates an Amazon DocumentDB global cluster that can span multiple multiple
-Regions.
+Amazon Web Services Regions.
 
 Type annotations and code completion for `#!python boto3.client("docdb").create_global_cluster` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_global_cluster)
@@ -763,7 +765,7 @@ parent.delete_global_cluster(**kwargs)
 ### describe\_certificates
 
 Returns a list of certificate authority (CA) certificates provided by Amazon
-DocumentDB for this account.
+DocumentDB for this Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("docdb").describe_certificates` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_certificates)
@@ -1515,6 +1517,8 @@ def modify_db_instance(
     NewDBInstanceIdentifier: str = ...,
     CACertificateIdentifier: str = ...,
     PromotionTier: int = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
 ) -> ModifyDBInstanceResultTypeDef:  # (1)
     ...
 ```

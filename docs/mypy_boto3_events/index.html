@@ -35841,6 +35841,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#connectionauthorizationtypetype">ConnectionAuthorizationTypeType</a></li>
 <li><a href="literals/#connectionoauthhttpmethodtype">ConnectionOAuthHttpMethodType</a></li>
 <li><a href="literals/#connectionstatetype">ConnectionStateType</a></li>
+<li><a href="literals/#endpointstatetype">EndpointStateType</a></li>
 <li><a href="literals/#eventsourcestatetype">EventSourceStateType</a></li>
 <li><a href="literals/#launchtypetype">LaunchTypeType</a></li>
 <li><a href="literals/#listrulenamesbytargetpaginatorname">ListRuleNamesByTargetPaginatorName</a></li>
@@ -35850,6 +35851,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#placementstrategytypetype">PlacementStrategyTypeType</a></li>
 <li><a href="literals/#propagatetagstype">PropagateTagsType</a></li>
 <li><a href="literals/#replaystatetype">ReplayStateType</a></li>
+<li><a href="literals/#replicationstatetype">ReplicationStateType</a></li>
 <li><a href="literals/#rulestatetype">RuleStateType</a></li>
 <li><a href="literals/#eventbridgeservicename">EventBridgeServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -35899,6 +35901,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createconnectionoauthrequestparameterstypedef">CreateConnectionOAuthRequestParametersTypeDef</a></li>
 <li><a href="type_defs/#createconnectionrequestrequesttypedef">CreateConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createconnectionresponsetypedef">CreateConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#createendpointrequestrequesttypedef">CreateEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createendpointresponsetypedef">CreateEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#createeventbusrequestrequesttypedef">CreateEventBusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createeventbusresponsetypedef">CreateEventBusResponseTypeDef</a></li>
 <li><a href="type_defs/#createpartnereventsourcerequestrequesttypedef">CreatePartnerEventSourceRequestRequestTypeDef</a></li>
@@ -35911,6 +35915,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletearchiverequestrequesttypedef">DeleteArchiveRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteconnectionrequestrequesttypedef">DeleteConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteconnectionresponsetypedef">DeleteConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#deleteendpointrequestrequesttypedef">DeleteEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteeventbusrequestrequesttypedef">DeleteEventBusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepartnereventsourcerequestrequesttypedef">DeletePartnerEventSourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleterulerequestrequesttypedef">DeleteRuleRequestRequestTypeDef</a></li>
@@ -35920,6 +35925,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describearchiveresponsetypedef">DescribeArchiveResponseTypeDef</a></li>
 <li><a href="type_defs/#describeconnectionrequestrequesttypedef">DescribeConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeconnectionresponsetypedef">DescribeConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#describeendpointrequestrequesttypedef">DescribeEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeendpointresponsetypedef">DescribeEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#describeeventbusrequestrequesttypedef">DescribeEventBusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeeventbusresponsetypedef">DescribeEventBusResponseTypeDef</a></li>
 <li><a href="type_defs/#describeeventsourcerequestrequesttypedef">DescribeEventSourceRequestRequestTypeDef</a></li>
@@ -35933,8 +35940,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#disablerulerequestrequesttypedef">DisableRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#ecsparameterstypedef">EcsParametersTypeDef</a></li>
 <li><a href="type_defs/#enablerulerequestrequesttypedef">EnableRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#endpointeventbustypedef">EndpointEventBusTypeDef</a></li>
+<li><a href="type_defs/#endpointtypedef">EndpointTypeDef</a></li>
 <li><a href="type_defs/#eventbustypedef">EventBusTypeDef</a></li>
 <li><a href="type_defs/#eventsourcetypedef">EventSourceTypeDef</a></li>
+<li><a href="type_defs/#failoverconfigtypedef">FailoverConfigTypeDef</a></li>
 <li><a href="type_defs/#httpparameterstypedef">HttpParametersTypeDef</a></li>
 <li><a href="type_defs/#inputtransformertypedef">InputTransformerTypeDef</a></li>
 <li><a href="type_defs/#kinesisparameterstypedef">KinesisParametersTypeDef</a></li>
@@ -35944,6 +35954,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listarchivesresponsetypedef">ListArchivesResponseTypeDef</a></li>
 <li><a href="type_defs/#listconnectionsrequestrequesttypedef">ListConnectionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listconnectionsresponsetypedef">ListConnectionsResponseTypeDef</a></li>
+<li><a href="type_defs/#listendpointsrequestrequesttypedef">ListEndpointsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listendpointsresponsetypedef">ListEndpointsResponseTypeDef</a></li>
 <li><a href="type_defs/#listeventbusesrequestrequesttypedef">ListEventBusesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listeventbusesresponsetypedef">ListEventBusesResponseTypeDef</a></li>
 <li><a href="type_defs/#listeventsourcesrequestrequesttypedef">ListEventSourcesRequestRequestTypeDef</a></li>
@@ -35971,6 +35983,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#partnereventsourcetypedef">PartnerEventSourceTypeDef</a></li>
 <li><a href="type_defs/#placementconstrainttypedef">PlacementConstraintTypeDef</a></li>
 <li><a href="type_defs/#placementstrategytypedef">PlacementStrategyTypeDef</a></li>
+<li><a href="type_defs/#primarytypedef">PrimaryTypeDef</a></li>
 <li><a href="type_defs/#puteventsrequestentrytypedef">PutEventsRequestEntryTypeDef</a></li>
 <li><a href="type_defs/#puteventsrequestrequesttypedef">PutEventsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#puteventsresponsetypedef">PutEventsResponseTypeDef</a></li>
@@ -35992,13 +36005,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#removetargetsresultentrytypedef">RemoveTargetsResultEntryTypeDef</a></li>
 <li><a href="type_defs/#replaydestinationtypedef">ReplayDestinationTypeDef</a></li>
 <li><a href="type_defs/#replaytypedef">ReplayTypeDef</a></li>
+<li><a href="type_defs/#replicationconfigtypedef">ReplicationConfigTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#retrypolicytypedef">RetryPolicyTypeDef</a></li>
+<li><a href="type_defs/#routingconfigtypedef">RoutingConfigTypeDef</a></li>
 <li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
 <li><a href="type_defs/#runcommandparameterstypedef">RunCommandParametersTypeDef</a></li>
 <li><a href="type_defs/#runcommandtargettypedef">RunCommandTargetTypeDef</a></li>
 <li><a href="type_defs/#sagemakerpipelineparametertypedef">SageMakerPipelineParameterTypeDef</a></li>
 <li><a href="type_defs/#sagemakerpipelineparameterstypedef">SageMakerPipelineParametersTypeDef</a></li>
+<li><a href="type_defs/#secondarytypedef">SecondaryTypeDef</a></li>
 <li><a href="type_defs/#sqsparameterstypedef">SqsParametersTypeDef</a></li>
 <li><a href="type_defs/#startreplayrequestrequesttypedef">StartReplayRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startreplayresponsetypedef">StartReplayResponseTypeDef</a></li>
@@ -36019,6 +36035,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updateconnectionoauthrequestparameterstypedef">UpdateConnectionOAuthRequestParametersTypeDef</a></li>
 <li><a href="type_defs/#updateconnectionrequestrequesttypedef">UpdateConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateconnectionresponsetypedef">UpdateConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#updateendpointrequestrequesttypedef">UpdateEndpointRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateendpointresponsetypedef">UpdateEndpointResponseTypeDef</a></li>
 </ul>
 
               
