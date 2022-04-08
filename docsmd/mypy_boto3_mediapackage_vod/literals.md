@@ -124,6 +124,21 @@ ProfileType = Literal[
     "NONE",
 ]
 ```
+## ScteMarkersSourceType
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.literals import ScteMarkersSourceType
+
+def get_value() -> ScteMarkersSourceType:
+    return "MANIFEST"
+```
+
+```python title="Definition"
+ScteMarkersSourceType = Literal[
+    "MANIFEST",
+    "SEGMENTS",
+]
+```
 ## SegmentTemplateFormatType
 
 ```python title="Usage Example"

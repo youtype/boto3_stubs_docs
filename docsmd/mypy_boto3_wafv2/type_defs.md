@@ -1694,6 +1694,7 @@ def get_value() -> ListAvailableManagedRuleGroupVersionsResponseTypeDef:
     return {
         "NextMarker": ...,
         "Versions": ...,
+        "CurrentDefaultVersion": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1702,6 +1703,7 @@ def get_value() -> ListAvailableManagedRuleGroupVersionsResponseTypeDef:
 class ListAvailableManagedRuleGroupVersionsResponseTypeDef(TypedDict):
     NextMarker: str,
     Versions: List[ManagedRuleGroupVersionTypeDef],  # (1)
+    CurrentDefaultVersion: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -2217,6 +2219,7 @@ def get_value() -> ManagedRuleGroupSummaryTypeDef:
 class ManagedRuleGroupSummaryTypeDef(TypedDict):
     VendorName: NotRequired[str],
     Name: NotRequired[str],
+    VersioningSupported: NotRequired[bool],
     Description: NotRequired[str],
 ```
 
