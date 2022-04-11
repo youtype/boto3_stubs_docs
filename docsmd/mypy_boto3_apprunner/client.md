@@ -170,6 +170,39 @@ parent.create_connection(**kwargs)
 
 1. See [:material-code-braces: CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef) 
 
+### create\_observability\_configuration
+
+Create an App Runner observability configuration resource.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").create_observability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_observability_configuration)
+
+```python title="Method definition"
+def create_observability_configuration(
+    self,
+    *,
+    ObservabilityConfigurationName: str,
+    TraceConfiguration: TraceConfigurationTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateObservabilityConfigurationResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: TraceConfigurationTypeDef](./type_defs.md#traceconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateObservabilityConfigurationResponseTypeDef](./type_defs.md#createobservabilityconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateObservabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "ObservabilityConfigurationName": ...,
+}
+
+parent.create_observability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: CreateObservabilityConfigurationRequestRequestTypeDef](./type_defs.md#createobservabilityconfigurationrequestrequesttypedef) 
+
 ### create\_service
 
 Create an App Runner service.
@@ -189,7 +222,8 @@ def create_service(
     HealthCheckConfiguration: HealthCheckConfigurationTypeDef = ...,  # (5)
     AutoScalingConfigurationArn: str = ...,
     NetworkConfiguration: NetworkConfigurationTypeDef = ...,  # (6)
-) -> CreateServiceResponseTypeDef:  # (7)
+    ObservabilityConfiguration: ServiceObservabilityConfigurationTypeDef = ...,  # (7)
+) -> CreateServiceResponseTypeDef:  # (8)
     ...
 ```
 
@@ -199,7 +233,8 @@ def create_service(
 4. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
 5. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
 6. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
-7. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
+7. See [:material-code-braces: ServiceObservabilityConfigurationTypeDef](./type_defs.md#serviceobservabilityconfigurationtypedef) 
+8. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -304,6 +339,35 @@ parent.delete_connection(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef) 
+
+### delete\_observability\_configuration
+
+Delete an App Runner observability configuration resource.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").delete_observability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_observability_configuration)
+
+```python title="Method definition"
+def delete_observability_configuration(
+    self,
+    *,
+    ObservabilityConfigurationArn: str,
+) -> DeleteObservabilityConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteObservabilityConfigurationResponseTypeDef](./type_defs.md#deleteobservabilityconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteObservabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "ObservabilityConfigurationArn": ...,
+}
+
+parent.delete_observability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteObservabilityConfigurationRequestRequestTypeDef](./type_defs.md#deleteobservabilityconfigurationrequestrequesttypedef) 
 
 ### delete\_service
 
@@ -425,6 +489,35 @@ parent.describe_custom_domains(**kwargs)
 
 1. See [:material-code-braces: DescribeCustomDomainsRequestRequestTypeDef](./type_defs.md#describecustomdomainsrequestrequesttypedef) 
 
+### describe\_observability\_configuration
+
+Return a full description of an App Runner observability configuration resource.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").describe_observability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_observability_configuration)
+
+```python title="Method definition"
+def describe_observability_configuration(
+    self,
+    *,
+    ObservabilityConfigurationArn: str,
+) -> DescribeObservabilityConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeObservabilityConfigurationResponseTypeDef](./type_defs.md#describeobservabilityconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeObservabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "ObservabilityConfigurationArn": ...,
+}
+
+parent.describe_observability_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeObservabilityConfigurationRequestRequestTypeDef](./type_defs.md#describeobservabilityconfigurationrequestrequesttypedef) 
+
 ### describe\_service
 
 Return a full description of an App Runner service.
@@ -535,8 +628,8 @@ def generate_presigned_url(
 
 ### list\_auto\_scaling\_configurations
 
-Returns a list of App Runner automatic scaling configurations in your Amazon Web
-Services account.
+Returns a list of active App Runner automatic scaling configurations in your
+Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("apprunner").list_auto_scaling_configurations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_auto_scaling_configurations)
@@ -597,6 +690,39 @@ parent.list_connections(**kwargs)
 ```
 
 1. See [:material-code-braces: ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef) 
+
+### list\_observability\_configurations
+
+Returns a list of active App Runner observability configurations in your Amazon
+Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").list_observability_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_observability_configurations)
+
+```python title="Method definition"
+def list_observability_configurations(
+    self,
+    *,
+    ObservabilityConfigurationName: str = ...,
+    LatestOnly: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListObservabilityConfigurationsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListObservabilityConfigurationsResponseTypeDef](./type_defs.md#listobservabilityconfigurationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListObservabilityConfigurationsRequestRequestTypeDef = {  # (1)
+    "ObservabilityConfigurationName": ...,
+}
+
+parent.list_observability_configurations(**kwargs)
+```
+
+1. See [:material-code-braces: ListObservabilityConfigurationsRequestRequestTypeDef](./type_defs.md#listobservabilityconfigurationsrequestrequesttypedef) 
 
 ### list\_operations
 
@@ -885,7 +1011,8 @@ def update_service(
     AutoScalingConfigurationArn: str = ...,
     HealthCheckConfiguration: HealthCheckConfigurationTypeDef = ...,  # (3)
     NetworkConfiguration: NetworkConfigurationTypeDef = ...,  # (4)
-) -> UpdateServiceResponseTypeDef:  # (5)
+    ObservabilityConfiguration: ServiceObservabilityConfigurationTypeDef = ...,  # (5)
+) -> UpdateServiceResponseTypeDef:  # (6)
     ...
 ```
 
@@ -893,7 +1020,8 @@ def update_service(
 2. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
 3. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
 4. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
-5. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
+5. See [:material-code-braces: ServiceObservabilityConfigurationTypeDef](./type_defs.md#serviceobservabilityconfigurationtypedef) 
+6. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
