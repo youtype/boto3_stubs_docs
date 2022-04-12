@@ -346,6 +346,22 @@ class CostEstimationTimeRangeTypeDef(TypedDict):
     EndTime: NotRequired[datetime],
 ```
 
+## DeleteInsightRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import DeleteInsightRequestRequestTypeDef
+
+def get_value() -> DeleteInsightRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInsightRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
+
 ## DescribeAccountHealthResponseTypeDef
 
 ```python title="Usage Example"

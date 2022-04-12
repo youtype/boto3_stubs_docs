@@ -777,27 +777,27 @@ from mypy_boto3_iottwinmaker.type_defs import GetPropertyValueHistoryRequestRequ
 
 def get_value() -> GetPropertyValueHistoryRequestRequestTypeDef:
     return {
-        "endDateTime": ...,
         "selectedProperties": ...,
-        "startDateTime": ...,
         "workspaceId": ...,
     }
 ```
 
 ```python title="Definition"
 class GetPropertyValueHistoryRequestRequestTypeDef(TypedDict):
-    endDateTime: Union[datetime, str],
     selectedProperties: Sequence[str],
-    startDateTime: Union[datetime, str],
     workspaceId: str,
     componentName: NotRequired[str],
     componentTypeId: NotRequired[str],
+    endDateTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[str],
     entityId: NotRequired[str],
     interpolation: NotRequired[InterpolationParametersTypeDef],  # (1)
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
     orderByTime: NotRequired[OrderByTimeType],  # (2)
     propertyFilters: NotRequired[Sequence[PropertyFilterTypeDef]],  # (3)
+    startDateTime: NotRequired[Union[datetime, str]],
+    startTime: NotRequired[str],
 ```
 
 1. See [:material-code-braces: InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef) 
@@ -1076,6 +1076,7 @@ def get_value() -> ListEntitiesFilterTypeDef:
 ```python title="Definition"
 class ListEntitiesFilterTypeDef(TypedDict):
     componentTypeId: NotRequired[str],
+    externalId: NotRequired[str],
     parentEntityId: NotRequired[str],
 ```
 
@@ -1438,15 +1439,15 @@ from mypy_boto3_iottwinmaker.type_defs import PropertyValueTypeDef
 
 def get_value() -> PropertyValueTypeDef:
     return {
-        "timestamp": ...,
         "value": ...,
     }
 ```
 
 ```python title="Definition"
 class PropertyValueTypeDef(TypedDict):
-    timestamp: Union[datetime, str],
     value: DataValueTypeDef,  # (1)
+    time: NotRequired[str],
+    timestamp: NotRequired[Union[datetime, str]],
 ```
 
 1. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
