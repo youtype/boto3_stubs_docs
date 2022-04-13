@@ -289,6 +289,8 @@ def get_value() -> AlarmHistoryItemTypeDef:
 - [MetricStatTypeDef](./type_defs.md#metricstattypedef)
 - [MetricStreamEntryTypeDef](./type_defs.md#metricstreamentrytypedef)
 - [MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)
+- [MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef)
+- [MetricStreamStatisticsMetricTypeDef](./type_defs.md#metricstreamstatisticsmetrictypedef)
 - [MetricTypeDef](./type_defs.md#metrictypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PartialFailureTypeDef](./type_defs.md#partialfailuretypedef)

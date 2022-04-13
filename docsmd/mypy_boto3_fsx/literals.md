@@ -238,6 +238,34 @@ DescribeFileSystemsPaginatorName = Literal[
     "describe_file_systems",
 ]
 ```
+## DescribeStorageVirtualMachinesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import DescribeStorageVirtualMachinesPaginatorName
+
+def get_value() -> DescribeStorageVirtualMachinesPaginatorName:
+    return "describe_storage_virtual_machines"
+```
+
+```python title="Definition"
+DescribeStorageVirtualMachinesPaginatorName = Literal[
+    "describe_storage_virtual_machines",
+]
+```
+## DescribeVolumesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import DescribeVolumesPaginatorName
+
+def get_value() -> DescribeVolumesPaginatorName:
+    return "describe_volumes"
+```
+
+```python title="Definition"
+DescribeVolumesPaginatorName = Literal[
+    "describe_volumes",
+]
+```
 ## DiskIopsConfigurationModeType
 
 ```python title="Usage Example"
@@ -430,6 +458,7 @@ def get_value() -> OntapDeploymentTypeType:
 ```python title="Definition"
 OntapDeploymentTypeType = Literal[
     "MULTI_AZ_1",
+    "SINGLE_AZ_1",
 ]
 ```
 ## OntapVolumeTypeType
@@ -1179,6 +1208,8 @@ def get_value() -> PaginatorName:
 PaginatorName = Literal[
     "describe_backups",
     "describe_file_systems",
+    "describe_storage_virtual_machines",
+    "describe_volumes",
     "list_tags_for_resource",
 ]
 ```
