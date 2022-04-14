@@ -1895,6 +1895,29 @@ class OAuth2CredentialsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
+## OAuth2CustomParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import OAuth2CustomParameterTypeDef
+
+def get_value() -> OAuth2CustomParameterTypeDef:
+    return {
+        "key": ...,
+    }
+```
+
+```python title="Definition"
+class OAuth2CustomParameterTypeDef(TypedDict):
+    key: NotRequired[str],
+    isRequired: NotRequired[bool],
+    label: NotRequired[str],
+    description: NotRequired[str],
+    isSensitiveField: NotRequired[bool],
+    connectorSuppliedValues: NotRequired[List[str]],
+    type: NotRequired[OAuth2CustomPropTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: OAuth2CustomPropTypeType](./literals.md#oauth2customproptypetype) 
 ## OAuth2DefaultsTypeDef
 
 ```python title="Usage Example"
@@ -1912,9 +1935,11 @@ class OAuth2DefaultsTypeDef(TypedDict):
     tokenUrls: NotRequired[List[str]],
     authCodeUrls: NotRequired[List[str]],
     oauth2GrantTypesSupported: NotRequired[List[OAuth2GrantTypeType]],  # (1)
+    oauth2CustomProperties: NotRequired[List[OAuth2CustomParameterTypeDef]],  # (2)
 ```
 
 1. See [:material-code-brackets: OAuth2GrantTypeType](./literals.md#oauth2granttypetype) 
+2. See [:material-code-braces: OAuth2CustomParameterTypeDef](./type_defs.md#oauth2customparametertypedef) 
 ## OAuth2PropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1931,6 +1956,7 @@ def get_value() -> OAuth2PropertiesTypeDef:
 class OAuth2PropertiesTypeDef(TypedDict):
     tokenUrl: str,
     oAuth2GrantType: OAuth2GrantTypeType,  # (1)
+    tokenUrlCustomProperties: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-brackets: OAuth2GrantTypeType](./literals.md#oauth2granttypetype) 

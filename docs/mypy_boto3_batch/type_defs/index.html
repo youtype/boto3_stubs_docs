@@ -4357,6 +4357,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#updatepolicytypedef" class="md-nav__link">
+    UpdatePolicyTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updateschedulingpolicyrequestrequesttypedef" class="md-nav__link">
     UpdateSchedulingPolicyRequestRequestTypeDef
   </a>
@@ -36948,6 +36955,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#updatepolicytypedef" class="md-nav__link">
+    UpdatePolicyTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#updateschedulingpolicyrequestrequesttypedef" class="md-nav__link">
     UpdateSchedulingPolicyRequestRequestTypeDef
   </a>
@@ -37075,14 +37089,13 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-batch
 <a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        <span class="s2">&quot;computeEnvironmentName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        <span class="s2">&quot;computeEnvironmentArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>        <span class="s2">&quot;ecsClusterArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="p">}</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">class</span> <span class="nc">ComputeEnvironmentDetailTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="n">computeEnvironmentName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">computeEnvironmentArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="n">ecsClusterArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">unmanagedvCpus</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="n">unmanagedvCpus</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">ecsClusterArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
 <a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CETypeType</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="n">state</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CEStateType</span><span class="p">],</span>  <span class="c1"># (2)</span>
@@ -37090,12 +37103,14 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-batch
 <a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    <span class="n">statusReason</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">computeResources</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ComputeResourceTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
 <a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="n">serviceRole</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="n">updatePolicy</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">UpdatePolicyTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#cetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CETypeType</a> </li>
 <li>See <a href="../literals/#cestatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CEStateType</a> </li>
 <li>See <a href="../literals/#cestatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CEStatusType</a> </li>
 <li>See <a href="./#computeresourcetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ComputeResourceTypeDef</a> </li>
+<li>See <a href="./#updatepolicytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UpdatePolicyTypeDef</a> </li>
 </ol>
 <h2 id="computeenvironmentordertypedef">ComputeEnvironmentOrderTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">ComputeEnvironmentOrderTypeDef</span>
@@ -37159,7 +37174,25 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-batch
 <a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="n">desiredvCpus</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="n">subnets</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
 <a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="n">securityGroupIds</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="n">allocationStrategy</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CRUpdateAllocationStrategyType</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="n">instanceTypes</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>    <span class="n">ec2KeyPair</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    <span class="n">instanceRole</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>    <span class="n">placementGroup</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>    <span class="n">bidPercentage</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>    <span class="n">launchTemplate</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">LaunchTemplateSpecificationTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>    <span class="n">ec2Configuration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">Ec2ConfigurationTypeDef</span><span class="p">]],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>    <span class="n">updateToLatestImageVersion</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CRTypeType</span><span class="p">],</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>    <span class="n">imageId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
+<ol>
+<li>See <a href="../literals/#crupdateallocationstrategytype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CRUpdateAllocationStrategyType</a> </li>
+<li>See <a href="./#launchtemplatespecificationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> LaunchTemplateSpecificationTypeDef</a> </li>
+<li>See <a href="./#ec2configurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> Ec2ConfigurationTypeDef</a> </li>
+<li>See <a href="../literals/#crtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CRTypeType</a> </li>
+</ol>
 <h2 id="containerdetailtypedef">ContainerDetailTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">ContainerDetailTypeDef</span>
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
@@ -38566,10 +38599,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-batch
 <a id="__codelineno-181-4" name="__codelineno-181-4" href="#__codelineno-181-4"></a>    <span class="n">unmanagedvCpus</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-181-5" name="__codelineno-181-5" href="#__codelineno-181-5"></a>    <span class="n">computeResources</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ComputeResourceUpdateTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
 <a id="__codelineno-181-6" name="__codelineno-181-6" href="#__codelineno-181-6"></a>    <span class="n">serviceRole</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-181-7" name="__codelineno-181-7" href="#__codelineno-181-7"></a>    <span class="n">updatePolicy</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">UpdatePolicyTypeDef</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#cestatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CEStateType</a> </li>
 <li>See <a href="./#computeresourceupdatetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ComputeResourceUpdateTypeDef</a> </li>
+<li>See <a href="./#updatepolicytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UpdatePolicyTypeDef</a> </li>
 </ol>
 <h2 id="updatecomputeenvironmentresponsetypedef">UpdateComputeEnvironmentResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-182-1" name="__codelineno-182-1" href="#__codelineno-182-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">UpdateComputeEnvironmentResponseTypeDef</span>
@@ -38626,33 +38661,45 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-batch
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
-<h2 id="updateschedulingpolicyrequestrequesttypedef">UpdateSchedulingPolicyRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-188-1" name="__codelineno-188-1" href="#__codelineno-188-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">UpdateSchedulingPolicyRequestRequestTypeDef</span>
+<h2 id="updatepolicytypedef">UpdatePolicyTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-188-1" name="__codelineno-188-1" href="#__codelineno-188-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">UpdatePolicyTypeDef</span>
 <a id="__codelineno-188-2" name="__codelineno-188-2" href="#__codelineno-188-2"></a>
-<a id="__codelineno-188-3" name="__codelineno-188-3" href="#__codelineno-188-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateSchedulingPolicyRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-188-3" name="__codelineno-188-3" href="#__codelineno-188-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdatePolicyTypeDef</span><span class="p">:</span>
 <a id="__codelineno-188-4" name="__codelineno-188-4" href="#__codelineno-188-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-188-5" name="__codelineno-188-5" href="#__codelineno-188-5"></a>        <span class="s2">&quot;arn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-188-5" name="__codelineno-188-5" href="#__codelineno-188-5"></a>        <span class="s2">&quot;terminateJobsOnUpdate&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-188-6" name="__codelineno-188-6" href="#__codelineno-188-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-189-1" name="__codelineno-189-1" href="#__codelineno-189-1"></a><span class="k">class</span> <span class="nc">UpdateSchedulingPolicyRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-189-2" name="__codelineno-189-2" href="#__codelineno-189-2"></a>    <span class="n">arn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-189-3" name="__codelineno-189-3" href="#__codelineno-189-3"></a>    <span class="n">fairsharePolicy</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">FairsharePolicyTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-189-1" name="__codelineno-189-1" href="#__codelineno-189-1"></a><span class="k">class</span> <span class="nc">UpdatePolicyTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-189-2" name="__codelineno-189-2" href="#__codelineno-189-2"></a>    <span class="n">terminateJobsOnUpdate</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-189-3" name="__codelineno-189-3" href="#__codelineno-189-3"></a>    <span class="n">jobExecutionTimeoutMinutes</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="updateschedulingpolicyrequestrequesttypedef">UpdateSchedulingPolicyRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-190-1" name="__codelineno-190-1" href="#__codelineno-190-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">UpdateSchedulingPolicyRequestRequestTypeDef</span>
+<a id="__codelineno-190-2" name="__codelineno-190-2" href="#__codelineno-190-2"></a>
+<a id="__codelineno-190-3" name="__codelineno-190-3" href="#__codelineno-190-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateSchedulingPolicyRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-190-4" name="__codelineno-190-4" href="#__codelineno-190-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-190-5" name="__codelineno-190-5" href="#__codelineno-190-5"></a>        <span class="s2">&quot;arn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-190-6" name="__codelineno-190-6" href="#__codelineno-190-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-191-1" name="__codelineno-191-1" href="#__codelineno-191-1"></a><span class="k">class</span> <span class="nc">UpdateSchedulingPolicyRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-191-2" name="__codelineno-191-2" href="#__codelineno-191-2"></a>    <span class="n">arn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-191-3" name="__codelineno-191-3" href="#__codelineno-191-3"></a>    <span class="n">fairsharePolicy</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">FairsharePolicyTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#fairsharepolicytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> FairsharePolicyTypeDef</a> </li>
 </ol>
 <h2 id="volumetypedef">VolumeTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-190-1" name="__codelineno-190-1" href="#__codelineno-190-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">VolumeTypeDef</span>
-<a id="__codelineno-190-2" name="__codelineno-190-2" href="#__codelineno-190-2"></a>
-<a id="__codelineno-190-3" name="__codelineno-190-3" href="#__codelineno-190-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VolumeTypeDef</span><span class="p">:</span>
-<a id="__codelineno-190-4" name="__codelineno-190-4" href="#__codelineno-190-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-190-5" name="__codelineno-190-5" href="#__codelineno-190-5"></a>        <span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-190-6" name="__codelineno-190-6" href="#__codelineno-190-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-192-1" name="__codelineno-192-1" href="#__codelineno-192-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_batch.type_defs</span> <span class="kn">import</span> <span class="n">VolumeTypeDef</span>
+<a id="__codelineno-192-2" name="__codelineno-192-2" href="#__codelineno-192-2"></a>
+<a id="__codelineno-192-3" name="__codelineno-192-3" href="#__codelineno-192-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VolumeTypeDef</span><span class="p">:</span>
+<a id="__codelineno-192-4" name="__codelineno-192-4" href="#__codelineno-192-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-192-5" name="__codelineno-192-5" href="#__codelineno-192-5"></a>        <span class="s2">&quot;host&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-192-6" name="__codelineno-192-6" href="#__codelineno-192-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-191-1" name="__codelineno-191-1" href="#__codelineno-191-1"></a><span class="k">class</span> <span class="nc">VolumeTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-191-2" name="__codelineno-191-2" href="#__codelineno-191-2"></a>    <span class="n">host</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">HostTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-191-3" name="__codelineno-191-3" href="#__codelineno-191-3"></a>    <span class="n">name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-191-4" name="__codelineno-191-4" href="#__codelineno-191-4"></a>    <span class="n">efsVolumeConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">EFSVolumeConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-193-1" name="__codelineno-193-1" href="#__codelineno-193-1"></a><span class="k">class</span> <span class="nc">VolumeTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-193-2" name="__codelineno-193-2" href="#__codelineno-193-2"></a>    <span class="n">host</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">HostTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-193-3" name="__codelineno-193-3" href="#__codelineno-193-3"></a>    <span class="n">name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-193-4" name="__codelineno-193-4" href="#__codelineno-193-4"></a>    <span class="n">efsVolumeConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">EFSVolumeConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#hosttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> HostTypeDef</a> </li>

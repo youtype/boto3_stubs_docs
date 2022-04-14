@@ -107,6 +107,7 @@ def get_value() -> ArrayJobDependencyType:
 - [CETypeType](./literals.md#cetypetype)
 - [CRAllocationStrategyType](./literals.md#crallocationstrategytype)
 - [CRTypeType](./literals.md#crtypetype)
+- [CRUpdateAllocationStrategyType](./literals.md#crupdateallocationstrategytype)
 - [DescribeComputeEnvironmentsPaginatorName](./literals.md#describecomputeenvironmentspaginatorname)
 - [DescribeJobDefinitionsPaginatorName](./literals.md#describejobdefinitionspaginatorname)
 - [DescribeJobQueuesPaginatorName](./literals.md#describejobqueuespaginatorname)
@@ -239,6 +240,7 @@ def get_value() -> ArrayPropertiesDetailTypeDef:
 - [UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef)
 - [UpdateJobQueueRequestRequestTypeDef](./type_defs.md#updatejobqueuerequestrequesttypedef)
 - [UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef)
+- [UpdatePolicyTypeDef](./type_defs.md#updatepolicytypedef)
 - [UpdateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#updateschedulingpolicyrequestrequesttypedef)
 - [VolumeTypeDef](./type_defs.md#volumetypedef)
 

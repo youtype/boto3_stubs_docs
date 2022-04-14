@@ -212,6 +212,7 @@ def get_value() -> FleetAttributeType:
 FleetAttributeType = Literal[
     "DOMAIN_JOIN_INFO",
     "IAM_ROLE_ARN",
+    "SESSION_SCRIPT_S3_LOCATION",
     "USB_DEVICE_FILTER_STRINGS",
     "VPC_CONFIGURATION",
     "VPC_CONFIGURATION_SECURITY_GROUP_IDS",
