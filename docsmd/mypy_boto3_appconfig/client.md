@@ -231,7 +231,7 @@ def create_hosted_configuration_version(
     *,
     ApplicationId: str,
     ConfigurationProfileId: str,
-    Content: Union[bytes, IO[bytes], StreamingBody],
+    Content: Union[str, bytes, IO[Any], StreamingBody],
     ContentType: str,
     Description: str = ...,
     LatestVersionNumber: int = ...,

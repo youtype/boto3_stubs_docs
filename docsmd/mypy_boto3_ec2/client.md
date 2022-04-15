@@ -4089,8 +4089,8 @@ parent.create_vpc_endpoint_connection_notification(**kwargs)
 
 ### create\_vpc\_endpoint\_service\_configuration
 
-Creates a VPC endpoint service configuration to which service consumers (Amazon
-Web Services accounts, IAM users, and IAM roles) can connect.
+Creates a VPC endpoint service to which service consumers (Amazon Web Services
+accounts, IAM users, and IAM roles) can connect.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_vpc_endpoint_service_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_service_configuration)
@@ -13449,7 +13449,7 @@ def import_key_pair(
     self,
     *,
     KeyName: str,
-    PublicKeyMaterial: Union[bytes, IO[bytes], StreamingBody],
+    PublicKeyMaterial: Union[str, bytes, IO[Any], StreamingBody],
     DryRun: bool = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
 ) -> ImportKeyPairResultTypeDef:  # (2)
@@ -15341,9 +15341,7 @@ parent.modify_vpc_endpoint_service_payer_responsibility(**kwargs)
 
 ### modify\_vpc\_endpoint\_service\_permissions
 
-Modifies the permissions for your [VPC endpoint
-service](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-
-service.html)_.
+Modifies the permissions for your VPC endpoint service.
 
 Type annotations and code completion for `#!python boto3.client("ec2").modify_vpc_endpoint_service_permissions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_permissions)

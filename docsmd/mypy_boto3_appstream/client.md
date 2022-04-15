@@ -452,7 +452,8 @@ def create_fleet(
     Platform: PlatformTypeType = ...,  # (6)
     MaxConcurrentSessions: int = ...,
     UsbDeviceFilterStrings: Sequence[str] = ...,
-) -> CreateFleetResultTypeDef:  # (7)
+    SessionScriptS3Location: S3LocationTypeDef = ...,  # (7)
+) -> CreateFleetResultTypeDef:  # (8)
     ...
 ```
 
@@ -462,7 +463,8 @@ def create_fleet(
 4. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
 5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
 6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
-7. See [:material-code-braces: CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef) 
+7. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+8. See [:material-code-braces: CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2112,7 +2114,8 @@ def update_fleet(
     Platform: PlatformTypeType = ...,  # (6)
     MaxConcurrentSessions: int = ...,
     UsbDeviceFilterStrings: Sequence[str] = ...,
-) -> UpdateFleetResultTypeDef:  # (7)
+    SessionScriptS3Location: S3LocationTypeDef = ...,  # (7)
+) -> UpdateFleetResultTypeDef:  # (8)
     ...
 ```
 
@@ -2122,7 +2125,8 @@ def update_fleet(
 4. See [:material-code-brackets: FleetAttributeType](./literals.md#fleetattributetype) 
 5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
 6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
-7. See [:material-code-braces: UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef) 
+7. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+8. See [:material-code-braces: UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -82,7 +82,7 @@ Type annotations and code completion for `#!python boto3.client("amp").create_al
 def create_alert_manager_definition(
     self,
     *,
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     workspaceId: str,
     clientToken: str = ...,
 ) -> CreateAlertManagerDefinitionResponseTypeDef:  # (1)
@@ -114,7 +114,7 @@ Type annotations and code completion for `#!python boto3.client("amp").create_ru
 def create_rule_groups_namespace(
     self,
     *,
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     name: str,
     workspaceId: str,
     clientToken: str = ...,
@@ -469,7 +469,7 @@ Type annotations and code completion for `#!python boto3.client("amp").put_alert
 def put_alert_manager_definition(
     self,
     *,
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     workspaceId: str,
     clientToken: str = ...,
 ) -> PutAlertManagerDefinitionResponseTypeDef:  # (1)
@@ -501,7 +501,7 @@ Type annotations and code completion for `#!python boto3.client("amp").put_rule_
 def put_rule_groups_namespace(
     self,
     *,
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     name: str,
     workspaceId: str,
     clientToken: str = ...,

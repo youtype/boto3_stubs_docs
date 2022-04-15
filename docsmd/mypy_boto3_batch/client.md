@@ -787,13 +787,15 @@ def update_compute_environment(
     unmanagedvCpus: int = ...,
     computeResources: ComputeResourceUpdateTypeDef = ...,  # (2)
     serviceRole: str = ...,
-) -> UpdateComputeEnvironmentResponseTypeDef:  # (3)
+    updatePolicy: UpdatePolicyTypeDef = ...,  # (3)
+) -> UpdateComputeEnvironmentResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: CEStateType](./literals.md#cestatetype) 
 2. See [:material-code-braces: ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef) 
-3. See [:material-code-braces: UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef) 
+3. See [:material-code-braces: UpdatePolicyTypeDef](./type_defs.md#updatepolicytypedef) 
+4. See [:material-code-braces: UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

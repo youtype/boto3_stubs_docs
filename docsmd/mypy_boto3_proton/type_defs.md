@@ -406,9 +406,11 @@ class CreateRepositoryInputRequestTypeDef(TypedDict):
     name: str,
     provider: RepositoryProviderType,  # (1)
     encryptionKey: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
 1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRepositoryOutputTypeDef
 
 ```python title="Usage Example"

@@ -1301,6 +1301,21 @@ CmfcIFrameOnlyManifestType = Literal[
     "INCLUDE",
 ]
 ```
+## CmfcKlvMetadataType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import CmfcKlvMetadataType
+
+def get_value() -> CmfcKlvMetadataType:
+    return "NONE"
+```
+
+```python title="Definition"
+CmfcKlvMetadataType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## CmfcScte35EsamType
 
 ```python title="Usage Example"
@@ -4238,6 +4253,21 @@ M2tsForceTsVideoEbpOrderType = Literal[
     "FORCE",
 ]
 ```
+## M2tsKlvMetadataType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import M2tsKlvMetadataType
+
+def get_value() -> M2tsKlvMetadataType:
+    return "NONE"
+```
+
+```python title="Definition"
+M2tsKlvMetadataType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## M2tsNielsenId3Type
 
 ```python title="Usage Example"
@@ -4615,6 +4645,21 @@ def get_value() -> MpdCaptionContainerTypeType:
 MpdCaptionContainerTypeType = Literal[
     "FRAGMENTED_MP4",
     "RAW",
+]
+```
+## MpdKlvMetadataType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import MpdKlvMetadataType
+
+def get_value() -> MpdKlvMetadataType:
+    return "NONE"
+```
+
+```python title="Definition"
+MpdKlvMetadataType = Literal[
+    "NONE",
+    "PASSTHROUGH",
 ]
 ```
 ## MpdScte35EsamType
@@ -6062,6 +6107,7 @@ def get_value() -> WebvttStylePassthroughType:
 WebvttStylePassthroughType = Literal[
     "DISABLED",
     "ENABLED",
+    "STRICT",
 ]
 ```
 ## Xavc4kIntraCbgProfileClassType

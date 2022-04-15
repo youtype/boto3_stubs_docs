@@ -659,9 +659,9 @@ def get_value() -> MessageSystemAttributeValueTypeDef:
 class MessageSystemAttributeValueTypeDef(TypedDict):
     DataType: str,
     StringValue: NotRequired[str],
-    BinaryValue: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    BinaryValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     StringListValues: NotRequired[Sequence[str]],
-    BinaryListValues: NotRequired[Sequence[Union[bytes, IO[bytes], StreamingBody]]],
+    BinaryListValues: NotRequired[Sequence[Union[str, bytes, IO[Any], StreamingBody]]],
 ```
 
 ## MessageTypeDef

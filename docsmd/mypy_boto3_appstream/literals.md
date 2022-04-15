@@ -212,6 +212,7 @@ def get_value() -> FleetAttributeType:
 FleetAttributeType = Literal[
     "DOMAIN_JOIN_INFO",
     "IAM_ROLE_ARN",
+    "SESSION_SCRIPT_S3_LOCATION",
     "USB_DEVICE_FILTER_STRINGS",
     "VPC_CONFIGURATION",
     "VPC_CONFIGURATION_SECURITY_GROUP_IDS",
@@ -1042,6 +1043,7 @@ RegionName = Literal[
     "ap-south-1",
     "ap-southeast-1",
     "ap-southeast-2",
+    "ca-central-1",
     "eu-central-1",
     "eu-west-1",
     "eu-west-2",

@@ -179,6 +179,7 @@ def get_value() -> AccountHealthTypeDef:
 - [CloudWatchMetricsDimensionTypeDef](./type_defs.md#cloudwatchmetricsdimensiontypedef)
 - [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
 - [CostEstimationTimeRangeTypeDef](./type_defs.md#costestimationtimerangetypedef)
+- [DeleteInsightRequestRequestTypeDef](./type_defs.md#deleteinsightrequestrequesttypedef)
 - [DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef)
 - [DescribeAccountOverviewRequestRequestTypeDef](./type_defs.md#describeaccountoverviewrequestrequesttypedef)
 - [DescribeAccountOverviewResponseTypeDef](./type_defs.md#describeaccountoverviewresponsetypedef)

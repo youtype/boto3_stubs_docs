@@ -77,6 +77,8 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
 
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
+- [DescribeStorageVirtualMachinesPaginator](./paginators.md#describestoragevirtualmachinespaginator)
+- [DescribeVolumesPaginator](./paginators.md#describevolumespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
 
@@ -112,6 +114,8 @@ def get_value() -> AdministrativeActionTypeType:
 - [DeleteOpenZFSVolumeOptionType](./literals.md#deleteopenzfsvolumeoptiontype)
 - [DescribeBackupsPaginatorName](./literals.md#describebackupspaginatorname)
 - [DescribeFileSystemsPaginatorName](./literals.md#describefilesystemspaginatorname)
+- [DescribeStorageVirtualMachinesPaginatorName](./literals.md#describestoragevirtualmachinespaginatorname)
+- [DescribeVolumesPaginatorName](./literals.md#describevolumespaginatorname)
 - [DiskIopsConfigurationModeType](./literals.md#diskiopsconfigurationmodetype)
 - [DriveCacheTypeType](./literals.md#drivecachetypetype)
 - [EventTypeType](./literals.md#eventtypetype)
@@ -253,8 +257,10 @@ def get_value() -> ActiveDirectoryBackupAttributesTypeDef:
 - [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)
 - [DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef)
 - [DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef)
+- [DescribeStorageVirtualMachinesRequestDescribeStorageVirtualMachinesPaginateTypeDef](./type_defs.md#describestoragevirtualmachinesrequestdescribestoragevirtualmachinespaginatetypedef)
 - [DescribeStorageVirtualMachinesRequestRequestTypeDef](./type_defs.md#describestoragevirtualmachinesrequestrequesttypedef)
 - [DescribeStorageVirtualMachinesResponseTypeDef](./type_defs.md#describestoragevirtualmachinesresponsetypedef)
+- [DescribeVolumesRequestDescribeVolumesPaginateTypeDef](./type_defs.md#describevolumesrequestdescribevolumespaginatetypedef)
 - [DescribeVolumesRequestRequestTypeDef](./type_defs.md#describevolumesrequestrequesttypedef)
 - [DescribeVolumesResponseTypeDef](./type_defs.md#describevolumesresponsetypedef)
 - [DisassociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#disassociatefilesystemaliasesrequestrequesttypedef)

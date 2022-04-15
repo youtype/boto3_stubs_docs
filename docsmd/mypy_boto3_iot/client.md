@@ -4865,6 +4865,48 @@ parent.list_managed_job_templates(**kwargs)
 
 1. See [:material-code-braces: ListManagedJobTemplatesRequestRequestTypeDef](./type_defs.md#listmanagedjobtemplatesrequestrequesttypedef) 
 
+### list\_metric\_values
+
+Lists the values reported for an IoT Device Defender metric (device-side metric,
+cloud-side metric, or custom metric) by the given thing during the specified
+time period.
+
+Type annotations and code completion for `#!python boto3.client("iot").list_metric_values` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_metric_values)
+
+```python title="Method definition"
+def list_metric_values(
+    self,
+    *,
+    thingName: str,
+    metricName: str,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    dimensionName: str = ...,
+    dimensionValueOperator: DimensionValueOperatorType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListMetricValuesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
+2. See [:material-code-braces: ListMetricValuesResponseTypeDef](./type_defs.md#listmetricvaluesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMetricValuesRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "metricName": ...,
+    "startTime": ...,
+    "endTime": ...,
+}
+
+parent.list_metric_values(**kwargs)
+```
+
+1. See [:material-code-braces: ListMetricValuesRequestRequestTypeDef](./type_defs.md#listmetricvaluesrequestrequesttypedef) 
+
 ### list\_mitigation\_actions
 
 Gets a list of all mitigation actions that match the specified filter criteria.
@@ -7523,6 +7565,7 @@ Type annotations and code completion for `#!python boto3.client("iot").get_pagin
 - `client.get_paginator("list_job_executions_for_thing")` -> [ListJobExecutionsForThingPaginator](./paginators.md#listjobexecutionsforthingpaginator)
 - `client.get_paginator("list_job_templates")` -> [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
 - `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_metric_values")` -> [ListMetricValuesPaginator](./paginators.md#listmetricvaluespaginator)
 - `client.get_paginator("list_mitigation_actions")` -> [ListMitigationActionsPaginator](./paginators.md#listmitigationactionspaginator)
 - `client.get_paginator("list_ota_updates")` -> [ListOTAUpdatesPaginator](./paginators.md#listotaupdatespaginator)
 - `client.get_paginator("list_outgoing_certificates")` -> [ListOutgoingCertificatesPaginator](./paginators.md#listoutgoingcertificatespaginator)

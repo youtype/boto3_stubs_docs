@@ -1351,7 +1351,7 @@ def get_value() -> CodeSigningSignatureTypeDef:
 
 ```python title="Definition"
 class CodeSigningSignatureTypeDef(TypedDict):
-    inlineDocument: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    inlineDocument: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## CodeSigningTypeDef
@@ -7760,6 +7760,82 @@ class ListManagedJobTemplatesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ManagedJobTemplateSummaryTypeDef](./type_defs.md#managedjobtemplatesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMetricValuesRequestListMetricValuesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListMetricValuesRequestListMetricValuesPaginateTypeDef
+
+def get_value() -> ListMetricValuesRequestListMetricValuesPaginateTypeDef:
+    return {
+        "thingName": ...,
+        "metricName": ...,
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricValuesRequestListMetricValuesPaginateTypeDef(TypedDict):
+    thingName: str,
+    metricName: str,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    dimensionName: NotRequired[str],
+    dimensionValueOperator: NotRequired[DimensionValueOperatorType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMetricValuesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListMetricValuesRequestRequestTypeDef
+
+def get_value() -> ListMetricValuesRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+        "metricName": ...,
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricValuesRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    metricName: str,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    dimensionName: NotRequired[str],
+    dimensionValueOperator: NotRequired[DimensionValueOperatorType],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DimensionValueOperatorType](./literals.md#dimensionvalueoperatortype) 
+## ListMetricValuesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListMetricValuesResponseTypeDef
+
+def get_value() -> ListMetricValuesResponseTypeDef:
+    return {
+        "metricDatumList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricValuesResponseTypeDef(TypedDict):
+    metricDatumList: List[MetricDatumTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMitigationActionsRequestListMitigationActionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -9669,6 +9745,24 @@ class ManagedJobTemplateSummaryTypeDef(TypedDict):
     templateVersion: NotRequired[str],
 ```
 
+## MetricDatumTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MetricDatumTypeDef
+
+def get_value() -> MetricDatumTypeDef:
+    return {
+        "timestamp": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDatumTypeDef(TypedDict):
+    timestamp: NotRequired[datetime],
+    value: NotRequired[MetricValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
 ## MetricDimensionTypeDef
 
 ```python title="Usage Example"
@@ -9805,7 +9899,7 @@ def get_value() -> MqttContextTypeDef:
 ```python title="Definition"
 class MqttContextTypeDef(TypedDict):
     username: NotRequired[str],
-    password: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    password: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     clientId: NotRequired[str],
 ```
 

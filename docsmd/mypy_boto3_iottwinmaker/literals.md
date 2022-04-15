@@ -88,11 +88,12 @@ ParentEntityUpdateTypeType = Literal[
 from mypy_boto3_iottwinmaker.literals import PropertyUpdateTypeType
 
 def get_value() -> PropertyUpdateTypeType:
-    return "DELETE"
+    return "CREATE"
 ```
 
 ```python title="Definition"
 PropertyUpdateTypeType = Literal[
+    "CREATE",
     "DELETE",
     "UPDATE",
 ]

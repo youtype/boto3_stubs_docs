@@ -95,7 +95,7 @@ def get_value() -> PostToConnectionRequestRequestTypeDef:
 
 ```python title="Definition"
 class PostToConnectionRequestRequestTypeDef(TypedDict):
-    Data: Union[bytes, IO[bytes], StreamingBody],
+    Data: Union[str, bytes, IO[Any], StreamingBody],
     ConnectionId: str,
 ```
 

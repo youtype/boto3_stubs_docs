@@ -1082,7 +1082,7 @@ class RepositoryCatalogDataInputTypeDef(TypedDict):
     description: NotRequired[str],
     architectures: NotRequired[Sequence[str]],
     operatingSystems: NotRequired[Sequence[str]],
-    logoImageBlob: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    logoImageBlob: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     aboutText: NotRequired[str],
     usageText: NotRequired[str],
 ```
@@ -1271,7 +1271,7 @@ class UploadLayerPartRequestRequestTypeDef(TypedDict):
     uploadId: str,
     partFirstByte: int,
     partLastByte: int,
-    layerPartBlob: Union[bytes, IO[bytes], StreamingBody],
+    layerPartBlob: Union[str, bytes, IO[Any], StreamingBody],
     registryId: NotRequired[str],
 ```
 

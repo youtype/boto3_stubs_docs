@@ -267,7 +267,7 @@ class PostContentRequestRequestTypeDef(TypedDict):
     botAlias: str,
     userId: str,
     contentType: str,
-    inputStream: Union[bytes, IO[bytes], StreamingBody],
+    inputStream: Union[str, bytes, IO[Any], StreamingBody],
     sessionAttributes: NotRequired[str],
     requestAttributes: NotRequired[str],
     accept: NotRequired[str],

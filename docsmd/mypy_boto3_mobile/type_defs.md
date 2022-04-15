@@ -44,7 +44,7 @@ def get_value() -> CreateProjectRequestRequestTypeDef:
 class CreateProjectRequestRequestTypeDef(TypedDict):
     name: NotRequired[str],
     region: NotRequired[str],
-    contents: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    contents: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     snapshotId: NotRequired[str],
 ```
 
@@ -487,7 +487,7 @@ def get_value() -> UpdateProjectRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateProjectRequestRequestTypeDef(TypedDict):
     projectId: str,
-    contents: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    contents: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## UpdateProjectResultTypeDef

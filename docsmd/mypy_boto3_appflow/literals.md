@@ -312,6 +312,21 @@ MarketoConnectorOperatorType = Literal[
     "VALIDATE_NUMERIC",
 ]
 ```
+## OAuth2CustomPropTypeType
+
+```python title="Usage Example"
+from mypy_boto3_appflow.literals import OAuth2CustomPropTypeType
+
+def get_value() -> OAuth2CustomPropTypeType:
+    return "AUTH_URL"
+```
+
+```python title="Definition"
+OAuth2CustomPropTypeType = Literal[
+    "AUTH_URL",
+    "TOKEN_URL",
+]
+```
 ## OAuth2GrantTypeType
 
 ```python title="Usage Example"

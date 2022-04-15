@@ -1061,6 +1061,7 @@ def get_value() -> GetMetricStreamOutputTypeDef:
         "CreationDate": ...,
         "LastUpdateDate": ...,
         "OutputFormat": ...,
+        "StatisticsConfigurations": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1077,13 +1078,15 @@ class GetMetricStreamOutputTypeDef(TypedDict):
     CreationDate: datetime,
     LastUpdateDate: datetime,
     OutputFormat: MetricStreamOutputFormatType,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    StatisticsConfigurations: List[MetricStreamStatisticsConfigurationTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
 2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
 3. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMetricWidgetImageInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1636,6 +1639,43 @@ class MetricStreamFilterTypeDef(TypedDict):
     Namespace: NotRequired[str],
 ```
 
+## MetricStreamStatisticsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricStreamStatisticsConfigurationTypeDef
+
+def get_value() -> MetricStreamStatisticsConfigurationTypeDef:
+    return {
+        "IncludeMetrics": ...,
+        "AdditionalStatistics": ...,
+    }
+```
+
+```python title="Definition"
+class MetricStreamStatisticsConfigurationTypeDef(TypedDict):
+    IncludeMetrics: List[MetricStreamStatisticsMetricTypeDef],  # (1)
+    AdditionalStatistics: List[str],
+```
+
+1. See [:material-code-braces: MetricStreamStatisticsMetricTypeDef](./type_defs.md#metricstreamstatisticsmetrictypedef) 
+## MetricStreamStatisticsMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import MetricStreamStatisticsMetricTypeDef
+
+def get_value() -> MetricStreamStatisticsMetricTypeDef:
+    return {
+        "Namespace": ...,
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class MetricStreamStatisticsMetricTypeDef(TypedDict):
+    Namespace: str,
+    MetricName: str,
+```
+
 ## MetricTypeDef
 
 ```python title="Usage Example"
@@ -1932,12 +1972,14 @@ class PutMetricStreamInputRequestTypeDef(TypedDict):
     IncludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
     ExcludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    StatisticsConfigurations: NotRequired[Sequence[MetricStreamStatisticsConfigurationTypeDef]],  # (5)
 ```
 
 1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
 2. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
 3. See [:material-code-braces: MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: MetricStreamStatisticsConfigurationTypeDef](./type_defs.md#metricstreamstatisticsconfigurationtypedef) 
 ## PutMetricStreamOutputTypeDef
 
 ```python title="Usage Example"

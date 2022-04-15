@@ -793,7 +793,7 @@ def get_value() -> ImportGameConfigurationSourceTypeDef:
 
 ```python title="Definition"
 class ImportGameConfigurationSourceTypeDef(TypedDict):
-    File: Union[bytes, IO[bytes], StreamingBody],
+    File: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef

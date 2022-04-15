@@ -39,7 +39,7 @@ def get_value() -> CommitTransactionRequestTypeDef:
 ```python title="Definition"
 class CommitTransactionRequestTypeDef(TypedDict):
     TransactionId: str,
-    CommitDigest: Union[bytes, IO[bytes], StreamingBody],
+    CommitDigest: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## CommitTransactionResultTypeDef
@@ -365,7 +365,7 @@ def get_value() -> ValueHolderTypeDef:
 
 ```python title="Definition"
 class ValueHolderTypeDef(TypedDict):
-    IonBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    IonBinary: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     IonText: NotRequired[str],
 ```
 

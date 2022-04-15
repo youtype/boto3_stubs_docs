@@ -293,7 +293,7 @@ def get_value() -> FieldTypeDef:
 ```python title="Definition"
 class FieldTypeDef(TypedDict):
     arrayValue: NotRequired[ArrayValueTypeDef],  # (1)
-    blobValue: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    blobValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     booleanValue: NotRequired[bool],
     doubleValue: NotRequired[float],
     isNull: NotRequired[bool],

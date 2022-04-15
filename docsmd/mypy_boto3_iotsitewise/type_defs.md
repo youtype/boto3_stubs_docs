@@ -2620,7 +2620,7 @@ def get_value() -> ImageFileTypeDef:
 
 ```python title="Definition"
 class ImageFileTypeDef(TypedDict):
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     type: ImageFileTypeType,  # (1)
 ```
 

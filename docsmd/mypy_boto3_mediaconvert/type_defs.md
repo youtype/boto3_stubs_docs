@@ -819,18 +819,20 @@ class CmfcSettingsTypeDef(TypedDict):
     AudioTrackType: NotRequired[CmfcAudioTrackTypeType],  # (2)
     DescriptiveVideoServiceFlag: NotRequired[CmfcDescriptiveVideoServiceFlagType],  # (3)
     IFrameOnlyManifest: NotRequired[CmfcIFrameOnlyManifestType],  # (4)
-    Scte35Esam: NotRequired[CmfcScte35EsamType],  # (5)
-    Scte35Source: NotRequired[CmfcScte35SourceType],  # (6)
-    TimedMetadata: NotRequired[CmfcTimedMetadataType],  # (7)
+    KlvMetadata: NotRequired[CmfcKlvMetadataType],  # (5)
+    Scte35Esam: NotRequired[CmfcScte35EsamType],  # (6)
+    Scte35Source: NotRequired[CmfcScte35SourceType],  # (7)
+    TimedMetadata: NotRequired[CmfcTimedMetadataType],  # (8)
 ```
 
 1. See [:material-code-brackets: CmfcAudioDurationType](./literals.md#cmfcaudiodurationtype) 
 2. See [:material-code-brackets: CmfcAudioTrackTypeType](./literals.md#cmfcaudiotracktypetype) 
 3. See [:material-code-brackets: CmfcDescriptiveVideoServiceFlagType](./literals.md#cmfcdescriptivevideoserviceflagtype) 
 4. See [:material-code-brackets: CmfcIFrameOnlyManifestType](./literals.md#cmfciframeonlymanifesttype) 
-5. See [:material-code-brackets: CmfcScte35EsamType](./literals.md#cmfcscte35esamtype) 
-6. See [:material-code-brackets: CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype) 
-7. See [:material-code-brackets: CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype) 
+5. See [:material-code-brackets: CmfcKlvMetadataType](./literals.md#cmfcklvmetadatatype) 
+6. See [:material-code-brackets: CmfcScte35EsamType](./literals.md#cmfcscte35esamtype) 
+7. See [:material-code-brackets: CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype) 
+8. See [:material-code-brackets: CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype) 
 ## ColorCorrectorTypeDef
 
 ```python title="Usage Example"
@@ -3191,23 +3193,24 @@ class M2tsSettingsTypeDef(TypedDict):
     EsRateInPes: NotRequired[M2tsEsRateInPesType],  # (10)
     ForceTsVideoEbpOrder: NotRequired[M2tsForceTsVideoEbpOrderType],  # (11)
     FragmentTime: NotRequired[float],
+    KlvMetadata: NotRequired[M2tsKlvMetadataType],  # (12)
     MaxPcrInterval: NotRequired[int],
     MinEbpInterval: NotRequired[int],
-    NielsenId3: NotRequired[M2tsNielsenId3Type],  # (12)
+    NielsenId3: NotRequired[M2tsNielsenId3Type],  # (13)
     NullPacketBitrate: NotRequired[float],
     PatInterval: NotRequired[int],
-    PcrControl: NotRequired[M2tsPcrControlType],  # (13)
+    PcrControl: NotRequired[M2tsPcrControlType],  # (14)
     PcrPid: NotRequired[int],
     PmtInterval: NotRequired[int],
     PmtPid: NotRequired[int],
     PrivateMetadataPid: NotRequired[int],
     ProgramNumber: NotRequired[int],
-    RateMode: NotRequired[M2tsRateModeType],  # (14)
-    Scte35Esam: NotRequired[M2tsScte35EsamTypeDef],  # (15)
+    RateMode: NotRequired[M2tsRateModeType],  # (15)
+    Scte35Esam: NotRequired[M2tsScte35EsamTypeDef],  # (16)
     Scte35Pid: NotRequired[int],
-    Scte35Source: NotRequired[M2tsScte35SourceType],  # (16)
-    SegmentationMarkers: NotRequired[M2tsSegmentationMarkersType],  # (17)
-    SegmentationStyle: NotRequired[M2tsSegmentationStyleType],  # (18)
+    Scte35Source: NotRequired[M2tsScte35SourceType],  # (17)
+    SegmentationMarkers: NotRequired[M2tsSegmentationMarkersType],  # (18)
+    SegmentationStyle: NotRequired[M2tsSegmentationStyleType],  # (19)
     SegmentationTime: NotRequired[float],
     TimedMetadataPid: NotRequired[int],
     TransportStreamId: NotRequired[int],
@@ -3225,13 +3228,14 @@ class M2tsSettingsTypeDef(TypedDict):
 9. See [:material-code-brackets: M2tsEbpPlacementType](./literals.md#m2tsebpplacementtype) 
 10. See [:material-code-brackets: M2tsEsRateInPesType](./literals.md#m2tsesrateinpestype) 
 11. See [:material-code-brackets: M2tsForceTsVideoEbpOrderType](./literals.md#m2tsforcetsvideoebpordertype) 
-12. See [:material-code-brackets: M2tsNielsenId3Type](./literals.md#m2tsnielsenid3type) 
-13. See [:material-code-brackets: M2tsPcrControlType](./literals.md#m2tspcrcontroltype) 
-14. See [:material-code-brackets: M2tsRateModeType](./literals.md#m2tsratemodetype) 
-15. See [:material-code-braces: M2tsScte35EsamTypeDef](./type_defs.md#m2tsscte35esamtypedef) 
-16. See [:material-code-brackets: M2tsScte35SourceType](./literals.md#m2tsscte35sourcetype) 
-17. See [:material-code-brackets: M2tsSegmentationMarkersType](./literals.md#m2tssegmentationmarkerstype) 
-18. See [:material-code-brackets: M2tsSegmentationStyleType](./literals.md#m2tssegmentationstyletype) 
+12. See [:material-code-brackets: M2tsKlvMetadataType](./literals.md#m2tsklvmetadatatype) 
+13. See [:material-code-brackets: M2tsNielsenId3Type](./literals.md#m2tsnielsenid3type) 
+14. See [:material-code-brackets: M2tsPcrControlType](./literals.md#m2tspcrcontroltype) 
+15. See [:material-code-brackets: M2tsRateModeType](./literals.md#m2tsratemodetype) 
+16. See [:material-code-braces: M2tsScte35EsamTypeDef](./type_defs.md#m2tsscte35esamtypedef) 
+17. See [:material-code-brackets: M2tsScte35SourceType](./literals.md#m2tsscte35sourcetype) 
+18. See [:material-code-brackets: M2tsSegmentationMarkersType](./literals.md#m2tssegmentationmarkerstype) 
+19. See [:material-code-brackets: M2tsSegmentationStyleType](./literals.md#m2tssegmentationstyletype) 
 ## M3u8SettingsTypeDef
 
 ```python title="Usage Example"
@@ -3436,17 +3440,19 @@ class MpdSettingsTypeDef(TypedDict):
     AccessibilityCaptionHints: NotRequired[MpdAccessibilityCaptionHintsType],  # (1)
     AudioDuration: NotRequired[MpdAudioDurationType],  # (2)
     CaptionContainerType: NotRequired[MpdCaptionContainerTypeType],  # (3)
-    Scte35Esam: NotRequired[MpdScte35EsamType],  # (4)
-    Scte35Source: NotRequired[MpdScte35SourceType],  # (5)
-    TimedMetadata: NotRequired[MpdTimedMetadataType],  # (6)
+    KlvMetadata: NotRequired[MpdKlvMetadataType],  # (4)
+    Scte35Esam: NotRequired[MpdScte35EsamType],  # (5)
+    Scte35Source: NotRequired[MpdScte35SourceType],  # (6)
+    TimedMetadata: NotRequired[MpdTimedMetadataType],  # (7)
 ```
 
 1. See [:material-code-brackets: MpdAccessibilityCaptionHintsType](./literals.md#mpdaccessibilitycaptionhintstype) 
 2. See [:material-code-brackets: MpdAudioDurationType](./literals.md#mpdaudiodurationtype) 
 3. See [:material-code-brackets: MpdCaptionContainerTypeType](./literals.md#mpdcaptioncontainertypetype) 
-4. See [:material-code-brackets: MpdScte35EsamType](./literals.md#mpdscte35esamtype) 
-5. See [:material-code-brackets: MpdScte35SourceType](./literals.md#mpdscte35sourcetype) 
-6. See [:material-code-brackets: MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype) 
+4. See [:material-code-brackets: MpdKlvMetadataType](./literals.md#mpdklvmetadatatype) 
+5. See [:material-code-brackets: MpdScte35EsamType](./literals.md#mpdscte35esamtype) 
+6. See [:material-code-brackets: MpdScte35SourceType](./literals.md#mpdscte35sourcetype) 
+7. See [:material-code-brackets: MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype) 
 ## Mpeg2SettingsTypeDef
 
 ```python title="Usage Example"

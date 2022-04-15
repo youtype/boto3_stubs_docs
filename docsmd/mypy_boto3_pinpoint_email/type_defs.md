@@ -1758,7 +1758,7 @@ def get_value() -> RawMessageTypeDef:
 
 ```python title="Definition"
 class RawMessageTypeDef(TypedDict):
-    Data: Union[bytes, IO[bytes], StreamingBody],
+    Data: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## ReputationOptionsTypeDef

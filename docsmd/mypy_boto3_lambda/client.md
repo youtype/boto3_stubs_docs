@@ -144,11 +144,13 @@ def add_permission(
     Qualifier: str = ...,
     RevisionId: str = ...,
     PrincipalOrgID: str = ...,
-) -> AddPermissionResponseTypeDef:  # (1)
+    FunctionUrlAuthType: FunctionUrlAuthTypeType = ...,  # (1)
+) -> AddPermissionResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef) 
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -366,6 +368,41 @@ parent.create_function(**kwargs)
 
 1. See [:material-code-braces: CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef) 
 
+### create\_function\_url\_config
+
+Creates a Lambda function URL with the specified configuration parameters.
+
+Type annotations and code completion for `#!python boto3.client("lambda").create_function_url_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function_url_config)
+
+```python title="Method definition"
+def create_function_url_config(
+    self,
+    *,
+    FunctionName: str,
+    AuthType: FunctionUrlAuthTypeType,  # (1)
+    Qualifier: str = ...,
+    Cors: CorsTypeDef = ...,  # (2)
+) -> CreateFunctionUrlConfigResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+3. See [:material-code-braces: CreateFunctionUrlConfigResponseTypeDef](./type_defs.md#createfunctionurlconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateFunctionUrlConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "AuthType": ...,
+}
+
+parent.create_function_url_config(**kwargs)
+```
+
+1. See [:material-code-braces: CreateFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#createfunctionurlconfigrequestrequesttypedef) 
+
 ### delete\_alias
 
 Deletes a Lambda function
@@ -570,6 +607,35 @@ parent.delete_function_event_invoke_config(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#deletefunctioneventinvokeconfigrequestrequesttypedef) 
+
+### delete\_function\_url\_config
+
+Deletes a Lambda function URL.
+
+Type annotations and code completion for `#!python boto3.client("lambda").delete_function_url_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_url_config)
+
+```python title="Method definition"
+def delete_function_url_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionUrlConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.delete_function_url_config(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#deletefunctionurlconfigrequestrequesttypedef) 
 
 ### delete\_layer\_version
 
@@ -909,6 +975,36 @@ parent.get_function_event_invoke_config(**kwargs)
 
 1. See [:material-code-braces: GetFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#getfunctioneventinvokeconfigrequestrequesttypedef) 
 
+### get\_function\_url\_config
+
+Returns details about a Lambda function URL.
+
+Type annotations and code completion for `#!python boto3.client("lambda").get_function_url_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_url_config)
+
+```python title="Method definition"
+def get_function_url_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> GetFunctionUrlConfigResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetFunctionUrlConfigResponseTypeDef](./type_defs.md#getfunctionurlconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionUrlConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.get_function_url_config(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#getfunctionurlconfigrequestrequesttypedef) 
+
 ### get\_layer\_version
 
 Returns information about a version of an [Lambda
@@ -1084,7 +1180,7 @@ def invoke(
     InvocationType: InvocationTypeType = ...,  # (1)
     LogType: LogTypeType = ...,  # (2)
     ClientContext: str = ...,
-    Payload: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Payload: Union[str, bytes, IO[Any], StreamingBody] = ...,
     Qualifier: str = ...,
 ) -> InvocationResponseTypeDef:  # (3)
     ...
@@ -1117,7 +1213,7 @@ def invoke_async(
     self,
     *,
     FunctionName: str,
-    InvokeArgs: Union[bytes, IO[bytes], StreamingBody],
+    InvokeArgs: Union[str, bytes, IO[Any], StreamingBody],
 ) -> InvokeAsyncResponseTypeDef:  # (1)
     ...
 ```
@@ -1264,6 +1360,37 @@ parent.list_function_event_invoke_configs(**kwargs)
 ```
 
 1. See [:material-code-braces: ListFunctionEventInvokeConfigsRequestRequestTypeDef](./type_defs.md#listfunctioneventinvokeconfigsrequestrequesttypedef) 
+
+### list\_function\_url\_configs
+
+Returns a list of Lambda function URLs for the specified function.
+
+Type annotations and code completion for `#!python boto3.client("lambda").list_function_url_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_url_configs)
+
+```python title="Method definition"
+def list_function_url_configs(
+    self,
+    *,
+    FunctionName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListFunctionUrlConfigsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListFunctionUrlConfigsResponseTypeDef](./type_defs.md#listfunctionurlconfigsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListFunctionUrlConfigsRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.list_function_url_configs(**kwargs)
+```
+
+1. See [:material-code-braces: ListFunctionUrlConfigsRequestRequestTypeDef](./type_defs.md#listfunctionurlconfigsrequestrequesttypedef) 
 
 ### list\_functions
 
@@ -1958,7 +2085,7 @@ def update_function_code(
     self,
     *,
     FunctionName: str,
-    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    ZipFile: Union[str, bytes, IO[Any], StreamingBody] = ...,
     S3Bucket: str = ...,
     S3Key: str = ...,
     S3ObjectVersion: str = ...,
@@ -2073,6 +2200,40 @@ parent.update_function_event_invoke_config(**kwargs)
 
 1. See [:material-code-braces: UpdateFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#updatefunctioneventinvokeconfigrequestrequesttypedef) 
 
+### update\_function\_url\_config
+
+Updates the configuration for a Lambda function URL.
+
+Type annotations and code completion for `#!python boto3.client("lambda").update_function_url_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_url_config)
+
+```python title="Method definition"
+def update_function_url_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    AuthType: FunctionUrlAuthTypeType = ...,  # (1)
+    Cors: CorsTypeDef = ...,  # (2)
+) -> UpdateFunctionUrlConfigResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+3. See [:material-code-braces: UpdateFunctionUrlConfigResponseTypeDef](./type_defs.md#updatefunctionurlconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionUrlConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.update_function_url_config(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFunctionUrlConfigRequestRequestTypeDef](./type_defs.md#updatefunctionurlconfigrequestrequesttypedef) 
+
 
 
 ### get_paginator
@@ -2083,6 +2244,7 @@ Type annotations and code completion for `#!python boto3.client("lambda").get_pa
 - `client.get_paginator("list_code_signing_configs")` -> [ListCodeSigningConfigsPaginator](./paginators.md#listcodesigningconfigspaginator)
 - `client.get_paginator("list_event_source_mappings")` -> [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
 - `client.get_paginator("list_function_event_invoke_configs")` -> [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
+- `client.get_paginator("list_function_url_configs")` -> [ListFunctionUrlConfigsPaginator](./paginators.md#listfunctionurlconfigspaginator)
 - `client.get_paginator("list_functions")` -> [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
 - `client.get_paginator("list_functions_by_code_signing_config")` -> [ListFunctionsByCodeSigningConfigPaginator](./paginators.md#listfunctionsbycodesigningconfigpaginator)
 - `client.get_paginator("list_layer_versions")` -> [ListLayerVersionsPaginator](./paginators.md#listlayerversionspaginator)

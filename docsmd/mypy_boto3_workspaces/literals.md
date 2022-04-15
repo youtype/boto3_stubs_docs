@@ -86,7 +86,9 @@ def get_value() -> ComputeType:
 ```python title="Definition"
 ComputeType = Literal[
     "GRAPHICS",
+    "GRAPHICS_G4DN",
     "GRAPHICSPRO",
+    "GRAPHICSPRO_G4DN",
     "PERFORMANCE",
     "POWER",
     "POWERPRO",
@@ -449,6 +451,7 @@ def get_value() -> WorkspaceImageIngestionProcessType:
 ```python title="Definition"
 WorkspaceImageIngestionProcessType = Literal[
     "BYOL_GRAPHICS",
+    "BYOL_GRAPHICS_G4DN",
     "BYOL_GRAPHICSPRO",
     "BYOL_REGULAR",
     "BYOL_REGULAR_WSP",

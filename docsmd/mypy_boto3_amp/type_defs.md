@@ -62,7 +62,7 @@ def get_value() -> CreateAlertManagerDefinitionRequestRequestTypeDef:
 
 ```python title="Definition"
 class CreateAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     workspaceId: str,
     clientToken: NotRequired[str],
 ```
@@ -102,7 +102,7 @@ def get_value() -> CreateRuleGroupsNamespaceRequestRequestTypeDef:
 
 ```python title="Definition"
 class CreateRuleGroupsNamespaceRequestRequestTypeDef(TypedDict):
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     name: str,
     workspaceId: str,
     clientToken: NotRequired[str],
@@ -563,7 +563,7 @@ def get_value() -> PutAlertManagerDefinitionRequestRequestTypeDef:
 
 ```python title="Definition"
 class PutAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     workspaceId: str,
     clientToken: NotRequired[str],
 ```
@@ -603,7 +603,7 @@ def get_value() -> PutRuleGroupsNamespaceRequestRequestTypeDef:
 
 ```python title="Definition"
 class PutRuleGroupsNamespaceRequestRequestTypeDef(TypedDict):
-    data: Union[bytes, IO[bytes], StreamingBody],
+    data: Union[str, bytes, IO[Any], StreamingBody],
     name: str,
     workspaceId: str,
     clientToken: NotRequired[str],

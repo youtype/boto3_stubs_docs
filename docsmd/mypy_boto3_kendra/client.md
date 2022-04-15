@@ -831,8 +831,7 @@ parent.describe_faq(**kwargs)
 
 ### describe\_index
 
-Describes an existing Amazon Kendra index See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/kendra-2019-02-03/DescribeIndex).
+Describes an existing Amazon Kendra index.
 
 Type annotations and code completion for `#!python boto3.client("kendra").describe_index` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_index)
@@ -1374,7 +1373,7 @@ parent.list_groups_older_than_ordering_id(**kwargs)
 
 ### list\_indices
 
-Lists the Amazon Kendra indexes that you have created.
+Lists the Amazon Kendra indexes that you created.
 
 Type annotations and code completion for `#!python boto3.client("kendra").list_indices` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_indices)

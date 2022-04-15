@@ -109,7 +109,7 @@ def get_value() -> ByteMatchStatementTypeDef:
 
 ```python title="Definition"
 class ByteMatchStatementTypeDef(TypedDict):
-    SearchString: Union[bytes, IO[bytes], StreamingBody],
+    SearchString: Union[str, bytes, IO[Any], StreamingBody],
     FieldToMatch: FieldToMatchTypeDef,  # (1)
     TextTransformations: Sequence[TextTransformationTypeDef],  # (2)
     PositionalConstraint: PositionalConstraintType,  # (3)
@@ -1694,6 +1694,7 @@ def get_value() -> ListAvailableManagedRuleGroupVersionsResponseTypeDef:
     return {
         "NextMarker": ...,
         "Versions": ...,
+        "CurrentDefaultVersion": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1702,6 +1703,7 @@ def get_value() -> ListAvailableManagedRuleGroupVersionsResponseTypeDef:
 class ListAvailableManagedRuleGroupVersionsResponseTypeDef(TypedDict):
     NextMarker: str,
     Versions: List[ManagedRuleGroupVersionTypeDef],  # (1)
+    CurrentDefaultVersion: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -2217,6 +2219,7 @@ def get_value() -> ManagedRuleGroupSummaryTypeDef:
 class ManagedRuleGroupSummaryTypeDef(TypedDict):
     VendorName: NotRequired[str],
     Name: NotRequired[str],
+    VersioningSupported: NotRequired[bool],
     Description: NotRequired[str],
 ```
 

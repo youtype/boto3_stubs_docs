@@ -135,6 +135,21 @@ ImageRepositoryTypeType = Literal[
     "ECR_PUBLIC",
 ]
 ```
+## ObservabilityConfigurationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.literals import ObservabilityConfigurationStatusType
+
+def get_value() -> ObservabilityConfigurationStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+ObservabilityConfigurationStatusType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## OperationStatusType
 
 ```python title="Usage Example"
@@ -236,6 +251,20 @@ def get_value() -> SourceCodeVersionTypeType:
 ```python title="Definition"
 SourceCodeVersionTypeType = Literal[
     "BRANCH",
+]
+```
+## TracingVendorType
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.literals import TracingVendorType
+
+def get_value() -> TracingVendorType:
+    return "AWSXRAY"
+```
+
+```python title="Definition"
+TracingVendorType = Literal[
+    "AWSXRAY",
 ]
 ```
 ## VpcConnectorStatusType

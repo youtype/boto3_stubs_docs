@@ -3839,7 +3839,7 @@ class SetUICustomizationRequestRequestTypeDef(TypedDict):
     UserPoolId: str,
     ClientId: NotRequired[str],
     CSS: NotRequired[str],
-    ImageFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ImageFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## SetUICustomizationResponseTypeDef

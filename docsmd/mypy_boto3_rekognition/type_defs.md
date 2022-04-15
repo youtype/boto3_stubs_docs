@@ -573,7 +573,7 @@ def get_value() -> DatasetChangesTypeDef:
 
 ```python title="Definition"
 class DatasetChangesTypeDef(TypedDict):
-    GroundTruth: Union[bytes, IO[bytes], StreamingBody],
+    GroundTruth: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## DatasetDescriptionTypeDef
@@ -2308,7 +2308,7 @@ def get_value() -> ImageTypeDef:
 
 ```python title="Definition"
 class ImageTypeDef(TypedDict):
-    Bytes: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Bytes: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Object: NotRequired[S3ObjectTypeDef],  # (1)
 ```
 

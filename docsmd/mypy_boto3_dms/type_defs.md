@@ -2375,7 +2375,7 @@ def get_value() -> ImportCertificateMessageRequestTypeDef:
 class ImportCertificateMessageRequestTypeDef(TypedDict):
     CertificateIdentifier: str,
     CertificatePem: NotRequired[str],
-    CertificateWallet: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    CertificateWallet: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
 

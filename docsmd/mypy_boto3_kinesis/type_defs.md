@@ -950,7 +950,7 @@ def get_value() -> PutRecordInputRequestTypeDef:
 ```python title="Definition"
 class PutRecordInputRequestTypeDef(TypedDict):
     StreamName: str,
-    Data: Union[bytes, IO[bytes], StreamingBody],
+    Data: Union[str, bytes, IO[Any], StreamingBody],
     PartitionKey: str,
     ExplicitHashKey: NotRequired[str],
     SequenceNumberForOrdering: NotRequired[str],
@@ -1038,7 +1038,7 @@ def get_value() -> PutRecordsRequestEntryTypeDef:
 
 ```python title="Definition"
 class PutRecordsRequestEntryTypeDef(TypedDict):
-    Data: Union[bytes, IO[bytes], StreamingBody],
+    Data: Union[str, bytes, IO[Any], StreamingBody],
     PartitionKey: str,
     ExplicitHashKey: NotRequired[str],
 ```

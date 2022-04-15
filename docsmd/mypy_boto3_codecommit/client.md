@@ -2332,7 +2332,7 @@ def put_file(
     *,
     repositoryName: str,
     branchName: str,
-    fileContent: Union[bytes, IO[bytes], StreamingBody],
+    fileContent: Union[str, bytes, IO[Any], StreamingBody],
     filePath: str,
     fileMode: FileModeTypeEnumType = ...,  # (1)
     parentCommitId: str = ...,

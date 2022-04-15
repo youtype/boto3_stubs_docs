@@ -496,8 +496,8 @@ def import_certificate_authority_certificate(
     self,
     *,
     CertificateAuthorityArn: str,
-    Certificate: Union[bytes, IO[bytes], StreamingBody],
-    CertificateChain: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Certificate: Union[str, bytes, IO[Any], StreamingBody],
+    CertificateChain: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> None:
     ...
 ```
@@ -528,7 +528,7 @@ def issue_certificate(
     self,
     *,
     CertificateAuthorityArn: str,
-    Csr: Union[bytes, IO[bytes], StreamingBody],
+    Csr: Union[str, bytes, IO[Any], StreamingBody],
     SigningAlgorithm: SigningAlgorithmType,  # (1)
     Validity: ValidityTypeDef,  # (2)
     ApiPassthrough: ApiPassthroughTypeDef = ...,  # (3)

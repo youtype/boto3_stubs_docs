@@ -1821,6 +1821,26 @@ class DescribeSnapshotsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStorageVirtualMachinesRequestDescribeStorageVirtualMachinesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import DescribeStorageVirtualMachinesRequestDescribeStorageVirtualMachinesPaginateTypeDef
+
+def get_value() -> DescribeStorageVirtualMachinesRequestDescribeStorageVirtualMachinesPaginateTypeDef:
+    return {
+        "StorageVirtualMachineIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStorageVirtualMachinesRequestDescribeStorageVirtualMachinesPaginateTypeDef(TypedDict):
+    StorageVirtualMachineIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[StorageVirtualMachineFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeStorageVirtualMachinesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1863,6 +1883,26 @@ class DescribeStorageVirtualMachinesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StorageVirtualMachineTypeDef](./type_defs.md#storagevirtualmachinetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVolumesRequestDescribeVolumesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import DescribeVolumesRequestDescribeVolumesPaginateTypeDef
+
+def get_value() -> DescribeVolumesRequestDescribeVolumesPaginateTypeDef:
+    return {
+        "VolumeIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVolumesRequestDescribeVolumesPaginateTypeDef(TypedDict):
+    VolumeIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[VolumeFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeVolumesRequestRequestTypeDef
 
 ```python title="Usage Example"

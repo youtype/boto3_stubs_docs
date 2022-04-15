@@ -119,6 +119,21 @@ CRTypeType = Literal[
     "SPOT",
 ]
 ```
+## CRUpdateAllocationStrategyType
+
+```python title="Usage Example"
+from mypy_boto3_batch.literals import CRUpdateAllocationStrategyType
+
+def get_value() -> CRUpdateAllocationStrategyType:
+    return "BEST_FIT_PROGRESSIVE"
+```
+
+```python title="Definition"
+CRUpdateAllocationStrategyType = Literal[
+    "BEST_FIT_PROGRESSIVE",
+    "SPOT_CAPACITY_OPTIMIZED",
+]
+```
 ## DescribeComputeEnvironmentsPaginatorName
 
 ```python title="Usage Example"

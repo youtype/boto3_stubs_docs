@@ -176,7 +176,7 @@ def post_content(
     botAlias: str,
     userId: str,
     contentType: str,
-    inputStream: Union[bytes, IO[bytes], StreamingBody],
+    inputStream: Union[str, bytes, IO[Any], StreamingBody],
     sessionAttributes: str = ...,
     requestAttributes: str = ...,
     accept: str = ...,

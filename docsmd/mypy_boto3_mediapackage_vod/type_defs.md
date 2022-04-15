@@ -346,12 +346,14 @@ class DashManifestTypeDef(TypedDict):
     ManifestName: NotRequired[str],
     MinBufferTimeSeconds: NotRequired[int],
     Profile: NotRequired[ProfileType],  # (2)
-    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (3)
+    ScteMarkersSource: NotRequired[ScteMarkersSourceType],  # (3)
+    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: ManifestLayoutType](./literals.md#manifestlayouttype) 
 2. See [:material-code-brackets: ProfileType](./literals.md#profiletype) 
-3. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
+3. See [:material-code-brackets: ScteMarkersSourceType](./literals.md#sctemarkerssourcetype) 
+4. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
 ## DashPackageTypeDef
 
 ```python title="Usage Example"

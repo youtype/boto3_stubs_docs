@@ -929,7 +929,7 @@ def get_value() -> PostAgentProfileRequestRequestTypeDef:
 
 ```python title="Definition"
 class PostAgentProfileRequestRequestTypeDef(TypedDict):
-    agentProfile: Union[bytes, IO[bytes], StreamingBody],
+    agentProfile: Union[str, bytes, IO[Any], StreamingBody],
     contentType: str,
     profilingGroupName: str,
     profileToken: NotRequired[str],

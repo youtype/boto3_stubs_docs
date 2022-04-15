@@ -591,7 +591,7 @@ def get_value() -> CreateConfigurationRequestRequestTypeDef:
 ```python title="Definition"
 class CreateConfigurationRequestRequestTypeDef(TypedDict):
     Name: str,
-    ServerProperties: Union[bytes, IO[bytes], StreamingBody],
+    ServerProperties: Union[str, bytes, IO[Any], StreamingBody],
     Description: NotRequired[str],
     KafkaVersions: NotRequired[Sequence[str]],
 ```
@@ -2483,7 +2483,7 @@ def get_value() -> UpdateConfigurationRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateConfigurationRequestRequestTypeDef(TypedDict):
     Arn: str,
-    ServerProperties: Union[bytes, IO[bytes], StreamingBody],
+    ServerProperties: Union[str, bytes, IO[Any], StreamingBody],
     Description: NotRequired[str],
 ```
 

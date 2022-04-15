@@ -6516,6 +6516,7 @@ class JobRunTypeDef(TypedDict):
     LogGroupName: NotRequired[str],
     NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (4)
     GlueVersion: NotRequired[str],
+    DPUSeconds: NotRequired[float],
 ```
 
 1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 

@@ -117,8 +117,10 @@ class AddPermissionRequestRequestTypeDef(TypedDict):
     Qualifier: NotRequired[str],
     RevisionId: NotRequired[str],
     PrincipalOrgID: NotRequired[str],
+    FunctionUrlAuthType: NotRequired[FunctionUrlAuthTypeType],  # (1)
 ```
 
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
 ## AddPermissionResponseTypeDef
 
 ```python title="Usage Example"
@@ -301,6 +303,27 @@ class ConcurrencyTypeDef(TypedDict):
     ReservedConcurrentExecutions: NotRequired[int],
 ```
 
+## CorsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import CorsTypeDef
+
+def get_value() -> CorsTypeDef:
+    return {
+        "AllowCredentials": ...,
+    }
+```
+
+```python title="Definition"
+class CorsTypeDef(TypedDict):
+    AllowCredentials: NotRequired[bool],
+    AllowHeaders: NotRequired[Sequence[str]],
+    AllowMethods: NotRequired[Sequence[str]],
+    AllowOrigins: NotRequired[Sequence[str]],
+    ExposeHeaders: NotRequired[Sequence[str]],
+    MaxAge: NotRequired[int],
+```
+
 ## CreateAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -454,6 +477,57 @@ class CreateFunctionRequestRequestTypeDef(TypedDict):
 9. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
 10. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+## CreateFunctionUrlConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import CreateFunctionUrlConfigRequestRequestTypeDef
+
+def get_value() -> CreateFunctionUrlConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "AuthType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFunctionUrlConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    AuthType: FunctionUrlAuthTypeType,  # (1)
+    Qualifier: NotRequired[str],
+    Cors: NotRequired[CorsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+## CreateFunctionUrlConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import CreateFunctionUrlConfigResponseTypeDef
+
+def get_value() -> CreateFunctionUrlConfigResponseTypeDef:
+    return {
+        "FunctionUrl": ...,
+        "FunctionArn": ...,
+        "AuthType": ...,
+        "Cors": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFunctionUrlConfigResponseTypeDef(TypedDict):
+    FunctionUrl: str,
+    FunctionArn: str,
+    AuthType: FunctionUrlAuthTypeType,  # (1)
+    Cors: CorsTypeDef,  # (2)
+    CreationTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeadLetterConfigTypeDef
 
 ```python title="Usage Example"
@@ -582,6 +656,23 @@ def get_value() -> DeleteFunctionRequestRequestTypeDef:
 
 ```python title="Definition"
 class DeleteFunctionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
+
+## DeleteFunctionUrlConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import DeleteFunctionUrlConfigRequestRequestTypeDef
+
+def get_value() -> DeleteFunctionUrlConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFunctionUrlConfigRequestRequestTypeDef(TypedDict):
     FunctionName: str,
     Qualifier: NotRequired[str],
 ```
@@ -904,7 +995,7 @@ def get_value() -> FunctionCodeTypeDef:
 
 ```python title="Definition"
 class FunctionCodeTypeDef(TypedDict):
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Bucket: NotRequired[str],
     S3Key: NotRequired[str],
     S3ObjectVersion: NotRequired[str],
@@ -1121,6 +1212,33 @@ class FunctionEventInvokeConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+## FunctionUrlConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import FunctionUrlConfigTypeDef
+
+def get_value() -> FunctionUrlConfigTypeDef:
+    return {
+        "FunctionUrl": ...,
+        "FunctionArn": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "AuthType": ...,
+    }
+```
+
+```python title="Definition"
+class FunctionUrlConfigTypeDef(TypedDict):
+    FunctionUrl: str,
+    FunctionArn: str,
+    CreationTime: str,
+    LastModifiedTime: str,
+    AuthType: FunctionUrlAuthTypeType,  # (2)
+    Cors: NotRequired[CorsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+2. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
 ## GetAccountSettingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1460,6 +1578,54 @@ class GetFunctionResponseTypeDef(TypedDict):
 2. See [:material-code-braces: FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef) 
 3. See [:material-code-braces: ConcurrencyTypeDef](./type_defs.md#concurrencytypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFunctionUrlConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionUrlConfigRequestRequestTypeDef
+
+def get_value() -> GetFunctionUrlConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionUrlConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
+
+## GetFunctionUrlConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionUrlConfigResponseTypeDef
+
+def get_value() -> GetFunctionUrlConfigResponseTypeDef:
+    return {
+        "FunctionUrl": ...,
+        "FunctionArn": ...,
+        "AuthType": ...,
+        "Cors": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionUrlConfigResponseTypeDef(TypedDict):
+    FunctionUrl: str,
+    FunctionArn: str,
+    AuthType: FunctionUrlAuthTypeType,  # (1)
+    Cors: CorsTypeDef,  # (2)
+    CreationTime: str,
+    LastModifiedTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLayerVersionByArnRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1728,7 +1894,7 @@ class InvocationRequestRequestTypeDef(TypedDict):
     InvocationType: NotRequired[InvocationTypeType],  # (1)
     LogType: NotRequired[LogTypeType],  # (2)
     ClientContext: NotRequired[str],
-    Payload: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Payload: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     Qualifier: NotRequired[str],
 ```
 
@@ -1769,7 +1935,7 @@ def get_value() -> InvokeAsyncRequestRequestTypeDef:
 ```python title="Definition"
 class InvokeAsyncRequestRequestTypeDef(TypedDict):
     FunctionName: str,
-    InvokeArgs: Union[bytes, IO[bytes], StreamingBody],
+    InvokeArgs: Union[str, bytes, IO[Any], StreamingBody],
 ```
 
 ## InvokeAsyncResponseTypeDef
@@ -1826,7 +1992,7 @@ class LayerVersionContentInputTypeDef(TypedDict):
     S3Bucket: NotRequired[str],
     S3Key: NotRequired[str],
     S3ObjectVersion: NotRequired[str],
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## LayerVersionContentOutputTypeDef
@@ -2125,6 +2291,64 @@ class ListFunctionEventInvokeConfigsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef
+
+def get_value() -> ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFunctionUrlConfigsRequestListFunctionUrlConfigsPaginateTypeDef(TypedDict):
+    FunctionName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFunctionUrlConfigsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListFunctionUrlConfigsRequestRequestTypeDef
+
+def get_value() -> ListFunctionUrlConfigsRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFunctionUrlConfigsRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
+
+## ListFunctionUrlConfigsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListFunctionUrlConfigsResponseTypeDef
+
+def get_value() -> ListFunctionUrlConfigsResponseTypeDef:
+    return {
+        "FunctionUrlConfigs": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFunctionUrlConfigsResponseTypeDef(TypedDict):
+    FunctionUrlConfigs: List[FunctionUrlConfigTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FunctionUrlConfigTypeDef](./type_defs.md#functionurlconfigtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFunctionsByCodeSigningConfigRequestListFunctionsByCodeSigningConfigPaginateTypeDef
 
@@ -3090,7 +3314,7 @@ def get_value() -> UpdateFunctionCodeRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateFunctionCodeRequestRequestTypeDef(TypedDict):
     FunctionName: str,
-    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ZipFile: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     S3Bucket: NotRequired[str],
     S3Key: NotRequired[str],
     S3ObjectVersion: NotRequired[str],
@@ -3163,6 +3387,58 @@ class UpdateFunctionEventInvokeConfigRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+## UpdateFunctionUrlConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import UpdateFunctionUrlConfigRequestRequestTypeDef
+
+def get_value() -> UpdateFunctionUrlConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFunctionUrlConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    AuthType: NotRequired[FunctionUrlAuthTypeType],  # (1)
+    Cors: NotRequired[CorsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+## UpdateFunctionUrlConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import UpdateFunctionUrlConfigResponseTypeDef
+
+def get_value() -> UpdateFunctionUrlConfigResponseTypeDef:
+    return {
+        "FunctionUrl": ...,
+        "FunctionArn": ...,
+        "AuthType": ...,
+        "Cors": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFunctionUrlConfigResponseTypeDef(TypedDict):
+    FunctionUrl: str,
+    FunctionArn: str,
+    AuthType: FunctionUrlAuthTypeType,  # (1)
+    Cors: CorsTypeDef,  # (2)
+    CreationTime: str,
+    LastModifiedTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: FunctionUrlAuthTypeType](./literals.md#functionurlauthtypetype) 
+2. See [:material-code-braces: CorsTypeDef](./type_defs.md#corstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcConfigResponseTypeDef
 
 ```python title="Usage Example"

@@ -35,6 +35,7 @@ def get_value() -> ApplicationInstanceStatusType:
 ```python title="Definition"
 ApplicationInstanceStatusType = Literal[
     "DEPLOYMENT_ERROR",
+    "DEPLOYMENT_FAILED",
     "DEPLOYMENT_IN_PROGRESS",
     "DEPLOYMENT_PENDING",
     "DEPLOYMENT_REQUESTED",
@@ -59,6 +60,21 @@ def get_value() -> ConnectionTypeType:
 ConnectionTypeType = Literal[
     "DHCP",
     "STATIC_IP",
+]
+```
+## DeviceBrandType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import DeviceBrandType
+
+def get_value() -> DeviceBrandType:
+    return "AWS_PANORAMA"
+```
+
+```python title="Definition"
+DeviceBrandType = Literal[
+    "AWS_PANORAMA",
+    "LENOVO",
 ]
 ```
 ## DeviceConnectionStatusType
@@ -284,6 +300,7 @@ def get_value() -> StatusFilterType:
 ```python title="Definition"
 StatusFilterType = Literal[
     "DEPLOYMENT_ERROR",
+    "DEPLOYMENT_FAILED",
     "DEPLOYMENT_SUCCEEDED",
     "PROCESSING_DEPLOYMENT",
     "PROCESSING_REMOVAL",

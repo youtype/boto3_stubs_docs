@@ -501,18 +501,20 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def get_property_value_history(
     self,
     *,
-    endDateTime: Union[datetime, str],
     selectedProperties: Sequence[str],
-    startDateTime: Union[datetime, str],
     workspaceId: str,
     componentName: str = ...,
     componentTypeId: str = ...,
+    endDateTime: Union[datetime, str] = ...,
+    endTime: str = ...,
     entityId: str = ...,
     interpolation: InterpolationParametersTypeDef = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
     orderByTime: OrderByTimeType = ...,  # (2)
     propertyFilters: Sequence[PropertyFilterTypeDef] = ...,  # (3)
+    startDateTime: Union[datetime, str] = ...,
+    startTime: str = ...,
 ) -> GetPropertyValueHistoryResponseTypeDef:  # (4)
     ...
 ```
@@ -525,9 +527,7 @@ def get_property_value_history(
 
 ```python title="Usage example with kwargs"
 kwargs: GetPropertyValueHistoryRequestRequestTypeDef = {  # (1)
-    "endDateTime": ...,
     "selectedProperties": ...,
-    "startDateTime": ...,
     "workspaceId": ...,
 }
 

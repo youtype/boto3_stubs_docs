@@ -6494,7 +6494,7 @@ def get_value() -> RawEmailTypeDef:
 
 ```python title="Definition"
 class RawEmailTypeDef(TypedDict):
-    Data: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Data: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 ## RecencyDimensionTypeDef

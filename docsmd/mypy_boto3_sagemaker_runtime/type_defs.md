@@ -66,7 +66,7 @@ def get_value() -> InvokeEndpointInputRequestTypeDef:
 ```python title="Definition"
 class InvokeEndpointInputRequestTypeDef(TypedDict):
     EndpointName: str,
-    Body: Union[bytes, IO[bytes], StreamingBody],
+    Body: Union[str, bytes, IO[Any], StreamingBody],
     ContentType: NotRequired[str],
     Accept: NotRequired[str],
     CustomAttributes: NotRequired[str],

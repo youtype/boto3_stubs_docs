@@ -103,7 +103,7 @@ def invoke_endpoint(
     self,
     *,
     EndpointName: str,
-    Body: Union[bytes, IO[bytes], StreamingBody],
+    Body: Union[str, bytes, IO[Any], StreamingBody],
     ContentType: str = ...,
     Accept: str = ...,
     CustomAttributes: str = ...,

@@ -106,6 +106,7 @@ def get_value() -> AdMarkersType:
 - [ManifestLayoutType](./literals.md#manifestlayouttype)
 - [PeriodTriggersElementType](./literals.md#periodtriggerselementtype)
 - [ProfileType](./literals.md#profiletype)
+- [ScteMarkersSourceType](./literals.md#sctemarkerssourcetype)
 - [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 - [StreamOrderType](./literals.md#streamordertype)
 - [MediaPackageVodServiceName](./literals.md#mediapackagevodservicename)

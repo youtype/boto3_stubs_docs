@@ -2859,7 +2859,7 @@ def get_value() -> ImportApiKeysRequestRequestTypeDef:
 
 ```python title="Definition"
 class ImportApiKeysRequestRequestTypeDef(TypedDict):
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     format: ApiKeysFormatType,  # (1)
     failOnWarnings: NotRequired[bool],
 ```
@@ -2880,7 +2880,7 @@ def get_value() -> ImportDocumentationPartsRequestRequestTypeDef:
 ```python title="Definition"
 class ImportDocumentationPartsRequestRequestTypeDef(TypedDict):
     restApiId: str,
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     mode: NotRequired[PutModeType],  # (1)
     failOnWarnings: NotRequired[bool],
 ```
@@ -2899,7 +2899,7 @@ def get_value() -> ImportRestApiRequestRequestTypeDef:
 
 ```python title="Definition"
 class ImportRestApiRequestRequestTypeDef(TypedDict):
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     failOnWarnings: NotRequired[bool],
     parameters: NotRequired[Mapping[str, str]],
 ```
@@ -3491,7 +3491,7 @@ def get_value() -> PutRestApiRequestRequestTypeDef:
 ```python title="Definition"
 class PutRestApiRequestRequestTypeDef(TypedDict):
     restApiId: str,
-    body: Union[bytes, IO[bytes], StreamingBody],
+    body: Union[str, bytes, IO[Any], StreamingBody],
     mode: NotRequired[PutModeType],  # (1)
     failOnWarnings: NotRequired[bool],
     parameters: NotRequired[Mapping[str, str]],

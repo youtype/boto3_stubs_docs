@@ -6967,7 +6967,7 @@ def get_value() -> PutObjectRequestBucketPutObjectTypeDef:
 class PutObjectRequestBucketPutObjectTypeDef(TypedDict):
     Key: str,
     ACL: NotRequired[ObjectCannedACLType],  # (1)
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     CacheControl: NotRequired[str],
     ContentDisposition: NotRequired[str],
     ContentEncoding: NotRequired[str],
@@ -7024,7 +7024,7 @@ def get_value() -> PutObjectRequestObjectPutTypeDef:
 ```python title="Definition"
 class PutObjectRequestObjectPutTypeDef(TypedDict):
     ACL: NotRequired[ObjectCannedACLType],  # (1)
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     CacheControl: NotRequired[str],
     ContentDisposition: NotRequired[str],
     ContentEncoding: NotRequired[str],
@@ -7081,7 +7081,7 @@ def get_value() -> PutObjectRequestObjectSummaryPutTypeDef:
 ```python title="Definition"
 class PutObjectRequestObjectSummaryPutTypeDef(TypedDict):
     ACL: NotRequired[ObjectCannedACLType],  # (1)
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     CacheControl: NotRequired[str],
     ContentDisposition: NotRequired[str],
     ContentEncoding: NotRequired[str],
@@ -7141,7 +7141,7 @@ class PutObjectRequestRequestTypeDef(TypedDict):
     Bucket: str,
     Key: str,
     ACL: NotRequired[ObjectCannedACLType],  # (1)
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     CacheControl: NotRequired[str],
     ContentDisposition: NotRequired[str],
     ContentEncoding: NotRequired[str],
@@ -8740,7 +8740,7 @@ def get_value() -> UploadPartRequestMultipartUploadPartUploadTypeDef:
 
 ```python title="Definition"
 class UploadPartRequestMultipartUploadPartUploadTypeDef(TypedDict):
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     ContentLength: NotRequired[int],
     ContentMD5: NotRequired[str],
     ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
@@ -8777,7 +8777,7 @@ class UploadPartRequestRequestTypeDef(TypedDict):
     Key: str,
     PartNumber: int,
     UploadId: str,
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     ContentLength: NotRequired[int],
     ContentMD5: NotRequired[str],
     ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
@@ -8869,7 +8869,7 @@ def get_value() -> WriteGetObjectResponseRequestRequestTypeDef:
 class WriteGetObjectResponseRequestRequestTypeDef(TypedDict):
     RequestRoute: str,
     RequestToken: str,
-    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Body: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     StatusCode: NotRequired[int],
     ErrorCode: NotRequired[str],
     ErrorMessage: NotRequired[str],

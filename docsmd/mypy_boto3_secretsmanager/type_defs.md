@@ -63,7 +63,7 @@ class CreateSecretRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
     Description: NotRequired[str],
     KmsKeyId: NotRequired[str],
-    SecretBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SecretBinary: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     SecretString: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
     AddReplicaRegions: NotRequired[Sequence[ReplicaRegionTypeTypeDef]],  # (2)
@@ -576,7 +576,7 @@ def get_value() -> PutSecretValueRequestRequestTypeDef:
 class PutSecretValueRequestRequestTypeDef(TypedDict):
     SecretId: str,
     ClientRequestToken: NotRequired[str],
-    SecretBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SecretBinary: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     SecretString: NotRequired[str],
     VersionStages: NotRequired[Sequence[str]],
 ```
@@ -1008,7 +1008,7 @@ class UpdateSecretRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
     Description: NotRequired[str],
     KmsKeyId: NotRequired[str],
-    SecretBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SecretBinary: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     SecretString: NotRequired[str],
 ```
 

@@ -2599,7 +2599,7 @@ def get_value() -> StartImportRequestRequestTypeDef:
 
 ```python title="Definition"
 class StartImportRequestRequestTypeDef(TypedDict):
-    payload: Union[bytes, IO[bytes], StreamingBody],
+    payload: Union[str, bytes, IO[Any], StreamingBody],
     resourceType: ResourceTypeType,  # (1)
     mergeStrategy: MergeStrategyType,  # (2)
     tags: NotRequired[Sequence[TagTypeDef]],  # (3)

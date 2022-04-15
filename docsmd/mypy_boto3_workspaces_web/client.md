@@ -348,7 +348,7 @@ Type annotations and code completion for `#!python boto3.client("workspaces-web"
 def create_trust_store(
     self,
     *,
-    certificateList: Sequence[Union[bytes, IO[bytes], StreamingBody]],
+    certificateList: Sequence[Union[str, bytes, IO[Any], StreamingBody]],
     clientToken: str = ...,
     tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> CreateTrustStoreResponseTypeDef:  # (2)
@@ -1390,7 +1390,7 @@ def update_trust_store(
     self,
     *,
     trustStoreArn: str,
-    certificatesToAdd: Sequence[Union[bytes, IO[bytes], StreamingBody]] = ...,
+    certificatesToAdd: Sequence[Union[str, bytes, IO[Any], StreamingBody]] = ...,
     certificatesToDelete: Sequence[str] = ...,
     clientToken: str = ...,
 ) -> UpdateTrustStoreResponseTypeDef:  # (1)
