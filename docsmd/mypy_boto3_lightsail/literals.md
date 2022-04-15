@@ -37,6 +37,23 @@ AccessTypeType = Literal[
     "public",
 ]
 ```
+## AccountLevelBpaSyncStatusType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import AccountLevelBpaSyncStatusType
+
+def get_value() -> AccountLevelBpaSyncStatusType:
+    return "Defaulted"
+```
+
+```python title="Definition"
+AccountLevelBpaSyncStatusType = Literal[
+    "Defaulted",
+    "Failed",
+    "InSync",
+    "NeverSynced",
+]
+```
 ## AddOnTypeType
 
 ```python title="Usage Example"
@@ -82,6 +99,23 @@ AutoSnapshotStatusType = Literal[
     "InProgress",
     "NotFound",
     "Success",
+]
+```
+## BPAStatusMessageType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import BPAStatusMessageType
+
+def get_value() -> BPAStatusMessageType:
+    return "DEFAULTED_FOR_SLR_MISSING"
+```
+
+```python title="Definition"
+BPAStatusMessageType = Literal[
+    "DEFAULTED_FOR_SLR_MISSING",
+    "DEFAULTED_FOR_SLR_MISSING_ON_HOLD",
+    "SYNC_ON_HOLD",
+    "Unknown",
 ]
 ```
 ## BehaviorEnumType

@@ -38,9 +38,7 @@ except (
     client.BackupPolicyNotFoundFault,
     client.CertificateNotFoundFault,
     client.ClientError,
-    client.CustomAvailabilityZoneAlreadyExistsFault,
     client.CustomAvailabilityZoneNotFoundFault,
-    client.CustomAvailabilityZoneQuotaExceededFault,
     client.CustomDBEngineVersionAlreadyExistsFault,
     client.CustomDBEngineVersionNotFoundFault,
     client.CustomDBEngineVersionQuotaExceededFault,
@@ -99,8 +97,6 @@ except (
     client.GlobalClusterQuotaExceededFault,
     client.IamRoleMissingPermissionsFault,
     client.IamRoleNotFoundFault,
-    client.InstallationMediaAlreadyExistsFault,
-    client.InstallationMediaNotFoundFault,
     client.InstanceQuotaExceededFault,
     client.InsufficientAvailableIPsInSubnetFault,
     client.InsufficientDBClusterCapacityFault,
@@ -620,38 +616,6 @@ parent.copy_option_group(**kwargs)
 ```
 
 1. See [:material-code-braces: CopyOptionGroupMessageRequestTypeDef](./type_defs.md#copyoptiongroupmessagerequesttypedef) 
-
-### create\_custom\_availability\_zone
-
-Creates a custom Availability Zone (AZ).
-
-Type annotations and code completion for `#!python boto3.client("rds").create_custom_availability_zone` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
-
-```python title="Method definition"
-def create_custom_availability_zone(
-    self,
-    *,
-    CustomAvailabilityZoneName: str,
-    ExistingVpnId: str = ...,
-    NewVpnTunnelName: str = ...,
-    VpnTunnelOriginatorIP: str = ...,
-) -> CreateCustomAvailabilityZoneResultTypeDef:  # (1)
-    ...
-```
-
-1. See [:material-code-braces: CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: CreateCustomAvailabilityZoneMessageRequestTypeDef = {  # (1)
-    "CustomAvailabilityZoneName": ...,
-}
-
-parent.create_custom_availability_zone(**kwargs)
-```
-
-1. See [:material-code-braces: CreateCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#createcustomavailabilityzonemessagerequesttypedef) 
 
 ### create\_custom\_db\_engine\_version
 
@@ -1354,35 +1318,6 @@ parent.create_option_group(**kwargs)
 
 1. See [:material-code-braces: CreateOptionGroupMessageRequestTypeDef](./type_defs.md#createoptiongroupmessagerequesttypedef) 
 
-### delete\_custom\_availability\_zone
-
-Deletes a custom Availability Zone (AZ).
-
-Type annotations and code completion for `#!python boto3.client("rds").delete_custom_availability_zone` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
-
-```python title="Method definition"
-def delete_custom_availability_zone(
-    self,
-    *,
-    CustomAvailabilityZoneId: str,
-) -> DeleteCustomAvailabilityZoneResultTypeDef:  # (1)
-    ...
-```
-
-1. See [:material-code-braces: DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: DeleteCustomAvailabilityZoneMessageRequestTypeDef = {  # (1)
-    "CustomAvailabilityZoneId": ...,
-}
-
-parent.delete_custom_availability_zone(**kwargs)
-```
-
-1. See [:material-code-braces: DeleteCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#deletecustomavailabilityzonemessagerequesttypedef) 
-
 ### delete\_custom\_db\_engine\_version
 
 Deletes a custom engine version.
@@ -1823,36 +1758,6 @@ parent.delete_global_cluster(**kwargs)
 
 1. See [:material-code-braces: DeleteGlobalClusterMessageRequestTypeDef](./type_defs.md#deleteglobalclustermessagerequesttypedef) 
 
-### delete\_installation\_media
-
-Deletes the installation medium for a DB engine that requires an on-premises
-customer provided license, such as Microsoft SQL Server.
-
-Type annotations and code completion for `#!python boto3.client("rds").delete_installation_media` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
-
-```python title="Method definition"
-def delete_installation_media(
-    self,
-    *,
-    InstallationMediaId: str,
-) -> InstallationMediaResponseMetadataTypeDef:  # (1)
-    ...
-```
-
-1. See [:material-code-braces: InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: DeleteInstallationMediaMessageRequestTypeDef = {  # (1)
-    "InstallationMediaId": ...,
-}
-
-parent.delete_installation_media(**kwargs)
-```
-
-1. See [:material-code-braces: DeleteInstallationMediaMessageRequestTypeDef](./type_defs.md#deleteinstallationmediamessagerequesttypedef) 
-
 ### delete\_option\_group
 
 Deletes an existing option group.
@@ -1962,39 +1867,6 @@ parent.describe_certificates(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef) 
-
-### describe\_custom\_availability\_zones
-
-Returns information about custom Availability Zones (AZs).
-
-Type annotations and code completion for `#!python boto3.client("rds").describe_custom_availability_zones` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
-
-```python title="Method definition"
-def describe_custom_availability_zones(
-    self,
-    *,
-    CustomAvailabilityZoneId: str = ...,
-    Filters: Sequence[FilterTypeDef] = ...,  # (1)
-    MaxRecords: int = ...,
-    Marker: str = ...,
-) -> CustomAvailabilityZoneMessageTypeDef:  # (2)
-    ...
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: DescribeCustomAvailabilityZonesMessageRequestTypeDef = {  # (1)
-    "CustomAvailabilityZoneId": ...,
-}
-
-parent.describe_custom_availability_zones(**kwargs)
-```
-
-1. See [:material-code-braces: DescribeCustomAvailabilityZonesMessageRequestTypeDef](./type_defs.md#describecustomavailabilityzonesmessagerequesttypedef) 
 
 ### describe\_db\_cluster\_backtracks
 
@@ -2952,40 +2824,6 @@ parent.describe_global_clusters(**kwargs)
 
 1. See [:material-code-braces: DescribeGlobalClustersMessageRequestTypeDef](./type_defs.md#describeglobalclustersmessagerequesttypedef) 
 
-### describe\_installation\_media
-
-Describes the available installation media for a DB engine that requires an on-
-premises customer provided license, such as Microsoft SQL Server.
-
-Type annotations and code completion for `#!python boto3.client("rds").describe_installation_media` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media)
-
-```python title="Method definition"
-def describe_installation_media(
-    self,
-    *,
-    InstallationMediaId: str = ...,
-    Filters: Sequence[FilterTypeDef] = ...,  # (1)
-    MaxRecords: int = ...,
-    Marker: str = ...,
-) -> InstallationMediaMessageTypeDef:  # (2)
-    ...
-```
-
-1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: DescribeInstallationMediaMessageRequestTypeDef = {  # (1)
-    "InstallationMediaId": ...,
-}
-
-parent.describe_installation_media(**kwargs)
-```
-
-1. See [:material-code-braces: DescribeInstallationMediaMessageRequestTypeDef](./type_defs.md#describeinstallationmediamessagerequesttypedef) 
-
 ### describe\_option\_group\_options
 
 Describes all available options.
@@ -3417,44 +3255,6 @@ def generate_presigned_url(
 ```
 
 
-### import\_installation\_media
-
-Imports the installation media for a DB engine that requires an on-premises
-customer provided license, such as SQL Server.
-
-Type annotations and code completion for `#!python boto3.client("rds").import_installation_media` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media)
-
-```python title="Method definition"
-def import_installation_media(
-    self,
-    *,
-    CustomAvailabilityZoneId: str,
-    Engine: str,
-    EngineVersion: str,
-    EngineInstallationMediaPath: str,
-    OSInstallationMediaPath: str,
-) -> InstallationMediaResponseMetadataTypeDef:  # (1)
-    ...
-```
-
-1. See [:material-code-braces: InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: ImportInstallationMediaMessageRequestTypeDef = {  # (1)
-    "CustomAvailabilityZoneId": ...,
-    "Engine": ...,
-    "EngineVersion": ...,
-    "EngineInstallationMediaPath": ...,
-    "OSInstallationMediaPath": ...,
-}
-
-parent.import_installation_media(**kwargs)
-```
-
-1. See [:material-code-braces: ImportInstallationMediaMessageRequestTypeDef](./type_defs.md#importinstallationmediamessagerequesttypedef) 
-
 ### list\_tags\_for\_resource
 
 Lists all tags on an Amazon RDS resource.
@@ -3489,8 +3289,8 @@ parent.list_tags_for_resource(**kwargs)
 ### modify\_certificates
 
 Override the system-default Secure Sockets Layer/Transport Layer Security
-(SSL/TLS) certificate for Amazon RDS for new DB instances temporarily, or remove
-the override.
+(SSL/TLS) certificate for Amazon RDS for new DB instances, or remove the
+override.
 
 Type annotations and code completion for `#!python boto3.client("rds").modify_certificates` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
@@ -5283,7 +5083,6 @@ parent.stop_db_instance_automated_backups_replication(**kwargs)
 Type annotations and code completion for `#!python boto3.client("rds").get_paginator` method with overloads.
 
 - `client.get_paginator("describe_certificates")` -> [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
-- `client.get_paginator("describe_custom_availability_zones")` -> [DescribeCustomAvailabilityZonesPaginator](./paginators.md#describecustomavailabilityzonespaginator)
 - `client.get_paginator("describe_db_cluster_backtracks")` -> [DescribeDBClusterBacktracksPaginator](./paginators.md#describedbclusterbacktrackspaginator)
 - `client.get_paginator("describe_db_cluster_endpoints")` -> [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)
 - `client.get_paginator("describe_db_cluster_parameter_groups")` -> [DescribeDBClusterParameterGroupsPaginator](./paginators.md#describedbclusterparametergroupspaginator)
@@ -5309,7 +5108,6 @@ Type annotations and code completion for `#!python boto3.client("rds").get_pagin
 - `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - `client.get_paginator("describe_export_tasks")` -> [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
 - `client.get_paginator("describe_global_clusters")` -> [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
-- `client.get_paginator("describe_installation_media")` -> [DescribeInstallationMediaPaginator](./paginators.md#describeinstallationmediapaginator)
 - `client.get_paginator("describe_option_group_options")` -> [DescribeOptionGroupOptionsPaginator](./paginators.md#describeoptiongroupoptionspaginator)
 - `client.get_paginator("describe_option_groups")` -> [DescribeOptionGroupsPaginator](./paginators.md#describeoptiongroupspaginator)
 - `client.get_paginator("describe_orderable_db_instance_options")` -> [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)

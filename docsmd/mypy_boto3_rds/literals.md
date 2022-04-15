@@ -267,20 +267,6 @@ DescribeCertificatesPaginatorName = Literal[
     "describe_certificates",
 ]
 ```
-## DescribeCustomAvailabilityZonesPaginatorName
-
-```python title="Usage Example"
-from mypy_boto3_rds.literals import DescribeCustomAvailabilityZonesPaginatorName
-
-def get_value() -> DescribeCustomAvailabilityZonesPaginatorName:
-    return "describe_custom_availability_zones"
-```
-
-```python title="Definition"
-DescribeCustomAvailabilityZonesPaginatorName = Literal[
-    "describe_custom_availability_zones",
-]
-```
 ## DescribeDBClusterBacktracksPaginatorName
 
 ```python title="Usage Example"
@@ -629,20 +615,6 @@ def get_value() -> DescribeGlobalClustersPaginatorName:
 ```python title="Definition"
 DescribeGlobalClustersPaginatorName = Literal[
     "describe_global_clusters",
-]
-```
-## DescribeInstallationMediaPaginatorName
-
-```python title="Usage Example"
-from mypy_boto3_rds.literals import DescribeInstallationMediaPaginatorName
-
-def get_value() -> DescribeInstallationMediaPaginatorName:
-    return "describe_installation_media"
-```
-
-```python title="Definition"
-DescribeInstallationMediaPaginatorName = Literal[
-    "describe_installation_media",
 ]
 ```
 ## DescribeOptionGroupOptionsPaginatorName
@@ -1288,7 +1260,6 @@ def get_value() -> PaginatorName:
 ```python title="Definition"
 PaginatorName = Literal[
     "describe_certificates",
-    "describe_custom_availability_zones",
     "describe_db_cluster_backtracks",
     "describe_db_cluster_endpoints",
     "describe_db_cluster_parameter_groups",
@@ -1314,7 +1285,6 @@ PaginatorName = Literal[
     "describe_events",
     "describe_export_tasks",
     "describe_global_clusters",
-    "describe_installation_media",
     "describe_option_group_options",
     "describe_option_groups",
     "describe_orderable_db_instance_options",

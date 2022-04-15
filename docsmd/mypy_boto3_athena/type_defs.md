@@ -39,6 +39,8 @@ def get_value() -> AthenaErrorTypeDef:
 class AthenaErrorTypeDef(TypedDict):
     ErrorCategory: NotRequired[int],
     ErrorType: NotRequired[int],
+    Retryable: NotRequired[bool],
+    ErrorMessage: NotRequired[str],
 ```
 
 ## BatchGetNamedQueryInputRequestTypeDef

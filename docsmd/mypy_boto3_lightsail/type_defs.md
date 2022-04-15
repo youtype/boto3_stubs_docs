@@ -65,6 +65,27 @@ class AccessRulesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AccessTypeType](./literals.md#accesstypetype) 
+## AccountLevelBpaSyncTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import AccountLevelBpaSyncTypeDef
+
+def get_value() -> AccountLevelBpaSyncTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class AccountLevelBpaSyncTypeDef(TypedDict):
+    status: NotRequired[AccountLevelBpaSyncStatusType],  # (1)
+    lastSyncedAt: NotRequired[datetime],
+    message: NotRequired[BPAStatusMessageType],  # (2)
+    bpaImpactsLightsail: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: AccountLevelBpaSyncStatusType](./literals.md#accountlevelbpasyncstatustype) 
+2. See [:material-code-brackets: BPAStatusMessageType](./literals.md#bpastatusmessagetype) 
 ## AddOnRequestTypeDef
 
 ```python title="Usage Example"
@@ -3802,6 +3823,7 @@ def get_value() -> GetBucketsResultTypeDef:
     return {
         "buckets": ...,
         "nextPageToken": ...,
+        "accountLevelBpaSync": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3810,11 +3832,13 @@ def get_value() -> GetBucketsResultTypeDef:
 class GetBucketsResultTypeDef(TypedDict):
     buckets: List[BucketTypeDef],  # (1)
     nextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    accountLevelBpaSync: AccountLevelBpaSyncTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: BucketTypeDef](./type_defs.md#buckettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: AccountLevelBpaSyncTypeDef](./type_defs.md#accountlevelbpasynctypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBundlesRequestGetBundlesPaginateTypeDef
 
 ```python title="Usage Example"
