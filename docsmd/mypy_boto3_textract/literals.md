@@ -23,6 +23,8 @@ BlockTypeType = Literal[
     "LINE",
     "MERGED_CELL",
     "PAGE",
+    "QUERY",
+    "QUERY_RESULT",
     "SELECTION_ELEMENT",
     "TABLE",
     "TITLE",
@@ -72,6 +74,7 @@ def get_value() -> FeatureTypeType:
 ```python title="Definition"
 FeatureTypeType = Literal[
     "FORMS",
+    "QUERIES",
     "TABLES",
 ]
 ```
@@ -98,11 +101,12 @@ JobStatusType = Literal[
 from mypy_boto3_textract.literals import RelationshipTypeType
 
 def get_value() -> RelationshipTypeType:
-    return "CHILD"
+    return "ANSWER"
 ```
 
 ```python title="Definition"
 RelationshipTypeType = Literal[
+    "ANSWER",
     "CHILD",
     "COMPLEX_FEATURES",
     "MERGED_CELL",

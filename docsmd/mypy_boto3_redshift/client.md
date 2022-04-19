@@ -2923,19 +2923,21 @@ def enable_logging(
     self,
     *,
     ClusterIdentifier: str,
-    BucketName: str,
+    BucketName: str = ...,
     S3KeyPrefix: str = ...,
-) -> LoggingStatusTypeDef:  # (1)
+    LogDestinationType: LogDestinationTypeType = ...,  # (1)
+    LogExports: Sequence[str] = ...,
+) -> LoggingStatusTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef) 
+1. See [:material-code-brackets: LogDestinationTypeType](./literals.md#logdestinationtypetype) 
+2. See [:material-code-braces: LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: EnableLoggingMessageRequestTypeDef = {  # (1)
     "ClusterIdentifier": ...,
-    "BucketName": ...,
 }
 
 parent.enable_logging(**kwargs)

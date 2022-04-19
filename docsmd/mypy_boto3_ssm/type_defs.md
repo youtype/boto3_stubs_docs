@@ -150,6 +150,7 @@ class AssociationDescriptionTypeDef(TypedDict):
     ApplyOnlyAtCronInterval: NotRequired[bool],
     CalendarNames: NotRequired[List[str]],
     TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (7)
+    ScheduleOffset: NotRequired[int],
 ```
 
 1. See [:material-code-braces: AssociationStatusTypeDef](./type_defs.md#associationstatustypedef) 
@@ -330,6 +331,7 @@ class AssociationTypeDef(TypedDict):
     Overview: NotRequired[AssociationOverviewTypeDef],  # (2)
     ScheduleExpression: NotRequired[str],
     AssociationName: NotRequired[str],
+    ScheduleOffset: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -364,6 +366,7 @@ class AssociationVersionInfoTypeDef(TypedDict):
     ApplyOnlyAtCronInterval: NotRequired[bool],
     CalendarNames: NotRequired[List[str]],
     TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -974,6 +977,7 @@ class CreateAssociationBatchRequestEntryTypeDef(TypedDict):
     ApplyOnlyAtCronInterval: NotRequired[bool],
     CalendarNames: NotRequired[Sequence[str]],
     TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -1050,6 +1054,7 @@ class CreateAssociationRequestRequestTypeDef(TypedDict):
     ApplyOnlyAtCronInterval: NotRequired[bool],
     CalendarNames: NotRequired[Sequence[str]],
     TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -9307,6 +9312,7 @@ class UpdateAssociationRequestRequestTypeDef(TypedDict):
     ApplyOnlyAtCronInterval: NotRequired[bool],
     CalendarNames: NotRequired[Sequence[str]],
     TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
 ```
 
 1. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 

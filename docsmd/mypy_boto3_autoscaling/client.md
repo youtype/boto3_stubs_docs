@@ -328,6 +328,7 @@ def create_auto_scaling_group(
     MaxInstanceLifetime: int = ...,
     Context: str = ...,
     DesiredCapacityType: str = ...,
+    DefaultInstanceWarmup: int = ...,
 ) -> None:
     ...
 ```
@@ -1967,6 +1968,7 @@ def update_auto_scaling_group(
     CapacityRebalance: bool = ...,
     Context: str = ...,
     DesiredCapacityType: str = ...,
+    DefaultInstanceWarmup: int = ...,
 ) -> None:
     ...
 ```

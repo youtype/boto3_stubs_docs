@@ -222,6 +222,7 @@ DataSourceTypeType = Literal[
     "FSX",
     "GOOGLEDRIVE",
     "ONEDRIVE",
+    "QUIP",
     "S3",
     "SALESFORCE",
     "SERVICENOW",

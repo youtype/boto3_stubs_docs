@@ -1772,6 +1772,64 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### start\_recommender
+
+Starts a recommender that is INACTIVE.
+
+Type annotations and code completion for `#!python boto3.client("personalize").start_recommender` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.start_recommender)
+
+```python title="Method definition"
+def start_recommender(
+    self,
+    *,
+    recommenderArn: str,
+) -> StartRecommenderResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartRecommenderResponseTypeDef](./type_defs.md#startrecommenderresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartRecommenderRequestRequestTypeDef = {  # (1)
+    "recommenderArn": ...,
+}
+
+parent.start_recommender(**kwargs)
+```
+
+1. See [:material-code-braces: StartRecommenderRequestRequestTypeDef](./type_defs.md#startrecommenderrequestrequesttypedef) 
+
+### stop\_recommender
+
+Stops a recommender that is ACTIVE.
+
+Type annotations and code completion for `#!python boto3.client("personalize").stop_recommender` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.stop_recommender)
+
+```python title="Method definition"
+def stop_recommender(
+    self,
+    *,
+    recommenderArn: str,
+) -> StopRecommenderResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopRecommenderResponseTypeDef](./type_defs.md#stoprecommenderresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopRecommenderRequestRequestTypeDef = {  # (1)
+    "recommenderArn": ...,
+}
+
+parent.stop_recommender(**kwargs)
+```
+
+1. See [:material-code-braces: StopRecommenderRequestRequestTypeDef](./type_defs.md#stoprecommenderrequestrequesttypedef) 
+
 ### stop\_solution\_version\_creation
 
 Stops creating a solution version that is in a state of CREATE_PENDING or CREATE

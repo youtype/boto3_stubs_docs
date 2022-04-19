@@ -24,11 +24,13 @@ class AnalyzeDocumentRequestRequestTypeDef(TypedDict):
     Document: DocumentTypeDef,  # (1)
     FeatureTypes: Sequence[FeatureTypeType],  # (2)
     HumanLoopConfig: NotRequired[HumanLoopConfigTypeDef],  # (3)
+    QueriesConfig: NotRequired[QueriesConfigTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
 2. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
 3. See [:material-code-braces: HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) 
+4. See [:material-code-braces: QueriesConfigTypeDef](./type_defs.md#queriesconfigtypedef) 
 ## AnalyzeDocumentResponseTypeDef
 
 ```python title="Usage Example"
@@ -185,6 +187,7 @@ class BlockTypeDef(TypedDict):
     EntityTypes: NotRequired[List[EntityTypeType]],  # (5)
     SelectionStatus: NotRequired[SelectionStatusType],  # (6)
     Page: NotRequired[int],
+    Query: NotRequired[QueryTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: BlockTypeType](./literals.md#blocktypetype) 
@@ -193,6 +196,7 @@ class BlockTypeDef(TypedDict):
 4. See [:material-code-braces: RelationshipTypeDef](./type_defs.md#relationshiptypedef) 
 5. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
 6. See [:material-code-brackets: SelectionStatusType](./literals.md#selectionstatustype) 
+7. See [:material-code-braces: QueryTypeDef](./type_defs.md#querytypedef) 
 ## BoundingBoxTypeDef
 
 ```python title="Usage Example"
@@ -758,6 +762,41 @@ class PointTypeDef(TypedDict):
     Y: NotRequired[float],
 ```
 
+## QueriesConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import QueriesConfigTypeDef
+
+def get_value() -> QueriesConfigTypeDef:
+    return {
+        "Queries": ...,
+    }
+```
+
+```python title="Definition"
+class QueriesConfigTypeDef(TypedDict):
+    Queries: Sequence[QueryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: QueryTypeDef](./type_defs.md#querytypedef) 
+## QueryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import QueryTypeDef
+
+def get_value() -> QueryTypeDef:
+    return {
+        "Text": ...,
+    }
+```
+
+```python title="Definition"
+class QueryTypeDef(TypedDict):
+    Text: str,
+    Alias: NotRequired[str],
+    Pages: NotRequired[Sequence[str]],
+```
+
 ## RelationshipTypeDef
 
 ```python title="Usage Example"
@@ -839,12 +878,14 @@ class StartDocumentAnalysisRequestRequestTypeDef(TypedDict):
     NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (3)
     OutputConfig: NotRequired[OutputConfigTypeDef],  # (4)
     KMSKeyId: NotRequired[str],
+    QueriesConfig: NotRequired[QueriesConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) 
 2. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
 3. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
 4. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+5. See [:material-code-braces: QueriesConfigTypeDef](./type_defs.md#queriesconfigtypedef) 
 ## StartDocumentAnalysisResponseTypeDef
 
 ```python title="Usage Example"

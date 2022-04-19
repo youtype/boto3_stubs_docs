@@ -311,6 +311,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [QueryResultItemTypeDef](./type_defs.md#queryresultitemtypedef)
 - [QueryResultTypeDef](./type_defs.md#queryresulttypedef)
 - [QuerySuggestionsBlockListSummaryTypeDef](./type_defs.md#querysuggestionsblocklistsummarytypedef)
+- [QuipConfigurationTypeDef](./type_defs.md#quipconfigurationtypedef)
 - [RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)
 - [RelevanceTypeDef](./type_defs.md#relevancetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -189,6 +189,7 @@ def get_value() -> ActionTypeType:
 - [DescribeUsageLimitsPaginatorName](./literals.md#describeusagelimitspaginatorname)
 - [GetReservedNodeExchangeConfigurationOptionsPaginatorName](./literals.md#getreservednodeexchangeconfigurationoptionspaginatorname)
 - [GetReservedNodeExchangeOfferingsPaginatorName](./literals.md#getreservednodeexchangeofferingspaginatorname)
+- [LogDestinationTypeType](./literals.md#logdestinationtypetype)
 - [ModeType](./literals.md#modetype)
 - [NodeConfigurationOptionsFilterNameType](./literals.md#nodeconfigurationoptionsfilternametype)
 - [OperatorTypeType](./literals.md#operatortypetype)

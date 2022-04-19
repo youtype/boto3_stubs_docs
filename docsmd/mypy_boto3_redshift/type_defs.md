@@ -3706,17 +3706,19 @@ from mypy_boto3_redshift.type_defs import EnableLoggingMessageRequestTypeDef
 def get_value() -> EnableLoggingMessageRequestTypeDef:
     return {
         "ClusterIdentifier": ...,
-        "BucketName": ...,
     }
 ```
 
 ```python title="Definition"
 class EnableLoggingMessageRequestTypeDef(TypedDict):
     ClusterIdentifier: str,
-    BucketName: str,
+    BucketName: NotRequired[str],
     S3KeyPrefix: NotRequired[str],
+    LogDestinationType: NotRequired[LogDestinationTypeType],  # (1)
+    LogExports: NotRequired[Sequence[str]],
 ```
 
+1. See [:material-code-brackets: LogDestinationTypeType](./literals.md#logdestinationtypetype) 
 ## EnableSnapshotCopyMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -4377,6 +4379,8 @@ def get_value() -> LoggingStatusTypeDef:
         "LastSuccessfulDeliveryTime": ...,
         "LastFailureTime": ...,
         "LastFailureMessage": ...,
+        "LogDestinationType": ...,
+        "LogExports": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4389,10 +4393,13 @@ class LoggingStatusTypeDef(TypedDict):
     LastSuccessfulDeliveryTime: datetime,
     LastFailureTime: datetime,
     LastFailureMessage: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    LogDestinationType: LogDestinationTypeType,  # (1)
+    LogExports: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: LogDestinationTypeType](./literals.md#logdestinationtypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MaintenanceTrackTypeDef
 
 ```python title="Usage Example"

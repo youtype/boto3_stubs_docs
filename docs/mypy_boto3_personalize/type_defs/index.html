@@ -26315,6 +26315,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#startrecommenderrequestrequesttypedef" class="md-nav__link">
+    StartRecommenderRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startrecommenderresponsetypedef" class="md-nav__link">
+    StartRecommenderResponseTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stoprecommenderrequestrequesttypedef" class="md-nav__link">
+    StopRecommenderRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stoprecommenderresponsetypedef" class="md-nav__link">
+    StopRecommenderResponseTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stopsolutionversioncreationrequestrequesttypedef" class="md-nav__link">
     StopSolutionVersionCreationRequestRequestTypeDef
   </a>
@@ -38089,6 +38117,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#startrecommenderrequestrequesttypedef" class="md-nav__link">
+    StartRecommenderRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startrecommenderresponsetypedef" class="md-nav__link">
+    StartRecommenderResponseTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stoprecommenderrequestrequesttypedef" class="md-nav__link">
+    StopRecommenderRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stoprecommenderresponsetypedef" class="md-nav__link">
+    StopRecommenderResponseTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stopsolutionversioncreationrequestrequesttypedef" class="md-nav__link">
     StopSolutionVersionCreationRequestRequestTypeDef
   </a>
@@ -40941,131 +40997,185 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-perso
 <li>See <a href="../literals/#trainingmodetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TrainingModeType</a> </li>
 <li>See <a href="./#tunedhpoparamstypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TunedHPOParamsTypeDef</a> </li>
 </ol>
-<h2 id="stopsolutionversioncreationrequestrequesttypedef">StopSolutionVersionCreationRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-344-1" name="__codelineno-344-1" href="#__codelineno-344-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">StopSolutionVersionCreationRequestRequestTypeDef</span>
+<h2 id="startrecommenderrequestrequesttypedef">StartRecommenderRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-344-1" name="__codelineno-344-1" href="#__codelineno-344-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">StartRecommenderRequestRequestTypeDef</span>
 <a id="__codelineno-344-2" name="__codelineno-344-2" href="#__codelineno-344-2"></a>
-<a id="__codelineno-344-3" name="__codelineno-344-3" href="#__codelineno-344-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StopSolutionVersionCreationRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-344-3" name="__codelineno-344-3" href="#__codelineno-344-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StartRecommenderRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-344-4" name="__codelineno-344-4" href="#__codelineno-344-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-344-5" name="__codelineno-344-5" href="#__codelineno-344-5"></a>        <span class="s2">&quot;solutionVersionArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-344-5" name="__codelineno-344-5" href="#__codelineno-344-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-344-6" name="__codelineno-344-6" href="#__codelineno-344-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-345-1" name="__codelineno-345-1" href="#__codelineno-345-1"></a><span class="k">class</span> <span class="nc">StopSolutionVersionCreationRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-345-2" name="__codelineno-345-2" href="#__codelineno-345-2"></a>    <span class="n">solutionVersionArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-345-1" name="__codelineno-345-1" href="#__codelineno-345-1"></a><span class="k">class</span> <span class="nc">StartRecommenderRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-345-2" name="__codelineno-345-2" href="#__codelineno-345-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </code></pre></div>
-<h2 id="tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-346-1" name="__codelineno-346-1" href="#__codelineno-346-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">TagResourceRequestRequestTypeDef</span>
+<h2 id="startrecommenderresponsetypedef">StartRecommenderResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-346-1" name="__codelineno-346-1" href="#__codelineno-346-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">StartRecommenderResponseTypeDef</span>
 <a id="__codelineno-346-2" name="__codelineno-346-2" href="#__codelineno-346-2"></a>
-<a id="__codelineno-346-3" name="__codelineno-346-3" href="#__codelineno-346-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagResourceRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-346-3" name="__codelineno-346-3" href="#__codelineno-346-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StartRecommenderResponseTypeDef</span><span class="p">:</span>
 <a id="__codelineno-346-4" name="__codelineno-346-4" href="#__codelineno-346-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-346-5" name="__codelineno-346-5" href="#__codelineno-346-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-346-6" name="__codelineno-346-6" href="#__codelineno-346-6"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-346-5" name="__codelineno-346-5" href="#__codelineno-346-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-346-6" name="__codelineno-346-6" href="#__codelineno-346-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-346-7" name="__codelineno-346-7" href="#__codelineno-346-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-347-1" name="__codelineno-347-1" href="#__codelineno-347-1"></a><span class="k">class</span> <span class="nc">TagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-347-2" name="__codelineno-347-2" href="#__codelineno-347-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-347-3" name="__codelineno-347-3" href="#__codelineno-347-3"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">TagTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-347-1" name="__codelineno-347-1" href="#__codelineno-347-1"></a><span class="k">class</span> <span class="nc">StartRecommenderResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-347-2" name="__codelineno-347-2" href="#__codelineno-347-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-347-3" name="__codelineno-347-3" href="#__codelineno-347-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
+</ol>
+<h2 id="stoprecommenderrequestrequesttypedef">StopRecommenderRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-348-1" name="__codelineno-348-1" href="#__codelineno-348-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">StopRecommenderRequestRequestTypeDef</span>
+<a id="__codelineno-348-2" name="__codelineno-348-2" href="#__codelineno-348-2"></a>
+<a id="__codelineno-348-3" name="__codelineno-348-3" href="#__codelineno-348-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StopRecommenderRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-348-4" name="__codelineno-348-4" href="#__codelineno-348-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-348-5" name="__codelineno-348-5" href="#__codelineno-348-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-348-6" name="__codelineno-348-6" href="#__codelineno-348-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-349-1" name="__codelineno-349-1" href="#__codelineno-349-1"></a><span class="k">class</span> <span class="nc">StopRecommenderRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-349-2" name="__codelineno-349-2" href="#__codelineno-349-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</code></pre></div>
+<h2 id="stoprecommenderresponsetypedef">StopRecommenderResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-350-1" name="__codelineno-350-1" href="#__codelineno-350-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">StopRecommenderResponseTypeDef</span>
+<a id="__codelineno-350-2" name="__codelineno-350-2" href="#__codelineno-350-2"></a>
+<a id="__codelineno-350-3" name="__codelineno-350-3" href="#__codelineno-350-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StopRecommenderResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-350-4" name="__codelineno-350-4" href="#__codelineno-350-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-350-5" name="__codelineno-350-5" href="#__codelineno-350-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-350-6" name="__codelineno-350-6" href="#__codelineno-350-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-350-7" name="__codelineno-350-7" href="#__codelineno-350-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-351-1" name="__codelineno-351-1" href="#__codelineno-351-1"></a><span class="k">class</span> <span class="nc">StopRecommenderResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-351-2" name="__codelineno-351-2" href="#__codelineno-351-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-351-3" name="__codelineno-351-3" href="#__codelineno-351-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
+</ol>
+<h2 id="stopsolutionversioncreationrequestrequesttypedef">StopSolutionVersionCreationRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-352-1" name="__codelineno-352-1" href="#__codelineno-352-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">StopSolutionVersionCreationRequestRequestTypeDef</span>
+<a id="__codelineno-352-2" name="__codelineno-352-2" href="#__codelineno-352-2"></a>
+<a id="__codelineno-352-3" name="__codelineno-352-3" href="#__codelineno-352-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StopSolutionVersionCreationRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-352-4" name="__codelineno-352-4" href="#__codelineno-352-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-352-5" name="__codelineno-352-5" href="#__codelineno-352-5"></a>        <span class="s2">&quot;solutionVersionArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-352-6" name="__codelineno-352-6" href="#__codelineno-352-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-353-1" name="__codelineno-353-1" href="#__codelineno-353-1"></a><span class="k">class</span> <span class="nc">StopSolutionVersionCreationRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-353-2" name="__codelineno-353-2" href="#__codelineno-353-2"></a>    <span class="n">solutionVersionArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</code></pre></div>
+<h2 id="tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-354-1" name="__codelineno-354-1" href="#__codelineno-354-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">TagResourceRequestRequestTypeDef</span>
+<a id="__codelineno-354-2" name="__codelineno-354-2" href="#__codelineno-354-2"></a>
+<a id="__codelineno-354-3" name="__codelineno-354-3" href="#__codelineno-354-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagResourceRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-354-4" name="__codelineno-354-4" href="#__codelineno-354-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-354-5" name="__codelineno-354-5" href="#__codelineno-354-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-354-6" name="__codelineno-354-6" href="#__codelineno-354-6"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-354-7" name="__codelineno-354-7" href="#__codelineno-354-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-355-1" name="__codelineno-355-1" href="#__codelineno-355-1"></a><span class="k">class</span> <span class="nc">TagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-355-2" name="__codelineno-355-2" href="#__codelineno-355-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-355-3" name="__codelineno-355-3" href="#__codelineno-355-3"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">TagTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
 </ol>
 <h2 id="tagtypedef">TagTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-348-1" name="__codelineno-348-1" href="#__codelineno-348-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">TagTypeDef</span>
-<a id="__codelineno-348-2" name="__codelineno-348-2" href="#__codelineno-348-2"></a>
-<a id="__codelineno-348-3" name="__codelineno-348-3" href="#__codelineno-348-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagTypeDef</span><span class="p">:</span>
-<a id="__codelineno-348-4" name="__codelineno-348-4" href="#__codelineno-348-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-348-5" name="__codelineno-348-5" href="#__codelineno-348-5"></a>        <span class="s2">&quot;tagKey&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-348-6" name="__codelineno-348-6" href="#__codelineno-348-6"></a>        <span class="s2">&quot;tagValue&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-348-7" name="__codelineno-348-7" href="#__codelineno-348-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-356-1" name="__codelineno-356-1" href="#__codelineno-356-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">TagTypeDef</span>
+<a id="__codelineno-356-2" name="__codelineno-356-2" href="#__codelineno-356-2"></a>
+<a id="__codelineno-356-3" name="__codelineno-356-3" href="#__codelineno-356-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagTypeDef</span><span class="p">:</span>
+<a id="__codelineno-356-4" name="__codelineno-356-4" href="#__codelineno-356-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-356-5" name="__codelineno-356-5" href="#__codelineno-356-5"></a>        <span class="s2">&quot;tagKey&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-356-6" name="__codelineno-356-6" href="#__codelineno-356-6"></a>        <span class="s2">&quot;tagValue&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-356-7" name="__codelineno-356-7" href="#__codelineno-356-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-349-1" name="__codelineno-349-1" href="#__codelineno-349-1"></a><span class="k">class</span> <span class="nc">TagTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-349-2" name="__codelineno-349-2" href="#__codelineno-349-2"></a>    <span class="n">tagKey</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-349-3" name="__codelineno-349-3" href="#__codelineno-349-3"></a>    <span class="n">tagValue</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-357-1" name="__codelineno-357-1" href="#__codelineno-357-1"></a><span class="k">class</span> <span class="nc">TagTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-357-2" name="__codelineno-357-2" href="#__codelineno-357-2"></a>    <span class="n">tagKey</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-357-3" name="__codelineno-357-3" href="#__codelineno-357-3"></a>    <span class="n">tagValue</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </code></pre></div>
 <h2 id="tunedhpoparamstypedef">TunedHPOParamsTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-350-1" name="__codelineno-350-1" href="#__codelineno-350-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">TunedHPOParamsTypeDef</span>
-<a id="__codelineno-350-2" name="__codelineno-350-2" href="#__codelineno-350-2"></a>
-<a id="__codelineno-350-3" name="__codelineno-350-3" href="#__codelineno-350-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TunedHPOParamsTypeDef</span><span class="p">:</span>
-<a id="__codelineno-350-4" name="__codelineno-350-4" href="#__codelineno-350-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-350-5" name="__codelineno-350-5" href="#__codelineno-350-5"></a>        <span class="s2">&quot;algorithmHyperParameters&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-350-6" name="__codelineno-350-6" href="#__codelineno-350-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-358-1" name="__codelineno-358-1" href="#__codelineno-358-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">TunedHPOParamsTypeDef</span>
+<a id="__codelineno-358-2" name="__codelineno-358-2" href="#__codelineno-358-2"></a>
+<a id="__codelineno-358-3" name="__codelineno-358-3" href="#__codelineno-358-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TunedHPOParamsTypeDef</span><span class="p">:</span>
+<a id="__codelineno-358-4" name="__codelineno-358-4" href="#__codelineno-358-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-358-5" name="__codelineno-358-5" href="#__codelineno-358-5"></a>        <span class="s2">&quot;algorithmHyperParameters&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-358-6" name="__codelineno-358-6" href="#__codelineno-358-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-351-1" name="__codelineno-351-1" href="#__codelineno-351-1"></a><span class="k">class</span> <span class="nc">TunedHPOParamsTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-351-2" name="__codelineno-351-2" href="#__codelineno-351-2"></a>    <span class="n">algorithmHyperParameters</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-359-1" name="__codelineno-359-1" href="#__codelineno-359-1"></a><span class="k">class</span> <span class="nc">TunedHPOParamsTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-359-2" name="__codelineno-359-2" href="#__codelineno-359-2"></a>    <span class="n">algorithmHyperParameters</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
 </code></pre></div>
 <h2 id="untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-352-1" name="__codelineno-352-1" href="#__codelineno-352-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UntagResourceRequestRequestTypeDef</span>
-<a id="__codelineno-352-2" name="__codelineno-352-2" href="#__codelineno-352-2"></a>
-<a id="__codelineno-352-3" name="__codelineno-352-3" href="#__codelineno-352-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UntagResourceRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-352-4" name="__codelineno-352-4" href="#__codelineno-352-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-352-5" name="__codelineno-352-5" href="#__codelineno-352-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-352-6" name="__codelineno-352-6" href="#__codelineno-352-6"></a>        <span class="s2">&quot;tagKeys&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-352-7" name="__codelineno-352-7" href="#__codelineno-352-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-360-1" name="__codelineno-360-1" href="#__codelineno-360-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UntagResourceRequestRequestTypeDef</span>
+<a id="__codelineno-360-2" name="__codelineno-360-2" href="#__codelineno-360-2"></a>
+<a id="__codelineno-360-3" name="__codelineno-360-3" href="#__codelineno-360-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UntagResourceRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-360-4" name="__codelineno-360-4" href="#__codelineno-360-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-360-5" name="__codelineno-360-5" href="#__codelineno-360-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-360-6" name="__codelineno-360-6" href="#__codelineno-360-6"></a>        <span class="s2">&quot;tagKeys&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-360-7" name="__codelineno-360-7" href="#__codelineno-360-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-353-1" name="__codelineno-353-1" href="#__codelineno-353-1"></a><span class="k">class</span> <span class="nc">UntagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-353-2" name="__codelineno-353-2" href="#__codelineno-353-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-353-3" name="__codelineno-353-3" href="#__codelineno-353-3"></a>    <span class="n">tagKeys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-361-1" name="__codelineno-361-1" href="#__codelineno-361-1"></a><span class="k">class</span> <span class="nc">UntagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-361-2" name="__codelineno-361-2" href="#__codelineno-361-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-361-3" name="__codelineno-361-3" href="#__codelineno-361-3"></a>    <span class="n">tagKeys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="updatecampaignrequestrequesttypedef">UpdateCampaignRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-354-1" name="__codelineno-354-1" href="#__codelineno-354-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateCampaignRequestRequestTypeDef</span>
-<a id="__codelineno-354-2" name="__codelineno-354-2" href="#__codelineno-354-2"></a>
-<a id="__codelineno-354-3" name="__codelineno-354-3" href="#__codelineno-354-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateCampaignRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-354-4" name="__codelineno-354-4" href="#__codelineno-354-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-354-5" name="__codelineno-354-5" href="#__codelineno-354-5"></a>        <span class="s2">&quot;campaignArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-354-6" name="__codelineno-354-6" href="#__codelineno-354-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-362-1" name="__codelineno-362-1" href="#__codelineno-362-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateCampaignRequestRequestTypeDef</span>
+<a id="__codelineno-362-2" name="__codelineno-362-2" href="#__codelineno-362-2"></a>
+<a id="__codelineno-362-3" name="__codelineno-362-3" href="#__codelineno-362-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateCampaignRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-362-4" name="__codelineno-362-4" href="#__codelineno-362-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-362-5" name="__codelineno-362-5" href="#__codelineno-362-5"></a>        <span class="s2">&quot;campaignArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-362-6" name="__codelineno-362-6" href="#__codelineno-362-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-355-1" name="__codelineno-355-1" href="#__codelineno-355-1"></a><span class="k">class</span> <span class="nc">UpdateCampaignRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-355-2" name="__codelineno-355-2" href="#__codelineno-355-2"></a>    <span class="n">campaignArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-355-3" name="__codelineno-355-3" href="#__codelineno-355-3"></a>    <span class="n">solutionVersionArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-355-4" name="__codelineno-355-4" href="#__codelineno-355-4"></a>    <span class="n">minProvisionedTPS</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-355-5" name="__codelineno-355-5" href="#__codelineno-355-5"></a>    <span class="n">campaignConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CampaignConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-363-1" name="__codelineno-363-1" href="#__codelineno-363-1"></a><span class="k">class</span> <span class="nc">UpdateCampaignRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-363-2" name="__codelineno-363-2" href="#__codelineno-363-2"></a>    <span class="n">campaignArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-363-3" name="__codelineno-363-3" href="#__codelineno-363-3"></a>    <span class="n">solutionVersionArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-363-4" name="__codelineno-363-4" href="#__codelineno-363-4"></a>    <span class="n">minProvisionedTPS</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-363-5" name="__codelineno-363-5" href="#__codelineno-363-5"></a>    <span class="n">campaignConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CampaignConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#campaignconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CampaignConfigTypeDef</a> </li>
 </ol>
 <h2 id="updatecampaignresponsetypedef">UpdateCampaignResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-356-1" name="__codelineno-356-1" href="#__codelineno-356-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateCampaignResponseTypeDef</span>
-<a id="__codelineno-356-2" name="__codelineno-356-2" href="#__codelineno-356-2"></a>
-<a id="__codelineno-356-3" name="__codelineno-356-3" href="#__codelineno-356-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateCampaignResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-356-4" name="__codelineno-356-4" href="#__codelineno-356-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-356-5" name="__codelineno-356-5" href="#__codelineno-356-5"></a>        <span class="s2">&quot;campaignArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-356-6" name="__codelineno-356-6" href="#__codelineno-356-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-356-7" name="__codelineno-356-7" href="#__codelineno-356-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-364-1" name="__codelineno-364-1" href="#__codelineno-364-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateCampaignResponseTypeDef</span>
+<a id="__codelineno-364-2" name="__codelineno-364-2" href="#__codelineno-364-2"></a>
+<a id="__codelineno-364-3" name="__codelineno-364-3" href="#__codelineno-364-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateCampaignResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-364-4" name="__codelineno-364-4" href="#__codelineno-364-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-364-5" name="__codelineno-364-5" href="#__codelineno-364-5"></a>        <span class="s2">&quot;campaignArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-364-6" name="__codelineno-364-6" href="#__codelineno-364-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-364-7" name="__codelineno-364-7" href="#__codelineno-364-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-357-1" name="__codelineno-357-1" href="#__codelineno-357-1"></a><span class="k">class</span> <span class="nc">UpdateCampaignResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-357-2" name="__codelineno-357-2" href="#__codelineno-357-2"></a>    <span class="n">campaignArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-357-3" name="__codelineno-357-3" href="#__codelineno-357-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-365-1" name="__codelineno-365-1" href="#__codelineno-365-1"></a><span class="k">class</span> <span class="nc">UpdateCampaignResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-365-2" name="__codelineno-365-2" href="#__codelineno-365-2"></a>    <span class="n">campaignArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-365-3" name="__codelineno-365-3" href="#__codelineno-365-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="updaterecommenderrequestrequesttypedef">UpdateRecommenderRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-358-1" name="__codelineno-358-1" href="#__codelineno-358-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateRecommenderRequestRequestTypeDef</span>
-<a id="__codelineno-358-2" name="__codelineno-358-2" href="#__codelineno-358-2"></a>
-<a id="__codelineno-358-3" name="__codelineno-358-3" href="#__codelineno-358-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateRecommenderRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-358-4" name="__codelineno-358-4" href="#__codelineno-358-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-358-5" name="__codelineno-358-5" href="#__codelineno-358-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-358-6" name="__codelineno-358-6" href="#__codelineno-358-6"></a>        <span class="s2">&quot;recommenderConfig&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-358-7" name="__codelineno-358-7" href="#__codelineno-358-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-366-1" name="__codelineno-366-1" href="#__codelineno-366-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateRecommenderRequestRequestTypeDef</span>
+<a id="__codelineno-366-2" name="__codelineno-366-2" href="#__codelineno-366-2"></a>
+<a id="__codelineno-366-3" name="__codelineno-366-3" href="#__codelineno-366-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateRecommenderRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-366-4" name="__codelineno-366-4" href="#__codelineno-366-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-366-5" name="__codelineno-366-5" href="#__codelineno-366-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-366-6" name="__codelineno-366-6" href="#__codelineno-366-6"></a>        <span class="s2">&quot;recommenderConfig&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-366-7" name="__codelineno-366-7" href="#__codelineno-366-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-359-1" name="__codelineno-359-1" href="#__codelineno-359-1"></a><span class="k">class</span> <span class="nc">UpdateRecommenderRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-359-2" name="__codelineno-359-2" href="#__codelineno-359-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-359-3" name="__codelineno-359-3" href="#__codelineno-359-3"></a>    <span class="n">recommenderConfig</span><span class="p">:</span> <span class="n">RecommenderConfigTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-367-1" name="__codelineno-367-1" href="#__codelineno-367-1"></a><span class="k">class</span> <span class="nc">UpdateRecommenderRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-367-2" name="__codelineno-367-2" href="#__codelineno-367-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-367-3" name="__codelineno-367-3" href="#__codelineno-367-3"></a>    <span class="n">recommenderConfig</span><span class="p">:</span> <span class="n">RecommenderConfigTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#recommenderconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RecommenderConfigTypeDef</a> </li>
 </ol>
 <h2 id="updaterecommenderresponsetypedef">UpdateRecommenderResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-360-1" name="__codelineno-360-1" href="#__codelineno-360-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateRecommenderResponseTypeDef</span>
-<a id="__codelineno-360-2" name="__codelineno-360-2" href="#__codelineno-360-2"></a>
-<a id="__codelineno-360-3" name="__codelineno-360-3" href="#__codelineno-360-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateRecommenderResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-360-4" name="__codelineno-360-4" href="#__codelineno-360-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-360-5" name="__codelineno-360-5" href="#__codelineno-360-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-360-6" name="__codelineno-360-6" href="#__codelineno-360-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-360-7" name="__codelineno-360-7" href="#__codelineno-360-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-368-1" name="__codelineno-368-1" href="#__codelineno-368-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_personalize.type_defs</span> <span class="kn">import</span> <span class="n">UpdateRecommenderResponseTypeDef</span>
+<a id="__codelineno-368-2" name="__codelineno-368-2" href="#__codelineno-368-2"></a>
+<a id="__codelineno-368-3" name="__codelineno-368-3" href="#__codelineno-368-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateRecommenderResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-368-4" name="__codelineno-368-4" href="#__codelineno-368-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-368-5" name="__codelineno-368-5" href="#__codelineno-368-5"></a>        <span class="s2">&quot;recommenderArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-368-6" name="__codelineno-368-6" href="#__codelineno-368-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-368-7" name="__codelineno-368-7" href="#__codelineno-368-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-361-1" name="__codelineno-361-1" href="#__codelineno-361-1"></a><span class="k">class</span> <span class="nc">UpdateRecommenderResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-361-2" name="__codelineno-361-2" href="#__codelineno-361-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-361-3" name="__codelineno-361-3" href="#__codelineno-361-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-369-1" name="__codelineno-369-1" href="#__codelineno-369-1"></a><span class="k">class</span> <span class="nc">UpdateRecommenderResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-369-2" name="__codelineno-369-2" href="#__codelineno-369-2"></a>    <span class="n">recommenderArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-369-3" name="__codelineno-369-3" href="#__codelineno-369-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>

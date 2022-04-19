@@ -381,6 +381,7 @@ def create_association(
     ApplyOnlyAtCronInterval: bool = ...,
     CalendarNames: Sequence[str] = ...,
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (5)
+    ScheduleOffset: int = ...,
 ) -> CreateAssociationResultTypeDef:  # (6)
     ...
 ```
@@ -4291,6 +4292,7 @@ def update_association(
     ApplyOnlyAtCronInterval: bool = ...,
     CalendarNames: Sequence[str] = ...,
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (5)
+    ScheduleOffset: int = ...,
 ) -> UpdateAssociationResultTypeDef:  # (6)
     ...
 ```

@@ -1098,6 +1098,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
     FsxConfiguration: NotRequired[FsxConfigurationTypeDef],  # (11)
     SlackConfiguration: NotRequired[SlackConfigurationTypeDef],  # (12)
     BoxConfiguration: NotRequired[BoxConfigurationTypeDef],  # (13)
+    QuipConfiguration: NotRequired[QuipConfigurationTypeDef],  # (14)
 ```
 
 1. See [:material-code-braces: S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef) 
@@ -1113,6 +1114,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
 11. See [:material-code-braces: FsxConfigurationTypeDef](./type_defs.md#fsxconfigurationtypedef) 
 12. See [:material-code-braces: SlackConfigurationTypeDef](./type_defs.md#slackconfigurationtypedef) 
 13. See [:material-code-braces: BoxConfigurationTypeDef](./type_defs.md#boxconfigurationtypedef) 
+14. See [:material-code-braces: QuipConfigurationTypeDef](./type_defs.md#quipconfigurationtypedef) 
 ## DataSourceGroupTypeDef
 
 ```python title="Usage Example"
@@ -3501,6 +3503,38 @@ class QuerySuggestionsBlockListSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: QuerySuggestionsBlockListStatusType](./literals.md#querysuggestionsblockliststatustype) 
+## QuipConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import QuipConfigurationTypeDef
+
+def get_value() -> QuipConfigurationTypeDef:
+    return {
+        "Domain": ...,
+        "SecretArn": ...,
+    }
+```
+
+```python title="Definition"
+class QuipConfigurationTypeDef(TypedDict):
+    Domain: str,
+    SecretArn: str,
+    CrawlFileComments: NotRequired[bool],
+    CrawlChatRooms: NotRequired[bool],
+    CrawlAttachments: NotRequired[bool],
+    FolderIds: NotRequired[Sequence[str]],
+    ThreadFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    MessageFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    AttachmentFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (1)
+    InclusionPatterns: NotRequired[Sequence[str]],
+    ExclusionPatterns: NotRequired[Sequence[str]],
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+2. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+3. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+4. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
 ## RelevanceFeedbackTypeDef
 
 ```python title="Usage Example"

@@ -3435,6 +3435,76 @@ class SolutionVersionTypeDef(TypedDict):
 1. See [:material-code-braces: SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef) 
 2. See [:material-code-brackets: TrainingModeType](./literals.md#trainingmodetype) 
 3. See [:material-code-braces: TunedHPOParamsTypeDef](./type_defs.md#tunedhpoparamstypedef) 
+## StartRecommenderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import StartRecommenderRequestRequestTypeDef
+
+def get_value() -> StartRecommenderRequestRequestTypeDef:
+    return {
+        "recommenderArn": ...,
+    }
+```
+
+```python title="Definition"
+class StartRecommenderRequestRequestTypeDef(TypedDict):
+    recommenderArn: str,
+```
+
+## StartRecommenderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import StartRecommenderResponseTypeDef
+
+def get_value() -> StartRecommenderResponseTypeDef:
+    return {
+        "recommenderArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartRecommenderResponseTypeDef(TypedDict):
+    recommenderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopRecommenderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import StopRecommenderRequestRequestTypeDef
+
+def get_value() -> StopRecommenderRequestRequestTypeDef:
+    return {
+        "recommenderArn": ...,
+    }
+```
+
+```python title="Definition"
+class StopRecommenderRequestRequestTypeDef(TypedDict):
+    recommenderArn: str,
+```
+
+## StopRecommenderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import StopRecommenderResponseTypeDef
+
+def get_value() -> StopRecommenderResponseTypeDef:
+    return {
+        "recommenderArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopRecommenderResponseTypeDef(TypedDict):
+    recommenderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopSolutionVersionCreationRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -293,6 +293,7 @@ class AutoScalingGroupTypeDef(TypedDict):
     WarmPoolSize: NotRequired[int],
     Context: NotRequired[str],
     DesiredCapacityType: NotRequired[str],
+    DefaultInstanceWarmup: NotRequired[int],
 ```
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
@@ -606,6 +607,7 @@ class CreateAutoScalingGroupTypeRequestTypeDef(TypedDict):
     MaxInstanceLifetime: NotRequired[int],
     Context: NotRequired[str],
     DesiredCapacityType: NotRequired[str],
+    DefaultInstanceWarmup: NotRequired[int],
 ```
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
@@ -3358,6 +3360,7 @@ class UpdateAutoScalingGroupTypeRequestTypeDef(TypedDict):
     CapacityRebalance: NotRequired[bool],
     Context: NotRequired[str],
     DesiredCapacityType: NotRequired[str],
+    DefaultInstanceWarmup: NotRequired[int],
 ```
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 

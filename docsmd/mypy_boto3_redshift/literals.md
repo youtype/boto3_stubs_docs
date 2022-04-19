@@ -612,6 +612,21 @@ GetReservedNodeExchangeOfferingsPaginatorName = Literal[
     "get_reserved_node_exchange_offerings",
 ]
 ```
+## LogDestinationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_redshift.literals import LogDestinationTypeType
+
+def get_value() -> LogDestinationTypeType:
+    return "cloudwatch"
+```
+
+```python title="Definition"
+LogDestinationTypeType = Literal[
+    "cloudwatch",
+    "s3",
+]
+```
 ## ModeType
 
 ```python title="Usage Example"

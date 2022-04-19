@@ -505,3 +505,22 @@ ResourceServiceName = Literal[
     "sqs",
 ]
 ```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-southeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2",
+]
+```

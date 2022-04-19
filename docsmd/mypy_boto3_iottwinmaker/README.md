@@ -91,6 +91,7 @@ def get_value() -> ComponentUpdateTypeType:
 - [IoTTwinMakerServiceName](./literals.md#iottwinmakerservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

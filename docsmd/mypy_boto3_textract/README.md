@@ -146,6 +146,8 @@ def get_value() -> AnalyzeDocumentRequestRequestTypeDef:
 - [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - [PointTypeDef](./type_defs.md#pointtypedef)
+- [QueriesConfigTypeDef](./type_defs.md#queriesconfigtypedef)
+- [QueryTypeDef](./type_defs.md#querytypedef)
 - [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
