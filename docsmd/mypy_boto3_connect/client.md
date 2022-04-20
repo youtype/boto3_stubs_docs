@@ -257,6 +257,39 @@ parent.associate_lex_bot(**kwargs)
 
 1. See [:material-code-braces: AssociateLexBotRequestRequestTypeDef](./type_defs.md#associatelexbotrequestrequesttypedef) 
 
+### associate\_phone\_number\_contact\_flow
+
+Associates a contact flow with a phone number claimed to your Amazon Connect
+instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").associate_phone_number_contact_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_phone_number_contact_flow)
+
+```python title="Method definition"
+def associate_phone_number_contact_flow(
+    self,
+    *,
+    PhoneNumberId: str,
+    InstanceId: str,
+    ContactFlowId: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociatePhoneNumberContactFlowRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+}
+
+parent.associate_phone_number_contact_flow(**kwargs)
+```
+
+1. See [:material-code-braces: AssociatePhoneNumberContactFlowRequestRequestTypeDef](./type_defs.md#associatephonenumbercontactflowrequestrequesttypedef) 
+
 ### associate\_queue\_quick\_connects
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -368,6 +401,40 @@ def can_paginate(
     ...
 ```
 
+
+### claim\_phone\_number
+
+Claims an available phone number to your Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").claim_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.claim_phone_number)
+
+```python title="Method definition"
+def claim_phone_number(
+    self,
+    *,
+    TargetArn: str,
+    PhoneNumber: str,
+    PhoneNumberDescription: str = ...,
+    Tags: Mapping[str, str] = ...,
+    ClientToken: str = ...,
+) -> ClaimPhoneNumberResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ClaimPhoneNumberResponseTypeDef](./type_defs.md#claimphonenumberresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ClaimPhoneNumberRequestRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+    "PhoneNumber": ...,
+}
+
+parent.claim_phone_number(**kwargs)
+```
+
+1. See [:material-code-braces: ClaimPhoneNumberRequestRequestTypeDef](./type_defs.md#claimphonenumberrequestrequesttypedef) 
 
 ### create\_agent\_status
 
@@ -1477,6 +1544,37 @@ parent.describe_instance_storage_config(**kwargs)
 
 1. See [:material-code-braces: DescribeInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#describeinstancestorageconfigrequestrequesttypedef) 
 
+### describe\_phone\_number
+
+Gets details and status of a phone number that’s claimed to your Amazon Connect
+instance See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/connect-2017-08-08/DescribePhoneNumber).
+
+Type annotations and code completion for `#!python boto3.client("connect").describe_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_phone_number)
+
+```python title="Method definition"
+def describe_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+) -> DescribePhoneNumberResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribePhoneNumberResponseTypeDef](./type_defs.md#describephonenumberresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+}
+
+parent.describe_phone_number(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePhoneNumberRequestRequestTypeDef](./type_defs.md#describephonenumberrequestrequesttypedef) 
+
 ### describe\_queue
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1879,6 +1977,37 @@ parent.disassociate_lex_bot(**kwargs)
 ```
 
 1. See [:material-code-braces: DisassociateLexBotRequestRequestTypeDef](./type_defs.md#disassociatelexbotrequestrequesttypedef) 
+
+### disassociate\_phone\_number\_contact\_flow
+
+Removes the contact flow association from a phone number claimed to your Amazon
+Connect instance, if a contact flow association exists.
+
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_phone_number_contact_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_phone_number_contact_flow)
+
+```python title="Method definition"
+def disassociate_phone_number_contact_flow(
+    self,
+    *,
+    PhoneNumberId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociatePhoneNumberContactFlowRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+    "InstanceId": ...,
+}
+
+parent.disassociate_phone_number_contact_flow(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociatePhoneNumberContactFlowRequestRequestTypeDef](./type_defs.md#disassociatephonenumbercontactflowrequestrequesttypedef) 
 
 ### disassociate\_queue\_quick\_connects
 
@@ -2629,6 +2758,42 @@ parent.list_phone_numbers(**kwargs)
 
 1. See [:material-code-braces: ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef) 
 
+### list\_phone\_numbers\_v2
+
+Lists phone numbers claimed to your Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_phone_numbers_v2` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers_v2)
+
+```python title="Method definition"
+def list_phone_numbers_v2(
+    self,
+    *,
+    TargetArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    PhoneNumberCountryCodes: Sequence[PhoneNumberCountryCodeType] = ...,  # (1)
+    PhoneNumberTypes: Sequence[PhoneNumberTypeType] = ...,  # (2)
+    PhoneNumberPrefix: str = ...,
+) -> ListPhoneNumbersV2ResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
+2. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+3. See [:material-code-braces: ListPhoneNumbersV2ResponseTypeDef](./type_defs.md#listphonenumbersv2responsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumbersV2RequestRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+}
+
+parent.list_phone_numbers_v2(**kwargs)
+```
+
+1. See [:material-code-braces: ListPhoneNumbersV2RequestRequestTypeDef](./type_defs.md#listphonenumbersv2requestrequesttypedef) 
+
 ### list\_prompts
 
 Provides information about the prompts for the specified Amazon Connect
@@ -3048,6 +3213,35 @@ parent.list_users(**kwargs)
 
 1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
+### release\_phone\_number
+
+Releases a phone number previously claimed to an Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").release_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.release_phone_number)
+
+```python title="Method definition"
+def release_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+    ClientToken: str = ...,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: ReleasePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+}
+
+parent.release_phone_number(**kwargs)
+```
+
+1. See [:material-code-braces: ReleasePhoneNumberRequestRequestTypeDef](./type_defs.md#releasephonenumberrequestrequesttypedef) 
+
 ### resume\_contact\_recording
 
 When a contact is being recorded, and the recording has been suspended using
@@ -3080,6 +3274,45 @@ parent.resume_contact_recording(**kwargs)
 ```
 
 1. See [:material-code-braces: ResumeContactRecordingRequestRequestTypeDef](./type_defs.md#resumecontactrecordingrequestrequesttypedef) 
+
+### search\_available\_phone\_numbers
+
+Searches for available phone numbers that you can claim to your Amazon Connect
+instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").search_available_phone_numbers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_available_phone_numbers)
+
+```python title="Method definition"
+def search_available_phone_numbers(
+    self,
+    *,
+    TargetArn: str,
+    PhoneNumberCountryCode: PhoneNumberCountryCodeType,  # (1)
+    PhoneNumberType: PhoneNumberTypeType,  # (2)
+    PhoneNumberPrefix: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> SearchAvailablePhoneNumbersResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
+2. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+3. See [:material-code-braces: SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchAvailablePhoneNumbersRequestRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+    "PhoneNumberCountryCode": ...,
+    "PhoneNumberType": ...,
+}
+
+parent.search_available_phone_numbers(**kwargs)
+```
+
+1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef) 
 
 ### search\_vocabularies
 
@@ -3901,6 +4134,39 @@ parent.update_instance_storage_config(**kwargs)
 
 1. See [:material-code-braces: UpdateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequestrequesttypedef) 
 
+### update\_phone\_number
+
+Updates your claimed phone number from its current Amazon Connect instance to
+another Amazon Connect instance in the same Region.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_phone_number)
+
+```python title="Method definition"
+def update_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+    TargetArn: str,
+    ClientToken: str = ...,
+) -> UpdatePhoneNumberResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdatePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+    "TargetArn": ...,
+}
+
+parent.update_phone_number(**kwargs)
+```
+
+1. See [:material-code-braces: UpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#updatephonenumberrequestrequesttypedef) 
+
 ### update\_queue\_hours\_of\_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -4537,6 +4803,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_lambda_functions")` -> [ListLambdaFunctionsPaginator](./paginators.md#listlambdafunctionspaginator)
 - `client.get_paginator("list_lex_bots")` -> [ListLexBotsPaginator](./paginators.md#listlexbotspaginator)
 - `client.get_paginator("list_phone_numbers")` -> [ListPhoneNumbersPaginator](./paginators.md#listphonenumberspaginator)
+- `client.get_paginator("list_phone_numbers_v2")` -> [ListPhoneNumbersV2Paginator](./paginators.md#listphonenumbersv2paginator)
 - `client.get_paginator("list_prompts")` -> [ListPromptsPaginator](./paginators.md#listpromptspaginator)
 - `client.get_paginator("list_queue_quick_connects")` -> [ListQueueQuickConnectsPaginator](./paginators.md#listqueuequickconnectspaginator)
 - `client.get_paginator("list_queues")` -> [ListQueuesPaginator](./paginators.md#listqueuespaginator)
@@ -4549,6 +4816,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_use_cases")` -> [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
 - `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("search_available_phone_numbers")` -> [SearchAvailablePhoneNumbersPaginator](./paginators.md#searchavailablephonenumberspaginator)
 - `client.get_paginator("search_vocabularies")` -> [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
 
 

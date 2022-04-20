@@ -574,6 +574,20 @@ OrderByType = Literal[
     "DESC",
 ]
 ```
+## OriginTypeType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import OriginTypeType
+
+def get_value() -> OriginTypeType:
+    return "SENSITIVE_DATA_DISCOVERY_JOB"
+```
+
+```python title="Definition"
+OriginTypeType = Literal[
+    "SENSITIVE_DATA_DISCOVERY_JOB",
+]
+```
 ## RelationshipStatusType
 
 ```python title="Usage Example"

@@ -540,10 +540,12 @@ class ClassificationDetailsTypeDef(TypedDict):
     detailedResultsLocation: NotRequired[str],
     jobArn: NotRequired[str],
     jobId: NotRequired[str],
-    result: NotRequired[ClassificationResultTypeDef],  # (1)
+    originType: NotRequired[OriginTypeType],  # (1)
+    result: NotRequired[ClassificationResultTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef) 
+1. See [:material-code-brackets: OriginTypeType](./literals.md#origintypetype) 
+2. See [:material-code-braces: ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef) 
 ## ClassificationExportConfigurationTypeDef
 
 ```python title="Usage Example"

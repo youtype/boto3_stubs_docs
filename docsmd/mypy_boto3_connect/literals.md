@@ -597,6 +597,20 @@ ListPhoneNumbersPaginatorName = Literal[
     "list_phone_numbers",
 ]
 ```
+## ListPhoneNumbersV2PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ListPhoneNumbersV2PaginatorName
+
+def get_value() -> ListPhoneNumbersV2PaginatorName:
+    return "list_phone_numbers_v2"
+```
+
+```python title="Definition"
+ListPhoneNumbersV2PaginatorName = Literal[
+    "list_phone_numbers_v2",
+]
+```
 ## ListPromptsPaginatorName
 
 ```python title="Usage Example"
@@ -1030,6 +1044,22 @@ PhoneNumberTypeType = Literal[
     "TOLL_FREE",
 ]
 ```
+## PhoneNumberWorkflowStatusType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import PhoneNumberWorkflowStatusType
+
+def get_value() -> PhoneNumberWorkflowStatusType:
+    return "CLAIMED"
+```
+
+```python title="Definition"
+PhoneNumberWorkflowStatusType = Literal[
+    "CLAIMED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## PhoneTypeType
 
 ```python title="Usage Example"
@@ -1119,6 +1149,20 @@ def get_value() -> ReferenceTypeType:
 ReferenceTypeType = Literal[
     "ATTACHMENT",
     "URL",
+]
+```
+## SearchAvailablePhoneNumbersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SearchAvailablePhoneNumbersPaginatorName
+
+def get_value() -> SearchAvailablePhoneNumbersPaginatorName:
+    return "search_available_phone_numbers"
+```
+
+```python title="Definition"
+SearchAvailablePhoneNumbersPaginatorName = Literal[
+    "search_available_phone_numbers",
 ]
 ```
 ## SearchVocabulariesPaginatorName
@@ -1676,6 +1720,7 @@ PaginatorName = Literal[
     "list_lambda_functions",
     "list_lex_bots",
     "list_phone_numbers",
+    "list_phone_numbers_v2",
     "list_prompts",
     "list_queue_quick_connects",
     "list_queues",
@@ -1688,6 +1733,7 @@ PaginatorName = Literal[
     "list_use_cases",
     "list_user_hierarchy_groups",
     "list_users",
+    "search_available_phone_numbers",
     "search_vocabularies",
 ]
 ```

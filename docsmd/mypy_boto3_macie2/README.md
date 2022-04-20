@@ -141,6 +141,7 @@ def get_value() -> AdminStatusType:
 - [MacieStatusType](./literals.md#maciestatustype)
 - [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
 - [OrderByType](./literals.md#orderbytype)
+- [OriginTypeType](./literals.md#origintypetype)
 - [RelationshipStatusType](./literals.md#relationshipstatustype)
 - [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
 - [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)

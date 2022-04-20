@@ -35838,6 +35838,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listlambdafunctionspaginator">ListLambdaFunctionsPaginator</a></li>
 <li><a href="paginators/#listlexbotspaginator">ListLexBotsPaginator</a></li>
 <li><a href="paginators/#listphonenumberspaginator">ListPhoneNumbersPaginator</a></li>
+<li><a href="paginators/#listphonenumbersv2paginator">ListPhoneNumbersV2Paginator</a></li>
 <li><a href="paginators/#listpromptspaginator">ListPromptsPaginator</a></li>
 <li><a href="paginators/#listqueuequickconnectspaginator">ListQueueQuickConnectsPaginator</a></li>
 <li><a href="paginators/#listqueuespaginator">ListQueuesPaginator</a></li>
@@ -35850,6 +35851,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listusecasespaginator">ListUseCasesPaginator</a></li>
 <li><a href="paginators/#listuserhierarchygroupspaginator">ListUserHierarchyGroupsPaginator</a></li>
 <li><a href="paginators/#listuserspaginator">ListUsersPaginator</a></li>
+<li><a href="paginators/#searchavailablephonenumberspaginator">SearchAvailablePhoneNumbersPaginator</a></li>
 <li><a href="paginators/#searchvocabulariespaginator">SearchVocabulariesPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
@@ -35896,6 +35898,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listlambdafunctionspaginatorname">ListLambdaFunctionsPaginatorName</a></li>
 <li><a href="literals/#listlexbotspaginatorname">ListLexBotsPaginatorName</a></li>
 <li><a href="literals/#listphonenumberspaginatorname">ListPhoneNumbersPaginatorName</a></li>
+<li><a href="literals/#listphonenumbersv2paginatorname">ListPhoneNumbersV2PaginatorName</a></li>
 <li><a href="literals/#listpromptspaginatorname">ListPromptsPaginatorName</a></li>
 <li><a href="literals/#listqueuequickconnectspaginatorname">ListQueueQuickConnectsPaginatorName</a></li>
 <li><a href="literals/#listqueuespaginatorname">ListQueuesPaginatorName</a></li>
@@ -35910,12 +35913,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listuserspaginatorname">ListUsersPaginatorName</a></li>
 <li><a href="literals/#phonenumbercountrycodetype">PhoneNumberCountryCodeType</a></li>
 <li><a href="literals/#phonenumbertypetype">PhoneNumberTypeType</a></li>
+<li><a href="literals/#phonenumberworkflowstatustype">PhoneNumberWorkflowStatusType</a></li>
 <li><a href="literals/#phonetypetype">PhoneTypeType</a></li>
 <li><a href="literals/#queuestatustype">QueueStatusType</a></li>
 <li><a href="literals/#queuetypetype">QueueTypeType</a></li>
 <li><a href="literals/#quickconnecttypetype">QuickConnectTypeType</a></li>
 <li><a href="literals/#referencestatustype">ReferenceStatusType</a></li>
 <li><a href="literals/#referencetypetype">ReferenceTypeType</a></li>
+<li><a href="literals/#searchavailablephonenumberspaginatorname">SearchAvailablePhoneNumbersPaginatorName</a></li>
 <li><a href="literals/#searchvocabulariespaginatorname">SearchVocabulariesPaginatorName</a></li>
 <li><a href="literals/#sourcetypetype">SourceTypeType</a></li>
 <li><a href="literals/#statistictype">StatisticType</a></li>
@@ -35953,14 +35958,19 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#associateinstancestorageconfigresponsetypedef">AssociateInstanceStorageConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#associatelambdafunctionrequestrequesttypedef">AssociateLambdaFunctionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatelexbotrequestrequesttypedef">AssociateLexBotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#associatephonenumbercontactflowrequestrequesttypedef">AssociatePhoneNumberContactFlowRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatequeuequickconnectsrequestrequesttypedef">AssociateQueueQuickConnectsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associateroutingprofilequeuesrequestrequesttypedef">AssociateRoutingProfileQueuesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatesecuritykeyrequestrequesttypedef">AssociateSecurityKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associatesecuritykeyresponsetypedef">AssociateSecurityKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#attachmentreferencetypedef">AttachmentReferenceTypeDef</a></li>
 <li><a href="type_defs/#attributetypedef">AttributeTypeDef</a></li>
+<li><a href="type_defs/#availablenumbersummarytypedef">AvailableNumberSummaryTypeDef</a></li>
 <li><a href="type_defs/#chatmessagetypedef">ChatMessageTypeDef</a></li>
 <li><a href="type_defs/#chatstreamingconfigurationtypedef">ChatStreamingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#claimphonenumberrequestrequesttypedef">ClaimPhoneNumberRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#claimphonenumberresponsetypedef">ClaimPhoneNumberResponseTypeDef</a></li>
+<li><a href="type_defs/#claimedphonenumbersummarytypedef">ClaimedPhoneNumberSummaryTypeDef</a></li>
 <li><a href="type_defs/#contactflowmodulesummarytypedef">ContactFlowModuleSummaryTypeDef</a></li>
 <li><a href="type_defs/#contactflowmoduletypedef">ContactFlowModuleTypeDef</a></li>
 <li><a href="type_defs/#contactflowsummarytypedef">ContactFlowSummaryTypeDef</a></li>
@@ -36027,6 +36037,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeinstanceresponsetypedef">DescribeInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#describeinstancestorageconfigrequestrequesttypedef">DescribeInstanceStorageConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeinstancestorageconfigresponsetypedef">DescribeInstanceStorageConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#describephonenumberrequestrequesttypedef">DescribePhoneNumberRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describephonenumberresponsetypedef">DescribePhoneNumberResponseTypeDef</a></li>
 <li><a href="type_defs/#describequeuerequestrequesttypedef">DescribeQueueRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describequeueresponsetypedef">DescribeQueueResponseTypeDef</a></li>
 <li><a href="type_defs/#describequickconnectrequestrequesttypedef">DescribeQuickConnectRequestRequestTypeDef</a></li>
@@ -36049,6 +36061,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#disassociateinstancestorageconfigrequestrequesttypedef">DisassociateInstanceStorageConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatelambdafunctionrequestrequesttypedef">DisassociateLambdaFunctionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatelexbotrequestrequesttypedef">DisassociateLexBotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disassociatephonenumbercontactflowrequestrequesttypedef">DisassociatePhoneNumberContactFlowRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatequeuequickconnectsrequestrequesttypedef">DisassociateQueueQuickConnectsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociateroutingprofilequeuesrequestrequesttypedef">DisassociateRoutingProfileQueuesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatesecuritykeyrequestrequesttypedef">DisassociateSecurityKeyRequestRequestTypeDef</a></li>
@@ -36133,6 +36146,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listphonenumbersrequestlistphonenumberspaginatetypedef">ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listphonenumbersrequestrequesttypedef">ListPhoneNumbersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listphonenumbersresponsetypedef">ListPhoneNumbersResponseTypeDef</a></li>
+<li><a href="type_defs/#listphonenumberssummarytypedef">ListPhoneNumbersSummaryTypeDef</a></li>
+<li><a href="type_defs/#listphonenumbersv2requestlistphonenumbersv2paginatetypedef">ListPhoneNumbersV2RequestListPhoneNumbersV2PaginateTypeDef</a></li>
+<li><a href="type_defs/#listphonenumbersv2requestrequesttypedef">ListPhoneNumbersV2RequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listphonenumbersv2responsetypedef">ListPhoneNumbersV2ResponseTypeDef</a></li>
 <li><a href="type_defs/#listpromptsrequestlistpromptspaginatetypedef">ListPromptsRequestListPromptsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpromptsrequestrequesttypedef">ListPromptsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listpromptsresponsetypedef">ListPromptsResponseTypeDef</a></li>
@@ -36176,6 +36193,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#participantdetailstypedef">ParticipantDetailsTypeDef</a></li>
 <li><a href="type_defs/#phonenumberquickconnectconfigtypedef">PhoneNumberQuickConnectConfigTypeDef</a></li>
+<li><a href="type_defs/#phonenumberstatustypedef">PhoneNumberStatusTypeDef</a></li>
 <li><a href="type_defs/#phonenumbersummarytypedef">PhoneNumberSummaryTypeDef</a></li>
 <li><a href="type_defs/#promptsummarytypedef">PromptSummaryTypeDef</a></li>
 <li><a href="type_defs/#queueinfotypedef">QueueInfoTypeDef</a></li>
@@ -36188,6 +36206,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#quickconnecttypedef">QuickConnectTypeDef</a></li>
 <li><a href="type_defs/#referencesummarytypedef">ReferenceSummaryTypeDef</a></li>
 <li><a href="type_defs/#referencetypedef">ReferenceTypeDef</a></li>
+<li><a href="type_defs/#releasephonenumberrequestrequesttypedef">ReleasePhoneNumberRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#resumecontactrecordingrequestrequesttypedef">ResumeContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#routingprofilequeueconfigsummarytypedef">RoutingProfileQueueConfigSummaryTypeDef</a></li>
@@ -36196,6 +36215,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#routingprofilesummarytypedef">RoutingProfileSummaryTypeDef</a></li>
 <li><a href="type_defs/#routingprofiletypedef">RoutingProfileTypeDef</a></li>
 <li><a href="type_defs/#s3configtypedef">S3ConfigTypeDef</a></li>
+<li><a href="type_defs/#searchavailablephonenumbersrequestrequesttypedef">SearchAvailablePhoneNumbersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#searchavailablephonenumbersrequestsearchavailablephonenumberspaginatetypedef">SearchAvailablePhoneNumbersRequestSearchAvailablePhoneNumbersPaginateTypeDef</a></li>
+<li><a href="type_defs/#searchavailablephonenumbersresponsetypedef">SearchAvailablePhoneNumbersResponseTypeDef</a></li>
 <li><a href="type_defs/#searchvocabulariesrequestrequesttypedef">SearchVocabulariesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#searchvocabulariesrequestsearchvocabulariespaginatetypedef">SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef</a></li>
 <li><a href="type_defs/#searchvocabulariesresponsetypedef">SearchVocabulariesResponseTypeDef</a></li>
@@ -36230,6 +36252,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatehoursofoperationrequestrequesttypedef">UpdateHoursOfOperationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateinstanceattributerequestrequesttypedef">UpdateInstanceAttributeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateinstancestorageconfigrequestrequesttypedef">UpdateInstanceStorageConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatephonenumberrequestrequesttypedef">UpdatePhoneNumberRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatephonenumberresponsetypedef">UpdatePhoneNumberResponseTypeDef</a></li>
 <li><a href="type_defs/#updatequeuehoursofoperationrequestrequesttypedef">UpdateQueueHoursOfOperationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatequeuemaxcontactsrequestrequesttypedef">UpdateQueueMaxContactsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatequeuenamerequestrequesttypedef">UpdateQueueNameRequestRequestTypeDef</a></li>

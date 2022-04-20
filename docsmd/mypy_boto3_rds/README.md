@@ -611,6 +611,8 @@ def get_value() -> AccountAttributesMessageTypeDef:
 - [RevokeDBSecurityGroupIngressResultTypeDef](./type_defs.md#revokedbsecuritygroupingressresulttypedef)
 - [ScalingConfigurationInfoTypeDef](./type_defs.md#scalingconfigurationinfotypedef)
 - [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
+- [ServerlessV2ScalingConfigurationInfoTypeDef](./type_defs.md#serverlessv2scalingconfigurationinfotypedef)
+- [ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef)
 - [SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef)
 - [SourceRegionTypeDef](./type_defs.md#sourceregiontypedef)
 - [StartActivityStreamRequestRequestTypeDef](./type_defs.md#startactivitystreamrequestrequesttypedef)

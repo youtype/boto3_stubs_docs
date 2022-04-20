@@ -778,11 +778,13 @@ class CreateDBClusterMessageRequestTypeDef(TypedDict):
     EnablePerformanceInsights: NotRequired[bool],
     PerformanceInsightsKMSKeyId: NotRequired[str],
     PerformanceInsightsRetentionPeriod: NotRequired[int],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
     SourceRegion: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
 ## CreateDBClusterParameterGroupMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1954,6 +1956,7 @@ class DBClusterTypeDef(TypedDict):
     PerformanceInsightsEnabled: NotRequired[bool],
     PerformanceInsightsKMSKeyId: NotRequired[str],
     PerformanceInsightsRetentionPeriod: NotRequired[int],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationInfoTypeDef],  # (12)
 ```
 
 1. See [:material-code-braces: DBClusterOptionGroupStatusTypeDef](./type_defs.md#dbclusteroptiongroupstatustypedef) 
@@ -1967,6 +1970,7 @@ class DBClusterTypeDef(TypedDict):
 9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 10. See [:material-code-brackets: WriteForwardingStatusType](./literals.md#writeforwardingstatustype) 
 11. See [:material-code-braces: ClusterPendingModifiedValuesTypeDef](./type_defs.md#clusterpendingmodifiedvaluestypedef) 
+12. See [:material-code-braces: ServerlessV2ScalingConfigurationInfoTypeDef](./type_defs.md#serverlessv2scalingconfigurationinfotypedef) 
 ## DBEngineVersionMessageTypeDef
 
 ```python title="Usage Example"
@@ -5903,10 +5907,12 @@ class ModifyDBClusterMessageRequestTypeDef(TypedDict):
     EnablePerformanceInsights: NotRequired[bool],
     PerformanceInsightsKMSKeyId: NotRequired[str],
     PerformanceInsightsRetentionPeriod: NotRequired[int],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
 ## ModifyDBClusterParameterGroupMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -7551,9 +7557,11 @@ class RestoreDBClusterFromS3MessageRequestTypeDef(TypedDict):
     CopyTagsToSnapshot: NotRequired[bool],
     Domain: NotRequired[str],
     DomainIAMRoleName: NotRequired[str],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
 ## RestoreDBClusterFromS3ResultTypeDef
 
 ```python title="Usage Example"
@@ -7615,10 +7623,12 @@ class RestoreDBClusterFromSnapshotMessageRequestTypeDef(TypedDict):
     StorageType: NotRequired[str],
     Iops: NotRequired[int],
     PubliclyAccessible: NotRequired[bool],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
 ## RestoreDBClusterFromSnapshotResultTypeDef
 
 ```python title="Usage Example"
@@ -7678,10 +7688,12 @@ class RestoreDBClusterToPointInTimeMessageRequestTypeDef(TypedDict):
     StorageType: NotRequired[str],
     PubliclyAccessible: NotRequired[bool],
     Iops: NotRequired[int],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
 ## RestoreDBClusterToPointInTimeResultTypeDef
 
 ```python title="Usage Example"
@@ -8028,6 +8040,40 @@ class ScalingConfigurationTypeDef(TypedDict):
     SecondsUntilAutoPause: NotRequired[int],
     TimeoutAction: NotRequired[str],
     SecondsBeforeTimeout: NotRequired[int],
+```
+
+## ServerlessV2ScalingConfigurationInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import ServerlessV2ScalingConfigurationInfoTypeDef
+
+def get_value() -> ServerlessV2ScalingConfigurationInfoTypeDef:
+    return {
+        "MinCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class ServerlessV2ScalingConfigurationInfoTypeDef(TypedDict):
+    MinCapacity: NotRequired[float],
+    MaxCapacity: NotRequired[float],
+```
+
+## ServerlessV2ScalingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import ServerlessV2ScalingConfigurationTypeDef
+
+def get_value() -> ServerlessV2ScalingConfigurationTypeDef:
+    return {
+        "MinCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class ServerlessV2ScalingConfigurationTypeDef(TypedDict):
+    MinCapacity: NotRequired[float],
+    MaxCapacity: NotRequired[float],
 ```
 
 ## SourceRegionMessageTypeDef

@@ -338,7 +338,7 @@ def get_value() -> DescribeJobsRequestDescribeJobsPaginateTypeDef:
 
 ```python title="Definition"
 class DescribeJobsRequestDescribeJobsPaginateTypeDef(TypedDict):
-    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    filters: NotRequired[DescribeJobsRequestFiltersTypeDef],  # (1)
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -375,7 +375,7 @@ def get_value() -> DescribeJobsRequestRequestTypeDef:
 
 ```python title="Definition"
 class DescribeJobsRequestRequestTypeDef(TypedDict):
-    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    filters: NotRequired[DescribeJobsRequestFiltersTypeDef],  # (1)
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
 ```
@@ -416,7 +416,7 @@ def get_value() -> DescribeReplicationConfigurationTemplatesRequestDescribeRepli
 
 ```python title="Definition"
 class DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef(TypedDict):
-    replicationConfigurationTemplateIDs: Sequence[str],
+    replicationConfigurationTemplateIDs: NotRequired[Sequence[str]],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -428,15 +428,15 @@ from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesRe
 
 def get_value() -> DescribeReplicationConfigurationTemplatesRequestRequestTypeDef:
     return {
-        "replicationConfigurationTemplateIDs": ...,
+        "maxResults": ...,
     }
 ```
 
 ```python title="Definition"
 class DescribeReplicationConfigurationTemplatesRequestRequestTypeDef(TypedDict):
-    replicationConfigurationTemplateIDs: Sequence[str],
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    replicationConfigurationTemplateIDs: NotRequired[Sequence[str]],
 ```
 
 ## DescribeReplicationConfigurationTemplatesResponseTypeDef
@@ -474,7 +474,7 @@ def get_value() -> DescribeSourceServersRequestDescribeSourceServersPaginateType
 
 ```python title="Definition"
 class DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef(TypedDict):
-    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    filters: NotRequired[DescribeSourceServersRequestFiltersTypeDef],  # (1)
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -514,7 +514,7 @@ def get_value() -> DescribeSourceServersRequestRequestTypeDef:
 
 ```python title="Definition"
 class DescribeSourceServersRequestRequestTypeDef(TypedDict):
-    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    filters: NotRequired[DescribeSourceServersRequestFiltersTypeDef],  # (1)
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
 ```

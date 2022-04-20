@@ -713,14 +713,16 @@ def create_db_cluster(
     EnablePerformanceInsights: bool = ...,
     PerformanceInsightsKMSKeyId: str = ...,
     PerformanceInsightsRetentionPeriod: int = ...,
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
     SourceRegion: str = ...,
-) -> CreateDBClusterResultTypeDef:  # (3)
+) -> CreateDBClusterResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
-3. See [:material-code-braces: CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+4. See [:material-code-braces: CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3429,13 +3431,15 @@ def modify_db_cluster(
     EnablePerformanceInsights: bool = ...,
     PerformanceInsightsKMSKeyId: str = ...,
     PerformanceInsightsRetentionPeriod: int = ...,
-) -> ModifyDBClusterResultTypeDef:  # (3)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+) -> ModifyDBClusterResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
-3. See [:material-code-braces: ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+4. See [:material-code-braces: ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4405,12 +4409,14 @@ def restore_db_cluster_from_s3(
     CopyTagsToSnapshot: bool = ...,
     Domain: str = ...,
     DomainIAMRoleName: str = ...,
-) -> RestoreDBClusterFromS3ResultTypeDef:  # (2)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
+) -> RestoreDBClusterFromS3ResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+3. See [:material-code-braces: RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4467,13 +4473,15 @@ def restore_db_cluster_from_snapshot(
     StorageType: str = ...,
     Iops: int = ...,
     PubliclyAccessible: bool = ...,
-) -> RestoreDBClusterFromSnapshotResultTypeDef:  # (3)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+) -> RestoreDBClusterFromSnapshotResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
-3. See [:material-code-braces: RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+4. See [:material-code-braces: RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4524,13 +4532,15 @@ def restore_db_cluster_to_point_in_time(
     StorageType: str = ...,
     PubliclyAccessible: bool = ...,
     Iops: int = ...,
-) -> RestoreDBClusterToPointInTimeResultTypeDef:  # (3)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+) -> RestoreDBClusterToPointInTimeResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
-3. See [:material-code-braces: RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef) 
+3. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+4. See [:material-code-braces: RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

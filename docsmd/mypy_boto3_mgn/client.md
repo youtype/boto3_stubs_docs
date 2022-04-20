@@ -314,7 +314,7 @@ Type annotations and code completion for `#!python boto3.client("mgn").describe_
 def describe_jobs(
     self,
     *,
-    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    filters: DescribeJobsRequestFiltersTypeDef = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
 ) -> DescribeJobsResponseTypeDef:  # (2)
@@ -346,9 +346,9 @@ Type annotations and code completion for `#!python boto3.client("mgn").describe_
 def describe_replication_configuration_templates(
     self,
     *,
-    replicationConfigurationTemplateIDs: Sequence[str],
     maxResults: int = ...,
     nextToken: str = ...,
+    replicationConfigurationTemplateIDs: Sequence[str] = ...,
 ) -> DescribeReplicationConfigurationTemplatesResponseTypeDef:  # (1)
     ...
 ```
@@ -358,7 +358,7 @@ def describe_replication_configuration_templates(
 
 ```python title="Usage example with kwargs"
 kwargs: DescribeReplicationConfigurationTemplatesRequestRequestTypeDef = {  # (1)
-    "replicationConfigurationTemplateIDs": ...,
+    "maxResults": ...,
 }
 
 parent.describe_replication_configuration_templates(**kwargs)
@@ -377,7 +377,7 @@ Type annotations and code completion for `#!python boto3.client("mgn").describe_
 def describe_source_servers(
     self,
     *,
-    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    filters: DescribeSourceServersRequestFiltersTypeDef = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
 ) -> DescribeSourceServersResponseTypeDef:  # (2)
