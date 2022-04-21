@@ -304,6 +304,36 @@ parent.batch_get_crawlers(**kwargs)
 
 1. See [:material-code-braces: BatchGetCrawlersRequestRequestTypeDef](./type_defs.md#batchgetcrawlersrequestrequesttypedef) 
 
+### batch\_get\_custom\_entity\_types
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/BatchGetCustomEntityTypes).
+
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_custom_entity_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_custom_entity_types)
+
+```python title="Method definition"
+def batch_get_custom_entity_types(
+    self,
+    *,
+    Names: Sequence[str],
+) -> BatchGetCustomEntityTypesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetCustomEntityTypesResponseTypeDef](./type_defs.md#batchgetcustomentitytypesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetCustomEntityTypesRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.batch_get_custom_entity_types(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetCustomEntityTypesRequestRequestTypeDef](./type_defs.md#batchgetcustomentitytypesrequestrequesttypedef) 
+
 ### batch\_get\_dev\_endpoints
 
 Returns a list of resource metadata for a given list of development endpoint
@@ -781,6 +811,39 @@ parent.create_crawler(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateCrawlerRequestRequestTypeDef](./type_defs.md#createcrawlerrequestrequesttypedef) 
+
+### create\_custom\_entity\_type
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/CreateCustomEntityType).
+
+Type annotations and code completion for `#!python boto3.client("glue").create_custom_entity_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_custom_entity_type)
+
+```python title="Method definition"
+def create_custom_entity_type(
+    self,
+    *,
+    Name: str,
+    RegexString: str,
+    ContextWords: Sequence[str] = ...,
+) -> CreateCustomEntityTypeResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateCustomEntityTypeResponseTypeDef](./type_defs.md#createcustomentitytyperesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateCustomEntityTypeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RegexString": ...,
+}
+
+parent.create_custom_entity_type(**kwargs)
+```
+
+1. See [:material-code-braces: CreateCustomEntityTypeRequestRequestTypeDef](./type_defs.md#createcustomentitytyperequestrequesttypedef) 
 
 ### create\_database
 
@@ -1537,6 +1600,36 @@ parent.delete_crawler(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteCrawlerRequestRequestTypeDef](./type_defs.md#deletecrawlerrequestrequesttypedef) 
+
+### delete\_custom\_entity\_type
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/DeleteCustomEntityType).
+
+Type annotations and code completion for `#!python boto3.client("glue").delete_custom_entity_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_custom_entity_type)
+
+```python title="Method definition"
+def delete_custom_entity_type(
+    self,
+    *,
+    Name: str,
+) -> DeleteCustomEntityTypeResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteCustomEntityTypeResponseTypeDef](./type_defs.md#deletecustomentitytyperesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomEntityTypeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.delete_custom_entity_type(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteCustomEntityTypeRequestRequestTypeDef](./type_defs.md#deletecustomentitytyperequestrequesttypedef) 
 
 ### delete\_database
 
@@ -2476,6 +2569,36 @@ parent.get_crawlers(**kwargs)
 ```
 
 1. See [:material-code-braces: GetCrawlersRequestRequestTypeDef](./type_defs.md#getcrawlersrequestrequesttypedef) 
+
+### get\_custom\_entity\_type
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetCustomEntityType).
+
+Type annotations and code completion for `#!python boto3.client("glue").get_custom_entity_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_custom_entity_type)
+
+```python title="Method definition"
+def get_custom_entity_type(
+    self,
+    *,
+    Name: str,
+) -> GetCustomEntityTypeResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCustomEntityTypeResponseTypeDef](./type_defs.md#getcustomentitytyperesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCustomEntityTypeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.get_custom_entity_type(**kwargs)
+```
+
+1. See [:material-code-braces: GetCustomEntityTypeRequestRequestTypeDef](./type_defs.md#getcustomentitytyperequestrequesttypedef) 
 
 ### get\_data\_catalog\_encryption\_settings
 
@@ -4097,6 +4220,37 @@ parent.list_crawlers(**kwargs)
 ```
 
 1. See [:material-code-braces: ListCrawlersRequestRequestTypeDef](./type_defs.md#listcrawlersrequestrequesttypedef) 
+
+### list\_custom\_entity\_types
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/ListCustomEntityTypes).
+
+Type annotations and code completion for `#!python boto3.client("glue").list_custom_entity_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_custom_entity_types)
+
+```python title="Method definition"
+def list_custom_entity_types(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCustomEntityTypesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCustomEntityTypesResponseTypeDef](./type_defs.md#listcustomentitytypesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomEntityTypesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_custom_entity_types(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomEntityTypesRequestRequestTypeDef](./type_defs.md#listcustomentitytypesrequestrequesttypedef) 
 
 ### list\_dev\_endpoints
 

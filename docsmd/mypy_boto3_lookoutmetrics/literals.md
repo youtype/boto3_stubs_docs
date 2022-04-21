@@ -126,6 +126,22 @@ CSVFileCompressionType = Literal[
     "NONE",
 ]
 ```
+## ConfidenceType
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.literals import ConfidenceType
+
+def get_value() -> ConfidenceType:
+    return "HIGH"
+```
+
+```python title="Definition"
+ConfidenceType = Literal[
+    "HIGH",
+    "LOW",
+    "NONE",
+]
+```
 ## FrequencyType
 
 ```python title="Usage Example"

@@ -35825,6 +35825,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#getchannelschedulepaginator">GetChannelSchedulePaginator</a></li>
 <li><a href="paginators/#listalertspaginator">ListAlertsPaginator</a></li>
 <li><a href="paginators/#listchannelspaginator">ListChannelsPaginator</a></li>
+<li><a href="paginators/#listlivesourcespaginator">ListLiveSourcesPaginator</a></li>
 <li><a href="paginators/#listplaybackconfigurationspaginator">ListPlaybackConfigurationsPaginator</a></li>
 <li><a href="paginators/#listprefetchschedulespaginator">ListPrefetchSchedulesPaginator</a></li>
 <li><a href="paginators/#listsourcelocationspaginator">ListSourceLocationsPaginator</a></li>
@@ -35843,6 +35844,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#getchannelschedulepaginatorname">GetChannelSchedulePaginatorName</a></li>
 <li><a href="literals/#listalertspaginatorname">ListAlertsPaginatorName</a></li>
 <li><a href="literals/#listchannelspaginatorname">ListChannelsPaginatorName</a></li>
+<li><a href="literals/#listlivesourcespaginatorname">ListLiveSourcesPaginatorName</a></li>
 <li><a href="literals/#listplaybackconfigurationspaginatorname">ListPlaybackConfigurationsPaginatorName</a></li>
 <li><a href="literals/#listprefetchschedulespaginatorname">ListPrefetchSchedulesPaginatorName</a></li>
 <li><a href="literals/#listsourcelocationspaginatorname">ListSourceLocationsPaginatorName</a></li>
@@ -35854,6 +35856,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#playbackmodetype">PlaybackModeType</a></li>
 <li><a href="literals/#relativepositiontype">RelativePositionType</a></li>
 <li><a href="literals/#scheduleentrytypetype">ScheduleEntryTypeType</a></li>
+<li><a href="literals/#tiertype">TierType</a></li>
 <li><a href="literals/#typetype">TypeType</a></li>
 <li><a href="literals/#mediatailorservicename">MediaTailorServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -35884,6 +35887,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#configurelogsforplaybackconfigurationresponsetypedef">ConfigureLogsForPlaybackConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#createchannelrequestrequesttypedef">CreateChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createchannelresponsetypedef">CreateChannelResponseTypeDef</a></li>
+<li><a href="type_defs/#createlivesourcerequestrequesttypedef">CreateLiveSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createlivesourceresponsetypedef">CreateLiveSourceResponseTypeDef</a></li>
 <li><a href="type_defs/#createprefetchschedulerequestrequesttypedef">CreatePrefetchScheduleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createprefetchscheduleresponsetypedef">CreatePrefetchScheduleResponseTypeDef</a></li>
 <li><a href="type_defs/#createprogramrequestrequesttypedef">CreateProgramRequestRequestTypeDef</a></li>
@@ -35898,6 +35903,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#defaultsegmentdeliveryconfigurationtypedef">DefaultSegmentDeliveryConfigurationTypeDef</a></li>
 <li><a href="type_defs/#deletechannelpolicyrequestrequesttypedef">DeleteChannelPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletechannelrequestrequesttypedef">DeleteChannelRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletelivesourcerequestrequesttypedef">DeleteLiveSourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteplaybackconfigurationrequestrequesttypedef">DeletePlaybackConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteprefetchschedulerequestrequesttypedef">DeletePrefetchScheduleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteprogramrequestrequesttypedef">DeleteProgramRequestRequestTypeDef</a></li>
@@ -35905,6 +35911,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletevodsourcerequestrequesttypedef">DeleteVodSourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describechannelrequestrequesttypedef">DescribeChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describechannelresponsetypedef">DescribeChannelResponseTypeDef</a></li>
+<li><a href="type_defs/#describelivesourcerequestrequesttypedef">DescribeLiveSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describelivesourceresponsetypedef">DescribeLiveSourceResponseTypeDef</a></li>
 <li><a href="type_defs/#describeprogramrequestrequesttypedef">DescribeProgramRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeprogramresponsetypedef">DescribeProgramResponseTypeDef</a></li>
 <li><a href="type_defs/#describesourcelocationrequestrequesttypedef">DescribeSourceLocationRequestRequestTypeDef</a></li>
@@ -35930,6 +35938,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listchannelsrequestlistchannelspaginatetypedef">ListChannelsRequestListChannelsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listchannelsrequestrequesttypedef">ListChannelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listchannelsresponsetypedef">ListChannelsResponseTypeDef</a></li>
+<li><a href="type_defs/#listlivesourcesrequestlistlivesourcespaginatetypedef">ListLiveSourcesRequestListLiveSourcesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listlivesourcesrequestrequesttypedef">ListLiveSourcesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listlivesourcesresponsetypedef">ListLiveSourcesResponseTypeDef</a></li>
 <li><a href="type_defs/#listplaybackconfigurationsrequestlistplaybackconfigurationspaginatetypedef">ListPlaybackConfigurationsRequestListPlaybackConfigurationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listplaybackconfigurationsrequestrequesttypedef">ListPlaybackConfigurationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listplaybackconfigurationsresponsetypedef">ListPlaybackConfigurationsResponseTypeDef</a></li>
@@ -35945,6 +35956,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listvodsourcesrequestrequesttypedef">ListVodSourcesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvodsourcesresponsetypedef">ListVodSourcesResponseTypeDef</a></li>
 <li><a href="type_defs/#liveprerollconfigurationtypedef">LivePreRollConfigurationTypeDef</a></li>
+<li><a href="type_defs/#livesourcetypedef">LiveSourceTypeDef</a></li>
 <li><a href="type_defs/#logconfigurationtypedef">LogConfigurationTypeDef</a></li>
 <li><a href="type_defs/#manifestprocessingrulestypedef">ManifestProcessingRulesTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
@@ -35973,6 +35985,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatechannelrequestrequesttypedef">UpdateChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatechannelresponsetypedef">UpdateChannelResponseTypeDef</a></li>
+<li><a href="type_defs/#updatelivesourcerequestrequesttypedef">UpdateLiveSourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatelivesourceresponsetypedef">UpdateLiveSourceResponseTypeDef</a></li>
 <li><a href="type_defs/#updatesourcelocationrequestrequesttypedef">UpdateSourceLocationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatesourcelocationresponsetypedef">UpdateSourceLocationResponseTypeDef</a></li>
 <li><a href="type_defs/#updatevodsourcerequestrequesttypedef">UpdateVodSourceRequestRequestTypeDef</a></li>

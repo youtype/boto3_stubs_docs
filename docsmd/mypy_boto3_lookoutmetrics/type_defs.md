@@ -268,6 +268,61 @@ class AppFlowConfigTypeDef(TypedDict):
     FlowName: NotRequired[str],
 ```
 
+## AttributeValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import AttributeValueTypeDef
+
+def get_value() -> AttributeValueTypeDef:
+    return {
+        "S": ...,
+    }
+```
+
+```python title="Definition"
+class AttributeValueTypeDef(TypedDict):
+    S: NotRequired[str],
+    N: NotRequired[str],
+    B: NotRequired[str],
+    SS: NotRequired[List[str]],
+    NS: NotRequired[List[str]],
+    BS: NotRequired[List[str]],
+```
+
+## AutoDetectionMetricSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import AutoDetectionMetricSourceTypeDef
+
+def get_value() -> AutoDetectionMetricSourceTypeDef:
+    return {
+        "S3SourceConfig": ...,
+    }
+```
+
+```python title="Definition"
+class AutoDetectionMetricSourceTypeDef(TypedDict):
+    S3SourceConfig: NotRequired[AutoDetectionS3SourceConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AutoDetectionS3SourceConfigTypeDef](./type_defs.md#autodetections3sourceconfigtypedef) 
+## AutoDetectionS3SourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import AutoDetectionS3SourceConfigTypeDef
+
+def get_value() -> AutoDetectionS3SourceConfigTypeDef:
+    return {
+        "TemplatedPathList": ...,
+    }
+```
+
+```python title="Definition"
+class AutoDetectionS3SourceConfigTypeDef(TypedDict):
+    TemplatedPathList: NotRequired[Sequence[str]],
+    HistoricalDataPathList: NotRequired[Sequence[str]],
+```
+
 ## BackTestAnomalyDetectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -720,6 +775,185 @@ class DescribeMetricSetResponseTypeDef(TypedDict):
 3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetectMetricSetConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectMetricSetConfigRequestRequestTypeDef
+
+def get_value() -> DetectMetricSetConfigRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "AutoDetectionMetricSource": ...,
+    }
+```
+
+```python title="Definition"
+class DetectMetricSetConfigRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    AutoDetectionMetricSource: AutoDetectionMetricSourceTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: AutoDetectionMetricSourceTypeDef](./type_defs.md#autodetectionmetricsourcetypedef) 
+## DetectMetricSetConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectMetricSetConfigResponseTypeDef
+
+def get_value() -> DetectMetricSetConfigResponseTypeDef:
+    return {
+        "DetectedMetricSetConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetectMetricSetConfigResponseTypeDef(TypedDict):
+    DetectedMetricSetConfig: DetectedMetricSetConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectedMetricSetConfigTypeDef](./type_defs.md#detectedmetricsetconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetectedCsvFormatDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedCsvFormatDescriptorTypeDef
+
+def get_value() -> DetectedCsvFormatDescriptorTypeDef:
+    return {
+        "FileCompression": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedCsvFormatDescriptorTypeDef(TypedDict):
+    FileCompression: NotRequired[DetectedFieldTypeDef],  # (1)
+    Charset: NotRequired[DetectedFieldTypeDef],  # (1)
+    ContainsHeader: NotRequired[DetectedFieldTypeDef],  # (1)
+    Delimiter: NotRequired[DetectedFieldTypeDef],  # (1)
+    HeaderList: NotRequired[DetectedFieldTypeDef],  # (1)
+    QuoteSymbol: NotRequired[DetectedFieldTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+2. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+3. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+4. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+5. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+6. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+## DetectedFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedFieldTypeDef
+
+def get_value() -> DetectedFieldTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedFieldTypeDef(TypedDict):
+    Value: NotRequired[AttributeValueTypeDef],  # (1)
+    Confidence: NotRequired[ConfidenceType],  # (2)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ConfidenceType](./literals.md#confidencetype) 
+## DetectedFileFormatDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedFileFormatDescriptorTypeDef
+
+def get_value() -> DetectedFileFormatDescriptorTypeDef:
+    return {
+        "CsvFormatDescriptor": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedFileFormatDescriptorTypeDef(TypedDict):
+    CsvFormatDescriptor: NotRequired[DetectedCsvFormatDescriptorTypeDef],  # (1)
+    JsonFormatDescriptor: NotRequired[DetectedJsonFormatDescriptorTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DetectedCsvFormatDescriptorTypeDef](./type_defs.md#detectedcsvformatdescriptortypedef) 
+2. See [:material-code-braces: DetectedJsonFormatDescriptorTypeDef](./type_defs.md#detectedjsonformatdescriptortypedef) 
+## DetectedJsonFormatDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedJsonFormatDescriptorTypeDef
+
+def get_value() -> DetectedJsonFormatDescriptorTypeDef:
+    return {
+        "FileCompression": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedJsonFormatDescriptorTypeDef(TypedDict):
+    FileCompression: NotRequired[DetectedFieldTypeDef],  # (1)
+    Charset: NotRequired[DetectedFieldTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+2. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+## DetectedMetricSetConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedMetricSetConfigTypeDef
+
+def get_value() -> DetectedMetricSetConfigTypeDef:
+    return {
+        "Offset": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedMetricSetConfigTypeDef(TypedDict):
+    Offset: NotRequired[DetectedFieldTypeDef],  # (1)
+    MetricSetFrequency: NotRequired[DetectedFieldTypeDef],  # (1)
+    MetricSource: NotRequired[DetectedMetricSourceTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+2. See [:material-code-braces: DetectedFieldTypeDef](./type_defs.md#detectedfieldtypedef) 
+3. See [:material-code-braces: DetectedMetricSourceTypeDef](./type_defs.md#detectedmetricsourcetypedef) 
+## DetectedMetricSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedMetricSourceTypeDef
+
+def get_value() -> DetectedMetricSourceTypeDef:
+    return {
+        "S3SourceConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedMetricSourceTypeDef(TypedDict):
+    S3SourceConfig: NotRequired[DetectedS3SourceConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DetectedS3SourceConfigTypeDef](./type_defs.md#detecteds3sourceconfigtypedef) 
+## DetectedS3SourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DetectedS3SourceConfigTypeDef
+
+def get_value() -> DetectedS3SourceConfigTypeDef:
+    return {
+        "FileFormatDescriptor": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedS3SourceConfigTypeDef(TypedDict):
+    FileFormatDescriptor: NotRequired[DetectedFileFormatDescriptorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DetectedFileFormatDescriptorTypeDef](./type_defs.md#detectedfileformatdescriptortypedef) 
 ## DimensionContributionTypeDef
 
 ```python title="Usage Example"

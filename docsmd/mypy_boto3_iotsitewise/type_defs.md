@@ -632,6 +632,461 @@ class BatchDisassociateProjectAssetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetAssetPropertyAggregatesEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesEntryTypeDef:
+    return {
+        "entryId": ...,
+        "aggregateTypes": ...,
+        "resolution": ...,
+        "startDate": ...,
+        "endDate": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesEntryTypeDef(TypedDict):
+    entryId: str,
+    aggregateTypes: Sequence[AggregateTypeType],  # (1)
+    resolution: str,
+    startDate: Union[datetime, str],
+    endDate: Union[datetime, str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    qualities: NotRequired[Sequence[QualityType]],  # (2)
+    timeOrdering: NotRequired[TimeOrderingType],  # (3)
+```
+
+1. See [:material-code-brackets: AggregateTypeType](./literals.md#aggregatetypetype) 
+2. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+3. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
+## BatchGetAssetPropertyAggregatesErrorEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesErrorEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesErrorEntryTypeDef:
+    return {
+        "errorCode": ...,
+        "errorMessage": ...,
+        "entryId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesErrorEntryTypeDef(TypedDict):
+    errorCode: BatchGetAssetPropertyAggregatesErrorCodeType,  # (1)
+    errorMessage: str,
+    entryId: str,
+```
+
+1. See [:material-code-brackets: BatchGetAssetPropertyAggregatesErrorCodeType](./literals.md#batchgetassetpropertyaggregateserrorcodetype) 
+## BatchGetAssetPropertyAggregatesErrorInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesErrorInfoTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesErrorInfoTypeDef:
+    return {
+        "errorCode": ...,
+        "errorTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesErrorInfoTypeDef(TypedDict):
+    errorCode: BatchGetAssetPropertyAggregatesErrorCodeType,  # (1)
+    errorTimestamp: datetime,
+```
+
+1. See [:material-code-brackets: BatchGetAssetPropertyAggregatesErrorCodeType](./literals.md#batchgetassetpropertyaggregateserrorcodetype) 
+## BatchGetAssetPropertyAggregatesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesRequestRequestTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesRequestRequestTypeDef:
+    return {
+        "entries": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesRequestRequestTypeDef(TypedDict):
+    entries: Sequence[BatchGetAssetPropertyAggregatesEntryTypeDef],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyAggregatesEntryTypeDef](./type_defs.md#batchgetassetpropertyaggregatesentrytypedef) 
+## BatchGetAssetPropertyAggregatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesResponseTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "successEntries": ...,
+        "skippedEntries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesResponseTypeDef(TypedDict):
+    errorEntries: List[BatchGetAssetPropertyAggregatesErrorEntryTypeDef],  # (1)
+    successEntries: List[BatchGetAssetPropertyAggregatesSuccessEntryTypeDef],  # (2)
+    skippedEntries: List[BatchGetAssetPropertyAggregatesSkippedEntryTypeDef],  # (3)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyAggregatesErrorEntryTypeDef](./type_defs.md#batchgetassetpropertyaggregateserrorentrytypedef) 
+2. See [:material-code-braces: BatchGetAssetPropertyAggregatesSuccessEntryTypeDef](./type_defs.md#batchgetassetpropertyaggregatessuccessentrytypedef) 
+3. See [:material-code-braces: BatchGetAssetPropertyAggregatesSkippedEntryTypeDef](./type_defs.md#batchgetassetpropertyaggregatesskippedentrytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetAssetPropertyAggregatesSkippedEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesSkippedEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesSkippedEntryTypeDef:
+    return {
+        "entryId": ...,
+        "completionStatus": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesSkippedEntryTypeDef(TypedDict):
+    entryId: str,
+    completionStatus: BatchEntryCompletionStatusType,  # (1)
+    errorInfo: NotRequired[BatchGetAssetPropertyAggregatesErrorInfoTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: BatchEntryCompletionStatusType](./literals.md#batchentrycompletionstatustype) 
+2. See [:material-code-braces: BatchGetAssetPropertyAggregatesErrorInfoTypeDef](./type_defs.md#batchgetassetpropertyaggregateserrorinfotypedef) 
+## BatchGetAssetPropertyAggregatesSuccessEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyAggregatesSuccessEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyAggregatesSuccessEntryTypeDef:
+    return {
+        "entryId": ...,
+        "aggregatedValues": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyAggregatesSuccessEntryTypeDef(TypedDict):
+    entryId: str,
+    aggregatedValues: List[AggregatedValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AggregatedValueTypeDef](./type_defs.md#aggregatedvaluetypedef) 
+## BatchGetAssetPropertyValueEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueEntryTypeDef:
+    return {
+        "entryId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueEntryTypeDef(TypedDict):
+    entryId: str,
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+```
+
+## BatchGetAssetPropertyValueErrorEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueErrorEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueErrorEntryTypeDef:
+    return {
+        "errorCode": ...,
+        "errorMessage": ...,
+        "entryId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueErrorEntryTypeDef(TypedDict):
+    errorCode: BatchGetAssetPropertyValueErrorCodeType,  # (1)
+    errorMessage: str,
+    entryId: str,
+```
+
+1. See [:material-code-brackets: BatchGetAssetPropertyValueErrorCodeType](./literals.md#batchgetassetpropertyvalueerrorcodetype) 
+## BatchGetAssetPropertyValueErrorInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueErrorInfoTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueErrorInfoTypeDef:
+    return {
+        "errorCode": ...,
+        "errorTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueErrorInfoTypeDef(TypedDict):
+    errorCode: BatchGetAssetPropertyValueErrorCodeType,  # (1)
+    errorTimestamp: datetime,
+```
+
+1. See [:material-code-brackets: BatchGetAssetPropertyValueErrorCodeType](./literals.md#batchgetassetpropertyvalueerrorcodetype) 
+## BatchGetAssetPropertyValueHistoryEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistoryEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistoryEntryTypeDef:
+    return {
+        "entryId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistoryEntryTypeDef(TypedDict):
+    entryId: str,
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    startDate: NotRequired[Union[datetime, str]],
+    endDate: NotRequired[Union[datetime, str]],
+    qualities: NotRequired[Sequence[QualityType]],  # (1)
+    timeOrdering: NotRequired[TimeOrderingType],  # (2)
+```
+
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
+## BatchGetAssetPropertyValueHistoryErrorEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistoryErrorEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistoryErrorEntryTypeDef:
+    return {
+        "errorCode": ...,
+        "errorMessage": ...,
+        "entryId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistoryErrorEntryTypeDef(TypedDict):
+    errorCode: BatchGetAssetPropertyValueHistoryErrorCodeType,  # (1)
+    errorMessage: str,
+    entryId: str,
+```
+
+1. See [:material-code-brackets: BatchGetAssetPropertyValueHistoryErrorCodeType](./literals.md#batchgetassetpropertyvaluehistoryerrorcodetype) 
+## BatchGetAssetPropertyValueHistoryErrorInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistoryErrorInfoTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistoryErrorInfoTypeDef:
+    return {
+        "errorCode": ...,
+        "errorTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistoryErrorInfoTypeDef(TypedDict):
+    errorCode: BatchGetAssetPropertyValueHistoryErrorCodeType,  # (1)
+    errorTimestamp: datetime,
+```
+
+1. See [:material-code-brackets: BatchGetAssetPropertyValueHistoryErrorCodeType](./literals.md#batchgetassetpropertyvaluehistoryerrorcodetype) 
+## BatchGetAssetPropertyValueHistoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistoryRequestRequestTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistoryRequestRequestTypeDef:
+    return {
+        "entries": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistoryRequestRequestTypeDef(TypedDict):
+    entries: Sequence[BatchGetAssetPropertyValueHistoryEntryTypeDef],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueHistoryEntryTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryentrytypedef) 
+## BatchGetAssetPropertyValueHistoryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistoryResponseTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistoryResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "successEntries": ...,
+        "skippedEntries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistoryResponseTypeDef(TypedDict):
+    errorEntries: List[BatchGetAssetPropertyValueHistoryErrorEntryTypeDef],  # (1)
+    successEntries: List[BatchGetAssetPropertyValueHistorySuccessEntryTypeDef],  # (2)
+    skippedEntries: List[BatchGetAssetPropertyValueHistorySkippedEntryTypeDef],  # (3)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueHistoryErrorEntryTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryerrorentrytypedef) 
+2. See [:material-code-braces: BatchGetAssetPropertyValueHistorySuccessEntryTypeDef](./type_defs.md#batchgetassetpropertyvaluehistorysuccessentrytypedef) 
+3. See [:material-code-braces: BatchGetAssetPropertyValueHistorySkippedEntryTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryskippedentrytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetAssetPropertyValueHistorySkippedEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistorySkippedEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistorySkippedEntryTypeDef:
+    return {
+        "entryId": ...,
+        "completionStatus": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistorySkippedEntryTypeDef(TypedDict):
+    entryId: str,
+    completionStatus: BatchEntryCompletionStatusType,  # (1)
+    errorInfo: NotRequired[BatchGetAssetPropertyValueHistoryErrorInfoTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: BatchEntryCompletionStatusType](./literals.md#batchentrycompletionstatustype) 
+2. See [:material-code-braces: BatchGetAssetPropertyValueHistoryErrorInfoTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryerrorinfotypedef) 
+## BatchGetAssetPropertyValueHistorySuccessEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueHistorySuccessEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueHistorySuccessEntryTypeDef:
+    return {
+        "entryId": ...,
+        "assetPropertyValueHistory": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueHistorySuccessEntryTypeDef(TypedDict):
+    entryId: str,
+    assetPropertyValueHistory: List[AssetPropertyValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
+## BatchGetAssetPropertyValueRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueRequestRequestTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueRequestRequestTypeDef:
+    return {
+        "entries": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueRequestRequestTypeDef(TypedDict):
+    entries: Sequence[BatchGetAssetPropertyValueEntryTypeDef],  # (1)
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueEntryTypeDef](./type_defs.md#batchgetassetpropertyvalueentrytypedef) 
+## BatchGetAssetPropertyValueResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueResponseTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "successEntries": ...,
+        "skippedEntries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueResponseTypeDef(TypedDict):
+    errorEntries: List[BatchGetAssetPropertyValueErrorEntryTypeDef],  # (1)
+    successEntries: List[BatchGetAssetPropertyValueSuccessEntryTypeDef],  # (2)
+    skippedEntries: List[BatchGetAssetPropertyValueSkippedEntryTypeDef],  # (3)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueErrorEntryTypeDef](./type_defs.md#batchgetassetpropertyvalueerrorentrytypedef) 
+2. See [:material-code-braces: BatchGetAssetPropertyValueSuccessEntryTypeDef](./type_defs.md#batchgetassetpropertyvaluesuccessentrytypedef) 
+3. See [:material-code-braces: BatchGetAssetPropertyValueSkippedEntryTypeDef](./type_defs.md#batchgetassetpropertyvalueskippedentrytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetAssetPropertyValueSkippedEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueSkippedEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueSkippedEntryTypeDef:
+    return {
+        "entryId": ...,
+        "completionStatus": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueSkippedEntryTypeDef(TypedDict):
+    entryId: str,
+    completionStatus: BatchEntryCompletionStatusType,  # (1)
+    errorInfo: NotRequired[BatchGetAssetPropertyValueErrorInfoTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: BatchEntryCompletionStatusType](./literals.md#batchentrycompletionstatustype) 
+2. See [:material-code-braces: BatchGetAssetPropertyValueErrorInfoTypeDef](./type_defs.md#batchgetassetpropertyvalueerrorinfotypedef) 
+## BatchGetAssetPropertyValueSuccessEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import BatchGetAssetPropertyValueSuccessEntryTypeDef
+
+def get_value() -> BatchGetAssetPropertyValueSuccessEntryTypeDef:
+    return {
+        "entryId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetAssetPropertyValueSuccessEntryTypeDef(TypedDict):
+    entryId: str,
+    assetPropertyValue: NotRequired[AssetPropertyValueTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
 ## BatchPutAssetPropertyErrorEntryTypeDef
 
 ```python title="Usage Example"

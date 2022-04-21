@@ -449,6 +449,38 @@ parent.describe_metric_set(**kwargs)
 
 1. See [:material-code-braces: DescribeMetricSetRequestRequestTypeDef](./type_defs.md#describemetricsetrequestrequesttypedef) 
 
+### detect\_metric\_set\_config
+
+Detects an Amazon S3 dataset's file format, interval, and offset.
+
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").detect_metric_set_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.detect_metric_set_config)
+
+```python title="Method definition"
+def detect_metric_set_config(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    AutoDetectionMetricSource: AutoDetectionMetricSourceTypeDef,  # (1)
+) -> DetectMetricSetConfigResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AutoDetectionMetricSourceTypeDef](./type_defs.md#autodetectionmetricsourcetypedef) 
+2. See [:material-code-braces: DetectMetricSetConfigResponseTypeDef](./type_defs.md#detectmetricsetconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DetectMetricSetConfigRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "AutoDetectionMetricSource": ...,
+}
+
+parent.detect_metric_set_config(**kwargs)
+```
+
+1. See [:material-code-braces: DetectMetricSetConfigRequestRequestTypeDef](./type_defs.md#detectmetricsetconfigrequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.

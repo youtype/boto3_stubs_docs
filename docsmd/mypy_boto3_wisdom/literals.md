@@ -206,6 +206,50 @@ QueryAssistantPaginatorName = Literal[
     "query_assistant",
 ]
 ```
+## RecommendationSourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.literals import RecommendationSourceTypeType
+
+def get_value() -> RecommendationSourceTypeType:
+    return "ISSUE_DETECTION"
+```
+
+```python title="Definition"
+RecommendationSourceTypeType = Literal[
+    "ISSUE_DETECTION",
+    "OTHER",
+    "RULE_EVALUATION",
+]
+```
+## RecommendationTriggerTypeType
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.literals import RecommendationTriggerTypeType
+
+def get_value() -> RecommendationTriggerTypeType:
+    return "QUERY"
+```
+
+```python title="Definition"
+RecommendationTriggerTypeType = Literal[
+    "QUERY",
+]
+```
+## RecommendationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.literals import RecommendationTypeType
+
+def get_value() -> RecommendationTypeType:
+    return "KNOWLEDGE_CONTENT"
+```
+
+```python title="Definition"
+RecommendationTypeType = Literal[
+    "KNOWLEDGE_CONTENT",
+]
+```
 ## RelevanceLevelType
 
 ```python title="Usage Example"

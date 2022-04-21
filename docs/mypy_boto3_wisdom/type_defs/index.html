@@ -35241,8 +35241,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#queryrecommendationtriggerdatatypedef" class="md-nav__link">
+    QueryRecommendationTriggerDataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#recommendationdatatypedef" class="md-nav__link">
     RecommendationDataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendationtriggerdatatypedef" class="md-nav__link">
+    RecommendationTriggerDataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendationtriggertypedef" class="md-nav__link">
+    RecommendationTriggerTypeDef
   </a>
   
 </li>
@@ -36710,8 +36731,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#queryrecommendationtriggerdatatypedef" class="md-nav__link">
+    QueryRecommendationTriggerDataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#recommendationdatatypedef" class="md-nav__link">
     RecommendationDataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendationtriggerdatatypedef" class="md-nav__link">
+    RecommendationTriggerDataTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendationtriggertypedef" class="md-nav__link">
+    RecommendationTriggerTypeDef
   </a>
   
 </li>
@@ -37583,15 +37625,18 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-wisdo
 <a id="__codelineno-76-3" name="__codelineno-76-3" href="#__codelineno-76-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GetRecommendationsResponseTypeDef</span><span class="p">:</span>
 <a id="__codelineno-76-4" name="__codelineno-76-4" href="#__codelineno-76-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-76-5" name="__codelineno-76-5" href="#__codelineno-76-5"></a>        <span class="s2">&quot;recommendations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-76-6" name="__codelineno-76-6" href="#__codelineno-76-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-76-7" name="__codelineno-76-7" href="#__codelineno-76-7"></a>    <span class="p">}</span>
+<a id="__codelineno-76-6" name="__codelineno-76-6" href="#__codelineno-76-6"></a>        <span class="s2">&quot;triggers&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-76-7" name="__codelineno-76-7" href="#__codelineno-76-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-76-8" name="__codelineno-76-8" href="#__codelineno-76-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a><span class="k">class</span> <span class="nc">GetRecommendationsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-77-2" name="__codelineno-77-2" href="#__codelineno-77-2"></a>    <span class="n">recommendations</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">RecommendationDataTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-77-3" name="__codelineno-77-3" href="#__codelineno-77-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-77-3" name="__codelineno-77-3" href="#__codelineno-77-3"></a>    <span class="n">triggers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">RecommendationTriggerTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-77-4" name="__codelineno-77-4" href="#__codelineno-77-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#recommendationdatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RecommendationDataTypeDef</a> </li>
+<li>See <a href="./#recommendationtriggertypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RecommendationTriggerTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="getsessionrequestrequesttypedef">GetSessionRequestRequestTypeDef</h2>
@@ -38032,388 +38077,439 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-wisdo
 <li>See <a href="./#resultdatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResultDataTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
-<h2 id="recommendationdatatypedef">RecommendationDataTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RecommendationDataTypeDef</span>
+<h2 id="queryrecommendationtriggerdatatypedef">QueryRecommendationTriggerDataTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">QueryRecommendationTriggerDataTypeDef</span>
 <a id="__codelineno-132-2" name="__codelineno-132-2" href="#__codelineno-132-2"></a>
-<a id="__codelineno-132-3" name="__codelineno-132-3" href="#__codelineno-132-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RecommendationDataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-132-3" name="__codelineno-132-3" href="#__codelineno-132-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">QueryRecommendationTriggerDataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-132-4" name="__codelineno-132-4" href="#__codelineno-132-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-132-5" name="__codelineno-132-5" href="#__codelineno-132-5"></a>        <span class="s2">&quot;document&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-132-6" name="__codelineno-132-6" href="#__codelineno-132-6"></a>        <span class="s2">&quot;recommendationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-132-7" name="__codelineno-132-7" href="#__codelineno-132-7"></a>    <span class="p">}</span>
+<a id="__codelineno-132-5" name="__codelineno-132-5" href="#__codelineno-132-5"></a>        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-132-6" name="__codelineno-132-6" href="#__codelineno-132-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a><span class="k">class</span> <span class="nc">RecommendationDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-133-2" name="__codelineno-133-2" href="#__codelineno-133-2"></a>    <span class="n">document</span><span class="p">:</span> <span class="n">DocumentTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-133-3" name="__codelineno-133-3" href="#__codelineno-133-3"></a>    <span class="n">recommendationId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-133-4" name="__codelineno-133-4" href="#__codelineno-133-4"></a>    <span class="n">relevanceLevel</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">RelevanceLevelType</span><span class="p">],</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-133-5" name="__codelineno-133-5" href="#__codelineno-133-5"></a>    <span class="n">relevanceScore</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a><span class="k">class</span> <span class="nc">QueryRecommendationTriggerDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-133-2" name="__codelineno-133-2" href="#__codelineno-133-2"></a>    <span class="n">text</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="recommendationdatatypedef">RecommendationDataTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RecommendationDataTypeDef</span>
+<a id="__codelineno-134-2" name="__codelineno-134-2" href="#__codelineno-134-2"></a>
+<a id="__codelineno-134-3" name="__codelineno-134-3" href="#__codelineno-134-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RecommendationDataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-134-4" name="__codelineno-134-4" href="#__codelineno-134-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-134-5" name="__codelineno-134-5" href="#__codelineno-134-5"></a>        <span class="s2">&quot;document&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-134-6" name="__codelineno-134-6" href="#__codelineno-134-6"></a>        <span class="s2">&quot;recommendationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-134-7" name="__codelineno-134-7" href="#__codelineno-134-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a><span class="k">class</span> <span class="nc">RecommendationDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-135-2" name="__codelineno-135-2" href="#__codelineno-135-2"></a>    <span class="n">document</span><span class="p">:</span> <span class="n">DocumentTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-135-3" name="__codelineno-135-3" href="#__codelineno-135-3"></a>    <span class="n">recommendationId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-135-4" name="__codelineno-135-4" href="#__codelineno-135-4"></a>    <span class="n">relevanceLevel</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">RelevanceLevelType</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-135-5" name="__codelineno-135-5" href="#__codelineno-135-5"></a>    <span class="n">relevanceScore</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
+<a id="__codelineno-135-6" name="__codelineno-135-6" href="#__codelineno-135-6"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">RecommendationTypeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#documenttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> DocumentTypeDef</a> </li>
 <li>See <a href="../literals/#relevanceleveltype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RelevanceLevelType</a> </li>
+<li>See <a href="../literals/#recommendationtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RecommendationTypeType</a> </li>
 </ol>
-<h2 id="removeknowledgebasetemplateurirequestrequesttypedef">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</span>
-<a id="__codelineno-134-2" name="__codelineno-134-2" href="#__codelineno-134-2"></a>
-<a id="__codelineno-134-3" name="__codelineno-134-3" href="#__codelineno-134-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-134-4" name="__codelineno-134-4" href="#__codelineno-134-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-134-5" name="__codelineno-134-5" href="#__codelineno-134-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-134-6" name="__codelineno-134-6" href="#__codelineno-134-6"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a><span class="k">class</span> <span class="nc">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-135-2" name="__codelineno-135-2" href="#__codelineno-135-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</code></pre></div>
-<h2 id="renderingconfigurationtypedef">RenderingConfigurationTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RenderingConfigurationTypeDef</span>
+<h2 id="recommendationtriggerdatatypedef">RecommendationTriggerDataTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RecommendationTriggerDataTypeDef</span>
 <a id="__codelineno-136-2" name="__codelineno-136-2" href="#__codelineno-136-2"></a>
-<a id="__codelineno-136-3" name="__codelineno-136-3" href="#__codelineno-136-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RenderingConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-136-3" name="__codelineno-136-3" href="#__codelineno-136-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RecommendationTriggerDataTypeDef</span><span class="p">:</span>
 <a id="__codelineno-136-4" name="__codelineno-136-4" href="#__codelineno-136-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-136-5" name="__codelineno-136-5" href="#__codelineno-136-5"></a>        <span class="s2">&quot;templateUri&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-136-5" name="__codelineno-136-5" href="#__codelineno-136-5"></a>        <span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-136-6" name="__codelineno-136-6" href="#__codelineno-136-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a><span class="k">class</span> <span class="nc">RenderingConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-137-2" name="__codelineno-137-2" href="#__codelineno-137-2"></a>    <span class="n">templateUri</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a><span class="k">class</span> <span class="nc">RecommendationTriggerDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-137-2" name="__codelineno-137-2" href="#__codelineno-137-2"></a>    <span class="n">query</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">QueryRecommendationTriggerDataTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
-<h2 id="responsemetadatatypedef">ResponseMetadataTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
+<ol>
+<li>See <a href="./#queryrecommendationtriggerdatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> QueryRecommendationTriggerDataTypeDef</a> </li>
+</ol>
+<h2 id="recommendationtriggertypedef">RecommendationTriggerTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RecommendationTriggerTypeDef</span>
 <a id="__codelineno-138-2" name="__codelineno-138-2" href="#__codelineno-138-2"></a>
-<a id="__codelineno-138-3" name="__codelineno-138-3" href="#__codelineno-138-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-138-3" name="__codelineno-138-3" href="#__codelineno-138-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RecommendationTriggerTypeDef</span><span class="p">:</span>
 <a id="__codelineno-138-4" name="__codelineno-138-4" href="#__codelineno-138-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-138-5" name="__codelineno-138-5" href="#__codelineno-138-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-138-6" name="__codelineno-138-6" href="#__codelineno-138-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-138-7" name="__codelineno-138-7" href="#__codelineno-138-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-138-8" name="__codelineno-138-8" href="#__codelineno-138-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-138-9" name="__codelineno-138-9" href="#__codelineno-138-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-138-5" name="__codelineno-138-5" href="#__codelineno-138-5"></a>        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-138-6" name="__codelineno-138-6" href="#__codelineno-138-6"></a>        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-138-7" name="__codelineno-138-7" href="#__codelineno-138-7"></a>        <span class="s2">&quot;recommendationIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-138-8" name="__codelineno-138-8" href="#__codelineno-138-8"></a>        <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-138-9" name="__codelineno-138-9" href="#__codelineno-138-9"></a>        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-138-10" name="__codelineno-138-10" href="#__codelineno-138-10"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a><span class="k">class</span> <span class="nc">ResponseMetadataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-139-2" name="__codelineno-139-2" href="#__codelineno-139-2"></a>    <span class="n">RequestId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-139-3" name="__codelineno-139-3" href="#__codelineno-139-3"></a>    <span class="n">HostId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-139-4" name="__codelineno-139-4" href="#__codelineno-139-4"></a>    <span class="n">HTTPStatusCode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-139-5" name="__codelineno-139-5" href="#__codelineno-139-5"></a>    <span class="n">HTTPHeaders</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-139-6" name="__codelineno-139-6" href="#__codelineno-139-6"></a>    <span class="n">RetryAttempts</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a><span class="k">class</span> <span class="nc">RecommendationTriggerTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-139-2" name="__codelineno-139-2" href="#__codelineno-139-2"></a>    <span class="n">data</span><span class="p">:</span> <span class="n">RecommendationTriggerDataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-139-3" name="__codelineno-139-3" href="#__codelineno-139-3"></a>    <span class="nb">id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-139-4" name="__codelineno-139-4" href="#__codelineno-139-4"></a>    <span class="n">recommendationIds</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-139-5" name="__codelineno-139-5" href="#__codelineno-139-5"></a>    <span class="n">source</span><span class="p">:</span> <span class="n">RecommendationSourceTypeType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-139-6" name="__codelineno-139-6" href="#__codelineno-139-6"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">RecommendationTriggerTypeType</span><span class="p">,</span>  <span class="c1"># (3)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="./#recommendationtriggerdatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RecommendationTriggerDataTypeDef</a> </li>
+<li>See <a href="../literals/#recommendationsourcetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RecommendationSourceTypeType</a> </li>
+<li>See <a href="../literals/#recommendationtriggertypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RecommendationTriggerTypeType</a> </li>
+</ol>
+<h2 id="removeknowledgebasetemplateurirequestrequesttypedef">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</span>
+<a id="__codelineno-140-2" name="__codelineno-140-2" href="#__codelineno-140-2"></a>
+<a id="__codelineno-140-3" name="__codelineno-140-3" href="#__codelineno-140-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-140-4" name="__codelineno-140-4" href="#__codelineno-140-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-140-5" name="__codelineno-140-5" href="#__codelineno-140-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-140-6" name="__codelineno-140-6" href="#__codelineno-140-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a><span class="k">class</span> <span class="nc">RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-141-2" name="__codelineno-141-2" href="#__codelineno-141-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</code></pre></div>
+<h2 id="renderingconfigurationtypedef">RenderingConfigurationTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">RenderingConfigurationTypeDef</span>
+<a id="__codelineno-142-2" name="__codelineno-142-2" href="#__codelineno-142-2"></a>
+<a id="__codelineno-142-3" name="__codelineno-142-3" href="#__codelineno-142-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RenderingConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-142-4" name="__codelineno-142-4" href="#__codelineno-142-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-142-5" name="__codelineno-142-5" href="#__codelineno-142-5"></a>        <span class="s2">&quot;templateUri&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-142-6" name="__codelineno-142-6" href="#__codelineno-142-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a><span class="k">class</span> <span class="nc">RenderingConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-143-2" name="__codelineno-143-2" href="#__codelineno-143-2"></a>    <span class="n">templateUri</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="responsemetadatatypedef">ResponseMetadataTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">ResponseMetadataTypeDef</span>
+<a id="__codelineno-144-2" name="__codelineno-144-2" href="#__codelineno-144-2"></a>
+<a id="__codelineno-144-3" name="__codelineno-144-3" href="#__codelineno-144-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-144-4" name="__codelineno-144-4" href="#__codelineno-144-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-144-5" name="__codelineno-144-5" href="#__codelineno-144-5"></a>        <span class="s2">&quot;RequestId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-144-6" name="__codelineno-144-6" href="#__codelineno-144-6"></a>        <span class="s2">&quot;HostId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-144-7" name="__codelineno-144-7" href="#__codelineno-144-7"></a>        <span class="s2">&quot;HTTPStatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-144-8" name="__codelineno-144-8" href="#__codelineno-144-8"></a>        <span class="s2">&quot;HTTPHeaders&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-144-9" name="__codelineno-144-9" href="#__codelineno-144-9"></a>        <span class="s2">&quot;RetryAttempts&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-144-10" name="__codelineno-144-10" href="#__codelineno-144-10"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a><span class="k">class</span> <span class="nc">ResponseMetadataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-145-2" name="__codelineno-145-2" href="#__codelineno-145-2"></a>    <span class="n">RequestId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-145-3" name="__codelineno-145-3" href="#__codelineno-145-3"></a>    <span class="n">HostId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-145-4" name="__codelineno-145-4" href="#__codelineno-145-4"></a>    <span class="n">HTTPStatusCode</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-145-5" name="__codelineno-145-5" href="#__codelineno-145-5"></a>    <span class="n">HTTPHeaders</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-145-6" name="__codelineno-145-6" href="#__codelineno-145-6"></a>    <span class="n">RetryAttempts</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
 </code></pre></div>
 <h2 id="resultdatatypedef">ResultDataTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">ResultDataTypeDef</span>
-<a id="__codelineno-140-2" name="__codelineno-140-2" href="#__codelineno-140-2"></a>
-<a id="__codelineno-140-3" name="__codelineno-140-3" href="#__codelineno-140-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResultDataTypeDef</span><span class="p">:</span>
-<a id="__codelineno-140-4" name="__codelineno-140-4" href="#__codelineno-140-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-140-5" name="__codelineno-140-5" href="#__codelineno-140-5"></a>        <span class="s2">&quot;document&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-140-6" name="__codelineno-140-6" href="#__codelineno-140-6"></a>        <span class="s2">&quot;resultId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-140-7" name="__codelineno-140-7" href="#__codelineno-140-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">ResultDataTypeDef</span>
+<a id="__codelineno-146-2" name="__codelineno-146-2" href="#__codelineno-146-2"></a>
+<a id="__codelineno-146-3" name="__codelineno-146-3" href="#__codelineno-146-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResultDataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-146-4" name="__codelineno-146-4" href="#__codelineno-146-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-146-5" name="__codelineno-146-5" href="#__codelineno-146-5"></a>        <span class="s2">&quot;document&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-146-6" name="__codelineno-146-6" href="#__codelineno-146-6"></a>        <span class="s2">&quot;resultId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-146-7" name="__codelineno-146-7" href="#__codelineno-146-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a><span class="k">class</span> <span class="nc">ResultDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-141-2" name="__codelineno-141-2" href="#__codelineno-141-2"></a>    <span class="n">document</span><span class="p">:</span> <span class="n">DocumentTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-141-3" name="__codelineno-141-3" href="#__codelineno-141-3"></a>    <span class="n">resultId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-141-4" name="__codelineno-141-4" href="#__codelineno-141-4"></a>    <span class="n">relevanceScore</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a><span class="k">class</span> <span class="nc">ResultDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-147-2" name="__codelineno-147-2" href="#__codelineno-147-2"></a>    <span class="n">document</span><span class="p">:</span> <span class="n">DocumentTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-147-3" name="__codelineno-147-3" href="#__codelineno-147-3"></a>    <span class="n">resultId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-147-4" name="__codelineno-147-4" href="#__codelineno-147-4"></a>    <span class="n">relevanceScore</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#documenttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> DocumentTypeDef</a> </li>
 </ol>
 <h2 id="searchcontentrequestrequesttypedef">SearchContentRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchContentRequestRequestTypeDef</span>
-<a id="__codelineno-142-2" name="__codelineno-142-2" href="#__codelineno-142-2"></a>
-<a id="__codelineno-142-3" name="__codelineno-142-3" href="#__codelineno-142-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchContentRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-142-4" name="__codelineno-142-4" href="#__codelineno-142-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-142-5" name="__codelineno-142-5" href="#__codelineno-142-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-142-6" name="__codelineno-142-6" href="#__codelineno-142-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-142-7" name="__codelineno-142-7" href="#__codelineno-142-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchContentRequestRequestTypeDef</span>
+<a id="__codelineno-148-2" name="__codelineno-148-2" href="#__codelineno-148-2"></a>
+<a id="__codelineno-148-3" name="__codelineno-148-3" href="#__codelineno-148-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchContentRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-148-4" name="__codelineno-148-4" href="#__codelineno-148-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-148-5" name="__codelineno-148-5" href="#__codelineno-148-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-148-6" name="__codelineno-148-6" href="#__codelineno-148-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-148-7" name="__codelineno-148-7" href="#__codelineno-148-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a><span class="k">class</span> <span class="nc">SearchContentRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-143-2" name="__codelineno-143-2" href="#__codelineno-143-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-143-3" name="__codelineno-143-3" href="#__codelineno-143-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-143-4" name="__codelineno-143-4" href="#__codelineno-143-4"></a>    <span class="n">maxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-143-5" name="__codelineno-143-5" href="#__codelineno-143-5"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a><span class="k">class</span> <span class="nc">SearchContentRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-149-2" name="__codelineno-149-2" href="#__codelineno-149-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-149-3" name="__codelineno-149-3" href="#__codelineno-149-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-149-4" name="__codelineno-149-4" href="#__codelineno-149-4"></a>    <span class="n">maxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-149-5" name="__codelineno-149-5" href="#__codelineno-149-5"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#searchexpressiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> SearchExpressionTypeDef</a> </li>
 </ol>
 <h2 id="searchcontentrequestsearchcontentpaginatetypedef">SearchContentRequestSearchContentPaginateTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchContentRequestSearchContentPaginateTypeDef</span>
-<a id="__codelineno-144-2" name="__codelineno-144-2" href="#__codelineno-144-2"></a>
-<a id="__codelineno-144-3" name="__codelineno-144-3" href="#__codelineno-144-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchContentRequestSearchContentPaginateTypeDef</span><span class="p">:</span>
-<a id="__codelineno-144-4" name="__codelineno-144-4" href="#__codelineno-144-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-144-5" name="__codelineno-144-5" href="#__codelineno-144-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-144-6" name="__codelineno-144-6" href="#__codelineno-144-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-144-7" name="__codelineno-144-7" href="#__codelineno-144-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchContentRequestSearchContentPaginateTypeDef</span>
+<a id="__codelineno-150-2" name="__codelineno-150-2" href="#__codelineno-150-2"></a>
+<a id="__codelineno-150-3" name="__codelineno-150-3" href="#__codelineno-150-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchContentRequestSearchContentPaginateTypeDef</span><span class="p">:</span>
+<a id="__codelineno-150-4" name="__codelineno-150-4" href="#__codelineno-150-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-150-5" name="__codelineno-150-5" href="#__codelineno-150-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-150-6" name="__codelineno-150-6" href="#__codelineno-150-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-150-7" name="__codelineno-150-7" href="#__codelineno-150-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a><span class="k">class</span> <span class="nc">SearchContentRequestSearchContentPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-145-2" name="__codelineno-145-2" href="#__codelineno-145-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-145-3" name="__codelineno-145-3" href="#__codelineno-145-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-145-4" name="__codelineno-145-4" href="#__codelineno-145-4"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a><span class="k">class</span> <span class="nc">SearchContentRequestSearchContentPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-151-2" name="__codelineno-151-2" href="#__codelineno-151-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-151-3" name="__codelineno-151-3" href="#__codelineno-151-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-151-4" name="__codelineno-151-4" href="#__codelineno-151-4"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#searchexpressiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> SearchExpressionTypeDef</a> </li>
 <li>See <a href="./#paginatorconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PaginatorConfigTypeDef</a> </li>
 </ol>
 <h2 id="searchcontentresponsetypedef">SearchContentResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchContentResponseTypeDef</span>
-<a id="__codelineno-146-2" name="__codelineno-146-2" href="#__codelineno-146-2"></a>
-<a id="__codelineno-146-3" name="__codelineno-146-3" href="#__codelineno-146-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchContentResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-146-4" name="__codelineno-146-4" href="#__codelineno-146-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-146-5" name="__codelineno-146-5" href="#__codelineno-146-5"></a>        <span class="s2">&quot;contentSummaries&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-146-6" name="__codelineno-146-6" href="#__codelineno-146-6"></a>        <span class="s2">&quot;nextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-146-7" name="__codelineno-146-7" href="#__codelineno-146-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-146-8" name="__codelineno-146-8" href="#__codelineno-146-8"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchContentResponseTypeDef</span>
+<a id="__codelineno-152-2" name="__codelineno-152-2" href="#__codelineno-152-2"></a>
+<a id="__codelineno-152-3" name="__codelineno-152-3" href="#__codelineno-152-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchContentResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-152-4" name="__codelineno-152-4" href="#__codelineno-152-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-152-5" name="__codelineno-152-5" href="#__codelineno-152-5"></a>        <span class="s2">&quot;contentSummaries&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-152-6" name="__codelineno-152-6" href="#__codelineno-152-6"></a>        <span class="s2">&quot;nextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-152-7" name="__codelineno-152-7" href="#__codelineno-152-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-152-8" name="__codelineno-152-8" href="#__codelineno-152-8"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a><span class="k">class</span> <span class="nc">SearchContentResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-147-2" name="__codelineno-147-2" href="#__codelineno-147-2"></a>    <span class="n">contentSummaries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ContentSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-147-3" name="__codelineno-147-3" href="#__codelineno-147-3"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-147-4" name="__codelineno-147-4" href="#__codelineno-147-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a><span class="k">class</span> <span class="nc">SearchContentResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-153-2" name="__codelineno-153-2" href="#__codelineno-153-2"></a>    <span class="n">contentSummaries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ContentSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-153-3" name="__codelineno-153-3" href="#__codelineno-153-3"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-153-4" name="__codelineno-153-4" href="#__codelineno-153-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#contentsummarytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ContentSummaryTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="searchexpressiontypedef">SearchExpressionTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchExpressionTypeDef</span>
-<a id="__codelineno-148-2" name="__codelineno-148-2" href="#__codelineno-148-2"></a>
-<a id="__codelineno-148-3" name="__codelineno-148-3" href="#__codelineno-148-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchExpressionTypeDef</span><span class="p">:</span>
-<a id="__codelineno-148-4" name="__codelineno-148-4" href="#__codelineno-148-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-148-5" name="__codelineno-148-5" href="#__codelineno-148-5"></a>        <span class="s2">&quot;filters&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-148-6" name="__codelineno-148-6" href="#__codelineno-148-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchExpressionTypeDef</span>
+<a id="__codelineno-154-2" name="__codelineno-154-2" href="#__codelineno-154-2"></a>
+<a id="__codelineno-154-3" name="__codelineno-154-3" href="#__codelineno-154-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchExpressionTypeDef</span><span class="p">:</span>
+<a id="__codelineno-154-4" name="__codelineno-154-4" href="#__codelineno-154-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-154-5" name="__codelineno-154-5" href="#__codelineno-154-5"></a>        <span class="s2">&quot;filters&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-154-6" name="__codelineno-154-6" href="#__codelineno-154-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a><span class="k">class</span> <span class="nc">SearchExpressionTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-149-2" name="__codelineno-149-2" href="#__codelineno-149-2"></a>    <span class="n">filters</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a><span class="k">class</span> <span class="nc">SearchExpressionTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-155-2" name="__codelineno-155-2" href="#__codelineno-155-2"></a>    <span class="n">filters</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#filtertypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> FilterTypeDef</a> </li>
 </ol>
 <h2 id="searchsessionsrequestrequesttypedef">SearchSessionsRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchSessionsRequestRequestTypeDef</span>
-<a id="__codelineno-150-2" name="__codelineno-150-2" href="#__codelineno-150-2"></a>
-<a id="__codelineno-150-3" name="__codelineno-150-3" href="#__codelineno-150-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchSessionsRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-150-4" name="__codelineno-150-4" href="#__codelineno-150-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-150-5" name="__codelineno-150-5" href="#__codelineno-150-5"></a>        <span class="s2">&quot;assistantId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-150-6" name="__codelineno-150-6" href="#__codelineno-150-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-150-7" name="__codelineno-150-7" href="#__codelineno-150-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchSessionsRequestRequestTypeDef</span>
+<a id="__codelineno-156-2" name="__codelineno-156-2" href="#__codelineno-156-2"></a>
+<a id="__codelineno-156-3" name="__codelineno-156-3" href="#__codelineno-156-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchSessionsRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-156-4" name="__codelineno-156-4" href="#__codelineno-156-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-156-5" name="__codelineno-156-5" href="#__codelineno-156-5"></a>        <span class="s2">&quot;assistantId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-156-6" name="__codelineno-156-6" href="#__codelineno-156-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-156-7" name="__codelineno-156-7" href="#__codelineno-156-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-151-1" name="__codelineno-151-1" href="#__codelineno-151-1"></a><span class="k">class</span> <span class="nc">SearchSessionsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-151-2" name="__codelineno-151-2" href="#__codelineno-151-2"></a>    <span class="n">assistantId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-151-3" name="__codelineno-151-3" href="#__codelineno-151-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-151-4" name="__codelineno-151-4" href="#__codelineno-151-4"></a>    <span class="n">maxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-151-5" name="__codelineno-151-5" href="#__codelineno-151-5"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a><span class="k">class</span> <span class="nc">SearchSessionsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-157-2" name="__codelineno-157-2" href="#__codelineno-157-2"></a>    <span class="n">assistantId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-157-3" name="__codelineno-157-3" href="#__codelineno-157-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-157-4" name="__codelineno-157-4" href="#__codelineno-157-4"></a>    <span class="n">maxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-157-5" name="__codelineno-157-5" href="#__codelineno-157-5"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#searchexpressiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> SearchExpressionTypeDef</a> </li>
 </ol>
 <h2 id="searchsessionsrequestsearchsessionspaginatetypedef">SearchSessionsRequestSearchSessionsPaginateTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-152-1" name="__codelineno-152-1" href="#__codelineno-152-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchSessionsRequestSearchSessionsPaginateTypeDef</span>
-<a id="__codelineno-152-2" name="__codelineno-152-2" href="#__codelineno-152-2"></a>
-<a id="__codelineno-152-3" name="__codelineno-152-3" href="#__codelineno-152-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchSessionsRequestSearchSessionsPaginateTypeDef</span><span class="p">:</span>
-<a id="__codelineno-152-4" name="__codelineno-152-4" href="#__codelineno-152-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-152-5" name="__codelineno-152-5" href="#__codelineno-152-5"></a>        <span class="s2">&quot;assistantId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-152-6" name="__codelineno-152-6" href="#__codelineno-152-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-152-7" name="__codelineno-152-7" href="#__codelineno-152-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchSessionsRequestSearchSessionsPaginateTypeDef</span>
+<a id="__codelineno-158-2" name="__codelineno-158-2" href="#__codelineno-158-2"></a>
+<a id="__codelineno-158-3" name="__codelineno-158-3" href="#__codelineno-158-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchSessionsRequestSearchSessionsPaginateTypeDef</span><span class="p">:</span>
+<a id="__codelineno-158-4" name="__codelineno-158-4" href="#__codelineno-158-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-158-5" name="__codelineno-158-5" href="#__codelineno-158-5"></a>        <span class="s2">&quot;assistantId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-158-6" name="__codelineno-158-6" href="#__codelineno-158-6"></a>        <span class="s2">&quot;searchExpression&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-158-7" name="__codelineno-158-7" href="#__codelineno-158-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a><span class="k">class</span> <span class="nc">SearchSessionsRequestSearchSessionsPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-153-2" name="__codelineno-153-2" href="#__codelineno-153-2"></a>    <span class="n">assistantId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-153-3" name="__codelineno-153-3" href="#__codelineno-153-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-153-4" name="__codelineno-153-4" href="#__codelineno-153-4"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a><span class="k">class</span> <span class="nc">SearchSessionsRequestSearchSessionsPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-159-2" name="__codelineno-159-2" href="#__codelineno-159-2"></a>    <span class="n">assistantId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-159-3" name="__codelineno-159-3" href="#__codelineno-159-3"></a>    <span class="n">searchExpression</span><span class="p">:</span> <span class="n">SearchExpressionTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-159-4" name="__codelineno-159-4" href="#__codelineno-159-4"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#searchexpressiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> SearchExpressionTypeDef</a> </li>
 <li>See <a href="./#paginatorconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PaginatorConfigTypeDef</a> </li>
 </ol>
 <h2 id="searchsessionsresponsetypedef">SearchSessionsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchSessionsResponseTypeDef</span>
-<a id="__codelineno-154-2" name="__codelineno-154-2" href="#__codelineno-154-2"></a>
-<a id="__codelineno-154-3" name="__codelineno-154-3" href="#__codelineno-154-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchSessionsResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-154-4" name="__codelineno-154-4" href="#__codelineno-154-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-154-5" name="__codelineno-154-5" href="#__codelineno-154-5"></a>        <span class="s2">&quot;nextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-154-6" name="__codelineno-154-6" href="#__codelineno-154-6"></a>        <span class="s2">&quot;sessionSummaries&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-154-7" name="__codelineno-154-7" href="#__codelineno-154-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-154-8" name="__codelineno-154-8" href="#__codelineno-154-8"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SearchSessionsResponseTypeDef</span>
+<a id="__codelineno-160-2" name="__codelineno-160-2" href="#__codelineno-160-2"></a>
+<a id="__codelineno-160-3" name="__codelineno-160-3" href="#__codelineno-160-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SearchSessionsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-160-4" name="__codelineno-160-4" href="#__codelineno-160-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-160-5" name="__codelineno-160-5" href="#__codelineno-160-5"></a>        <span class="s2">&quot;nextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-160-6" name="__codelineno-160-6" href="#__codelineno-160-6"></a>        <span class="s2">&quot;sessionSummaries&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-160-7" name="__codelineno-160-7" href="#__codelineno-160-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-160-8" name="__codelineno-160-8" href="#__codelineno-160-8"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-155-1" name="__codelineno-155-1" href="#__codelineno-155-1"></a><span class="k">class</span> <span class="nc">SearchSessionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-155-2" name="__codelineno-155-2" href="#__codelineno-155-2"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-155-3" name="__codelineno-155-3" href="#__codelineno-155-3"></a>    <span class="n">sessionSummaries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SessionSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-155-4" name="__codelineno-155-4" href="#__codelineno-155-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a><span class="k">class</span> <span class="nc">SearchSessionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-161-2" name="__codelineno-161-2" href="#__codelineno-161-2"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-161-3" name="__codelineno-161-3" href="#__codelineno-161-3"></a>    <span class="n">sessionSummaries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">SessionSummaryTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-161-4" name="__codelineno-161-4" href="#__codelineno-161-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#sessionsummarytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> SessionSummaryTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="serversideencryptionconfigurationtypedef">ServerSideEncryptionConfigurationTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-156-1" name="__codelineno-156-1" href="#__codelineno-156-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">ServerSideEncryptionConfigurationTypeDef</span>
-<a id="__codelineno-156-2" name="__codelineno-156-2" href="#__codelineno-156-2"></a>
-<a id="__codelineno-156-3" name="__codelineno-156-3" href="#__codelineno-156-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ServerSideEncryptionConfigurationTypeDef</span><span class="p">:</span>
-<a id="__codelineno-156-4" name="__codelineno-156-4" href="#__codelineno-156-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-156-5" name="__codelineno-156-5" href="#__codelineno-156-5"></a>        <span class="s2">&quot;kmsKeyId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-156-6" name="__codelineno-156-6" href="#__codelineno-156-6"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-157-1" name="__codelineno-157-1" href="#__codelineno-157-1"></a><span class="k">class</span> <span class="nc">ServerSideEncryptionConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-157-2" name="__codelineno-157-2" href="#__codelineno-157-2"></a>    <span class="n">kmsKeyId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</code></pre></div>
-<h2 id="sessiondatatypedef">SessionDataTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-158-1" name="__codelineno-158-1" href="#__codelineno-158-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SessionDataTypeDef</span>
-<a id="__codelineno-158-2" name="__codelineno-158-2" href="#__codelineno-158-2"></a>
-<a id="__codelineno-158-3" name="__codelineno-158-3" href="#__codelineno-158-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SessionDataTypeDef</span><span class="p">:</span>
-<a id="__codelineno-158-4" name="__codelineno-158-4" href="#__codelineno-158-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-158-5" name="__codelineno-158-5" href="#__codelineno-158-5"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-158-6" name="__codelineno-158-6" href="#__codelineno-158-6"></a>        <span class="s2">&quot;sessionArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-158-7" name="__codelineno-158-7" href="#__codelineno-158-7"></a>        <span class="s2">&quot;sessionId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-158-8" name="__codelineno-158-8" href="#__codelineno-158-8"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-159-1" name="__codelineno-159-1" href="#__codelineno-159-1"></a><span class="k">class</span> <span class="nc">SessionDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-159-2" name="__codelineno-159-2" href="#__codelineno-159-2"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-159-3" name="__codelineno-159-3" href="#__codelineno-159-3"></a>    <span class="n">sessionArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-159-4" name="__codelineno-159-4" href="#__codelineno-159-4"></a>    <span class="n">sessionId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-159-5" name="__codelineno-159-5" href="#__codelineno-159-5"></a>    <span class="n">description</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-159-6" name="__codelineno-159-6" href="#__codelineno-159-6"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
-</code></pre></div>
-<h2 id="sessionsummarytypedef">SessionSummaryTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-160-1" name="__codelineno-160-1" href="#__codelineno-160-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SessionSummaryTypeDef</span>
-<a id="__codelineno-160-2" name="__codelineno-160-2" href="#__codelineno-160-2"></a>
-<a id="__codelineno-160-3" name="__codelineno-160-3" href="#__codelineno-160-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SessionSummaryTypeDef</span><span class="p">:</span>
-<a id="__codelineno-160-4" name="__codelineno-160-4" href="#__codelineno-160-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-160-5" name="__codelineno-160-5" href="#__codelineno-160-5"></a>        <span class="s2">&quot;assistantArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-160-6" name="__codelineno-160-6" href="#__codelineno-160-6"></a>        <span class="s2">&quot;assistantId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-160-7" name="__codelineno-160-7" href="#__codelineno-160-7"></a>        <span class="s2">&quot;sessionArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-160-8" name="__codelineno-160-8" href="#__codelineno-160-8"></a>        <span class="s2">&quot;sessionId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-160-9" name="__codelineno-160-9" href="#__codelineno-160-9"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-161-1" name="__codelineno-161-1" href="#__codelineno-161-1"></a><span class="k">class</span> <span class="nc">SessionSummaryTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-161-2" name="__codelineno-161-2" href="#__codelineno-161-2"></a>    <span class="n">assistantArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-161-3" name="__codelineno-161-3" href="#__codelineno-161-3"></a>    <span class="n">assistantId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-161-4" name="__codelineno-161-4" href="#__codelineno-161-4"></a>    <span class="n">sessionArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-161-5" name="__codelineno-161-5" href="#__codelineno-161-5"></a>    <span class="n">sessionId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-</code></pre></div>
-<h2 id="sourceconfigurationtypedef">SourceConfigurationTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SourceConfigurationTypeDef</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-162-1" name="__codelineno-162-1" href="#__codelineno-162-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">ServerSideEncryptionConfigurationTypeDef</span>
 <a id="__codelineno-162-2" name="__codelineno-162-2" href="#__codelineno-162-2"></a>
-<a id="__codelineno-162-3" name="__codelineno-162-3" href="#__codelineno-162-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SourceConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-162-3" name="__codelineno-162-3" href="#__codelineno-162-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ServerSideEncryptionConfigurationTypeDef</span><span class="p">:</span>
 <a id="__codelineno-162-4" name="__codelineno-162-4" href="#__codelineno-162-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-162-5" name="__codelineno-162-5" href="#__codelineno-162-5"></a>        <span class="s2">&quot;appIntegrations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-162-5" name="__codelineno-162-5" href="#__codelineno-162-5"></a>        <span class="s2">&quot;kmsKeyId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-162-6" name="__codelineno-162-6" href="#__codelineno-162-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a><span class="k">class</span> <span class="nc">SourceConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-163-2" name="__codelineno-163-2" href="#__codelineno-163-2"></a>    <span class="n">appIntegrations</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AppIntegrationsConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-163-1" name="__codelineno-163-1" href="#__codelineno-163-1"></a><span class="k">class</span> <span class="nc">ServerSideEncryptionConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-163-2" name="__codelineno-163-2" href="#__codelineno-163-2"></a>    <span class="n">kmsKeyId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="sessiondatatypedef">SessionDataTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SessionDataTypeDef</span>
+<a id="__codelineno-164-2" name="__codelineno-164-2" href="#__codelineno-164-2"></a>
+<a id="__codelineno-164-3" name="__codelineno-164-3" href="#__codelineno-164-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SessionDataTypeDef</span><span class="p">:</span>
+<a id="__codelineno-164-4" name="__codelineno-164-4" href="#__codelineno-164-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-164-5" name="__codelineno-164-5" href="#__codelineno-164-5"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-164-6" name="__codelineno-164-6" href="#__codelineno-164-6"></a>        <span class="s2">&quot;sessionArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-164-7" name="__codelineno-164-7" href="#__codelineno-164-7"></a>        <span class="s2">&quot;sessionId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-164-8" name="__codelineno-164-8" href="#__codelineno-164-8"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a><span class="k">class</span> <span class="nc">SessionDataTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-165-2" name="__codelineno-165-2" href="#__codelineno-165-2"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-165-3" name="__codelineno-165-3" href="#__codelineno-165-3"></a>    <span class="n">sessionArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-165-4" name="__codelineno-165-4" href="#__codelineno-165-4"></a>    <span class="n">sessionId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-165-5" name="__codelineno-165-5" href="#__codelineno-165-5"></a>    <span class="n">description</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-165-6" name="__codelineno-165-6" href="#__codelineno-165-6"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+</code></pre></div>
+<h2 id="sessionsummarytypedef">SessionSummaryTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SessionSummaryTypeDef</span>
+<a id="__codelineno-166-2" name="__codelineno-166-2" href="#__codelineno-166-2"></a>
+<a id="__codelineno-166-3" name="__codelineno-166-3" href="#__codelineno-166-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SessionSummaryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-166-4" name="__codelineno-166-4" href="#__codelineno-166-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-166-5" name="__codelineno-166-5" href="#__codelineno-166-5"></a>        <span class="s2">&quot;assistantArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-166-6" name="__codelineno-166-6" href="#__codelineno-166-6"></a>        <span class="s2">&quot;assistantId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-166-7" name="__codelineno-166-7" href="#__codelineno-166-7"></a>        <span class="s2">&quot;sessionArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-166-8" name="__codelineno-166-8" href="#__codelineno-166-8"></a>        <span class="s2">&quot;sessionId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-166-9" name="__codelineno-166-9" href="#__codelineno-166-9"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a><span class="k">class</span> <span class="nc">SessionSummaryTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-167-2" name="__codelineno-167-2" href="#__codelineno-167-2"></a>    <span class="n">assistantArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-167-3" name="__codelineno-167-3" href="#__codelineno-167-3"></a>    <span class="n">assistantId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-167-4" name="__codelineno-167-4" href="#__codelineno-167-4"></a>    <span class="n">sessionArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-167-5" name="__codelineno-167-5" href="#__codelineno-167-5"></a>    <span class="n">sessionId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+</code></pre></div>
+<h2 id="sourceconfigurationtypedef">SourceConfigurationTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">SourceConfigurationTypeDef</span>
+<a id="__codelineno-168-2" name="__codelineno-168-2" href="#__codelineno-168-2"></a>
+<a id="__codelineno-168-3" name="__codelineno-168-3" href="#__codelineno-168-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SourceConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-168-4" name="__codelineno-168-4" href="#__codelineno-168-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-168-5" name="__codelineno-168-5" href="#__codelineno-168-5"></a>        <span class="s2">&quot;appIntegrations&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-168-6" name="__codelineno-168-6" href="#__codelineno-168-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a><span class="k">class</span> <span class="nc">SourceConfigurationTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-169-2" name="__codelineno-169-2" href="#__codelineno-169-2"></a>    <span class="n">appIntegrations</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">AppIntegrationsConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#appintegrationsconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> AppIntegrationsConfigurationTypeDef</a> </li>
 </ol>
 <h2 id="startcontentuploadrequestrequesttypedef">StartContentUploadRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-164-1" name="__codelineno-164-1" href="#__codelineno-164-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">StartContentUploadRequestRequestTypeDef</span>
-<a id="__codelineno-164-2" name="__codelineno-164-2" href="#__codelineno-164-2"></a>
-<a id="__codelineno-164-3" name="__codelineno-164-3" href="#__codelineno-164-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StartContentUploadRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-164-4" name="__codelineno-164-4" href="#__codelineno-164-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-164-5" name="__codelineno-164-5" href="#__codelineno-164-5"></a>        <span class="s2">&quot;contentType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-164-6" name="__codelineno-164-6" href="#__codelineno-164-6"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-164-7" name="__codelineno-164-7" href="#__codelineno-164-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">StartContentUploadRequestRequestTypeDef</span>
+<a id="__codelineno-170-2" name="__codelineno-170-2" href="#__codelineno-170-2"></a>
+<a id="__codelineno-170-3" name="__codelineno-170-3" href="#__codelineno-170-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StartContentUploadRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-170-4" name="__codelineno-170-4" href="#__codelineno-170-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-170-5" name="__codelineno-170-5" href="#__codelineno-170-5"></a>        <span class="s2">&quot;contentType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-170-6" name="__codelineno-170-6" href="#__codelineno-170-6"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-170-7" name="__codelineno-170-7" href="#__codelineno-170-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-165-1" name="__codelineno-165-1" href="#__codelineno-165-1"></a><span class="k">class</span> <span class="nc">StartContentUploadRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-165-2" name="__codelineno-165-2" href="#__codelineno-165-2"></a>    <span class="n">contentType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-165-3" name="__codelineno-165-3" href="#__codelineno-165-3"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a><span class="k">class</span> <span class="nc">StartContentUploadRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-171-2" name="__codelineno-171-2" href="#__codelineno-171-2"></a>    <span class="n">contentType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-171-3" name="__codelineno-171-3" href="#__codelineno-171-3"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </code></pre></div>
 <h2 id="startcontentuploadresponsetypedef">StartContentUploadResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-166-1" name="__codelineno-166-1" href="#__codelineno-166-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">StartContentUploadResponseTypeDef</span>
-<a id="__codelineno-166-2" name="__codelineno-166-2" href="#__codelineno-166-2"></a>
-<a id="__codelineno-166-3" name="__codelineno-166-3" href="#__codelineno-166-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StartContentUploadResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-166-4" name="__codelineno-166-4" href="#__codelineno-166-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-166-5" name="__codelineno-166-5" href="#__codelineno-166-5"></a>        <span class="s2">&quot;headersToInclude&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-166-6" name="__codelineno-166-6" href="#__codelineno-166-6"></a>        <span class="s2">&quot;uploadId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-166-7" name="__codelineno-166-7" href="#__codelineno-166-7"></a>        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-166-8" name="__codelineno-166-8" href="#__codelineno-166-8"></a>        <span class="s2">&quot;urlExpiry&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-166-9" name="__codelineno-166-9" href="#__codelineno-166-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-166-10" name="__codelineno-166-10" href="#__codelineno-166-10"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">StartContentUploadResponseTypeDef</span>
+<a id="__codelineno-172-2" name="__codelineno-172-2" href="#__codelineno-172-2"></a>
+<a id="__codelineno-172-3" name="__codelineno-172-3" href="#__codelineno-172-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StartContentUploadResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-172-4" name="__codelineno-172-4" href="#__codelineno-172-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-172-5" name="__codelineno-172-5" href="#__codelineno-172-5"></a>        <span class="s2">&quot;headersToInclude&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-172-6" name="__codelineno-172-6" href="#__codelineno-172-6"></a>        <span class="s2">&quot;uploadId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-172-7" name="__codelineno-172-7" href="#__codelineno-172-7"></a>        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-172-8" name="__codelineno-172-8" href="#__codelineno-172-8"></a>        <span class="s2">&quot;urlExpiry&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-172-9" name="__codelineno-172-9" href="#__codelineno-172-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-172-10" name="__codelineno-172-10" href="#__codelineno-172-10"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-167-1" name="__codelineno-167-1" href="#__codelineno-167-1"></a><span class="k">class</span> <span class="nc">StartContentUploadResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-167-2" name="__codelineno-167-2" href="#__codelineno-167-2"></a>    <span class="n">headersToInclude</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-167-3" name="__codelineno-167-3" href="#__codelineno-167-3"></a>    <span class="n">uploadId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-167-4" name="__codelineno-167-4" href="#__codelineno-167-4"></a>    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-167-5" name="__codelineno-167-5" href="#__codelineno-167-5"></a>    <span class="n">urlExpiry</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
-<a id="__codelineno-167-6" name="__codelineno-167-6" href="#__codelineno-167-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a><span class="k">class</span> <span class="nc">StartContentUploadResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-173-2" name="__codelineno-173-2" href="#__codelineno-173-2"></a>    <span class="n">headersToInclude</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-173-3" name="__codelineno-173-3" href="#__codelineno-173-3"></a>    <span class="n">uploadId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-173-4" name="__codelineno-173-4" href="#__codelineno-173-4"></a>    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-173-5" name="__codelineno-173-5" href="#__codelineno-173-5"></a>    <span class="n">urlExpiry</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
+<a id="__codelineno-173-6" name="__codelineno-173-6" href="#__codelineno-173-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-168-1" name="__codelineno-168-1" href="#__codelineno-168-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">TagResourceRequestRequestTypeDef</span>
-<a id="__codelineno-168-2" name="__codelineno-168-2" href="#__codelineno-168-2"></a>
-<a id="__codelineno-168-3" name="__codelineno-168-3" href="#__codelineno-168-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagResourceRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-168-4" name="__codelineno-168-4" href="#__codelineno-168-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-168-5" name="__codelineno-168-5" href="#__codelineno-168-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-168-6" name="__codelineno-168-6" href="#__codelineno-168-6"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-168-7" name="__codelineno-168-7" href="#__codelineno-168-7"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a><span class="k">class</span> <span class="nc">TagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-169-2" name="__codelineno-169-2" href="#__codelineno-169-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-169-3" name="__codelineno-169-3" href="#__codelineno-169-3"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-</code></pre></div>
-<h2 id="untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UntagResourceRequestRequestTypeDef</span>
-<a id="__codelineno-170-2" name="__codelineno-170-2" href="#__codelineno-170-2"></a>
-<a id="__codelineno-170-3" name="__codelineno-170-3" href="#__codelineno-170-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UntagResourceRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-170-4" name="__codelineno-170-4" href="#__codelineno-170-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-170-5" name="__codelineno-170-5" href="#__codelineno-170-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-170-6" name="__codelineno-170-6" href="#__codelineno-170-6"></a>        <span class="s2">&quot;tagKeys&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-170-7" name="__codelineno-170-7" href="#__codelineno-170-7"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a><span class="k">class</span> <span class="nc">UntagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-171-2" name="__codelineno-171-2" href="#__codelineno-171-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-171-3" name="__codelineno-171-3" href="#__codelineno-171-3"></a>    <span class="n">tagKeys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</code></pre></div>
-<h2 id="updatecontentrequestrequesttypedef">UpdateContentRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateContentRequestRequestTypeDef</span>
-<a id="__codelineno-172-2" name="__codelineno-172-2" href="#__codelineno-172-2"></a>
-<a id="__codelineno-172-3" name="__codelineno-172-3" href="#__codelineno-172-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateContentRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-172-4" name="__codelineno-172-4" href="#__codelineno-172-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-172-5" name="__codelineno-172-5" href="#__codelineno-172-5"></a>        <span class="s2">&quot;contentId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-172-6" name="__codelineno-172-6" href="#__codelineno-172-6"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-172-7" name="__codelineno-172-7" href="#__codelineno-172-7"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a><span class="k">class</span> <span class="nc">UpdateContentRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-173-2" name="__codelineno-173-2" href="#__codelineno-173-2"></a>    <span class="n">contentId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-173-3" name="__codelineno-173-3" href="#__codelineno-173-3"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-173-4" name="__codelineno-173-4" href="#__codelineno-173-4"></a>    <span class="n">metadata</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
-<a id="__codelineno-173-5" name="__codelineno-173-5" href="#__codelineno-173-5"></a>    <span class="n">overrideLinkOutUri</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-173-6" name="__codelineno-173-6" href="#__codelineno-173-6"></a>    <span class="n">removeOverrideLinkOutUri</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-173-7" name="__codelineno-173-7" href="#__codelineno-173-7"></a>    <span class="n">revisionId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-173-8" name="__codelineno-173-8" href="#__codelineno-173-8"></a>    <span class="n">title</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-173-9" name="__codelineno-173-9" href="#__codelineno-173-9"></a>    <span class="n">uploadId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</code></pre></div>
-<h2 id="updatecontentresponsetypedef">UpdateContentResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateContentResponseTypeDef</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">TagResourceRequestRequestTypeDef</span>
 <a id="__codelineno-174-2" name="__codelineno-174-2" href="#__codelineno-174-2"></a>
-<a id="__codelineno-174-3" name="__codelineno-174-3" href="#__codelineno-174-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateContentResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-174-3" name="__codelineno-174-3" href="#__codelineno-174-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagResourceRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-174-4" name="__codelineno-174-4" href="#__codelineno-174-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-174-5" name="__codelineno-174-5" href="#__codelineno-174-5"></a>        <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-174-6" name="__codelineno-174-6" href="#__codelineno-174-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-174-5" name="__codelineno-174-5" href="#__codelineno-174-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-174-6" name="__codelineno-174-6" href="#__codelineno-174-6"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-174-7" name="__codelineno-174-7" href="#__codelineno-174-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a><span class="k">class</span> <span class="nc">UpdateContentResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-175-2" name="__codelineno-175-2" href="#__codelineno-175-2"></a>    <span class="n">content</span><span class="p">:</span> <span class="n">ContentDataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-175-3" name="__codelineno-175-3" href="#__codelineno-175-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a><span class="k">class</span> <span class="nc">TagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-175-2" name="__codelineno-175-2" href="#__codelineno-175-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-175-3" name="__codelineno-175-3" href="#__codelineno-175-3"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UntagResourceRequestRequestTypeDef</span>
+<a id="__codelineno-176-2" name="__codelineno-176-2" href="#__codelineno-176-2"></a>
+<a id="__codelineno-176-3" name="__codelineno-176-3" href="#__codelineno-176-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UntagResourceRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-176-4" name="__codelineno-176-4" href="#__codelineno-176-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-176-5" name="__codelineno-176-5" href="#__codelineno-176-5"></a>        <span class="s2">&quot;resourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-176-6" name="__codelineno-176-6" href="#__codelineno-176-6"></a>        <span class="s2">&quot;tagKeys&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-176-7" name="__codelineno-176-7" href="#__codelineno-176-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a><span class="k">class</span> <span class="nc">UntagResourceRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-177-2" name="__codelineno-177-2" href="#__codelineno-177-2"></a>    <span class="n">resourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-177-3" name="__codelineno-177-3" href="#__codelineno-177-3"></a>    <span class="n">tagKeys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="updatecontentrequestrequesttypedef">UpdateContentRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateContentRequestRequestTypeDef</span>
+<a id="__codelineno-178-2" name="__codelineno-178-2" href="#__codelineno-178-2"></a>
+<a id="__codelineno-178-3" name="__codelineno-178-3" href="#__codelineno-178-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateContentRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-178-4" name="__codelineno-178-4" href="#__codelineno-178-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-178-5" name="__codelineno-178-5" href="#__codelineno-178-5"></a>        <span class="s2">&quot;contentId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-178-6" name="__codelineno-178-6" href="#__codelineno-178-6"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-178-7" name="__codelineno-178-7" href="#__codelineno-178-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a><span class="k">class</span> <span class="nc">UpdateContentRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-179-2" name="__codelineno-179-2" href="#__codelineno-179-2"></a>    <span class="n">contentId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-179-3" name="__codelineno-179-3" href="#__codelineno-179-3"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-179-4" name="__codelineno-179-4" href="#__codelineno-179-4"></a>    <span class="n">metadata</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-179-5" name="__codelineno-179-5" href="#__codelineno-179-5"></a>    <span class="n">overrideLinkOutUri</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-179-6" name="__codelineno-179-6" href="#__codelineno-179-6"></a>    <span class="n">removeOverrideLinkOutUri</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-179-7" name="__codelineno-179-7" href="#__codelineno-179-7"></a>    <span class="n">revisionId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-179-8" name="__codelineno-179-8" href="#__codelineno-179-8"></a>    <span class="n">title</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-179-9" name="__codelineno-179-9" href="#__codelineno-179-9"></a>    <span class="n">uploadId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<h2 id="updatecontentresponsetypedef">UpdateContentResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-180-1" name="__codelineno-180-1" href="#__codelineno-180-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateContentResponseTypeDef</span>
+<a id="__codelineno-180-2" name="__codelineno-180-2" href="#__codelineno-180-2"></a>
+<a id="__codelineno-180-3" name="__codelineno-180-3" href="#__codelineno-180-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateContentResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-180-4" name="__codelineno-180-4" href="#__codelineno-180-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-180-5" name="__codelineno-180-5" href="#__codelineno-180-5"></a>        <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-180-6" name="__codelineno-180-6" href="#__codelineno-180-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-180-7" name="__codelineno-180-7" href="#__codelineno-180-7"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-181-1" name="__codelineno-181-1" href="#__codelineno-181-1"></a><span class="k">class</span> <span class="nc">UpdateContentResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-181-2" name="__codelineno-181-2" href="#__codelineno-181-2"></a>    <span class="n">content</span><span class="p">:</span> <span class="n">ContentDataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-181-3" name="__codelineno-181-3" href="#__codelineno-181-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#contentdatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ContentDataTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="updateknowledgebasetemplateurirequestrequesttypedef">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</span>
-<a id="__codelineno-176-2" name="__codelineno-176-2" href="#__codelineno-176-2"></a>
-<a id="__codelineno-176-3" name="__codelineno-176-3" href="#__codelineno-176-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-176-4" name="__codelineno-176-4" href="#__codelineno-176-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-176-5" name="__codelineno-176-5" href="#__codelineno-176-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-176-6" name="__codelineno-176-6" href="#__codelineno-176-6"></a>        <span class="s2">&quot;templateUri&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-176-7" name="__codelineno-176-7" href="#__codelineno-176-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-182-1" name="__codelineno-182-1" href="#__codelineno-182-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</span>
+<a id="__codelineno-182-2" name="__codelineno-182-2" href="#__codelineno-182-2"></a>
+<a id="__codelineno-182-3" name="__codelineno-182-3" href="#__codelineno-182-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-182-4" name="__codelineno-182-4" href="#__codelineno-182-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-182-5" name="__codelineno-182-5" href="#__codelineno-182-5"></a>        <span class="s2">&quot;knowledgeBaseId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-182-6" name="__codelineno-182-6" href="#__codelineno-182-6"></a>        <span class="s2">&quot;templateUri&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-182-7" name="__codelineno-182-7" href="#__codelineno-182-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a><span class="k">class</span> <span class="nc">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-177-2" name="__codelineno-177-2" href="#__codelineno-177-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-177-3" name="__codelineno-177-3" href="#__codelineno-177-3"></a>    <span class="n">templateUri</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-183-1" name="__codelineno-183-1" href="#__codelineno-183-1"></a><span class="k">class</span> <span class="nc">UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-183-2" name="__codelineno-183-2" href="#__codelineno-183-2"></a>    <span class="n">knowledgeBaseId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-183-3" name="__codelineno-183-3" href="#__codelineno-183-3"></a>    <span class="n">templateUri</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </code></pre></div>
 <h2 id="updateknowledgebasetemplateuriresponsetypedef">UpdateKnowledgeBaseTemplateUriResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateKnowledgeBaseTemplateUriResponseTypeDef</span>
-<a id="__codelineno-178-2" name="__codelineno-178-2" href="#__codelineno-178-2"></a>
-<a id="__codelineno-178-3" name="__codelineno-178-3" href="#__codelineno-178-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateKnowledgeBaseTemplateUriResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-178-4" name="__codelineno-178-4" href="#__codelineno-178-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-178-5" name="__codelineno-178-5" href="#__codelineno-178-5"></a>        <span class="s2">&quot;knowledgeBase&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-178-6" name="__codelineno-178-6" href="#__codelineno-178-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-178-7" name="__codelineno-178-7" href="#__codelineno-178-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-184-1" name="__codelineno-184-1" href="#__codelineno-184-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wisdom.type_defs</span> <span class="kn">import</span> <span class="n">UpdateKnowledgeBaseTemplateUriResponseTypeDef</span>
+<a id="__codelineno-184-2" name="__codelineno-184-2" href="#__codelineno-184-2"></a>
+<a id="__codelineno-184-3" name="__codelineno-184-3" href="#__codelineno-184-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">UpdateKnowledgeBaseTemplateUriResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-184-4" name="__codelineno-184-4" href="#__codelineno-184-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-184-5" name="__codelineno-184-5" href="#__codelineno-184-5"></a>        <span class="s2">&quot;knowledgeBase&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-184-6" name="__codelineno-184-6" href="#__codelineno-184-6"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-184-7" name="__codelineno-184-7" href="#__codelineno-184-7"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a><span class="k">class</span> <span class="nc">UpdateKnowledgeBaseTemplateUriResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-179-2" name="__codelineno-179-2" href="#__codelineno-179-2"></a>    <span class="n">knowledgeBase</span><span class="p">:</span> <span class="n">KnowledgeBaseDataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-179-3" name="__codelineno-179-3" href="#__codelineno-179-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-185-1" name="__codelineno-185-1" href="#__codelineno-185-1"></a><span class="k">class</span> <span class="nc">UpdateKnowledgeBaseTemplateUriResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-185-2" name="__codelineno-185-2" href="#__codelineno-185-2"></a>    <span class="n">knowledgeBase</span><span class="p">:</span> <span class="n">KnowledgeBaseDataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-185-3" name="__codelineno-185-3" href="#__codelineno-185-3"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#knowledgebasedatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> KnowledgeBaseDataTypeDef</a> </li>

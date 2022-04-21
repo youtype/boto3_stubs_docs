@@ -2184,7 +2184,7 @@ parent.list_volumes(**kwargs)
 ### notify\_when\_uploaded
 
 Sends you notification through CloudWatch Events when all files written to your
-file share have been uploaded to Amazon S3.
+file share have been uploaded to S3.
 
 Type annotations and code completion for `#!python boto3.client("storagegateway").notify_when_uploaded` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded)

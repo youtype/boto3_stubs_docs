@@ -133,6 +133,48 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef) 
+## ListLiveSourcesPaginator
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").get_paginator("list_live_sources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListLiveSources)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediatailor.paginator import ListLiveSourcesPaginator
+
+def get_list_live_sources_paginator() -> ListLiveSourcesPaginator:
+    return Session().client("mediatailor").get_paginator("list_live_sources")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListLiveSourcesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SourceLocationName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLiveSourcesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLiveSourcesResponseTypeDef](./type_defs.md#listlivesourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLiveSourcesRequestListLiveSourcesPaginateTypeDef = {  # (1)
+    "SourceLocationName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLiveSourcesRequestListLiveSourcesPaginateTypeDef](./type_defs.md#listlivesourcesrequestlistlivesourcespaginatetypedef) 
 ## ListPlaybackConfigurationsPaginator
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").get_paginator("list_playback_configurations")`.

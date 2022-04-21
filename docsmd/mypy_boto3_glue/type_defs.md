@@ -348,6 +348,44 @@ class BatchGetCrawlersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: CrawlerTypeDef](./type_defs.md#crawlertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetCustomEntityTypesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import BatchGetCustomEntityTypesRequestRequestTypeDef
+
+def get_value() -> BatchGetCustomEntityTypesRequestRequestTypeDef:
+    return {
+        "Names": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetCustomEntityTypesRequestRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+```
+
+## BatchGetCustomEntityTypesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import BatchGetCustomEntityTypesResponseTypeDef
+
+def get_value() -> BatchGetCustomEntityTypesResponseTypeDef:
+    return {
+        "CustomEntityTypes": ...,
+        "CustomEntityTypesNotFound": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetCustomEntityTypesResponseTypeDef(TypedDict):
+    CustomEntityTypes: List[CustomEntityTypeTypeDef],  # (1)
+    CustomEntityTypesNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomEntityTypeTypeDef](./type_defs.md#customentitytypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDevEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1614,6 +1652,44 @@ class CreateCsvClassifierRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
+## CreateCustomEntityTypeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CreateCustomEntityTypeRequestRequestTypeDef
+
+def get_value() -> CreateCustomEntityTypeRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RegexString": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCustomEntityTypeRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RegexString: str,
+    ContextWords: NotRequired[Sequence[str]],
+```
+
+## CreateCustomEntityTypeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CreateCustomEntityTypeResponseTypeDef
+
+def get_value() -> CreateCustomEntityTypeResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCustomEntityTypeResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatabaseRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2349,6 +2425,25 @@ class CsvClassifierTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
+## CustomEntityTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CustomEntityTypeTypeDef
+
+def get_value() -> CustomEntityTypeTypeDef:
+    return {
+        "Name": ...,
+        "RegexString": ...,
+    }
+```
+
+```python title="Definition"
+class CustomEntityTypeTypeDef(TypedDict):
+    Name: str,
+    RegexString: str,
+    ContextWords: NotRequired[List[str]],
+```
+
 ## DataCatalogEncryptionSettingsTypeDef
 
 ```python title="Usage Example"
@@ -2637,6 +2732,41 @@ class DeleteCrawlerRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
+## DeleteCustomEntityTypeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DeleteCustomEntityTypeRequestRequestTypeDef
+
+def get_value() -> DeleteCustomEntityTypeRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCustomEntityTypeRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## DeleteCustomEntityTypeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DeleteCustomEntityTypeResponseTypeDef
+
+def get_value() -> DeleteCustomEntityTypeResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCustomEntityTypeResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDatabaseRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4038,6 +4168,45 @@ class GetCrawlersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: CrawlerTypeDef](./type_defs.md#crawlertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCustomEntityTypeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetCustomEntityTypeRequestRequestTypeDef
+
+def get_value() -> GetCustomEntityTypeRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class GetCustomEntityTypeRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## GetCustomEntityTypeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetCustomEntityTypeResponseTypeDef
+
+def get_value() -> GetCustomEntityTypeResponseTypeDef:
+    return {
+        "Name": ...,
+        "RegexString": ...,
+        "ContextWords": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCustomEntityTypeResponseTypeDef(TypedDict):
+    Name: str,
+    RegexString: str,
+    ContextWords: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDataCatalogEncryptionSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6809,6 +6978,45 @@ class ListCrawlersResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomEntityTypesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListCustomEntityTypesRequestRequestTypeDef
+
+def get_value() -> ListCustomEntityTypesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomEntityTypesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListCustomEntityTypesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListCustomEntityTypesResponseTypeDef
+
+def get_value() -> ListCustomEntityTypesResponseTypeDef:
+    return {
+        "CustomEntityTypes": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomEntityTypesResponseTypeDef(TypedDict):
+    CustomEntityTypes: List[CustomEntityTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomEntityTypeTypeDef](./type_defs.md#customentitytypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDevEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"

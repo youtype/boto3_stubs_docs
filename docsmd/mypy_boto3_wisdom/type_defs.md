@@ -837,6 +837,7 @@ from mypy_boto3_wisdom.type_defs import GetRecommendationsResponseTypeDef
 def get_value() -> GetRecommendationsResponseTypeDef:
     return {
         "recommendations": ...,
+        "triggers": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -844,11 +845,13 @@ def get_value() -> GetRecommendationsResponseTypeDef:
 ```python title="Definition"
 class GetRecommendationsResponseTypeDef(TypedDict):
     recommendations: List[RecommendationDataTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    triggers: List[RecommendationTriggerTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: RecommendationDataTypeDef](./type_defs.md#recommendationdatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: RecommendationTriggerTypeDef](./type_defs.md#recommendationtriggertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1392,6 +1395,22 @@ class QueryAssistantResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResultDataTypeDef](./type_defs.md#resultdatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueryRecommendationTriggerDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import QueryRecommendationTriggerDataTypeDef
+
+def get_value() -> QueryRecommendationTriggerDataTypeDef:
+    return {
+        "text": ...,
+    }
+```
+
+```python title="Definition"
+class QueryRecommendationTriggerDataTypeDef(TypedDict):
+    text: NotRequired[str],
+```
+
 ## RecommendationDataTypeDef
 
 ```python title="Usage Example"
@@ -1410,10 +1429,56 @@ class RecommendationDataTypeDef(TypedDict):
     recommendationId: str,
     relevanceLevel: NotRequired[RelevanceLevelType],  # (2)
     relevanceScore: NotRequired[float],
+    type: NotRequired[RecommendationTypeType],  # (3)
 ```
 
 1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
 2. See [:material-code-brackets: RelevanceLevelType](./literals.md#relevanceleveltype) 
+3. See [:material-code-brackets: RecommendationTypeType](./literals.md#recommendationtypetype) 
+## RecommendationTriggerDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import RecommendationTriggerDataTypeDef
+
+def get_value() -> RecommendationTriggerDataTypeDef:
+    return {
+        "query": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationTriggerDataTypeDef(TypedDict):
+    query: NotRequired[QueryRecommendationTriggerDataTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: QueryRecommendationTriggerDataTypeDef](./type_defs.md#queryrecommendationtriggerdatatypedef) 
+## RecommendationTriggerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import RecommendationTriggerTypeDef
+
+def get_value() -> RecommendationTriggerTypeDef:
+    return {
+        "data": ...,
+        "id": ...,
+        "recommendationIds": ...,
+        "source": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationTriggerTypeDef(TypedDict):
+    data: RecommendationTriggerDataTypeDef,  # (1)
+    id: str,
+    recommendationIds: List[str],
+    source: RecommendationSourceTypeType,  # (2)
+    type: RecommendationTriggerTypeType,  # (3)
+```
+
+1. See [:material-code-braces: RecommendationTriggerDataTypeDef](./type_defs.md#recommendationtriggerdatatypedef) 
+2. See [:material-code-brackets: RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype) 
+3. See [:material-code-brackets: RecommendationTriggerTypeType](./literals.md#recommendationtriggertypetype) 
 ## RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef
 
 ```python title="Usage Example"

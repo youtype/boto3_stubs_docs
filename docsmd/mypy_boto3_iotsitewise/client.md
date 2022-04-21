@@ -189,6 +189,102 @@ parent.batch_disassociate_project_assets(**kwargs)
 
 1. See [:material-code-braces: BatchDisassociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchdisassociateprojectassetsrequestrequesttypedef) 
 
+### batch\_get\_asset\_property\_aggregates
+
+Gets aggregated values (for example, average, minimum, and maximum) for one or
+more asset properties.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").batch_get_asset_property_aggregates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_get_asset_property_aggregates)
+
+```python title="Method definition"
+def batch_get_asset_property_aggregates(
+    self,
+    *,
+    entries: Sequence[BatchGetAssetPropertyAggregatesEntryTypeDef],  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> BatchGetAssetPropertyAggregatesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyAggregatesEntryTypeDef](./type_defs.md#batchgetassetpropertyaggregatesentrytypedef) 
+2. See [:material-code-braces: BatchGetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#batchgetassetpropertyaggregatesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetAssetPropertyAggregatesRequestRequestTypeDef = {  # (1)
+    "entries": ...,
+}
+
+parent.batch_get_asset_property_aggregates(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyAggregatesRequestRequestTypeDef](./type_defs.md#batchgetassetpropertyaggregatesrequestrequesttypedef) 
+
+### batch\_get\_asset\_property\_value
+
+Gets the current value for one or more asset properties.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").batch_get_asset_property_value` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_get_asset_property_value)
+
+```python title="Method definition"
+def batch_get_asset_property_value(
+    self,
+    *,
+    entries: Sequence[BatchGetAssetPropertyValueEntryTypeDef],  # (1)
+    nextToken: str = ...,
+) -> BatchGetAssetPropertyValueResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueEntryTypeDef](./type_defs.md#batchgetassetpropertyvalueentrytypedef) 
+2. See [:material-code-braces: BatchGetAssetPropertyValueResponseTypeDef](./type_defs.md#batchgetassetpropertyvalueresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetAssetPropertyValueRequestRequestTypeDef = {  # (1)
+    "entries": ...,
+}
+
+parent.batch_get_asset_property_value(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueRequestRequestTypeDef](./type_defs.md#batchgetassetpropertyvaluerequestrequesttypedef) 
+
+### batch\_get\_asset\_property\_value\_history
+
+Gets the historical values for one or more asset properties.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").batch_get_asset_property_value_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_get_asset_property_value_history)
+
+```python title="Method definition"
+def batch_get_asset_property_value_history(
+    self,
+    *,
+    entries: Sequence[BatchGetAssetPropertyValueHistoryEntryTypeDef],  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> BatchGetAssetPropertyValueHistoryResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueHistoryEntryTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryentrytypedef) 
+2. See [:material-code-braces: BatchGetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetAssetPropertyValueHistoryRequestRequestTypeDef = {  # (1)
+    "entries": ...,
+}
+
+parent.batch_get_asset_property_value_history(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetAssetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#batchgetassetpropertyvaluehistoryrequestrequesttypedef) 
+
 ### batch\_put\_asset\_property\_value
 
 Sends a list of asset property values to IoT SiteWise.

@@ -112,14 +112,16 @@ def create_channel(
     PlaybackMode: PlaybackModeType,  # (2)
     FillerSlate: SlateSourceTypeDef = ...,  # (3)
     Tags: Mapping[str, str] = ...,
-) -> CreateChannelResponseTypeDef:  # (4)
+    Tier: TierType = ...,  # (4)
+) -> CreateChannelResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef) 
 2. See [:material-code-brackets: PlaybackModeType](./literals.md#playbackmodetype) 
 3. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
-4. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
+4. See [:material-code-brackets: TierType](./literals.md#tiertype) 
+5. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -133,6 +135,41 @@ parent.create_channel(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
+
+### create\_live\_source
+
+Creates name for a specific live source in a source location.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").create_live_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_live_source)
+
+```python title="Method definition"
+def create_live_source(
+    self,
+    *,
+    HttpPackageConfigurations: Sequence[HttpPackageConfigurationTypeDef],  # (1)
+    LiveSourceName: str,
+    SourceLocationName: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateLiveSourceResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: CreateLiveSourceResponseTypeDef](./type_defs.md#createlivesourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLiveSourceRequestRequestTypeDef = {  # (1)
+    "HttpPackageConfigurations": ...,
+    "LiveSourceName": ...,
+    "SourceLocationName": ...,
+}
+
+parent.create_live_source(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLiveSourceRequestRequestTypeDef](./type_defs.md#createlivesourcerequestrequesttypedef) 
 
 ### create\_prefetch\_schedule
 
@@ -187,8 +224,9 @@ def create_program(
     ProgramName: str,
     ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
     SourceLocationName: str,
-    VodSourceName: str,
     AdBreaks: Sequence[AdBreakTypeDef] = ...,  # (2)
+    LiveSourceName: str = ...,
+    VodSourceName: str = ...,
 ) -> CreateProgramResponseTypeDef:  # (3)
     ...
 ```
@@ -204,7 +242,6 @@ kwargs: CreateProgramRequestRequestTypeDef = {  # (1)
     "ProgramName": ...,
     "ScheduleConfiguration": ...,
     "SourceLocationName": ...,
-    "VodSourceName": ...,
 }
 
 parent.create_program(**kwargs)
@@ -341,6 +378,36 @@ parent.delete_channel_policy(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteChannelPolicyRequestRequestTypeDef](./type_defs.md#deletechannelpolicyrequestrequesttypedef) 
+
+### delete\_live\_source
+
+Deletes a specific live source in a specific source location.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_live_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_live_source)
+
+```python title="Method definition"
+def delete_live_source(
+    self,
+    *,
+    LiveSourceName: str,
+    SourceLocationName: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLiveSourceRequestRequestTypeDef = {  # (1)
+    "LiveSourceName": ...,
+    "SourceLocationName": ...,
+}
+
+parent.delete_live_source(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLiveSourceRequestRequestTypeDef](./type_defs.md#deletelivesourcerequestrequesttypedef) 
 
 ### delete\_playback\_configuration
 
@@ -516,6 +583,37 @@ parent.describe_channel(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef) 
+
+### describe\_live\_source
+
+Provides details about a specific live source in a specific source location.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").describe_live_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_live_source)
+
+```python title="Method definition"
+def describe_live_source(
+    self,
+    *,
+    LiveSourceName: str,
+    SourceLocationName: str,
+) -> DescribeLiveSourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeLiveSourceResponseTypeDef](./type_defs.md#describelivesourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLiveSourceRequestRequestTypeDef = {  # (1)
+    "LiveSourceName": ...,
+    "SourceLocationName": ...,
+}
+
+parent.describe_live_source(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLiveSourceRequestRequestTypeDef](./type_defs.md#describelivesourcerequestrequesttypedef) 
 
 ### describe\_program
 
@@ -809,6 +907,37 @@ parent.list_channels(**kwargs)
 ```
 
 1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
+
+### list\_live\_sources
+
+lists all the live sources in a source location.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_live_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_live_sources)
+
+```python title="Method definition"
+def list_live_sources(
+    self,
+    *,
+    SourceLocationName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLiveSourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLiveSourcesResponseTypeDef](./type_defs.md#listlivesourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLiveSourcesRequestRequestTypeDef = {  # (1)
+    "SourceLocationName": ...,
+}
+
+parent.list_live_sources(**kwargs)
+```
+
+1. See [:material-code-braces: ListLiveSourcesRequestRequestTypeDef](./type_defs.md#listlivesourcesrequestrequesttypedef) 
 
 ### list\_playback\_configurations
 
@@ -1192,6 +1321,40 @@ parent.update_channel(**kwargs)
 
 1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
 
+### update\_live\_source
+
+Updates a specific live source in a specific source location.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").update_live_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_live_source)
+
+```python title="Method definition"
+def update_live_source(
+    self,
+    *,
+    HttpPackageConfigurations: Sequence[HttpPackageConfigurationTypeDef],  # (1)
+    LiveSourceName: str,
+    SourceLocationName: str,
+) -> UpdateLiveSourceResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: UpdateLiveSourceResponseTypeDef](./type_defs.md#updatelivesourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateLiveSourceRequestRequestTypeDef = {  # (1)
+    "HttpPackageConfigurations": ...,
+    "LiveSourceName": ...,
+    "SourceLocationName": ...,
+}
+
+parent.update_live_source(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLiveSourceRequestRequestTypeDef](./type_defs.md#updatelivesourcerequestrequesttypedef) 
+
 ### update\_source\_location
 
 Updates a source location on a specific channel.
@@ -1273,6 +1436,7 @@ Type annotations and code completion for `#!python boto3.client("mediatailor").g
 - `client.get_paginator("get_channel_schedule")` -> [GetChannelSchedulePaginator](./paginators.md#getchannelschedulepaginator)
 - `client.get_paginator("list_alerts")` -> [ListAlertsPaginator](./paginators.md#listalertspaginator)
 - `client.get_paginator("list_channels")` -> [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+- `client.get_paginator("list_live_sources")` -> [ListLiveSourcesPaginator](./paginators.md#listlivesourcespaginator)
 - `client.get_paginator("list_playback_configurations")` -> [ListPlaybackConfigurationsPaginator](./paginators.md#listplaybackconfigurationspaginator)
 - `client.get_paginator("list_prefetch_schedules")` -> [ListPrefetchSchedulesPaginator](./paginators.md#listprefetchschedulespaginator)
 - `client.get_paginator("list_source_locations")` -> [ListSourceLocationsPaginator](./paginators.md#listsourcelocationspaginator)

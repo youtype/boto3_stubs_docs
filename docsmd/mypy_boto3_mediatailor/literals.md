@@ -79,6 +79,20 @@ ListChannelsPaginatorName = Literal[
     "list_channels",
 ]
 ```
+## ListLiveSourcesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.literals import ListLiveSourcesPaginatorName
+
+def get_value() -> ListLiveSourcesPaginatorName:
+    return "list_live_sources"
+```
+
+```python title="Definition"
+ListLiveSourcesPaginatorName = Literal[
+    "list_live_sources",
+]
+```
 ## ListPlaybackConfigurationsPaginatorName
 
 ```python title="Usage Example"
@@ -236,6 +250,21 @@ def get_value() -> ScheduleEntryTypeType:
 ScheduleEntryTypeType = Literal[
     "FILLER_SLATE",
     "PROGRAM",
+]
+```
+## TierType
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.literals import TierType
+
+def get_value() -> TierType:
+    return "BASIC"
+```
+
+```python title="Definition"
+TierType = Literal[
+    "BASIC",
+    "STANDARD",
 ]
 ```
 ## TypeType
@@ -620,6 +649,7 @@ PaginatorName = Literal[
     "get_channel_schedule",
     "list_alerts",
     "list_channels",
+    "list_live_sources",
     "list_playback_configurations",
     "list_prefetch_schedules",
     "list_source_locations",
