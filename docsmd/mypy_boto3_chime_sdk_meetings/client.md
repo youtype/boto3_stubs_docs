@@ -37,7 +37,9 @@ except (
     client.ForbiddenException,
     client.LimitExceededException,
     client.NotFoundException,
+    client.ServiceFailureException,
     client.ServiceUnavailableException,
+    client.ThrottlingException,
     client.UnauthorizedException,
     client.UnprocessableEntityException,
 ) as e:

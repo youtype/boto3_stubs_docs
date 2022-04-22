@@ -769,6 +769,52 @@ parent.wait(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeNatGatewaysRequestNatGatewayAvailableWaitTypeDef](./type_defs.md#describenatgatewaysrequestnatgatewayavailablewaittypedef) 
+## NatGatewayDeletedWaiter
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("nat_gateway_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NatGatewayDeleted)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.waiter import NatGatewayDeletedWaiter
+
+def get_nat_gateway_deleted_waiter() -> NatGatewayDeletedWaiter:
+    return Session().client("ec2").get_waiter("nat_gateway_deleted")
+```
+
+
+### wait
+
+Type annotations and code completion for `#!python NatGatewayDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NatGatewayIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNatGatewaysRequestNatGatewayDeletedWaitTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNatGatewaysRequestNatGatewayDeletedWaitTypeDef](./type_defs.md#describenatgatewaysrequestnatgatewaydeletedwaittypedef) 
 ## NetworkInterfaceAvailableWaiter
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("network_interface_available")`.

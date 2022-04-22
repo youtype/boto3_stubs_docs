@@ -14907,6 +14907,29 @@ class DescribeNatGatewaysRequestNatGatewayAvailableWaitTypeDef(TypedDict):
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeNatGatewaysRequestNatGatewayDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeNatGatewaysRequestNatGatewayDeletedWaitTypeDef
+
+def get_value() -> DescribeNatGatewaysRequestNatGatewayDeletedWaitTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNatGatewaysRequestNatGatewayDeletedWaitTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NatGatewayIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeNatGatewaysRequestRequestTypeDef
 
 ```python title="Usage Example"

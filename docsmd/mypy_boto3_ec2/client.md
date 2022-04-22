@@ -17959,6 +17959,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_waite
 - `client.get_waiter("internet_gateway_exists")` -> [InternetGatewayExistsWaiter](./waiters.md#internetgatewayexistswaiter)
 - `client.get_waiter("key_pair_exists")` -> [KeyPairExistsWaiter](./waiters.md#keypairexistswaiter)
 - `client.get_waiter("nat_gateway_available")` -> [NatGatewayAvailableWaiter](./waiters.md#natgatewayavailablewaiter)
+- `client.get_waiter("nat_gateway_deleted")` -> [NatGatewayDeletedWaiter](./waiters.md#natgatewaydeletedwaiter)
 - `client.get_waiter("network_interface_available")` -> [NetworkInterfaceAvailableWaiter](./waiters.md#networkinterfaceavailablewaiter)
 - `client.get_waiter("password_data_available")` -> [PasswordDataAvailableWaiter](./waiters.md#passworddataavailablewaiter)
 - `client.get_waiter("security_group_exists")` -> [SecurityGroupExistsWaiter](./waiters.md#securitygroupexistswaiter)

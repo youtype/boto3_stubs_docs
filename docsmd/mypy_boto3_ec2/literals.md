@@ -5068,6 +5068,20 @@ NatGatewayAvailableWaiterName = Literal[
     "nat_gateway_available",
 ]
 ```
+## NatGatewayDeletedWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import NatGatewayDeletedWaiterName
+
+def get_value() -> NatGatewayDeletedWaiterName:
+    return "nat_gateway_deleted"
+```
+
+```python title="Definition"
+NatGatewayDeletedWaiterName = Literal[
+    "nat_gateway_deleted",
+]
+```
 ## NatGatewayStateType
 
 ```python title="Usage Example"
@@ -7699,6 +7713,7 @@ WaiterName = Literal[
     "internet_gateway_exists",
     "key_pair_exists",
     "nat_gateway_available",
+    "nat_gateway_deleted",
     "network_interface_available",
     "password_data_available",
     "security_group_exists",
