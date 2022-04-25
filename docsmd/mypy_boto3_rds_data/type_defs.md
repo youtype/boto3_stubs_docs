@@ -242,15 +242,17 @@ class ExecuteStatementRequestRequestTypeDef(TypedDict):
     sql: str,
     continueAfterTimeout: NotRequired[bool],
     database: NotRequired[str],
+    formatRecordsAs: NotRequired[RecordsFormatTypeType],  # (1)
     includeResultMetadata: NotRequired[bool],
-    parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (1)
-    resultSetOptions: NotRequired[ResultSetOptionsTypeDef],  # (2)
+    parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (2)
+    resultSetOptions: NotRequired[ResultSetOptionsTypeDef],  # (3)
     schema: NotRequired[str],
     transactionId: NotRequired[str],
 ```
 
-1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
-2. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
+1. See [:material-code-brackets: RecordsFormatTypeType](./literals.md#recordsformattypetype) 
+2. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+3. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
 ## ExecuteStatementResponseTypeDef
 
 ```python title="Usage Example"
@@ -259,6 +261,7 @@ from mypy_boto3_rds_data.type_defs import ExecuteStatementResponseTypeDef
 def get_value() -> ExecuteStatementResponseTypeDef:
     return {
         "columnMetadata": ...,
+        "formattedRecords": ...,
         "generatedFields": ...,
         "numberOfRecordsUpdated": ...,
         "records": ...,
@@ -269,6 +272,7 @@ def get_value() -> ExecuteStatementResponseTypeDef:
 ```python title="Definition"
 class ExecuteStatementResponseTypeDef(TypedDict):
     columnMetadata: List[ColumnMetadataTypeDef],  # (1)
+    formattedRecords: str,
     generatedFields: List[FieldTypeDef],  # (2)
     numberOfRecordsUpdated: int,
     records: List[List[FieldTypeDef]],  # (3)
@@ -394,9 +398,11 @@ def get_value() -> ResultSetOptionsTypeDef:
 ```python title="Definition"
 class ResultSetOptionsTypeDef(TypedDict):
     decimalReturnType: NotRequired[DecimalReturnTypeType],  # (1)
+    longReturnType: NotRequired[LongReturnTypeType],  # (2)
 ```
 
 1. See [:material-code-brackets: DecimalReturnTypeType](./literals.md#decimalreturntypetype) 
+2. See [:material-code-brackets: LongReturnTypeType](./literals.md#longreturntypetype) 
 ## RollbackTransactionRequestRequestTypeDef
 
 ```python title="Usage Example"

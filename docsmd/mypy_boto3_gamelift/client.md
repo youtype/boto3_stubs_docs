@@ -182,8 +182,7 @@ parent.create_alias(**kwargs)
 
 ### create\_build
 
-Creates a new Amazon Web Services build resource for your game server binary
-files.
+Creates a new Amazon GameLift build resource for your game server binary files.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").create_build` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build)
@@ -627,8 +626,8 @@ parent.create_script(**kwargs)
 ### create\_vpc\_peering\_authorization
 
 Requests authorization to create or delete a peer connection between the VPC for
-your Amazon Web Services fleet and a virtual private cloud (VPC) in your Amazon
-Web Services account.
+your Amazon GameLift fleet and a virtual private cloud (VPC) in your Amazon Web
+Services account.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").create_vpc_peering_authorization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
@@ -660,7 +659,7 @@ parent.create_vpc_peering_authorization(**kwargs)
 ### create\_vpc\_peering\_connection
 
 Establishes a VPC peering connection between a virtual private cloud (VPC) in an
-Amazon Web Services account with the VPC for your Amazon Web Services fleet.
+Amazon Web Services account with the VPC for your Amazon GameLift fleet.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").create_vpc_peering_connection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection)
@@ -2329,7 +2328,7 @@ parent.register_game_server(**kwargs)
 ### request\_upload\_credentials
 
 Retrieves a fresh set of credentials for use when uploading a new set of game
-build files to Amazon Web Services's Amazon S3.
+build files to Amazon GameLift's Amazon S3.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").request_upload_credentials` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)

@@ -7911,6 +7911,7 @@ def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
     return {
         "AutoEnable": ...,
         "MemberAccountLimitReached": ...,
+        "AutoEnableStandards": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -7919,10 +7920,12 @@ def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
 class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
     AutoEnable: bool,
     MemberAccountLimitReached: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    AutoEnableStandards: AutoEnableStandardsType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProductsRequestDescribeProductsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -10853,8 +10856,10 @@ def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
     AutoEnable: bool,
+    AutoEnableStandards: NotRequired[AutoEnableStandardsType],  # (1)
 ```
 
+1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
 ## UpdateSecurityHubConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -1621,10 +1621,12 @@ def update_organization_configuration(
     self,
     *,
     AutoEnable: bool,
+    AutoEnableStandards: AutoEnableStandardsType = ...,  # (1)
 ) -> Dict[str, Any]:
     ...
 ```
 
+1. See [:material-code-brackets: AutoEnableStandardsType](./literals.md#autoenablestandardstype) 
 
 
 ```python title="Usage example with kwargs"

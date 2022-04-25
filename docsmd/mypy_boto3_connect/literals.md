@@ -239,6 +239,21 @@ GroupingType = Literal[
     "QUEUE",
 ]
 ```
+## HierarchyGroupMatchTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import HierarchyGroupMatchTypeType
+
+def get_value() -> HierarchyGroupMatchTypeType:
+    return "EXACT"
+```
+
+```python title="Definition"
+HierarchyGroupMatchTypeType = Literal[
+    "EXACT",
+    "WITH_CHILD_GROUPS",
+]
+```
 ## HistoricalMetricNameType
 
 ```python title="Usage Example"
@@ -1165,6 +1180,20 @@ SearchAvailablePhoneNumbersPaginatorName = Literal[
     "search_available_phone_numbers",
 ]
 ```
+## SearchUsersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SearchUsersPaginatorName
+
+def get_value() -> SearchUsersPaginatorName:
+    return "search_users"
+```
+
+```python title="Definition"
+SearchUsersPaginatorName = Literal[
+    "search_users",
+]
+```
 ## SearchVocabulariesPaginatorName
 
 ```python title="Usage Example"
@@ -1225,6 +1254,22 @@ StorageTypeType = Literal[
     "KINESIS_STREAM",
     "KINESIS_VIDEO_STREAM",
     "S3",
+]
+```
+## StringComparisonTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import StringComparisonTypeType
+
+def get_value() -> StringComparisonTypeType:
+    return "CONTAINS"
+```
+
+```python title="Definition"
+StringComparisonTypeType = Literal[
+    "CONTAINS",
+    "EXACT",
+    "STARTS_WITH",
 ]
 ```
 ## TrafficTypeType
@@ -1734,6 +1779,7 @@ PaginatorName = Literal[
     "list_user_hierarchy_groups",
     "list_users",
     "search_available_phone_numbers",
+    "search_users",
     "search_vocabularies",
 ]
 ```

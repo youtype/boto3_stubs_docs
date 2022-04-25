@@ -108,6 +108,7 @@ def get_value() -> AdminStatusType:
 ```
 
 - [AdminStatusType](./literals.md#adminstatustype)
+- [AutoEnableStandardsType](./literals.md#autoenablestandardstype)
 - [AwsIamAccessKeyStatusType](./literals.md#awsiamaccesskeystatustype)
 - [AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType](./literals.md#awss3bucketnotificationconfigurations3keyfilterrulenametype)
 - [ComplianceStatusType](./literals.md#compliancestatustype)

@@ -1327,6 +1327,52 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestSearchAvailablePhoneNumbersPaginateTypeDef](./type_defs.md#searchavailablephonenumbersrequestsearchavailablephonenumberspaginatetypedef) 
+## SearchUsersPaginator
+
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchUsers)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchUsersPaginator
+
+def get_search_users_paginator() -> SearchUsersPaginator:
+    return Session().client("connect").get_paginator("search_users")
+```
+
+
+### paginate
+
+Type annotations and code completion for `#!python SearchUsersPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str = ...,
+    SearchFilter: UserSearchFilterTypeDef = ...,  # (1)
+    SearchCriteria: UserSearchCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchUsersResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: UserSearchFilterTypeDef](./type_defs.md#usersearchfiltertypedef) 
+2. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchUsersRequestSearchUsersPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchUsersRequestSearchUsersPaginateTypeDef](./type_defs.md#searchusersrequestsearchuserspaginatetypedef) 
 ## SearchVocabulariesPaginator
 
 Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_vocabularies")`.

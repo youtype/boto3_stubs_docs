@@ -3314,6 +3314,41 @@ parent.search_available_phone_numbers(**kwargs)
 
 1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef) 
 
+### search\_users
+
+Searches users in an Amazon Connect instance, with optional filtering.
+
+Type annotations and code completion for `#!python boto3.client("connect").search_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_users)
+
+```python title="Method definition"
+def search_users(
+    self,
+    *,
+    InstanceId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SearchFilter: UserSearchFilterTypeDef = ...,  # (1)
+    SearchCriteria: UserSearchCriteriaTypeDef = ...,  # (2)
+) -> SearchUsersResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: UserSearchFilterTypeDef](./type_defs.md#usersearchfiltertypedef) 
+2. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
+3. See [:material-code-braces: SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchUsersRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.search_users(**kwargs)
+```
+
+1. See [:material-code-braces: SearchUsersRequestRequestTypeDef](./type_defs.md#searchusersrequestrequesttypedef) 
+
 ### search\_vocabularies
 
 Searches for vocabularies within a specific Amazon Connect instance using
@@ -4817,6 +4852,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
 - `client.get_paginator("search_available_phone_numbers")` -> [SearchAvailablePhoneNumbersPaginator](./paginators.md#searchavailablephonenumberspaginator)
+- `client.get_paginator("search_users")` -> [SearchUsersPaginator](./paginators.md#searchuserspaginator)
 - `client.get_paginator("search_vocabularies")` -> [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
 
 

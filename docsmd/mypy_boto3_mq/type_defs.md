@@ -7,6 +7,23 @@
     Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
     type annotations stubs module [mypy-boto3-mq](https://pypi.org/project/mypy-boto3-mq/).
 
+## ActionRequiredTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mq.type_defs import ActionRequiredTypeDef
+
+def get_value() -> ActionRequiredTypeDef:
+    return {
+        "ActionRequiredCode": ...,
+    }
+```
+
+```python title="Definition"
+class ActionRequiredTypeDef(TypedDict):
+    ActionRequiredCode: NotRequired[str],
+    ActionRequiredInfo: NotRequired[str],
+```
+
 ## AvailabilityZoneTypeDef
 
 ```python title="Usage Example"
@@ -551,6 +568,7 @@ from mypy_boto3_mq.type_defs import DescribeBrokerResponseTypeDef
 
 def get_value() -> DescribeBrokerResponseTypeDef:
     return {
+        "ActionsRequired": ...,
         "AuthenticationStrategy": ...,
         "AutoMinorVersionUpgrade": ...,
         "BrokerArn": ...,
@@ -585,52 +603,54 @@ def get_value() -> DescribeBrokerResponseTypeDef:
 
 ```python title="Definition"
 class DescribeBrokerResponseTypeDef(TypedDict):
-    AuthenticationStrategy: AuthenticationStrategyType,  # (1)
+    ActionsRequired: List[ActionRequiredTypeDef],  # (1)
+    AuthenticationStrategy: AuthenticationStrategyType,  # (2)
     AutoMinorVersionUpgrade: bool,
     BrokerArn: str,
     BrokerId: str,
-    BrokerInstances: List[BrokerInstanceTypeDef],  # (2)
+    BrokerInstances: List[BrokerInstanceTypeDef],  # (3)
     BrokerName: str,
-    BrokerState: BrokerStateType,  # (3)
-    Configurations: ConfigurationsTypeDef,  # (4)
+    BrokerState: BrokerStateType,  # (4)
+    Configurations: ConfigurationsTypeDef,  # (5)
     Created: datetime,
-    DeploymentMode: DeploymentModeType,  # (5)
-    EncryptionOptions: EncryptionOptionsTypeDef,  # (6)
-    EngineType: EngineTypeType,  # (7)
+    DeploymentMode: DeploymentModeType,  # (6)
+    EncryptionOptions: EncryptionOptionsTypeDef,  # (7)
+    EngineType: EngineTypeType,  # (8)
     EngineVersion: str,
     HostInstanceType: str,
-    LdapServerMetadata: LdapServerMetadataOutputTypeDef,  # (8)
-    Logs: LogsSummaryTypeDef,  # (9)
-    MaintenanceWindowStartTime: WeeklyStartTimeTypeDef,  # (10)
-    PendingAuthenticationStrategy: AuthenticationStrategyType,  # (1)
+    LdapServerMetadata: LdapServerMetadataOutputTypeDef,  # (9)
+    Logs: LogsSummaryTypeDef,  # (10)
+    MaintenanceWindowStartTime: WeeklyStartTimeTypeDef,  # (11)
+    PendingAuthenticationStrategy: AuthenticationStrategyType,  # (2)
     PendingEngineVersion: str,
     PendingHostInstanceType: str,
-    PendingLdapServerMetadata: LdapServerMetadataOutputTypeDef,  # (8)
+    PendingLdapServerMetadata: LdapServerMetadataOutputTypeDef,  # (9)
     PendingSecurityGroups: List[str],
     PubliclyAccessible: bool,
     SecurityGroups: List[str],
-    StorageType: BrokerStorageTypeType,  # (13)
+    StorageType: BrokerStorageTypeType,  # (14)
     SubnetIds: List[str],
     Tags: Dict[str, str],
-    Users: List[UserSummaryTypeDef],  # (14)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (15)
+    Users: List[UserSummaryTypeDef],  # (15)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (16)
 ```
 
-1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-2. See [:material-code-braces: BrokerInstanceTypeDef](./type_defs.md#brokerinstancetypedef) 
-3. See [:material-code-brackets: BrokerStateType](./literals.md#brokerstatetype) 
-4. See [:material-code-braces: ConfigurationsTypeDef](./type_defs.md#configurationstypedef) 
-5. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
-6. See [:material-code-braces: EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef) 
-7. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
-8. See [:material-code-braces: LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef) 
-9. See [:material-code-braces: LogsSummaryTypeDef](./type_defs.md#logssummarytypedef) 
-10. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
-11. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
-12. See [:material-code-braces: LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef) 
-13. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
-14. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
-15. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: ActionRequiredTypeDef](./type_defs.md#actionrequiredtypedef) 
+2. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+3. See [:material-code-braces: BrokerInstanceTypeDef](./type_defs.md#brokerinstancetypedef) 
+4. See [:material-code-brackets: BrokerStateType](./literals.md#brokerstatetype) 
+5. See [:material-code-braces: ConfigurationsTypeDef](./type_defs.md#configurationstypedef) 
+6. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
+7. See [:material-code-braces: EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef) 
+8. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+9. See [:material-code-braces: LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef) 
+10. See [:material-code-braces: LogsSummaryTypeDef](./type_defs.md#logssummarytypedef) 
+11. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
+12. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+13. See [:material-code-braces: LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef) 
+14. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
+15. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
+16. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"

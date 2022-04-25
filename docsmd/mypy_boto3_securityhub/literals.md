@@ -22,6 +22,21 @@ AdminStatusType = Literal[
     "ENABLED",
 ]
 ```
+## AutoEnableStandardsType
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import AutoEnableStandardsType
+
+def get_value() -> AutoEnableStandardsType:
+    return "DEFAULT"
+```
+
+```python title="Definition"
+AutoEnableStandardsType = Literal[
+    "DEFAULT",
+    "NONE",
+]
+```
 ## AwsIamAccessKeyStatusType
 
 ```python title="Usage Example"

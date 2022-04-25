@@ -22,6 +22,36 @@ DecimalReturnTypeType = Literal[
     "STRING",
 ]
 ```
+## LongReturnTypeType
+
+```python title="Usage Example"
+from mypy_boto3_rds_data.literals import LongReturnTypeType
+
+def get_value() -> LongReturnTypeType:
+    return "LONG"
+```
+
+```python title="Definition"
+LongReturnTypeType = Literal[
+    "LONG",
+    "STRING",
+]
+```
+## RecordsFormatTypeType
+
+```python title="Usage Example"
+from mypy_boto3_rds_data.literals import RecordsFormatTypeType
+
+def get_value() -> RecordsFormatTypeType:
+    return "JSON"
+```
+
+```python title="Definition"
+RecordsFormatTypeType = Literal[
+    "JSON",
+    "NONE",
+]
+```
 ## TypeHintType
 
 ```python title="Usage Example"

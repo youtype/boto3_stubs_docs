@@ -35,6 +35,7 @@ def get_value() -> BrokerStateType:
 BrokerStateType = Literal[
     "CREATION_FAILED",
     "CREATION_IN_PROGRESS",
+    "CRITICAL_ACTION_REQUIRED",
     "DELETION_IN_PROGRESS",
     "REBOOT_IN_PROGRESS",
     "RUNNING",

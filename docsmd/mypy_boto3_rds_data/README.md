@@ -80,6 +80,8 @@ def get_value() -> DecimalReturnTypeType:
 ```
 
 - [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
+- [LongReturnTypeType](./literals.md#longreturntypetype)
+- [RecordsFormatTypeType](./literals.md#recordsformattypetype)
 - [TypeHintType](./literals.md#typehinttype)
 - [RDSDataServiceServiceName](./literals.md#rdsdataserviceservicename)
 - [ServiceName](./literals.md#servicename)
