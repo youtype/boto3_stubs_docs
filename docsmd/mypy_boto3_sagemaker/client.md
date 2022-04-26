@@ -1084,16 +1084,18 @@ def create_inference_recommendations_job(
     InputConfig: RecommendationJobInputConfigTypeDef,  # (2)
     JobDescription: str = ...,
     StoppingConditions: RecommendationJobStoppingConditionsTypeDef = ...,  # (3)
-    Tags: Sequence[TagTypeDef] = ...,  # (4)
-) -> CreateInferenceRecommendationsJobResponseTypeDef:  # (5)
+    OutputConfig: RecommendationJobOutputConfigTypeDef = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> CreateInferenceRecommendationsJobResponseTypeDef:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: RecommendationJobTypeType](./literals.md#recommendationjobtypetype) 
 2. See [:material-code-braces: RecommendationJobInputConfigTypeDef](./type_defs.md#recommendationjobinputconfigtypedef) 
 3. See [:material-code-braces: RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: CreateInferenceRecommendationsJobResponseTypeDef](./type_defs.md#createinferencerecommendationsjobresponsetypedef) 
+4. See [:material-code-braces: RecommendationJobOutputConfigTypeDef](./type_defs.md#recommendationjoboutputconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateInferenceRecommendationsJobResponseTypeDef](./type_defs.md#createinferencerecommendationsjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

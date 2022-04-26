@@ -2547,13 +2547,15 @@ class CreateInferenceRecommendationsJobRequestRequestTypeDef(TypedDict):
     InputConfig: RecommendationJobInputConfigTypeDef,  # (2)
     JobDescription: NotRequired[str],
     StoppingConditions: NotRequired[RecommendationJobStoppingConditionsTypeDef],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    OutputConfig: NotRequired[RecommendationJobOutputConfigTypeDef],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
 ```
 
 1. See [:material-code-brackets: RecommendationJobTypeType](./literals.md#recommendationjobtypetype) 
 2. See [:material-code-braces: RecommendationJobInputConfigTypeDef](./type_defs.md#recommendationjobinputconfigtypedef) 
 3. See [:material-code-braces: RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: RecommendationJobOutputConfigTypeDef](./type_defs.md#recommendationjoboutputconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateInferenceRecommendationsJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -17147,6 +17149,22 @@ class RStudioServerProDomainSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourceSpecTypeDef](./type_defs.md#resourcespectypedef) 
+## RecommendationJobCompiledOutputConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RecommendationJobCompiledOutputConfigTypeDef
+
+def get_value() -> RecommendationJobCompiledOutputConfigTypeDef:
+    return {
+        "S3OutputUri": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationJobCompiledOutputConfigTypeDef(TypedDict):
+    S3OutputUri: NotRequired[str],
+```
+
 ## RecommendationJobInputConfigTypeDef
 
 ```python title="Usage Example"
@@ -17165,11 +17183,30 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
     TrafficPattern: NotRequired[TrafficPatternTypeDef],  # (1)
     ResourceLimit: NotRequired[RecommendationJobResourceLimitTypeDef],  # (2)
     EndpointConfigurations: NotRequired[Sequence[EndpointInputConfigurationTypeDef]],  # (3)
+    VolumeKmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TrafficPatternTypeDef](./type_defs.md#trafficpatterntypedef) 
 2. See [:material-code-braces: RecommendationJobResourceLimitTypeDef](./type_defs.md#recommendationjobresourcelimittypedef) 
 3. See [:material-code-braces: EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef) 
+## RecommendationJobOutputConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RecommendationJobOutputConfigTypeDef
+
+def get_value() -> RecommendationJobOutputConfigTypeDef:
+    return {
+        "KmsKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationJobOutputConfigTypeDef(TypedDict):
+    KmsKeyId: NotRequired[str],
+    CompiledOutputConfig: NotRequired[RecommendationJobCompiledOutputConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RecommendationJobCompiledOutputConfigTypeDef](./type_defs.md#recommendationjobcompiledoutputconfigtypedef) 
 ## RecommendationJobResourceLimitTypeDef
 
 ```python title="Usage Example"

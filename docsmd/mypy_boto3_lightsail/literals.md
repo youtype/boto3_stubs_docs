@@ -899,8 +899,10 @@ def get_value() -> LoadBalancerAttributeNameType:
 ```python title="Definition"
 LoadBalancerAttributeNameType = Literal[
     "HealthCheckPath",
+    "HttpsRedirectionEnabled",
     "SessionStickiness_LB_CookieDurationSeconds",
     "SessionStickinessEnabled",
+    "TlsPolicyName",
 ]
 ```
 ## LoadBalancerMetricNameType
@@ -1707,6 +1709,7 @@ ServiceName = Literal[
     "iottwinmaker",
     "iotwireless",
     "ivs",
+    "ivschat",
     "kafka",
     "kafkaconnect",
     "kendra",

@@ -1957,6 +1957,7 @@ class CreateLoadBalancerRequestRequestTypeDef(TypedDict):
     certificateAlternativeNames: NotRequired[Sequence[str]],
     tags: NotRequired[Sequence[TagTypeDef]],  # (1)
     ipAddressType: NotRequired[IpAddressTypeType],  # (2)
+    tlsPolicyName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -5292,6 +5293,44 @@ class GetLoadBalancerTlsCertificatesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoadBalancerTlsCertificateTypeDef](./type_defs.md#loadbalancertlscertificatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLoadBalancerTlsPoliciesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsPoliciesRequestRequestTypeDef
+
+def get_value() -> GetLoadBalancerTlsPoliciesRequestRequestTypeDef:
+    return {
+        "pageToken": ...,
+    }
+```
+
+```python title="Definition"
+class GetLoadBalancerTlsPoliciesRequestRequestTypeDef(TypedDict):
+    pageToken: NotRequired[str],
+```
+
+## GetLoadBalancerTlsPoliciesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsPoliciesResultTypeDef
+
+def get_value() -> GetLoadBalancerTlsPoliciesResultTypeDef:
+    return {
+        "tlsPolicies": ...,
+        "nextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLoadBalancerTlsPoliciesResultTypeDef(TypedDict):
+    tlsPolicies: List[LoadBalancerTlsPolicyTypeDef],  # (1)
+    nextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoadBalancerTlsPolicyTypeDef](./type_defs.md#loadbalancertlspolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLoadBalancersRequestGetLoadBalancersPaginateTypeDef
 
 ```python title="Usage Example"
@@ -6777,6 +6816,26 @@ class LoadBalancerTlsCertificateTypeDef(TypedDict):
 6. See [:material-code-brackets: LoadBalancerTlsCertificateFailureReasonType](./literals.md#loadbalancertlscertificatefailurereasontype) 
 7. See [:material-code-braces: LoadBalancerTlsCertificateRenewalSummaryTypeDef](./type_defs.md#loadbalancertlscertificaterenewalsummarytypedef) 
 8. See [:material-code-brackets: LoadBalancerTlsCertificateRevocationReasonType](./literals.md#loadbalancertlscertificaterevocationreasontype) 
+## LoadBalancerTlsPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import LoadBalancerTlsPolicyTypeDef
+
+def get_value() -> LoadBalancerTlsPolicyTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class LoadBalancerTlsPolicyTypeDef(TypedDict):
+    name: NotRequired[str],
+    isDefault: NotRequired[bool],
+    description: NotRequired[str],
+    protocols: NotRequired[List[str]],
+    ciphers: NotRequired[List[str]],
+```
+
 ## LoadBalancerTypeDef
 
 ```python title="Usage Example"
@@ -6807,6 +6866,8 @@ class LoadBalancerTypeDef(TypedDict):
     tlsCertificateSummaries: NotRequired[List[LoadBalancerTlsCertificateSummaryTypeDef]],  # (7)
     configurationOptions: NotRequired[Dict[LoadBalancerAttributeNameType, str]],  # (8)
     ipAddressType: NotRequired[IpAddressTypeType],  # (9)
+    httpsRedirectionEnabled: NotRequired[bool],
+    tlsPolicyName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef) 

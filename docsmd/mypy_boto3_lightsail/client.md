@@ -976,6 +976,7 @@ def create_load_balancer(
     certificateAlternativeNames: Sequence[str] = ...,
     tags: Sequence[TagTypeDef] = ...,  # (1)
     ipAddressType: IpAddressTypeType = ...,  # (2)
+    tlsPolicyName: str = ...,
 ) -> CreateLoadBalancerResultTypeDef:  # (3)
     ...
 ```
@@ -3346,6 +3347,36 @@ parent.get_load_balancer_tls_certificates(**kwargs)
 ```
 
 1. See [:material-code-braces: GetLoadBalancerTlsCertificatesRequestRequestTypeDef](./type_defs.md#getloadbalancertlscertificatesrequestrequesttypedef) 
+
+### get\_load\_balancer\_tls\_policies
+
+Returns a list of TLS security policies that you can apply to Lightsail load
+balancers.
+
+Type annotations and code completion for `#!python boto3.client("lightsail").get_load_balancer_tls_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_policies)
+
+```python title="Method definition"
+def get_load_balancer_tls_policies(
+    self,
+    *,
+    pageToken: str = ...,
+) -> GetLoadBalancerTlsPoliciesResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetLoadBalancerTlsPoliciesResultTypeDef](./type_defs.md#getloadbalancertlspoliciesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLoadBalancerTlsPoliciesRequestRequestTypeDef = {  # (1)
+    "pageToken": ...,
+}
+
+parent.get_load_balancer_tls_policies(**kwargs)
+```
+
+1. See [:material-code-braces: GetLoadBalancerTlsPoliciesRequestRequestTypeDef](./type_defs.md#getloadbalancertlspoliciesrequestrequesttypedef) 
 
 ### get\_load\_balancers
 

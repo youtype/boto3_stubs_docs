@@ -371,6 +371,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-ivs](./mypy_boto3_ivs/README.md) for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS) service
 
+- [mypy-boto3-ivschat](./mypy_boto3_ivschat/README.md) for [ivschat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat) service
+
 - [mypy-boto3-kafka](./mypy_boto3_kafka/README.md) for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka) service
 
 - [mypy-boto3-kafkaconnect](./mypy_boto3_kafkaconnect/README.md) for [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect) service

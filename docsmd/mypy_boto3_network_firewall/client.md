@@ -143,7 +143,7 @@ def can_paginate(
 
 ### create\_firewall
 
-Creates an AWS Network Firewall  Firewall and accompanying  FirewallStatus for a
+Creates an Network Firewall  Firewall and accompanying  FirewallStatus for a
 VPC.
 
 Type annotations and code completion for `#!python boto3.client("network-firewall").create_firewall` method.
@@ -162,13 +162,15 @@ def create_firewall(
     FirewallPolicyChangeProtection: bool = ...,
     Description: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
-) -> CreateFirewallResponseTypeDef:  # (3)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (3)
+) -> CreateFirewallResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: CreateFirewallResponseTypeDef](./type_defs.md#createfirewallresponsetypedef) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CreateFirewallResponseTypeDef](./type_defs.md#createfirewallresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -200,13 +202,15 @@ def create_firewall_policy(
     Description: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
     DryRun: bool = ...,
-) -> CreateFirewallPolicyResponseTypeDef:  # (3)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (3)
+) -> CreateFirewallPolicyResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: CreateFirewallPolicyResponseTypeDef](./type_defs.md#createfirewallpolicyresponsetypedef) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CreateFirewallPolicyResponseTypeDef](./type_defs.md#createfirewallpolicyresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -240,14 +244,16 @@ def create_rule_group(
     Description: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (3)
     DryRun: bool = ...,
-) -> CreateRuleGroupResponseTypeDef:  # (4)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (4)
+) -> CreateRuleGroupResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
 2. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef) 
+4. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+5. See [:material-code-braces: CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -743,8 +749,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### put\_resource\_policy
 
-Creates or updates an AWS Identity and Access Management policy for your rule
-group or firewall policy.
+Creates or updates an IAM policy for your rule group or firewall policy.
 
 Type annotations and code completion for `#!python boto3.client("network-firewall").put_resource_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy)
@@ -898,6 +903,39 @@ parent.update_firewall_description(**kwargs)
 
 1. See [:material-code-braces: UpdateFirewallDescriptionRequestRequestTypeDef](./type_defs.md#updatefirewalldescriptionrequestrequesttypedef) 
 
+### update\_firewall\_encryption\_configuration
+
+A complex type that contains settings for encryption of your firewall resources.
+
+Type annotations and code completion for `#!python boto3.client("network-firewall").update_firewall_encryption_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_encryption_configuration)
+
+```python title="Method definition"
+def update_firewall_encryption_configuration(
+    self,
+    *,
+    UpdateToken: str = ...,
+    FirewallArn: str = ...,
+    FirewallName: str = ...,
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (1)
+) -> UpdateFirewallEncryptionConfigurationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+2. See [:material-code-braces: UpdateFirewallEncryptionConfigurationResponseTypeDef](./type_defs.md#updatefirewallencryptionconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFirewallEncryptionConfigurationRequestRequestTypeDef = {  # (1)
+    "UpdateToken": ...,
+}
+
+parent.update_firewall_encryption_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFirewallEncryptionConfigurationRequestRequestTypeDef](./type_defs.md#updatefirewallencryptionconfigurationrequestrequesttypedef) 
+
 ### update\_firewall\_policy
 
 Updates the properties of the specified firewall policy.
@@ -915,12 +953,14 @@ def update_firewall_policy(
     FirewallPolicyName: str = ...,
     Description: str = ...,
     DryRun: bool = ...,
-) -> UpdateFirewallPolicyResponseTypeDef:  # (2)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (2)
+) -> UpdateFirewallPolicyResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) 
-2. See [:material-code-braces: UpdateFirewallPolicyResponseTypeDef](./type_defs.md#updatefirewallpolicyresponsetypedef) 
+2. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+3. See [:material-code-braces: UpdateFirewallPolicyResponseTypeDef](./type_defs.md#updatefirewallpolicyresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1018,13 +1058,15 @@ def update_rule_group(
     Type: RuleGroupTypeType = ...,  # (2)
     Description: str = ...,
     DryRun: bool = ...,
-) -> UpdateRuleGroupResponseTypeDef:  # (3)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (3)
+) -> UpdateRuleGroupResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
 2. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
-3. See [:material-code-braces: UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

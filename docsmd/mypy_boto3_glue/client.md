@@ -306,8 +306,7 @@ parent.batch_get_crawlers(**kwargs)
 
 ### batch\_get\_custom\_entity\_types
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/BatchGetCustomEntityTypes).
+Retrieves the details for the custom patterns specified by a list of names.
 
 Type annotations and code completion for `#!python boto3.client("glue").batch_get_custom_entity_types` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_custom_entity_types)
@@ -814,8 +813,8 @@ parent.create_crawler(**kwargs)
 
 ### create\_custom\_entity\_type
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/CreateCustomEntityType).
+Creates a custom pattern that is used to detect sensitive data across the
+columns and rows of your structured data.
 
 Type annotations and code completion for `#!python boto3.client("glue").create_custom_entity_type` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_custom_entity_type)
@@ -1603,8 +1602,7 @@ parent.delete_crawler(**kwargs)
 
 ### delete\_custom\_entity\_type
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/DeleteCustomEntityType).
+Deletes a custom pattern by specifying its name.
 
 Type annotations and code completion for `#!python boto3.client("glue").delete_custom_entity_type` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_custom_entity_type)
@@ -2572,8 +2570,7 @@ parent.get_crawlers(**kwargs)
 
 ### get\_custom\_entity\_type
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetCustomEntityType).
+Retrieves the details of a custom pattern by specifying its name.
 
 Type annotations and code completion for `#!python boto3.client("glue").get_custom_entity_type` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_custom_entity_type)
@@ -4223,8 +4220,7 @@ parent.list_crawlers(**kwargs)
 
 ### list\_custom\_entity\_types
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/ListCustomEntityTypes).
+Lists all the custom patterns that have been created.
 
 Type annotations and code completion for `#!python boto3.client("glue").list_custom_entity_types` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_custom_entity_types)

@@ -443,6 +443,7 @@ def get_value() -> ActiveTrustedKeyGroupsTypeDef:
 - [ResponseHeadersPolicyListTypeDef](./type_defs.md#responseheaderspolicylisttypedef)
 - [ResponseHeadersPolicyReferrerPolicyTypeDef](./type_defs.md#responseheaderspolicyreferrerpolicytypedef)
 - [ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef)
+- [ResponseHeadersPolicyServerTimingHeadersConfigTypeDef](./type_defs.md#responseheaderspolicyservertimingheadersconfigtypedef)
 - [ResponseHeadersPolicyStrictTransportSecurityTypeDef](./type_defs.md#responseheaderspolicystricttransportsecuritytypedef)
 - [ResponseHeadersPolicySummaryTypeDef](./type_defs.md#responseheaderspolicysummarytypedef)
 - [ResponseHeadersPolicyTypeDef](./type_defs.md#responseheaderspolicytypedef)

@@ -39,6 +39,21 @@ ConfigurationSyncStateType = Literal[
     "PENDING",
 ]
 ```
+## EncryptionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.literals import EncryptionTypeType
+
+def get_value() -> EncryptionTypeType:
+    return "AWS_OWNED_KMS_KEY"
+```
+
+```python title="Definition"
+EncryptionTypeType = Literal[
+    "AWS_OWNED_KMS_KEY",
+    "CUSTOMER_KMS",
+]
+```
 ## FirewallStatusValueType
 
 ```python title="Usage Example"
@@ -521,6 +536,7 @@ ServiceName = Literal[
     "iottwinmaker",
     "iotwireless",
     "ivs",
+    "ivschat",
     "kafka",
     "kafkaconnect",
     "kendra",
