@@ -542,6 +542,21 @@ SegmentTypeType = Literal[
     "TECHNICAL_CUE",
 ]
 ```
+## StreamProcessorParameterToDeleteType
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.literals import StreamProcessorParameterToDeleteType
+
+def get_value() -> StreamProcessorParameterToDeleteType:
+    return "ConnectedHomeMinConfidence"
+```
+
+```python title="Definition"
+StreamProcessorParameterToDeleteType = Literal[
+    "ConnectedHomeMinConfidence",
+    "RegionsOfInterest",
+]
+```
 ## StreamProcessorStatusType
 
 ```python title="Usage Example"
@@ -558,6 +573,7 @@ StreamProcessorStatusType = Literal[
     "STARTING",
     "STOPPED",
     "STOPPING",
+    "UPDATING",
 ]
 ```
 ## TechnicalCueTypeType
@@ -687,6 +703,7 @@ ServiceName = Literal[
     "ce",
     "chime",
     "chime-sdk-identity",
+    "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
     "cloud9",

@@ -85,6 +85,8 @@ def get_value() -> DataUploadFrequencyType:
 - [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
 - [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 - [ModelStatusType](./literals.md#modelstatustype)
+- [MonotonicityType](./literals.md#monotonicitytype)
+- [StatisticalIssueStatusType](./literals.md#statisticalissuestatustype)
 - [TargetSamplingRateType](./literals.md#targetsamplingratetype)
 - [LookoutEquipmentServiceName](./literals.md#lookoutequipmentservicename)
 - [ServiceName](./literals.md#servicename)
@@ -99,16 +101,16 @@ def get_value() -> DataUploadFrequencyType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_lookoutequipment.type_defs import CreateDatasetRequestRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CategoricalValuesTypeDef
 
-def get_value() -> CreateDatasetRequestRequestTypeDef:
+def get_value() -> CategoricalValuesTypeDef:
     return {
-        "DatasetName": ...,
-        "DatasetSchema": ...,
-        "ClientToken": ...,
+        "Status": ...,
     }
 ```
 
+- [CategoricalValuesTypeDef](./type_defs.md#categoricalvaluestypedef)
+- [CountPercentTypeDef](./type_defs.md#countpercenttypedef)
 - [CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef)
 - [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef)
 - [CreateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#createinferenceschedulerrequestrequesttypedef)
@@ -117,6 +119,7 @@ def get_value() -> CreateDatasetRequestRequestTypeDef:
 - [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef)
 - [DataIngestionJobSummaryTypeDef](./type_defs.md#dataingestionjobsummarytypedef)
 - [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
+- [DataQualitySummaryTypeDef](./type_defs.md#dataqualitysummarytypedef)
 - [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
 - [DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)
 - [DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef)
@@ -130,6 +133,7 @@ def get_value() -> CreateDatasetRequestRequestTypeDef:
 - [DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef)
 - [DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef)
 - [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef)
+- [DuplicateTimestampsTypeDef](./type_defs.md#duplicatetimestampstypedef)
 - [InferenceExecutionSummaryTypeDef](./type_defs.md#inferenceexecutionsummarytypedef)
 - [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
 - [InferenceInputNameConfigurationTypeDef](./type_defs.md#inferenceinputnameconfigurationtypedef)
@@ -137,10 +141,14 @@ def get_value() -> CreateDatasetRequestRequestTypeDef:
 - [InferenceS3InputConfigurationTypeDef](./type_defs.md#inferences3inputconfigurationtypedef)
 - [InferenceS3OutputConfigurationTypeDef](./type_defs.md#inferences3outputconfigurationtypedef)
 - [InferenceSchedulerSummaryTypeDef](./type_defs.md#inferenceschedulersummarytypedef)
+- [IngestedFilesSummaryTypeDef](./type_defs.md#ingestedfilessummarytypedef)
 - [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
 - [IngestionS3InputConfigurationTypeDef](./type_defs.md#ingestions3inputconfigurationtypedef)
+- [InsufficientSensorDataTypeDef](./type_defs.md#insufficientsensordatatypedef)
+- [InvalidSensorDataTypeDef](./type_defs.md#invalidsensordatatypedef)
 - [LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef)
 - [LabelsS3InputConfigurationTypeDef](./type_defs.md#labelss3inputconfigurationtypedef)
+- [LargeTimestampGapsTypeDef](./type_defs.md#largetimestampgapstypedef)
 - [ListDataIngestionJobsRequestRequestTypeDef](./type_defs.md#listdataingestionjobsrequestrequesttypedef)
 - [ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
@@ -151,11 +159,19 @@ def get_value() -> CreateDatasetRequestRequestTypeDef:
 - [ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef)
 - [ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef)
 - [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)
+- [ListSensorStatisticsRequestRequestTypeDef](./type_defs.md#listsensorstatisticsrequestrequesttypedef)
+- [ListSensorStatisticsResponseTypeDef](./type_defs.md#listsensorstatisticsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [MissingCompleteSensorDataTypeDef](./type_defs.md#missingcompletesensordatatypedef)
+- [MissingSensorDataTypeDef](./type_defs.md#missingsensordatatypedef)
 - [ModelSummaryTypeDef](./type_defs.md#modelsummarytypedef)
+- [MonotonicValuesTypeDef](./type_defs.md#monotonicvaluestypedef)
+- [MultipleOperatingModesTypeDef](./type_defs.md#multipleoperatingmodestypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+- [SensorStatisticsSummaryTypeDef](./type_defs.md#sensorstatisticssummarytypedef)
+- [SensorsWithShortDateRangeTypeDef](./type_defs.md#sensorswithshortdaterangetypedef)
 - [StartDataIngestionJobRequestRequestTypeDef](./type_defs.md#startdataingestionjobrequestrequesttypedef)
 - [StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef)
 - [StartInferenceSchedulerRequestRequestTypeDef](./type_defs.md#startinferenceschedulerrequestrequesttypedef)
@@ -164,6 +180,7 @@ def get_value() -> CreateDatasetRequestRequestTypeDef:
 - [StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
+- [UnsupportedTimestampsTypeDef](./type_defs.md#unsupportedtimestampstypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#updateinferenceschedulerrequestrequesttypedef)
 

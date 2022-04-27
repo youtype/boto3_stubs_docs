@@ -83,8 +83,8 @@ def create_dataset(
     self,
     *,
     DatasetName: str,
-    DatasetSchema: DatasetSchemaTypeDef,  # (1)
     ClientToken: str,
+    DatasetSchema: DatasetSchemaTypeDef = ...,  # (1)
     ServerSideKmsKeyId: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
 ) -> CreateDatasetResponseTypeDef:  # (3)
@@ -99,7 +99,6 @@ def create_dataset(
 ```python title="Usage example with kwargs"
 kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
     "DatasetName": ...,
-    "DatasetSchema": ...,
     "ClientToken": ...,
 }
 
@@ -291,7 +290,7 @@ parent.delete_model(**kwargs)
 ### describe\_data\_ingestion\_job
 
 Provides information on a specific data ingestion job such as creation time,
-dataset ARN, status, and so on.
+dataset ARN, and status.
 
 Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_data_ingestion_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job)
@@ -320,8 +319,8 @@ parent.describe_data_ingestion_job(**kwargs)
 
 ### describe\_dataset
 
-Provides a JSON description of the data that is in each time series dataset,
-including names, column names, and data types.
+Provides a JSON description of the data in each time series dataset, including
+names, column names, and data types.
 
 Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_dataset` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset)
@@ -598,6 +597,39 @@ parent.list_models(**kwargs)
 ```
 
 1. See [:material-code-braces: ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef) 
+
+### list\_sensor\_statistics
+
+Lists statistics about the data collected for each of the sensors that have been
+successfully ingested in the particular dataset.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_sensor_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_sensor_statistics)
+
+```python title="Method definition"
+def list_sensor_statistics(
+    self,
+    *,
+    DatasetName: str,
+    IngestionJobId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSensorStatisticsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSensorStatisticsResponseTypeDef](./type_defs.md#listsensorstatisticsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSensorStatisticsRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+}
+
+parent.list_sensor_statistics(**kwargs)
+```
+
+1. See [:material-code-braces: ListSensorStatisticsRequestRequestTypeDef](./type_defs.md#listsensorstatisticsrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 

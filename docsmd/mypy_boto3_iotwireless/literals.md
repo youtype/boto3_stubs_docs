@@ -84,6 +84,22 @@ EventNotificationPartnerTypeType = Literal[
     "Sidewalk",
 ]
 ```
+## EventNotificationResourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import EventNotificationResourceTypeType
+
+def get_value() -> EventNotificationResourceTypeType:
+    return "SidewalkAccount"
+```
+
+```python title="Definition"
+EventNotificationResourceTypeType = Literal[
+    "SidewalkAccount",
+    "WirelessDevice",
+    "WirelessGateway",
+]
+```
 ## EventNotificationTopicStatusType
 
 ```python title="Usage Example"
@@ -180,12 +196,16 @@ FuotaTaskStatusType = Literal[
 from mypy_boto3_iotwireless.literals import IdentifierTypeType
 
 def get_value() -> IdentifierTypeType:
-    return "PartnerAccountId"
+    return "DevEui"
 ```
 
 ```python title="Definition"
 IdentifierTypeType = Literal[
+    "DevEui",
+    "GatewayEui",
     "PartnerAccountId",
+    "WirelessDeviceId",
+    "WirelessGatewayId",
 ]
 ```
 ## LogLevelType
@@ -486,6 +506,7 @@ ServiceName = Literal[
     "ce",
     "chime",
     "chime-sdk-identity",
+    "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
     "cloud9",

@@ -87,7 +87,7 @@ parent.add_association(**kwargs)
 
 ### add\_tags
 
-Adds or overwrites one or more tags for the specified Amazon SageMaker resource.
+Adds or overwrites one or more tags for the specified SageMaker resource.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").add_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_tags)
@@ -239,8 +239,8 @@ parent.create_action(**kwargs)
 
 ### create\_algorithm
 
-Create a machine learning algorithm that you can use in Amazon SageMaker and
-list in the Amazon Web Services Marketplace.
+Create a machine learning algorithm that you can use in SageMaker and list in
+the Amazon Web Services Marketplace.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_algorithm` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm)
@@ -439,7 +439,7 @@ parent.create_auto_ml_job(**kwargs)
 
 ### create\_code\_repository
 
-Creates a Git repository as a resource in your Amazon SageMaker account.
+Creates a Git repository as a resource in your SageMaker account.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_code_repository` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository)
@@ -1162,7 +1162,7 @@ parent.create_labeling_job(**kwargs)
 
 ### create\_model
 
-Creates a model in Amazon SageMaker.
+Creates a model in SageMaker.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_model` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model)
@@ -1306,9 +1306,9 @@ parent.create_model_explainability_job_definition(**kwargs)
 
 ### create\_model\_package
 
-Creates a model package that you can use to create Amazon SageMaker models or
-list on Amazon Web Services Marketplace, or a versioned model that is part of a
-model group.
+Creates a model package that you can use to create SageMaker models or list on
+Amazon Web Services Marketplace, or a versioned model that is part of a model
+group.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_model_package` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package)
@@ -1481,7 +1481,7 @@ parent.create_monitoring_schedule(**kwargs)
 
 ### create\_notebook\_instance
 
-Creates an Amazon SageMaker notebook instance.
+Creates an SageMaker notebook instance.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_notebook_instance` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance)
@@ -2886,7 +2886,7 @@ parent.delete_monitoring_schedule(**kwargs)
 
 ### delete\_notebook\_instance
 
-Deletes an Amazon SageMaker notebook instance.
+Deletes an SageMaker notebook instance.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").delete_notebook_instance` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance)
@@ -3029,7 +3029,7 @@ parent.delete_studio_lifecycle_config(**kwargs)
 
 ### delete\_tags
 
-Deletes the specified tags from an Amazon SageMaker resource.
+Deletes the specified tags from an SageMaker resource.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").delete_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_tags)
@@ -6392,8 +6392,8 @@ parent.list_notebook_instance_lifecycle_configs(**kwargs)
 
 ### list\_notebook\_instances
 
-Returns a list of the Amazon SageMaker notebook instances in the requester's
-account in an Amazon Web Services Region.
+Returns a list of the SageMaker notebook instances in the requester's account in
+an Amazon Web Services Region.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").list_notebook_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances)
@@ -6726,7 +6726,7 @@ parent.list_subscribed_workteams(**kwargs)
 
 ### list\_tags
 
-Returns the tags for the specified Amazon SageMaker resource.
+Returns the tags for the specified SageMaker resource.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").list_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags)

@@ -315,6 +315,21 @@ AuthModeType = Literal[
     "SSO",
 ]
 ```
+## AutoMLChannelTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import AutoMLChannelTypeType
+
+def get_value() -> AutoMLChannelTypeType:
+    return "training"
+```
+
+```python title="Definition"
+AutoMLChannelTypeType = Literal[
+    "training",
+    "validation",
+]
+```
 ## AutoMLJobObjectiveTypeType
 
 ```python title="Usage Example"
@@ -4339,6 +4354,7 @@ ServiceName = Literal[
     "ce",
     "chime",
     "chime-sdk-identity",
+    "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
     "cloud9",

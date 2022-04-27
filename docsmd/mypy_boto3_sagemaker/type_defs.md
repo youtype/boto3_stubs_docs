@@ -692,10 +692,12 @@ class AutoMLChannelTypeDef(TypedDict):
     TargetAttributeName: str,
     CompressionType: NotRequired[CompressionTypeType],  # (2)
     ContentType: NotRequired[str],
+    ChannelType: NotRequired[AutoMLChannelTypeType],  # (3)
 ```
 
 1. See [:material-code-braces: AutoMLDataSourceTypeDef](./type_defs.md#automldatasourcetypedef) 
 2. See [:material-code-brackets: CompressionTypeType](./literals.md#compressiontypetype) 
+3. See [:material-code-brackets: AutoMLChannelTypeType](./literals.md#automlchanneltypetype) 
 ## AutoMLContainerDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -732,6 +734,22 @@ class AutoMLDataSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoMLS3DataSourceTypeDef](./type_defs.md#automls3datasourcetypedef) 
+## AutoMLDataSplitConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AutoMLDataSplitConfigTypeDef
+
+def get_value() -> AutoMLDataSplitConfigTypeDef:
+    return {
+        "ValidationFraction": ...,
+    }
+```
+
+```python title="Definition"
+class AutoMLDataSplitConfigTypeDef(TypedDict):
+    ValidationFraction: NotRequired[float],
+```
+
 ## AutoMLJobArtifactsTypeDef
 
 ```python title="Usage Example"
@@ -782,10 +800,12 @@ def get_value() -> AutoMLJobConfigTypeDef:
 class AutoMLJobConfigTypeDef(TypedDict):
     CompletionCriteria: NotRequired[AutoMLJobCompletionCriteriaTypeDef],  # (1)
     SecurityConfig: NotRequired[AutoMLSecurityConfigTypeDef],  # (2)
+    DataSplitConfig: NotRequired[AutoMLDataSplitConfigTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: AutoMLJobCompletionCriteriaTypeDef](./type_defs.md#automljobcompletioncriteriatypedef) 
 2. See [:material-code-braces: AutoMLSecurityConfigTypeDef](./type_defs.md#automlsecurityconfigtypedef) 
+3. See [:material-code-braces: AutoMLDataSplitConfigTypeDef](./type_defs.md#automldatasplitconfigtypedef) 
 ## AutoMLJobObjectiveTypeDef
 
 ```python title="Usage Example"

@@ -141,6 +141,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-chime-sdk-identity](./mypy_boto3_chime_sdk_identity/README.md) for [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity) service
 
+- [mypy-boto3-chime-sdk-media-pipelines](./mypy_boto3_chime_sdk_media_pipelines/README.md) for [ChimeSDKMediaPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines) service
+
 - [mypy-boto3-chime-sdk-meetings](./mypy_boto3_chime_sdk_meetings/README.md) for [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings) service
 
 - [mypy-boto3-chime-sdk-messaging](./mypy_boto3_chime_sdk_messaging/README.md) for [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging) service
