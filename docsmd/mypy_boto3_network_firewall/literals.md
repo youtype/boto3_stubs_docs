@@ -216,6 +216,21 @@ ResourceManagedStatusType = Literal[
     "MANAGED",
 ]
 ```
+## ResourceManagedTypeType
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.literals import ResourceManagedTypeType
+
+def get_value() -> ResourceManagedTypeType:
+    return "AWS_MANAGED_DOMAIN_LISTS"
+```
+
+```python title="Definition"
+ResourceManagedTypeType = Literal[
+    "AWS_MANAGED_DOMAIN_LISTS",
+    "AWS_MANAGED_THREAT_SIGNATURES",
+]
+```
 ## ResourceStatusType
 
 ```python title="Usage Example"

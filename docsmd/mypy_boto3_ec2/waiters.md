@@ -705,6 +705,7 @@ def wait(
     KeyNames: Sequence[str] = ...,
     KeyPairIds: Sequence[str] = ...,
     DryRun: bool = ...,
+    IncludePublicKey: bool = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
 ) -> None:
     ...

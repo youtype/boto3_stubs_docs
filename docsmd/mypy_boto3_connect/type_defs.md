@@ -5105,6 +5105,26 @@ class PromptSummaryTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
+## PutUserStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import PutUserStatusRequestRequestTypeDef
+
+def get_value() -> PutUserStatusRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+        "InstanceId": ...,
+        "AgentStatusId": ...,
+    }
+```
+
+```python title="Definition"
+class PutUserStatusRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    InstanceId: str,
+    AgentStatusId: str,
+```
+
 ## QueueInfoTypeDef
 
 ```python title="Usage Example"

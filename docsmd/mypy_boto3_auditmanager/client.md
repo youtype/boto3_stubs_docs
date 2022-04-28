@@ -501,7 +501,7 @@ parent.delete_assessment_framework_share(**kwargs)
 
 ### delete\_assessment\_report
 
-Deletes an assessment report from an assessment in Audit Manager.
+Deletes an assessment report in Audit Manager.
 
 Type annotations and code completion for `#!python boto3.client("auditmanager").delete_assessment_report` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)

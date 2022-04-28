@@ -245,7 +245,8 @@ def create_rule_group(
     Tags: Sequence[TagTypeDef] = ...,  # (3)
     DryRun: bool = ...,
     EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (4)
-) -> CreateRuleGroupResponseTypeDef:  # (5)
+    SourceMetadata: SourceMetadataTypeDef = ...,  # (5)
+) -> CreateRuleGroupResponseTypeDef:  # (6)
     ...
 ```
 
@@ -253,7 +254,8 @@ def create_rule_group(
 2. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 4. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
-5. See [:material-code-braces: CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef) 
+5. See [:material-code-braces: SourceMetadataTypeDef](./type_defs.md#sourcemetadatatypedef) 
+6. See [:material-code-braces: CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -698,12 +700,16 @@ def list_rule_groups(
     NextToken: str = ...,
     MaxResults: int = ...,
     Scope: ResourceManagedStatusType = ...,  # (1)
-) -> ListRuleGroupsResponseTypeDef:  # (2)
+    ManagedType: ResourceManagedTypeType = ...,  # (2)
+    Type: RuleGroupTypeType = ...,  # (3)
+) -> ListRuleGroupsResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: ResourceManagedStatusType](./literals.md#resourcemanagedstatustype) 
-2. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
+2. See [:material-code-brackets: ResourceManagedTypeType](./literals.md#resourcemanagedtypetype) 
+3. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
+4. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1059,14 +1065,16 @@ def update_rule_group(
     Description: str = ...,
     DryRun: bool = ...,
     EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (3)
-) -> UpdateRuleGroupResponseTypeDef:  # (4)
+    SourceMetadata: SourceMetadataTypeDef = ...,  # (4)
+) -> UpdateRuleGroupResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
 2. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
 3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
-4. See [:material-code-braces: UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef) 
+4. See [:material-code-braces: SourceMetadataTypeDef](./type_defs.md#sourcemetadatatypedef) 
+5. See [:material-code-braces: UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

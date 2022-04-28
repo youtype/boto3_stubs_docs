@@ -5085,10 +5085,12 @@ class CreateKeyPairRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     KeyType: NotRequired[KeyTypeType],  # (1)
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+    KeyFormat: NotRequired[KeyFormatType],  # (3)
 ```
 
 1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+3. See [:material-code-brackets: KeyFormatType](./literals.md#keyformattype) 
 ## CreateKeyPairRequestServiceResourceCreateKeyPairTypeDef
 
 ```python title="Usage Example"
@@ -5106,10 +5108,12 @@ class CreateKeyPairRequestServiceResourceCreateKeyPairTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     KeyType: NotRequired[KeyTypeType],  # (1)
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+    KeyFormat: NotRequired[KeyFormatType],  # (3)
 ```
 
 1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+3. See [:material-code-brackets: KeyFormatType](./literals.md#keyformattype) 
 ## CreateLaunchTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -14168,6 +14172,7 @@ class DescribeKeyPairsRequestKeyPairExistsWaitTypeDef(TypedDict):
     KeyNames: NotRequired[Sequence[str]],
     KeyPairIds: NotRequired[Sequence[str]],
     DryRun: NotRequired[bool],
+    IncludePublicKey: NotRequired[bool],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
 ```
 
@@ -14190,6 +14195,7 @@ class DescribeKeyPairsRequestRequestTypeDef(TypedDict):
     KeyNames: NotRequired[Sequence[str]],
     KeyPairIds: NotRequired[Sequence[str]],
     DryRun: NotRequired[bool],
+    IncludePublicKey: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
@@ -27416,6 +27422,8 @@ class KeyPairInfoTypeDef(TypedDict):
     KeyName: NotRequired[str],
     KeyType: NotRequired[KeyTypeType],  # (1)
     Tags: NotRequired[List[TagTypeDef]],  # (2)
+    PublicKey: NotRequired[str],
+    CreateTime: NotRequired[datetime],
 ```
 
 1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 

@@ -652,6 +652,7 @@ def get_value() -> AcceleratorManufacturerType:
 - [IpamScopeTypeType](./literals.md#ipamscopetypetype)
 - [IpamStateType](./literals.md#ipamstatetype)
 - [Ipv6SupportValueType](./literals.md#ipv6supportvaluetype)
+- [KeyFormatType](./literals.md#keyformattype)
 - [KeyPairExistsWaiterName](./literals.md#keypairexistswaitername)
 - [KeyTypeType](./literals.md#keytypetype)
 - [LaunchTemplateAutoRecoveryStateType](./literals.md#launchtemplateautorecoverystatetype)

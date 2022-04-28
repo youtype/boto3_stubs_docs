@@ -472,6 +472,7 @@ def get_value() -> AgentInfoTypeDef:
 - [PhoneNumberStatusTypeDef](./type_defs.md#phonenumberstatustypedef)
 - [PhoneNumberSummaryTypeDef](./type_defs.md#phonenumbersummarytypedef)
 - [PromptSummaryTypeDef](./type_defs.md#promptsummarytypedef)
+- [PutUserStatusRequestRequestTypeDef](./type_defs.md#putuserstatusrequestrequesttypedef)
 - [QueueInfoTypeDef](./type_defs.md#queueinfotypedef)
 - [QueueQuickConnectConfigTypeDef](./type_defs.md#queuequickconnectconfigtypedef)
 - [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)

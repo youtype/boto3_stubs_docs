@@ -2422,7 +2422,8 @@ parent.create_ipam_scope(**kwargs)
 
 ### create\_key\_pair
 
-Creates an ED25519 or 2048-bit RSA key pair with the specified name.
+Creates an ED25519 or 2048-bit RSA key pair with the specified name and in the
+specified PEM or PPK format.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_key_pair` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_key_pair)
@@ -2435,13 +2436,15 @@ def create_key_pair(
     DryRun: bool = ...,
     KeyType: KeyTypeType = ...,  # (1)
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
-) -> KeyPairTypeDef:  # (3)
+    KeyFormat: KeyFormatType = ...,  # (3)
+) -> KeyPairTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
-3. See [:material-code-braces: KeyPairTypeDef](./type_defs.md#keypairtypedef) 
+3. See [:material-code-brackets: KeyFormatType](./literals.md#keyformattype) 
+4. See [:material-code-braces: KeyPairTypeDef](./type_defs.md#keypairtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -8221,6 +8224,7 @@ def describe_key_pairs(
     KeyNames: Sequence[str] = ...,
     KeyPairIds: Sequence[str] = ...,
     DryRun: bool = ...,
+    IncludePublicKey: bool = ...,
 ) -> DescribeKeyPairsResultTypeDef:  # (2)
     ...
 ```

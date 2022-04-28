@@ -1050,7 +1050,8 @@ parent.create_internet_gateway(**kwargs)
 
 ### EC2ServiceResource.create\_key\_pair method
 
-Creates an ED25519 or 2048-bit RSA key pair with the specified name.
+Creates an ED25519 or 2048-bit RSA key pair with the specified name and in the
+specified PEM or PPK format.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").create_key_pair` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_key_pair)
@@ -1063,12 +1064,14 @@ def create_key_pair(
     DryRun: bool = ...,
     KeyType: KeyTypeType = ...,  # (1)
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
+    KeyFormat: KeyFormatType = ...,  # (3)
 ) -> KeyPair:
     ...
 ```
 
 1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+3. See [:material-code-brackets: KeyFormatType](./literals.md#keyformattype) 
 
 
 ```python title="Usage example with kwargs"
@@ -3466,6 +3469,8 @@ def get_resource() -> KeyPairInfo:
 - `key_name`: `str`
 - `key_type`: [KeyTypeType](./literals.md#keytypetype)
 - `tags`: `List`[[TagTypeDef](./type_defs.md#tagtypedef)]
+- `public_key`: `str`
+- `create_time`: `datetime`
 - `name`: `str`
 
 

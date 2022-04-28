@@ -4668,6 +4668,21 @@ Ipv6SupportValueType = Literal[
     "enable",
 ]
 ```
+## KeyFormatType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import KeyFormatType
+
+def get_value() -> KeyFormatType:
+    return "pem"
+```
+
+```python title="Definition"
+KeyFormatType = Literal[
+    "pem",
+    "ppk",
+]
+```
 ## KeyPairExistsWaiterName
 
 ```python title="Usage Example"

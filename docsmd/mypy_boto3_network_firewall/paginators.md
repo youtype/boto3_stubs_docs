@@ -114,14 +114,18 @@ def paginate(
     self,
     *,
     Scope: ResourceManagedStatusType = ...,  # (1)
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
-) -> _PageIterator[ListRuleGroupsResponseTypeDef]:  # (3)
+    ManagedType: ResourceManagedTypeType = ...,  # (2)
+    Type: RuleGroupTypeType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListRuleGroupsResponseTypeDef]:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ResourceManagedStatusType](./literals.md#resourcemanagedstatustype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-3. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
+2. See [:material-code-brackets: ResourceManagedTypeType](./literals.md#resourcemanagedtypetype) 
+3. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

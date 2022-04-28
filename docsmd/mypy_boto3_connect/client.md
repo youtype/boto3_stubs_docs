@@ -3213,6 +3213,38 @@ parent.list_users(**kwargs)
 
 1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
+### put\_user\_status
+
+Changes the current status of a user or agent in Amazon Connect.
+
+Type annotations and code completion for `#!python boto3.client("connect").put_user_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.put_user_status)
+
+```python title="Method definition"
+def put_user_status(
+    self,
+    *,
+    UserId: str,
+    InstanceId: str,
+    AgentStatusId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: PutUserStatusRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+    "InstanceId": ...,
+    "AgentStatusId": ...,
+}
+
+parent.put_user_status(**kwargs)
+```
+
+1. See [:material-code-braces: PutUserStatusRequestRequestTypeDef](./type_defs.md#putuserstatusrequestrequesttypedef) 
+
 ### release\_phone\_number
 
 Releases a phone number previously claimed to an Amazon Connect instance.
