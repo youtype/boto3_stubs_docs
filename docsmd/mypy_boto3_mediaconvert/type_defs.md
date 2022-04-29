@@ -1379,12 +1379,14 @@ def get_value() -> DolbyVisionTypeDef:
 class DolbyVisionTypeDef(TypedDict):
     L6Metadata: NotRequired[DolbyVisionLevel6MetadataTypeDef],  # (1)
     L6Mode: NotRequired[DolbyVisionLevel6ModeType],  # (2)
-    Profile: NotRequired[DolbyVisionProfileType],  # (3)
+    Mapping: NotRequired[DolbyVisionMappingType],  # (3)
+    Profile: NotRequired[DolbyVisionProfileType],  # (4)
 ```
 
 1. See [:material-code-braces: DolbyVisionLevel6MetadataTypeDef](./type_defs.md#dolbyvisionlevel6metadatatypedef) 
 2. See [:material-code-brackets: DolbyVisionLevel6ModeType](./literals.md#dolbyvisionlevel6modetype) 
-3. See [:material-code-brackets: DolbyVisionProfileType](./literals.md#dolbyvisionprofiletype) 
+3. See [:material-code-brackets: DolbyVisionMappingType](./literals.md#dolbyvisionmappingtype) 
+4. See [:material-code-brackets: DolbyVisionProfileType](./literals.md#dolbyvisionprofiletype) 
 ## DvbNitSettingsTypeDef
 
 ```python title="Usage Example"
@@ -2596,7 +2598,8 @@ class InputTypeDef(TypedDict):
     SupplementalImps: NotRequired[Sequence[str]],
     TimecodeSource: NotRequired[InputTimecodeSourceType],  # (14)
     TimecodeStart: NotRequired[str],
-    VideoSelector: NotRequired[VideoSelectorTypeDef],  # (15)
+    VideoGenerator: NotRequired[InputVideoGeneratorTypeDef],  # (15)
+    VideoSelector: NotRequired[VideoSelectorTypeDef],  # (16)
 ```
 
 1. See [:material-code-braces: AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef) 
@@ -2613,7 +2616,24 @@ class InputTypeDef(TypedDict):
 12. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
 13. See [:material-code-brackets: InputPsiControlType](./literals.md#inputpsicontroltype) 
 14. See [:material-code-brackets: InputTimecodeSourceType](./literals.md#inputtimecodesourcetype) 
-15. See [:material-code-braces: VideoSelectorTypeDef](./type_defs.md#videoselectortypedef) 
+15. See [:material-code-braces: InputVideoGeneratorTypeDef](./type_defs.md#inputvideogeneratortypedef) 
+16. See [:material-code-braces: VideoSelectorTypeDef](./type_defs.md#videoselectortypedef) 
+## InputVideoGeneratorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import InputVideoGeneratorTypeDef
+
+def get_value() -> InputVideoGeneratorTypeDef:
+    return {
+        "Duration": ...,
+    }
+```
+
+```python title="Definition"
+class InputVideoGeneratorTypeDef(TypedDict):
+    Duration: NotRequired[int],
+```
+
 ## InsertableImageTypeDef
 
 ```python title="Usage Example"
@@ -4912,10 +4932,11 @@ class VideoSelectorTypeDef(TypedDict):
     ColorSpaceUsage: NotRequired[ColorSpaceUsageType],  # (3)
     EmbeddedTimecodeOverride: NotRequired[EmbeddedTimecodeOverrideType],  # (4)
     Hdr10Metadata: NotRequired[Hdr10MetadataTypeDef],  # (5)
+    PadVideo: NotRequired[PadVideoType],  # (6)
     Pid: NotRequired[int],
     ProgramNumber: NotRequired[int],
-    Rotate: NotRequired[InputRotateType],  # (6)
-    SampleRange: NotRequired[InputSampleRangeType],  # (7)
+    Rotate: NotRequired[InputRotateType],  # (7)
+    SampleRange: NotRequired[InputSampleRangeType],  # (8)
 ```
 
 1. See [:material-code-brackets: AlphaBehaviorType](./literals.md#alphabehaviortype) 
@@ -4923,8 +4944,9 @@ class VideoSelectorTypeDef(TypedDict):
 3. See [:material-code-brackets: ColorSpaceUsageType](./literals.md#colorspaceusagetype) 
 4. See [:material-code-brackets: EmbeddedTimecodeOverrideType](./literals.md#embeddedtimecodeoverridetype) 
 5. See [:material-code-braces: Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef) 
-6. See [:material-code-brackets: InputRotateType](./literals.md#inputrotatetype) 
-7. See [:material-code-brackets: InputSampleRangeType](./literals.md#inputsamplerangetype) 
+6. See [:material-code-brackets: PadVideoType](./literals.md#padvideotype) 
+7. See [:material-code-brackets: InputRotateType](./literals.md#inputrotatetype) 
+8. See [:material-code-brackets: InputSampleRangeType](./literals.md#inputsamplerangetype) 
 ## VorbisSettingsTypeDef
 
 ```python title="Usage Example"

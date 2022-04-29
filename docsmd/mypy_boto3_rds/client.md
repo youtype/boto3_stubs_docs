@@ -128,6 +128,7 @@ except (
     client.InvalidSubnet,
     client.InvalidVPCNetworkStateFault,
     client.KMSKeyNotAccessibleFault,
+    client.NetworkTypeNotSupported,
     client.OptionGroupAlreadyExistsFault,
     client.OptionGroupNotFoundFault,
     client.OptionGroupQuotaExceededFault,
@@ -903,6 +904,7 @@ def create_db_instance(
     EnableCustomerOwnedIp: bool = ...,
     CustomIamInstanceProfile: str = ...,
     BackupTarget: str = ...,
+    NetworkType: str = ...,
 ) -> CreateDBInstanceResultTypeDef:  # (3)
     ...
 ```
@@ -969,6 +971,7 @@ def create_db_instance_read_replica(
     ReplicaMode: ReplicaModeType = ...,  # (3)
     MaxAllocatedStorage: int = ...,
     CustomIamInstanceProfile: str = ...,
+    NetworkType: str = ...,
     SourceRegion: str = ...,
 ) -> CreateDBInstanceReadReplicaResultTypeDef:  # (4)
     ...
@@ -3608,6 +3611,7 @@ def modify_db_instance(
     AwsBackupRecoveryPointArn: str = ...,
     AutomationMode: AutomationModeType = ...,  # (4)
     ResumeFullAutomationModeMinutes: int = ...,
+    NetworkType: str = ...,
 ) -> ModifyDBInstanceResultTypeDef:  # (5)
     ...
 ```
@@ -4596,6 +4600,7 @@ def restore_db_instance_from_db_snapshot(
     EnableCustomerOwnedIp: bool = ...,
     CustomIamInstanceProfile: str = ...,
     BackupTarget: str = ...,
+    NetworkType: str = ...,
 ) -> RestoreDBInstanceFromDBSnapshotResultTypeDef:  # (3)
     ...
 ```
@@ -4672,6 +4677,7 @@ def restore_db_instance_from_s3(
     UseDefaultProcessorFeatures: bool = ...,
     DeletionProtection: bool = ...,
     MaxAllocatedStorage: int = ...,
+    NetworkType: str = ...,
 ) -> RestoreDBInstanceFromS3ResultTypeDef:  # (3)
     ...
 ```
@@ -4744,6 +4750,7 @@ def restore_db_instance_to_point_in_time(
     EnableCustomerOwnedIp: bool = ...,
     CustomIamInstanceProfile: str = ...,
     BackupTarget: str = ...,
+    NetworkType: str = ...,
 ) -> RestoreDBInstanceToPointInTimeResultTypeDef:  # (3)
     ...
 ```

@@ -1741,6 +1741,21 @@ DolbyVisionLevel6ModeType = Literal[
     "SPECIFY",
 ]
 ```
+## DolbyVisionMappingType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import DolbyVisionMappingType
+
+def get_value() -> DolbyVisionMappingType:
+    return "HDR10_1000"
+```
+
+```python title="Definition"
+DolbyVisionMappingType = Literal[
+    "HDR10_1000",
+    "HDR10_NOMAP",
+]
+```
 ## DolbyVisionProfileType
 
 ```python title="Usage Example"
@@ -1753,6 +1768,7 @@ def get_value() -> DolbyVisionProfileType:
 ```python title="Definition"
 DolbyVisionProfileType = Literal[
     "PROFILE_5",
+    "PROFILE_8_1",
 ]
 ```
 ## DropFrameTimecodeType
@@ -5244,6 +5260,21 @@ OutputSdtType = Literal[
     "SDT_FOLLOW_IF_PRESENT",
     "SDT_MANUAL",
     "SDT_NONE",
+]
+```
+## PadVideoType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import PadVideoType
+
+def get_value() -> PadVideoType:
+    return "BLACK"
+```
+
+```python title="Definition"
+PadVideoType = Literal[
+    "BLACK",
+    "DISABLED",
 ]
 ```
 ## PresetListByType

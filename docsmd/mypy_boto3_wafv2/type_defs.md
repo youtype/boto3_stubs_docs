@@ -93,6 +93,23 @@ class BlockActionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CustomResponseTypeDef](./type_defs.md#customresponsetypedef) 
+## BodyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import BodyTypeDef
+
+def get_value() -> BodyTypeDef:
+    return {
+        "OversizeHandling": ...,
+    }
+```
+
+```python title="Definition"
+class BodyTypeDef(TypedDict):
+    OversizeHandling: NotRequired[OversizeHandlingType],  # (1)
+```
+
+1. See [:material-code-brackets: OversizeHandlingType](./literals.md#oversizehandlingtype) 
 ## ByteMatchStatementTypeDef
 
 ```python title="Usage Example"
@@ -229,6 +246,47 @@ class ConditionTypeDef(TypedDict):
 
 1. See [:material-code-braces: ActionConditionTypeDef](./type_defs.md#actionconditiontypedef) 
 2. See [:material-code-braces: LabelNameConditionTypeDef](./type_defs.md#labelnameconditiontypedef) 
+## CookieMatchPatternTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import CookieMatchPatternTypeDef
+
+def get_value() -> CookieMatchPatternTypeDef:
+    return {
+        "All": ...,
+    }
+```
+
+```python title="Definition"
+class CookieMatchPatternTypeDef(TypedDict):
+    All: NotRequired[Mapping[str, Any]],
+    IncludedCookies: NotRequired[Sequence[str]],
+    ExcludedCookies: NotRequired[Sequence[str]],
+```
+
+## CookiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import CookiesTypeDef
+
+def get_value() -> CookiesTypeDef:
+    return {
+        "MatchPattern": ...,
+        "MatchScope": ...,
+        "OversizeHandling": ...,
+    }
+```
+
+```python title="Definition"
+class CookiesTypeDef(TypedDict):
+    MatchPattern: CookieMatchPatternTypeDef,  # (1)
+    MatchScope: MapMatchScopeType,  # (2)
+    OversizeHandling: OversizeHandlingType,  # (3)
+```
+
+1. See [:material-code-braces: CookieMatchPatternTypeDef](./type_defs.md#cookiematchpatterntypedef) 
+2. See [:material-code-brackets: MapMatchScopeType](./literals.md#mapmatchscopetype) 
+3. See [:material-code-brackets: OversizeHandlingType](./literals.md#oversizehandlingtype) 
 ## CountActionTypeDef
 
 ```python title="Usage Example"
@@ -802,14 +860,19 @@ class FieldToMatchTypeDef(TypedDict):
     AllQueryArguments: NotRequired[Mapping[str, Any]],
     UriPath: NotRequired[Mapping[str, Any]],
     QueryString: NotRequired[Mapping[str, Any]],
-    Body: NotRequired[Mapping[str, Any]],
+    Body: NotRequired[BodyTypeDef],  # (3)
     Method: NotRequired[Mapping[str, Any]],
-    JsonBody: NotRequired[JsonBodyTypeDef],  # (3)
+    JsonBody: NotRequired[JsonBodyTypeDef],  # (4)
+    Headers: NotRequired[HeadersTypeDef],  # (5)
+    Cookies: NotRequired[CookiesTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: SingleHeaderTypeDef](./type_defs.md#singleheadertypedef) 
 2. See [:material-code-braces: SingleQueryArgumentTypeDef](./type_defs.md#singlequeryargumenttypedef) 
-3. See [:material-code-braces: JsonBodyTypeDef](./type_defs.md#jsonbodytypedef) 
+3. See [:material-code-braces: BodyTypeDef](./type_defs.md#bodytypedef) 
+4. See [:material-code-braces: JsonBodyTypeDef](./type_defs.md#jsonbodytypedef) 
+5. See [:material-code-braces: HeadersTypeDef](./type_defs.md#headerstypedef) 
+6. See [:material-code-braces: CookiesTypeDef](./type_defs.md#cookiestypedef) 
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -1454,6 +1517,47 @@ class HTTPRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef) 
+## HeaderMatchPatternTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import HeaderMatchPatternTypeDef
+
+def get_value() -> HeaderMatchPatternTypeDef:
+    return {
+        "All": ...,
+    }
+```
+
+```python title="Definition"
+class HeaderMatchPatternTypeDef(TypedDict):
+    All: NotRequired[Mapping[str, Any]],
+    IncludedHeaders: NotRequired[Sequence[str]],
+    ExcludedHeaders: NotRequired[Sequence[str]],
+```
+
+## HeadersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import HeadersTypeDef
+
+def get_value() -> HeadersTypeDef:
+    return {
+        "MatchPattern": ...,
+        "MatchScope": ...,
+        "OversizeHandling": ...,
+    }
+```
+
+```python title="Definition"
+class HeadersTypeDef(TypedDict):
+    MatchPattern: HeaderMatchPatternTypeDef,  # (1)
+    MatchScope: MapMatchScopeType,  # (2)
+    OversizeHandling: OversizeHandlingType,  # (3)
+```
+
+1. See [:material-code-braces: HeaderMatchPatternTypeDef](./type_defs.md#headermatchpatterntypedef) 
+2. See [:material-code-brackets: MapMatchScopeType](./literals.md#mapmatchscopetype) 
+3. See [:material-code-brackets: OversizeHandlingType](./literals.md#oversizehandlingtype) 
 ## IPSetForwardedIPConfigTypeDef
 
 ```python title="Usage Example"
@@ -1573,11 +1677,13 @@ class JsonBodyTypeDef(TypedDict):
     MatchPattern: JsonMatchPatternTypeDef,  # (1)
     MatchScope: JsonMatchScopeType,  # (2)
     InvalidFallbackBehavior: NotRequired[BodyParsingFallbackBehaviorType],  # (3)
+    OversizeHandling: NotRequired[OversizeHandlingType],  # (4)
 ```
 
 1. See [:material-code-braces: JsonMatchPatternTypeDef](./type_defs.md#jsonmatchpatterntypedef) 
 2. See [:material-code-brackets: JsonMatchScopeType](./literals.md#jsonmatchscopetype) 
 3. See [:material-code-brackets: BodyParsingFallbackBehaviorType](./literals.md#bodyparsingfallbackbehaviortype) 
+4. See [:material-code-brackets: OversizeHandlingType](./literals.md#oversizehandlingtype) 
 ## JsonMatchPatternTypeDef
 
 ```python title="Usage Example"

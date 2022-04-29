@@ -8676,6 +8676,7 @@ class RunbookTypeDef(TypedDict):
     Parameters: NotRequired[Dict[str, List[str]]],
     TargetParameterName: NotRequired[str],
     Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
     MaxConcurrency: NotRequired[str],
     MaxErrors: NotRequired[str],
     TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (2)

@@ -952,6 +952,7 @@ class CreateDBInstanceMessageRequestTypeDef(TypedDict):
     EnableCustomerOwnedIp: NotRequired[bool],
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -1003,6 +1004,7 @@ class CreateDBInstanceReadReplicaMessageRequestTypeDef(TypedDict):
     ReplicaMode: NotRequired[ReplicaModeType],  # (3)
     MaxAllocatedStorage: NotRequired[int],
     CustomIamInstanceProfile: NotRequired[str],
+    NetworkType: NotRequired[str],
     SourceRegion: NotRequired[str],
 ```
 
@@ -2343,6 +2345,7 @@ class DBInstanceTypeDef(TypedDict):
     ResumeFullAutomationModeTime: NotRequired[datetime],
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
@@ -2781,6 +2784,7 @@ class DBSubnetGroupTypeDef(TypedDict):
     SubnetGroupStatus: NotRequired[str],
     Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
     DBSubnetGroupArn: NotRequired[str],
+    SupportedNetworkTypes: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
@@ -6052,6 +6056,7 @@ class ModifyDBInstanceMessageRequestTypeDef(TypedDict):
     AwsBackupRecoveryPointArn: NotRequired[str],
     AutomationMode: NotRequired[AutomationModeType],  # (4)
     ResumeFullAutomationModeMinutes: NotRequired[int],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
@@ -6731,6 +6736,7 @@ class OrderableDBInstanceOptionTypeDef(TypedDict):
     SupportedActivityStreamModes: NotRequired[List[str]],
     SupportsGlobalDatabases: NotRequired[bool],
     SupportsClusters: NotRequired[bool],
+    SupportedNetworkTypes: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
@@ -7759,6 +7765,7 @@ class RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef(TypedDict):
     EnableCustomerOwnedIp: NotRequired[bool],
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -7846,6 +7853,7 @@ class RestoreDBInstanceFromS3MessageRequestTypeDef(TypedDict):
     UseDefaultProcessorFeatures: NotRequired[bool],
     DeletionProtection: NotRequired[bool],
     MaxAllocatedStorage: NotRequired[int],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -7919,6 +7927,7 @@ class RestoreDBInstanceToPointInTimeMessageRequestTypeDef(TypedDict):
     EnableCustomerOwnedIp: NotRequired[bool],
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

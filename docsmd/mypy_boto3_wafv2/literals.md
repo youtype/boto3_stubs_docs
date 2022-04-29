@@ -315,6 +315,7 @@ CountryCodeType = Literal[
     "VU",
     "WF",
     "WS",
+    "XK",
     "YE",
     "YT",
     "ZA",
@@ -442,6 +443,38 @@ def get_value() -> LabelMatchScopeType:
 LabelMatchScopeType = Literal[
     "LABEL",
     "NAMESPACE",
+]
+```
+## MapMatchScopeType
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.literals import MapMatchScopeType
+
+def get_value() -> MapMatchScopeType:
+    return "ALL"
+```
+
+```python title="Definition"
+MapMatchScopeType = Literal[
+    "ALL",
+    "KEY",
+    "VALUE",
+]
+```
+## OversizeHandlingType
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.literals import OversizeHandlingType
+
+def get_value() -> OversizeHandlingType:
+    return "CONTINUE"
+```
+
+```python title="Definition"
+OversizeHandlingType = Literal[
+    "CONTINUE",
+    "MATCH",
+    "NO_MATCH",
 ]
 ```
 ## PayloadTypeType

@@ -36,6 +36,22 @@ CodeReviewCompletedWaiterName = Literal[
     "code_review_completed",
 ]
 ```
+## ConfigFileStateType
+
+```python title="Usage Example"
+from mypy_boto3_codeguru_reviewer.literals import ConfigFileStateType
+
+def get_value() -> ConfigFileStateType:
+    return "Absent"
+```
+
+```python title="Definition"
+ConfigFileStateType = Literal[
+    "Absent",
+    "Present",
+    "PresentWithErrors",
+]
+```
 ## EncryptionOptionType
 
 ```python title="Usage Example"

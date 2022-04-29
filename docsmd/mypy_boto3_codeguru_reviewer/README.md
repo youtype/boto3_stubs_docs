@@ -116,6 +116,7 @@ def get_value() -> AnalysisTypeType:
 
 - [AnalysisTypeType](./literals.md#analysistypetype)
 - [CodeReviewCompletedWaiterName](./literals.md#codereviewcompletedwaitername)
+- [ConfigFileStateType](./literals.md#configfilestatetype)
 - [EncryptionOptionType](./literals.md#encryptionoptiontype)
 - [JobStateType](./literals.md#jobstatetype)
 - [ListRepositoryAssociationsPaginatorName](./literals.md#listrepositoryassociationspaginatorname)
