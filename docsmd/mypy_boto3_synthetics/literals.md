@@ -44,12 +44,23 @@ CanaryRunStateType = Literal[
 from mypy_boto3_synthetics.literals import CanaryStateReasonCodeType
 
 def get_value() -> CanaryStateReasonCodeType:
-    return "INVALID_PERMISSIONS"
+    return "CREATE_FAILED"
 ```
 
 ```python title="Definition"
 CanaryStateReasonCodeType = Literal[
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "CREATE_PENDING",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
     "INVALID_PERMISSIONS",
+    "ROLLBACK_COMPLETE",
+    "ROLLBACK_FAILED",
+    "SYNC_DELETE_IN_PROGRESS",
+    "UPDATE_COMPLETE",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_PENDING",
 ]
 ```
 ## CanaryStateType

@@ -202,8 +202,7 @@ parent.cancel_handshake(**kwargs)
 
 ### close\_account
 
-Closes an Amazon Web Services account that is now a part of an Organizations,
-either created within the organization, or invited to join the organization.
+Closes an Amazon Web Services member account within an organization.
 
 Type annotations and code completion for `#!python boto3.client("organizations").close_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.close_account)

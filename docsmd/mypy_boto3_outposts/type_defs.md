@@ -37,6 +37,27 @@ class AddressTypeDef(TypedDict):
     Municipality: NotRequired[str],
 ```
 
+## AssetInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import AssetInfoTypeDef
+
+def get_value() -> AssetInfoTypeDef:
+    return {
+        "AssetId": ...,
+    }
+```
+
+```python title="Definition"
+class AssetInfoTypeDef(TypedDict):
+    AssetId: NotRequired[str],
+    RackId: NotRequired[str],
+    AssetType: NotRequired[AssetTypeType],  # (1)
+    ComputeAttributes: NotRequired[ComputeAttributesTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
+2. See [:material-code-braces: ComputeAttributesTypeDef](./type_defs.md#computeattributestypedef) 
 ## CancelOrderInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -78,6 +99,22 @@ class CatalogItemTypeDef(TypedDict):
 1. See [:material-code-brackets: CatalogItemStatusType](./literals.md#catalogitemstatustype) 
 2. See [:material-code-braces: EC2CapacityTypeDef](./type_defs.md#ec2capacitytypedef) 
 3. See [:material-code-brackets: SupportedStorageEnumType](./literals.md#supportedstorageenumtype) 
+## ComputeAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import ComputeAttributesTypeDef
+
+def get_value() -> ComputeAttributesTypeDef:
+    return {
+        "HostId": ...,
+    }
+```
+
+```python title="Definition"
+class ComputeAttributesTypeDef(TypedDict):
+    HostId: NotRequired[str],
+```
+
 ## CreateOrderInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -546,6 +583,47 @@ class LineItemTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LineItemStatusType](./literals.md#lineitemstatustype) 
+## ListAssetsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import ListAssetsInputRequestTypeDef
+
+def get_value() -> ListAssetsInputRequestTypeDef:
+    return {
+        "OutpostIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetsInputRequestTypeDef(TypedDict):
+    OutpostIdentifier: str,
+    HostIdFilter: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListAssetsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import ListAssetsOutputTypeDef
+
+def get_value() -> ListAssetsOutputTypeDef:
+    return {
+        "Assets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetsOutputTypeDef(TypedDict):
+    Assets: List[AssetInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AssetInfoTypeDef](./type_defs.md#assetinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCatalogItemsInputRequestTypeDef
 
 ```python title="Usage Example"

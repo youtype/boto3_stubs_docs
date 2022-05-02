@@ -89,6 +89,7 @@ def get_value() -> ArtifactsStateType:
 - [ChimeSDKMediaPipelinesServiceName](./literals.md#chimesdkmediapipelinesservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

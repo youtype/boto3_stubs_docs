@@ -84,6 +84,7 @@ def get_value() -> ChatTokenCapabilityType:
 - [ivschatServiceName](./literals.md#ivschatservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

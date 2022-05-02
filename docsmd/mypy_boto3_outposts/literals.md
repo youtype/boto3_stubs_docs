@@ -22,6 +22,20 @@ AddressTypeType = Literal[
     "SHIPPING_ADDRESS",
 ]
 ```
+## AssetTypeType
+
+```python title="Usage Example"
+from mypy_boto3_outposts.literals import AssetTypeType
+
+def get_value() -> AssetTypeType:
+    return "COMPUTE"
+```
+
+```python title="Definition"
+AssetTypeType = Literal[
+    "COMPUTE",
+]
+```
 ## CatalogItemClassType
 
 ```python title="Usage Example"

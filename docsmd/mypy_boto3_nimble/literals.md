@@ -1211,11 +1211,12 @@ WaiterName = Literal[
 from mypy_boto3_nimble.literals import RegionName
 
 def get_value() -> RegionName:
-    return "ap-southeast-2"
+    return "ap-northeast-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-northeast-1",
     "ap-southeast-2",
     "ca-central-1",
     "eu-west-2",

@@ -393,6 +393,7 @@ def get_value() -> DeleteCanaryRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteCanaryRequestRequestTypeDef(TypedDict):
     Name: str,
+    DeleteLambda: NotRequired[bool],
 ```
 
 ## DescribeCanariesLastRunRequestRequestTypeDef

@@ -466,3 +466,20 @@ ResourceServiceName = Literal[
     "sqs",
 ]
 ```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-southeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-southeast-1",
+    "eu-central-1",
+    "us-east-1",
+    "us-west-2",
+]
+```

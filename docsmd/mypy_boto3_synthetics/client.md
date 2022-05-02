@@ -131,6 +131,7 @@ def delete_canary(
     self,
     *,
     Name: str,
+    DeleteLambda: bool = ...,
 ) -> Dict[str, Any]:
     ...
 ```

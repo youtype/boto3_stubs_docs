@@ -374,7 +374,7 @@ parent.get_outpost(**kwargs)
 
 ### get\_outpost\_instance\_types
 
-Lists the instance types for the specified Outpost.
+Gets the instance types for the specified Outpost.
 
 Type annotations and code completion for `#!python boto3.client("outposts").get_outpost_instance_types` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
@@ -464,9 +464,41 @@ parent.get_site_address(**kwargs)
 
 1. See [:material-code-braces: GetSiteAddressInputRequestTypeDef](./type_defs.md#getsiteaddressinputrequesttypedef) 
 
+### list\_assets
+
+Lists the hardware assets in an Outpost.
+
+Type annotations and code completion for `#!python boto3.client("outposts").list_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_assets)
+
+```python title="Method definition"
+def list_assets(
+    self,
+    *,
+    OutpostIdentifier: str,
+    HostIdFilter: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAssetsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAssetsOutputTypeDef](./type_defs.md#listassetsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssetsInputRequestTypeDef = {  # (1)
+    "OutpostIdentifier": ...,
+}
+
+parent.list_assets(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssetsInputRequestTypeDef](./type_defs.md#listassetsinputrequesttypedef) 
+
 ### list\_catalog\_items
 
-Use to create a list of every item in the catalog.
+Lists the items in the catalog.
 
 Type annotations and code completion for `#!python boto3.client("outposts").list_catalog_items` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_catalog_items)
@@ -501,7 +533,7 @@ parent.list_catalog_items(**kwargs)
 
 ### list\_orders
 
-Create a list of the Outpost orders for your Amazon Web Services account.
+Lists the Outpost orders for your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("outposts").list_orders` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_orders)
@@ -532,7 +564,7 @@ parent.list_orders(**kwargs)
 
 ### list\_outposts
 
-Create a list of the Outposts for your Amazon Web Services account.
+Lists the Outposts for your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("outposts").list_outposts` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
@@ -565,7 +597,7 @@ parent.list_outposts(**kwargs)
 
 ### list\_sites
 
-Create a list of the Outpost sites for your Amazon Web Services account.
+Lists the Outpost sites for your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("outposts").list_sites` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
