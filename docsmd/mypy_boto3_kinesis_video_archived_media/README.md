@@ -69,12 +69,13 @@ from `#!python boto3.client("kinesis-video-archived-media").get_paginator("...")
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_kinesis_video_archived_media.paginator import ListFragmentsPaginator
+from mypy_boto3_kinesis_video_archived_media.paginator import GetImagesPaginator
 
-def get_list_fragments_paginator() -> ListFragmentsPaginator:
-    return Session().client("kinesis-video-archived-media").get_paginator("list_fragments"))
+def get_get_images_paginator() -> GetImagesPaginator:
+    return Session().client("kinesis-video-archived-media").get_paginator("get_images"))
 ```
 
+- [GetImagesPaginator](./paginators.md#getimagespaginator)
 - [ListFragmentsPaginator](./paginators.md#listfragmentspaginator)
 
 
@@ -102,11 +103,16 @@ def get_value() -> ClipFragmentSelectorTypeType:
 - [DASHDisplayFragmentTimestampType](./literals.md#dashdisplayfragmenttimestamptype)
 - [DASHFragmentSelectorTypeType](./literals.md#dashfragmentselectortypetype)
 - [DASHPlaybackModeType](./literals.md#dashplaybackmodetype)
+- [FormatConfigKeyType](./literals.md#formatconfigkeytype)
+- [FormatType](./literals.md#formattype)
 - [FragmentSelectorTypeType](./literals.md#fragmentselectortypetype)
+- [GetImagesPaginatorName](./literals.md#getimagespaginatorname)
 - [HLSDiscontinuityModeType](./literals.md#hlsdiscontinuitymodetype)
 - [HLSDisplayFragmentTimestampType](./literals.md#hlsdisplayfragmenttimestamptype)
 - [HLSFragmentSelectorTypeType](./literals.md#hlsfragmentselectortypetype)
 - [HLSPlaybackModeType](./literals.md#hlsplaybackmodetype)
+- [ImageErrorType](./literals.md#imageerrortype)
+- [ImageSelectorTypeType](./literals.md#imageselectortypetype)
 - [ListFragmentsPaginatorName](./literals.md#listfragmentspaginatorname)
 - [KinesisVideoArchivedMediaServiceName](./literals.md#kinesisvideoarchivedmediaservicename)
 - [ServiceName](./literals.md#servicename)
@@ -143,10 +149,14 @@ def get_value() -> ClipFragmentSelectorTypeDef:
 - [GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef)
 - [GetHLSStreamingSessionURLInputRequestTypeDef](./type_defs.md#gethlsstreamingsessionurlinputrequesttypedef)
 - [GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef)
+- [GetImagesInputGetImagesPaginateTypeDef](./type_defs.md#getimagesinputgetimagespaginatetypedef)
+- [GetImagesInputRequestTypeDef](./type_defs.md#getimagesinputrequesttypedef)
+- [GetImagesOutputTypeDef](./type_defs.md#getimagesoutputtypedef)
 - [GetMediaForFragmentListInputRequestTypeDef](./type_defs.md#getmediaforfragmentlistinputrequesttypedef)
 - [GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef)
 - [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
 - [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
+- [ImageTypeDef](./type_defs.md#imagetypedef)
 - [ListFragmentsInputListFragmentsPaginateTypeDef](./type_defs.md#listfragmentsinputlistfragmentspaginatetypedef)
 - [ListFragmentsInputRequestTypeDef](./type_defs.md#listfragmentsinputrequesttypedef)
 - [ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)

@@ -98,6 +98,35 @@ DASHPlaybackModeType = Literal[
     "ON_DEMAND",
 ]
 ```
+## FormatConfigKeyType
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_archived_media.literals import FormatConfigKeyType
+
+def get_value() -> FormatConfigKeyType:
+    return "JPEGQuality"
+```
+
+```python title="Definition"
+FormatConfigKeyType = Literal[
+    "JPEGQuality",
+]
+```
+## FormatType
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_archived_media.literals import FormatType
+
+def get_value() -> FormatType:
+    return "JPEG"
+```
+
+```python title="Definition"
+FormatType = Literal[
+    "JPEG",
+    "PNG",
+]
+```
 ## FragmentSelectorTypeType
 
 ```python title="Usage Example"
@@ -111,6 +140,20 @@ def get_value() -> FragmentSelectorTypeType:
 FragmentSelectorTypeType = Literal[
     "PRODUCER_TIMESTAMP",
     "SERVER_TIMESTAMP",
+]
+```
+## GetImagesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_archived_media.literals import GetImagesPaginatorName
+
+def get_value() -> GetImagesPaginatorName:
+    return "get_images"
+```
+
+```python title="Definition"
+GetImagesPaginatorName = Literal[
+    "get_images",
 ]
 ```
 ## HLSDiscontinuityModeType
@@ -173,6 +216,36 @@ HLSPlaybackModeType = Literal[
     "LIVE",
     "LIVE_REPLAY",
     "ON_DEMAND",
+]
+```
+## ImageErrorType
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_archived_media.literals import ImageErrorType
+
+def get_value() -> ImageErrorType:
+    return "MEDIA_ERROR"
+```
+
+```python title="Definition"
+ImageErrorType = Literal[
+    "MEDIA_ERROR",
+    "NO_MEDIA",
+]
+```
+## ImageSelectorTypeType
+
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_archived_media.literals import ImageSelectorTypeType
+
+def get_value() -> ImageSelectorTypeType:
+    return "PRODUCER_TIMESTAMP"
+```
+
+```python title="Definition"
+ImageSelectorTypeType = Literal[
+    "PRODUCER_TIMESTAMP",
+    "SERVER_TIMESTAMP",
 ]
 ```
 ## ListFragmentsPaginatorName
@@ -550,11 +623,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_kinesis_video_archived_media.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "list_fragments"
+    return "get_images"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "get_images",
     "list_fragments",
 ]
 ```

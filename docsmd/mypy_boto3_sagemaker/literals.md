@@ -411,6 +411,33 @@ AutoMLMetricEnumType = Literal[
     "MSE",
 ]
 ```
+## AutoMLMetricExtendedEnumType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import AutoMLMetricExtendedEnumType
+
+def get_value() -> AutoMLMetricExtendedEnumType:
+    return "AUC"
+```
+
+```python title="Definition"
+AutoMLMetricExtendedEnumType = Literal[
+    "Accuracy",
+    "AUC",
+    "BalancedAccuracy",
+    "F1",
+    "F1macro",
+    "LogLoss",
+    "MAE",
+    "MSE",
+    "Precision",
+    "PrecisionMacro",
+    "R2",
+    "Recall",
+    "RecallMacro",
+    "RMSE",
+]
+```
 ## AutoMLS3DataTypeType
 
 ```python title="Usage Example"

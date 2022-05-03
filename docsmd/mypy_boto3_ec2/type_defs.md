@@ -653,6 +653,7 @@ class AllocateHostsRequestRequestTypeDef(TypedDict):
     InstanceFamily: NotRequired[str],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
     HostRecovery: NotRequired[HostRecoveryType],  # (3)
+    OutpostArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
@@ -24722,6 +24723,7 @@ class HostTypeDef(TypedDict):
     OwnerId: NotRequired[str],
     AvailabilityZoneId: NotRequired[str],
     MemberOfServiceLinkedResourceGroup: NotRequired[bool],
+    OutpostArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 

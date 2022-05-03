@@ -323,6 +323,7 @@ def allocate_hosts(
     InstanceFamily: str = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
     HostRecovery: HostRecoveryType = ...,  # (3)
+    OutpostArn: str = ...,
 ) -> AllocateHostsResultTypeDef:  # (4)
     ...
 ```

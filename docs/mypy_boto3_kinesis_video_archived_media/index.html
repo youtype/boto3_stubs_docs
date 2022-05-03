@@ -36024,12 +36024,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kinesis_video_archived_media.paginator</span> <span class="kn">import</span> <span class="n">ListFragmentsPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kinesis_video_archived_media.paginator</span> <span class="kn">import</span> <span class="n">GetImagesPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_fragments_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListFragmentsPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_fragments&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_get_images_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GetImagesPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;get_images&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#getimagespaginator">GetImagesPaginator</a></li>
 <li><a href="paginators/#listfragmentspaginator">ListFragmentsPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
@@ -36046,11 +36047,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#dashdisplayfragmenttimestamptype">DASHDisplayFragmentTimestampType</a></li>
 <li><a href="literals/#dashfragmentselectortypetype">DASHFragmentSelectorTypeType</a></li>
 <li><a href="literals/#dashplaybackmodetype">DASHPlaybackModeType</a></li>
+<li><a href="literals/#formatconfigkeytype">FormatConfigKeyType</a></li>
+<li><a href="literals/#formattype">FormatType</a></li>
 <li><a href="literals/#fragmentselectortypetype">FragmentSelectorTypeType</a></li>
+<li><a href="literals/#getimagespaginatorname">GetImagesPaginatorName</a></li>
 <li><a href="literals/#hlsdiscontinuitymodetype">HLSDiscontinuityModeType</a></li>
 <li><a href="literals/#hlsdisplayfragmenttimestamptype">HLSDisplayFragmentTimestampType</a></li>
 <li><a href="literals/#hlsfragmentselectortypetype">HLSFragmentSelectorTypeType</a></li>
 <li><a href="literals/#hlsplaybackmodetype">HLSPlaybackModeType</a></li>
+<li><a href="literals/#imageerrortype">ImageErrorType</a></li>
+<li><a href="literals/#imageselectortypetype">ImageSelectorTypeType</a></li>
 <li><a href="literals/#listfragmentspaginatorname">ListFragmentsPaginatorName</a></li>
 <li><a href="literals/#kinesisvideoarchivedmediaservicename">KinesisVideoArchivedMediaServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -36081,10 +36087,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getdashstreamingsessionurloutputtypedef">GetDASHStreamingSessionURLOutputTypeDef</a></li>
 <li><a href="type_defs/#gethlsstreamingsessionurlinputrequesttypedef">GetHLSStreamingSessionURLInputRequestTypeDef</a></li>
 <li><a href="type_defs/#gethlsstreamingsessionurloutputtypedef">GetHLSStreamingSessionURLOutputTypeDef</a></li>
+<li><a href="type_defs/#getimagesinputgetimagespaginatetypedef">GetImagesInputGetImagesPaginateTypeDef</a></li>
+<li><a href="type_defs/#getimagesinputrequesttypedef">GetImagesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#getimagesoutputtypedef">GetImagesOutputTypeDef</a></li>
 <li><a href="type_defs/#getmediaforfragmentlistinputrequesttypedef">GetMediaForFragmentListInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getmediaforfragmentlistoutputtypedef">GetMediaForFragmentListOutputTypeDef</a></li>
 <li><a href="type_defs/#hlsfragmentselectortypedef">HLSFragmentSelectorTypeDef</a></li>
 <li><a href="type_defs/#hlstimestamprangetypedef">HLSTimestampRangeTypeDef</a></li>
+<li><a href="type_defs/#imagetypedef">ImageTypeDef</a></li>
 <li><a href="type_defs/#listfragmentsinputlistfragmentspaginatetypedef">ListFragmentsInputListFragmentsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfragmentsinputrequesttypedef">ListFragmentsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listfragmentsoutputtypedef">ListFragmentsOutputTypeDef</a></li>

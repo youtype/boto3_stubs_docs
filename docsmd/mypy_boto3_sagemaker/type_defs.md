@@ -14472,10 +14472,12 @@ class MetricDatumTypeDef(TypedDict):
     MetricName: NotRequired[AutoMLMetricEnumType],  # (1)
     Value: NotRequired[float],
     Set: NotRequired[MetricSetSourceType],  # (2)
+    StandardMetricName: NotRequired[AutoMLMetricExtendedEnumType],  # (3)
 ```
 
 1. See [:material-code-brackets: AutoMLMetricEnumType](./literals.md#automlmetricenumtype) 
 2. See [:material-code-brackets: MetricSetSourceType](./literals.md#metricsetsourcetype) 
+3. See [:material-code-brackets: AutoMLMetricExtendedEnumType](./literals.md#automlmetricextendedenumtype) 
 ## MetricDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -17112,6 +17114,25 @@ class QueryLineageResponseTypeDef(TypedDict):
 1. See [:material-code-braces: VertexTypeDef](./type_defs.md#vertextypedef) 
 2. See [:material-code-braces: EdgeTypeDef](./type_defs.md#edgetypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RSessionAppSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RSessionAppSettingsTypeDef
+
+def get_value() -> RSessionAppSettingsTypeDef:
+    return {
+        "DefaultResourceSpec": ...,
+    }
+```
+
+```python title="Definition"
+class RSessionAppSettingsTypeDef(TypedDict):
+    DefaultResourceSpec: NotRequired[ResourceSpecTypeDef],  # (1)
+    CustomImages: NotRequired[Sequence[CustomImageTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ResourceSpecTypeDef](./type_defs.md#resourcespectypedef) 
+2. See [:material-code-braces: CustomImageTypeDef](./type_defs.md#customimagetypedef) 
 ## RStudioServerProAppSettingsTypeDef
 
 ```python title="Usage Example"
@@ -20299,7 +20320,7 @@ class UserSettingsTypeDef(TypedDict):
     KernelGatewayAppSettings: NotRequired[KernelGatewayAppSettingsTypeDef],  # (3)
     TensorBoardAppSettings: NotRequired[TensorBoardAppSettingsTypeDef],  # (4)
     RStudioServerProAppSettings: NotRequired[RStudioServerProAppSettingsTypeDef],  # (5)
-    RSessionAppSettings: NotRequired[Mapping[str, Any]],
+    RSessionAppSettings: NotRequired[RSessionAppSettingsTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: SharingSettingsTypeDef](./type_defs.md#sharingsettingstypedef) 
@@ -20307,6 +20328,7 @@ class UserSettingsTypeDef(TypedDict):
 3. See [:material-code-braces: KernelGatewayAppSettingsTypeDef](./type_defs.md#kernelgatewayappsettingstypedef) 
 4. See [:material-code-braces: TensorBoardAppSettingsTypeDef](./type_defs.md#tensorboardappsettingstypedef) 
 5. See [:material-code-braces: RStudioServerProAppSettingsTypeDef](./type_defs.md#rstudioserverproappsettingstypedef) 
+6. See [:material-code-braces: RSessionAppSettingsTypeDef](./type_defs.md#rsessionappsettingstypedef) 
 ## VariantPropertyTypeDef
 
 ```python title="Usage Example"

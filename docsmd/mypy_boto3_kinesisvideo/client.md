@@ -41,6 +41,7 @@ except (
     client.InvalidArgumentException,
     client.InvalidDeviceException,
     client.InvalidResourceFormatException,
+    client.NoDataRetentionException,
     client.NotAuthorizedException,
     client.ResourceInUseException,
     client.ResourceNotFoundException,
@@ -203,6 +204,66 @@ parent.delete_stream(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef) 
+
+### describe\_image\_generation\_configuration
+
+Gets the `ImageGenerationConfiguration` for a given Kinesis video stream.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_image_generation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_image_generation_configuration)
+
+```python title="Method definition"
+def describe_image_generation_configuration(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> DescribeImageGenerationConfigurationOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeImageGenerationConfigurationOutputTypeDef](./type_defs.md#describeimagegenerationconfigurationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageGenerationConfigurationInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.describe_image_generation_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageGenerationConfigurationInputRequestTypeDef](./type_defs.md#describeimagegenerationconfigurationinputrequesttypedef) 
+
+### describe\_notification\_configuration
+
+Gets the `NotificationConfiguration` for a given Kinesis video stream.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_notification_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_notification_configuration)
+
+```python title="Method definition"
+def describe_notification_configuration(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> DescribeNotificationConfigurationOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeNotificationConfigurationOutputTypeDef](./type_defs.md#describenotificationconfigurationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNotificationConfigurationInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.describe_notification_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNotificationConfigurationInputRequestTypeDef](./type_defs.md#describenotificationconfigurationinputrequesttypedef) 
 
 ### describe\_signaling\_channel
 
@@ -628,6 +689,68 @@ parent.update_data_retention(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateDataRetentionInputRequestTypeDef](./type_defs.md#updatedataretentioninputrequesttypedef) 
+
+### update\_image\_generation\_configuration
+
+Updates the `StreamInfo` and `ImageProcessingConfiguration` fields.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").update_image_generation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_image_generation_configuration)
+
+```python title="Method definition"
+def update_image_generation_configuration(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    ImageGenerationConfiguration: ImageGenerationConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: ImageGenerationConfigurationTypeDef](./type_defs.md#imagegenerationconfigurationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateImageGenerationConfigurationInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.update_image_generation_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateImageGenerationConfigurationInputRequestTypeDef](./type_defs.md#updateimagegenerationconfigurationinputrequesttypedef) 
+
+### update\_notification\_configuration
+
+Updates the notification information for a stream.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").update_notification_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_notification_configuration)
+
+```python title="Method definition"
+def update_notification_configuration(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    NotificationConfiguration: NotificationConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateNotificationConfigurationInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.update_notification_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateNotificationConfigurationInputRequestTypeDef](./type_defs.md#updatenotificationconfigurationinputrequesttypedef) 
 
 ### update\_signaling\_channel
 
