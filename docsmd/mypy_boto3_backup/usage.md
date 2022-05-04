@@ -34,6 +34,24 @@ type checking and code completion should work out of the box.
 
 
 
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("backup")  # (1)
+
+    paginator = client.get_paginator("list_backup_jobs")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [BackupClient](./client.md)
+    2. paginator: [ListBackupJobsPaginator](./paginators.md#listbackupjobspaginator)
+    3. item: [:material-code-braces: ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef) 
+
 
 
 
@@ -65,6 +83,25 @@ However, these type annotations can be helpful in your functions and methods.
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_backup.client import BackupClient
+    from mypy_boto3_backup.paginator import ListBackupJobsPaginator
+    from mypy_boto3_backup.type_defs import ListBackupJobsOutputTypeDef
+
+
+    session = Session()
+    client: BackupClient = session.client("backup")
+
+    paginator: ListBackupJobsPaginator = client.get_paginator("list_backup_jobs")
+    for item in paginator.paginate(...):
+        item: ListBackupJobsOutputTypeDef
+        print(item)
+    ```
 
 
 

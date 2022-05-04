@@ -3932,6 +3932,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#get_paginator" class="md-nav__link">
+    get_paginator
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3954,6 +3961,20 @@
     <li class="md-nav__item">
       <a href="../literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -36826,6 +36847,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#get_paginator" class="md-nav__link">
+    get_paginator
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -37722,8 +37750,10 @@ vault.</p>
 <a id="__codelineno-72-10" name="__codelineno-72-10" href="#__codelineno-72-10"></a>    <span class="n">ByCreatedAfter</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-72-11" name="__codelineno-72-11" href="#__codelineno-72-11"></a>    <span class="n">ByResourceType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-72-12" name="__codelineno-72-12" href="#__codelineno-72-12"></a>    <span class="n">ByAccountId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-72-13" name="__codelineno-72-13" href="#__codelineno-72-13"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListBackupJobsOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-72-14" name="__codelineno-72-14" href="#__codelineno-72-14"></a>    <span class="o">...</span>
+<a id="__codelineno-72-13" name="__codelineno-72-13" href="#__codelineno-72-13"></a>    <span class="n">ByCompleteAfter</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-72-14" name="__codelineno-72-14" href="#__codelineno-72-14"></a>    <span class="n">ByCompleteBefore</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-72-15" name="__codelineno-72-15" href="#__codelineno-72-15"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListBackupJobsOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-72-16" name="__codelineno-72-16" href="#__codelineno-72-16"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#backupjobstatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BackupJobStateType</a> </li>
@@ -37882,8 +37912,10 @@ them.</p>
 <a id="__codelineno-84-10" name="__codelineno-84-10" href="#__codelineno-84-10"></a>    <span class="n">ByResourceType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-84-11" name="__codelineno-84-11" href="#__codelineno-84-11"></a>    <span class="n">ByDestinationVaultArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-84-12" name="__codelineno-84-12" href="#__codelineno-84-12"></a>    <span class="n">ByAccountId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-84-13" name="__codelineno-84-13" href="#__codelineno-84-13"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListCopyJobsOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-84-14" name="__codelineno-84-14" href="#__codelineno-84-14"></a>    <span class="o">...</span>
+<a id="__codelineno-84-13" name="__codelineno-84-13" href="#__codelineno-84-13"></a>    <span class="n">ByCompleteBefore</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-84-14" name="__codelineno-84-14" href="#__codelineno-84-14"></a>    <span class="n">ByCompleteAfter</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-84-15" name="__codelineno-84-15" href="#__codelineno-84-15"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListCopyJobsOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-84-16" name="__codelineno-84-16" href="#__codelineno-84-16"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#copyjobstatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CopyJobStateType</a> </li>
@@ -38071,8 +38103,10 @@ including details about the recovery process.</p>
 <a id="__codelineno-98-7" name="__codelineno-98-7" href="#__codelineno-98-7"></a>    <span class="n">ByCreatedBefore</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-98-8" name="__codelineno-98-8" href="#__codelineno-98-8"></a>    <span class="n">ByCreatedAfter</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-98-9" name="__codelineno-98-9" href="#__codelineno-98-9"></a>    <span class="n">ByStatus</span><span class="p">:</span> <span class="n">RestoreJobStatusType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-98-10" name="__codelineno-98-10" href="#__codelineno-98-10"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListRestoreJobsOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-98-11" name="__codelineno-98-11" href="#__codelineno-98-11"></a>    <span class="o">...</span>
+<a id="__codelineno-98-10" name="__codelineno-98-10" href="#__codelineno-98-10"></a>    <span class="n">ByCompleteBefore</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-98-11" name="__codelineno-98-11" href="#__codelineno-98-11"></a>    <span class="n">ByCompleteAfter</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-98-12" name="__codelineno-98-12" href="#__codelineno-98-12"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListRestoreJobsOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-98-13" name="__codelineno-98-13" href="#__codelineno-98-13"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#restorejobstatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RestoreJobStatusType</a> </li>
@@ -38526,6 +38560,21 @@ input document in JSON format.</p>
 <ol>
 <li>See <a href="../type_defs/#updatereportplaninputrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UpdateReportPlanInputRequestTypeDef</a> </li>
 </ol>
+<h3 id="get_paginator">get_paginator</h3>
+<p>Type annotations and code completion for <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;backup&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span></code> method with overloads.</p>
+<ul>
+<li><code>client.get_paginator("list_backup_jobs")</code> -&gt; <a href="../paginators/#listbackupjobspaginator">ListBackupJobsPaginator</a></li>
+<li><code>client.get_paginator("list_backup_plan_templates")</code> -&gt; <a href="../paginators/#listbackupplantemplatespaginator">ListBackupPlanTemplatesPaginator</a></li>
+<li><code>client.get_paginator("list_backup_plan_versions")</code> -&gt; <a href="../paginators/#listbackupplanversionspaginator">ListBackupPlanVersionsPaginator</a></li>
+<li><code>client.get_paginator("list_backup_plans")</code> -&gt; <a href="../paginators/#listbackupplanspaginator">ListBackupPlansPaginator</a></li>
+<li><code>client.get_paginator("list_backup_selections")</code> -&gt; <a href="../paginators/#listbackupselectionspaginator">ListBackupSelectionsPaginator</a></li>
+<li><code>client.get_paginator("list_backup_vaults")</code> -&gt; <a href="../paginators/#listbackupvaultspaginator">ListBackupVaultsPaginator</a></li>
+<li><code>client.get_paginator("list_copy_jobs")</code> -&gt; <a href="../paginators/#listcopyjobspaginator">ListCopyJobsPaginator</a></li>
+<li><code>client.get_paginator("list_protected_resources")</code> -&gt; <a href="../paginators/#listprotectedresourcespaginator">ListProtectedResourcesPaginator</a></li>
+<li><code>client.get_paginator("list_recovery_points_by_backup_vault")</code> -&gt; <a href="../paginators/#listrecoverypointsbybackupvaultpaginator">ListRecoveryPointsByBackupVaultPaginator</a></li>
+<li><code>client.get_paginator("list_recovery_points_by_resource")</code> -&gt; <a href="../paginators/#listrecoverypointsbyresourcepaginator">ListRecoveryPointsByResourcePaginator</a></li>
+<li><code>client.get_paginator("list_restore_jobs")</code> -&gt; <a href="../paginators/#listrestorejobspaginator">ListRestoreJobsPaginator</a></li>
+</ul>
 
               
             </article>

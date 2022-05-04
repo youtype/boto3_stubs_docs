@@ -3469,6 +3469,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -3513,6 +3520,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -35936,6 +35957,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -36005,34 +36033,69 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BackupClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">cleint</span><span class="p">(</span><span class="s2">&quot;backup&quot;</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;backup&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_backup.paginator</span> <span class="kn">import</span> <span class="n">ListBackupJobsPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_backup_jobs_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListBackupJobsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;backup&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_backup_jobs&quot;</span><span class="p">))</span>
+</code></pre></div>
+<ul>
+<li><a href="paginators/#listbackupjobspaginator">ListBackupJobsPaginator</a></li>
+<li><a href="paginators/#listbackupplantemplatespaginator">ListBackupPlanTemplatesPaginator</a></li>
+<li><a href="paginators/#listbackupplanversionspaginator">ListBackupPlanVersionsPaginator</a></li>
+<li><a href="paginators/#listbackupplanspaginator">ListBackupPlansPaginator</a></li>
+<li><a href="paginators/#listbackupselectionspaginator">ListBackupSelectionsPaginator</a></li>
+<li><a href="paginators/#listbackupvaultspaginator">ListBackupVaultsPaginator</a></li>
+<li><a href="paginators/#listcopyjobspaginator">ListCopyJobsPaginator</a></li>
+<li><a href="paginators/#listprotectedresourcespaginator">ListProtectedResourcesPaginator</a></li>
+<li><a href="paginators/#listrecoverypointsbybackupvaultpaginator">ListRecoveryPointsByBackupVaultPaginator</a></li>
+<li><a href="paginators/#listrecoverypointsbyresourcepaginator">ListRecoveryPointsByResourcePaginator</a></li>
+<li><a href="paginators/#listrestorejobspaginator">ListRestoreJobsPaginator</a></li>
+</ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_backup.literals</span> <span class="kn">import</span> <span class="n">BackupJobStateType</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BackupJobStateType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;ABORTED&quot;</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_backup.literals</span> <span class="kn">import</span> <span class="n">BackupJobStateType</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BackupJobStateType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;ABORTED&quot;</span>
 </code></pre></div>
 <ul>
 <li><a href="literals/#backupjobstatetype">BackupJobStateType</a></li>
 <li><a href="literals/#backupvaulteventtype">BackupVaultEventType</a></li>
 <li><a href="literals/#conditiontypetype">ConditionTypeType</a></li>
 <li><a href="literals/#copyjobstatetype">CopyJobStateType</a></li>
+<li><a href="literals/#listbackupjobspaginatorname">ListBackupJobsPaginatorName</a></li>
+<li><a href="literals/#listbackupplantemplatespaginatorname">ListBackupPlanTemplatesPaginatorName</a></li>
+<li><a href="literals/#listbackupplanversionspaginatorname">ListBackupPlanVersionsPaginatorName</a></li>
+<li><a href="literals/#listbackupplanspaginatorname">ListBackupPlansPaginatorName</a></li>
+<li><a href="literals/#listbackupselectionspaginatorname">ListBackupSelectionsPaginatorName</a></li>
+<li><a href="literals/#listbackupvaultspaginatorname">ListBackupVaultsPaginatorName</a></li>
+<li><a href="literals/#listcopyjobspaginatorname">ListCopyJobsPaginatorName</a></li>
+<li><a href="literals/#listprotectedresourcespaginatorname">ListProtectedResourcesPaginatorName</a></li>
+<li><a href="literals/#listrecoverypointsbybackupvaultpaginatorname">ListRecoveryPointsByBackupVaultPaginatorName</a></li>
+<li><a href="literals/#listrecoverypointsbyresourcepaginatorname">ListRecoveryPointsByResourcePaginatorName</a></li>
+<li><a href="literals/#listrestorejobspaginatorname">ListRestoreJobsPaginatorName</a></li>
 <li><a href="literals/#recoverypointstatustype">RecoveryPointStatusType</a></li>
 <li><a href="literals/#restorejobstatustype">RestoreJobStatusType</a></li>
 <li><a href="literals/#storageclasstype">StorageClassType</a></li>
 <li><a href="literals/#backupservicename">BackupServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_backup.type_defs</span> <span class="kn">import</span> <span class="n">AdvancedBackupSettingTypeDef</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AdvancedBackupSettingTypeDef</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;ResourceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_backup.type_defs</span> <span class="kn">import</span> <span class="n">AdvancedBackupSettingTypeDef</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AdvancedBackupSettingTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ResourceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#advancedbackupsettingtypedef">AdvancedBackupSettingTypeDef</a></li>
@@ -36115,36 +36178,48 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getrecoverypointrestoremetadataoutputtypedef">GetRecoveryPointRestoreMetadataOutputTypeDef</a></li>
 <li><a href="type_defs/#getsupportedresourcetypesoutputtypedef">GetSupportedResourceTypesOutputTypeDef</a></li>
 <li><a href="type_defs/#lifecycletypedef">LifecycleTypeDef</a></li>
+<li><a href="type_defs/#listbackupjobsinputlistbackupjobspaginatetypedef">ListBackupJobsInputListBackupJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbackupjobsinputrequesttypedef">ListBackupJobsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listbackupjobsoutputtypedef">ListBackupJobsOutputTypeDef</a></li>
+<li><a href="type_defs/#listbackupplantemplatesinputlistbackupplantemplatespaginatetypedef">ListBackupPlanTemplatesInputListBackupPlanTemplatesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbackupplantemplatesinputrequesttypedef">ListBackupPlanTemplatesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listbackupplantemplatesoutputtypedef">ListBackupPlanTemplatesOutputTypeDef</a></li>
+<li><a href="type_defs/#listbackupplanversionsinputlistbackupplanversionspaginatetypedef">ListBackupPlanVersionsInputListBackupPlanVersionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbackupplanversionsinputrequesttypedef">ListBackupPlanVersionsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listbackupplanversionsoutputtypedef">ListBackupPlanVersionsOutputTypeDef</a></li>
+<li><a href="type_defs/#listbackupplansinputlistbackupplanspaginatetypedef">ListBackupPlansInputListBackupPlansPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbackupplansinputrequesttypedef">ListBackupPlansInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listbackupplansoutputtypedef">ListBackupPlansOutputTypeDef</a></li>
+<li><a href="type_defs/#listbackupselectionsinputlistbackupselectionspaginatetypedef">ListBackupSelectionsInputListBackupSelectionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbackupselectionsinputrequesttypedef">ListBackupSelectionsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listbackupselectionsoutputtypedef">ListBackupSelectionsOutputTypeDef</a></li>
+<li><a href="type_defs/#listbackupvaultsinputlistbackupvaultspaginatetypedef">ListBackupVaultsInputListBackupVaultsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbackupvaultsinputrequesttypedef">ListBackupVaultsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listbackupvaultsoutputtypedef">ListBackupVaultsOutputTypeDef</a></li>
+<li><a href="type_defs/#listcopyjobsinputlistcopyjobspaginatetypedef">ListCopyJobsInputListCopyJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcopyjobsinputrequesttypedef">ListCopyJobsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listcopyjobsoutputtypedef">ListCopyJobsOutputTypeDef</a></li>
 <li><a href="type_defs/#listframeworksinputrequesttypedef">ListFrameworksInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listframeworksoutputtypedef">ListFrameworksOutputTypeDef</a></li>
+<li><a href="type_defs/#listprotectedresourcesinputlistprotectedresourcespaginatetypedef">ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listprotectedresourcesinputrequesttypedef">ListProtectedResourcesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listprotectedresourcesoutputtypedef">ListProtectedResourcesOutputTypeDef</a></li>
+<li><a href="type_defs/#listrecoverypointsbybackupvaultinputlistrecoverypointsbybackupvaultpaginatetypedef">ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrecoverypointsbybackupvaultinputrequesttypedef">ListRecoveryPointsByBackupVaultInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listrecoverypointsbybackupvaultoutputtypedef">ListRecoveryPointsByBackupVaultOutputTypeDef</a></li>
+<li><a href="type_defs/#listrecoverypointsbyresourceinputlistrecoverypointsbyresourcepaginatetypedef">ListRecoveryPointsByResourceInputListRecoveryPointsByResourcePaginateTypeDef</a></li>
 <li><a href="type_defs/#listrecoverypointsbyresourceinputrequesttypedef">ListRecoveryPointsByResourceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listrecoverypointsbyresourceoutputtypedef">ListRecoveryPointsByResourceOutputTypeDef</a></li>
 <li><a href="type_defs/#listreportjobsinputrequesttypedef">ListReportJobsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listreportjobsoutputtypedef">ListReportJobsOutputTypeDef</a></li>
 <li><a href="type_defs/#listreportplansinputrequesttypedef">ListReportPlansInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listreportplansoutputtypedef">ListReportPlansOutputTypeDef</a></li>
+<li><a href="type_defs/#listrestorejobsinputlistrestorejobspaginatetypedef">ListRestoreJobsInputListRestoreJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrestorejobsinputrequesttypedef">ListRestoreJobsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listrestorejobsoutputtypedef">ListRestoreJobsOutputTypeDef</a></li>
 <li><a href="type_defs/#listtagsinputrequesttypedef">ListTagsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsoutputtypedef">ListTagsOutputTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#protectedresourcetypedef">ProtectedResourceTypeDef</a></li>
 <li><a href="type_defs/#putbackupvaultaccesspolicyinputrequesttypedef">PutBackupVaultAccessPolicyInputRequestTypeDef</a></li>
 <li><a href="type_defs/#putbackupvaultlockconfigurationinputrequesttypedef">PutBackupVaultLockConfigurationInputRequestTypeDef</a></li>

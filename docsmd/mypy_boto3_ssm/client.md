@@ -107,6 +107,7 @@ except (
     client.InvalidRole,
     client.InvalidSchedule,
     client.InvalidTarget,
+    client.InvalidTargetMaps,
     client.InvalidTypeNameException,
     client.InvalidUpdate,
     client.InvocationDoesNotExist,
@@ -382,6 +383,7 @@ def create_association(
     CalendarNames: Sequence[str] = ...,
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (5)
     ScheduleOffset: int = ...,
+    TargetMaps: Sequence[Mapping[str, Sequence[str]]] = ...,
 ) -> CreateAssociationResultTypeDef:  # (6)
     ...
 ```
@@ -4293,6 +4295,7 @@ def update_association(
     CalendarNames: Sequence[str] = ...,
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (5)
     ScheduleOffset: int = ...,
+    TargetMaps: Sequence[Mapping[str, Sequence[str]]] = ...,
 ) -> UpdateAssociationResultTypeDef:  # (6)
     ...
 ```

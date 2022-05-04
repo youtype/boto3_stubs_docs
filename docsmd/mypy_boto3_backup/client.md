@@ -1128,6 +1128,8 @@ def list_backup_jobs(
     ByCreatedAfter: Union[datetime, str] = ...,
     ByResourceType: str = ...,
     ByAccountId: str = ...,
+    ByCompleteAfter: Union[datetime, str] = ...,
+    ByCompleteBefore: Union[datetime, str] = ...,
 ) -> ListBackupJobsOutputTypeDef:  # (2)
     ...
 ```
@@ -1324,6 +1326,8 @@ def list_copy_jobs(
     ByResourceType: str = ...,
     ByDestinationVaultArn: str = ...,
     ByAccountId: str = ...,
+    ByCompleteBefore: Union[datetime, str] = ...,
+    ByCompleteAfter: Union[datetime, str] = ...,
 ) -> ListCopyJobsOutputTypeDef:  # (2)
     ...
 ```
@@ -1555,6 +1559,8 @@ def list_restore_jobs(
     ByCreatedBefore: Union[datetime, str] = ...,
     ByCreatedAfter: Union[datetime, str] = ...,
     ByStatus: RestoreJobStatusType = ...,  # (1)
+    ByCompleteBefore: Union[datetime, str] = ...,
+    ByCompleteAfter: Union[datetime, str] = ...,
 ) -> ListRestoreJobsOutputTypeDef:  # (2)
     ...
 ```
@@ -2128,6 +2134,23 @@ parent.update_report_plan(**kwargs)
 
 1. See [:material-code-braces: UpdateReportPlanInputRequestTypeDef](./type_defs.md#updatereportplaninputrequesttypedef) 
 
+
+
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("backup").get_paginator` method with overloads.
+
+- `client.get_paginator("list_backup_jobs")` -> [ListBackupJobsPaginator](./paginators.md#listbackupjobspaginator)
+- `client.get_paginator("list_backup_plan_templates")` -> [ListBackupPlanTemplatesPaginator](./paginators.md#listbackupplantemplatespaginator)
+- `client.get_paginator("list_backup_plan_versions")` -> [ListBackupPlanVersionsPaginator](./paginators.md#listbackupplanversionspaginator)
+- `client.get_paginator("list_backup_plans")` -> [ListBackupPlansPaginator](./paginators.md#listbackupplanspaginator)
+- `client.get_paginator("list_backup_selections")` -> [ListBackupSelectionsPaginator](./paginators.md#listbackupselectionspaginator)
+- `client.get_paginator("list_backup_vaults")` -> [ListBackupVaultsPaginator](./paginators.md#listbackupvaultspaginator)
+- `client.get_paginator("list_copy_jobs")` -> [ListCopyJobsPaginator](./paginators.md#listcopyjobspaginator)
+- `client.get_paginator("list_protected_resources")` -> [ListProtectedResourcesPaginator](./paginators.md#listprotectedresourcespaginator)
+- `client.get_paginator("list_recovery_points_by_backup_vault")` -> [ListRecoveryPointsByBackupVaultPaginator](./paginators.md#listrecoverypointsbybackupvaultpaginator)
+- `client.get_paginator("list_recovery_points_by_resource")` -> [ListRecoveryPointsByResourcePaginator](./paginators.md#listrecoverypointsbyresourcepaginator)
+- `client.get_paginator("list_restore_jobs")` -> [ListRestoreJobsPaginator](./paginators.md#listrestorejobspaginator)
 
 
 

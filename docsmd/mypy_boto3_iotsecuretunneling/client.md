@@ -174,7 +174,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### list\_tunnels
 
-List all tunnels for an AWS account.
+List all tunnels for an Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("iotsecuretunneling").list_tunnels` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
@@ -206,7 +206,7 @@ parent.list_tunnels(**kwargs)
 ### open\_tunnel
 
 Creates a new tunnel, and returns two client access tokens for clients to use to
-connect to the AWS IoT Secure Tunneling proxy server.
+connect to the IoT Secure Tunneling proxy server.
 
 Type annotations and code completion for `#!python boto3.client("iotsecuretunneling").open_tunnel` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
@@ -238,6 +238,41 @@ parent.open_tunnel(**kwargs)
 ```
 
 1. See [:material-code-braces: OpenTunnelRequestRequestTypeDef](./type_defs.md#opentunnelrequestrequesttypedef) 
+
+### rotate\_tunnel\_access\_token
+
+Revokes the current client access token (CAT) and returns new CAT for clients to
+use when reconnecting to secure tunneling to access the same tunnel.
+
+Type annotations and code completion for `#!python boto3.client("iotsecuretunneling").rotate_tunnel_access_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.rotate_tunnel_access_token)
+
+```python title="Method definition"
+def rotate_tunnel_access_token(
+    self,
+    *,
+    tunnelId: str,
+    clientMode: ClientModeType,  # (1)
+    destinationConfig: DestinationConfigTypeDef = ...,  # (2)
+) -> RotateTunnelAccessTokenResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ClientModeType](./literals.md#clientmodetype) 
+2. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+3. See [:material-code-braces: RotateTunnelAccessTokenResponseTypeDef](./type_defs.md#rotatetunnelaccesstokenresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RotateTunnelAccessTokenRequestRequestTypeDef = {  # (1)
+    "tunnelId": ...,
+    "clientMode": ...,
+}
+
+parent.rotate_tunnel_access_token(**kwargs)
+```
+
+1. See [:material-code-braces: RotateTunnelAccessTokenRequestRequestTypeDef](./type_defs.md#rotatetunnelaccesstokenrequestrequesttypedef) 
 
 ### tag\_resource
 

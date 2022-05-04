@@ -61,6 +61,33 @@ def get_client() -> BackupClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("backup").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupJobsPaginator
+
+def get_list_backup_jobs_paginator() -> ListBackupJobsPaginator:
+    return Session().client("backup").get_paginator("list_backup_jobs"))
+```
+
+- [ListBackupJobsPaginator](./paginators.md#listbackupjobspaginator)
+- [ListBackupPlanTemplatesPaginator](./paginators.md#listbackupplantemplatespaginator)
+- [ListBackupPlanVersionsPaginator](./paginators.md#listbackupplanversionspaginator)
+- [ListBackupPlansPaginator](./paginators.md#listbackupplanspaginator)
+- [ListBackupSelectionsPaginator](./paginators.md#listbackupselectionspaginator)
+- [ListBackupVaultsPaginator](./paginators.md#listbackupvaultspaginator)
+- [ListCopyJobsPaginator](./paginators.md#listcopyjobspaginator)
+- [ListProtectedResourcesPaginator](./paginators.md#listprotectedresourcespaginator)
+- [ListRecoveryPointsByBackupVaultPaginator](./paginators.md#listrecoverypointsbybackupvaultpaginator)
+- [ListRecoveryPointsByResourcePaginator](./paginators.md#listrecoverypointsbyresourcepaginator)
+- [ListRestoreJobsPaginator](./paginators.md#listrestorejobspaginator)
+
+
 
 
 
@@ -83,12 +110,24 @@ def get_value() -> BackupJobStateType:
 - [BackupVaultEventType](./literals.md#backupvaulteventtype)
 - [ConditionTypeType](./literals.md#conditiontypetype)
 - [CopyJobStateType](./literals.md#copyjobstatetype)
+- [ListBackupJobsPaginatorName](./literals.md#listbackupjobspaginatorname)
+- [ListBackupPlanTemplatesPaginatorName](./literals.md#listbackupplantemplatespaginatorname)
+- [ListBackupPlanVersionsPaginatorName](./literals.md#listbackupplanversionspaginatorname)
+- [ListBackupPlansPaginatorName](./literals.md#listbackupplanspaginatorname)
+- [ListBackupSelectionsPaginatorName](./literals.md#listbackupselectionspaginatorname)
+- [ListBackupVaultsPaginatorName](./literals.md#listbackupvaultspaginatorname)
+- [ListCopyJobsPaginatorName](./literals.md#listcopyjobspaginatorname)
+- [ListProtectedResourcesPaginatorName](./literals.md#listprotectedresourcespaginatorname)
+- [ListRecoveryPointsByBackupVaultPaginatorName](./literals.md#listrecoverypointsbybackupvaultpaginatorname)
+- [ListRecoveryPointsByResourcePaginatorName](./literals.md#listrecoverypointsbyresourcepaginatorname)
+- [ListRestoreJobsPaginatorName](./literals.md#listrestorejobspaginatorname)
 - [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
 - [RestoreJobStatusType](./literals.md#restorejobstatustype)
 - [StorageClassType](./literals.md#storageclasstype)
 - [BackupServiceName](./literals.md#backupservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 - [RegionName](./literals.md#regionname)
 
 
@@ -187,36 +226,48 @@ def get_value() -> AdvancedBackupSettingTypeDef:
 - [GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef)
 - [GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef)
 - [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
+- [ListBackupJobsInputListBackupJobsPaginateTypeDef](./type_defs.md#listbackupjobsinputlistbackupjobspaginatetypedef)
 - [ListBackupJobsInputRequestTypeDef](./type_defs.md#listbackupjobsinputrequesttypedef)
 - [ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef)
+- [ListBackupPlanTemplatesInputListBackupPlanTemplatesPaginateTypeDef](./type_defs.md#listbackupplantemplatesinputlistbackupplantemplatespaginatetypedef)
 - [ListBackupPlanTemplatesInputRequestTypeDef](./type_defs.md#listbackupplantemplatesinputrequesttypedef)
 - [ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef)
+- [ListBackupPlanVersionsInputListBackupPlanVersionsPaginateTypeDef](./type_defs.md#listbackupplanversionsinputlistbackupplanversionspaginatetypedef)
 - [ListBackupPlanVersionsInputRequestTypeDef](./type_defs.md#listbackupplanversionsinputrequesttypedef)
 - [ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef)
+- [ListBackupPlansInputListBackupPlansPaginateTypeDef](./type_defs.md#listbackupplansinputlistbackupplanspaginatetypedef)
 - [ListBackupPlansInputRequestTypeDef](./type_defs.md#listbackupplansinputrequesttypedef)
 - [ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef)
+- [ListBackupSelectionsInputListBackupSelectionsPaginateTypeDef](./type_defs.md#listbackupselectionsinputlistbackupselectionspaginatetypedef)
 - [ListBackupSelectionsInputRequestTypeDef](./type_defs.md#listbackupselectionsinputrequesttypedef)
 - [ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef)
+- [ListBackupVaultsInputListBackupVaultsPaginateTypeDef](./type_defs.md#listbackupvaultsinputlistbackupvaultspaginatetypedef)
 - [ListBackupVaultsInputRequestTypeDef](./type_defs.md#listbackupvaultsinputrequesttypedef)
 - [ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef)
+- [ListCopyJobsInputListCopyJobsPaginateTypeDef](./type_defs.md#listcopyjobsinputlistcopyjobspaginatetypedef)
 - [ListCopyJobsInputRequestTypeDef](./type_defs.md#listcopyjobsinputrequesttypedef)
 - [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef)
 - [ListFrameworksInputRequestTypeDef](./type_defs.md#listframeworksinputrequesttypedef)
 - [ListFrameworksOutputTypeDef](./type_defs.md#listframeworksoutputtypedef)
+- [ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef](./type_defs.md#listprotectedresourcesinputlistprotectedresourcespaginatetypedef)
 - [ListProtectedResourcesInputRequestTypeDef](./type_defs.md#listprotectedresourcesinputrequesttypedef)
 - [ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef)
+- [ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputlistrecoverypointsbybackupvaultpaginatetypedef)
 - [ListRecoveryPointsByBackupVaultInputRequestTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputrequesttypedef)
 - [ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef)
+- [ListRecoveryPointsByResourceInputListRecoveryPointsByResourcePaginateTypeDef](./type_defs.md#listrecoverypointsbyresourceinputlistrecoverypointsbyresourcepaginatetypedef)
 - [ListRecoveryPointsByResourceInputRequestTypeDef](./type_defs.md#listrecoverypointsbyresourceinputrequesttypedef)
 - [ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef)
 - [ListReportJobsInputRequestTypeDef](./type_defs.md#listreportjobsinputrequesttypedef)
 - [ListReportJobsOutputTypeDef](./type_defs.md#listreportjobsoutputtypedef)
 - [ListReportPlansInputRequestTypeDef](./type_defs.md#listreportplansinputrequesttypedef)
 - [ListReportPlansOutputTypeDef](./type_defs.md#listreportplansoutputtypedef)
+- [ListRestoreJobsInputListRestoreJobsPaginateTypeDef](./type_defs.md#listrestorejobsinputlistrestorejobspaginatetypedef)
 - [ListRestoreJobsInputRequestTypeDef](./type_defs.md#listrestorejobsinputrequesttypedef)
 - [ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef)
 - [ListTagsInputRequestTypeDef](./type_defs.md#listtagsinputrequesttypedef)
 - [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ProtectedResourceTypeDef](./type_defs.md#protectedresourcetypedef)
 - [PutBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#putbackupvaultaccesspolicyinputrequesttypedef)
 - [PutBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#putbackupvaultlockconfigurationinputrequesttypedef)

@@ -1758,6 +1758,33 @@ class LifecycleTypeDef(TypedDict):
     DeleteAfterDays: NotRequired[int],
 ```
 
+## ListBackupJobsInputListBackupJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListBackupJobsInputListBackupJobsPaginateTypeDef
+
+def get_value() -> ListBackupJobsInputListBackupJobsPaginateTypeDef:
+    return {
+        "ByResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupJobsInputListBackupJobsPaginateTypeDef(TypedDict):
+    ByResourceArn: NotRequired[str],
+    ByState: NotRequired[BackupJobStateType],  # (1)
+    ByBackupVaultName: NotRequired[str],
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByResourceType: NotRequired[str],
+    ByAccountId: NotRequired[str],
+    ByCompleteAfter: NotRequired[Union[datetime, str]],
+    ByCompleteBefore: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupJobsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1780,6 +1807,8 @@ class ListBackupJobsInputRequestTypeDef(TypedDict):
     ByCreatedAfter: NotRequired[Union[datetime, str]],
     ByResourceType: NotRequired[str],
     ByAccountId: NotRequired[str],
+    ByCompleteAfter: NotRequired[Union[datetime, str]],
+    ByCompleteBefore: NotRequired[Union[datetime, str]],
 ```
 
 1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
@@ -1805,6 +1834,23 @@ class ListBackupJobsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupJobTypeDef](./type_defs.md#backupjobtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBackupPlanTemplatesInputListBackupPlanTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListBackupPlanTemplatesInputListBackupPlanTemplatesPaginateTypeDef
+
+def get_value() -> ListBackupPlanTemplatesInputListBackupPlanTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupPlanTemplatesInputListBackupPlanTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupPlanTemplatesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1844,6 +1890,24 @@ class ListBackupPlanTemplatesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupPlanTemplatesListMemberTypeDef](./type_defs.md#backupplantemplateslistmembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBackupPlanVersionsInputListBackupPlanVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListBackupPlanVersionsInputListBackupPlanVersionsPaginateTypeDef
+
+def get_value() -> ListBackupPlanVersionsInputListBackupPlanVersionsPaginateTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupPlanVersionsInputListBackupPlanVersionsPaginateTypeDef(TypedDict):
+    BackupPlanId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupPlanVersionsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1884,6 +1948,24 @@ class ListBackupPlanVersionsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBackupPlansInputListBackupPlansPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListBackupPlansInputListBackupPlansPaginateTypeDef
+
+def get_value() -> ListBackupPlansInputListBackupPlansPaginateTypeDef:
+    return {
+        "IncludeDeleted": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupPlansInputListBackupPlansPaginateTypeDef(TypedDict):
+    IncludeDeleted: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupPlansInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1924,6 +2006,24 @@ class ListBackupPlansOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBackupSelectionsInputListBackupSelectionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListBackupSelectionsInputListBackupSelectionsPaginateTypeDef
+
+def get_value() -> ListBackupSelectionsInputListBackupSelectionsPaginateTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupSelectionsInputListBackupSelectionsPaginateTypeDef(TypedDict):
+    BackupPlanId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupSelectionsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1964,6 +2064,23 @@ class ListBackupSelectionsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupSelectionsListMemberTypeDef](./type_defs.md#backupselectionslistmembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBackupVaultsInputListBackupVaultsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListBackupVaultsInputListBackupVaultsPaginateTypeDef
+
+def get_value() -> ListBackupVaultsInputListBackupVaultsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupVaultsInputListBackupVaultsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupVaultsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2003,6 +2120,33 @@ class ListBackupVaultsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupVaultListMemberTypeDef](./type_defs.md#backupvaultlistmembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCopyJobsInputListCopyJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListCopyJobsInputListCopyJobsPaginateTypeDef
+
+def get_value() -> ListCopyJobsInputListCopyJobsPaginateTypeDef:
+    return {
+        "ByResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCopyJobsInputListCopyJobsPaginateTypeDef(TypedDict):
+    ByResourceArn: NotRequired[str],
+    ByState: NotRequired[CopyJobStateType],  # (1)
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByResourceType: NotRequired[str],
+    ByDestinationVaultArn: NotRequired[str],
+    ByAccountId: NotRequired[str],
+    ByCompleteBefore: NotRequired[Union[datetime, str]],
+    ByCompleteAfter: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCopyJobsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2025,6 +2169,8 @@ class ListCopyJobsInputRequestTypeDef(TypedDict):
     ByResourceType: NotRequired[str],
     ByDestinationVaultArn: NotRequired[str],
     ByAccountId: NotRequired[str],
+    ByCompleteBefore: NotRequired[Union[datetime, str]],
+    ByCompleteAfter: NotRequired[Union[datetime, str]],
 ```
 
 1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
@@ -2089,6 +2235,23 @@ class ListFrameworksOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: FrameworkTypeDef](./type_defs.md#frameworktypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef
+
+def get_value() -> ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProtectedResourcesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2128,6 +2291,29 @@ class ListProtectedResourcesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProtectedResourceTypeDef](./type_defs.md#protectedresourcetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef
+
+def get_value() -> ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef(TypedDict):
+    BackupVaultName: str,
+    ByResourceArn: NotRequired[str],
+    ByResourceType: NotRequired[str],
+    ByBackupPlanId: NotRequired[str],
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRecoveryPointsByBackupVaultInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2173,6 +2359,24 @@ class ListRecoveryPointsByBackupVaultOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: RecoveryPointByBackupVaultTypeDef](./type_defs.md#recoverypointbybackupvaulttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecoveryPointsByResourceInputListRecoveryPointsByResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListRecoveryPointsByResourceInputListRecoveryPointsByResourcePaginateTypeDef
+
+def get_value() -> ListRecoveryPointsByResourceInputListRecoveryPointsByResourcePaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecoveryPointsByResourceInputListRecoveryPointsByResourcePaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRecoveryPointsByResourceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2295,6 +2499,30 @@ class ListReportPlansOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReportPlanTypeDef](./type_defs.md#reportplantypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRestoreJobsInputListRestoreJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListRestoreJobsInputListRestoreJobsPaginateTypeDef
+
+def get_value() -> ListRestoreJobsInputListRestoreJobsPaginateTypeDef:
+    return {
+        "ByAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRestoreJobsInputListRestoreJobsPaginateTypeDef(TypedDict):
+    ByAccountId: NotRequired[str],
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByStatus: NotRequired[RestoreJobStatusType],  # (1)
+    ByCompleteBefore: NotRequired[Union[datetime, str]],
+    ByCompleteAfter: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: RestoreJobStatusType](./literals.md#restorejobstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRestoreJobsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2314,6 +2542,8 @@ class ListRestoreJobsInputRequestTypeDef(TypedDict):
     ByCreatedBefore: NotRequired[Union[datetime, str]],
     ByCreatedAfter: NotRequired[Union[datetime, str]],
     ByStatus: NotRequired[RestoreJobStatusType],  # (1)
+    ByCompleteBefore: NotRequired[Union[datetime, str]],
+    ByCompleteAfter: NotRequired[Union[datetime, str]],
 ```
 
 1. See [:material-code-brackets: RestoreJobStatusType](./literals.md#restorejobstatustype) 
@@ -2378,6 +2608,24 @@ class ListTagsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## ProtectedResourceTypeDef
 
 ```python title="Usage Example"

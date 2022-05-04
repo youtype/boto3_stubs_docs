@@ -7,6 +7,22 @@
     Auto-generated documentation for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
     type annotations stubs module [mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
+## ClientModeType
+
+```python title="Usage Example"
+from mypy_boto3_iotsecuretunneling.literals import ClientModeType
+
+def get_value() -> ClientModeType:
+    return "ALL"
+```
+
+```python title="Definition"
+ClientModeType = Literal[
+    "ALL",
+    "DESTINATION",
+    "SOURCE",
+]
+```
 ## ConnectionStatusType
 
 ```python title="Usage Example"
