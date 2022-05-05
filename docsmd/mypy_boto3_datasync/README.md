@@ -118,6 +118,7 @@ def get_value() -> AgentStatusType:
 - [MtimeType](./literals.md#mtimetype)
 - [NfsVersionType](./literals.md#nfsversiontype)
 - [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
+- [ObjectTagsType](./literals.md#objecttagstype)
 - [OperatorType](./literals.md#operatortype)
 - [OverwriteModeType](./literals.md#overwritemodetype)
 - [PhaseStatusType](./literals.md#phasestatustype)

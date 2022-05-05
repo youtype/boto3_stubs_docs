@@ -2052,9 +2052,11 @@ def get_value() -> DocumentAttributeValueCountPairTypeDef:
 class DocumentAttributeValueCountPairTypeDef(TypedDict):
     DocumentAttributeValue: NotRequired[DocumentAttributeValueTypeDef],  # (1)
     Count: NotRequired[int],
+    FacetResults: NotRequired[List[FacetResultTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef) 
+2. See [:material-code-braces: FacetResultTypeDef](./type_defs.md#facetresulttypedef) 
 ## DocumentAttributeValueTypeDef
 
 ```python title="Usage Example"
@@ -2349,8 +2351,11 @@ def get_value() -> FacetTypeDef:
 ```python title="Definition"
 class FacetTypeDef(TypedDict):
     DocumentAttributeKey: NotRequired[str],
+    Facets: NotRequired[Sequence[FacetTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
 ```
 
+1. See [:material-code-braces: FacetTypeDef](./type_defs.md#facettypedef) 
 ## FailedEntityTypeDef
 
 ```python title="Usage Example"

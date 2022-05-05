@@ -1666,6 +1666,7 @@ class OptionsTypeDef(TypedDict):
     LogLevel: NotRequired[LogLevelType],  # (11)
     TransferMode: NotRequired[TransferModeType],  # (12)
     SecurityDescriptorCopyFlags: NotRequired[SmbSecurityDescriptorCopyFlagsType],  # (13)
+    ObjectTags: NotRequired[ObjectTagsType],  # (14)
 ```
 
 1. See [:material-code-brackets: VerifyModeType](./literals.md#verifymodetype) 
@@ -1681,6 +1682,7 @@ class OptionsTypeDef(TypedDict):
 11. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 12. See [:material-code-brackets: TransferModeType](./literals.md#transfermodetype) 
 13. See [:material-code-brackets: SmbSecurityDescriptorCopyFlagsType](./literals.md#smbsecuritydescriptorcopyflagstype) 
+14. See [:material-code-brackets: ObjectTagsType](./literals.md#objecttagstype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"

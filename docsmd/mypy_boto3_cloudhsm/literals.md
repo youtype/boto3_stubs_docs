@@ -491,12 +491,11 @@ PaginatorName = Literal[
 from mypy_boto3_cloudhsm.literals import RegionName
 
 def get_value() -> RegionName:
-    return "eu-west-1"
+    return "us-east-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
-    "eu-west-1",
     "us-east-1",
 ]
 ```

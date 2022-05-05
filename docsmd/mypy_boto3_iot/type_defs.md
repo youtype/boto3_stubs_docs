@@ -6150,6 +6150,7 @@ class JobSummaryTypeDef(TypedDict):
     createdAt: NotRequired[datetime],
     lastUpdatedAt: NotRequired[datetime],
     completedAt: NotRequired[datetime],
+    isConcurrent: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
@@ -6207,6 +6208,7 @@ class JobTypeDef(TypedDict):
     jobTemplateArn: NotRequired[str],
     jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (8)
     documentParameters: NotRequired[Dict[str, str]],
+    isConcurrent: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 

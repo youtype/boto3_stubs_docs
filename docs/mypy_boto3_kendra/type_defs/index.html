@@ -40599,9 +40599,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-kendr
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-179-1" name="__codelineno-179-1" href="#__codelineno-179-1"></a><span class="k">class</span> <span class="nc">DocumentAttributeValueCountPairTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-179-2" name="__codelineno-179-2" href="#__codelineno-179-2"></a>    <span class="n">DocumentAttributeValue</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">DocumentAttributeValueTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-179-3" name="__codelineno-179-3" href="#__codelineno-179-3"></a>    <span class="n">Count</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-179-4" name="__codelineno-179-4" href="#__codelineno-179-4"></a>    <span class="n">FacetResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">FacetResultTypeDef</span><span class="p">]],</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#documentattributevaluetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> DocumentAttributeValueTypeDef</a> </li>
+<li>See <a href="./#facetresulttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> FacetResultTypeDef</a> </li>
 </ol>
 <h2 id="documentattributevaluetypedef">DocumentAttributeValueTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-180-1" name="__codelineno-180-1" href="#__codelineno-180-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kendra.type_defs</span> <span class="kn">import</span> <span class="n">DocumentAttributeValueTypeDef</span>
@@ -40845,7 +40847,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-kendr
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-209-1" name="__codelineno-209-1" href="#__codelineno-209-1"></a><span class="k">class</span> <span class="nc">FacetTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-209-2" name="__codelineno-209-2" href="#__codelineno-209-2"></a>    <span class="n">DocumentAttributeKey</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-209-3" name="__codelineno-209-3" href="#__codelineno-209-3"></a>    <span class="n">Facets</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">FacetTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-209-4" name="__codelineno-209-4" href="#__codelineno-209-4"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 </code></pre></div>
+<ol>
+<li>See <a href="./#facettypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> FacetTypeDef</a> </li>
+</ol>
 <h2 id="failedentitytypedef">FailedEntityTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-210-1" name="__codelineno-210-1" href="#__codelineno-210-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kendra.type_defs</span> <span class="kn">import</span> <span class="n">FailedEntityTypeDef</span>
 <a id="__codelineno-210-2" name="__codelineno-210-2" href="#__codelineno-210-2"></a>

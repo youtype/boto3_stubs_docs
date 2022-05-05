@@ -282,6 +282,21 @@ ObjectStorageServerProtocolType = Literal[
     "HTTPS",
 ]
 ```
+## ObjectTagsType
+
+```python title="Usage Example"
+from mypy_boto3_datasync.literals import ObjectTagsType
+
+def get_value() -> ObjectTagsType:
+    return "NONE"
+```
+
+```python title="Definition"
+ObjectTagsType = Literal[
+    "NONE",
+    "PRESERVE",
+]
+```
 ## OperatorType
 
 ```python title="Usage Example"
