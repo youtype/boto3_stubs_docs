@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mobile.client import MobileClient
 
 def get_client() -> MobileClient:
-    return Session().cleint("mobile")
+    return Session().client("mobile")
 ```
 
 

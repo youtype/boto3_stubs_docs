@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mwaa.client import MWAAClient
 
 def get_client() -> MWAAClient:
-    return Session().cleint("mwaa")
+    return Session().client("mwaa")
 ```
 
 

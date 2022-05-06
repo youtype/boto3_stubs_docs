@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iottwinmaker.client import IoTTwinMakerClient
 
 def get_client() -> IoTTwinMakerClient:
-    return Session().cleint("iottwinmaker")
+    return Session().client("iottwinmaker")
 ```
 
 

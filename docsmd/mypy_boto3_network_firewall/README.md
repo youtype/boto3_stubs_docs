@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_network_firewall.client import NetworkFirewallClient
 
 def get_client() -> NetworkFirewallClient:
-    return Session().cleint("network-firewall")
+    return Session().client("network-firewall")
 ```
 
 

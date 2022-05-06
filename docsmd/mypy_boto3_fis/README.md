@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_fis.client import FISClient
 
 def get_client() -> FISClient:
-    return Session().cleint("fis")
+    return Session().client("fis")
 ```
 
 

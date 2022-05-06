@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_opsworks.client import OpsWorksClient
 
 def get_client() -> OpsWorksClient:
-    return Session().cleint("opsworks")
+    return Session().client("opsworks")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mturk.client import MTurkClient
 
 def get_client() -> MTurkClient:
-    return Session().cleint("mturk")
+    return Session().client("mturk")
 ```
 
 

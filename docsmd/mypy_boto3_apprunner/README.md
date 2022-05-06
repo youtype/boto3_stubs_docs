@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_apprunner.client import AppRunnerClient
 
 def get_client() -> AppRunnerClient:
-    return Session().cleint("apprunner")
+    return Session().client("apprunner")
 ```
 
 

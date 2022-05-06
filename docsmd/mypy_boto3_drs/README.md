@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_drs.client import drsClient
 
 def get_client() -> drsClient:
-    return Session().cleint("drs")
+    return Session().client("drs")
 ```
 
 

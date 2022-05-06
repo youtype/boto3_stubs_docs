@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_schemas.client import SchemasClient
 
 def get_client() -> SchemasClient:
-    return Session().cleint("schemas")
+    return Session().client("schemas")
 ```
 
 

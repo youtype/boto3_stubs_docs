@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codecommit.client import CodeCommitClient
 
 def get_client() -> CodeCommitClient:
-    return Session().cleint("codecommit")
+    return Session().client("codecommit")
 ```
 
 

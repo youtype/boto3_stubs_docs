@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
 
 def get_client() -> CloudHSMV2Client:
-    return Session().cleint("cloudhsmv2")
+    return Session().client("cloudhsmv2")
 ```
 
 

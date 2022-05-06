@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_forecast.client import ForecastServiceClient
 
 def get_client() -> ForecastServiceClient:
-    return Session().cleint("forecast")
+    return Session().client("forecast")
 ```
 
 

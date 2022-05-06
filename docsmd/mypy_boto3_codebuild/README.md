@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codebuild.client import CodeBuildClient
 
 def get_client() -> CodeBuildClient:
-    return Session().cleint("codebuild")
+    return Session().client("codebuild")
 ```
 
 

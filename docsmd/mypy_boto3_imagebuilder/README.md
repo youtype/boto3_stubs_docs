@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_imagebuilder.client import imagebuilderClient
 
 def get_client() -> imagebuilderClient:
-    return Session().cleint("imagebuilder")
+    return Session().client("imagebuilder")
 ```
 
 

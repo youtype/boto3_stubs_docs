@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iot_data.client import IoTDataPlaneClient
 
 def get_client() -> IoTDataPlaneClient:
-    return Session().cleint("iot-data")
+    return Session().client("iot-data")
 ```
 
 

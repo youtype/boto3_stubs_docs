@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_acm_pca.client import ACMPCAClient
 
 def get_client() -> ACMPCAClient:
-    return Session().cleint("acm-pca")
+    return Session().client("acm-pca")
 ```
 
 

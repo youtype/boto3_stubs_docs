@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
 
 def get_client() -> AccessAnalyzerClient:
-    return Session().cleint("accessanalyzer")
+    return Session().client("accessanalyzer")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_location.client import LocationServiceClient
 
 def get_client() -> LocationServiceClient:
-    return Session().cleint("location")
+    return Session().client("location")
 ```
 
 

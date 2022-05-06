@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mediaconvert.client import MediaConvertClient
 
 def get_client() -> MediaConvertClient:
-    return Session().cleint("mediaconvert")
+    return Session().client("mediaconvert")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iotfleethub.client import IoTFleetHubClient
 
 def get_client() -> IoTFleetHubClient:
-    return Session().cleint("iotfleethub")
+    return Session().client("iotfleethub")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_appconfigdata.client import AppConfigDataClient
 
 def get_client() -> AppConfigDataClient:
-    return Session().cleint("appconfigdata")
+    return Session().client("appconfigdata")
 ```
 
 

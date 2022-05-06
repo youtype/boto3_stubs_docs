@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_customer_profiles.client import CustomerProfilesClient
 
 def get_client() -> CustomerProfilesClient:
-    return Session().cleint("customer-profiles")
+    return Session().client("customer-profiles")
 ```
 
 

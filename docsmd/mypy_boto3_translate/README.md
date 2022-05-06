@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_translate.client import TranslateClient
 
 def get_client() -> TranslateClient:
-    return Session().cleint("translate")
+    return Session().client("translate")
 ```
 
 

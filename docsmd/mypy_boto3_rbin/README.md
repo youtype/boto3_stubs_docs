@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_rbin.client import RecycleBinClient
 
 def get_client() -> RecycleBinClient:
-    return Session().cleint("rbin")
+    return Session().client("rbin")
 ```
 
 

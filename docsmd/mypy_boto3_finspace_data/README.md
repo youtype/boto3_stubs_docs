@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_finspace_data.client import FinSpaceDataClient
 
 def get_client() -> FinSpaceDataClient:
-    return Session().cleint("finspace-data")
+    return Session().client("finspace-data")
 ```
 
 

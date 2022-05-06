@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_neptune.client import NeptuneClient
 
 def get_client() -> NeptuneClient:
-    return Session().cleint("neptune")
+    return Session().client("neptune")
 ```
 
 

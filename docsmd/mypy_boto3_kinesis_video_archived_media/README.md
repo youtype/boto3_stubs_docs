@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedMediaClient
 
 def get_client() -> KinesisVideoArchivedMediaClient:
-    return Session().cleint("kinesis-video-archived-media")
+    return Session().client("kinesis-video-archived-media")
 ```
 
 

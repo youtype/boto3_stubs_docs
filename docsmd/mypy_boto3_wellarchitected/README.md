@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
 
 def get_client() -> WellArchitectedClient:
-    return Session().cleint("wellarchitected")
+    return Session().client("wellarchitected")
 ```
 
 

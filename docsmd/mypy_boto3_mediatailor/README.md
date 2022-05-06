@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mediatailor.client import MediaTailorClient
 
 def get_client() -> MediaTailorClient:
-    return Session().cleint("mediatailor")
+    return Session().client("mediatailor")
 ```
 
 

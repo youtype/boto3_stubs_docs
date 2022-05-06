@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_support.client import SupportClient
 
 def get_client() -> SupportClient:
-    return Session().cleint("support")
+    return Session().client("support")
 ```
 
 

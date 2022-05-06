@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_datapipeline.client import DataPipelineClient
 
 def get_client() -> DataPipelineClient:
-    return Session().cleint("datapipeline")
+    return Session().client("datapipeline")
 ```
 
 

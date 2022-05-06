@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_voice_id.client import VoiceIDClient
 
 def get_client() -> VoiceIDClient:
-    return Session().cleint("voice-id")
+    return Session().client("voice-id")
 ```
 
 

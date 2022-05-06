@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ssm.client import SSMClient
 
 def get_client() -> SSMClient:
-    return Session().cleint("ssm")
+    return Session().client("ssm")
 ```
 
 

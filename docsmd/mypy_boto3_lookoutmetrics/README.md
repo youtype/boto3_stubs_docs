@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 
 def get_client() -> LookoutMetricsClient:
-    return Session().cleint("lookoutmetrics")
+    return Session().client("lookoutmetrics")
 ```
 
 

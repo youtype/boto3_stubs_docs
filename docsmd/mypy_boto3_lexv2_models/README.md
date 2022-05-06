@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
 
 def get_client() -> LexModelsV2Client:
-    return Session().cleint("lexv2-models")
+    return Session().client("lexv2-models")
 ```
 
 

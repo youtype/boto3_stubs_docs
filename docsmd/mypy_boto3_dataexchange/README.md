@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_dataexchange.client import DataExchangeClient
 
 def get_client() -> DataExchangeClient:
-    return Session().cleint("dataexchange")
+    return Session().client("dataexchange")
 ```
 
 

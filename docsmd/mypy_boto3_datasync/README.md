@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_datasync.client import DataSyncClient
 
 def get_client() -> DataSyncClient:
-    return Session().cleint("datasync")
+    return Session().client("datasync")
 ```
 
 

@@ -229,9 +229,9 @@ def get_resource() -> Table:
 ### Table attributes
 
 
-- `attribute_definitions`: `List`[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)]
+- `attribute_definitions`: `List`[[AttributeDefinitionTableTypeDef](./type_defs.md#attributedefinitiontabletypedef)]
 - `table_name`: `str`
-- `key_schema`: `List`[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)]
+- `key_schema`: `List`[[KeySchemaElementTableTypeDef](./type_defs.md#keyschemaelementtabletypedef)]
 - `table_status`: [TableStatusType](./literals.md#tablestatustype)
 - `creation_date_time`: `datetime`
 - `provisioned_throughput`: [ProvisionedThroughputDescriptionResponseMetadataTypeDef](./type_defs.md#provisionedthroughputdescriptionresponsemetadatatypedef)
@@ -240,13 +240,13 @@ def get_resource() -> Table:
 - `table_arn`: `str`
 - `table_id`: `str`
 - `billing_mode_summary`: [BillingModeSummaryResponseMetadataTypeDef](./type_defs.md#billingmodesummaryresponsemetadatatypedef)
-- `local_secondary_indexes`: `List`[[LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef)]
-- `global_secondary_indexes`: `List`[[GlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#globalsecondaryindexdescriptiontypedef)]
+- `local_secondary_indexes`: `List`[[LocalSecondaryIndexDescriptionTableTypeDef](./type_defs.md#localsecondaryindexdescriptiontabletypedef)]
+- `global_secondary_indexes`: `List`[[GlobalSecondaryIndexDescriptionTableTypeDef](./type_defs.md#globalsecondaryindexdescriptiontabletypedef)]
 - `stream_specification`: [StreamSpecificationResponseMetadataTypeDef](./type_defs.md#streamspecificationresponsemetadatatypedef)
 - `latest_stream_label`: `str`
 - `latest_stream_arn`: `str`
 - `global_table_version`: `str`
-- `replicas`: `List`[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)]
+- `replicas`: `List`[[ReplicaDescriptionTableTypeDef](./type_defs.md#replicadescriptiontabletypedef)]
 - `restore_summary`: [RestoreSummaryResponseMetadataTypeDef](./type_defs.md#restoresummaryresponsemetadatatypedef)
 - `sse_description`: [SSEDescriptionResponseMetadataTypeDef](./type_defs.md#ssedescriptionresponsemetadatatypedef)
 - `archival_summary`: [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
@@ -297,11 +297,11 @@ Type annotations and code completion for `#!python boto3.resource("dynamodb").de
 ```python title="Method definition"
 def delete(
     self,
-) -> DeleteTableOutputTypeDef:  # (1)
+) -> DeleteTableOutputTableTypeDef:  # (1)
     ...
 ```
 
-1. See [:material-code-braces: DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef) 
+1. See [:material-code-braces: DeleteTableOutputTableTypeDef](./type_defs.md#deletetableoutputtabletypedef) 
 
 #### Table.delete\_item method
 
@@ -315,7 +315,7 @@ def delete_item(
     self,
     *,
     Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (1)
+    Expected: Mapping[str, ExpectedAttributeValueTableTypeDef] = ...,  # (1)
     ConditionalOperator: ConditionalOperatorType = ...,  # (2)
     ReturnValues: ReturnValueType = ...,  # (3)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
@@ -323,16 +323,16 @@ def delete_item(
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> DeleteItemOutputTypeDef:  # (6)
+) -> DeleteItemOutputTableTypeDef:  # (6)
     ...
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+1. See [:material-code-braces: ExpectedAttributeValueTableTypeDef](./type_defs.md#expectedattributevaluetabletypedef) 
 2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
 4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-6. See [:material-code-braces: DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef) 
+6. See [:material-code-braces: DeleteItemOutputTableTypeDef](./type_defs.md#deleteitemoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -378,12 +378,12 @@ def get_item(
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (1)
     ProjectionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-) -> GetItemOutputTypeDef:  # (2)
+) -> GetItemOutputTableTypeDef:  # (2)
     ...
 ```
 
 1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-2. See [:material-code-braces: GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef) 
+2. See [:material-code-braces: GetItemOutputTableTypeDef](./type_defs.md#getitemoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -424,7 +424,7 @@ def put_item(
     self,
     *,
     Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (1)
+    Expected: Mapping[str, ExpectedAttributeValueTableTypeDef] = ...,  # (1)
     ReturnValues: ReturnValueType = ...,  # (2)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (3)
     ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (4)
@@ -432,16 +432,16 @@ def put_item(
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> PutItemOutputTypeDef:  # (6)
+) -> PutItemOutputTableTypeDef:  # (6)
     ...
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+1. See [:material-code-braces: ExpectedAttributeValueTableTypeDef](./type_defs.md#expectedattributevaluetabletypedef) 
 2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
 3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-6. See [:material-code-braces: PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef) 
+6. See [:material-code-braces: PutItemOutputTableTypeDef](./type_defs.md#putitemoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -471,8 +471,8 @@ def query(
     AttributesToGet: Sequence[str] = ...,
     Limit: int = ...,
     ConsistentRead: bool = ...,
-    KeyConditions: Mapping[str, ConditionTypeDef] = ...,  # (2)
-    QueryFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    KeyConditions: Mapping[str, ConditionTableTypeDef] = ...,  # (2)
+    QueryFilter: Mapping[str, ConditionTableTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (4)
     ScanIndexForward: bool = ...,
     ExclusiveStartKey: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
@@ -482,16 +482,16 @@ def query(
     KeyConditionExpression: Union[str, ConditionBase] = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> QueryOutputTypeDef:  # (6)
+) -> QueryOutputTableTypeDef:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
-3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
+3. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-6. See [:material-code-braces: QueryOutputTypeDef](./type_defs.md#queryoutputtypedef) 
+6. See [:material-code-braces: QueryOutputTableTypeDef](./type_defs.md#queryoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -536,7 +536,7 @@ def scan(
     AttributesToGet: Sequence[str] = ...,
     Limit: int = ...,
     Select: SelectType = ...,  # (1)
-    ScanFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    ScanFilter: Mapping[str, ConditionTableTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (3)
     ExclusiveStartKey: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
@@ -547,15 +547,15 @@ def scan(
     ExpressionAttributeNames: Mapping[str, str] = ...,
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
     ConsistentRead: bool = ...,
-) -> ScanOutputTypeDef:  # (5)
+) -> ScanOutputTableTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-5. See [:material-code-braces: ScanOutputTypeDef](./type_defs.md#scanoutputtypedef) 
+5. See [:material-code-braces: ScanOutputTableTypeDef](./type_defs.md#scanoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -580,25 +580,25 @@ Type annotations and code completion for `#!python boto3.resource("dynamodb").up
 def update(
     self,
     *,
-    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef] = ...,  # (1)
+    AttributeDefinitions: Sequence[AttributeDefinitionTableTypeDef] = ...,  # (1)
     BillingMode: BillingModeType = ...,  # (2)
-    ProvisionedThroughput: ProvisionedThroughputTypeDef = ...,  # (3)
-    GlobalSecondaryIndexUpdates: Sequence[GlobalSecondaryIndexUpdateTypeDef] = ...,  # (4)
-    StreamSpecification: StreamSpecificationTypeDef = ...,  # (5)
-    SSESpecification: SSESpecificationTypeDef = ...,  # (6)
-    ReplicaUpdates: Sequence[ReplicationGroupUpdateTypeDef] = ...,  # (7)
+    ProvisionedThroughput: ProvisionedThroughputTableTypeDef = ...,  # (3)
+    GlobalSecondaryIndexUpdates: Sequence[GlobalSecondaryIndexUpdateTableTypeDef] = ...,  # (4)
+    StreamSpecification: StreamSpecificationTableTypeDef = ...,  # (5)
+    SSESpecification: SSESpecificationTableTypeDef = ...,  # (6)
+    ReplicaUpdates: Sequence[ReplicationGroupUpdateTableTypeDef] = ...,  # (7)
     TableClass: TableClassType = ...,  # (8)
 ) -> Table:
     ...
 ```
 
-1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+1. See [:material-code-braces: AttributeDefinitionTableTypeDef](./type_defs.md#attributedefinitiontabletypedef) 
 2. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
-3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
-4. See [:material-code-braces: GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef) 
-5. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
-6. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
-7. See [:material-code-braces: ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef) 
+3. See [:material-code-braces: ProvisionedThroughputTableTypeDef](./type_defs.md#provisionedthroughputtabletypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexUpdateTableTypeDef](./type_defs.md#globalsecondaryindexupdatetabletypedef) 
+5. See [:material-code-braces: StreamSpecificationTableTypeDef](./type_defs.md#streamspecificationtabletypedef) 
+6. See [:material-code-braces: SSESpecificationTableTypeDef](./type_defs.md#ssespecificationtabletypedef) 
+7. See [:material-code-braces: ReplicationGroupUpdateTableTypeDef](./type_defs.md#replicationgroupupdatetabletypedef) 
 8. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 
 
@@ -625,8 +625,8 @@ def update_item(
     self,
     *,
     Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    AttributeUpdates: Mapping[str, AttributeValueUpdateTypeDef] = ...,  # (1)
-    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
+    AttributeUpdates: Mapping[str, AttributeValueUpdateTableTypeDef] = ...,  # (1)
+    Expected: Mapping[str, ExpectedAttributeValueTableTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (3)
     ReturnValues: ReturnValueType = ...,  # (4)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
@@ -635,17 +635,17 @@ def update_item(
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> UpdateItemOutputTypeDef:  # (7)
+) -> UpdateItemOutputTableTypeDef:  # (7)
     ...
 ```
 
-1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
-2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+1. See [:material-code-braces: AttributeValueUpdateTableTypeDef](./type_defs.md#attributevalueupdatetabletypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTableTypeDef](./type_defs.md#expectedattributevaluetabletypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
 5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-7. See [:material-code-braces: UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef) 
+7. See [:material-code-braces: UpdateItemOutputTableTypeDef](./type_defs.md#updateitemoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"

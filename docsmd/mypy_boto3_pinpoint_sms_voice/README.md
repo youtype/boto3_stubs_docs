@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_pinpoint_sms_voice.client import PinpointSMSVoiceClient
 
 def get_client() -> PinpointSMSVoiceClient:
-    return Session().cleint("pinpoint-sms-voice")
+    return Session().client("pinpoint-sms-voice")
 ```
 
 

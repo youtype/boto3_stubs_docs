@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_lakeformation.client import LakeFormationClient
 
 def get_client() -> LakeFormationClient:
-    return Session().cleint("lakeformation")
+    return Session().client("lakeformation")
 ```
 
 

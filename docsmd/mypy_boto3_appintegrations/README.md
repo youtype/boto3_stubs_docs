@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 
 def get_client() -> AppIntegrationsServiceClient:
-    return Session().cleint("appintegrations")
+    return Session().client("appintegrations")
 ```
 
 

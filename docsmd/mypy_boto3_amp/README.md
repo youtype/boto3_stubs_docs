@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_amp.client import PrometheusServiceClient
 
 def get_client() -> PrometheusServiceClient:
-    return Session().cleint("amp")
+    return Session().client("amp")
 ```
 
 

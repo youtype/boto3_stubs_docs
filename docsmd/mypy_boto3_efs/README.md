@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_efs.client import EFSClient
 
 def get_client() -> EFSClient:
-    return Session().cleint("efs")
+    return Session().client("efs")
 ```
 
 

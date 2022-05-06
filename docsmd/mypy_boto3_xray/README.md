@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_xray.client import XRayClient
 
 def get_client() -> XRayClient:
-    return Session().cleint("xray")
+    return Session().client("xray")
 ```
 
 

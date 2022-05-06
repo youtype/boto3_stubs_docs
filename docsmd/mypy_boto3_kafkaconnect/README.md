@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kafkaconnect.client import KafkaConnectClient
 
 def get_client() -> KafkaConnectClient:
-    return Session().cleint("kafkaconnect")
+    return Session().client("kafkaconnect")
 ```
 
 

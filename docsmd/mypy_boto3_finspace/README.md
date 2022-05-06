@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_finspace.client import finspaceClient
 
 def get_client() -> finspaceClient:
-    return Session().cleint("finspace")
+    return Session().client("finspace")
 ```
 
 

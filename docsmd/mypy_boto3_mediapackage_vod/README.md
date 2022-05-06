@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mediapackage_vod.client import MediaPackageVodClient
 
 def get_client() -> MediaPackageVodClient:
-    return Session().cleint("mediapackage-vod")
+    return Session().client("mediapackage-vod")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
 
 def get_client() -> AmplifyUIBuilderClient:
-    return Session().cleint("amplifyuibuilder")
+    return Session().client("amplifyuibuilder")
 ```
 
 

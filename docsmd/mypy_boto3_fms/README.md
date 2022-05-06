@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_fms.client import FMSClient
 
 def get_client() -> FMSClient:
-    return Session().cleint("fms")
+    return Session().client("fms")
 ```
 
 

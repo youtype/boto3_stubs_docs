@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_outposts.client import OutpostsClient
 
 def get_client() -> OutpostsClient:
-    return Session().cleint("outposts")
+    return Session().client("outposts")
 ```
 
 

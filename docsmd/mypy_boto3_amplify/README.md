@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_amplify.client import AmplifyClient
 
 def get_client() -> AmplifyClient:
-    return Session().cleint("amplify")
+    return Session().client("amplify")
 ```
 
 

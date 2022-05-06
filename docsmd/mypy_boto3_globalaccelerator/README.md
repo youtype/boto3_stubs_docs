@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 
 def get_client() -> GlobalAcceleratorClient:
-    return Session().cleint("globalaccelerator")
+    return Session().client("globalaccelerator")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
 
 def get_client() -> ResourceGroupsTaggingAPIClient:
-    return Session().cleint("resourcegroupstaggingapi")
+    return Session().client("resourcegroupstaggingapi")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_workdocs.client import WorkDocsClient
 
 def get_client() -> WorkDocsClient:
-    return Session().cleint("workdocs")
+    return Session().client("workdocs")
 ```
 
 

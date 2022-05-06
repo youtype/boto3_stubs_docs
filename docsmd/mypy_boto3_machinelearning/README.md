@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_machinelearning.client import MachineLearningClient
 
 def get_client() -> MachineLearningClient:
-    return Session().cleint("machinelearning")
+    return Session().client("machinelearning")
 ```
 
 

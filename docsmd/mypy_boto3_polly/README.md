@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_polly.client import PollyClient
 
 def get_client() -> PollyClient:
-    return Session().cleint("polly")
+    return Session().client("polly")
 ```
 
 

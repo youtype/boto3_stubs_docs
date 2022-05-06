@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_wafv2.client import WAFV2Client
 
 def get_client() -> WAFV2Client:
-    return Session().cleint("wafv2")
+    return Session().client("wafv2")
 ```
 
 

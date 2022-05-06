@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_elasticache.client import ElastiCacheClient
 
 def get_client() -> ElastiCacheClient:
-    return Session().cleint("elasticache")
+    return Session().client("elasticache")
 ```
 
 

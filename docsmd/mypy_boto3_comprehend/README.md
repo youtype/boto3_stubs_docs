@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_comprehend.client import ComprehendClient
 
 def get_client() -> ComprehendClient:
-    return Session().cleint("comprehend")
+    return Session().client("comprehend")
 ```
 
 

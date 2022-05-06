@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_clouddirectory.client import CloudDirectoryClient
 
 def get_client() -> CloudDirectoryClient:
-    return Session().cleint("clouddirectory")
+    return Session().client("clouddirectory")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_route53.client import Route53Client
 
 def get_client() -> Route53Client:
-    return Session().cleint("route53")
+    return Session().client("route53")
 ```
 
 

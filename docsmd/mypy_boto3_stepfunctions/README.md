@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_stepfunctions.client import SFNClient
 
 def get_client() -> SFNClient:
-    return Session().cleint("stepfunctions")
+    return Session().client("stepfunctions")
 ```
 
 

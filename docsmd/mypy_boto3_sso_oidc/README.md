@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sso_oidc.client import SSOOIDCClient
 
 def get_client() -> SSOOIDCClient:
-    return Session().cleint("sso-oidc")
+    return Session().client("sso-oidc")
 ```
 
 

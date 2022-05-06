@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_resource_groups.client import ResourceGroupsClient
 
 def get_client() -> ResourceGroupsClient:
-    return Session().cleint("resource-groups")
+    return Session().client("resource-groups")
 ```
 
 

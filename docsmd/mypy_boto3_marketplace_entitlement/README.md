@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_marketplace_entitlement.client import MarketplaceEntitlementServiceClient
 
 def get_client() -> MarketplaceEntitlementServiceClient:
-    return Session().cleint("marketplace-entitlement")
+    return Session().client("marketplace-entitlement")
 ```
 
 

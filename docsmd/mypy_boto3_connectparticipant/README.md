@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 
 def get_client() -> ConnectParticipantClient:
-    return Session().cleint("connectparticipant")
+    return Session().client("connectparticipant")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 
 def get_client() -> CodeGuruReviewerClient:
-    return Session().cleint("codeguru-reviewer")
+    return Session().client("codeguru-reviewer")
 ```
 
 

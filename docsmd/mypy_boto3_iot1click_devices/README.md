@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 
 def get_client() -> IoT1ClickDevicesServiceClient:
-    return Session().cleint("iot1click-devices")
+    return Session().client("iot1click-devices")
 ```
 
 

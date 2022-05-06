@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_workmail.client import WorkMailClient
 
 def get_client() -> WorkMailClient:
-    return Session().cleint("workmail")
+    return Session().client("workmail")
 ```
 
 

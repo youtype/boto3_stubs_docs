@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_transfer.client import TransferClient
 
 def get_client() -> TransferClient:
-    return Session().cleint("transfer")
+    return Session().client("transfer")
 ```
 
 

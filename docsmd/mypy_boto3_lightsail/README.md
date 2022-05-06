@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_lightsail.client import LightsailClient
 
 def get_client() -> LightsailClient:
-    return Session().cleint("lightsail")
+    return Session().client("lightsail")
 ```
 
 

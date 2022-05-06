@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_dax.client import DAXClient
 
 def get_client() -> DAXClient:
-    return Session().cleint("dax")
+    return Session().client("dax")
 ```
 
 

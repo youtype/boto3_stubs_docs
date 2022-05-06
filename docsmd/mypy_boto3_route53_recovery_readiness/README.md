@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_route53_recovery_readiness.client import Route53RecoveryReadinessClient
 
 def get_client() -> Route53RecoveryReadinessClient:
-    return Session().cleint("route53-recovery-readiness")
+    return Session().client("route53-recovery-readiness")
 ```
 
 

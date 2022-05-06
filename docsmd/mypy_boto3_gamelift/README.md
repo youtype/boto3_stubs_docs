@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_gamelift.client import GameLiftClient
 
 def get_client() -> GameLiftClient:
-    return Session().cleint("gamelift")
+    return Session().client("gamelift")
 ```
 
 

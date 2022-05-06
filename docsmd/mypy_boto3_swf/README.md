@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_swf.client import SWFClient
 
 def get_client() -> SWFClient:
-    return Session().cleint("swf")
+    return Session().client("swf")
 ```
 
 

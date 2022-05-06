@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_shield.client import ShieldClient
 
 def get_client() -> ShieldClient:
-    return Session().cleint("shield")
+    return Session().client("shield")
 ```
 
 

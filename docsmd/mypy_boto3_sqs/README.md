@@ -81,7 +81,7 @@ from boto3.session import Session
 from mypy_boto3_sqs.client import SQSClient
 
 def get_client() -> SQSClient:
-    return Session().cleint("sqs")
+    return Session().client("sqs")
 ```
 
 

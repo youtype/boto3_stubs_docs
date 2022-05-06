@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iot.client import IoTClient
 
 def get_client() -> IoTClient:
-    return Session().cleint("iot")
+    return Session().client("iot")
 ```
 
 

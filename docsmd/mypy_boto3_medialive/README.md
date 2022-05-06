@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_medialive.client import MediaLiveClient
 
 def get_client() -> MediaLiveClient:
-    return Session().cleint("medialive")
+    return Session().client("medialive")
 ```
 
 

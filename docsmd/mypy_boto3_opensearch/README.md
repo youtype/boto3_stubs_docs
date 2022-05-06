@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_opensearch.client import OpenSearchServiceClient
 
 def get_client() -> OpenSearchServiceClient:
-    return Session().cleint("opensearch")
+    return Session().client("opensearch")
 ```
 
 

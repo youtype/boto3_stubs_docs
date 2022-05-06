@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
 
 def get_client() -> KinesisAnalyticsV2Client:
-    return Session().cleint("kinesisanalyticsv2")
+    return Session().client("kinesisanalyticsv2")
 ```
 
 

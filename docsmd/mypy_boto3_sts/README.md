@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sts.client import STSClient
 
 def get_client() -> STSClient:
-    return Session().cleint("sts")
+    return Session().client("sts")
 ```
 
 

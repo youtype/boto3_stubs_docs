@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 
 def get_client() -> LookoutforVisionClient:
-    return Session().cleint("lookoutvision")
+    return Session().client("lookoutvision")
 ```
 
 

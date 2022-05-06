@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 
 def get_client() -> ManagedBlockchainClient:
-    return Session().cleint("managedblockchain")
+    return Session().client("managedblockchain")
 ```
 
 

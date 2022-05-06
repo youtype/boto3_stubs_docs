@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_eks.client import EKSClient
 
 def get_client() -> EKSClient:
-    return Session().cleint("eks")
+    return Session().client("eks")
 ```
 
 

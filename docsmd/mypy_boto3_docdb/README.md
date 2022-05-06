@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_docdb.client import DocDBClient
 
 def get_client() -> DocDBClient:
-    return Session().cleint("docdb")
+    return Session().client("docdb")
 ```
 
 

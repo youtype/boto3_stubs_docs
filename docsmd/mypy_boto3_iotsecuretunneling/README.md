@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 
 def get_client() -> IoTSecureTunnelingClient:
-    return Session().cleint("iotsecuretunneling")
+    return Session().client("iotsecuretunneling")
 ```
 
 

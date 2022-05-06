@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_macie2.client import Macie2Client
 
 def get_client() -> Macie2Client:
-    return Session().cleint("macie2")
+    return Session().client("macie2")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sms.client import SMSClient
 
 def get_client() -> SMSClient:
-    return Session().cleint("sms")
+    return Session().client("sms")
 ```
 
 

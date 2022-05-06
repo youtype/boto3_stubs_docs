@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_pi.client import PIClient
 
 def get_client() -> PIClient:
-    return Session().cleint("pi")
+    return Session().client("pi")
 ```
 
 

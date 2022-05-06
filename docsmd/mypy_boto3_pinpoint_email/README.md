@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_pinpoint_email.client import PinpointEmailClient
 
 def get_client() -> PinpointEmailClient:
-    return Session().cleint("pinpoint-email")
+    return Session().client("pinpoint-email")
 ```
 
 

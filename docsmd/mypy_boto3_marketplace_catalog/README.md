@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 
 def get_client() -> MarketplaceCatalogClient:
-    return Session().cleint("marketplace-catalog")
+    return Session().client("marketplace-catalog")
 ```
 
 

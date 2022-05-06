@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_personalize.client import PersonalizeClient
 
 def get_client() -> PersonalizeClient:
-    return Session().cleint("personalize")
+    return Session().client("personalize")
 ```
 
 

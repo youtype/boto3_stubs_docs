@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_identitystore.client import IdentityStoreClient
 
 def get_client() -> IdentityStoreClient:
-    return Session().cleint("identitystore")
+    return Session().client("identitystore")
 ```
 
 

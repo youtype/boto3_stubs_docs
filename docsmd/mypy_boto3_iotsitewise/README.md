@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
 
 def get_client() -> IoTSiteWiseClient:
-    return Session().cleint("iotsitewise")
+    return Session().client("iotsitewise")
 ```
 
 

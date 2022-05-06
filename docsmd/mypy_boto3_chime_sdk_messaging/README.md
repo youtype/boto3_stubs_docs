@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 
 def get_client() -> ChimeSDKMessagingClient:
-    return Session().cleint("chime-sdk-messaging")
+    return Session().client("chime-sdk-messaging")
 ```
 
 

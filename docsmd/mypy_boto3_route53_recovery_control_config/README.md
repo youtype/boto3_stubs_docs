@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_route53_recovery_control_config.client import Route53RecoveryControlConfigClient
 
 def get_client() -> Route53RecoveryControlConfigClient:
-    return Session().cleint("route53-recovery-control-config")
+    return Session().client("route53-recovery-control-config")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 
 def get_client() -> ElasticLoadBalancingv2Client:
-    return Session().cleint("elbv2")
+    return Session().client("elbv2")
 ```
 
 

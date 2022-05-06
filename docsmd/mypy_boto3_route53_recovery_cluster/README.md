@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_route53_recovery_cluster.client import Route53RecoveryClusterClient
 
 def get_client() -> Route53RecoveryClusterClient:
-    return Session().cleint("route53-recovery-cluster")
+    return Session().client("route53-recovery-cluster")
 ```
 
 

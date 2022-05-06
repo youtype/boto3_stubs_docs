@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_acm.client import ACMClient
 
 def get_client() -> ACMClient:
-    return Session().cleint("acm")
+    return Session().client("acm")
 ```
 
 

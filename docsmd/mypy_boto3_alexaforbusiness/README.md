@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
 
 def get_client() -> AlexaForBusinessClient:
-    return Session().cleint("alexaforbusiness")
+    return Session().client("alexaforbusiness")
 ```
 
 

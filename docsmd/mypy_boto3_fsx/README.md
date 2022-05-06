@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_fsx.client import FSxClient
 
 def get_client() -> FSxClient:
-    return Session().cleint("fsx")
+    return Session().client("fsx")
 ```
 
 

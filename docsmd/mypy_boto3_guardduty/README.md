@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_guardduty.client import GuardDutyClient
 
 def get_client() -> GuardDutyClient:
-    return Session().cleint("guardduty")
+    return Session().client("guardduty")
 ```
 
 

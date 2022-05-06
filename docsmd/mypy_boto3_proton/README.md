@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_proton.client import ProtonClient
 
 def get_client() -> ProtonClient:
-    return Session().cleint("proton")
+    return Session().client("proton")
 ```
 
 

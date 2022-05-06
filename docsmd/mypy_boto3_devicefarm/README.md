@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_devicefarm.client import DeviceFarmClient
 
 def get_client() -> DeviceFarmClient:
-    return Session().cleint("devicefarm")
+    return Session().client("devicefarm")
 ```
 
 

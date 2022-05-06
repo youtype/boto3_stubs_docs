@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 
 def get_client() -> MigrationHubConfigClient:
-    return Session().cleint("migrationhub-config")
+    return Session().client("migrationhub-config")
 ```
 
 

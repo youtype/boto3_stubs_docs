@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_account.client import AccountClient
 
 def get_client() -> AccountClient:
-    return Session().cleint("account")
+    return Session().client("account")
 ```
 
 

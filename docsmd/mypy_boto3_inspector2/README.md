@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_inspector2.client import Inspector2Client
 
 def get_client() -> Inspector2Client:
-    return Session().cleint("inspector2")
+    return Session().client("inspector2")
 ```
 
 

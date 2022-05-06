@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_firehose.client import FirehoseClient
 
 def get_client() -> FirehoseClient:
-    return Session().cleint("firehose")
+    return Session().client("firehose")
 ```
 
 

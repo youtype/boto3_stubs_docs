@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 
 def get_client() -> CodeStarconnectionsClient:
-    return Session().cleint("codestar-connections")
+    return Session().client("codestar-connections")
 ```
 
 

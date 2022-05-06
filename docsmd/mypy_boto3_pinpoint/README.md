@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_pinpoint.client import PinpointClient
 
 def get_client() -> PinpointClient:
-    return Session().cleint("pinpoint")
+    return Session().client("pinpoint")
 ```
 
 

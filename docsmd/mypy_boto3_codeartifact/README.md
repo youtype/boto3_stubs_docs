@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codeartifact.client import CodeArtifactClient
 
 def get_client() -> CodeArtifactClient:
-    return Session().cleint("codeartifact")
+    return Session().client("codeartifact")
 ```
 
 

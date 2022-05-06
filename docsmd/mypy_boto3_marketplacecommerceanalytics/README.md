@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
 
 def get_client() -> MarketplaceCommerceAnalyticsClient:
-    return Session().cleint("marketplacecommerceanalytics")
+    return Session().client("marketplacecommerceanalytics")
 ```
 
 

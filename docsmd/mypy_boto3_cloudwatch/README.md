@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloudwatch.client import CloudWatchClient
 
 def get_client() -> CloudWatchClient:
-    return Session().cleint("cloudwatch")
+    return Session().client("cloudwatch")
 ```
 
 

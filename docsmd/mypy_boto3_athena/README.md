@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_athena.client import AthenaClient
 
 def get_client() -> AthenaClient:
-    return Session().cleint("athena")
+    return Session().client("athena")
 ```
 
 

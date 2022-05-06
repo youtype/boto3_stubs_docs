@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
 
 def get_client() -> ComputeOptimizerClient:
-    return Session().cleint("compute-optimizer")
+    return Session().client("compute-optimizer")
 ```
 
 

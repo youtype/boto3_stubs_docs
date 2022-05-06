@@ -88,7 +88,7 @@ BucketExistsWaiterName = Literal[
 from mypy_boto3_s3.literals import BucketLocationConstraintType
 
 def get_value() -> BucketLocationConstraintType:
-    return "af-south-1"
+    return "EU"
 ```
 
 ```python title="Definition"
@@ -101,8 +101,10 @@ BucketLocationConstraintType = Literal[
     "ap-south-1",
     "ap-southeast-1",
     "ap-southeast-2",
-    "ap-southeast-3",
     "ca-central-1",
+    "cn-north-1",
+    "cn-northwest-1",
+    "EU",
     "eu-central-1",
     "eu-north-1",
     "eu-south-1",
@@ -111,8 +113,9 @@ BucketLocationConstraintType = Literal[
     "eu-west-3",
     "me-south-1",
     "sa-east-1",
-    "us-east-1",
     "us-east-2",
+    "us-gov-east-1",
+    "us-gov-west-1",
     "us-west-1",
     "us-west-2",
 ]

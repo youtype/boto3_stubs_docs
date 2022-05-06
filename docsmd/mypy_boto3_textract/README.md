@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_textract.client import TextractClient
 
 def get_client() -> TextractClient:
-    return Session().cleint("textract")
+    return Session().client("textract")
 ```
 
 

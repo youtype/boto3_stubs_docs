@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ivschat.client import ivschatClient
 
 def get_client() -> ivschatClient:
-    return Session().cleint("ivschat")
+    return Session().client("ivschat")
 ```
 
 

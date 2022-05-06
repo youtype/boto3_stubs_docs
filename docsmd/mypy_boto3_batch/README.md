@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_batch.client import BatchClient
 
 def get_client() -> BatchClient:
-    return Session().cleint("batch")
+    return Session().client("batch")
 ```
 
 

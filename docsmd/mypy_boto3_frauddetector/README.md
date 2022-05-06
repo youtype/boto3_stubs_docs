@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_frauddetector.client import FraudDetectorClient
 
 def get_client() -> FraudDetectorClient:
-    return Session().cleint("frauddetector")
+    return Session().client("frauddetector")
 ```
 
 

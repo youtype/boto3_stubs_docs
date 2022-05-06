@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sns.client import SNSClient
 
 def get_client() -> SNSClient:
-    return Session().cleint("sns")
+    return Session().client("sns")
 ```
 
 

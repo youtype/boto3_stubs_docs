@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_emr.client import EMRClient
 
 def get_client() -> EMRClient:
-    return Session().cleint("emr")
+    return Session().client("emr")
 ```
 
 

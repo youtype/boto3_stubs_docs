@@ -349,25 +349,27 @@ def delete_item(
     self,
     *,
     TableName: str,
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (1)
-    ConditionalOperator: ConditionalOperatorType = ...,  # (2)
-    ReturnValues: ReturnValueType = ...,  # (3)
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (5)
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (3)
+    ReturnValues: ReturnValueType = ...,  # (4)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (6)
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> DeleteItemOutputTypeDef:  # (6)
+    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (1)
+) -> DeleteItemOutputTypeDef:  # (8)
     ...
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
-2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
-4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-6. See [:material-code-braces: DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+8. See [:material-code-braces: DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -814,17 +816,18 @@ def execute_statement(
     self,
     *,
     Statement: str,
-    Parameters: Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+    Parameters: Sequence[AttributeValueTypeDef] = ...,  # (1)
     ConsistentRead: bool = ...,
     NextToken: str = ...,
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (1)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
     Limit: int = ...,
-) -> ExecuteStatementOutputTypeDef:  # (2)
+) -> ExecuteStatementOutputTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-2. See [:material-code-braces: ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-braces: ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -943,18 +946,19 @@ def get_item(
     self,
     *,
     TableName: str,
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
     AttributesToGet: Sequence[str] = ...,
     ConsistentRead: bool = ...,
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (1)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
     ProjectionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-) -> GetItemOutputTypeDef:  # (2)
+) -> GetItemOutputTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-2. See [:material-code-braces: GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-braces: GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1170,25 +1174,27 @@ def put_item(
     self,
     *,
     TableName: str,
-    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (1)
-    ReturnValues: ReturnValueType = ...,  # (2)
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (3)
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (4)
-    ConditionalOperator: ConditionalOperatorType = ...,  # (5)
+    Item: Mapping[str, AttributeValueTypeDef],  # (1)
+    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
+    ReturnValues: ReturnValueType = ...,  # (3)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (5)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (6)
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> PutItemOutputTypeDef:  # (6)
+    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (1)
+) -> PutItemOutputTypeDef:  # (8)
     ...
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
-2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
-3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-6. See [:material-code-braces: PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+6. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+8. See [:material-code-braces: PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1224,14 +1230,14 @@ def query(
     QueryFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (4)
     ScanIndexForward: bool = ...,
-    ExclusiveStartKey: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
+    ExclusiveStartKey: Mapping[str, AttributeValueTypeDef] = ...,  # (5)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (6)
     ProjectionExpression: str = ...,
     FilterExpression: str = ...,
     KeyConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> QueryOutputTypeDef:  # (6)
+    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (5)
+) -> QueryOutputTypeDef:  # (8)
     ...
 ```
 
@@ -1239,8 +1245,10 @@ def query(
 2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-6. See [:material-code-braces: QueryOutputTypeDef](./type_defs.md#queryoutputtypedef) 
+5. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+6. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+8. See [:material-code-braces: QueryOutputTypeDef](./type_defs.md#queryoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1357,24 +1365,26 @@ def scan(
     Select: SelectType = ...,  # (1)
     ScanFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (3)
-    ExclusiveStartKey: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
+    ExclusiveStartKey: Mapping[str, AttributeValueTypeDef] = ...,  # (4)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
     TotalSegments: int = ...,
     Segment: int = ...,
     ProjectionExpression: str = ...,
     FilterExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (4)
     ConsistentRead: bool = ...,
-) -> ScanOutputTypeDef:  # (5)
+) -> ScanOutputTypeDef:  # (7)
     ...
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
 2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-5. See [:material-code-braces: ScanOutputTypeDef](./type_defs.md#scanoutputtypedef) 
+4. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+7. See [:material-code-braces: ScanOutputTypeDef](./type_defs.md#scanoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1667,28 +1677,30 @@ def update_item(
     self,
     *,
     TableName: str,
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    AttributeUpdates: Mapping[str, AttributeValueUpdateTypeDef] = ...,  # (1)
-    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
-    ConditionalOperator: ConditionalOperatorType = ...,  # (3)
-    ReturnValues: ReturnValueType = ...,  # (4)
-    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
-    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (6)
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    AttributeUpdates: Mapping[str, AttributeValueUpdateTypeDef] = ...,  # (2)
+    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (3)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (4)
+    ReturnValues: ReturnValueType = ...,  # (5)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (6)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (7)
     UpdateExpression: str = ...,
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
-) -> UpdateItemOutputTypeDef:  # (7)
+    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (1)
+) -> UpdateItemOutputTypeDef:  # (9)
     ...
 ```
 
-1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
-2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
-3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
-5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-7. See [:material-code-braces: UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
+3. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+5. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+6. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+7. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+8. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+9. See [:material-code-braces: UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sso_admin.client import SSOAdminClient
 
 def get_client() -> SSOAdminClient:
-    return Session().cleint("sso-admin")
+    return Session().client("sso-admin")
 ```
 
 

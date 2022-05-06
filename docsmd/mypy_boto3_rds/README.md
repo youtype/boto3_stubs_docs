@@ -81,7 +81,7 @@ from boto3.session import Session
 from mypy_boto3_rds.client import RDSClient
 
 def get_client() -> RDSClient:
-    return Session().cleint("rds")
+    return Session().client("rds")
 ```
 
 

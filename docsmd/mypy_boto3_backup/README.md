@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_backup.client import BackupClient
 
 def get_client() -> BackupClient:
-    return Session().cleint("backup")
+    return Session().client("backup")
 ```
 
 

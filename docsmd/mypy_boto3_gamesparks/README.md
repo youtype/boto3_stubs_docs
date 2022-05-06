@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_gamesparks.client import GameSparksClient
 
 def get_client() -> GameSparksClient:
-    return Session().cleint("gamesparks")
+    return Session().client("gamesparks")
 ```
 
 

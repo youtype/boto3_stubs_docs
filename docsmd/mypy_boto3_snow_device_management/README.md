@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_snow_device_management.client import SnowDeviceManagementClient
 
 def get_client() -> SnowDeviceManagementClient:
-    return Session().cleint("snow-device-management")
+    return Session().client("snow-device-management")
 ```
 
 

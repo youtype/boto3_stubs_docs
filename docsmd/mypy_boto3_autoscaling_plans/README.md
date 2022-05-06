@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 
 def get_client() -> AutoScalingPlansClient:
-    return Session().cleint("autoscaling-plans")
+    return Session().client("autoscaling-plans")
 ```
 
 

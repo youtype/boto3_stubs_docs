@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mediastore_data.client import MediaStoreDataClient
 
 def get_client() -> MediaStoreDataClient:
-    return Session().cleint("mediastore-data")
+    return Session().client("mediastore-data")
 ```
 
 

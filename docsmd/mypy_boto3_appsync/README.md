@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_appsync.client import AppSyncClient
 
 def get_client() -> AppSyncClient:
-    return Session().cleint("appsync")
+    return Session().client("appsync")
 ```
 
 

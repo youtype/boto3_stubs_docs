@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
 
 def get_client() -> GreengrassV2Client:
-    return Session().cleint("greengrassv2")
+    return Session().client("greengrassv2")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_robomaker.client import RoboMakerClient
 
 def get_client() -> RoboMakerClient:
-    return Session().cleint("robomaker")
+    return Session().client("robomaker")
 ```
 
 

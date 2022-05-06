@@ -81,7 +81,7 @@ from boto3.session import Session
 from mypy_boto3_lambda.client import LambdaClient
 
 def get_client() -> LambdaClient:
-    return Session().cleint("lambda")
+    return Session().client("lambda")
 ```
 
 

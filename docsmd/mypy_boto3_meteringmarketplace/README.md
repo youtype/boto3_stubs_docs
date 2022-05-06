@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
 
 def get_client() -> MarketplaceMeteringClient:
-    return Session().cleint("meteringmarketplace")
+    return Session().client("meteringmarketplace")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_chime_sdk_media_pipelines.client import ChimeSDKMediaPipelinesClient
 
 def get_client() -> ChimeSDKMediaPipelinesClient:
-    return Session().cleint("chime-sdk-media-pipelines")
+    return Session().client("chime-sdk-media-pipelines")
 ```
 
 

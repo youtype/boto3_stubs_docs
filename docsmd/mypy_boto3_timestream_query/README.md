@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
 
 def get_client() -> TimestreamQueryClient:
-    return Session().cleint("timestream-query")
+    return Session().client("timestream-query")
 ```
 
 

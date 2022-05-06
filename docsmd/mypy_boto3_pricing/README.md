@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_pricing.client import PricingClient
 
 def get_client() -> PricingClient:
-    return Session().cleint("pricing")
+    return Session().client("pricing")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
 
 def get_client() -> ApplicationInsightsClient:
-    return Session().cleint("application-insights")
+    return Session().client("application-insights")
 ```
 
 

@@ -81,7 +81,7 @@ from boto3.session import Session
 from mypy_boto3_ec2.client import EC2Client
 
 def get_client() -> EC2Client:
-    return Session().cleint("ec2")
+    return Session().client("ec2")
 ```
 
 

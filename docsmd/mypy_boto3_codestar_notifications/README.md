@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 
 def get_client() -> CodeStarNotificationsClient:
-    return Session().cleint("codestar-notifications")
+    return Session().client("codestar-notifications")
 ```
 
 

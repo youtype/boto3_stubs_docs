@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iotwireless.client import IoTWirelessClient
 
 def get_client() -> IoTWirelessClient:
-    return Session().cleint("iotwireless")
+    return Session().client("iotwireless")
 ```
 
 

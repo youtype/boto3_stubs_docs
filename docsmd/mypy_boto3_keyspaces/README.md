@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_keyspaces.client import KeyspacesClient
 
 def get_client() -> KeyspacesClient:
-    return Session().cleint("keyspaces")
+    return Session().client("keyspaces")
 ```
 
 

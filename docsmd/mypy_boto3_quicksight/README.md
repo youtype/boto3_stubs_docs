@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_quicksight.client import QuickSightClient
 
 def get_client() -> QuickSightClient:
-    return Session().cleint("quicksight")
+    return Session().client("quicksight")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_waf_regional.client import WAFRegionalClient
 
 def get_client() -> WAFRegionalClient:
-    return Session().cleint("waf-regional")
+    return Session().client("waf-regional")
 ```
 
 

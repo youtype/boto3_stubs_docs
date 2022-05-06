@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_storagegateway.client import StorageGatewayClient
 
 def get_client() -> StorageGatewayClient:
-    return Session().cleint("storagegateway")
+    return Session().client("storagegateway")
 ```
 
 

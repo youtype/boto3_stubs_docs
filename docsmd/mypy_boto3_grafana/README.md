@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_grafana.client import ManagedGrafanaClient
 
 def get_client() -> ManagedGrafanaClient:
-    return Session().cleint("grafana")
+    return Session().client("grafana")
 ```
 
 

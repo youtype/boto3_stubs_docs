@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_workspaces_web.client import WorkSpacesWebClient
 
 def get_client() -> WorkSpacesWebClient:
-    return Session().cleint("workspaces-web")
+    return Session().client("workspaces-web")
 ```
 
 

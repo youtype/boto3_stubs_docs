@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_appstream.client import AppStreamClient
 
 def get_client() -> AppStreamClient:
-    return Session().cleint("appstream")
+    return Session().client("appstream")
 ```
 
 

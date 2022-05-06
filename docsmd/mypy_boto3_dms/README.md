@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 
 def get_client() -> DatabaseMigrationServiceClient:
-    return Session().cleint("dms")
+    return Session().client("dms")
 ```
 
 

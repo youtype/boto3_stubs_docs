@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sagemaker_featurestore_runtime.client import SageMakerFeatureStoreRuntimeClient
 
 def get_client() -> SageMakerFeatureStoreRuntimeClient:
-    return Session().cleint("sagemaker-featurestore-runtime")
+    return Session().client("sagemaker-featurestore-runtime")
 ```
 
 

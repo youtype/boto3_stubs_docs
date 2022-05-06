@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_worklink.client import WorkLinkClient
 
 def get_client() -> WorkLinkClient:
-    return Session().cleint("worklink")
+    return Session().client("worklink")
 ```
 
 

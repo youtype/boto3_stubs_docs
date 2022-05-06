@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_rum.client import CloudWatchRUMClient
 
 def get_client() -> CloudWatchRUMClient:
-    return Session().cleint("rum")
+    return Session().client("rum")
 ```
 
 

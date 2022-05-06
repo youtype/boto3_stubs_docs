@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_organizations.client import OrganizationsClient
 
 def get_client() -> OrganizationsClient:
-    return Session().cleint("organizations")
+    return Session().client("organizations")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_es.client import ElasticsearchServiceClient
 
 def get_client() -> ElasticsearchServiceClient:
-    return Session().cleint("es")
+    return Session().client("es")
 ```
 
 

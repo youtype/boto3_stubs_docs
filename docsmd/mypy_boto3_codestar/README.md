@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codestar.client import CodeStarClient
 
 def get_client() -> CodeStarClient:
-    return Session().cleint("codestar")
+    return Session().client("codestar")
 ```
 
 

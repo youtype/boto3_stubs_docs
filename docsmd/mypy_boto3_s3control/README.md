@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_s3control.client import S3ControlClient
 
 def get_client() -> S3ControlClient:
-    return Session().cleint("s3control")
+    return Session().client("s3control")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 
 def get_client() -> IoTDeviceAdvisorClient:
-    return Session().cleint("iotdeviceadvisor")
+    return Session().client("iotdeviceadvisor")
 ```
 
 

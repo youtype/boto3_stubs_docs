@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ecs.client import ECSClient
 
 def get_client() -> ECSClient:
-    return Session().cleint("ecs")
+    return Session().client("ecs")
 ```
 
 

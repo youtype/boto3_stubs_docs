@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 
 def get_client() -> ElasticTranscoderClient:
-    return Session().cleint("elastictranscoder")
+    return Session().client("elastictranscoder")
 ```
 
 

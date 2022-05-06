@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_appmesh.client import AppMeshClient
 
 def get_client() -> AppMeshClient:
-    return Session().cleint("appmesh")
+    return Session().client("appmesh")
 ```
 
 

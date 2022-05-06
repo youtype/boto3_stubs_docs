@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
 
 def get_client() -> ChimeSDKMeetingsClient:
-    return Session().cleint("chime-sdk-meetings")
+    return Session().client("chime-sdk-meetings")
 ```
 
 

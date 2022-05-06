@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 
 def get_client() -> RedshiftDataAPIServiceClient:
-    return Session().cleint("redshift-data")
+    return Session().client("redshift-data")
 ```
 
 

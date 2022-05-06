@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_license_manager.client import LicenseManagerClient
 
 def get_client() -> LicenseManagerClient:
-    return Session().cleint("license-manager")
+    return Session().client("license-manager")
 ```
 
 

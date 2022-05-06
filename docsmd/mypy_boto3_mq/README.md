@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mq.client import MQClient
 
 def get_client() -> MQClient:
-    return Session().cleint("mq")
+    return Session().client("mq")
 ```
 
 

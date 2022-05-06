@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
 
 def get_client() -> CognitoSyncClient:
-    return Session().cleint("cognito-sync")
+    return Session().client("cognito-sync")
 ```
 
 

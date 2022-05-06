@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_devops_guru.client import DevOpsGuruClient
 
 def get_client() -> DevOpsGuruClient:
-    return Session().cleint("devops-guru")
+    return Session().client("devops-guru")
 ```
 
 

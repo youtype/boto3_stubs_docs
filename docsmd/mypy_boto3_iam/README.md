@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iam.client import IAMClient
 
 def get_client() -> IAMClient:
-    return Session().cleint("iam")
+    return Session().client("iam")
 ```
 
 

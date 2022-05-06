@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ses.client import SESClient
 
 def get_client() -> SESClient:
-    return Session().cleint("ses")
+    return Session().client("ses")
 ```
 
 

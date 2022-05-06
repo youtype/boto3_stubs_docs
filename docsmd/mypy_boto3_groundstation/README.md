@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_groundstation.client import GroundStationClient
 
 def get_client() -> GroundStationClient:
-    return Session().cleint("groundstation")
+    return Session().client("groundstation")
 ```
 
 

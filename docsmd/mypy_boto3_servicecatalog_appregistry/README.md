@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
 
 def get_client() -> AppRegistryClient:
-    return Session().cleint("servicecatalog-appregistry")
+    return Session().client("servicecatalog-appregistry")
 ```
 
 

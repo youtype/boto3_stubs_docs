@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloudfront.client import CloudFrontClient
 
 def get_client() -> CloudFrontClient:
-    return Session().cleint("cloudfront")
+    return Session().client("cloudfront")
 ```
 
 

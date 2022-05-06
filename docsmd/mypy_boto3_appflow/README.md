@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_appflow.client import AppflowClient
 
 def get_client() -> AppflowClient:
-    return Session().cleint("appflow")
+    return Session().client("appflow")
 ```
 
 

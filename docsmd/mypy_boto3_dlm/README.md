@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_dlm.client import DLMClient
 
 def get_client() -> DLMClient:
-    return Session().cleint("dlm")
+    return Session().client("dlm")
 ```
 
 

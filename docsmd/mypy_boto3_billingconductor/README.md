@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_billingconductor.client import BillingConductorClient
 
 def get_client() -> BillingConductorClient:
-    return Session().cleint("billingconductor")
+    return Session().client("billingconductor")
 ```
 
 

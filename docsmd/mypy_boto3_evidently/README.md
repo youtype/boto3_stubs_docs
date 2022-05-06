@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_evidently.client import CloudWatchEvidentlyClient
 
 def get_client() -> CloudWatchEvidentlyClient:
-    return Session().cleint("evidently")
+    return Session().client("evidently")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_health.client import HealthClient
 
 def get_client() -> HealthClient:
-    return Session().cleint("health")
+    return Session().client("health")
 ```
 
 

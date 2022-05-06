@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 
 def get_client() -> ElasticBeanstalkClient:
-    return Session().cleint("elasticbeanstalk")
+    return Session().client("elasticbeanstalk")
 ```
 
 

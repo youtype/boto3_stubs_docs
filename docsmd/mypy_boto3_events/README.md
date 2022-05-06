@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_events.client import EventBridgeClient
 
 def get_client() -> EventBridgeClient:
-    return Session().cleint("events")
+    return Session().client("events")
 ```
 
 

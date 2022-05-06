@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_nimble.client import NimbleStudioClient
 
 def get_client() -> NimbleStudioClient:
-    return Session().cleint("nimble")
+    return Session().client("nimble")
 ```
 
 

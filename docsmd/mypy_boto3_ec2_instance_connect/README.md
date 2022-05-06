@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ec2_instance_connect.client import EC2InstanceConnectClient
 
 def get_client() -> EC2InstanceConnectClient:
-    return Session().cleint("ec2-instance-connect")
+    return Session().client("ec2-instance-connect")
 ```
 
 

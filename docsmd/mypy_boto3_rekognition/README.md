@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_rekognition.client import RekognitionClient
 
 def get_client() -> RekognitionClient:
-    return Session().cleint("rekognition")
+    return Session().client("rekognition")
 ```
 
 

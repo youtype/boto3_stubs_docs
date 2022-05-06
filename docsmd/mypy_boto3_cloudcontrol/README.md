@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloudcontrol.client import CloudControlApiClient
 
 def get_client() -> CloudControlApiClient:
-    return Session().cleint("cloudcontrol")
+    return Session().client("cloudcontrol")
 ```
 
 

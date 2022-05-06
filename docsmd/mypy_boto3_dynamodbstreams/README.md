@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
 
 def get_client() -> DynamoDBStreamsClient:
-    return Session().cleint("dynamodbstreams")
+    return Session().client("dynamodbstreams")
 ```
 
 

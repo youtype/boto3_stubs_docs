@@ -30,6 +30,24 @@ class ArchivalSummaryResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ArchivalSummaryTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTableTypeDef
+
+def get_value() -> ArchivalSummaryTableTypeDef:
+    return {
+        "ArchivalDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class ArchivalSummaryTableTypeDef(TypedDict):
+    ArchivalDateTime: NotRequired[datetime],
+    ArchivalReason: NotRequired[str],
+    ArchivalBackupArn: NotRequired[str],
+```
+
 ## ArchivalSummaryTypeDef
 
 ```python title="Usage Example"
@@ -48,6 +66,25 @@ class ArchivalSummaryTypeDef(TypedDict):
     ArchivalBackupArn: NotRequired[str],
 ```
 
+## AttributeDefinitionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import AttributeDefinitionTableTypeDef
+
+def get_value() -> AttributeDefinitionTableTypeDef:
+    return {
+        "AttributeName": ...,
+        "AttributeType": ...,
+    }
+```
+
+```python title="Definition"
+class AttributeDefinitionTableTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeType: ScalarAttributeTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: ScalarAttributeTypeType](./literals.md#scalarattributetypetype) 
 ## AttributeDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -67,6 +104,49 @@ class AttributeDefinitionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ScalarAttributeTypeType](./literals.md#scalarattributetypetype) 
+## AttributeValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import AttributeValueTypeDef
+
+def get_value() -> AttributeValueTypeDef:
+    return {
+        "S": ...,
+    }
+```
+
+```python title="Definition"
+class AttributeValueTypeDef(TypedDict):
+    S: NotRequired[str],
+    N: NotRequired[str],
+    B: NotRequired[bytes],
+    SS: NotRequired[Sequence[str]],
+    NS: NotRequired[Sequence[str]],
+    BS: NotRequired[Sequence[bytes]],
+    M: NotRequired[Mapping[str, Any]],
+    L: NotRequired[Sequence[Any]],
+    NULL: NotRequired[bool],
+    BOOL: NotRequired[bool],
+```
+
+## AttributeValueUpdateTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import AttributeValueUpdateTableTypeDef
+
+def get_value() -> AttributeValueUpdateTableTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class AttributeValueUpdateTableTypeDef(TypedDict):
+    Value: NotRequired[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Action: NotRequired[AttributeActionType],  # (1)
+```
+
+1. See [:material-code-brackets: AttributeActionType](./literals.md#attributeactiontype) 
 ## AttributeValueUpdateTypeDef
 
 ```python title="Usage Example"
@@ -80,11 +160,12 @@ def get_value() -> AttributeValueUpdateTypeDef:
 
 ```python title="Definition"
 class AttributeValueUpdateTypeDef(TypedDict):
-    Value: NotRequired[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Action: NotRequired[AttributeActionType],  # (1)
+    Value: NotRequired[AttributeValueTypeDef],  # (1)
+    Action: NotRequired[AttributeActionType],  # (2)
 ```
 
-1. See [:material-code-brackets: AttributeActionType](./literals.md#attributeactiontype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: AttributeActionType](./literals.md#attributeactiontype) 
 ## AutoScalingPolicyDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -250,6 +331,33 @@ class BackupDetailsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BackupStatusType](./literals.md#backupstatustype) 
 2. See [:material-code-brackets: BackupTypeType](./literals.md#backuptypetype) 
+## BackupSummaryTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import BackupSummaryTableTypeDef
+
+def get_value() -> BackupSummaryTableTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class BackupSummaryTableTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    TableId: NotRequired[str],
+    TableArn: NotRequired[str],
+    BackupArn: NotRequired[str],
+    BackupName: NotRequired[str],
+    BackupCreationDateTime: NotRequired[datetime],
+    BackupExpiryDateTime: NotRequired[datetime],
+    BackupStatus: NotRequired[BackupStatusType],  # (1)
+    BackupType: NotRequired[BackupTypeType],  # (2)
+    BackupSizeBytes: NotRequired[int],
+```
+
+1. See [:material-code-brackets: BackupStatusType](./literals.md#backupstatustype) 
+2. See [:material-code-brackets: BackupTypeType](./literals.md#backuptypetype) 
 ## BackupSummaryTypeDef
 
 ```python title="Usage Example"
@@ -373,15 +481,16 @@ def get_value() -> BatchGetItemOutputTypeDef:
 
 ```python title="Definition"
 class BatchGetItemOutputTypeDef(TypedDict):
-    Responses: Dict[str, List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],
-    UnprocessedKeys: Dict[str, KeysAndAttributesTypeDef],  # (1)
-    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    Responses: Dict[str, List[Dict[str, AttributeValueTypeDef]]],  # (1)
+    UnprocessedKeys: Dict[str, KeysAndAttributesTypeDef],  # (2)
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
-2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
+3. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchStatementErrorTypeDef
 
 ```python title="Usage Example"
@@ -414,10 +523,11 @@ def get_value() -> BatchStatementRequestTypeDef:
 ```python title="Definition"
 class BatchStatementRequestTypeDef(TypedDict):
     Statement: str,
-    Parameters: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Parameters: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
     ConsistentRead: NotRequired[bool],
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## BatchStatementResponseTypeDef
 
 ```python title="Usage Example"
@@ -433,10 +543,11 @@ def get_value() -> BatchStatementResponseTypeDef:
 class BatchStatementResponseTypeDef(TypedDict):
     Error: NotRequired[BatchStatementErrorTypeDef],  # (1)
     TableName: NotRequired[str],
-    Item: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Item: NotRequired[Dict[str, AttributeValueTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## BatchWriteItemInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -527,6 +638,24 @@ class BillingModeSummaryResponseMetadataTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BillingModeSummaryTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import BillingModeSummaryTableTypeDef
+
+def get_value() -> BillingModeSummaryTableTypeDef:
+    return {
+        "BillingMode": ...,
+    }
+```
+
+```python title="Definition"
+class BillingModeSummaryTableTypeDef(TypedDict):
+    BillingMode: NotRequired[BillingModeType],  # (1)
+    LastUpdateToPayPerRequestDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
 ## BillingModeSummaryTypeDef
 
 ```python title="Usage Example"
@@ -545,6 +674,24 @@ class BillingModeSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+## CapacityTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import CapacityTableTypeDef
+
+def get_value() -> CapacityTableTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+    }
+```
+
+```python title="Definition"
+class CapacityTableTypeDef(TypedDict):
+    ReadCapacityUnits: NotRequired[float],
+    WriteCapacityUnits: NotRequired[float],
+    CapacityUnits: NotRequired[float],
+```
+
 ## CapacityTypeDef
 
 ```python title="Usage Example"
@@ -578,15 +725,35 @@ def get_value() -> ConditionCheckTypeDef:
 
 ```python title="Definition"
 class ConditionCheckTypeDef(TypedDict):
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
     TableName: str,
     ConditionExpression: str,
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
-    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
-1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
+## ConditionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ConditionTableTypeDef
+
+def get_value() -> ConditionTableTypeDef:
+    return {
+        "ComparisonOperator": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionTableTypeDef(TypedDict):
+    ComparisonOperator: ComparisonOperatorType,  # (1)
+    AttributeValueList: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
+
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## ConditionTypeDef
 
 ```python title="Usage Example"
@@ -600,11 +767,37 @@ def get_value() -> ConditionTypeDef:
 
 ```python title="Definition"
 class ConditionTypeDef(TypedDict):
-    ComparisonOperator: ComparisonOperatorType,  # (1)
-    AttributeValueList: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ComparisonOperator: ComparisonOperatorType,  # (2)
+    AttributeValueList: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
 ```
 
-1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+## ConsumedCapacityTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ConsumedCapacityTableTypeDef
+
+def get_value() -> ConsumedCapacityTableTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class ConsumedCapacityTableTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    CapacityUnits: NotRequired[float],
+    ReadCapacityUnits: NotRequired[float],
+    WriteCapacityUnits: NotRequired[float],
+    Table: NotRequired[CapacityTableTypeDef],  # (1)
+    LocalSecondaryIndexes: NotRequired[Dict[str, CapacityTableTypeDef]],  # (2)
+    GlobalSecondaryIndexes: NotRequired[Dict[str, CapacityTableTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: CapacityTableTypeDef](./type_defs.md#capacitytabletypedef) 
+2. See [:material-code-braces: CapacityTableTypeDef](./type_defs.md#capacitytabletypedef) 
+3. See [:material-code-braces: CapacityTableTypeDef](./type_defs.md#capacitytabletypedef) 
 ## ConsumedCapacityTypeDef
 
 ```python title="Usage Example"
@@ -706,6 +899,30 @@ class CreateBackupOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateGlobalSecondaryIndexActionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import CreateGlobalSecondaryIndexActionTableTypeDef
+
+def get_value() -> CreateGlobalSecondaryIndexActionTableTypeDef:
+    return {
+        "IndexName": ...,
+        "KeySchema": ...,
+        "Projection": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGlobalSecondaryIndexActionTableTypeDef(TypedDict):
+    IndexName: str,
+    KeySchema: Sequence[KeySchemaElementTableTypeDef],  # (1)
+    Projection: ProjectionTableTypeDef,  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTableTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: KeySchemaElementTableTypeDef](./type_defs.md#keyschemaelementtabletypedef) 
+2. See [:material-code-braces: ProjectionTableTypeDef](./type_defs.md#projectiontabletypedef) 
+3. See [:material-code-braces: ProvisionedThroughputTableTypeDef](./type_defs.md#provisionedthroughputtabletypedef) 
 ## CreateGlobalSecondaryIndexActionTypeDef
 
 ```python title="Usage Example"
@@ -785,6 +1002,29 @@ class CreateReplicaActionTypeDef(TypedDict):
     RegionName: str,
 ```
 
+## CreateReplicationGroupMemberActionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import CreateReplicationGroupMemberActionTableTypeDef
+
+def get_value() -> CreateReplicationGroupMemberActionTableTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateReplicationGroupMemberActionTableTypeDef(TypedDict):
+    RegionName: str,
+    KMSMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTableTypeDef],  # (1)
+    GlobalSecondaryIndexes: NotRequired[Sequence[ReplicaGlobalSecondaryIndexTableTypeDef]],  # (2)
+    TableClassOverride: NotRequired[TableClassType],  # (3)
+```
+
+1. See [:material-code-braces: ProvisionedThroughputOverrideTableTypeDef](./type_defs.md#provisionedthroughputoverridetabletypedef) 
+2. See [:material-code-braces: ReplicaGlobalSecondaryIndexTableTypeDef](./type_defs.md#replicaglobalsecondaryindextabletypedef) 
+3. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## CreateReplicationGroupMemberActionTypeDef
 
 ```python title="Usage Example"
@@ -940,6 +1180,22 @@ class DeleteBackupOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BackupDescriptionTypeDef](./type_defs.md#backupdescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteGlobalSecondaryIndexActionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DeleteGlobalSecondaryIndexActionTableTypeDef
+
+def get_value() -> DeleteGlobalSecondaryIndexActionTableTypeDef:
+    return {
+        "IndexName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteGlobalSecondaryIndexActionTableTypeDef(TypedDict):
+    IndexName: str,
+```
+
 ## DeleteGlobalSecondaryIndexActionTypeDef
 
 ```python title="Usage Example"
@@ -971,22 +1227,24 @@ def get_value() -> DeleteItemInputRequestTypeDef:
 ```python title="Definition"
 class DeleteItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
-    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (2)
-    ReturnValues: NotRequired[ReturnValueType],  # (3)
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
-    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (5)
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
+    ReturnValues: NotRequired[ReturnValueType],  # (4)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (6)
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
-2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
-4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## DeleteItemInputTableDeleteItemTypeDef
 
 ```python title="Usage Example"
@@ -1001,7 +1259,7 @@ def get_value() -> DeleteItemInputTableDeleteItemTypeDef:
 ```python title="Definition"
 class DeleteItemInputTableDeleteItemTypeDef(TypedDict):
     Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTableTypeDef]],  # (1)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (2)
     ReturnValues: NotRequired[ReturnValueType],  # (3)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
@@ -1011,11 +1269,36 @@ class DeleteItemInputTableDeleteItemTypeDef(TypedDict):
     ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+1. See [:material-code-braces: ExpectedAttributeValueTableTypeDef](./type_defs.md#expectedattributevaluetabletypedef) 
 2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
 4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+## DeleteItemOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DeleteItemOutputTableTypeDef
+
+def get_value() -> DeleteItemOutputTableTypeDef:
+    return {
+        "Attributes": ...,
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteItemOutputTableTypeDef(TypedDict):
+    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTableTypeDef,  # (1)
+    ItemCollectionMetrics: ItemCollectionMetricsTableTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConsumedCapacityTableTypeDef](./type_defs.md#consumedcapacitytabletypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTableTypeDef](./type_defs.md#itemcollectionmetricstabletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteItemOutputTypeDef
 
 ```python title="Usage Example"
@@ -1032,15 +1315,16 @@ def get_value() -> DeleteItemOutputTypeDef:
 
 ```python title="Definition"
 class DeleteItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
+    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteReplicaActionTypeDef
 
 ```python title="Usage Example"
@@ -1054,6 +1338,22 @@ def get_value() -> DeleteReplicaActionTypeDef:
 
 ```python title="Definition"
 class DeleteReplicaActionTypeDef(TypedDict):
+    RegionName: str,
+```
+
+## DeleteReplicationGroupMemberActionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DeleteReplicationGroupMemberActionTableTypeDef
+
+def get_value() -> DeleteReplicationGroupMemberActionTableTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteReplicationGroupMemberActionTableTypeDef(TypedDict):
     RegionName: str,
 ```
 
@@ -1086,9 +1386,10 @@ def get_value() -> DeleteRequestTypeDef:
 
 ```python title="Definition"
 class DeleteRequestTypeDef(TypedDict):
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## DeleteTableInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1105,6 +1406,26 @@ class DeleteTableInputRequestTypeDef(TypedDict):
     TableName: str,
 ```
 
+## DeleteTableOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DeleteTableOutputTableTypeDef
+
+def get_value() -> DeleteTableOutputTableTypeDef:
+    return {
+        "TableDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTableOutputTableTypeDef(TypedDict):
+    TableDescription: TableDescriptionTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TableDescriptionTableTypeDef](./type_defs.md#tabledescriptiontabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTableOutputTypeDef
 
 ```python title="Usage Example"
@@ -1139,15 +1460,17 @@ def get_value() -> DeleteTypeDef:
 
 ```python title="Definition"
 class DeleteTypeDef(TypedDict):
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
     TableName: str,
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
-    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
-1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
 ## DescribeBackupInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1637,14 +1960,15 @@ def get_value() -> ExecuteStatementInputRequestTypeDef:
 ```python title="Definition"
 class ExecuteStatementInputRequestTypeDef(TypedDict):
     Statement: str,
-    Parameters: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Parameters: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
     ConsistentRead: NotRequired[bool],
     NextToken: NotRequired[str],
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
     Limit: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## ExecuteStatementOutputTypeDef
 
 ```python title="Usage Example"
@@ -1662,15 +1986,17 @@ def get_value() -> ExecuteStatementOutputTypeDef:
 
 ```python title="Definition"
 class ExecuteStatementOutputTypeDef(TypedDict):
-    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
     NextToken: str,
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
+    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecuteTransactionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1714,6 +2040,26 @@ class ExecuteTransactionOutputTypeDef(TypedDict):
 1. See [:material-code-braces: ItemResponseTypeDef](./type_defs.md#itemresponsetypedef) 
 2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExpectedAttributeValueTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ExpectedAttributeValueTableTypeDef
+
+def get_value() -> ExpectedAttributeValueTableTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ExpectedAttributeValueTableTypeDef(TypedDict):
+    Value: NotRequired[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Exists: NotRequired[bool],
+    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
+    AttributeValueList: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
+
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## ExpectedAttributeValueTypeDef
 
 ```python title="Usage Example"
@@ -1727,13 +2073,15 @@ def get_value() -> ExpectedAttributeValueTypeDef:
 
 ```python title="Definition"
 class ExpectedAttributeValueTypeDef(TypedDict):
-    Value: NotRequired[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Value: NotRequired[AttributeValueTypeDef],  # (1)
     Exists: NotRequired[bool],
-    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
-    AttributeValueList: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (2)
+    AttributeValueList: NotRequired[Sequence[AttributeValueTypeDef]],  # (3)
 ```
 
-1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+3. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## ExportDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1868,15 +2216,16 @@ def get_value() -> GetItemInputRequestTypeDef:
 ```python title="Definition"
 class GetItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
     AttributesToGet: NotRequired[Sequence[str]],
     ConsistentRead: NotRequired[bool],
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
     ProjectionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## GetItemInputTableGetItemTypeDef
 
 ```python title="Usage Example"
@@ -1899,6 +2248,28 @@ class GetItemInputTableGetItemTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+## GetItemOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import GetItemOutputTableTypeDef
+
+def get_value() -> GetItemOutputTableTypeDef:
+    return {
+        "Item": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetItemOutputTableTypeDef(TypedDict):
+    Item: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConsumedCapacityTableTypeDef](./type_defs.md#consumedcapacitytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetItemOutputTypeDef
 
 ```python title="Usage Example"
@@ -1914,13 +2285,14 @@ def get_value() -> GetItemOutputTypeDef:
 
 ```python title="Definition"
 class GetItemOutputTypeDef(TypedDict):
-    Item: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    Item: Dict[str, AttributeValueTypeDef],  # (1)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTypeDef
 
 ```python title="Usage Example"
@@ -1935,12 +2307,13 @@ def get_value() -> GetTypeDef:
 
 ```python title="Definition"
 class GetTypeDef(TypedDict):
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
     TableName: str,
     ProjectionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## GlobalSecondaryIndexAutoScalingUpdateTypeDef
 
 ```python title="Usage Example"
@@ -1959,6 +2332,34 @@ class GlobalSecondaryIndexAutoScalingUpdateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+## GlobalSecondaryIndexDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexDescriptionTableTypeDef
+
+def get_value() -> GlobalSecondaryIndexDescriptionTableTypeDef:
+    return {
+        "IndexName": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalSecondaryIndexDescriptionTableTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTableTypeDef]],  # (1)
+    Projection: NotRequired[ProjectionTableTypeDef],  # (2)
+    IndexStatus: NotRequired[IndexStatusType],  # (3)
+    Backfilling: NotRequired[bool],
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputDescriptionTableTypeDef],  # (4)
+    IndexSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    IndexArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: KeySchemaElementTableTypeDef](./type_defs.md#keyschemaelementtabletypedef) 
+2. See [:material-code-braces: ProjectionTableTypeDef](./type_defs.md#projectiontabletypedef) 
+3. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
+4. See [:material-code-braces: ProvisionedThroughputDescriptionTableTypeDef](./type_defs.md#provisionedthroughputdescriptiontabletypedef) 
 ## GlobalSecondaryIndexDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -2033,6 +2434,27 @@ class GlobalSecondaryIndexTypeDef(TypedDict):
 1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
 2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
 3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+## GlobalSecondaryIndexUpdateTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexUpdateTableTypeDef
+
+def get_value() -> GlobalSecondaryIndexUpdateTableTypeDef:
+    return {
+        "Update": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalSecondaryIndexUpdateTableTypeDef(TypedDict):
+    Update: NotRequired[UpdateGlobalSecondaryIndexActionTableTypeDef],  # (1)
+    Create: NotRequired[CreateGlobalSecondaryIndexActionTableTypeDef],  # (2)
+    Delete: NotRequired[DeleteGlobalSecondaryIndexActionTableTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: UpdateGlobalSecondaryIndexActionTableTypeDef](./type_defs.md#updateglobalsecondaryindexactiontabletypedef) 
+2. See [:material-code-braces: CreateGlobalSecondaryIndexActionTableTypeDef](./type_defs.md#createglobalsecondaryindexactiontabletypedef) 
+3. See [:material-code-braces: DeleteGlobalSecondaryIndexActionTableTypeDef](./type_defs.md#deleteglobalsecondaryindexactiontabletypedef) 
 ## GlobalSecondaryIndexUpdateTypeDef
 
 ```python title="Usage Example"
@@ -2113,6 +2535,23 @@ class GlobalTableTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReplicaTypeDef](./type_defs.md#replicatypedef) 
+## ItemCollectionMetricsTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ItemCollectionMetricsTableTypeDef
+
+def get_value() -> ItemCollectionMetricsTableTypeDef:
+    return {
+        "ItemCollectionKey": ...,
+    }
+```
+
+```python title="Definition"
+class ItemCollectionMetricsTableTypeDef(TypedDict):
+    ItemCollectionKey: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    SizeEstimateRangeGB: NotRequired[List[float]],
+```
+
 ## ItemCollectionMetricsTypeDef
 
 ```python title="Usage Example"
@@ -2126,10 +2565,11 @@ def get_value() -> ItemCollectionMetricsTypeDef:
 
 ```python title="Definition"
 class ItemCollectionMetricsTypeDef(TypedDict):
-    ItemCollectionKey: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ItemCollectionKey: NotRequired[Dict[str, AttributeValueTypeDef]],  # (1)
     SizeEstimateRangeGB: NotRequired[List[float]],
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## ItemResponseTypeDef
 
 ```python title="Usage Example"
@@ -2143,9 +2583,29 @@ def get_value() -> ItemResponseTypeDef:
 
 ```python title="Definition"
 class ItemResponseTypeDef(TypedDict):
-    Item: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Item: NotRequired[Dict[str, AttributeValueTypeDef]],  # (1)
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+## KeySchemaElementTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import KeySchemaElementTableTypeDef
+
+def get_value() -> KeySchemaElementTableTypeDef:
+    return {
+        "AttributeName": ...,
+        "KeyType": ...,
+    }
+```
+
+```python title="Definition"
+class KeySchemaElementTableTypeDef(TypedDict):
+    AttributeName: str,
+    KeyType: KeyTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 ## KeySchemaElementTypeDef
 
 ```python title="Usage Example"
@@ -2178,13 +2638,14 @@ def get_value() -> KeysAndAttributesTypeDef:
 
 ```python title="Definition"
 class KeysAndAttributesTypeDef(TypedDict):
-    Keys: Sequence[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Keys: Sequence[Mapping[str, AttributeValueTypeDef]],  # (1)
     AttributesToGet: NotRequired[Sequence[str]],
     ConsistentRead: NotRequired[bool],
     ProjectionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## KinesisDataStreamDestinationTypeDef
 
 ```python title="Usage Example"
@@ -2290,6 +2751,28 @@ class ListBackupsInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BackupTypeFilterType](./literals.md#backuptypefiltertype) 
+## ListBackupsOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListBackupsOutputTableTypeDef
+
+def get_value() -> ListBackupsOutputTableTypeDef:
+    return {
+        "BackupSummaries": ...,
+        "LastEvaluatedBackupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupsOutputTableTypeDef(TypedDict):
+    BackupSummaries: List[BackupSummaryTableTypeDef],  # (1)
+    LastEvaluatedBackupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BackupSummaryTableTypeDef](./type_defs.md#backupsummarytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupsOutputTypeDef
 
 ```python title="Usage Example"
@@ -2466,6 +2949,27 @@ class ListTablesInputRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
+## ListTablesOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListTablesOutputTableTypeDef
+
+def get_value() -> ListTablesOutputTableTypeDef:
+    return {
+        "TableNames": ...,
+        "LastEvaluatedTableName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTablesOutputTableTypeDef(TypedDict):
+    TableNames: List[str],
+    LastEvaluatedTableName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTablesOutputTypeDef
 
 ```python title="Usage Example"
@@ -2522,6 +3026,28 @@ class ListTagsOfResourceInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListTagsOfResourceOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceOutputTableTypeDef
+
+def get_value() -> ListTagsOfResourceOutputTableTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsOfResourceOutputTableTypeDef(TypedDict):
+    Tags: List[TagTableTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTableTypeDef](./type_defs.md#tagtabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsOfResourceOutputTypeDef
 
 ```python title="Usage Example"
@@ -2544,6 +3070,29 @@ class ListTagsOfResourceOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LocalSecondaryIndexDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexDescriptionTableTypeDef
+
+def get_value() -> LocalSecondaryIndexDescriptionTableTypeDef:
+    return {
+        "IndexName": ...,
+    }
+```
+
+```python title="Definition"
+class LocalSecondaryIndexDescriptionTableTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTableTypeDef]],  # (1)
+    Projection: NotRequired[ProjectionTableTypeDef],  # (2)
+    IndexSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    IndexArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: KeySchemaElementTableTypeDef](./type_defs.md#keyschemaelementtabletypedef) 
+2. See [:material-code-braces: ProjectionTableTypeDef](./type_defs.md#projectiontabletypedef) 
 ## LocalSecondaryIndexDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -2641,9 +3190,10 @@ def get_value() -> ParameterizedStatementTypeDef:
 ```python title="Definition"
 class ParameterizedStatementTypeDef(TypedDict):
     Statement: str,
-    Parameters: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Parameters: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## PointInTimeRecoveryDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -2679,6 +3229,24 @@ class PointInTimeRecoverySpecificationTypeDef(TypedDict):
     PointInTimeRecoveryEnabled: bool,
 ```
 
+## ProjectionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ProjectionTableTypeDef
+
+def get_value() -> ProjectionTableTypeDef:
+    return {
+        "ProjectionType": ...,
+    }
+```
+
+```python title="Definition"
+class ProjectionTableTypeDef(TypedDict):
+    ProjectionType: NotRequired[ProjectionTypeType],  # (1)
+    NonKeyAttributes: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: ProjectionTypeType](./literals.md#projectiontypetype) 
 ## ProjectionTypeDef
 
 ```python title="Usage Example"
@@ -2724,6 +3292,26 @@ class ProvisionedThroughputDescriptionResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ProvisionedThroughputDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputDescriptionTableTypeDef
+
+def get_value() -> ProvisionedThroughputDescriptionTableTypeDef:
+    return {
+        "LastIncreaseDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedThroughputDescriptionTableTypeDef(TypedDict):
+    LastIncreaseDateTime: NotRequired[datetime],
+    LastDecreaseDateTime: NotRequired[datetime],
+    NumberOfDecreasesToday: NotRequired[int],
+    ReadCapacityUnits: NotRequired[int],
+    WriteCapacityUnits: NotRequired[int],
+```
+
 ## ProvisionedThroughputDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -2744,6 +3332,22 @@ class ProvisionedThroughputDescriptionTypeDef(TypedDict):
     WriteCapacityUnits: NotRequired[int],
 ```
 
+## ProvisionedThroughputOverrideTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputOverrideTableTypeDef
+
+def get_value() -> ProvisionedThroughputOverrideTableTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedThroughputOverrideTableTypeDef(TypedDict):
+    ReadCapacityUnits: NotRequired[int],
+```
+
 ## ProvisionedThroughputOverrideTypeDef
 
 ```python title="Usage Example"
@@ -2758,6 +3362,24 @@ def get_value() -> ProvisionedThroughputOverrideTypeDef:
 ```python title="Definition"
 class ProvisionedThroughputOverrideTypeDef(TypedDict):
     ReadCapacityUnits: NotRequired[int],
+```
+
+## ProvisionedThroughputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputTableTypeDef
+
+def get_value() -> ProvisionedThroughputTableTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+        "WriteCapacityUnits": ...,
+    }
+```
+
+```python title="Definition"
+class ProvisionedThroughputTableTypeDef(TypedDict):
+    ReadCapacityUnits: int,
+    WriteCapacityUnits: int,
 ```
 
 ## ProvisionedThroughputTypeDef
@@ -2793,22 +3415,24 @@ def get_value() -> PutItemInputRequestTypeDef:
 ```python title="Definition"
 class PutItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
-    ReturnValues: NotRequired[ReturnValueType],  # (2)
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (3)
-    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (4)
-    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (5)
+    Item: Mapping[str, AttributeValueTypeDef],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
+    ReturnValues: NotRequired[ReturnValueType],  # (3)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (5)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (6)
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
-2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
-3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
-5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+6. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## PutItemInputTablePutItemTypeDef
 
 ```python title="Usage Example"
@@ -2823,7 +3447,7 @@ def get_value() -> PutItemInputTablePutItemTypeDef:
 ```python title="Definition"
 class PutItemInputTablePutItemTypeDef(TypedDict):
     Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTableTypeDef]],  # (1)
     ReturnValues: NotRequired[ReturnValueType],  # (2)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (3)
     ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (4)
@@ -2833,11 +3457,36 @@ class PutItemInputTablePutItemTypeDef(TypedDict):
     ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
 ```
 
-1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+1. See [:material-code-braces: ExpectedAttributeValueTableTypeDef](./type_defs.md#expectedattributevaluetabletypedef) 
 2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
 3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+## PutItemOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import PutItemOutputTableTypeDef
+
+def get_value() -> PutItemOutputTableTypeDef:
+    return {
+        "Attributes": ...,
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutItemOutputTableTypeDef(TypedDict):
+    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTableTypeDef,  # (1)
+    ItemCollectionMetrics: ItemCollectionMetricsTableTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConsumedCapacityTableTypeDef](./type_defs.md#consumedcapacitytabletypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTableTypeDef](./type_defs.md#itemcollectionmetricstabletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutItemOutputTypeDef
 
 ```python title="Usage Example"
@@ -2854,15 +3503,16 @@ def get_value() -> PutItemOutputTypeDef:
 
 ```python title="Definition"
 class PutItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
+    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRequestTypeDef
 
 ```python title="Usage Example"
@@ -2876,9 +3526,10 @@ def get_value() -> PutRequestTypeDef:
 
 ```python title="Definition"
 class PutRequestTypeDef(TypedDict):
-    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Item: Mapping[str, AttributeValueTypeDef],  # (1)
 ```
 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## PutTypeDef
 
 ```python title="Usage Example"
@@ -2893,15 +3544,17 @@ def get_value() -> PutTypeDef:
 
 ```python title="Definition"
 class PutTypeDef(TypedDict):
-    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Item: Mapping[str, AttributeValueTypeDef],  # (1)
     TableName: str,
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
-    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
-1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
 ## QueryInputQueryPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2920,8 +3573,8 @@ class QueryInputQueryPaginateTypeDef(TypedDict):
     Select: NotRequired[SelectType],  # (1)
     AttributesToGet: NotRequired[Sequence[str]],
     ConsistentRead: NotRequired[bool],
-    KeyConditions: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
-    QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    KeyConditions: NotRequired[Mapping[str, ConditionTableTypeDef]],  # (2)
+    QueryFilter: NotRequired[Mapping[str, ConditionTableTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
     ScanIndexForward: NotRequired[bool],
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
@@ -2934,8 +3587,8 @@ class QueryInputQueryPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
-3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
+3. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 6. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
@@ -2962,20 +3615,22 @@ class QueryInputRequestTypeDef(TypedDict):
     QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
     ScanIndexForward: NotRequired[bool],
-    ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ExclusiveStartKey: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (5)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (6)
     ProjectionExpression: NotRequired[str],
     FilterExpression: NotRequired[str],
     KeyConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (5)
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
 2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+6. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## QueryInputTableQueryTypeDef
 
 ```python title="Usage Example"
@@ -2994,8 +3649,8 @@ class QueryInputTableQueryTypeDef(TypedDict):
     AttributesToGet: NotRequired[Sequence[str]],
     Limit: NotRequired[int],
     ConsistentRead: NotRequired[bool],
-    KeyConditions: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
-    QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    KeyConditions: NotRequired[Mapping[str, ConditionTableTypeDef]],  # (2)
+    QueryFilter: NotRequired[Mapping[str, ConditionTableTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
     ScanIndexForward: NotRequired[bool],
     ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
@@ -3008,10 +3663,38 @@ class QueryInputTableQueryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
-3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
+3. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+## QueryOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import QueryOutputTableTypeDef
+
+def get_value() -> QueryOutputTableTypeDef:
+    return {
+        "Items": ...,
+        "Count": ...,
+        "ScannedCount": ...,
+        "LastEvaluatedKey": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class QueryOutputTableTypeDef(TypedDict):
+    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Count: int,
+    ScannedCount: int,
+    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConsumedCapacityTableTypeDef](./type_defs.md#consumedcapacitytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QueryOutputTypeDef
 
 ```python title="Usage Example"
@@ -3030,16 +3713,18 @@ def get_value() -> QueryOutputTypeDef:
 
 ```python title="Definition"
 class QueryOutputTypeDef(TypedDict):
-    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
     Count: int,
     ScannedCount: int,
-    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (2)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReplicaAutoScalingDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -3084,6 +3769,34 @@ class ReplicaAutoScalingUpdateTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingupdatetypedef) 
 2. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+## ReplicaDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ReplicaDescriptionTableTypeDef
+
+def get_value() -> ReplicaDescriptionTableTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicaDescriptionTableTypeDef(TypedDict):
+    RegionName: NotRequired[str],
+    ReplicaStatus: NotRequired[ReplicaStatusType],  # (1)
+    ReplicaStatusDescription: NotRequired[str],
+    ReplicaStatusPercentProgress: NotRequired[str],
+    KMSMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTableTypeDef],  # (2)
+    GlobalSecondaryIndexes: NotRequired[List[ReplicaGlobalSecondaryIndexDescriptionTableTypeDef]],  # (3)
+    ReplicaInaccessibleDateTime: NotRequired[datetime],
+    ReplicaTableClassSummary: NotRequired[TableClassSummaryTableTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ReplicaStatusType](./literals.md#replicastatustype) 
+2. See [:material-code-braces: ProvisionedThroughputOverrideTableTypeDef](./type_defs.md#provisionedthroughputoverridetabletypedef) 
+3. See [:material-code-braces: ReplicaGlobalSecondaryIndexDescriptionTableTypeDef](./type_defs.md#replicaglobalsecondaryindexdescriptiontabletypedef) 
+4. See [:material-code-braces: TableClassSummaryTableTypeDef](./type_defs.md#tableclasssummarytabletypedef) 
 ## ReplicaDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -3152,6 +3865,24 @@ class ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+## ReplicaGlobalSecondaryIndexDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexDescriptionTableTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexDescriptionTableTypeDef:
+    return {
+        "IndexName": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexDescriptionTableTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTableTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ProvisionedThroughputOverrideTableTypeDef](./type_defs.md#provisionedthroughputoverridetabletypedef) 
 ## ReplicaGlobalSecondaryIndexDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -3213,6 +3944,24 @@ class ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+## ReplicaGlobalSecondaryIndexTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexTableTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexTableTypeDef:
+    return {
+        "IndexName": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexTableTypeDef(TypedDict):
+    IndexName: str,
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTableTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ProvisionedThroughputOverrideTableTypeDef](./type_defs.md#provisionedthroughputoverridetabletypedef) 
 ## ReplicaGlobalSecondaryIndexTypeDef
 
 ```python title="Usage Example"
@@ -3319,6 +4068,27 @@ class ReplicaUpdateTypeDef(TypedDict):
 
 1. See [:material-code-braces: CreateReplicaActionTypeDef](./type_defs.md#createreplicaactiontypedef) 
 2. See [:material-code-braces: DeleteReplicaActionTypeDef](./type_defs.md#deletereplicaactiontypedef) 
+## ReplicationGroupUpdateTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ReplicationGroupUpdateTableTypeDef
+
+def get_value() -> ReplicationGroupUpdateTableTypeDef:
+    return {
+        "Create": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationGroupUpdateTableTypeDef(TypedDict):
+    Create: NotRequired[CreateReplicationGroupMemberActionTableTypeDef],  # (1)
+    Update: NotRequired[UpdateReplicationGroupMemberActionTableTypeDef],  # (2)
+    Delete: NotRequired[DeleteReplicationGroupMemberActionTableTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: CreateReplicationGroupMemberActionTableTypeDef](./type_defs.md#createreplicationgroupmemberactiontabletypedef) 
+2. See [:material-code-braces: UpdateReplicationGroupMemberActionTableTypeDef](./type_defs.md#updatereplicationgroupmemberactiontabletypedef) 
+3. See [:material-code-braces: DeleteReplicationGroupMemberActionTableTypeDef](./type_defs.md#deletereplicationgroupmemberactiontabletypedef) 
 ## ReplicationGroupUpdateTypeDef
 
 ```python title="Usage Example"
@@ -3389,6 +4159,26 @@ class RestoreSummaryResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RestoreSummaryTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import RestoreSummaryTableTypeDef
+
+def get_value() -> RestoreSummaryTableTypeDef:
+    return {
+        "RestoreDateTime": ...,
+        "RestoreInProgress": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreSummaryTableTypeDef(TypedDict):
+    RestoreDateTime: datetime,
+    RestoreInProgress: bool,
+    SourceBackupArn: NotRequired[str],
+    SourceTableArn: NotRequired[str],
+```
+
 ## RestoreSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3534,6 +4324,27 @@ class SSEDescriptionResponseMetadataTypeDef(TypedDict):
 1. See [:material-code-brackets: SSEStatusType](./literals.md#ssestatustype) 
 2. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SSEDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import SSEDescriptionTableTypeDef
+
+def get_value() -> SSEDescriptionTableTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class SSEDescriptionTableTypeDef(TypedDict):
+    Status: NotRequired[SSEStatusType],  # (1)
+    SSEType: NotRequired[SSETypeType],  # (2)
+    KMSMasterKeyArn: NotRequired[str],
+    InaccessibleEncryptionDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: SSEStatusType](./literals.md#ssestatustype) 
+2. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
 ## SSEDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -3555,6 +4366,25 @@ class SSEDescriptionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SSEStatusType](./literals.md#ssestatustype) 
 2. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
+## SSESpecificationTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import SSESpecificationTableTypeDef
+
+def get_value() -> SSESpecificationTableTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class SSESpecificationTableTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    SSEType: NotRequired[SSETypeType],  # (1)
+    KMSMasterKeyId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
 ## SSESpecificationTypeDef
 
 ```python title="Usage Example"
@@ -3594,21 +4424,23 @@ class ScanInputRequestTypeDef(TypedDict):
     Select: NotRequired[SelectType],  # (1)
     ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
-    ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    ExclusiveStartKey: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (4)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
     TotalSegments: NotRequired[int],
     Segment: NotRequired[int],
     ProjectionExpression: NotRequired[str],
     FilterExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (4)
     ConsistentRead: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
 2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+4. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## ScanInputScanPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3626,7 +4458,7 @@ class ScanInputScanPaginateTypeDef(TypedDict):
     IndexName: NotRequired[str],
     AttributesToGet: NotRequired[Sequence[str]],
     Select: NotRequired[SelectType],  # (1)
-    ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ScanFilter: NotRequired[Mapping[str, ConditionTableTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
     TotalSegments: NotRequired[int],
@@ -3640,7 +4472,7 @@ class ScanInputScanPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
@@ -3661,7 +4493,7 @@ class ScanInputTableScanTypeDef(TypedDict):
     AttributesToGet: NotRequired[Sequence[str]],
     Limit: NotRequired[int],
     Select: NotRequired[SelectType],  # (1)
-    ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ScanFilter: NotRequired[Mapping[str, ConditionTableTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
     ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
@@ -3675,9 +4507,37 @@ class ScanInputTableScanTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+## ScanOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ScanOutputTableTypeDef
+
+def get_value() -> ScanOutputTableTypeDef:
+    return {
+        "Items": ...,
+        "Count": ...,
+        "ScannedCount": ...,
+        "LastEvaluatedKey": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ScanOutputTableTypeDef(TypedDict):
+    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Count: int,
+    ScannedCount: int,
+    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConsumedCapacityTableTypeDef](./type_defs.md#consumedcapacitytabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ScanOutputTypeDef
 
 ```python title="Usage Example"
@@ -3696,16 +4556,18 @@ def get_value() -> ScanOutputTypeDef:
 
 ```python title="Definition"
 class ScanOutputTypeDef(TypedDict):
-    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
     Count: int,
     ScannedCount: int,
-    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (2)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceResourceTableRequestTypeDef
 
 ```python title="Usage Example"
@@ -3800,6 +4662,24 @@ class StreamSpecificationResponseMetadataTypeDef(TypedDict):
 
 1. See [:material-code-brackets: StreamViewTypeType](./literals.md#streamviewtypetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StreamSpecificationTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import StreamSpecificationTableTypeDef
+
+def get_value() -> StreamSpecificationTableTypeDef:
+    return {
+        "StreamEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class StreamSpecificationTableTypeDef(TypedDict):
+    StreamEnabled: bool,
+    StreamViewType: NotRequired[StreamViewTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: StreamViewTypeType](./literals.md#streamviewtypetype) 
 ## StreamSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -3876,6 +4756,24 @@ class TableClassSummaryResponseMetadataTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TableClassSummaryTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import TableClassSummaryTableTypeDef
+
+def get_value() -> TableClassSummaryTableTypeDef:
+    return {
+        "TableClass": ...,
+    }
+```
+
+```python title="Definition"
+class TableClassSummaryTableTypeDef(TypedDict):
+    TableClass: NotRequired[TableClassType],  # (1)
+    LastUpdateDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## TableClassSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3894,6 +4792,56 @@ class TableClassSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
+## TableDescriptionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import TableDescriptionTableTypeDef
+
+def get_value() -> TableDescriptionTableTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+    }
+```
+
+```python title="Definition"
+class TableDescriptionTableTypeDef(TypedDict):
+    AttributeDefinitions: NotRequired[List[AttributeDefinitionTableTypeDef]],  # (1)
+    TableName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTableTypeDef]],  # (2)
+    TableStatus: NotRequired[TableStatusType],  # (3)
+    CreationDateTime: NotRequired[datetime],
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputDescriptionTableTypeDef],  # (4)
+    TableSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    TableArn: NotRequired[str],
+    TableId: NotRequired[str],
+    BillingModeSummary: NotRequired[BillingModeSummaryTableTypeDef],  # (5)
+    LocalSecondaryIndexes: NotRequired[List[LocalSecondaryIndexDescriptionTableTypeDef]],  # (6)
+    GlobalSecondaryIndexes: NotRequired[List[GlobalSecondaryIndexDescriptionTableTypeDef]],  # (7)
+    StreamSpecification: NotRequired[StreamSpecificationTableTypeDef],  # (8)
+    LatestStreamLabel: NotRequired[str],
+    LatestStreamArn: NotRequired[str],
+    GlobalTableVersion: NotRequired[str],
+    Replicas: NotRequired[List[ReplicaDescriptionTableTypeDef]],  # (9)
+    RestoreSummary: NotRequired[RestoreSummaryTableTypeDef],  # (10)
+    SSEDescription: NotRequired[SSEDescriptionTableTypeDef],  # (11)
+    ArchivalSummary: NotRequired[ArchivalSummaryTableTypeDef],  # (12)
+    TableClassSummary: NotRequired[TableClassSummaryTableTypeDef],  # (13)
+```
+
+1. See [:material-code-braces: AttributeDefinitionTableTypeDef](./type_defs.md#attributedefinitiontabletypedef) 
+2. See [:material-code-braces: KeySchemaElementTableTypeDef](./type_defs.md#keyschemaelementtabletypedef) 
+3. See [:material-code-brackets: TableStatusType](./literals.md#tablestatustype) 
+4. See [:material-code-braces: ProvisionedThroughputDescriptionTableTypeDef](./type_defs.md#provisionedthroughputdescriptiontabletypedef) 
+5. See [:material-code-braces: BillingModeSummaryTableTypeDef](./type_defs.md#billingmodesummarytabletypedef) 
+6. See [:material-code-braces: LocalSecondaryIndexDescriptionTableTypeDef](./type_defs.md#localsecondaryindexdescriptiontabletypedef) 
+7. See [:material-code-braces: GlobalSecondaryIndexDescriptionTableTypeDef](./type_defs.md#globalsecondaryindexdescriptiontabletypedef) 
+8. See [:material-code-braces: StreamSpecificationTableTypeDef](./type_defs.md#streamspecificationtabletypedef) 
+9. See [:material-code-braces: ReplicaDescriptionTableTypeDef](./type_defs.md#replicadescriptiontabletypedef) 
+10. See [:material-code-braces: RestoreSummaryTableTypeDef](./type_defs.md#restoresummarytabletypedef) 
+11. See [:material-code-braces: SSEDescriptionTableTypeDef](./type_defs.md#ssedescriptiontabletypedef) 
+12. See [:material-code-braces: ArchivalSummaryTableTypeDef](./type_defs.md#archivalsummarytabletypedef) 
+13. See [:material-code-braces: TableClassSummaryTableTypeDef](./type_defs.md#tableclasssummarytabletypedef) 
 ## TableDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -3963,6 +4911,24 @@ class TagResourceInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import TagTableTypeDef
+
+def get_value() -> TagTableTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTableTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -4245,6 +5211,25 @@ class UpdateContributorInsightsOutputTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateGlobalSecondaryIndexActionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import UpdateGlobalSecondaryIndexActionTableTypeDef
+
+def get_value() -> UpdateGlobalSecondaryIndexActionTableTypeDef:
+    return {
+        "IndexName": ...,
+        "ProvisionedThroughput": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateGlobalSecondaryIndexActionTableTypeDef(TypedDict):
+    IndexName: str,
+    ProvisionedThroughput: ProvisionedThroughputTableTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ProvisionedThroughputTableTypeDef](./type_defs.md#provisionedthroughputtabletypedef) 
 ## UpdateGlobalSecondaryIndexActionTypeDef
 
 ```python title="Usage Example"
@@ -4365,25 +5350,27 @@ def get_value() -> UpdateItemInputRequestTypeDef:
 ```python title="Definition"
 class UpdateItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTypeDef]],  # (1)
-    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
-    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
-    ReturnValues: NotRequired[ReturnValueType],  # (4)
-    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
-    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (6)
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTypeDef]],  # (2)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (3)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
+    ReturnValues: NotRequired[ReturnValueType],  # (5)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (6)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (7)
     UpdateExpression: NotRequired[str],
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
-2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
-3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
-4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
-5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
-6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
+3. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+5. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+6. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+7. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+8. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## UpdateItemInputTableUpdateItemTypeDef
 
 ```python title="Usage Example"
@@ -4398,8 +5385,8 @@ def get_value() -> UpdateItemInputTableUpdateItemTypeDef:
 ```python title="Definition"
 class UpdateItemInputTableUpdateItemTypeDef(TypedDict):
     Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTypeDef]],  # (1)
-    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
+    AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTableTypeDef]],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTableTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
     ReturnValues: NotRequired[ReturnValueType],  # (4)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
@@ -4410,12 +5397,37 @@ class UpdateItemInputTableUpdateItemTypeDef(TypedDict):
     ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
 ```
 
-1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
-2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+1. See [:material-code-braces: AttributeValueUpdateTableTypeDef](./type_defs.md#attributevalueupdatetabletypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTableTypeDef](./type_defs.md#expectedattributevaluetabletypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
 5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+## UpdateItemOutputTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import UpdateItemOutputTableTypeDef
+
+def get_value() -> UpdateItemOutputTableTypeDef:
+    return {
+        "Attributes": ...,
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateItemOutputTableTypeDef(TypedDict):
+    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTableTypeDef,  # (1)
+    ItemCollectionMetrics: ItemCollectionMetricsTableTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ConsumedCapacityTableTypeDef](./type_defs.md#consumedcapacitytabletypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTableTypeDef](./type_defs.md#itemcollectionmetricstabletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateItemOutputTypeDef
 
 ```python title="Usage Example"
@@ -4432,15 +5444,39 @@ def get_value() -> UpdateItemOutputTypeDef:
 
 ```python title="Definition"
 class UpdateItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
-    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
-    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
+    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
-2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateReplicationGroupMemberActionTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import UpdateReplicationGroupMemberActionTableTypeDef
+
+def get_value() -> UpdateReplicationGroupMemberActionTableTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateReplicationGroupMemberActionTableTypeDef(TypedDict):
+    RegionName: str,
+    KMSMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTableTypeDef],  # (1)
+    GlobalSecondaryIndexes: NotRequired[Sequence[ReplicaGlobalSecondaryIndexTableTypeDef]],  # (2)
+    TableClassOverride: NotRequired[TableClassType],  # (3)
+```
+
+1. See [:material-code-braces: ProvisionedThroughputOverrideTableTypeDef](./type_defs.md#provisionedthroughputoverridetabletypedef) 
+2. See [:material-code-braces: ReplicaGlobalSecondaryIndexTableTypeDef](./type_defs.md#replicaglobalsecondaryindextabletypedef) 
+3. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## UpdateReplicationGroupMemberActionTypeDef
 
 ```python title="Usage Example"
@@ -4509,23 +5545,23 @@ def get_value() -> UpdateTableInputTableUpdateTypeDef:
 
 ```python title="Definition"
 class UpdateTableInputTableUpdateTypeDef(TypedDict):
-    AttributeDefinitions: NotRequired[Sequence[AttributeDefinitionTypeDef]],  # (1)
+    AttributeDefinitions: NotRequired[Sequence[AttributeDefinitionTableTypeDef]],  # (1)
     BillingMode: NotRequired[BillingModeType],  # (2)
-    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (3)
-    GlobalSecondaryIndexUpdates: NotRequired[Sequence[GlobalSecondaryIndexUpdateTypeDef]],  # (4)
-    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (5)
-    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (6)
-    ReplicaUpdates: NotRequired[Sequence[ReplicationGroupUpdateTypeDef]],  # (7)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTableTypeDef],  # (3)
+    GlobalSecondaryIndexUpdates: NotRequired[Sequence[GlobalSecondaryIndexUpdateTableTypeDef]],  # (4)
+    StreamSpecification: NotRequired[StreamSpecificationTableTypeDef],  # (5)
+    SSESpecification: NotRequired[SSESpecificationTableTypeDef],  # (6)
+    ReplicaUpdates: NotRequired[Sequence[ReplicationGroupUpdateTableTypeDef]],  # (7)
     TableClass: NotRequired[TableClassType],  # (8)
 ```
 
-1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+1. See [:material-code-braces: AttributeDefinitionTableTypeDef](./type_defs.md#attributedefinitiontabletypedef) 
 2. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
-3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
-4. See [:material-code-braces: GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef) 
-5. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
-6. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
-7. See [:material-code-braces: ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef) 
+3. See [:material-code-braces: ProvisionedThroughputTableTypeDef](./type_defs.md#provisionedthroughputtabletypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexUpdateTableTypeDef](./type_defs.md#globalsecondaryindexupdatetabletypedef) 
+5. See [:material-code-braces: StreamSpecificationTableTypeDef](./type_defs.md#streamspecificationtabletypedef) 
+6. See [:material-code-braces: SSESpecificationTableTypeDef](./type_defs.md#ssespecificationtabletypedef) 
+7. See [:material-code-braces: ReplicationGroupUpdateTableTypeDef](./type_defs.md#replicationgroupupdatetabletypedef) 
 8. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## UpdateTableOutputTypeDef
 
@@ -4643,16 +5679,18 @@ def get_value() -> UpdateTypeDef:
 
 ```python title="Definition"
 class UpdateTypeDef(TypedDict):
-    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Key: Mapping[str, AttributeValueTypeDef],  # (1)
     UpdateExpression: str,
     TableName: str,
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
-    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
-1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
 ## WaiterConfigTypeDef
 
 ```python title="Usage Example"

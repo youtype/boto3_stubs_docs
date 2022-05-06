@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kendra.client import kendraClient
 
 def get_client() -> kendraClient:
-    return Session().cleint("kendra")
+    return Session().client("kendra")
 ```
 
 

@@ -35,13 +35,13 @@ def paginate(
     TimeRangeUpperBound: Union[datetime, str] = ...,
     BackupType: BackupTypeFilterType = ...,  # (1)
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
-) -> _PageIterator[ListBackupsOutputTypeDef]:  # (3)
+) -> _PageIterator[ListBackupsOutputTableTypeDef]:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: BackupTypeFilterType](./literals.md#backuptypefiltertype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-3. See [:material-code-braces: ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef) 
+3. See [:material-code-braces: ListBackupsOutputTableTypeDef](./type_defs.md#listbackupsoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -77,12 +77,12 @@ def paginate(
     self,
     *,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[ListTablesOutputTypeDef]:  # (2)
+) -> _PageIterator[ListTablesOutputTableTypeDef]:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef) 
+2. See [:material-code-braces: ListTablesOutputTableTypeDef](./type_defs.md#listtablesoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -119,12 +119,12 @@ def paginate(
     *,
     ResourceArn: str,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[ListTagsOfResourceOutputTypeDef]:  # (2)
+) -> _PageIterator[ListTagsOfResourceOutputTableTypeDef]:  # (2)
     ...
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef) 
+2. See [:material-code-braces: ListTagsOfResourceOutputTableTypeDef](./type_defs.md#listtagsofresourceoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -164,8 +164,8 @@ def paginate(
     Select: SelectType = ...,  # (1)
     AttributesToGet: Sequence[str] = ...,
     ConsistentRead: bool = ...,
-    KeyConditions: Mapping[str, ConditionTypeDef] = ...,  # (2)
-    QueryFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    KeyConditions: Mapping[str, ConditionTableTypeDef] = ...,  # (2)
+    QueryFilter: Mapping[str, ConditionTableTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (4)
     ScanIndexForward: bool = ...,
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
@@ -175,17 +175,17 @@ def paginate(
     ExpressionAttributeNames: Mapping[str, str] = ...,
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (6)
-) -> _PageIterator[QueryOutputTypeDef]:  # (7)
+) -> _PageIterator[QueryOutputTableTypeDef]:  # (7)
     ...
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
-3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
+3. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 6. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-7. See [:material-code-braces: QueryOutputTypeDef](./type_defs.md#queryoutputtypedef) 
+7. See [:material-code-braces: QueryOutputTableTypeDef](./type_defs.md#queryoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -224,7 +224,7 @@ def paginate(
     IndexName: str = ...,
     AttributesToGet: Sequence[str] = ...,
     Select: SelectType = ...,  # (1)
-    ScanFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    ScanFilter: Mapping[str, ConditionTableTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (3)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
     TotalSegments: int = ...,
@@ -235,16 +235,16 @@ def paginate(
     ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
     ConsistentRead: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (5)
-) -> _PageIterator[ScanOutputTypeDef]:  # (6)
+) -> _PageIterator[ScanOutputTableTypeDef]:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
-2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionTableTypeDef](./type_defs.md#conditiontabletypedef) 
 3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-6. See [:material-code-braces: ScanOutputTypeDef](./type_defs.md#scanoutputtypedef) 
+6. See [:material-code-braces: ScanOutputTableTypeDef](./type_defs.md#scanoutputtabletypedef) 
 
 
 ```python title="Usage example with kwargs"

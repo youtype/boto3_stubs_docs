@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_snowball.client import SnowballClient
 
 def get_client() -> SnowballClient:
-    return Session().cleint("snowball")
+    return Session().client("snowball")
 ```
 
 

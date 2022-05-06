@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_connect_contact_lens.client import ConnectContactLensClient
 
 def get_client() -> ConnectContactLensClient:
-    return Session().cleint("connect-contact-lens")
+    return Session().client("connect-contact-lens")
 ```
 
 

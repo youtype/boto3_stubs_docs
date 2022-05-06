@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_glacier.client import GlacierClient
 
 def get_client() -> GlacierClient:
-    return Session().cleint("glacier")
+    return Session().client("glacier")
 ```
 
 

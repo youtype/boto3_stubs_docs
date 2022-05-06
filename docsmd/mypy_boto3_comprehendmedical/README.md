@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 
 def get_client() -> ComprehendMedicalClient:
-    return Session().cleint("comprehendmedical")
+    return Session().client("comprehendmedical")
 ```
 
 

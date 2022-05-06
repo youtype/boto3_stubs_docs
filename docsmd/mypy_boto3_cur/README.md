@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cur.client import CostandUsageReportServiceClient
 
 def get_client() -> CostandUsageReportServiceClient:
-    return Session().cleint("cur")
+    return Session().client("cur")
 ```
 
 

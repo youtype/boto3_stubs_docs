@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_networkmanager.client import NetworkManagerClient
 
 def get_client() -> NetworkManagerClient:
-    return Session().cleint("networkmanager")
+    return Session().client("networkmanager")
 ```
 
 

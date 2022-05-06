@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
 
 def get_client() -> ElasticInferenceClient:
-    return Session().cleint("elastic-inference")
+    return Session().client("elastic-inference")
 ```
 
 

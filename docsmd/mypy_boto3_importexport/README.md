@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_importexport.client import ImportExportClient
 
 def get_client() -> ImportExportClient:
-    return Session().cleint("importexport")
+    return Session().client("importexport")
 ```
 
 

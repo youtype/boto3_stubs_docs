@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_glue.client import GlueClient
 
 def get_client() -> GlueClient:
-    return Session().cleint("glue")
+    return Session().client("glue")
 ```
 
 

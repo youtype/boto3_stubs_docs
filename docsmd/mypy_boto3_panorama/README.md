@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_panorama.client import PanoramaClient
 
 def get_client() -> PanoramaClient:
-    return Session().cleint("panorama")
+    return Session().client("panorama")
 ```
 
 

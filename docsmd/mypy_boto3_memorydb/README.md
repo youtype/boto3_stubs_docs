@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_memorydb.client import MemoryDBClient
 
 def get_client() -> MemoryDBClient:
-    return Session().cleint("memorydb")
+    return Session().client("memorydb")
 ```
 
 

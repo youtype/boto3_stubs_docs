@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sagemaker_edge.client import SagemakerEdgeManagerClient
 
 def get_client() -> SagemakerEdgeManagerClient:
-    return Session().cleint("sagemaker-edge")
+    return Session().client("sagemaker-edge")
 ```
 
 

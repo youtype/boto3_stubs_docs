@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 
 def get_client() -> SageMakerRuntimeClient:
-    return Session().cleint("sagemaker-runtime")
+    return Session().client("sagemaker-runtime")
 ```
 
 

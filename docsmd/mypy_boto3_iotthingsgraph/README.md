@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 
 def get_client() -> IoTThingsGraphClient:
-    return Session().cleint("iotthingsgraph")
+    return Session().client("iotthingsgraph")
 ```
 
 

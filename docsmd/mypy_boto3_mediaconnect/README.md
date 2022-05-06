@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mediaconnect.client import MediaConnectClient
 
 def get_client() -> MediaConnectClient:
-    return Session().cleint("mediaconnect")
+    return Session().client("mediaconnect")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codedeploy.client import CodeDeployClient
 
 def get_client() -> CodeDeployClient:
-    return Session().cleint("codedeploy")
+    return Session().client("codedeploy")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sdb.client import SimpleDBClient
 
 def get_client() -> SimpleDBClient:
-    return Session().cleint("sdb")
+    return Session().client("sdb")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_s3outposts.client import S3OutpostsClient
 
 def get_client() -> S3OutpostsClient:
-    return Session().cleint("s3outposts")
+    return Session().client("s3outposts")
 ```
 
 

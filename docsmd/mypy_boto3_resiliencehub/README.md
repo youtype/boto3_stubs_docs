@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_resiliencehub.client import ResilienceHubClient
 
 def get_client() -> ResilienceHubClient:
-    return Session().cleint("resiliencehub")
+    return Session().client("resiliencehub")
 ```
 
 

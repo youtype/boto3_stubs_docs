@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
 
 def get_client() -> ConnectWisdomServiceClient:
-    return Session().cleint("wisdom")
+    return Session().client("wisdom")
 ```
 
 

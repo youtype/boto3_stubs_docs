@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloud9.client import Cloud9Client
 
 def get_client() -> Cloud9Client:
-    return Session().cleint("cloud9")
+    return Session().client("cloud9")
 ```
 
 

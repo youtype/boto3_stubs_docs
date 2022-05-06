@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_secretsmanager.client import SecretsManagerClient
 
 def get_client() -> SecretsManagerClient:
-    return Session().cleint("secretsmanager")
+    return Session().client("secretsmanager")
 ```
 
 

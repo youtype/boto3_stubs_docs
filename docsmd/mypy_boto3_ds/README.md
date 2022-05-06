@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ds.client import DirectoryServiceClient
 
 def get_client() -> DirectoryServiceClient:
-    return Session().cleint("ds")
+    return Session().client("ds")
 ```
 
 

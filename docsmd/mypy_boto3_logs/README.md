@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_logs.client import CloudWatchLogsClient
 
 def get_client() -> CloudWatchLogsClient:
-    return Session().cleint("logs")
+    return Session().client("logs")
 ```
 
 

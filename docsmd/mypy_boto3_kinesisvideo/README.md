@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kinesisvideo.client import KinesisVideoClient
 
 def get_client() -> KinesisVideoClient:
-    return Session().cleint("kinesisvideo")
+    return Session().client("kinesisvideo")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_chime.client import ChimeClient
 
 def get_client() -> ChimeClient:
-    return Session().cleint("chime")
+    return Session().client("chime")
 ```
 
 

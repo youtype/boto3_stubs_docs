@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_braket.client import BraketClient
 
 def get_client() -> BraketClient:
-    return Session().cleint("braket")
+    return Session().client("braket")
 ```
 
 

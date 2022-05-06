@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 
 def get_client() -> WorkMailMessageFlowClient:
-    return Session().cleint("workmailmessageflow")
+    return Session().client("workmailmessageflow")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kms.client import KMSClient
 
 def get_client() -> KMSClient:
-    return Session().cleint("kms")
+    return Session().client("kms")
 ```
 
 

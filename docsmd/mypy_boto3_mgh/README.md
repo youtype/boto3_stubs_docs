@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mgh.client import MigrationHubClient
 
 def get_client() -> MigrationHubClient:
-    return Session().cleint("mgh")
+    return Session().client("mgh")
 ```
 
 

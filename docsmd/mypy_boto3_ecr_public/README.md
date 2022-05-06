@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ecr_public.client import ECRPublicClient
 
 def get_client() -> ECRPublicClient:
-    return Session().cleint("ecr-public")
+    return Session().client("ecr-public")
 ```
 
 

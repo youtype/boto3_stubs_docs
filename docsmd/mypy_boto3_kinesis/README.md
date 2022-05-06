@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_kinesis.client import KinesisClient
 
 def get_client() -> KinesisClient:
-    return Session().cleint("kinesis")
+    return Session().client("kinesis")
 ```
 
 

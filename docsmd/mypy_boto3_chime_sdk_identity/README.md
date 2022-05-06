@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_chime_sdk_identity.client import ChimeSDKIdentityClient
 
 def get_client() -> ChimeSDKIdentityClient:
-    return Session().cleint("chime-sdk-identity")
+    return Session().client("chime-sdk-identity")
 ```
 
 

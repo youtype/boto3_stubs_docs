@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_databrew.client import GlueDataBrewClient
 
 def get_client() -> GlueDataBrewClient:
-    return Session().cleint("databrew")
+    return Session().client("databrew")
 ```
 
 

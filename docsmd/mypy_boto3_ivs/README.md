@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ivs.client import IVSClient
 
 def get_client() -> IVSClient:
-    return Session().cleint("ivs")
+    return Session().client("ivs")
 ```
 
 

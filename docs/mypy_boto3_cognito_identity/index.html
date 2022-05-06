@@ -36031,7 +36031,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cognito_identity.client</span> <span class="kn">import</span> <span class="n">CognitoIdentityClient</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CognitoIdentityClient</span><span class="p">:</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">cleint</span><span class="p">(</span><span class="s2">&quot;cognito-identity&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cognito-identity&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="paginators">Paginators</h2>
 <p>Type annotations and code completion for <a href="paginators/">paginators</a>

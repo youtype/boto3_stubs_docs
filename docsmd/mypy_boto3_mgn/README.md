@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_mgn.client import mgnClient
 
 def get_client() -> mgnClient:
-    return Session().cleint("mgn")
+    return Session().client("mgn")
 ```
 
 

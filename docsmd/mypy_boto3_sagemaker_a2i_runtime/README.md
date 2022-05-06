@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 
 def get_client() -> AugmentedAIRuntimeClient:
-    return Session().cleint("sagemaker-a2i-runtime")
+    return Session().client("sagemaker-a2i-runtime")
 ```
 
 

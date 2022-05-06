@@ -81,7 +81,7 @@ from boto3.session import Session
 from mypy_boto3_cloudformation.client import CloudFormationClient
 
 def get_client() -> CloudFormationClient:
-    return Session().cleint("cloudformation")
+    return Session().client("cloudformation")
 ```
 
 

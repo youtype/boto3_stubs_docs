@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 
 def get_client() -> CognitoIdentityClient:
-    return Session().cleint("cognito-identity")
+    return Session().client("cognito-identity")
 ```
 
 

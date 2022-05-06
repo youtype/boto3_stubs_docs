@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_securityhub.client import SecurityHubClient
 
 def get_client() -> SecurityHubClient:
-    return Session().cleint("securityhub")
+    return Session().client("securityhub")
 ```
 
 

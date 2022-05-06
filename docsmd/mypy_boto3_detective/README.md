@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_detective.client import DetectiveClient
 
 def get_client() -> DetectiveClient:
-    return Session().cleint("detective")
+    return Session().client("detective")
 ```
 
 

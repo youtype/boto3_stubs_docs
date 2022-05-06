@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
 
 def get_client() -> ServiceQuotasClient:
-    return Session().cleint("service-quotas")
+    return Session().client("service-quotas")
 ```
 
 

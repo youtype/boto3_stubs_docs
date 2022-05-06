@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_rds_data.client import RDSDataServiceClient
 
 def get_client() -> RDSDataServiceClient:
-    return Session().cleint("rds-data")
+    return Session().client("rds-data")
 ```
 
 

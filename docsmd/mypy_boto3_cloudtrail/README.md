@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloudtrail.client import CloudTrailClient
 
 def get_client() -> CloudTrailClient:
-    return Session().cleint("cloudtrail")
+    return Session().client("cloudtrail")
 ```
 
 

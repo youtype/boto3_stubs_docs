@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_transcribe.client import TranscribeServiceClient
 
 def get_client() -> TranscribeServiceClient:
-    return Session().cleint("transcribe")
+    return Session().client("transcribe")
 ```
 
 

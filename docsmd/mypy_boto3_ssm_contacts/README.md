@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ssm_contacts.client import SSMContactsClient
 
 def get_client() -> SSMContactsClient:
-    return Session().cleint("ssm-contacts")
+    return Session().client("ssm-contacts")
 ```
 
 

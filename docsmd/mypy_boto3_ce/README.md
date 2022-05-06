@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ce.client import CostExplorerClient
 
 def get_client() -> CostExplorerClient:
-    return Session().cleint("ce")
+    return Session().client("ce")
 ```
 
 

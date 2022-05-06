@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_directconnect.client import DirectConnectClient
 
 def get_client() -> DirectConnectClient:
-    return Session().cleint("directconnect")
+    return Session().client("directconnect")
 ```
 
 

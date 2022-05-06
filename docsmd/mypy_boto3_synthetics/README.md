@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_synthetics.client import SyntheticsClient
 
 def get_client() -> SyntheticsClient:
-    return Session().cleint("synthetics")
+    return Session().client("synthetics")
 ```
 
 

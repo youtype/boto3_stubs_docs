@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_timestream_write.client import TimestreamWriteClient
 
 def get_client() -> TimestreamWriteClient:
-    return Session().cleint("timestream-write")
+    return Session().client("timestream-write")
 ```
 
 

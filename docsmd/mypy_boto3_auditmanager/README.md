@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_auditmanager.client import AuditManagerClient
 
 def get_client() -> AuditManagerClient:
-    return Session().cleint("auditmanager")
+    return Session().client("auditmanager")
 ```
 
 

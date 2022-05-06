@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
 
 def get_client() -> LexRuntimeServiceClient:
-    return Session().cleint("lex-runtime")
+    return Session().client("lex-runtime")
 ```
 
 

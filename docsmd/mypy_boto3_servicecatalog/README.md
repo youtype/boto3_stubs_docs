@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_servicecatalog.client import ServiceCatalogClient
 
 def get_client() -> ServiceCatalogClient:
-    return Session().cleint("servicecatalog")
+    return Session().client("servicecatalog")
 ```
 
 

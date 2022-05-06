@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 
 def get_client() -> CloudSearchDomainClient:
-    return Session().cleint("cloudsearchdomain")
+    return Session().client("cloudsearchdomain")
 ```
 
 

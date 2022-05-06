@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_signer.client import signerClient
 
 def get_client() -> signerClient:
-    return Session().cleint("signer")
+    return Session().client("signer")
 ```
 
 

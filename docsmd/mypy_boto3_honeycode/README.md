@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_honeycode.client import HoneycodeClient
 
 def get_client() -> HoneycodeClient:
-    return Session().cleint("honeycode")
+    return Session().client("honeycode")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_migration_hub_refactor_spaces.client import MigrationHubRefactorSpacesClient
 
 def get_client() -> MigrationHubRefactorSpacesClient:
-    return Session().cleint("migration-hub-refactor-spaces")
+    return Session().client("migration-hub-refactor-spaces")
 ```
 
 

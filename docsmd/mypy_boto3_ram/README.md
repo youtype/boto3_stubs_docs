@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_ram.client import RAMClient
 
 def get_client() -> RAMClient:
-    return Session().cleint("ram")
+    return Session().client("ram")
 ```
 
 

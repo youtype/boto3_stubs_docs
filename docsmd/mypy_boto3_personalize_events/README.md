@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_personalize_events.client import PersonalizeEventsClient
 
 def get_client() -> PersonalizeEventsClient:
-    return Session().cleint("personalize-events")
+    return Session().client("personalize-events")
 ```
 
 

@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
 
 def get_client() -> ServerlessApplicationRepositoryClient:
-    return Session().cleint("serverlessrepo")
+    return Session().client("serverlessrepo")
 ```
 
 

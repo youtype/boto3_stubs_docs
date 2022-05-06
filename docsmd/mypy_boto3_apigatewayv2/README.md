@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_apigatewayv2.client import ApiGatewayV2Client
 
 def get_client() -> ApiGatewayV2Client:
-    return Session().cleint("apigatewayv2")
+    return Session().client("apigatewayv2")
 ```
 
 

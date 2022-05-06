@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_backup_gateway.client import BackupGatewayClient
 
 def get_client() -> BackupGatewayClient:
-    return Session().cleint("backup-gateway")
+    return Session().client("backup-gateway")
 ```
 
 

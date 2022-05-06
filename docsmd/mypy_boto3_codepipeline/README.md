@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_codepipeline.client import CodePipelineClient
 
 def get_client() -> CodePipelineClient:
-    return Session().cleint("codepipeline")
+    return Session().client("codepipeline")
 ```
 
 

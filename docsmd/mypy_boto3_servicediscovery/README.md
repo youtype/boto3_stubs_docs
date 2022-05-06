@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 
 def get_client() -> ServiceDiscoveryClient:
-    return Session().cleint("servicediscovery")
+    return Session().client("servicediscovery")
 ```
 
 

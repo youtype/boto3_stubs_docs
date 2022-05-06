@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_savingsplans.client import SavingsPlansClient
 
 def get_client() -> SavingsPlansClient:
-    return Session().cleint("savingsplans")
+    return Session().client("savingsplans")
 ```
 
 

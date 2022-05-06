@@ -57,7 +57,7 @@ from boto3.session import Session
 from mypy_boto3_qldb_session.client import QLDBSessionClient
 
 def get_client() -> QLDBSessionClient:
-    return Session().cleint("qldb-session")
+    return Session().client("qldb-session")
 ```
 
 
