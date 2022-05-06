@@ -1888,6 +1888,7 @@ def get_value() -> ListGeofencesRequestRequestTypeDef:
 ```python title="Definition"
 class ListGeofencesRequestRequestTypeDef(TypedDict):
     CollectionName: str,
+    MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
 ```
 

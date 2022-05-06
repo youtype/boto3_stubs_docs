@@ -213,11 +213,12 @@ PresetSpeke20VideoType = Literal[
 from mypy_boto3_mediapackage.literals import ProfileType
 
 def get_value() -> ProfileType:
-    return "HBBTV_1_5"
+    return "DVB_DASH_2014"
 ```
 
 ```python title="Definition"
 ProfileType = Literal[
+    "DVB_DASH_2014",
     "HBBTV_1_5",
     "HYBRIDCAST",
     "NONE",
@@ -284,6 +285,7 @@ def get_value() -> UtcTimingType:
 UtcTimingType = Literal[
     "HTTP-HEAD",
     "HTTP-ISO",
+    "HTTP-XSDATE",
     "NONE",
 ]
 ```

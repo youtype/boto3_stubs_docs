@@ -429,11 +429,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_chime_sdk_identity.literals import RegionName
 
 def get_value() -> RegionName:
-    return "us-east-1"
+    return "eu-central-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "eu-central-1",
     "us-east-1",
 ]
 ```

@@ -4578,9 +4578,12 @@ IpamPoolStateType = Literal[
     "delete-complete",
     "delete-failed",
     "delete-in-progress",
+    "isolate-complete",
+    "isolate-in-progress",
     "modify-complete",
     "modify-failed",
     "modify-in-progress",
+    "restore-in-progress",
 ]
 ```
 ## IpamResourceTypeType
@@ -4618,9 +4621,12 @@ IpamScopeStateType = Literal[
     "delete-complete",
     "delete-failed",
     "delete-in-progress",
+    "isolate-complete",
+    "isolate-in-progress",
     "modify-complete",
     "modify-failed",
     "modify-in-progress",
+    "restore-in-progress",
 ]
 ```
 ## IpamScopeTypeType
@@ -4655,9 +4661,12 @@ IpamStateType = Literal[
     "delete-complete",
     "delete-failed",
     "delete-in-progress",
+    "isolate-complete",
+    "isolate-in-progress",
     "modify-complete",
     "modify-failed",
     "modify-in-progress",
+    "restore-in-progress",
 ]
 ```
 ## Ipv6SupportValueType

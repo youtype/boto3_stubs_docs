@@ -1039,6 +1039,7 @@ class CreateClusterMessageRequestTypeDef(TypedDict):
     AvailabilityZoneRelocation: NotRequired[bool],
     AquaConfigurationStatus: NotRequired[AquaConfigurationStatusType],  # (2)
     DefaultIamRoleArn: NotRequired[str],
+    LoadSampleData: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

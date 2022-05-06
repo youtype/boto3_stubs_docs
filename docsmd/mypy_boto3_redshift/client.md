@@ -617,6 +617,7 @@ def create_cluster(
     AvailabilityZoneRelocation: bool = ...,
     AquaConfigurationStatus: AquaConfigurationStatusType = ...,  # (2)
     DefaultIamRoleArn: str = ...,
+    LoadSampleData: str = ...,
 ) -> CreateClusterResultTypeDef:  # (3)
     ...
 ```
@@ -1110,7 +1111,8 @@ parent.create_usage_limit(**kwargs)
 
 ### deauthorize\_data\_share
 
-From the producer account, removes authorization from the specified datashare.
+From a datashare producer account, removes authorization from the specified
+datashare.
 
 Type annotations and code completion for `#!python boto3.client("redshift").deauthorize_data_share` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.deauthorize_data_share)
@@ -2880,7 +2882,8 @@ parent.disable_snapshot_copy(**kwargs)
 
 ### disassociate\_data\_share\_consumer
 
-From a consumer account, remove association for the specified datashare.
+From a datashare consumer account, remove association for the specified
+datashare.
 
 Type annotations and code completion for `#!python boto3.client("redshift").disassociate_data_share_consumer` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disassociate_data_share_consumer)
@@ -3728,7 +3731,7 @@ parent.reboot_cluster(**kwargs)
 
 ### reject\_data\_share
 
-From the consumer account, rejects the specified datashare.
+From a datashare consumer account, rejects the specified datashare.
 
 Type annotations and code completion for `#!python boto3.client("redshift").reject_data_share` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reject_data_share)
