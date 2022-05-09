@@ -367,6 +367,14 @@ parent.update_resource(**kwargs)
 
 
 
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").get_paginator` method with overloads.
+
+- `client.get_paginator("list_resource_requests")` -> [ListResourceRequestsPaginator](./paginators.md#listresourcerequestspaginator)
+- `client.get_paginator("list_resources")` -> [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+
+
 
 
 ### get_waiter

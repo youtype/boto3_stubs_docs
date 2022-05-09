@@ -221,6 +221,25 @@ class GetResourceRequestStatusOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceRequestsInputListResourceRequestsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.type_defs import ListResourceRequestsInputListResourceRequestsPaginateTypeDef
+
+def get_value() -> ListResourceRequestsInputListResourceRequestsPaginateTypeDef:
+    return {
+        "ResourceRequestStatusFilter": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceRequestsInputListResourceRequestsPaginateTypeDef(TypedDict):
+    ResourceRequestStatusFilter: NotRequired[ResourceRequestStatusFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ResourceRequestStatusFilterTypeDef](./type_defs.md#resourcerequeststatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourceRequestsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -262,6 +281,27 @@ class ListResourceRequestsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourcesInputListResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.type_defs import ListResourcesInputListResourcesPaginateTypeDef
+
+def get_value() -> ListResourcesInputListResourcesPaginateTypeDef:
+    return {
+        "TypeName": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcesInputListResourcesPaginateTypeDef(TypedDict):
+    TypeName: str,
+    TypeVersionId: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ResourceModel: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourcesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -307,6 +347,24 @@ class ListResourcesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourceDescriptionTypeDef](./type_defs.md#resourcedescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## ProgressEventTypeDef
 
 ```python title="Usage Example"

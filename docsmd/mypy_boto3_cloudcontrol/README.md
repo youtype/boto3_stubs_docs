@@ -61,6 +61,24 @@ def get_client() -> CloudControlApiClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloudcontrol").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudcontrol.paginator import ListResourceRequestsPaginator
+
+def get_list_resource_requests_paginator() -> ListResourceRequestsPaginator:
+    return Session().client("cloudcontrol").get_paginator("list_resource_requests"))
+```
+
+- [ListResourceRequestsPaginator](./paginators.md#listresourcerequestspaginator)
+- [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+
+
 
 
 ## Waiters
@@ -97,12 +115,15 @@ def get_value() -> HandlerErrorCodeType:
 ```
 
 - [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
+- [ListResourceRequestsPaginatorName](./literals.md#listresourcerequestspaginatorname)
+- [ListResourcesPaginatorName](./literals.md#listresourcespaginatorname)
 - [OperationStatusType](./literals.md#operationstatustype)
 - [OperationType](./literals.md#operationtype)
 - [ResourceRequestSuccessWaiterName](./literals.md#resourcerequestsuccesswaitername)
 - [CloudControlApiServiceName](./literals.md#cloudcontrolapiservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 - [RegionName](./literals.md#regionname)
 
@@ -133,10 +154,13 @@ def get_value() -> CancelResourceRequestInputRequestTypeDef:
 - [GetResourceRequestStatusInputRequestTypeDef](./type_defs.md#getresourcerequeststatusinputrequesttypedef)
 - [GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef](./type_defs.md#getresourcerequeststatusinputresourcerequestsuccesswaittypedef)
 - [GetResourceRequestStatusOutputTypeDef](./type_defs.md#getresourcerequeststatusoutputtypedef)
+- [ListResourceRequestsInputListResourceRequestsPaginateTypeDef](./type_defs.md#listresourcerequestsinputlistresourcerequestspaginatetypedef)
 - [ListResourceRequestsInputRequestTypeDef](./type_defs.md#listresourcerequestsinputrequesttypedef)
 - [ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef)
+- [ListResourcesInputListResourcesPaginateTypeDef](./type_defs.md#listresourcesinputlistresourcespaginatetypedef)
 - [ListResourcesInputRequestTypeDef](./type_defs.md#listresourcesinputrequesttypedef)
 - [ListResourcesOutputTypeDef](./type_defs.md#listresourcesoutputtypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
 - [ResourceDescriptionTypeDef](./type_defs.md#resourcedescriptiontypedef)
 - [ResourceRequestStatusFilterTypeDef](./type_defs.md#resourcerequeststatusfiltertypedef)

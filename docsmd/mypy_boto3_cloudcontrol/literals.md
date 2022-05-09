@@ -35,6 +35,34 @@ HandlerErrorCodeType = Literal[
     "Throttling",
 ]
 ```
+## ListResourceRequestsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.literals import ListResourceRequestsPaginatorName
+
+def get_value() -> ListResourceRequestsPaginatorName:
+    return "list_resource_requests"
+```
+
+```python title="Definition"
+ListResourceRequestsPaginatorName = Literal[
+    "list_resource_requests",
+]
+```
+## ListResourcesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.literals import ListResourcesPaginatorName
+
+def get_value() -> ListResourcesPaginatorName:
+    return "list_resources"
+```
+
+```python title="Definition"
+ListResourcesPaginatorName = Literal[
+    "list_resources",
+]
+```
 ## OperationStatusType
 
 ```python title="Usage Example"
@@ -437,6 +465,21 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_cloudcontrol.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_resource_requests"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "list_resource_requests",
+    "list_resources",
 ]
 ```
 ## WaiterName

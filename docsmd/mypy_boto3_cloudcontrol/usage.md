@@ -34,6 +34,24 @@ type checking and code completion should work out of the box.
 
 
 
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cloudcontrol")  # (1)
+
+    paginator = client.get_paginator("list_resource_requests")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CloudControlApiClient](./client.md)
+    2. paginator: [ListResourceRequestsPaginator](./paginators.md#listresourcerequestspaginator)
+    3. item: [:material-code-braces: ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef) 
+
 
 
 === "Waiters"
@@ -81,6 +99,25 @@ However, these type annotations can be helpful in your functions and methods.
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudcontrol.client import CloudControlApiClient
+    from mypy_boto3_cloudcontrol.paginator import ListResourceRequestsPaginator
+    from mypy_boto3_cloudcontrol.type_defs import ListResourceRequestsOutputTypeDef
+
+
+    session = Session()
+    client: CloudControlApiClient = session.client("cloudcontrol")
+
+    paginator: ListResourceRequestsPaginator = client.get_paginator("list_resource_requests")
+    for item in paginator.paginate(...):
+        item: ListResourceRequestsOutputTypeDef
+        print(item)
+    ```
 
 
 

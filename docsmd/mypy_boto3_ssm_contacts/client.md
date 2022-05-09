@@ -693,7 +693,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### put\_contact\_policy
 
-Adds a resource to the specified contact or escalation plan.
+Adds a resource policy to the specified contact or escalation plan.
 
 Type annotations and code completion for `#!python boto3.client("ssm-contacts").put_contact_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.put_contact_policy)
