@@ -545,6 +545,7 @@ class ClusterTypeDef(TypedDict):
     OutpostArn: NotRequired[str],
     StepConcurrencyLevel: NotRequired[int],
     PlacementGroups: NotRequired[List[PlacementGroupConfigTypeDef]],  # (10)
+    OSReleaseLabel: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ClusterStatusTypeDef](./type_defs.md#clusterstatustypedef) 
@@ -966,6 +967,7 @@ def get_value() -> DescribeReleaseLabelOutputTypeDef:
         "ReleaseLabel": ...,
         "Applications": ...,
         "NextToken": ...,
+        "AvailableOSReleases": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -975,11 +977,13 @@ class DescribeReleaseLabelOutputTypeDef(TypedDict):
     ReleaseLabel: str,
     Applications: List[SimplifiedApplicationTypeDef],  # (1)
     NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    AvailableOSReleases: List[OSReleaseTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: SimplifiedApplicationTypeDef](./type_defs.md#simplifiedapplicationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: OSReleaseTypeDef](./type_defs.md#osreleasetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSecurityConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1657,11 +1661,13 @@ class InstanceGroupModifyConfigTypeDef(TypedDict):
     InstanceCount: NotRequired[int],
     EC2InstanceIdsToTerminate: NotRequired[Sequence[str]],
     ShrinkPolicy: NotRequired[ShrinkPolicyTypeDef],  # (1)
-    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (2)
+    ReconfigurationType: NotRequired[ReconfigurationTypeType],  # (2)
+    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (3)
 ```
 
 1. See [:material-code-braces: ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef) 
-2. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+2. See [:material-code-brackets: ReconfigurationTypeType](./literals.md#reconfigurationtypetype) 
+3. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 ## InstanceGroupStateChangeReasonTypeDef
 
 ```python title="Usage Example"
@@ -2886,6 +2892,22 @@ class NotebookExecutionTypeDef(TypedDict):
 1. See [:material-code-braces: ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef) 
 2. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## OSReleaseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import OSReleaseTypeDef
+
+def get_value() -> OSReleaseTypeDef:
+    return {
+        "Label": ...,
+    }
+```
+
+```python title="Definition"
+class OSReleaseTypeDef(TypedDict):
+    Label: NotRequired[str],
+```
+
 ## OnDemandCapacityReservationOptionsTypeDef
 
 ```python title="Usage Example"
@@ -3248,6 +3270,7 @@ class RunJobFlowInputRequestTypeDef(TypedDict):
     ManagedScalingPolicy: NotRequired[ManagedScalingPolicyTypeDef],  # (11)
     PlacementGroupConfigs: NotRequired[Sequence[PlacementGroupConfigTypeDef]],  # (12)
     AutoTerminationPolicy: NotRequired[AutoTerminationPolicyTypeDef],  # (13)
+    OSReleaseLabel: NotRequired[str],
 ```
 
 1. See [:material-code-braces: JobFlowInstancesConfigTypeDef](./type_defs.md#jobflowinstancesconfigtypedef) 

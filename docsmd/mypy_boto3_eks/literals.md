@@ -22,7 +22,9 @@ AMITypesType = Literal[
     "AL2_x86_64",
     "AL2_x86_64_GPU",
     "BOTTLEROCKET_ARM_64",
+    "BOTTLEROCKET_ARM_64_NVIDIA",
     "BOTTLEROCKET_x86_64",
+    "BOTTLEROCKET_x86_64_NVIDIA",
     "CUSTOM",
 ]
 ```

@@ -42280,13 +42280,16 @@ third-party tool.</p>
 <a id="__codelineno-95-15" name="__codelineno-95-15" href="#__codelineno-95-15"></a>    <span class="n">SriovNetSupport</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-95-16" name="__codelineno-95-16" href="#__codelineno-95-16"></a>    <span class="n">VirtualizationType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-95-17" name="__codelineno-95-17" href="#__codelineno-95-17"></a>    <span class="n">BootMode</span><span class="p">:</span> <span class="n">BootModeValuesType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-95-18" name="__codelineno-95-18" href="#__codelineno-95-18"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Image</span><span class="p">:</span>
-<a id="__codelineno-95-19" name="__codelineno-95-19" href="#__codelineno-95-19"></a>    <span class="o">...</span>
+<a id="__codelineno-95-18" name="__codelineno-95-18" href="#__codelineno-95-18"></a>    <span class="n">TpmSupport</span><span class="p">:</span> <span class="n">TpmSupportValuesType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-95-19" name="__codelineno-95-19" href="#__codelineno-95-19"></a>    <span class="n">UefiData</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-95-20" name="__codelineno-95-20" href="#__codelineno-95-20"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Image</span><span class="p">:</span>
+<a id="__codelineno-95-21" name="__codelineno-95-21" href="#__codelineno-95-21"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#architecturevaluestype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ArchitectureValuesType</a> </li>
 <li>See <a href="../type_defs/#blockdevicemappingtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> BlockDeviceMappingTypeDef</a> </li>
 <li>See <a href="../literals/#bootmodevaluestype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BootModeValuesType</a> </li>
+<li>See <a href="../literals/#tpmsupportvaluestype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TpmSupportValuesType</a> </li>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">RegisterImageRequestServiceResourceRegisterImageTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-96-2" name="__codelineno-96-2" href="#__codelineno-96-2"></a>    <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
@@ -42577,6 +42580,7 @@ the DhcpOptions resource.</p>
 <li><code>tags</code>: <code>List</code>[<a href="../type_defs/#tagtypedef">TagTypeDef</a>]</li>
 <li><code>virtualization_type</code>: <a href="../literals/#virtualizationtypetype">VirtualizationTypeType</a></li>
 <li><code>boot_mode</code>: <a href="../literals/#bootmodevaluestype">BootModeValuesType</a></li>
+<li><code>tpm_support</code>: <code>Literal['v2.0']</code> (see <a href="../literals/#tpmsupportvaluestype">TpmSupportValuesType</a>)</li>
 <li><code>deprecation_time</code>: <code>str</code></li>
 <li><code>id</code>: <code>str</code></li>
 </ul>
@@ -42812,6 +42816,7 @@ Image resource.</p>
 <li><code>usage_operation_update_time</code>: <code>datetime</code></li>
 <li><code>private_dns_name_options</code>: <a href="../type_defs/#privatednsnameoptionsresponseresponsemetadatatypedef">PrivateDnsNameOptionsResponseResponseMetadataTypeDef</a></li>
 <li><code>ipv6_address</code>: <code>str</code></li>
+<li><code>tpm_support</code>: <code>str</code></li>
 <li><code>maintenance_options</code>: <a href="../type_defs/#instancemaintenanceoptionsresponsemetadatatypedef">InstanceMaintenanceOptionsResponseMetadataTypeDef</a></li>
 <li><code>id</code>: <code>str</code></li>
 <li><code>classic_address</code>: <a href="#classicaddress">ClassicAddress</a></li>

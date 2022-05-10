@@ -672,6 +672,21 @@ PlacementGroupStrategyType = Literal[
     "SPREAD",
 ]
 ```
+## ReconfigurationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_emr.literals import ReconfigurationTypeType
+
+def get_value() -> ReconfigurationTypeType:
+    return "MERGE"
+```
+
+```python title="Definition"
+ReconfigurationTypeType = Literal[
+    "MERGE",
+    "OVERWRITE",
+]
+```
 ## RepoUpgradeOnBootType
 
 ```python title="Usage Example"

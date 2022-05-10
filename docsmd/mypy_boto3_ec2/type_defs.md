@@ -23211,6 +23211,44 @@ class GetInstanceTypesFromInstanceRequirementsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceTypeInfoFromInstanceRequirementsTypeDef](./type_defs.md#instancetypeinfofrominstancerequirementstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInstanceUefiDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetInstanceUefiDataRequestRequestTypeDef
+
+def get_value() -> GetInstanceUefiDataRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class GetInstanceUefiDataRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    DryRun: NotRequired[bool],
+```
+
+## GetInstanceUefiDataResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetInstanceUefiDataResultTypeDef
+
+def get_value() -> GetInstanceUefiDataResultTypeDef:
+    return {
+        "InstanceId": ...,
+        "UefiData": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetInstanceUefiDataResultTypeDef(TypedDict):
+    InstanceId: str,
+    UefiData: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIpamAddressHistoryRequestGetIpamAddressHistoryPaginateTypeDef
 
 ```python title="Usage Example"
@@ -24894,6 +24932,8 @@ def get_value() -> ImageAttributeTypeDef:
         "RamdiskId": ...,
         "SriovNetSupport": ...,
         "BootMode": ...,
+        "TpmSupport": ...,
+        "UefiData": ...,
         "LastLaunchedTime": ...,
         "ResponseMetadata": ...,
     }
@@ -24910,8 +24950,10 @@ class ImageAttributeTypeDef(TypedDict):
     RamdiskId: AttributeValueTypeDef,  # (4)
     SriovNetSupport: AttributeValueTypeDef,  # (4)
     BootMode: AttributeValueTypeDef,  # (4)
+    TpmSupport: AttributeValueTypeDef,  # (4)
+    UefiData: AttributeValueTypeDef,  # (4)
     LastLaunchedTime: AttributeValueTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -24923,7 +24965,9 @@ class ImageAttributeTypeDef(TypedDict):
 7. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 8. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 9. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
-10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+10. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+11. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImageDiskContainerTypeDef
 
 ```python title="Usage Example"
@@ -25006,6 +25050,7 @@ class ImageTypeDef(TypedDict):
     Tags: NotRequired[List[TagTypeDef]],  # (10)
     VirtualizationType: NotRequired[VirtualizationTypeType],  # (11)
     BootMode: NotRequired[BootModeValuesType],  # (12)
+    TpmSupport: NotRequired[TpmSupportValuesType],  # (13)
     DeprecationTime: NotRequired[str],
 ```
 
@@ -25021,6 +25066,7 @@ class ImageTypeDef(TypedDict):
 10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 11. See [:material-code-brackets: VirtualizationTypeType](./literals.md#virtualizationtypetype) 
 12. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
+13. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
 ## ImportClientVpnClientCertificateRevocationListRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -26725,6 +26771,7 @@ class InstanceTypeDef(TypedDict):
     UsageOperationUpdateTime: NotRequired[datetime],
     PrivateDnsNameOptions: NotRequired[PrivateDnsNameOptionsResponseTypeDef],  # (27)
     Ipv6Address: NotRequired[str],
+    TpmSupport: NotRequired[str],
     MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsTypeDef],  # (28)
 ```
 
@@ -33573,11 +33620,14 @@ class RegisterImageRequestRequestTypeDef(TypedDict):
     SriovNetSupport: NotRequired[str],
     VirtualizationType: NotRequired[str],
     BootMode: NotRequired[BootModeValuesType],  # (3)
+    TpmSupport: NotRequired[TpmSupportValuesType],  # (4)
+    UefiData: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
+4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
 ## RegisterImageRequestServiceResourceRegisterImageTypeDef
 
 ```python title="Usage Example"
@@ -33605,11 +33655,14 @@ class RegisterImageRequestServiceResourceRegisterImageTypeDef(TypedDict):
     SriovNetSupport: NotRequired[str],
     VirtualizationType: NotRequired[str],
     BootMode: NotRequired[BootModeValuesType],  # (3)
+    TpmSupport: NotRequired[TpmSupportValuesType],  # (4)
+    UefiData: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
+4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
 ## RegisterImageResultTypeDef
 
 ```python title="Usage Example"

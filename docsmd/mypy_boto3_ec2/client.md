@@ -12609,6 +12609,36 @@ parent.get_instance_types_from_instance_requirements(**kwargs)
 
 1. See [:material-code-braces: GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsrequestrequesttypedef) 
 
+### get\_instance\_uefi\_data
+
+A binary representation of the UEFI variable store.
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_instance_uefi_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_instance_uefi_data)
+
+```python title="Method definition"
+def get_instance_uefi_data(
+    self,
+    *,
+    InstanceId: str,
+    DryRun: bool = ...,
+) -> GetInstanceUefiDataResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetInstanceUefiDataResultTypeDef](./type_defs.md#getinstanceuefidataresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetInstanceUefiDataRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.get_instance_uefi_data(**kwargs)
+```
+
+1. See [:material-code-braces: GetInstanceUefiDataRequestRequestTypeDef](./type_defs.md#getinstanceuefidatarequestrequesttypedef) 
+
 ### get\_ipam\_address\_history
 
 Retrieve historical information about a CIDR within an IPAM scope.
@@ -15940,14 +15970,17 @@ def register_image(
     SriovNetSupport: str = ...,
     VirtualizationType: str = ...,
     BootMode: BootModeValuesType = ...,  # (3)
-) -> RegisterImageResultTypeDef:  # (4)
+    TpmSupport: TpmSupportValuesType = ...,  # (4)
+    UefiData: str = ...,
+) -> RegisterImageResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
-4. See [:material-code-braces: RegisterImageResultTypeDef](./type_defs.md#registerimageresulttypedef) 
+4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
+5. See [:material-code-braces: RegisterImageResultTypeDef](./type_defs.md#registerimageresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

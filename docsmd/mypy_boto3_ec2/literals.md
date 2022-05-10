@@ -3461,6 +3461,8 @@ ImageAttributeNameType = Literal[
     "productCodes",
     "ramdisk",
     "sriovNetSupport",
+    "tpmSupport",
+    "uefiData",
 ]
 ```
 ## ImageAvailableWaiterName
@@ -6366,6 +6368,20 @@ TieringOperationStatusType = Literal[
     "temporary-restore-completed",
     "temporary-restore-failed",
     "temporary-restore-in-progress",
+]
+```
+## TpmSupportValuesType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import TpmSupportValuesType
+
+def get_value() -> TpmSupportValuesType:
+    return "v2.0"
+```
+
+```python title="Definition"
+TpmSupportValuesType = Literal[
+    "v2.0",
 ]
 ```
 ## TrafficDirectionType

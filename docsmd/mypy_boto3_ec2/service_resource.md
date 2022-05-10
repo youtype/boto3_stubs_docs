@@ -1587,6 +1587,8 @@ def register_image(
     SriovNetSupport: str = ...,
     VirtualizationType: str = ...,
     BootMode: BootModeValuesType = ...,  # (3)
+    TpmSupport: TpmSupportValuesType = ...,  # (4)
+    UefiData: str = ...,
 ) -> Image:
     ...
 ```
@@ -1594,6 +1596,7 @@ def register_image(
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
+4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
 
 
 ```python title="Usage example with kwargs"
@@ -2004,6 +2007,7 @@ def get_resource() -> Image:
 - `tags`: `List`[[TagTypeDef](./type_defs.md#tagtypedef)]
 - `virtualization_type`: [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 - `boot_mode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
+- `tpm_support`: `Literal['v2.0']` (see [TpmSupportValuesType](./literals.md#tpmsupportvaluestype))
 - `deprecation_time`: `str`
 - `id`: `str`
 
@@ -2310,6 +2314,7 @@ def get_resource() -> Instance:
 - `usage_operation_update_time`: `datetime`
 - `private_dns_name_options`: [PrivateDnsNameOptionsResponseResponseMetadataTypeDef](./type_defs.md#privatednsnameoptionsresponseresponsemetadatatypedef)
 - `ipv6_address`: `str`
+- `tpm_support`: `str`
 - `maintenance_options`: [InstanceMaintenanceOptionsResponseMetadataTypeDef](./type_defs.md#instancemaintenanceoptionsresponsemetadatatypedef)
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
