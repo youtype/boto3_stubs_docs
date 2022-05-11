@@ -6459,9 +6459,9 @@ class CreateSubnetCidrReservationRequestRequestTypeDef(TypedDict):
     SubnetId: str,
     Cidr: str,
     ReservationType: SubnetCidrReservationTypeType,  # (1)
-    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
     Description: NotRequired[str],
     DryRun: NotRequired[bool],
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
 ```
 
 1. See [:material-code-brackets: SubnetCidrReservationTypeType](./literals.md#subnetcidrreservationtypetype) 
@@ -7634,13 +7634,17 @@ class CreateVpcEndpointRequestRequestTypeDef(TypedDict):
     RouteTableIds: NotRequired[Sequence[str]],
     SubnetIds: NotRequired[Sequence[str]],
     SecurityGroupIds: NotRequired[Sequence[str]],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (2)
+    DnsOptions: NotRequired[DnsOptionsSpecificationTypeDef],  # (3)
     ClientToken: NotRequired[str],
     PrivateDnsEnabled: NotRequired[bool],
-    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (4)
 ```
 
 1. See [:material-code-brackets: VpcEndpointTypeType](./literals.md#vpcendpointtypetype) 
-2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+3. See [:material-code-braces: DnsOptionsSpecificationTypeDef](./type_defs.md#dnsoptionsspecificationtypedef) 
+4. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CreateVpcEndpointResultTypeDef
 
 ```python title="Usage Example"
@@ -7681,6 +7685,7 @@ class CreateVpcEndpointServiceConfigurationRequestRequestTypeDef(TypedDict):
     PrivateDnsName: NotRequired[str],
     NetworkLoadBalancerArns: NotRequired[Sequence[str]],
     GatewayLoadBalancerArns: NotRequired[Sequence[str]],
+    SupportedIpAddressTypes: NotRequired[Sequence[str]],
     ClientToken: NotRequired[str],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
 ```
@@ -20732,6 +20737,40 @@ class DnsEntryTypeDef(TypedDict):
     HostedZoneId: NotRequired[str],
 ```
 
+## DnsOptionsSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DnsOptionsSpecificationTypeDef
+
+def get_value() -> DnsOptionsSpecificationTypeDef:
+    return {
+        "DnsRecordIpType": ...,
+    }
+```
+
+```python title="Definition"
+class DnsOptionsSpecificationTypeDef(TypedDict):
+    DnsRecordIpType: NotRequired[DnsRecordIpTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: DnsRecordIpTypeType](./literals.md#dnsrecordiptypetype) 
+## DnsOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DnsOptionsTypeDef
+
+def get_value() -> DnsOptionsTypeDef:
+    return {
+        "DnsRecordIpType": ...,
+    }
+```
+
+```python title="Definition"
+class DnsOptionsTypeDef(TypedDict):
+    DnsRecordIpType: NotRequired[DnsRecordIpTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: DnsRecordIpTypeType](./literals.md#dnsrecordiptypetype) 
 ## DnsServersOptionsModifyStructureTypeDef
 
 ```python title="Usage Example"
@@ -30922,9 +30961,13 @@ class ModifyVpcEndpointRequestRequestTypeDef(TypedDict):
     RemoveSubnetIds: NotRequired[Sequence[str]],
     AddSecurityGroupIds: NotRequired[Sequence[str]],
     RemoveSecurityGroupIds: NotRequired[Sequence[str]],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    DnsOptions: NotRequired[DnsOptionsSpecificationTypeDef],  # (2)
     PrivateDnsEnabled: NotRequired[bool],
 ```
 
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: DnsOptionsSpecificationTypeDef](./type_defs.md#dnsoptionsspecificationtypedef) 
 ## ModifyVpcEndpointResultTypeDef
 
 ```python title="Usage Example"
@@ -30966,6 +31009,8 @@ class ModifyVpcEndpointServiceConfigurationRequestRequestTypeDef(TypedDict):
     RemoveNetworkLoadBalancerArns: NotRequired[Sequence[str]],
     AddGatewayLoadBalancerArns: NotRequired[Sequence[str]],
     RemoveGatewayLoadBalancerArns: NotRequired[Sequence[str]],
+    AddSupportedIpAddressTypes: NotRequired[Sequence[str]],
+    RemoveSupportedIpAddressTypes: NotRequired[Sequence[str]],
 ```
 
 ## ModifyVpcEndpointServiceConfigurationResultTypeDef
@@ -37060,18 +37105,20 @@ class ServiceConfigurationTypeDef(TypedDict):
     ManagesVpcEndpoints: NotRequired[bool],
     NetworkLoadBalancerArns: NotRequired[List[str]],
     GatewayLoadBalancerArns: NotRequired[List[str]],
+    SupportedIpAddressTypes: NotRequired[List[ServiceConnectivityTypeType]],  # (3)
     BaseEndpointDnsNames: NotRequired[List[str]],
     PrivateDnsName: NotRequired[str],
-    PrivateDnsNameConfiguration: NotRequired[PrivateDnsNameConfigurationTypeDef],  # (3)
-    PayerResponsibility: NotRequired[PayerResponsibilityType],  # (4)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    PrivateDnsNameConfiguration: NotRequired[PrivateDnsNameConfigurationTypeDef],  # (4)
+    PayerResponsibility: NotRequired[PayerResponsibilityType],  # (5)
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
 ```
 
 1. See [:material-code-braces: ServiceTypeDetailTypeDef](./type_defs.md#servicetypedetailtypedef) 
 2. See [:material-code-brackets: ServiceStateType](./literals.md#servicestatetype) 
-3. See [:material-code-braces: PrivateDnsNameConfigurationTypeDef](./type_defs.md#privatednsnameconfigurationtypedef) 
-4. See [:material-code-brackets: PayerResponsibilityType](./literals.md#payerresponsibilitytype) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ServiceConnectivityTypeType](./literals.md#serviceconnectivitytypetype) 
+4. See [:material-code-braces: PrivateDnsNameConfigurationTypeDef](./type_defs.md#privatednsnameconfigurationtypedef) 
+5. See [:material-code-brackets: PayerResponsibilityType](./literals.md#payerresponsibilitytype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ServiceDetailTypeDef
 
 ```python title="Usage Example"
@@ -37099,6 +37146,7 @@ class ServiceDetailTypeDef(TypedDict):
     PayerResponsibility: NotRequired[PayerResponsibilityType],  # (3)
     Tags: NotRequired[List[TagTypeDef]],  # (4)
     PrivateDnsNameVerificationState: NotRequired[DnsNameStateType],  # (5)
+    SupportedIpAddressTypes: NotRequired[List[ServiceConnectivityTypeType]],  # (6)
 ```
 
 1. See [:material-code-braces: ServiceTypeDetailTypeDef](./type_defs.md#servicetypedetailtypedef) 
@@ -37106,6 +37154,7 @@ class ServiceDetailTypeDef(TypedDict):
 3. See [:material-code-brackets: PayerResponsibilityType](./literals.md#payerresponsibilitytype) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 5. See [:material-code-brackets: DnsNameStateType](./literals.md#dnsnamestatetype) 
+6. See [:material-code-brackets: ServiceConnectivityTypeType](./literals.md#serviceconnectivitytypetype) 
 ## ServiceResourceClassicAddressRequestTypeDef
 
 ```python title="Usage Example"
@@ -40910,10 +40959,12 @@ class VpcEndpointConnectionTypeDef(TypedDict):
     DnsEntries: NotRequired[List[DnsEntryTypeDef]],  # (2)
     NetworkLoadBalancerArns: NotRequired[List[str]],
     GatewayLoadBalancerArns: NotRequired[List[str]],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (3)
 ```
 
 1. See [:material-code-brackets: StateType](./literals.md#statetype) 
 2. See [:material-code-braces: DnsEntryTypeDef](./type_defs.md#dnsentrytypedef) 
+3. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
 ## VpcEndpointTypeDef
 
 ```python title="Usage Example"
@@ -40936,22 +40987,26 @@ class VpcEndpointTypeDef(TypedDict):
     RouteTableIds: NotRequired[List[str]],
     SubnetIds: NotRequired[List[str]],
     Groups: NotRequired[List[SecurityGroupIdentifierTypeDef]],  # (3)
+    IpAddressType: NotRequired[IpAddressTypeType],  # (4)
+    DnsOptions: NotRequired[DnsOptionsTypeDef],  # (5)
     PrivateDnsEnabled: NotRequired[bool],
     RequesterManaged: NotRequired[bool],
     NetworkInterfaceIds: NotRequired[List[str]],
-    DnsEntries: NotRequired[List[DnsEntryTypeDef]],  # (4)
+    DnsEntries: NotRequired[List[DnsEntryTypeDef]],  # (6)
     CreationTimestamp: NotRequired[datetime],
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    Tags: NotRequired[List[TagTypeDef]],  # (7)
     OwnerId: NotRequired[str],
-    LastError: NotRequired[LastErrorTypeDef],  # (6)
+    LastError: NotRequired[LastErrorTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: VpcEndpointTypeType](./literals.md#vpcendpointtypetype) 
 2. See [:material-code-brackets: StateType](./literals.md#statetype) 
 3. See [:material-code-braces: SecurityGroupIdentifierTypeDef](./type_defs.md#securitygroupidentifiertypedef) 
-4. See [:material-code-braces: DnsEntryTypeDef](./type_defs.md#dnsentrytypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: LastErrorTypeDef](./type_defs.md#lasterrortypedef) 
+4. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+5. See [:material-code-braces: DnsOptionsTypeDef](./type_defs.md#dnsoptionstypedef) 
+6. See [:material-code-braces: DnsEntryTypeDef](./type_defs.md#dnsentrytypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: LastErrorTypeDef](./type_defs.md#lasterrortypedef) 
 ## VpcIpv6CidrBlockAssociationTypeDef
 
 ```python title="Usage Example"

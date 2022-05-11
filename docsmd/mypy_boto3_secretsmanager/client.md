@@ -353,7 +353,7 @@ parent.get_secret_value(**kwargs)
 
 ### list\_secret\_version\_ids
 
-Lists the versions for a secret.
+Lists the versions of a secret.
 
 Type annotations and code completion for `#!python boto3.client("secretsmanager").list_secret_version_ids` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)

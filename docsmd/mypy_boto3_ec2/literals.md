@@ -2542,6 +2542,23 @@ DnsNameStateType = Literal[
     "verified",
 ]
 ```
+## DnsRecordIpTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DnsRecordIpTypeType
+
+def get_value() -> DnsRecordIpTypeType:
+    return "dualstack"
+```
+
+```python title="Definition"
+DnsRecordIpTypeType = Literal[
+    "dualstack",
+    "ipv4",
+    "ipv6",
+    "service-defined",
+]
+```
 ## DnsSupportValueType
 
 ```python title="Usage Example"
@@ -4430,6 +4447,22 @@ InternetGatewayExistsWaiterName = Literal[
     "internet_gateway_exists",
 ]
 ```
+## IpAddressTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import IpAddressTypeType
+
+def get_value() -> IpAddressTypeType:
+    return "dualstack"
+```
+
+```python title="Definition"
+IpAddressTypeType = Literal[
+    "dualstack",
+    "ipv4",
+    "ipv6",
+]
+```
 ## IpamAddressHistoryResourceTypeType
 
 ```python title="Usage Example"
@@ -5916,6 +5949,21 @@ def get_value() -> SelfServicePortalType:
 SelfServicePortalType = Literal[
     "disabled",
     "enabled",
+]
+```
+## ServiceConnectivityTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import ServiceConnectivityTypeType
+
+def get_value() -> ServiceConnectivityTypeType:
+    return "ipv4"
+```
+
+```python title="Definition"
+ServiceConnectivityTypeType = Literal[
+    "ipv4",
+    "ipv6",
 ]
 ```
 ## ServiceStateType

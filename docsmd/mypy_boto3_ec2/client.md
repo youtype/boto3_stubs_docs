@@ -3390,9 +3390,9 @@ def create_subnet_cidr_reservation(
     SubnetId: str,
     Cidr: str,
     ReservationType: SubnetCidrReservationTypeType,  # (1)
-    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
     Description: str = ...,
     DryRun: bool = ...,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
 ) -> CreateSubnetCidrReservationResultTypeDef:  # (3)
     ...
 ```
@@ -4032,16 +4032,20 @@ def create_vpc_endpoint(
     RouteTableIds: Sequence[str] = ...,
     SubnetIds: Sequence[str] = ...,
     SecurityGroupIds: Sequence[str] = ...,
+    IpAddressType: IpAddressTypeType = ...,  # (2)
+    DnsOptions: DnsOptionsSpecificationTypeDef = ...,  # (3)
     ClientToken: str = ...,
     PrivateDnsEnabled: bool = ...,
-    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
-) -> CreateVpcEndpointResultTypeDef:  # (3)
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (4)
+) -> CreateVpcEndpointResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: VpcEndpointTypeType](./literals.md#vpcendpointtypetype) 
-2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
-3. See [:material-code-braces: CreateVpcEndpointResultTypeDef](./type_defs.md#createvpcendpointresulttypedef) 
+2. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+3. See [:material-code-braces: DnsOptionsSpecificationTypeDef](./type_defs.md#dnsoptionsspecificationtypedef) 
+4. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+5. See [:material-code-braces: CreateVpcEndpointResultTypeDef](./type_defs.md#createvpcendpointresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4108,6 +4112,7 @@ def create_vpc_endpoint_service_configuration(
     PrivateDnsName: str = ...,
     NetworkLoadBalancerArns: Sequence[str] = ...,
     GatewayLoadBalancerArns: Sequence[str] = ...,
+    SupportedIpAddressTypes: Sequence[str] = ...,
     ClientToken: str = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
 ) -> CreateVpcEndpointServiceConfigurationResultTypeDef:  # (2)
@@ -15254,12 +15259,16 @@ def modify_vpc_endpoint(
     RemoveSubnetIds: Sequence[str] = ...,
     AddSecurityGroupIds: Sequence[str] = ...,
     RemoveSecurityGroupIds: Sequence[str] = ...,
+    IpAddressType: IpAddressTypeType = ...,  # (1)
+    DnsOptions: DnsOptionsSpecificationTypeDef = ...,  # (2)
     PrivateDnsEnabled: bool = ...,
-) -> ModifyVpcEndpointResultTypeDef:  # (1)
+) -> ModifyVpcEndpointResultTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: ModifyVpcEndpointResultTypeDef](./type_defs.md#modifyvpcendpointresulttypedef) 
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: DnsOptionsSpecificationTypeDef](./type_defs.md#dnsoptionsspecificationtypedef) 
+3. See [:material-code-braces: ModifyVpcEndpointResultTypeDef](./type_defs.md#modifyvpcendpointresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -15324,6 +15333,8 @@ def modify_vpc_endpoint_service_configuration(
     RemoveNetworkLoadBalancerArns: Sequence[str] = ...,
     AddGatewayLoadBalancerArns: Sequence[str] = ...,
     RemoveGatewayLoadBalancerArns: Sequence[str] = ...,
+    AddSupportedIpAddressTypes: Sequence[str] = ...,
+    RemoveSupportedIpAddressTypes: Sequence[str] = ...,
 ) -> ModifyVpcEndpointServiceConfigurationResultTypeDef:  # (1)
     ...
 ```
