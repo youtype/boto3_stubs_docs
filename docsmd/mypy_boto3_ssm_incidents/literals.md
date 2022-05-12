@@ -51,6 +51,7 @@ ItemTypeType = Literal[
     "ATTACHMENT",
     "AUTOMATION",
     "INCIDENT",
+    "INVOLVED_RESOURCE",
     "METRIC",
     "OTHER",
     "PARENT",
@@ -203,6 +204,21 @@ def get_value() -> TimelineEventSortType:
 ```python title="Definition"
 TimelineEventSortType = Literal[
     "EVENT_TIME",
+]
+```
+## VariableTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.literals import VariableTypeType
+
+def get_value() -> VariableTypeType:
+    return "INCIDENT_RECORD_ARN"
+```
+
+```python title="Definition"
+VariableTypeType = Literal[
+    "INCIDENT_RECORD_ARN",
+    "INVOLVED_RESOURCES",
 ]
 ```
 ## WaitForReplicationSetActiveWaiterName

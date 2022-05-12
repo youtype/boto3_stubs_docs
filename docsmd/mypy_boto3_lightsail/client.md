@@ -2279,7 +2279,8 @@ parent.get_buckets(**kwargs)
 
 ### get\_bundles
 
-Returns the list of bundles that are available for purchase.
+Returns the bundles that you can apply to an Amazon Lightsail instance when you
+create it.
 
 Type annotations and code completion for `#!python boto3.client("lightsail").get_bundles` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles)
@@ -3595,6 +3596,7 @@ def get_relational_database_bundles(
     self,
     *,
     pageToken: str = ...,
+    includeInactive: bool = ...,
 ) -> GetRelationalDatabaseBundlesResultTypeDef:  # (1)
     ...
 ```

@@ -6515,11 +6515,12 @@ TrafficMirrorSessionFieldType = Literal[
 from mypy_boto3_ec2.literals import TrafficMirrorTargetTypeType
 
 def get_value() -> TrafficMirrorTargetTypeType:
-    return "network-interface"
+    return "gateway-load-balancer-endpoint"
 ```
 
 ```python title="Definition"
 TrafficMirrorTargetTypeType = Literal[
+    "gateway-load-balancer-endpoint",
     "network-interface",
     "network-load-balancer",
 ]

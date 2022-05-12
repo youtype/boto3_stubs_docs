@@ -7006,6 +7006,7 @@ class CreateTrafficMirrorTargetRequestRequestTypeDef(TypedDict):
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
     DryRun: NotRequired[bool],
     ClientToken: NotRequired[str],
+    GatewayLoadBalancerEndpointId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
@@ -39261,6 +39262,7 @@ class TrafficMirrorTargetTypeDef(TypedDict):
     Description: NotRequired[str],
     OwnerId: NotRequired[str],
     Tags: NotRequired[List[TagTypeDef]],  # (2)
+    GatewayLoadBalancerEndpointId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TrafficMirrorTargetTypeType](./literals.md#trafficmirrortargettypetype) 

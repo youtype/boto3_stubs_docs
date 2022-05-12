@@ -3588,6 +3588,7 @@ def create_traffic_mirror_target(
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
     DryRun: bool = ...,
     ClientToken: str = ...,
+    GatewayLoadBalancerEndpointId: str = ...,
 ) -> CreateTrafficMirrorTargetResultTypeDef:  # (2)
     ...
 ```

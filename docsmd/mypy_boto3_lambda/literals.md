@@ -459,6 +459,7 @@ RuntimeType = Literal[
     "nodejs10.x",
     "nodejs12.x",
     "nodejs14.x",
+    "nodejs16.x",
     "nodejs4.3",
     "nodejs4.3-edge",
     "nodejs6.10",

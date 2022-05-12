@@ -337,6 +337,23 @@ class DeleteTimelineEventInputRequestTypeDef(TypedDict):
     incidentRecordArn: str,
 ```
 
+## DynamicSsmParameterValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import DynamicSsmParameterValueTypeDef
+
+def get_value() -> DynamicSsmParameterValueTypeDef:
+    return {
+        "variable": ...,
+    }
+```
+
+```python title="Definition"
+class DynamicSsmParameterValueTypeDef(TypedDict):
+    variable: NotRequired[VariableTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: VariableTypeType](./literals.md#variabletypetype) 
 ## EventSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1375,11 +1392,13 @@ class SsmAutomationTypeDef(TypedDict):
     documentName: str,
     roleArn: str,
     documentVersion: NotRequired[str],
+    dynamicParameters: NotRequired[Mapping[str, DynamicSsmParameterValueTypeDef]],  # (1)
     parameters: NotRequired[Mapping[str, Sequence[str]]],
-    targetAccount: NotRequired[SsmTargetAccountType],  # (1)
+    targetAccount: NotRequired[SsmTargetAccountType],  # (2)
 ```
 
-1. See [:material-code-brackets: SsmTargetAccountType](./literals.md#ssmtargetaccounttype) 
+1. See [:material-code-braces: DynamicSsmParameterValueTypeDef](./type_defs.md#dynamicssmparametervaluetypedef) 
+2. See [:material-code-brackets: SsmTargetAccountType](./literals.md#ssmtargetaccounttype) 
 ## StartIncidentInputRequestTypeDef
 
 ```python title="Usage Example"

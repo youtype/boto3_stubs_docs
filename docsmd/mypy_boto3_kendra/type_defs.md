@@ -1099,6 +1099,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
     SlackConfiguration: NotRequired[SlackConfigurationTypeDef],  # (12)
     BoxConfiguration: NotRequired[BoxConfigurationTypeDef],  # (13)
     QuipConfiguration: NotRequired[QuipConfigurationTypeDef],  # (14)
+    JiraConfiguration: NotRequired[JiraConfigurationTypeDef],  # (15)
 ```
 
 1. See [:material-code-braces: S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef) 
@@ -1115,6 +1116,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
 12. See [:material-code-braces: SlackConfigurationTypeDef](./type_defs.md#slackconfigurationtypedef) 
 13. See [:material-code-braces: BoxConfigurationTypeDef](./type_defs.md#boxconfigurationtypedef) 
 14. See [:material-code-braces: QuipConfigurationTypeDef](./type_defs.md#quipconfigurationtypedef) 
+15. See [:material-code-braces: JiraConfigurationTypeDef](./type_defs.md#jiraconfigurationtypedef) 
 ## DataSourceGroupTypeDef
 
 ```python title="Usage Example"
@@ -2736,6 +2738,44 @@ class InlineCustomDocumentEnrichmentConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-braces: DocumentAttributeConditionTypeDef](./type_defs.md#documentattributeconditiontypedef) 
 2. See [:material-code-braces: DocumentAttributeTargetTypeDef](./type_defs.md#documentattributetargettypedef) 
+## JiraConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import JiraConfigurationTypeDef
+
+def get_value() -> JiraConfigurationTypeDef:
+    return {
+        "JiraAccountUrl": ...,
+        "SecretArn": ...,
+    }
+```
+
+```python title="Definition"
+class JiraConfigurationTypeDef(TypedDict):
+    JiraAccountUrl: str,
+    SecretArn: str,
+    UseChangeLog: NotRequired[bool],
+    Project: NotRequired[Sequence[str]],
+    IssueType: NotRequired[Sequence[str]],
+    Status: NotRequired[Sequence[str]],
+    IssueSubEntityFilter: NotRequired[Sequence[IssueSubEntityType]],  # (1)
+    AttachmentFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (2)
+    CommentFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (2)
+    IssueFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (2)
+    ProjectFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (2)
+    WorkLogFieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (2)
+    InclusionPatterns: NotRequired[Sequence[str]],
+    ExclusionPatterns: NotRequired[Sequence[str]],
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (7)
+```
+
+1. See [:material-code-brackets: IssueSubEntityType](./literals.md#issuesubentitytype) 
+2. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+3. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+4. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+5. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+6. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+7. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
 ## JsonTokenTypeConfigurationTypeDef
 
 ```python title="Usage Example"

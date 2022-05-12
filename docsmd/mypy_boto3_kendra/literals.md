@@ -221,6 +221,7 @@ DataSourceTypeType = Literal[
     "DATABASE",
     "FSX",
     "GOOGLEDRIVE",
+    "JIRA",
     "ONEDRIVE",
     "QUIP",
     "S3",
@@ -460,6 +461,22 @@ IntervalType = Literal[
     "THIS_WEEK",
     "TWO_MONTHS_AGO",
     "TWO_WEEKS_AGO",
+]
+```
+## IssueSubEntityType
+
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import IssueSubEntityType
+
+def get_value() -> IssueSubEntityType:
+    return "ATTACHMENTS"
+```
+
+```python title="Definition"
+IssueSubEntityType = Literal[
+    "ATTACHMENTS",
+    "COMMENTS",
+    "WORKLOGS",
 ]
 ```
 ## KeyLocationType

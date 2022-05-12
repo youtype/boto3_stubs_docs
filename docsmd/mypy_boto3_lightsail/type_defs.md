@@ -5617,12 +5617,13 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBundlesRequestGe
 
 def get_value() -> GetRelationalDatabaseBundlesRequestGetRelationalDatabaseBundlesPaginateTypeDef:
     return {
-        "PaginationConfig": ...,
+        "includeInactive": ...,
     }
 ```
 
 ```python title="Definition"
 class GetRelationalDatabaseBundlesRequestGetRelationalDatabaseBundlesPaginateTypeDef(TypedDict):
+    includeInactive: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -5641,6 +5642,7 @@ def get_value() -> GetRelationalDatabaseBundlesRequestRequestTypeDef:
 ```python title="Definition"
 class GetRelationalDatabaseBundlesRequestRequestTypeDef(TypedDict):
     pageToken: NotRequired[str],
+    includeInactive: NotRequired[bool],
 ```
 
 ## GetRelationalDatabaseBundlesResultTypeDef
