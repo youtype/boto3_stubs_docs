@@ -151,6 +151,41 @@ parent.create_workspace(**kwargs)
 
 1. See [:material-code-braces: CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef) 
 
+### create\_workspace\_api\_key
+
+Creates an API key for the workspace.
+
+Type annotations and code completion for `#!python boto3.client("grafana").create_workspace_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.create_workspace_api_key)
+
+```python title="Method definition"
+def create_workspace_api_key(
+    self,
+    *,
+    keyName: str,
+    keyRole: str,
+    secondsToLive: int,
+    workspaceId: str,
+) -> CreateWorkspaceApiKeyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateWorkspaceApiKeyResponseTypeDef](./type_defs.md#createworkspaceapikeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspaceApiKeyRequestRequestTypeDef = {  # (1)
+    "keyName": ...,
+    "keyRole": ...,
+    "secondsToLive": ...,
+    "workspaceId": ...,
+}
+
+parent.create_workspace_api_key(**kwargs)
+```
+
+1. See [:material-code-braces: CreateWorkspaceApiKeyRequestRequestTypeDef](./type_defs.md#createworkspaceapikeyrequestrequesttypedef) 
+
 ### delete\_workspace
 
 Deletes an Amazon Managed Grafana workspace.
@@ -179,6 +214,37 @@ parent.delete_workspace(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef) 
+
+### delete\_workspace\_api\_key
+
+Deletes an API key for a workspace.
+
+Type annotations and code completion for `#!python boto3.client("grafana").delete_workspace_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.delete_workspace_api_key)
+
+```python title="Method definition"
+def delete_workspace_api_key(
+    self,
+    *,
+    keyName: str,
+    workspaceId: str,
+) -> DeleteWorkspaceApiKeyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteWorkspaceApiKeyResponseTypeDef](./type_defs.md#deleteworkspaceapikeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkspaceApiKeyRequestRequestTypeDef = {  # (1)
+    "keyName": ...,
+    "workspaceId": ...,
+}
+
+parent.delete_workspace_api_key(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteWorkspaceApiKeyRequestRequestTypeDef](./type_defs.md#deleteworkspaceapikeyrequestrequesttypedef) 
 
 ### describe\_workspace
 

@@ -123,6 +123,51 @@ class AwsSsoAuthenticationTypeDef(TypedDict):
     ssoClientId: NotRequired[str],
 ```
 
+## CreateWorkspaceApiKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import CreateWorkspaceApiKeyRequestRequestTypeDef
+
+def get_value() -> CreateWorkspaceApiKeyRequestRequestTypeDef:
+    return {
+        "keyName": ...,
+        "keyRole": ...,
+        "secondsToLive": ...,
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkspaceApiKeyRequestRequestTypeDef(TypedDict):
+    keyName: str,
+    keyRole: str,
+    secondsToLive: int,
+    workspaceId: str,
+```
+
+## CreateWorkspaceApiKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import CreateWorkspaceApiKeyResponseTypeDef
+
+def get_value() -> CreateWorkspaceApiKeyResponseTypeDef:
+    return {
+        "key": ...,
+        "keyName": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkspaceApiKeyResponseTypeDef(TypedDict):
+    key: str,
+    keyName: str,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -178,6 +223,45 @@ class CreateWorkspaceResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteWorkspaceApiKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import DeleteWorkspaceApiKeyRequestRequestTypeDef
+
+def get_value() -> DeleteWorkspaceApiKeyRequestRequestTypeDef:
+    return {
+        "keyName": ...,
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteWorkspaceApiKeyRequestRequestTypeDef(TypedDict):
+    keyName: str,
+    workspaceId: str,
+```
+
+## DeleteWorkspaceApiKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import DeleteWorkspaceApiKeyResponseTypeDef
+
+def get_value() -> DeleteWorkspaceApiKeyResponseTypeDef:
+    return {
+        "keyName": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteWorkspaceApiKeyResponseTypeDef(TypedDict):
+    keyName: str,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"

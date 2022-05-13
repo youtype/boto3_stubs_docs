@@ -143,6 +143,7 @@ def get_value() -> RoleType:
 RoleType = Literal[
     "ADMIN",
     "EDITOR",
+    "VIEWER",
 ]
 ```
 ## SamlConfigurationStatusType
